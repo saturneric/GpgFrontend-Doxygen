@@ -12,13 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          repository: saturneric/GpgFrontend
           submodules: recursive
-          ref: main
           path: GpgFrontend
 
       - uses: actions/checkout@v3
         with:
-          repository: saturneric/GpgFrontend-Doxygen
           ref: develop
           path: GpgFrontend-Doxygen
           token: ${{ secrets.GITHUB_TOKEN }}
