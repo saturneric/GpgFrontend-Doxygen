@@ -2,7 +2,7 @@ name: Doxygen GitHub Pages Deploy Action
 
 on:
   schedule:
-    - cron:  '0 30 4 ? * *'
+    - cron:  '30 4 ? * *'
 
 jobs:
   deploy:
