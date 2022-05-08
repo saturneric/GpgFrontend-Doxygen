@@ -12,7 +12,13 @@ give the possibility to import or export a key package
 
 
 Collaboration diagram for Gpg\+Frontend\+::Key\+Package\+Operator\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classGpgFrontend_1_1KeyPackageOperator__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,6 +40,8 @@ static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a82
 \doxysubsection{Detailed Description}
 give the possibility to import or export a key package 
 
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}\label{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!generate\_key\_package\_name@{generate\_key\_package\_name}}
@@ -48,11 +56,11 @@ generate key package name
 \begin{DoxyReturn}{Returns}
 std\+::string key package name 
 \end{DoxyReturn}
-\texorpdfstring{$<$}{<} Random device
+$<$ Random device
 
-\texorpdfstring{$<$}{<} Mersenne twister
+$<$ Mersenne twister
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}{Generate\+Key\+Package\+Name()}}.
+Referenced by Generate\+Key\+Package\+Name().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}\label{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackage@{GenerateKeyPackage}}
@@ -84,7 +92,7 @@ false if key package was not generated
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}\label{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackageName@{GenerateKeyPackageName}}
@@ -101,11 +109,11 @@ std\+::string name of the key package
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}{generate\+\_\+key\+\_\+package\+\_\+name()}}.
+References generate\+\_\+key\+\_\+package\+\_\+name().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog_a7d1899302ef743671c3002d04f6c9dd8}{Gpg\+Frontend\+::\+UI\+::\+Export\+Key\+Package\+Dialog\+::\+Export\+Key\+Package\+Dialog()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Export\+Key\+Package\+Dialog\+::\+Export\+Key\+Package\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}\label{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GeneratePassphrase@{GeneratePassphrase}}
@@ -131,7 +139,7 @@ false if passphrase was not generated and saved
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}{Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+References Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}\label{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!ImportKeyPackage@{ImportKeyPackage}}
@@ -159,7 +167,7 @@ false if key package was not imported
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}.
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std().
 
 
 

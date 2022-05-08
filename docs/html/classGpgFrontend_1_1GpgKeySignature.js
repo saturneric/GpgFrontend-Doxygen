@@ -1,5 +1,6 @@
 var classGpgFrontend_1_1GpgKeySignature =
 [
+    [ "KeySignatrueRefHandler", "classGpgFrontend_1_1GpgKeySignature.html#a9c7253e7602e834ac3311cca0cbe84a7", null ],
     [ "GpgKeySignature", "classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b", null ],
     [ "~GpgKeySignature", "classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3", null ],
     [ "GpgKeySignature", "classGpgFrontend_1_1GpgKeySignature.html#abb4571e79c921261c03f57980d502e72", null ],
@@ -18,6 +19,7 @@ var classGpgFrontend_1_1GpgKeySignature =
     [ "IsExportable", "classGpgFrontend_1_1GpgKeySignature.html#a19fc1ca3733b576e12628e333e2c449e", null ],
     [ "IsInvalid", "classGpgFrontend_1_1GpgKeySignature.html#a1725474a1c61c0a3d724dc2f999cb24a", null ],
     [ "IsRevoked", "classGpgFrontend_1_1GpgKeySignature.html#a9aa824b0a9e03dfbcc7849a7b526ef67", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgKeySignature.html#a16fc4ae385f8b501602186ed9a2defbf", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgKeySignature.html#a4ae987707a6579cec3dfe540b3410bc6", null ]
+    [ "operator=", "classGpgFrontend_1_1GpgKeySignature.html#a927602d294d02adde57193f5094ce689", null ],
+    [ "operator=", "classGpgFrontend_1_1GpgKeySignature.html#a4ae987707a6579cec3dfe540b3410bc6", null ],
+    [ "signature_ref_", "classGpgFrontend_1_1GpgKeySignature.html#a224130c0da22538adba625c197b32fff", null ]
 ];

@@ -8,7 +8,6 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "GpgContext.h", "GpgContext_8h_source.html", null ],
     [ "GpgCoreInit.h", "GpgCoreInit_8h_source.html", null ],
     [ "GpgFrontendCore.h", "GpgFrontendCore_8h_source.html", null ],
-    [ "GpgFrontendCoreExport.h", "GpgFrontendCoreExport_8h_source.html", null ],
     [ "GpgFunctionObject.h", "GpgFunctionObject_8h_source.html", null ],
     [ "GpgGenKeyInfo.h", "GpgGenKeyInfo_8h_source.html", null ],
     [ "GpgInfo.h", "GpgInfo_8h_source.html", null ],

@@ -8,5 +8,6 @@ var classGpgFrontend_1_1GpgKeyOpera =
     [ "GenerateSubkey", "classGpgFrontend_1_1GpgKeyOpera.html#a882d99e8407cc22fb8b6e61c531fbe85", null ],
     [ "ModifyPassword", "classGpgFrontend_1_1GpgKeyOpera.html#ab7e16d1f4cba23ea5b5b9f6009ce5ee2", null ],
     [ "ModifyTOFUPolicy", "classGpgFrontend_1_1GpgKeyOpera.html#a76a7f59701add8a59d8835919dad2000", null ],
-    [ "SetExpire", "classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e", null ]
+    [ "SetExpire", "classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e", null ],
+    [ "ctx_", "classGpgFrontend_1_1GpgKeyOpera.html#ab4086c8ccd6f1f926993e96b687dea69", null ]
 ];

@@ -1,6 +1,7 @@
 var classGpgFrontend_1_1GpgKey =
 [
-    [ "_key_ref_deleter", "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html", null ],
+    [ "_key_ref_deleter", "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html", "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter" ],
+    [ "KeyRefHandler", "classGpgFrontend_1_1GpgKey.html#ae1957e909d8dcbe48c5931d1cdff7a81", null ],
     [ "GpgKey", "classGpgFrontend_1_1GpgKey.html#a3b08060c07a9cc207eb8c98771bd4bc1", null ],
     [ "GpgKey", "classGpgFrontend_1_1GpgKey.html#aa599159ab1041c2f5a5fbf09666489b9", null ],
     [ "~GpgKey", "classGpgFrontend_1_1GpgKey.html#a1e9223bb1ad8fbb4e769680de39b3697", null ],
@@ -38,7 +39,8 @@ var classGpgFrontend_1_1GpgKey =
     [ "IsRevoked", "classGpgFrontend_1_1GpgKey.html#a637f2a5e9b9b7cafcdaada00c2f7de87", null ],
     [ "operator gpgme_key_t", "classGpgFrontend_1_1GpgKey.html#a827962251cf47c41dbea56665ae4207b", null ],
     [ "operator<=", "classGpgFrontend_1_1GpgKey.html#adc22a349796af0ff5dd4499624b6d03d", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgKey.html#ac2735d7bec89fb81ec1d88de5402bceb", null ],
+    [ "operator=", "classGpgFrontend_1_1GpgKey.html#a6b243df2320999ebcdaf9645531b925a", null ],
     [ "operator=", "classGpgFrontend_1_1GpgKey.html#ae58bc1fdcefaaf646f6b8740cb69eef6", null ],
-    [ "operator==", "classGpgFrontend_1_1GpgKey.html#a4f50b2f13b3a5dc7298ee9665e7a5367", null ]
+    [ "operator==", "classGpgFrontend_1_1GpgKey.html#a4f50b2f13b3a5dc7298ee9665e7a5367", null ],
+    [ "key_ref_", "classGpgFrontend_1_1GpgKey.html#aec4e7e1845073f23cf55dc660c69c44a", null ]
 ];

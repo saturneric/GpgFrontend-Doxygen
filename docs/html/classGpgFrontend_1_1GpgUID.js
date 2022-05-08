@@ -1,5 +1,6 @@
 var classGpgFrontend_1_1GpgUID =
 [
+    [ "UidRefHandler", "classGpgFrontend_1_1GpgUID.html#ae4ba264bbdf1d9b83908f248d55c5809", null ],
     [ "GpgUID", "classGpgFrontend_1_1GpgUID.html#a35fdcef4ecf2598461bdc596ffc7957c", null ],
     [ "GpgUID", "classGpgFrontend_1_1GpgUID.html#ae1fb528a9d06d6e9f1feaf1bc291fe64", null ],
     [ "GpgUID", "classGpgFrontend_1_1GpgUID.html#a7210ece9b898981dae83f8d29b1ca453", null ],
@@ -12,6 +13,7 @@ var classGpgFrontend_1_1GpgUID =
     [ "GetSignatures", "classGpgFrontend_1_1GpgUID.html#af7b5310b319378c30c488277e95ef601", null ],
     [ "GetTofuInfos", "classGpgFrontend_1_1GpgUID.html#a2a36376484f7c1a4a19377d24e47a0b2", null ],
     [ "GetUID", "classGpgFrontend_1_1GpgUID.html#a467897d43a18b0cadd2e2e44384f6cdd", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgUID.html#af656ec19c9944c5e46118f56513bfb7a", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgUID.html#aa7551e06dde8966d4b379def59918a2d", null ]
+    [ "operator=", "classGpgFrontend_1_1GpgUID.html#a77ffebc8cf2b8aa7ae43f7f475982306", null ],
+    [ "operator=", "classGpgFrontend_1_1GpgUID.html#a79928a4179a234d42c2275ff10ddc828", null ],
+    [ "uid_ref_", "classGpgFrontend_1_1GpgUID.html#a37031574c0a749bfedf1fd5f98c3c84f", null ]
 ];

@@ -7,5 +7,6 @@ var classGpgFrontend_1_1GpgKeyImportExporter =
     [ "ExportKeys", "classGpgFrontend_1_1GpgKeyImportExporter.html#aa9fbda8f6c3fa36a503075d7a124fa3f", null ],
     [ "ExportSecretKey", "classGpgFrontend_1_1GpgKeyImportExporter.html#a6a5e8d642ac5a3e98799af6495ef590b", null ],
     [ "ExportSecretKeyShortest", "classGpgFrontend_1_1GpgKeyImportExporter.html#abf7c0442549ae8602e1249cdf0da55df", null ],
-    [ "ImportKey", "classGpgFrontend_1_1GpgKeyImportExporter.html#ab7a9be5283047695cd47562775adf79d", null ]
+    [ "ImportKey", "classGpgFrontend_1_1GpgKeyImportExporter.html#ab7a9be5283047695cd47562775adf79d", null ],
+    [ "ctx_", "classGpgFrontend_1_1GpgKeyImportExporter.html#ade0e4de4078b6589f863dbfc76786f0e", null ]
 ];

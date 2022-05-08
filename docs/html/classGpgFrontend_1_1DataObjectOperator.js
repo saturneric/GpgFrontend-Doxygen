@@ -1,7 +1,10 @@
 var classGpgFrontend_1_1DataObjectOperator =
 [
     [ "DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html#a3a8ae5c36fec01d0d5c3e5f9aed457a6", null ],
+    [ "GetDataObject", "classGpgFrontend_1_1DataObjectOperator.html#a6190acb6a4b9dc4350cb346fb4a03a74", null ],
+    [ "GetDataObjectByRef", "classGpgFrontend_1_1DataObjectOperator.html#a1f5c8469197b382a8c0974d64114dfcd", null ],
     [ "init_app_secure_key", "classGpgFrontend_1_1DataObjectOperator.html#a6b357780482f0e0c021ad55a81eb37cf", null ],
+    [ "SaveDataObj", "classGpgFrontend_1_1DataObjectOperator.html#a4bc3dbecd688c2ac1e01624a4d7b65b9", null ],
     [ "app_data_objs_path_", "classGpgFrontend_1_1DataObjectOperator.html#ae6762d4f0f5ca2e83f7c1508cd25cc21", null ],
     [ "app_secure_key_path_", "classGpgFrontend_1_1DataObjectOperator.html#a56c0c031cd327207260c73d1885dbdca", null ],
     [ "app_secure_path_", "classGpgFrontend_1_1DataObjectOperator.html#a6d38d25c91c33c48d083ec4de051108a", null ],

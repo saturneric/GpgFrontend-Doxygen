@@ -6,5 +6,6 @@ var classGpgFrontend_1_1GpgKeyGetter =
     [ "GetKeys", "classGpgFrontend_1_1GpgKeyGetter.html#aa5979c21af58b874b33c203752dcc805", null ],
     [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#a028fe69516a51c526bbd2ec4235053ad", null ],
     [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#a7ec8d8431a771c602cbfa946d13d6c74", null ],
-    [ "GetPubkey", "classGpgFrontend_1_1GpgKeyGetter.html#a024522e5208a7e6a3d23b922a3c018a4", null ]
+    [ "GetPubkey", "classGpgFrontend_1_1GpgKeyGetter.html#a024522e5208a7e6a3d23b922a3c018a4", null ],
+    [ "ctx_", "classGpgFrontend_1_1GpgKeyGetter.html#aa4aef315d82123726be879097d3df147", null ]
 ];

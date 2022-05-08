@@ -2,6 +2,8 @@ var classGpgFrontend_1_1GlobalSettingStation =
 [
     [ "GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html#abdc6dda369d4214e43ffa2930f7386b0", null ],
     [ "~GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451", null ],
+    [ "GetAppConfigPath", "classGpgFrontend_1_1GlobalSettingStation.html#a73d553587447165c5c7b7a9704771963", null ],
+    [ "GetAppDataPath", "classGpgFrontend_1_1GlobalSettingStation.html#a657a17d85d06a3455a2d3ed0782f76a2", null ],
     [ "GetAppDir", "classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3", null ],
     [ "GetCertsDir", "classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789", null ],
     [ "GetLocaleDir", "classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565", null ],
@@ -9,7 +11,8 @@ var classGpgFrontend_1_1GlobalSettingStation =
     [ "GetResourceDir", "classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0", null ],
     [ "GetStandaloneDatabaseDir", "classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332", null ],
     [ "GetStandaloneGpgBinDir", "classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00", null ],
-    [ "GetUISettings", "classGpgFrontend_1_1GlobalSettingStation.html#a1d8b9f91c75ef7a1d008a171f09f2c0e", null ],
+    [ "GetUISettings", "classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b", null ],
+    [ "init_app_secure_key", "classGpgFrontend_1_1GlobalSettingStation.html#a1e1993b72d0ad09d247b643b4447e57c", null ],
     [ "SyncSettings", "classGpgFrontend_1_1GlobalSettingStation.html#ac061ac8e5308f67ea52b98888bbb2e8d", null ],
     [ "app_configure_path_", "classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a", null ],
     [ "app_data_objs_path_", "classGpgFrontend_1_1GlobalSettingStation.html#ad0600d475f6758503b1347722e2a933a", null ],

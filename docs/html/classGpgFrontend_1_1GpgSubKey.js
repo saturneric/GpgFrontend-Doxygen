@@ -1,5 +1,6 @@
 var classGpgFrontend_1_1GpgSubKey =
 [
+    [ "SubkeyRefHandler", "classGpgFrontend_1_1GpgSubKey.html#a278abd1ba3abd90b05ed4ad494bc1e78", null ],
     [ "GpgSubKey", "classGpgFrontend_1_1GpgSubKey.html#a59eba8a9d23429140e9a68126c9c7c5e", null ],
     [ "GpgSubKey", "classGpgFrontend_1_1GpgSubKey.html#a3c9605e6ccb7fa53d9c9013453d561fe", null ],
     [ "GpgSubKey", "classGpgFrontend_1_1GpgSubKey.html#ad12e160dbb394a849d6cf31e614a76f5", null ],
@@ -20,7 +21,8 @@ var classGpgFrontend_1_1GpgSubKey =
     [ "IsPrivateKey", "classGpgFrontend_1_1GpgSubKey.html#accb86b50755698b3e1e7fdfe06f44e84", null ],
     [ "IsRevoked", "classGpgFrontend_1_1GpgSubKey.html#a9cc81c515b6a197757b48dd334cc3344", null ],
     [ "IsSecretKey", "classGpgFrontend_1_1GpgSubKey.html#a8fcbeae2ef3ad73a5aedee19f6de3e60", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgSubKey.html#aaac65bcd0a1236a0a09ecde285a59e29", null ],
+    [ "operator=", "classGpgFrontend_1_1GpgSubKey.html#ac4187d50f525188c6aaea29a86f83bba", null ],
     [ "operator=", "classGpgFrontend_1_1GpgSubKey.html#acc9bb0f214c44802ad45d2557afebbae", null ],
-    [ "operator==", "classGpgFrontend_1_1GpgSubKey.html#a1c88420ec4756f2e5bda1b76ff2f7c2d", null ]
+    [ "operator==", "classGpgFrontend_1_1GpgSubKey.html#a1c88420ec4756f2e5bda1b76ff2f7c2d", null ],
+    [ "_subkey_ref", "classGpgFrontend_1_1GpgSubKey.html#a443f8ac5f47e5ac0ea3ac91edefe8c3c", null ]
 ];

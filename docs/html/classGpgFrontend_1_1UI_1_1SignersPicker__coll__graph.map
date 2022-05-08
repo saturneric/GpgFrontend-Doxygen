@@ -1,0 +1,20 @@
+<map id="GpgFrontend::UI::SignersPicker" name="GpgFrontend::UI::SignersPicker">
+<area shape="rect" id="node1" title=" " alt="" coords="145,2009,328,2116"/>
+<area shape="rect" id="node2" title=" " alt="" coords="178,1649,253,1727"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1KeyList.html" title=" " alt="" coords="277,1429,479,1947"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,1267,84,1345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="7,307,218,399"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="64,145,172,223"/>
+<area shape="rect" id="node7" title=" " alt="" coords="480,5,519,83"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="227,145,385,223"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="497,620,627,697"/>
+<area shape="rect" id="node18" title="STL class." alt="" coords="630,145,787,223"/>
+<area shape="rect" id="node11" title=" " alt="" coords="159,833,357,925"/>
+<area shape="rect" id="node15" title=" " alt="" coords="311,300,482,407"/>
+<area shape="rect" id="node9" title=" " alt="" coords="283,1260,473,1352"/>
+<area shape="rect" id="node10" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="281,1003,475,1197"/>
+<area shape="rect" id="node13" title=" " alt="" coords="382,833,571,925"/>
+<area shape="rect" id="node14" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="296,547,473,771"/>
+<area shape="rect" id="node16" title="STL class." alt="" coords="497,1267,589,1345"/>
+<area shape="rect" id="node17" title=" " alt="" coords="751,431,899,523"/>
+</map>
