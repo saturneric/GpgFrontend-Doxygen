@@ -1,0 +1,169 @@
+\hypertarget{classGpgFrontend_1_1KeyPackageOperator}{}\doxysection{Gpg\+Frontend\+::Key\+Package\+Operator Class Reference}
+\label{classGpgFrontend_1_1KeyPackageOperator}\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+
+
+give the possibility to import or export a key package  
+
+
+
+
+{\ttfamily \#include $<$Key\+Package\+Operator.\+h$>$}
+
+
+
+Collaboration diagram for Gpg\+Frontend\+::Key\+Package\+Operator\+:
+% FIG 0
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}{Generate\+Passphrase}} (const std\+::filesystem\+::path \&phrase\+\_\+path, std\+::string \&phrase)
+\begin{DoxyCompactList}\small\item\em generate passphrase for key package and save it to file \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}{Generate\+Key\+Package\+Name}} ()
+\begin{DoxyCompactList}\small\item\em generate the name of the key package \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}{Generate\+Key\+Package}} (const std\+::filesystem\+::path \&key\+\_\+package\+\_\+path, const std\+::string \&key\+\_\+package\+\_\+name, Key\+Id\+Args\+List\+Ptr \&key\+\_\+ids, std\+::string \&phrase, bool secret)
+\begin{DoxyCompactList}\small\item\em generate key package \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}{Import\+Key\+Package}} (const std\+::filesystem\+::path \&key\+\_\+package\+\_\+path, const std\+::filesystem\+::path \&phrase\+\_\+path, \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Frontend\+::\+Gpg\+Import\+Information}} \&import\+\_\+info)
+\begin{DoxyCompactList}\small\item\em import key package \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}{generate\+\_\+key\+\_\+package\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em generate key package name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+give the possibility to import or export a key package 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}\label{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}} 
+\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!generate\_key\_package\_name@{generate\_key\_package\_name}}
+\index{generate\_key\_package\_name@{generate\_key\_package\_name}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+\doxysubsubsection{\texorpdfstring{generate\_key\_package\_name()}{generate\_key\_package\_name()}}
+{\footnotesize\ttfamily static std\+::string Gpg\+Frontend\+::\+Key\+Package\+Operator\+::generate\+\_\+key\+\_\+package\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+generate key package name 
+
+\begin{DoxyReturn}{Returns}
+std\+::string key package name 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Random device
+
+\texorpdfstring{$<$}{<} Mersenne twister
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}{Generate\+Key\+Package\+Name()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}\label{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}} 
+\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackage@{GenerateKeyPackage}}
+\index{GenerateKeyPackage@{GenerateKeyPackage}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+\doxysubsubsection{\texorpdfstring{GenerateKeyPackage()}{GenerateKeyPackage()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{key\+\_\+package\+\_\+path,  }\item[{const std\+::string \&}]{key\+\_\+package\+\_\+name,  }\item[{Key\+Id\+Args\+List\+Ptr \&}]{key\+\_\+ids,  }\item[{std\+::string \&}]{phrase,  }\item[{bool}]{secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate key package 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+package\+\_\+path} & path to key package \\
+\hline
+{\em key\+\_\+package\+\_\+name} & name of the key package \\
+\hline
+{\em key\+\_\+ids} & key ids to export \\
+\hline
+{\em phrase} & passphrase to encrypt key package \\
+\hline
+{\em secret} & true if secret key should be exported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key package was generated 
+
+false if key package was not generated 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}\label{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}} 
+\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackageName@{GenerateKeyPackageName}}
+\index{GenerateKeyPackageName@{GenerateKeyPackageName}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+\doxysubsubsection{\texorpdfstring{GenerateKeyPackageName()}{GenerateKeyPackageName()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate the name of the key package 
+
+\begin{DoxyReturn}{Returns}
+std\+::string name of the key package 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}{generate\+\_\+key\+\_\+package\+\_\+name()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog_a7d1899302ef743671c3002d04f6c9dd8}{Gpg\+Frontend\+::\+UI\+::\+Export\+Key\+Package\+Dialog\+::\+Export\+Key\+Package\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}\label{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}} 
+\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GeneratePassphrase@{GeneratePassphrase}}
+\index{GeneratePassphrase@{GeneratePassphrase}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+\doxysubsubsection{\texorpdfstring{GeneratePassphrase()}{GeneratePassphrase()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{phrase\+\_\+path,  }\item[{std\+::string \&}]{phrase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate passphrase for key package and save it to file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phrase\+\_\+path} & path to passphrase file \\
+\hline
+{\em phrase} & passphrase generated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if passphrase was generated and saved 
+
+false if passphrase was not generated and saved 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}{Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}\label{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}} 
+\index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!ImportKeyPackage@{ImportKeyPackage}}
+\index{ImportKeyPackage@{ImportKeyPackage}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
+\doxysubsubsection{\texorpdfstring{ImportKeyPackage()}{ImportKeyPackage()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{key\+\_\+package\+\_\+path,  }\item[{const std\+::filesystem\+::path \&}]{phrase\+\_\+path,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Frontend\+::\+Gpg\+Import\+Information}} \&}]{import\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+import key package 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+package\+\_\+path} & path to key package \\
+\hline
+{\em phrase\+\_\+path} & path to passphrase file \\
+\hline
+{\em import\+\_\+info} & import info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key package was imported 
+
+false if key package was not imported 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Key\+Package\+Operator.\+h\item 
+src/core/function/Key\+Package\+Operator.\+cpp\end{DoxyCompactItemize}

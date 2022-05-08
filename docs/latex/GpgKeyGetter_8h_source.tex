@@ -1,0 +1,41 @@
+\hypertarget{GpgKeyGetter_8h_source}{}\doxysection{Gpg\+Key\+Getter.\+h}
+\label{GpgKeyGetter_8h_source}\index{src/core/function/gpg/GpgKeyGetter.h@{src/core/function/gpg/GpgKeyGetter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_ZH\_CN\_TS\_GPGKEYGETTER\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_ZH\_CN\_TS\_GPGKEYGETTER\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/GpgFunctionObject.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}core/GpgModel.h"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter}{GpgKeyGetter}}}
+\DoxyCodeLine{43     : \textcolor{keyword}{public} \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{SingletonFunctionObject}}<GpgKeyGetter> \{}
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter}{GpgKeyGetter}}(}
+\DoxyCodeLine{51       \textcolor{keywordtype}{int} channel = \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{SingletonFunctionObject::GetDefaultChannel}}());}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{59   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} GetKey(\textcolor{keyword}{const} std::string\& fpr);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{67   KeyListPtr GetKeys(\textcolor{keyword}{const} KeyIdArgsListPtr\& ids);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{75   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} GetPubkey(\textcolor{keyword}{const} std::string\& fpr);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{82   KeyLinkListPtr FetchKey();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{90   \textcolor{keyword}{static} KeyListPtr GetKeysCopy(\textcolor{keyword}{const} KeyListPtr\& keys);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{98   \textcolor{keyword}{static} KeyLinkListPtr GetKeysCopy(\textcolor{keyword}{const} KeyLinkListPtr\& keys);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100  \textcolor{keyword}{private}:}
+\DoxyCodeLine{105   \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{GpgContext}}\& ctx\_ =}
+\DoxyCodeLine{106       \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}());}
+\DoxyCodeLine{107 \};}
+\DoxyCodeLine{108 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_ZH\_CN\_TS\_GPGKEYGETTER\_H}}
+
+\end{DoxyCode}

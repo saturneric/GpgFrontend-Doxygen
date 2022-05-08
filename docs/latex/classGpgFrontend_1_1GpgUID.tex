@@ -1,0 +1,215 @@
+\hypertarget{classGpgFrontend_1_1GpgUID}{}\doxysection{Gpg\+Frontend\+::Gpg\+UID Class Reference}
+\label{classGpgFrontend_1_1GpgUID}\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+UID\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_acca1fff5f12a216b05f2a6186b1e436b}{Get\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a0d1a061c131e5269923dea52be3b3be4}{Get\+Email}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a572cf652da288537bdc3f88b4fb1ab18}{Get\+Comment}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a467897d43a18b0cadd2e2e44384f6cdd}{Get\+UID}} () const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a32450fbf22c64cf522e9a090423344a2}{Get\+Revoked}} () const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a388ad367d353edd5eeb6e529977c924c}{Get\+Invalid}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgTOFUInfo}{Gpg\+TOFUInfo}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a2a36376484f7c1a4a19377d24e47a0b2}{Get\+Tofu\+Infos}} () const
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_af7b5310b319378c30c488277e95ef601}{Get\+Signatures}} () const
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a35fdcef4ecf2598461bdc596ffc7957c}{Gpg\+UID}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg U I D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID_ae1fb528a9d06d6e9f1feaf1bc291fe64}{Gpg\+UID}} (gpgme\+\_\+user\+\_\+id\+\_\+t uid)
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg U I D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID_a7210ece9b898981dae83f8d29b1ca453}{Gpg\+UID}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&\&o) noexcept
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg U I D object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a58ed67984063f0b87e35bc1782a1cc0a}\label{classGpgFrontend_1_1GpgUID_a58ed67984063f0b87e35bc1782a1cc0a}} 
+{\bfseries Gpg\+UID} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg U I D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_aa7551e06dde8966d4b379def59918a2d}{operator=}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&\&o) noexcept
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgUID_af656ec19c9944c5e46118f56513bfb7a}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_ae4ba264bbdf1d9b83908f248d55c5809}\label{classGpgFrontend_1_1GpgUID_ae4ba264bbdf1d9b83908f248d55c5809}} 
+using {\bfseries Uid\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+user\+\_\+id, std\+::function$<$ void(gpgme\+\_\+user\+\_\+id\+\_\+t)$>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a37031574c0a749bfedf1fd5f98c3c84f}\label{classGpgFrontend_1_1GpgUID_a37031574c0a749bfedf1fd5f98c3c84f}} 
+Uid\+Ref\+Handler {\bfseries uid\+\_\+ref\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a35fdcef4ecf2598461bdc596ffc7957c}\label{classGpgFrontend_1_1GpgUID_a35fdcef4ecf2598461bdc596ffc7957c}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GpgUID@{GpgUID}}
+\index{GpgUID@{GpgUID}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GpgUID()}{GpgUID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+UID\+::\+Gpg\+UID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new Gpg U I D object. 
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_ae1fb528a9d06d6e9f1feaf1bc291fe64}\label{classGpgFrontend_1_1GpgUID_ae1fb528a9d06d6e9f1feaf1bc291fe64}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GpgUID@{GpgUID}}
+\index{GpgUID@{GpgUID}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GpgUID()}{GpgUID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+UID\+::\+Gpg\+UID (\begin{DoxyParamCaption}\item[{gpgme\+\_\+user\+\_\+id\+\_\+t}]{uid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg U I D object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a7210ece9b898981dae83f8d29b1ca453}\label{classGpgFrontend_1_1GpgUID_a7210ece9b898981dae83f8d29b1ca453}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GpgUID@{GpgUID}}
+\index{GpgUID@{GpgUID}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GpgUID()}{GpgUID()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+UID\+::\+Gpg\+UID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&\&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Construct a new Gpg U I D object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a572cf652da288537bdc3f88b4fb1ab18}\label{classGpgFrontend_1_1GpgUID_a572cf652da288537bdc3f88b4fb1ab18}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetComment@{GetComment}}
+\index{GetComment@{GetComment}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetComment()}{GetComment()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a0d1a061c131e5269923dea52be3b3be4}\label{classGpgFrontend_1_1GpgUID_a0d1a061c131e5269923dea52be3b3be4}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetEmail@{GetEmail}}
+\index{GetEmail@{GetEmail}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetEmail()}{GetEmail()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a388ad367d353edd5eeb6e529977c924c}\label{classGpgFrontend_1_1GpgUID_a388ad367d353edd5eeb6e529977c924c}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetInvalid@{GetInvalid}}
+\index{GetInvalid@{GetInvalid}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetInvalid()}{GetInvalid()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_acca1fff5f12a216b05f2a6186b1e436b}\label{classGpgFrontend_1_1GpgUID_acca1fff5f12a216b05f2a6186b1e436b}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetName@{GetName}}
+\index{GetName@{GetName}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a32450fbf22c64cf522e9a090423344a2}\label{classGpgFrontend_1_1GpgUID_a32450fbf22c64cf522e9a090423344a2}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetRevoked@{GetRevoked}}
+\index{GetRevoked@{GetRevoked}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetRevoked()}{GetRevoked()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Revoked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_af7b5310b319378c30c488277e95ef601}\label{classGpgFrontend_1_1GpgUID_af7b5310b319378c30c488277e95ef601}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetSignatures@{GetSignatures}}
+\index{GetSignatures@{GetSignatures}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetSignatures()}{GetSignatures()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Frontend\+::\+Gpg\+Key\+Signature}} $>$ $>$ Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Signatures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$std\+::vector$<$\+Gpg\+Key\+Signature$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a2a36376484f7c1a4a19377d24e47a0b2}\label{classGpgFrontend_1_1GpgUID_a2a36376484f7c1a4a19377d24e47a0b2}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetTofuInfos@{GetTofuInfos}}
+\index{GetTofuInfos@{GetTofuInfos}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetTofuInfos()}{GetTofuInfos()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgTOFUInfo}{Gpg\+Frontend\+::\+Gpg\+TOFUInfo}} $>$ $>$ Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+Tofu\+Infos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$std\+::vector$<$\+Gpg\+TOFUInfo$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_a467897d43a18b0cadd2e2e44384f6cdd}\label{classGpgFrontend_1_1GpgUID_a467897d43a18b0cadd2e2e44384f6cdd}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!GetUID@{GetUID}}
+\index{GetUID@{GetUID}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{GetUID()}{GetUID()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+UID\+::\+Get\+UID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_af656ec19c9944c5e46118f56513bfb7a}\label{classGpgFrontend_1_1GpgUID_af656ec19c9944c5e46118f56513bfb7a}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!operator=@{operator=}}
+\index{operator=@{operator=}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \& Gpg\+Frontend\+::\+Gpg\+UID\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgUID_aa7551e06dde8966d4b379def59918a2d}\label{classGpgFrontend_1_1GpgUID_aa7551e06dde8966d4b379def59918a2d}} 
+\index{GpgFrontend::GpgUID@{GpgFrontend::GpgUID}!operator=@{operator=}}
+\index{operator=@{operator=}!GpgFrontend::GpgUID@{GpgFrontend::GpgUID}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \& Gpg\+Frontend\+::\+Gpg\+UID\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} \&\&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}}\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/model/Gpg\+UID.\+h\item 
+src/core/model/Gpg\+UID.\+cpp\end{DoxyCompactItemize}

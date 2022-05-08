@@ -1,0 +1,89 @@
+\hypertarget{classGpgFrontend_1_1PassphraseGenerator}{}\doxysection{Gpg\+Frontend\+::Passphrase\+Generator Class Reference}
+\label{classGpgFrontend_1_1PassphraseGenerator}\index{GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}}
+
+
+The \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} class.  
+
+
+
+
+{\ttfamily \#include $<$Passphrase\+Generator.\+h$>$}
+
+
+
+Inheritance diagram for Gpg\+Frontend\+::Passphrase\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Passphrase\+Generator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}{Passphrase\+Generator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} constructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}{Generate}} (int len)
+\begin{DoxyCompactList}\small\item\em generate passphrase \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}\label{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}} 
+std\+::random\+\_\+device {\bfseries rd\+\_\+}
+\begin{DoxyCompactList}\small\item\em Random device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_a19ac4999bbd5fb7e6c42a4aef9606892}\label{classGpgFrontend_1_1PassphraseGenerator_a19ac4999bbd5fb7e6c42a4aef9606892}} 
+std\+::mt19937 {\bfseries mt\+\_\+} = std\+::mt19937(\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}{rd\+\_\+}}())
+\begin{DoxyCompactList}\small\item\em Mersenne twister. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} class. 
+
+This class is used to generate a passphrase. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}\label{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}} 
+\index{GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}!PassphraseGenerator@{PassphraseGenerator}}
+\index{PassphraseGenerator@{PassphraseGenerator}!GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}}
+\doxysubsubsection{\texorpdfstring{PassphraseGenerator()}{PassphraseGenerator()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Passphrase\+Generator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to use \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}\label{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}} 
+\index{GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate (\begin{DoxyParamCaption}\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+generate passphrase 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of the passphrase \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string passphrase 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}{Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Passphrase\+Generator.\+h\end{DoxyCompactItemize}

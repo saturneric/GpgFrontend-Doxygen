@@ -1,0 +1,10 @@
+digraph "GpgFrontend::UI::KeyGenDialog"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::KeyGenDialog\n|- re_email_\l- error_messages_\l- gen_key_info_\l- button_box_\l- error_label_\l- name_edit_\l- email_edit_\l- comment_edit_\l- key_size_spin_box_\l- key_type_combo_box_\land 6 more...\l|+ KeyGenDialog()\l- create_key_usage_group\l_box()\l- create_basic_info_group\l_box()\l- generate_key_dialog()\l- refresh_widgets_state()\l- set_signal_slot()\l- check_email_address()\l- slot_expire_box_changed()\l- slot_key_gen_accept()\l- slot_encryption_box\l_changed()\l- slot_signing_box_changed()\l- slot_certification\l_box_changed()\l- slot_authentication\l_box_changed()\l- slot_activated_key\l_type()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{QDialog\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

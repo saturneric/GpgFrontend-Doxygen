@@ -1,0 +1,81 @@
+\hypertarget{UserInterfaceUtils_8h_source}{}\doxysection{User\+Interface\+Utils.\+h}
+\label{UserInterfaceUtils_8h_source}\index{src/ui/UserInterfaceUtils.h@{src/ui/UserInterfaceUtils.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_USER\_INTERFACE\_UTILS\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_USER\_INTERFACE\_UTILS\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}core/GpgModel.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/function/result\_analyse/GpgVerifyResultAnalyse.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{37 \textcolor{keyword}{class }GpgResultAnalyse;}
+\DoxyCodeLine{38 \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{class }InfoBoardWidget;}
+\DoxyCodeLine{43 \textcolor{keyword}{class }TextEdit;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{53 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a590a26051105940a6d6e0743b147e281}{show\_verify\_details}}(QWidget* parent, InfoBoardWidget* info\_board,}
+\DoxyCodeLine{54                          GpgError error, \textcolor{keyword}{const} GpgVerifyResult\& verify\_result);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{62 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a9ab218dde057182cb4911c4792acd925}{import\_unknown\_key\_from\_keyserver}}(QWidget* parent,}
+\DoxyCodeLine{63                                        \textcolor{keyword}{const} GpgVerifyResultAnalyse\& verify\_res);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{72 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a204156a333cde4f705f0ace91cd3d333}{refresh\_info\_board}}(InfoBoardWidget* info\_board, \textcolor{keywordtype}{int} status,}
+\DoxyCodeLine{73                         \textcolor{keyword}{const} std::string\& report\_text);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}{process\_result\_analyse}}(TextEdit* edit, InfoBoardWidget* info\_board,}
+\DoxyCodeLine{83                             \textcolor{keyword}{const} GpgResultAnalyse\& result\_analyse);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{93 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}{process\_result\_analyse}}(TextEdit* edit, InfoBoardWidget* info\_board,}
+\DoxyCodeLine{94                             \textcolor{keyword}{const} GpgResultAnalyse\& result\_analyse\_a,}
+\DoxyCodeLine{95                             \textcolor{keyword}{const} GpgResultAnalyse\& result\_analyse\_b);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{104 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}{process\_operation}}(QWidget* parent, \textcolor{keyword}{const} std::string\& waiting\_title,}
+\DoxyCodeLine{105                        \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{void}()>\& func);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{CommonUtils}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{112   Q\_OBJECT}
+\DoxyCodeLine{113  \textcolor{keyword}{public}:}
+\DoxyCodeLine{118   \textcolor{keyword}{using} ImportCallbackFunctiopn = std::function<void(}
+\DoxyCodeLine{119       \textcolor{keyword}{const} std::string\&, \textcolor{keyword}{const} std::string\&, \textcolor{keywordtype}{size\_t}, \textcolor{keywordtype}{size\_t})>;}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{125   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}{CommonUtils}}();}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{132   \textcolor{keyword}{static} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{CommonUtils}}* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}{GetInstance}}();}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134  signals:}
+\DoxyCodeLine{139   \textcolor{keywordtype}{void} SignalKeyStatusUpdated();}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{145   \textcolor{keywordtype}{void} SignalGnupgNotInstall();}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147  \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{154   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{SlotImportKeys}}(QWidget* parent, \textcolor{keyword}{const} std::string\& in\_buffer);}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{161   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}{SlotImportKeyFromFile}}(QWidget* parent);}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{168   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}{SlotImportKeyFromKeyServer}}(QWidget* parent);}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{175   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}{SlotImportKeyFromClipboard}}(QWidget* parent);}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{184   \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}{SlotImportKeyFromKeyServer}}(}
+\DoxyCodeLine{185       \textcolor{keyword}{const} GpgFrontend::KeyIdArgsList\& key\_ids,}
+\DoxyCodeLine{186       \textcolor{keyword}{const} GpgFrontend::UI::CommonUtils::ImportCallbackFunctiopn\& callback);}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{194   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}{SlotExecuteGpgCommand}}(}
+\DoxyCodeLine{195       \textcolor{keyword}{const} QStringList\& arguments,}
+\DoxyCodeLine{196       \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{void}(QProcess*)>\& interact\_func);}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198  \textcolor{keyword}{private}:}
+\DoxyCodeLine{199   \textcolor{keyword}{static} std::unique\_ptr<CommonUtils> instance\_;  }
+\DoxyCodeLine{200 \};}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_USER\_INTERFACE\_UTILS\_H}}
+
+\end{DoxyCode}

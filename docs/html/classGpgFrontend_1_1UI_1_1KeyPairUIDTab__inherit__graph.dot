@@ -1,0 +1,10 @@
+digraph "GpgFrontend::UI::KeyPairUIDTab"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::KeyPair\lUIDTab\n|- m_key_\l- uid_list_\l- sig_list_\l- tofu_tabs_\l- manage_selected_uid\l_menu_\l- uid_popup_menu_\l- sign_popup_menu_\l- buffered_uids_\l- buffered_signatures_\l|+ KeyPairUIDTab()\l# contextMenuEvent()\l- create_uid_list()\l- create_sign_list()\l- create_manage_uid_menu()\l- create_uid_popup_menu()\l- create_sign_popup_menu()\l- get_uid_checked()\l- get_uid_selected()\l- get_sign_selected()\l- slot_refresh_uid_list()\l- slot_refresh_tofu_info()\l- slot_refresh_sig_list()\l- slot_add_sign()\l- slot_add_sign_single()\l- slot_add_uid()\l- slot_del_uid()\l- slot_del_uid_single()\l- slot_set_primary_uid()\l- slot_del_sign()\l- slot_refresh_key()\l- slot_add_uid_result()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{QWidget\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

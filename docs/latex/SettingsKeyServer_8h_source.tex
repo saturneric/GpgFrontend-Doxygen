@@ -1,0 +1,51 @@
+\hypertarget{SettingsKeyServer_8h_source}{}\doxysection{Settings\+Key\+Server.\+h}
+\label{SettingsKeyServer_8h_source}\index{src/ui/settings/SettingsKeyServer.h@{src/ui/settings/SettingsKeyServer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_SETTINGSKEYSERVER\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_SETTINGSKEYSERVER\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{class }Ui\_KeyServerSettings;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyserverTab}{KeyserverTab}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{42   Q\_OBJECT}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyserverTab_aa3d3561d3bdf95de6486b2caa752616c}{KeyserverTab}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyserverTab_a221117b56dda48956e44d96a08f6823b}{SetSettings}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62   \textcolor{keywordtype}{void} ApplySettings();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64  \textcolor{keyword}{private}:}
+\DoxyCodeLine{65   std::shared\_ptr<Ui\_KeyServerSettings> ui\_;}
+\DoxyCodeLine{66   QString default\_key\_server\_;}
+\DoxyCodeLine{67   QStringList key\_server\_str\_list\_;}
+\DoxyCodeLine{68   QMenu* popup\_menu\_\{\};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70   QRegularExpression url\_reg\_\{}
+\DoxyCodeLine{71       R\textcolor{stringliteral}{"{}(\string^https?:\(\backslash\)/\(\backslash\)/(www\(\backslash\).)?[-\/a-\/zA-\/Z0-\/9@:\%.\_\(\backslash\)+\string~\#=]\{1,256\}\(\backslash\).[a-\/zA-\/Z0-\/9()]\{1,6\}\(\backslash\)b([-\/a-\/zA-\/Z0-\/9()@:\%\_\(\backslash\)+.\string~\#?\&//=]*)\$)"{}\};}}
+\DoxyCodeLine{72 \textcolor{stringliteral}{}}
+\DoxyCodeLine{73 \textcolor{stringliteral}{ }\textcolor{keyword}{private} slots:}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79   \textcolor{keywordtype}{void} slot\_add\_key\_server();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{85   \textcolor{keywordtype}{void} slot\_refresh\_table();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{91   \textcolor{keywordtype}{void} slot\_test\_listed\_key\_server();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93  signals:}
+\DoxyCodeLine{99   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyserverTab_a26449a77844d9db69a543ff88f10e347}{SignalRestartNeeded}}(\textcolor{keywordtype}{bool} needed);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{107   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyserverTab_a8cbd6e448e187260730ab8301ad4892e}{contextMenuEvent}}(QContextMenuEvent* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{108 \};}
+\DoxyCodeLine{109 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_SETTINGSKEYSERVER\_H}}
+
+\end{DoxyCode}

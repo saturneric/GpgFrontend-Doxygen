@@ -1,0 +1,193 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils}{}\doxysection{Gpg\+Frontend\+::UI\+::Common\+Utils Class Reference}
+\label{classGpgFrontend_1_1UI_1_1CommonUtils}\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Common\+Utils\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Common\+Utils\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aadd249062c24f9b7fc545c03296bbb83}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aadd249062c24f9b7fc545c03296bbb83}} 
+using {\bfseries Import\+Callback\+Functiopn} = std\+::function$<$ void(const std\+::string \&, const std\+::string \&, size\+\_\+t, size\+\_\+t)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{Slot\+Import\+Keys}} (QWidget $\ast$parent, const std\+::string \&in\+\_\+buffer)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}{Slot\+Import\+Key\+From\+File}} (QWidget $\ast$parent)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}{Slot\+Import\+Key\+From\+Key\+Server}} (QWidget $\ast$parent)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}{Slot\+Import\+Key\+From\+Clipboard}} (QWidget $\ast$parent)
+\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}{Slot\+Import\+Key\+From\+Key\+Server}} (const Gpg\+Frontend\+::\+Key\+Id\+Args\+List \&key\+\_\+ids, const Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Import\+Callback\+Functiopn \&callback)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}{Slot\+Execute\+Gpg\+Command}} (const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc9e91daa0d3c4ee4141ba4bd8726bb}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc9e91daa0d3c4ee4141ba4bd8726bb}} 
+void {\bfseries Signal\+Key\+Status\+Updated} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a4d2f10c2089c2bfb23be5c1f573af31f}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a4d2f10c2089c2bfb23be5c1f573af31f}} 
+void {\bfseries Signal\+Gnupg\+Not\+Install} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}} 
+{\bfseries Common\+Utils} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Common Utils object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aa533206591b0c57ea93b8f0cb7d795cd}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aa533206591b0c57ea93b8f0cb7d795cd}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $>$ {\bfseries instance\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $\ast$ Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Common\+Utils$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0ab96012df041f2c2e47092db0600355}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a55926649e28a96318b89afba01b966bf}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}\label{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotExecuteGpgCommand@{SlotExecuteGpgCommand}}
+\index{SlotExecuteGpgCommand@{SlotExecuteGpgCommand}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotExecuteGpgCommand}{SlotExecuteGpgCommand}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{arguments,  }\item[{const std\+::function$<$ void(QProcess $\ast$)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & \\
+\hline
+{\em interact\+\_\+func} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo_a2416ae0ab9bedc61782d16075750a9c0}{Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_aca13ae9f849ca894cdd0da8572b5c9e3}{Gpg\+Frontend\+::\+Gpg\+Context\+::\+Get\+Info()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+Instance()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromClipboard@{SlotImportKeyFromClipboard}}
+\index{SlotImportKeyFromClipboard@{SlotImportKeyFromClipboard}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotImportKeyFromClipboard}{SlotImportKeyFromClipboard}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Clipboard (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{Slot\+Import\+Keys()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0ab96012df041f2c2e47092db0600355}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromFile@{SlotImportKeyFromFile}}
+\index{SlotImportKeyFromFile@{SlotImportKeyFromFile}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotImportKeyFromFile}{SlotImportKeyFromFile}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+File (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a28a3572dc01192b6a4d50b544181084c}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{Slot\+Import\+Keys()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0ab96012df041f2c2e47092db0600355}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}}
+\index{SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotImportKeyFromKeyServer}{SlotImportKeyFromKeyServer}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server (\begin{DoxyParamCaption}\item[{const Gpg\+Frontend\+::\+Key\+Id\+Args\+List \&}]{key\+\_\+ids,  }\item[{const Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Import\+Callback\+Functiopn \&}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx\+\_\+channel} & \\
+\hline
+{\em key\+\_\+ids} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}\label{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}}
+\index{SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotImportKeyFromKeyServer}{SlotImportKeyFromKeyServer}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0ab96012df041f2c2e47092db0600355}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeys@{SlotImportKeys}}
+\index{SlotImportKeys@{SlotImportKeys}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotImportKeys}{SlotImportKeys}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Keys (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const std\+::string \&}]{in\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em in\+\_\+buffer} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a55926649e28a96318b89afba01b966bf}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}{Slot\+Import\+Key\+From\+Clipboard()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}{Slot\+Import\+Key\+From\+File()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/User\+Interface\+Utils.\+h\item 
+src/ui/User\+Interface\+Utils.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+digraph "GpgFrontend::GpgVerifyResultAnalyse"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::GpgVerifyResult\lAnalyse\n|- error_\l|+ GpgVerifyResultAnalyse()\l+ GetSignatures()\l+ TakeChargeOfResult()\l- do_analyse()\l- print_signer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{GpgFrontend::GpgResultAnalyse\n|# status_\l# analysed_\l|+ GpgResultAnalyse()\l+ GetResultReport()\l+ GetStatus()\l+ Analyse()\l# do_analyse()\l# set_status()\l}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classGpgFrontend_1_1GpgResultAnalyse.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" #stream_" ,arrowhead="odiamond"];
+  Node3 [label="{std::stringstream\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node4 [label="{std::basic_stringstream\l\< Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node5 [label="{std::basic_iostream\l\< Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node6 [label="{std::basic_istream\l\< Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node7 [label="{std::basic_ios\< Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node8 [label="{std::ios_base\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node9 [label="{std::basic_ostream\l\< Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node10 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -result_" ,arrowhead="odiamond"];
+  Node10 [label="{std::shared_ptr\< struct\l _gpgme_op_verify_result \>\n|+ ptr\l|+ operator-\>()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="orange",fontsize="10",style="solid",label=" \< struct _gpgme_op\l_verify_result \>" ];
+  Node11 [label="{std::shared_ptr\< T \>\n||+ operator-\>()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node11 [color="grey25",fontsize="10",style="solid",label=" +ptr" ,arrowhead="odiamond"];
+  Node12 [label="{T\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

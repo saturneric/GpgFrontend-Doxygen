@@ -1,0 +1,10 @@
+digraph "GpgFrontend::UI::KeyServerImportDialog"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::KeyServer\lImportDialog\n|- m_automatic_\l- search_line_edit_\l- key_server_combo_box_\l- waiting_bar_\l- search_label_\l- key_server_label_\l- message_\l- icon_\l- close_button_\l- import_button_\l- search_button_\l- keys_table_\l- network_access_manager_\l|+ KeyServerImportDialog()\l+ KeyServerImportDialog()\l+ SlotImport()\l+ SlotImport()\l- create_keys_table()\l- set_message()\l- import_keys()\l- set_loading()\l- create_button()\l- create_comboBox()\l- slot_import()\l- slot_search_finished()\l- slot_import_finished()\l- slot_search()\l- slot_save_window_state()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{QDialog\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

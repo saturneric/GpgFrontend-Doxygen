@@ -1,0 +1,298 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog}{}\doxysection{Gpg\+Frontend\+::UI\+::Subkey\+Generate\+Dialog Class Reference}
+\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog}\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Subkey\+Generate\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Subkey\+Generate\+Dialog\+:
+% FIG 1
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_acca1d633219d245edba9135c80a90610}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_acca1d633219d245edba9135c80a90610}} 
+void {\bfseries Signal\+Sub\+Key\+Generated} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}{Subkey\+Generate\+Dialog}} (const Key\+Id \&key\+\_\+id, QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new Subkey Generate Dialog object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a49d9f3bb2cfb17eb39dcd4dc0385234e}{slot\+\_\+expire\+\_\+box\+\_\+changed}} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aab426dec4b4655b215b09b490e05ad05}{slot\+\_\+key\+\_\+gen\+\_\+accept}} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a1f4dda7500b3de7476e5d1e7bd5b550b}{slot\+\_\+encryption\+\_\+box\+\_\+changed}} (int state)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aedef4e8784c8a3edb06b0f2821500552}{slot\+\_\+signing\+\_\+box\+\_\+changed}} (int state)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8ab50d8f47489c57e382b3fe231ba9a7}{slot\+\_\+certification\+\_\+box\+\_\+changed}} (int state)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a13229f07ef0ed594357df1918af50d3d}{slot\+\_\+authentication\+\_\+box\+\_\+changed}} (int state)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a52a0aadc9b1e80bdcaaf1ad9d8997957}{slot\+\_\+activated\+\_\+key\+\_\+type}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QGroup\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa24064a5f585b23d71e1036958f31d7d}{create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box}} ()
+\begin{DoxyCompactList}\small\item\em Create a key usage group box object. \end{DoxyCompactList}\item 
+QGroup\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a029017ad2e025a43d21144f1b7427593}{create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box}} ()
+\begin{DoxyCompactList}\small\item\em Create a basic info group box object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}} 
+void {\bfseries set\+\_\+signal\+\_\+slot} ()
+\begin{DoxyCompactList}\small\item\em Set the signal slot object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb909e9a6a0e4da780c75f7535}{refresh\+\_\+widgets\+\_\+state}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a10b30ea96e819657053c1d5752024547}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a10b30ea96e819657053c1d5752024547}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} {\bfseries key\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a3caed2c7bcce5850c338de956dfaecfa}{gen\+\_\+key\+\_\+info\+\_\+}}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab11f7f3e24f855d690f6f7d820ed7479}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab11f7f3e24f855d690f6f7d820ed7479}} 
+QGroup\+Box $\ast$ {\bfseries key\+\_\+usage\+\_\+group\+\_\+box\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab06b11f407fbb407139235fc84325de2}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab06b11f407fbb407139235fc84325de2}} 
+QDialog\+Button\+Box $\ast$ {\bfseries button\+\_\+box\+\_\+}
+\begin{DoxyCompactList}\small\item\em Box for standard buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a75f325b4a5aa8bcfcc411bdaf9279683}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a75f325b4a5aa8bcfcc411bdaf9279683}} 
+QLabel $\ast$ {\bfseries error\+\_\+label\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Label containing error message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa91db742b41d352ba9f88620d649afb3}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa91db742b41d352ba9f88620d649afb3}} 
+QSpin\+Box $\ast$ {\bfseries key\+\_\+size\+\_\+spin\+\_\+box\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Spinbox for the keys size (in bit) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ac515dabcf6c094c5eeb2bf88aa3aa9d3}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ac515dabcf6c094c5eeb2bf88aa3aa9d3}} 
+QCombo\+Box $\ast$ {\bfseries key\+\_\+type\+\_\+combo\+\_\+box\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Combobox for Key tpe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa8bf228ba2a773c0d38f9e5c2f20539d}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa8bf228ba2a773c0d38f9e5c2f20539d}} 
+QDate\+Time\+Edit $\ast$ {\bfseries date\+\_\+edit\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Date edit for expiration date. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}} 
+QCheck\+Box $\ast$ {\bfseries expire\+\_\+check\+\_\+box\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em Checkbox, if key should expire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}} 
+std\+::vector$<$ QCheck\+Box $\ast$ $>$ {\bfseries key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}
+\begin{DoxyCompactList}\small\item\em ENCR, SIGN, CERT, AUTH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a06ae254026e0be902d28bb005a91fe0c}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a06ae254026e0be902d28bb005a91fe0c}} 
+QDate\+Time {\bfseries max\+\_\+date\+\_\+time\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!SubkeyGenerateDialog@{SubkeyGenerateDialog}}
+\index{SubkeyGenerateDialog@{SubkeyGenerateDialog}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{SubkeyGenerateDialog()}{SubkeyGenerateDialog()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog (\begin{DoxyParamCaption}\item[{const Key\+Id \&}]{key\+\_\+id,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Subkey Generate Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+id} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab06b11f407fbb407139235fc84325de2}{button\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a029017ad2e025a43d21144f1b7427593}{create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa24064a5f585b23d71e1036958f31d7d}{create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a75f325b4a5aa8bcfcc411bdaf9279683}{error\+\_\+label\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}{Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb909e9a6a0e4da780c75f7535}{refresh\+\_\+widgets\+\_\+state()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a029017ad2e025a43d21144f1b7427593}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a029017ad2e025a43d21144f1b7427593}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!create\_basic\_info\_group\_box@{create\_basic\_info\_group\_box}}
+\index{create\_basic\_info\_group\_box@{create\_basic\_info\_group\_box}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{create\_basic\_info\_group\_box()}{create\_basic\_info\_group\_box()}}
+{\footnotesize\ttfamily QGroup\+Box $\ast$ Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a basic info group box object. 
+
+\begin{DoxyReturn}{Returns}
+QGroup\+Box$\ast$ 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa8bf228ba2a773c0d38f9e5c2f20539d}{date\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a75f325b4a5aa8bcfcc411bdaf9279683}{error\+\_\+label\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}{expire\+\_\+check\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}{Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa91db742b41d352ba9f88620d649afb3}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ac515dabcf6c094c5eeb2bf88aa3aa9d3}{key\+\_\+type\+\_\+combo\+\_\+box\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}{Subkey\+Generate\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa24064a5f585b23d71e1036958f31d7d}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa24064a5f585b23d71e1036958f31d7d}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!create\_key\_usage\_group\_box@{create\_key\_usage\_group\_box}}
+\index{create\_key\_usage\_group\_box@{create\_key\_usage\_group\_box}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{create\_key\_usage\_group\_box()}{create\_key\_usage\_group\_box()}}
+{\footnotesize\ttfamily QGroup\+Box $\ast$ Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a key usage group box object. 
+
+\begin{DoxyReturn}{Returns}
+QGroup\+Box$\ast$ 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}{Subkey\+Generate\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb909e9a6a0e4da780c75f7535}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb909e9a6a0e4da780c75f7535}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!refresh\_widgets\_state@{refresh\_widgets\_state}}
+\index{refresh\_widgets\_state@{refresh\_widgets\_state}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{refresh\_widgets\_state()}{refresh\_widgets\_state()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::refresh\+\_\+widgets\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Refresh widgets state by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} 
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa91db742b41d352ba9f88620d649afb3}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a52a0aadc9b1e80bdcaaf1ad9d8997957}{slot\+\_\+activated\+\_\+key\+\_\+type()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}{Subkey\+Generate\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a52a0aadc9b1e80bdcaaf1ad9d8997957}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a52a0aadc9b1e80bdcaaf1ad9d8997957}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_activated\_key\_type@{slot\_activated\_key\_type}}
+\index{slot\_activated\_key\_type@{slot\_activated\_key\_type}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_activated\_key\_type}{slot\_activated\_key\_type}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+activated\+\_\+key\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ac515dabcf6c094c5eeb2bf88aa3aa9d3}{key\+\_\+type\+\_\+combo\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb909e9a6a0e4da780c75f7535}{refresh\+\_\+widgets\+\_\+state()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a13229f07ef0ed594357df1918af50d3d}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a13229f07ef0ed594357df1918af50d3d}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_authentication\_box\_changed@{slot\_authentication\_box\_changed}}
+\index{slot\_authentication\_box\_changed@{slot\_authentication\_box\_changed}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_authentication\_box\_changed}{slot\_authentication\_box\_changed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+authentication\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8ab50d8f47489c57e382b3fe231ba9a7}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8ab50d8f47489c57e382b3fe231ba9a7}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_certification\_box\_changed@{slot\_certification\_box\_changed}}
+\index{slot\_certification\_box\_changed@{slot\_certification\_box\_changed}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_certification\_box\_changed}{slot\_certification\_box\_changed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+certification\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a1f4dda7500b3de7476e5d1e7bd5b550b}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a1f4dda7500b3de7476e5d1e7bd5b550b}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_encryption\_box\_changed@{slot\_encryption\_box\_changed}}
+\index{slot\_encryption\_box\_changed@{slot\_encryption\_box\_changed}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_encryption\_box\_changed}{slot\_encryption\_box\_changed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+encryption\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a49d9f3bb2cfb17eb39dcd4dc0385234e}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a49d9f3bb2cfb17eb39dcd4dc0385234e}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_expire\_box\_changed@{slot\_expire\_box\_changed}}
+\index{slot\_expire\_box\_changed@{slot\_expire\_box\_changed}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_expire\_box\_changed}{slot\_expire\_box\_changed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+expire\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+when expire box was checked/unchecked, enable/disable the expiration date box 
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa8bf228ba2a773c0d38f9e5c2f20539d}{date\+\_\+edit\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}{expire\+\_\+check\+\_\+box\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aab426dec4b4655b215b09b490e05ad05}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aab426dec4b4655b215b09b490e05ad05}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_key\_gen\_accept@{slot\_key\_gen\_accept}}
+\index{slot\_key\_gen\_accept@{slot\_key\_gen\_accept}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_key\_gen\_accept}{slot\_key\_gen\_accept}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+check all line edits for false entries. Show error, when there is one, otherwise generate the key primary keys should have a reasonable expiration date (no more than 2 years in the future)
+
+create error message
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa8bf228ba2a773c0d38f9e5c2f20539d}{date\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a75f325b4a5aa8bcfcc411bdaf9279683}{error\+\_\+label\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}{expire\+\_\+check\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}{Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aa91db742b41d352ba9f88620d649afb3}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aedef4e8784c8a3edb06b0f2821500552}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_aedef4e8784c8a3edb06b0f2821500552}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!slot\_signing\_box\_changed@{slot\_signing\_box\_changed}}
+\index{slot\_signing\_box\_changed@{slot\_signing\_box\_changed}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_signing\_box\_changed}{slot\_signing\_box\_changed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+signing\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a90900b67eceb2d16af5de27f9f038f7f}{set\+\_\+signal\+\_\+slot()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a3caed2c7bcce5850c338de956dfaecfa}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a3caed2c7bcce5850c338de956dfaecfa}} 
+\index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!gen\_key\_info\_@{gen\_key\_info\_}}
+\index{gen\_key\_info\_@{gen\_key\_info\_}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
+\doxysubsubsection{\texorpdfstring{gen\_key\_info\_}{gen\_key\_info\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      std::make\_unique<GenKeyInfo>(\textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/key\+\_\+generate/Subkey\+Generate\+Dialog.\+h\item 
+src/ui/key\+\_\+generate/Subkey\+Generate\+Dialog.\+cpp\end{DoxyCompactItemize}

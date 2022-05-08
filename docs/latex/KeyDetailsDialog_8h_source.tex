@@ -1,0 +1,27 @@
+\hypertarget{KeyDetailsDialog_8h_source}{}\doxysection{Key\+Details\+Dialog.\+h}
+\label{KeyDetailsDialog_8h_source}\index{src/ui/keypair\_details/KeyDetailsDialog.h@{src/ui/keypair\_details/KeyDetailsDialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef \_\_KEYDETAILSDIALOG\_H\_\_}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define \_\_KEYDETAILSDIALOG\_H\_\_}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyDetailsDialog}{KeyDetailsDialog}} : \textcolor{keyword}{public} QDialog \{}
+\DoxyCodeLine{38   Q\_OBJECT}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40  \textcolor{keyword}{public}:}
+\DoxyCodeLine{41   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyDetailsDialog}{KeyDetailsDialog}}(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& key, QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43  \textcolor{keyword}{private}:}
+\DoxyCodeLine{44   QTabWidget* tab\_widget\_\{\};}
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_KEYDETAILSDIALOG\_H\_\_}}
+
+\end{DoxyCode}

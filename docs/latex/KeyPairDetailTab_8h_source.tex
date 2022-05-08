@@ -1,0 +1,62 @@
+\hypertarget{KeyPairDetailTab_8h_source}{}\doxysection{Key\+Pair\+Detail\+Tab.\+h}
+\label{KeyPairDetailTab_8h_source}\index{src/ui/keypair\_details/KeyPairDetailTab.h@{src/ui/keypair\_details/KeyPairDetailTab.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_KEYPAIRDETAILTAB\_H}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define GPGFRONTEND\_KEYPAIRDETAILTAB\_H}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}KeySetExpireDateDialog.h"{}}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}import\_export/KeyServerImportDialog.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}import\_export/KeyUploadDialog.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab}{KeyPairDetailTab}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{39   Q\_OBJECT}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{46   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_af8b600fbd7cd0fbb5b6183403bf870b2}{slot\_copy\_fingerprint}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52   \textcolor{keywordtype}{void} slot\_refresh\_key\_info();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58   \textcolor{keywordtype}{void} slot\_refresh\_key();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60  \textcolor{keyword}{private}:}
+\DoxyCodeLine{61   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} key\_;  }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_ad8c25061351d8e739b70d5466b87410e}{owner\_box\_}};          }
+\DoxyCodeLine{64   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aae9905764b5551208574a932fdfba29c}{key\_box\_}};            }
+\DoxyCodeLine{65   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_ada1c21cf59f1f19dfd4ffe0391bc1594}{fingerprint\_box\_}};    }
+\DoxyCodeLine{66   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a265ef140feec330e7341c1369c0aefab}{additional\_uid\_box\_}};  }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a9d57be18c2091827c04ec8809f4154be}{name\_var\_label\_}};         }
+\DoxyCodeLine{70   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a8c71b37aa040da50cb0105489a42e60d}{email\_var\_label\_}};        }
+\DoxyCodeLine{71   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a83b1290251a204def52677ae000a17ec}{comment\_var\_label\_}};      }
+\DoxyCodeLine{72   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a1485e603de56152f45d96e0ce5c50d9b}{key\_size\_var\_label\_}};      }
+\DoxyCodeLine{73   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aedc0e13ba1b64782e40f7c14af77f8f0}{expire\_var\_label\_}};       }
+\DoxyCodeLine{74   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aa45a2433ce82a88eeb2c9c282ab7b975}{created\_var\_label\_}};      }
+\DoxyCodeLine{75   QLabel* last\_update\_var\_label\_;   }
+\DoxyCodeLine{76   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aadcb3bbb4233fdc2deca5b509c46b2e1}{algorithm\_var\_label\_}};    }
+\DoxyCodeLine{77   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a65176245d280ae0734ef7b5b3f1c4cc4}{key\_id\_var\_label}};        }
+\DoxyCodeLine{78   QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a1bb1519e5cce51ad5796065232f66ad6}{fingerprint\_var\_label\_}};  }
+\DoxyCodeLine{79   QLabel* usage\_var\_label\_;}
+\DoxyCodeLine{80   QLabel* actual\_usage\_var\_label\_;}
+\DoxyCodeLine{81   QLabel* primary\_key\_exist\_var\_label\_;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83   QLabel* icon\_label\_;  }
+\DoxyCodeLine{84   QLabel* exp\_label\_;   }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86  \textcolor{keyword}{public}:}
+\DoxyCodeLine{93   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a76efd8f8d623813be1a329ad01972444}{KeyPairDetailTab}}(\textcolor{keyword}{const} std::string\& key\_id,}
+\DoxyCodeLine{94                             QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{95 \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_KEYPAIRDETAILTAB\_H}}
+
+\end{DoxyCode}

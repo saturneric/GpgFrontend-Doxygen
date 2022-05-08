@@ -1,0 +1,287 @@
+\hypertarget{classGpgFrontend_1_1GpgKeyImportExporter}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Import\+Exporter Class Reference}
+\label{classGpgFrontend_1_1GpgKeyImportExporter}\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Key\+Import\+Exporter\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Import\+Exporter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a0eede7c782d17b32d6c1f30cd8496561}{Gpg\+Key\+Import\+Exporter}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Import Exporter object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Import\+Information}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Import\+Key}} (Std\+Bype\+Array\+Ptr in\+Buffer)
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_aa9fbda8f6c3fa36a503075d7a124fa3f}{Export\+Keys}} (Key\+Id\+Args\+List\+Ptr \&uid\+\_\+list, Byte\+Array\+Ptr \&out\+\_\+buffer, bool secret=false) const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a8157afa844c8bf964ce83f5de71efc5a}{Export\+Keys}} (const Key\+Args\+List \&keys, Byte\+Array\+Ptr \&out\+Buffer, bool secret=false) const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}{Export\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+\_\+buffer) const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_aa0a73314ef94f397e2ef53d40abc9731}{Export\+Key\+Open\+SSH}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+\_\+buffer) const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a6a5e8d642ac5a3e98799af6495ef590b}{Export\+Secret\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+Buffer) const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_abf7c0442549ae8602e1249cdf0da55df}{Export\+Secret\+Key\+Shortest}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+Buffer) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ade0e4de4078b6589f863dbfc76786f0e}{ctx\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_a0eede7c782d17b32d6c1f30cd8496561}\label{classGpgFrontend_1_1GpgKeyImportExporter_a0eede7c782d17b32d6c1f30cd8496561}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!GpgKeyImportExporter@{GpgKeyImportExporter}}
+\index{GpgKeyImportExporter@{GpgKeyImportExporter}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{GpgKeyImportExporter()}{GpgKeyImportExporter()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Gpg\+Key\+Import\+Exporter (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Key Import Exporter object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}\label{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportKey@{ExportKey}}
+\index{ExportKey@{ExportKey}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportKey()}{ExportKey()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{Gpg\+Frontend\+::\+Byte\+Array\+Ptr \&}]{out\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em out\+\_\+buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a8930f958f3ca1f5566f63e8c2273837e}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_aa0a73314ef94f397e2ef53d40abc9731}\label{classGpgFrontend_1_1GpgKeyImportExporter_aa0a73314ef94f397e2ef53d40abc9731}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportKeyOpenSSH@{ExportKeyOpenSSH}}
+\index{ExportKeyOpenSSH@{ExportKeyOpenSSH}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportKeyOpenSSH()}{ExportKeyOpenSSH()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+SSH (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{Gpg\+Frontend\+::\+Byte\+Array\+Ptr \&}]{out\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em out\+\_\+buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a8930f958f3ca1f5566f63e8c2273837e}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_a8157afa844c8bf964ce83f5de71efc5a}\label{classGpgFrontend_1_1GpgKeyImportExporter_a8157afa844c8bf964ce83f5de71efc5a}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportKeys@{ExportKeys}}
+\index{ExportKeys@{ExportKeys}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportKeys()}{ExportKeys()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Keys (\begin{DoxyParamCaption}\item[{const Key\+Args\+List \&}]{keys,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{bool}]{secret = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+{\em out\+Buffer} & \\
+\hline
+{\em secret} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false
+\end{DoxyReturn}
+Export keys 
+\begin{DoxyParams}{Parameters}
+{\em keys} & keys used \\
+\hline
+{\em out\+Buffer} & output byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_aa9fbda8f6c3fa36a503075d7a124fa3f}\label{classGpgFrontend_1_1GpgKeyImportExporter_aa9fbda8f6c3fa36a503075d7a124fa3f}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportKeys@{ExportKeys}}
+\index{ExportKeys@{ExportKeys}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportKeys()}{ExportKeys()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Keys (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr \&}]{uid\+\_\+list,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{bool}]{secret = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid\+\_\+list} & \\
+\hline
+{\em out\+\_\+buffer} & \\
+\hline
+{\em secret} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false
+\end{DoxyReturn}
+Export Key 
+\begin{DoxyParams}{Parameters}
+{\em uid\+\_\+list} & key ids \\
+\hline
+{\em out\+\_\+buffer} & output byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if success 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_aa5979c21af58b874b33c203752dcc805}{Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Keys()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a76bf3784d751db78ed13bd9962e14472}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_a6a5e8d642ac5a3e98799af6495ef590b}\label{classGpgFrontend_1_1GpgKeyImportExporter_a6a5e8d642ac5a3e98799af6495ef590b}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportSecretKey@{ExportSecretKey}}
+\index{ExportSecretKey@{ExportSecretKey}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportSecretKey()}{ExportSecretKey()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em out\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false
+\end{DoxyReturn}
+Export the secret key of a key pair(including subkeys) 
+\begin{DoxyParams}{Parameters}
+{\em key} & target key pair \\
+\hline
+{\em out\+Buffer} & output byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if successful 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a8930f958f3ca1f5566f63e8c2273837e}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_abf7c0442549ae8602e1249cdf0da55df}\label{classGpgFrontend_1_1GpgKeyImportExporter_abf7c0442549ae8602e1249cdf0da55df}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportSecretKeyShortest@{ExportSecretKeyShortest}}
+\index{ExportSecretKeyShortest@{ExportSecretKeyShortest}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportSecretKeyShortest()}{ExportSecretKeyShortest()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{Gpg\+Frontend\+::\+Byte\+Array\+Ptr \&}]{out\+\_\+buffer }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em out\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a8930f958f3ca1f5566f63e8c2273837e}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}\label{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ImportKey@{ImportKey}}
+\index{ImportKey@{ImportKey}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ImportKey()}{ImportKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Frontend\+::\+Gpg\+Import\+Information}} Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key (\begin{DoxyParamCaption}\item[{Std\+Bype\+Array\+Ptr}]{in\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Import\+Information}}
+\end{DoxyReturn}
+Import key pair 
+\begin{DoxyParams}{Parameters}
+{\em in\+Buffer} & input byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Import information 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3b818c2a3e5c32fc32425b17e63367e2}{Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::import\+\_\+keys()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab64ba3049fac1aaa9fed4fb1c5919153}{Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::import\+\_\+keys()}}, \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}{Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}{Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Keys()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_ade0e4de4078b6589f863dbfc76786f0e}\label{classGpgFrontend_1_1GpgKeyImportExporter_ade0e4de4078b6589f863dbfc76786f0e}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ctx\_@{ctx\_}}
+\index{ctx\_@{ctx\_}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Key\+Import\+Exporter.\+h\item 
+src/core/function/gpg/Gpg\+Key\+Import\+Exporter.\+cpp\end{DoxyCompactItemize}

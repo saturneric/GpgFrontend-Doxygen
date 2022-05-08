@@ -1,0 +1,91 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox}{}\doxysection{Gpg\+Frontend\+::UI\+::Verify\+Key\+Detail\+Box Class Reference}
+\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox}\index{GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Verify\+Key\+Detail\+Box\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Verify\+Key\+Detail\+Box\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_afbbe8e87786cca020c9aa8759eb041a0}{Verify\+Key\+Detail\+Box}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&signature, QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new Verify Key Detail Box object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a3c73911b679c3e3b413e0b5ad8d48587}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a3c73911b679c3e3b413e0b5ad8d48587}} 
+void {\bfseries slot\+\_\+import\+\_\+form\+\_\+key\+\_\+server} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}{create\+\_\+key\+\_\+info\+\_\+grid}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&signature)
+\begin{DoxyCompactList}\small\item\em Create a key info grid object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a36bf3306b8564b49da04eee1dc653675}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a36bf3306b8564b49da04eee1dc653675}} 
+std\+::string {\bfseries fpr\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_afbbe8e87786cca020c9aa8759eb041a0}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_afbbe8e87786cca020c9aa8759eb041a0}} 
+\index{GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}!VerifyKeyDetailBox@{VerifyKeyDetailBox}}
+\index{VerifyKeyDetailBox@{VerifyKeyDetailBox}!GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}}
+\doxysubsubsection{\texorpdfstring{VerifyKeyDetailBox()}{VerifyKeyDetailBox()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::\+Verify\+Key\+Detail\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&}]{signature,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Verify Key Detail Box object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signature} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}{create\+\_\+key\+\_\+info\+\_\+grid()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_a627b5206311998dd3f45393344b195be}{Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Fingerprint()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_a859b4a3788c8490937f954d92686f490}{Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Status()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}} 
+\index{GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}!create\_key\_info\_grid@{create\_key\_info\_grid}}
+\index{create\_key\_info\_grid@{create\_key\_info\_grid}!GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}}
+\doxysubsubsection{\texorpdfstring{create\_key\_info\_grid()}{create\_key\_info\_grid()}}
+{\footnotesize\ttfamily QGrid\+Layout $\ast$ Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a key info grid object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signature} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QGrid\+Layout$\ast$ 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_ac494a4b0d91e08a70db77a399c9a0f30}{Gpg\+Frontend\+::beautify\+\_\+fingerprint()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a55a6485f6c2cc5bec0fdf02cd7e0d8ea}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Email()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a9ae7ccc48f6ada97bb6f57c422bfabc4}{Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a7bceca68800c3ada9280c29eaeb5affc}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Name()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_a3b143f6e13b71663d81fc0f326aad17f}{Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Summary()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a59e76d40f01e765f0544e5c6a2851be6}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Good()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_afbbe8e87786cca020c9aa8759eb041a0}{Verify\+Key\+Detail\+Box()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/widgets/Verify\+Key\+Detail\+Box.\+h\item 
+src/ui/widgets/Verify\+Key\+Detail\+Box.\+cpp\end{DoxyCompactItemize}

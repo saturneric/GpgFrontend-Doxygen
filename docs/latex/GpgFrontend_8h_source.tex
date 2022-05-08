@@ -1,0 +1,61 @@
+\hypertarget{GpgFrontend_8h_source}{}\doxysection{Gpg\+Frontend.\+h}
+\label{GpgFrontend_8h_source}\index{src/GpgFrontend.h@{src/GpgFrontend.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_H\_IN}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_H\_IN}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{comment}{// standard headers}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include <optional>}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include <filesystem>}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#ifdef WINDOWS}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#include <winsock2.h>}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{comment}{// i18n support}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#include <libintl.h>}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define \_(String) gettext (String)}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define gettext\_noop(String) String}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define N\_(String) gettext\_noop (String)}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{comment}{// fix macro bugs in mingw}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#ifdef WINDOWS}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#include <clocale>}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#undef vsnprintf}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#undef sprintf}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#undef snprintf}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{comment}{// logging system}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#define ELPP\_DEFAULT\_LOGGING\_FLAGS 8192}}
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#include <easylogging++.h>}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{comment}{// build info}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#define PROJECT\_NAME "{}GpgFrontend"{}}}
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#define OS\_PLATFORM 1}}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#define LOCALE\_DIR "{}"{}}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{comment}{// macros to find resource files}}
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#if defined(MACOS) \&\& defined(RELEASE)}}
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#define RESOURCE\_DIR(appDir) (appDir + "{}/../Resources/"{}})}
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#define RESOURCE\_DIR\_BOOST\_PATH(appDir) (appDir / "{}.."{}} / "{}Resources"{})}
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#elif defined(LINUX) \&\& defined(RELEASE)}}
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#define RESOURCE\_DIR(appDir) (appDir + "{}/../share/"{}})}
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#define RESOURCE\_DIR\_BOOST\_PATH(appDir) (appDir / "{}.."{}} / "{}share"{})}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#define RESOURCE\_DIR(appDir) (appDir)}}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#define RESOURCE\_DIR\_BOOST\_PATH(appDir) (appDir)}}
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GPGFRONTEND\_H\_IN}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\hypertarget{ArchiveFileOperator_8h_source}{}\doxysection{Archive\+File\+Operator.\+h}
+\label{ArchiveFileOperator_8h_source}\index{src/core/function/ArchiveFileOperator.h@{src/core/function/ArchiveFileOperator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_ARCHIVEFILEOPERATOR\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_ARCHIVEFILEOPERATOR\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}core/GpgFrontendCore.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/function/FileOperator.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{struct }\mbox{\hyperlink{structGpgFrontend_1_1ArchiveStruct}{ArchiveStruct}} \{}
+\DoxyCodeLine{38   \textcolor{keyword}{struct }archive *archive;}
+\DoxyCodeLine{39   \textcolor{keyword}{struct }archive\_entry *entry;}
+\DoxyCodeLine{40   \textcolor{keywordtype}{int} fd;}
+\DoxyCodeLine{41   \textcolor{keywordtype}{bool} is\_open;}
+\DoxyCodeLine{42   std::string name;}
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator}{ArchiveFileOperator}} \{}
+\DoxyCodeLine{46  \textcolor{keyword}{public}:}
+\DoxyCodeLine{47   \textcolor{keyword}{static} \textcolor{keywordtype}{void} ListArchive(\textcolor{keyword}{const} std::filesystem::path \&archive\_path);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49   \textcolor{keyword}{static} \textcolor{keywordtype}{void} CreateArchive(}
+\DoxyCodeLine{50       \textcolor{keyword}{const} std::filesystem::path \&base\_path,}
+\DoxyCodeLine{51       \textcolor{keyword}{const} std::filesystem::path \&archive\_path,}
+\DoxyCodeLine{52                             \textcolor{keywordtype}{int} compress,}
+\DoxyCodeLine{53                             \textcolor{keyword}{const} std::vector<std::filesystem::path> \&files);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55   \textcolor{keyword}{static} \textcolor{keywordtype}{void} ExtractArchive(}
+\DoxyCodeLine{56       \textcolor{keyword}{const} std::filesystem::path \&archive\_path,}
+\DoxyCodeLine{57       \textcolor{keyword}{const} std::filesystem::path \&base\_path);}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_ARCHIVEFILEOPERATOR\_H}}
+
+\end{DoxyCode}

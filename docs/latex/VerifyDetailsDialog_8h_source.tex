@@ -1,0 +1,39 @@
+\hypertarget{VerifyDetailsDialog_8h_source}{}\doxysection{Verify\+Details\+Dialog.\+h}
+\label{VerifyDetailsDialog_8h_source}\index{src/ui/details/VerifyDetailsDialog.h@{src/ui/details/VerifyDetailsDialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef \_\_VERIFYDETAILSDIALOG\_H\_\_}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define \_\_VERIFYDETAILSDIALOG\_H\_\_}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}ui/widgets/PlainTextEditorPage.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/widgets/VerifyKeyDetailBox.h"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog}{VerifyDetailsDialog}} : \textcolor{keyword}{public} QDialog \{}
+\DoxyCodeLine{42   Q\_OBJECT}
+\DoxyCodeLine{43  \textcolor{keyword}{public}:}
+\DoxyCodeLine{51   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ac73f0405e249f623ddd0de22b5130fda}{VerifyDetailsDialog}}(QWidget* parent, GpgError error,}
+\DoxyCodeLine{52                                GpgVerifyResult result);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60   \textcolor{keywordtype}{void} slot\_refresh();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62  \textcolor{keyword}{private}:}
+\DoxyCodeLine{63   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{KeyList}}* key\_list\_;               }
+\DoxyCodeLine{64   QHBoxLayout* main\_layout\_;        }
+\DoxyCodeLine{65   QWidget* m\_vbox\_\{\};               }
+\DoxyCodeLine{66   QByteArray* input\_data\_\{\};        }
+\DoxyCodeLine{67   QByteArray* input\_signature\_\{\};   }
+\DoxyCodeLine{68   QDialogButtonBox* button\_box\_\{\};  }
+\DoxyCodeLine{69   GpgVerifyResult m\_result\_;        }
+\DoxyCodeLine{70   gpgme\_error\_t error\_;             }
+\DoxyCodeLine{71 \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_VERIFYDETAILSDIALOG\_H\_\_}}
+
+\end{DoxyCode}

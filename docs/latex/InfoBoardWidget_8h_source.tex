@@ -1,0 +1,68 @@
+\hypertarget{InfoBoardWidget_8h_source}{}\doxysection{Info\+Board\+Widget.\+h}
+\label{InfoBoardWidget_8h_source}\index{src/ui/widgets/InfoBoardWidget.h@{src/ui/widgets/InfoBoardWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef \_\_VERIFYNOTIFICATION\_H\_\_}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define \_\_VERIFYNOTIFICATION\_H\_\_}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}PlainTextEditorPage.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/function/result\_analyse/GpgVerifyResultAnalyse.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/details/VerifyDetailsDialog.h"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }Ui\_InfoBoard;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{43 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{44   INFO\_ERROR\_OK = 0,}
+\DoxyCodeLine{45   INFO\_ERROR\_WARN = 1,}
+\DoxyCodeLine{46   INFO\_ERROR\_CRITICAL = 2,}
+\DoxyCodeLine{47   INFO\_ERROR\_NEUTRAL = 3,}
+\DoxyCodeLine{48 \} \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{InfoBoardStatus}};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{InfoBoardWidget}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{54   Q\_OBJECT}
+\DoxyCodeLine{55  \textcolor{keyword}{public}:}
+\DoxyCodeLine{62   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adeef521a8838bf2a1692c25d9b108010}{InfoBoardWidget}}(QWidget* parent);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4fd6f91eb435feb41ae93e44485646ab}{AssociateTextEdit}}(QTextEdit* edit);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adfa4acd435d2ec29f951f4e7e6a43f38}{AssociateTabWidget}}(QTabWidget* tab);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{84   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a456f15315a03107f7757d84362c1af71}{AddOptionalAction}}(\textcolor{keyword}{const} QString\& name,}
+\DoxyCodeLine{85                          \textcolor{keyword}{const} std::function<\textcolor{keywordtype}{void}()>\& action);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{91   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a7d7504339221bd680fb18698dd829b32}{ResetOptionActionsMenu}}();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{99   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac936cfc8e1b3af65d0d71b74fb3f0b02}{SetInfoBoard}}(\textcolor{keyword}{const} QString\& text,}
+\DoxyCodeLine{100                     \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{GpgFrontend::UI::InfoBoardStatus}} verify\_label\_status);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102  \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{108   \textcolor{keywordtype}{void} SlotReset();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{113   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a68f984815100f4ce281b9794f193e516}{SlotRefresh}}(\textcolor{keyword}{const} QString\& text,}
+\DoxyCodeLine{114                    \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{GpgFrontend::UI::InfoBoardStatus}} status);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{122   \textcolor{keywordtype}{void} slot\_copy();}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{128   \textcolor{keywordtype}{void} slot\_save();}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130  \textcolor{keyword}{private}:}
+\DoxyCodeLine{131   std::shared\_ptr<Ui\_InfoBoard> ui\_;  }
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133   QTextEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a6380776ea1bf9a020370589e1e20efd3}{m\_text\_page\_}}\{}
+\DoxyCodeLine{134       \textcolor{keyword}{nullptr}\};  }
+\DoxyCodeLine{135   QTabWidget* m\_tab\_widget\_\{\textcolor{keyword}{nullptr}\};  }
+\DoxyCodeLine{136 }
+\DoxyCodeLine{143   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a852c1fe10c7d3153a2146bcea4dbe9ad}{delete\_widgets\_in\_layout}}(QLayout* layout, \textcolor{keywordtype}{int} start\_index = 0);}
+\DoxyCodeLine{144 \};}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_VERIFYNOTIFICATION\_H\_\_}}
+
+\end{DoxyCode}

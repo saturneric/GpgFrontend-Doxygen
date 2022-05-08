@@ -1,0 +1,27 @@
+\hypertarget{aes__ssl_8h_source}{}\doxysection{aes\+\_\+ssl.\+h}
+\label{aes__ssl_8h_source}\index{src/core/function/aes/aes\_ssl.h@{src/core/function/aes/aes\_ssl.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_AES\_SSL\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_AES\_SSL\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}GpgFrontend.h"{}}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include <openssl/aes.h>}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include <openssl/evp.h>}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI}{GpgFrontend::RawAPI}} \{}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{int} \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_a1f2f6c82e9c904c3875a123a65564697}{aes\_256\_cbc\_init}}(uint8\_t *key\_data, \textcolor{keywordtype}{int} key\_data\_len, uint8\_t *salt,}
+\DoxyCodeLine{50                      EVP\_CIPHER\_CTX *e\_ctx, EVP\_CIPHER\_CTX *d\_ctx);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{60 uint8\_t *\mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_aa2bc88cf78b8da893f1b5c7e2e8ccf42}{aes\_256\_cbc\_encrypt}}(EVP\_CIPHER\_CTX *e, uint8\_t *plaintext, \textcolor{keywordtype}{int} *len);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{70 uint8\_t *\mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_a2e388ecafc7b859eda84b4e3c4e2576f}{aes\_256\_cbc\_decrypt}}(EVP\_CIPHER\_CTX *e, uint8\_t *ciphertext, \textcolor{keywordtype}{int} *len);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \} \textcolor{comment}{// namespace GpgFrontend::RawAPI}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GPGFRONTEND\_AES\_SSL\_H}}
+
+\end{DoxyCode}

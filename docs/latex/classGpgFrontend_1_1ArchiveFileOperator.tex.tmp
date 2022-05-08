@@ -1,0 +1,24 @@
+\hypertarget{classGpgFrontend_1_1ArchiveFileOperator}{}\doxysection{Gpg\+Frontend\+::Archive\+File\+Operator Class Reference}
+\label{classGpgFrontend_1_1ArchiveFileOperator}\index{GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Archive\+File\+Operator\+:
+% FIG 0
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ae2ca57d6af2f27560e97430a9eee3505}\label{classGpgFrontend_1_1ArchiveFileOperator_ae2ca57d6af2f27560e97430a9eee3505}} 
+static void {\bfseries List\+Archive} (const std\+::filesystem\+::path \&archive\+\_\+path)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_a872fc2bfdd8876d5bf6bc9893ff0d963}\label{classGpgFrontend_1_1ArchiveFileOperator_a872fc2bfdd8876d5bf6bc9893ff0d963}} 
+static void {\bfseries Create\+Archive} (const std\+::filesystem\+::path \&base\+\_\+path, const std\+::filesystem\+::path \&archive\+\_\+path, int compress, const std\+::vector$<$ std\+::filesystem\+::path $>$ \&files)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ae80009defc3c4a94a7180966fb82a0d8}\label{classGpgFrontend_1_1ArchiveFileOperator_ae80009defc3c4a94a7180966fb82a0d8}} 
+static void {\bfseries Extract\+Archive} (const std\+::filesystem\+::path \&archive\+\_\+path, const std\+::filesystem\+::path \&base\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Archive\+File\+Operator.\+h\item 
+src/core/function/Archive\+File\+Operator.\+cpp\end{DoxyCompactItemize}

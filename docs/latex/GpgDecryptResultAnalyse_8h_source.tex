@@ -1,0 +1,33 @@
+\hypertarget{GpgDecryptResultAnalyse_8h_source}{}\doxysection{Gpg\+Decrypt\+Result\+Analyse.\+h}
+\label{GpgDecryptResultAnalyse_8h_source}\index{src/core/function/result\_analyse/GpgDecryptResultAnalyse.h@{src/core/function/result\_analyse/GpgDecryptResultAnalyse.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_GPGDECRYPTRESULTANALYSE\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_GPGDECRYPTRESULTANALYSE\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}GpgResultAnalyse.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/GpgConstants.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1GpgDecryptResultAnalyse}{GpgDecryptResultAnalyse}}}
+\DoxyCodeLine{42     : \textcolor{keyword}{public} \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{GpgResultAnalyse}} \{}
+\DoxyCodeLine{43  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1GpgDecryptResultAnalyse}{GpgDecryptResultAnalyse}}(GpgError m\_error, GpgDecrResult m\_result);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{57   \textcolor{keywordtype}{void} do\_analyse() \textcolor{keyword}{final};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59  \textcolor{keyword}{private}:}
+\DoxyCodeLine{66   \textcolor{keywordtype}{void} print\_recipient(std::stringstream \&stream, gpgme\_recipient\_t recipient);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68   GpgError error\_;        }
+\DoxyCodeLine{69   GpgDecrResult result\_;  }
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_GPGDECRYPTRESULTANALYSE\_H}}
+
+\end{DoxyCode}

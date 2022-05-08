@@ -1,0 +1,36 @@
+\hypertarget{VersionCheckThread_8h_source}{}\doxysection{Version\+Check\+Thread.\+h}
+\label{VersionCheckThread_8h_source}\index{src/ui/thread/VersionCheckThread.h@{src/ui/thread/VersionCheckThread.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_VERSIONCHECKTHREAD\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_VERSIONCHECKTHREAD\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}ui/struct/SoftwareVersion.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckThread}{VersionCheckThread}} : \textcolor{keyword}{public} QThread \{}
+\DoxyCodeLine{42   Q\_OBJECT}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{49   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckThread_a75ad15966d6a8e24ca65b7d7ea608c25}{VersionCheckThread}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51  signals:}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{58   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckThread_a61ba582623b570964e8fc1515407d636}{SignalUpgradeVersion}}(\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{SoftwareVersion}} version);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{66   \textcolor{keywordtype}{void} run() \textcolor{keyword}{override};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68  \textcolor{keyword}{private}:}
+\DoxyCodeLine{69   QByteArray latest\_reply\_bytes\_;   }
+\DoxyCodeLine{70   QByteArray current\_reply\_bytes\_;  }
+\DoxyCodeLine{71 \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_VERSIONCHECKTHREAD\_H}}
+
+\end{DoxyCode}

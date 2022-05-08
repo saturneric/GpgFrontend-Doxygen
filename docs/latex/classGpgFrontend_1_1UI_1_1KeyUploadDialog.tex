@@ -1,0 +1,82 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog}{}\doxysection{Gpg\+Frontend\+::UI\+::Key\+Upload\+Dialog Class Reference}
+\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog}\index{GpgFrontend::UI::KeyUploadDialog@{GpgFrontend::UI::KeyUploadDialog}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+Upload\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Upload\+Dialog\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a168859b1774aa38b8ad4c423fe01f1c5}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a168859b1774aa38b8ad4c423fe01f1c5}} 
+void {\bfseries Slot\+Upload} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a51f63e30f26f7923def91519d347c0cf}{Key\+Upload\+Dialog}} (const Key\+Id\+Args\+List\+Ptr \&keys\+\_\+ids, QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new Key Upload Dialog object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a0f724649ca953b888f07d69c97fe45b6}{slot\+\_\+upload\+\_\+key\+\_\+to\+\_\+server}} (const Gpg\+Frontend\+::\+Byte\+Array \&keys\+\_\+data)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a520581c9828a62043ddea18da740401e}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a520581c9828a62043ddea18da740401e}} 
+void {\bfseries slot\+\_\+upload\+\_\+finished} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a71c4d23dcfa453bff540324b0a74f347}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a71c4d23dcfa453bff540324b0a74f347}} 
+Key\+List\+Ptr {\bfseries m\+\_\+keys\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a8c50ef3699448352d6272bb2faab5493}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a8c50ef3699448352d6272bb2faab5493}} 
+QByte\+Array {\bfseries m\+\_\+key\+\_\+data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a51f63e30f26f7923def91519d347c0cf}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a51f63e30f26f7923def91519d347c0cf}} 
+\index{GpgFrontend::UI::KeyUploadDialog@{GpgFrontend::UI::KeyUploadDialog}!KeyUploadDialog@{KeyUploadDialog}}
+\index{KeyUploadDialog@{KeyUploadDialog}!GpgFrontend::UI::KeyUploadDialog@{GpgFrontend::UI::KeyUploadDialog}}
+\doxysubsubsection{\texorpdfstring{KeyUploadDialog()}{KeyUploadDialog()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Upload\+Dialog\+::\+Key\+Upload\+Dialog (\begin{DoxyParamCaption}\item[{const Key\+Id\+Args\+List\+Ptr \&}]{keys\+\_\+ids,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Key Upload Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys\+\_\+ids} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a0f724649ca953b888f07d69c97fe45b6}\label{classGpgFrontend_1_1UI_1_1KeyUploadDialog_a0f724649ca953b888f07d69c97fe45b6}} 
+\index{GpgFrontend::UI::KeyUploadDialog@{GpgFrontend::UI::KeyUploadDialog}!slot\_upload\_key\_to\_server@{slot\_upload\_key\_to\_server}}
+\index{slot\_upload\_key\_to\_server@{slot\_upload\_key\_to\_server}!GpgFrontend::UI::KeyUploadDialog@{GpgFrontend::UI::KeyUploadDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_upload\_key\_to\_server}{slot\_upload\_key\_to\_server}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Upload\+Dialog\+::slot\+\_\+upload\+\_\+key\+\_\+to\+\_\+server (\begin{DoxyParamCaption}\item[{const Gpg\+Frontend\+::\+Byte\+Array \&}]{keys\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/import\+\_\+export/Key\+Upload\+Dialog.\+h\item 
+src/ui/import\+\_\+export/Key\+Upload\+Dialog.\+cpp\end{DoxyCompactItemize}

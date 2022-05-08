@@ -1,0 +1,265 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage}{}\doxysection{Gpg\+Frontend\+::UI\+::Plain\+Text\+Editor\+Page Class Reference}
+\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage}\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+
+
+Class for handling a single tab of the tabwidget.  
+
+
+
+
+{\ttfamily \#include $<$Plain\+Text\+Editor\+Page.\+h$>$}
+
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Plain\+Text\+Editor\+Page\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Plain\+Text\+Editor\+Page\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a68a9460aabd6cbcb2af9420dd2d96e0c}{Plain\+Text\+Editor\+Page}} (QString file\+\_\+path=\char`\"{}\char`\"{}, QWidget $\ast$parent=nullptr)
+\item 
+const QString \& \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}{Get\+File\+Path}} () const
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}{Set\+File\+Path}} (const QString \&file\+Path)
+\item 
+QPlain\+Text\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}{Get\+Text\+Page}} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}{Show\+Notification\+Widget}} (QWidget $\ast$widget, const char $\ast$class\+Name)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aee4f46e54f29da671838ed232e526700}{Close\+Note\+By\+Class}} (const char $\ast$class\+Name)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac3404f71f0f93cd7f5cb64d5d56624d7}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac3404f71f0f93cd7f5cb64d5d56624d7}} 
+void {\bfseries Read\+File} ()
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}{Read\+Done}} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a36781cbecac79299404bd5e1f7e608ea}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a36781cbecac79299404bd5e1f7e608ea}} 
+void {\bfseries Prepare\+To\+Destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}{slot\+\_\+format\+\_\+gpg\+\_\+header}} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}{slot\+\_\+insert\+\_\+text}} (const std\+::string \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}{detect\+\_\+encoding}} (const std\+::string \&data)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a770be847f7d01556a2674972f848e1aa}{detect\+\_\+cr\+\_\+lf}} (const QString \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a0e0a36396ea55f5dbe6197284cf98192}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a0e0a36396ea55f5dbe6197284cf98192}} 
+std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+Plain\+Text\+Editor $>$ {\bfseries ui\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}} 
+QString {\bfseries full\+\_\+file\+\_\+path\+\_\+}
+\begin{DoxyCompactList}\small\item\em The path to the file handled in the tab. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}} 
+bool {\bfseries sign\+\_\+marked\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em true, if the signed header is marked, false if not \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}} 
+bool {\bfseries read\+\_\+done\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a46cf39e2449ed63abad59e0a177635fd}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a46cf39e2449ed63abad59e0a177635fd}} 
+QThread $\ast$ {\bfseries read\+\_\+thread\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}} 
+bool {\bfseries binary\+\_\+mode\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a010bae8d8d967c8cc81cd42547de5dcb}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a010bae8d8d967c8cc81cd42547de5dcb}} 
+size\+\_\+t {\bfseries read\+\_\+bytes\+\_\+} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for handling a single tab of the tabwidget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a68a9460aabd6cbcb2af9420dd2d96e0c}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a68a9460aabd6cbcb2af9420dd2d96e0c}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!PlainTextEditorPage@{PlainTextEditorPage}}
+\index{PlainTextEditorPage@{PlainTextEditorPage}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{PlainTextEditorPage()}{PlainTextEditorPage()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Plain\+Text\+Editor\+Page (\begin{DoxyParamCaption}\item[{QString}]{file\+\_\+path = {\ttfamily \char`\"{}\char`\"{}},  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Add layout and add plaintextedit
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Path of the file handled in this tab \\
+\hline
+{\em parent} & Pointer to the parent widget \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}{full\+\_\+file\+\_\+path\+\_\+}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aee4f46e54f29da671838ed232e526700}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aee4f46e54f29da671838ed232e526700}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!CloseNoteByClass@{CloseNoteByClass}}
+\index{CloseNoteByClass@{CloseNoteByClass}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{CloseNoteByClass()}{CloseNoteByClass()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Close\+Note\+By\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
+
+Hide all widgets with the given class\+Name
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The classname of the widgets to hide \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae28089efbd236708601470f30f26faaa}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+find()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a770be847f7d01556a2674972f848e1aa}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a770be847f7d01556a2674972f848e1aa}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_cr\_lf@{detect\_cr\_lf}}
+\index{detect\_cr\_lf@{detect\_cr\_lf}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{detect\_cr\_lf()}{detect\_cr\_lf()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+cr\+\_\+lf (\begin{DoxyParamCaption}\item[{const QString \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}{slot\+\_\+insert\+\_\+text()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_encoding@{detect\_encoding}}
+\index{detect\_encoding@{detect\_encoding}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{detect\_encoding()}{detect\_encoding()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+encoding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}{slot\+\_\+insert\+\_\+text()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily const QString \& Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the filepath of the currently activated tab. 
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}{full\+\_\+file\+\_\+path\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a8fad090a19479a9fe89432300cca2b6c}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a02fa44ba0c56f3f6ae125f8490faf254}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Save\+As()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!GetTextPage@{GetTextPage}}
+\index{GetTextPage@{GetTextPage}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{GetTextPage()}{GetTextPage()}}
+{\footnotesize\ttfamily QPlain\+Text\+Edit $\ast$ Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return pointer tp the textedit of the currently activated tab. 
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a8fad090a19479a9fe89432300cca2b6c}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a66b6f6633e7ac71e5fe8b7814a81cadf}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_a0c531f2c673caed29225a323e750205f}{Gpg\+Frontend\+::\+UI\+::\+Find\+Widget\+::set\+\_\+background()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046162aad6728f9}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+add\+\_\+pgp\+\_\+header()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a76bf3784d751db78ed13bd9962e14472}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_aea9274389c3b049793fe5aa5a6adf63c}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+clean\+\_\+double\+\_\+line\+\_\+breaks()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a7f5a88922d06bee977335fb4b5f1d86d}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+cut\+\_\+pgp\+\_\+header()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae2d89e2cc6c99ff0e16b396d2381f904}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a1d61ea803e6c825bd54f42ba9ae85919}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a55926649e28a96318b89afba01b966bf}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}{slot\+\_\+insert\+\_\+text()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_aa9c986dd95984811479ea93230c74b5d}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!ReadDone@{ReadDone}}
+\index{ReadDone@{ReadDone}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{ReadDone()}{ReadDone()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Read\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a8fad090a19479a9fe89432300cca2b6c}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!SetFilePath@{SetFilePath}}
+\index{SetFilePath@{SetFilePath}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{SetFilePath()}{SetFilePath()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Set\+File\+Path (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path }\end{DoxyParamCaption})}
+
+Set filepath of currently activated tab.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The path to be set \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}{full\+\_\+file\+\_\+path\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a66b6f6633e7ac71e5fe8b7814a81cadf}{Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!ShowNotificationWidget@{ShowNotificationWidget}}
+\index{ShowNotificationWidget@{ShowNotificationWidget}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{ShowNotificationWidget()}{ShowNotificationWidget()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Show\+Notification\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{widget,  }\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
+
+Show additional widget at buttom of currently active tab
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to be added \\
+\hline
+{\em class\+Name} & The name to handle the added widget \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae28089efbd236708601470f30f26faaa}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+find()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_format\_gpg\_header@{slot\_format\_gpg\_header}}
+\index{slot\_format\_gpg\_header@{slot\_format\_gpg\_header}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{slot\_format\_gpg\_header}{slot\_format\_gpg\_header}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+format\+\_\+gpg\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Format the gpg header in another font-\/style 
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}{sign\+\_\+marked\+\_\+}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_insert\_text@{slot\_insert\_text}}
+\index{slot\_insert\_text@{slot\_insert\_text}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{slot\_insert\_text}{slot\_insert\_text}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+insert\+\_\+text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a770be847f7d01556a2674972f848e1aa}{detect\+\_\+cr\+\_\+lf()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}{detect\+\_\+encoding()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}{Get\+Text\+Page()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/widgets/Plain\+Text\+Editor\+Page.\+h\item 
+src/ui/widgets/Plain\+Text\+Editor\+Page.\+cpp\end{DoxyCompactItemize}

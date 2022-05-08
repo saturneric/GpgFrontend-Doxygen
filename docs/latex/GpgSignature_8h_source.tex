@@ -1,0 +1,59 @@
+\hypertarget{GpgSignature_8h_source}{}\doxysection{Gpg\+Signature.\+h}
+\label{GpgSignature_8h_source}\index{src/core/model/GpgSignature.h@{src/core/model/GpgSignature.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_GPGSIGNATURE\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_GPGSIGNATURE\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <boost/date\_time/gregorian/greg\_date.hpp>}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <boost/date\_time/posix\_time/conversion.hpp>}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}core/GpgConstants.h"{}}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \{}
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   [[nodiscard]] gpgme\_validity\_t GetValidity() \textcolor{keyword}{const};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{57   [[nodiscard]] gpgme\_error\_t GetStatus() \textcolor{keyword}{const};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64   [[nodiscard]] gpgme\_error\_t GetSummary() \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71   [[nodiscard]] std::string GetPubkeyAlgo() \textcolor{keyword}{const};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{78   [[nodiscard]] std::string GetHashAlgo() \textcolor{keyword}{const};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{85   [[nodiscard]] boost::posix\_time::ptime GetCreateTime() \textcolor{keyword}{const};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{92   [[nodiscard]] boost::posix\_time::ptime GetExpireTime() \textcolor{keyword}{const};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{99   [[nodiscard]] std::string GetFingerprint() \textcolor{keyword}{const};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{105   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_ab7a4489b35d918503076b2659d14fafe}{GpgSignature}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_a44f137a457ac109d145a1cdd8e544e3a}{\string~GpgSignature}}();}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{118   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}}(gpgme\_signature\_t sig);}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature_aeae075c7b9c628f558d6fedbc8b9233a}{GpgSignature}}(\mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&\&) noexcept;}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{130   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&) = delete;}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{137   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&operator=(\mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&\&) noexcept;}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{144   \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&operator=(const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}} \&) = delete;}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146  private:}
+\DoxyCodeLine{147   using KeySignatrueRefHandler =}
+\DoxyCodeLine{148       std::unique\_ptr<struct \_gpgme\_signature,}
+\DoxyCodeLine{149                       std::function<\textcolor{keywordtype}{void}(gpgme\_signature\_t)>>;  }
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151   KeySignatrueRefHandler signature\_ref\_ = \textcolor{keywordtype}{nullptr};  }
+\DoxyCodeLine{152 \};}
+\DoxyCodeLine{153 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_GPGSIGNATURE\_H}}
+
+\end{DoxyCode}

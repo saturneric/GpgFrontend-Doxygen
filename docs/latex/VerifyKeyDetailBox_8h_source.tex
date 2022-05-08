@@ -1,0 +1,32 @@
+\hypertarget{VerifyKeyDetailBox_8h_source}{}\doxysection{Verify\+Key\+Detail\+Box.\+h}
+\label{VerifyKeyDetailBox_8h_source}\index{src/ui/widgets/VerifyKeyDetailBox.h@{src/ui/widgets/VerifyKeyDetailBox.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef \_\_VERIFYKEYDETAILBOX\_H\_\_}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define \_\_VERIFYKEYDETAILBOX\_H\_\_}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/import\_export/KeyServerImportDialog.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}ui/widgets/KeyList.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox}{VerifyKeyDetailBox}} : \textcolor{keyword}{public} QGroupBox \{}
+\DoxyCodeLine{41   Q\_OBJECT}
+\DoxyCodeLine{42  \textcolor{keyword}{public}:}
+\DoxyCodeLine{49   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_afbbe8e87786cca020c9aa8759eb041a0}{VerifyKeyDetailBox}}(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}}\& signature, QWidget* parent);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57   \textcolor{keywordtype}{void} slot\_import\_form\_key\_server();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59  \textcolor{keyword}{private}:}
+\DoxyCodeLine{66   QGridLayout* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}{create\_key\_info\_grid}}(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{GpgSignature}}\& signature);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68   std::string fpr\_;  }
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_VERIFYKEYDETAILBOX\_H\_\_}}
+
+\end{DoxyCode}

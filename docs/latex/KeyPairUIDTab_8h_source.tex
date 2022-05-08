@@ -1,0 +1,87 @@
+\hypertarget{KeyPairUIDTab_8h_source}{}\doxysection{Key\+Pair\+UIDTab.\+h}
+\label{KeyPairUIDTab_8h_source}\index{src/ui/keypair\_details/KeyPairUIDTab.h@{src/ui/keypair\_details/KeyPairUIDTab.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_KEYPAIRUIDTAB\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_KEYPAIRUIDTAB\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}KeyNewUIDDialog.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}KeyUIDSignDialog.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab}{KeyPairUIDTab}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{40   Q\_OBJECT}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42  \textcolor{keyword}{public}:}
+\DoxyCodeLine{49   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_af18c4f08a127d919a316c7e27ba338d3}{KeyPairUIDTab}}(\textcolor{keyword}{const} std::string\& key\_id, QWidget* parent);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51  signals:}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57   \textcolor{keywordtype}{void} SignalUpdateUIDInfo();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59  \textcolor{keyword}{private}:}
+\DoxyCodeLine{60   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} m\_key\_;}
+\DoxyCodeLine{61   QTableWidget* uid\_list\_\{\};                          }
+\DoxyCodeLine{62   QTableWidget* sig\_list\_\{\};                          }
+\DoxyCodeLine{63   QTabWidget* tofu\_tabs\_\{\};                           }
+\DoxyCodeLine{64   QMenu* manage\_selected\_uid\_menu\_\{\};                 }
+\DoxyCodeLine{65   QMenu* uid\_popup\_menu\_\{\};                           }
+\DoxyCodeLine{66   QMenu* sign\_popup\_menu\_\{\};                          }
+\DoxyCodeLine{67   std::vector<GpgUID> buffered\_uids\_;                 }
+\DoxyCodeLine{68   std::vector<GpgKeySignature> buffered\_signatures\_;  }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a0511f5714548920cf3563306536d0bd7}{create\_uid\_list}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a32dc14242d88ca168ae71e9a895d2b29}{create\_sign\_list}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a5c029e55323d54aa2306267cea1809ea}{create\_manage\_uid\_menu}}();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{92   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a2a87d3ed720a57a5d96a108c7a9827d7}{create\_uid\_popup\_menu}}();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{98   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a7653654c81149c48e7e4d5f0c00c360f}{create\_sign\_popup\_menu}}();}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{105   UIDArgsListPtr \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a7898b6fa328bfbc55ee2721bca4b2af1}{get\_uid\_checked}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{112   UIDArgsListPtr \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a161bc9787be40a32f487c79faaeb54bf}{get\_uid\_selected}}();}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{119   SignIdArgsListPtr \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a2d7c328d726436061f19a287e481268d}{get\_sign\_selected}}();}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{127   \textcolor{keywordtype}{void} slot\_refresh\_uid\_list();}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{133   \textcolor{keywordtype}{void} slot\_refresh\_tofu\_info();}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{139   \textcolor{keywordtype}{void} slot\_refresh\_sig\_list();}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{145   \textcolor{keywordtype}{void} slot\_add\_sign();}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{151   \textcolor{keywordtype}{void} slot\_add\_sign\_single();}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{157   \textcolor{keywordtype}{void} slot\_add\_uid();}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{163   \textcolor{keywordtype}{void} slot\_del\_uid();}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{169   \textcolor{keywordtype}{void} slot\_del\_uid\_single();}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{175   \textcolor{keywordtype}{void} slot\_set\_primary\_uid();}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{181   \textcolor{keywordtype}{void} slot\_del\_sign();}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{187   \textcolor{keywordtype}{void} slot\_refresh\_key();}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{194   \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a16f1ae88d6a417b614cfc6ae1852187c}{slot\_add\_uid\_result}}(\textcolor{keywordtype}{int} result);}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{202   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_a35d0b436cf13fa127dbba5b12f8f9144}{contextMenuEvent}}(QContextMenuEvent* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{203 \};}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_KEYPAIRUIDTAB\_H}}
+
+\end{DoxyCode}

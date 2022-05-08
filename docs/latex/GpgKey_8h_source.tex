@@ -1,0 +1,114 @@
+\hypertarget{GpgKey_8h_source}{}\doxysection{Gpg\+Key.\+h}
+\label{GpgKey_8h_source}\index{src/core/model/GpgKey.h@{src/core/model/GpgKey.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_GPGKEY\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_GPGKEY\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <boost/date\_time.hpp>}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <boost/date\_time/posix\_time/conversion.hpp>}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}GpgSubKey.h"{}}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include "{}GpgUID.h"{}}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} \{}
+\DoxyCodeLine{45  \textcolor{keyword}{public}:}
+\DoxyCodeLine{52   [[nodiscard]] \textcolor{keywordtype}{bool} IsGood() \textcolor{keyword}{const};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59   [[nodiscard]] std::string GetId() \textcolor{keyword}{const};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66   [[nodiscard]] std::string GetName() \textcolor{keyword}{const};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73   [[nodiscard]] std::string GetEmail() \textcolor{keyword}{const};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{80   [[nodiscard]] std::string GetComment() \textcolor{keyword}{const};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{87   [[nodiscard]] std::string GetFingerprint() \textcolor{keyword}{const};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{94   [[nodiscard]] std::string GetProtocol() \textcolor{keyword}{const};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{101   [[nodiscard]] std::string GetOwnerTrust() \textcolor{keyword}{const};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{108   [[nodiscard]] std::string GetPublicKeyAlgo() \textcolor{keyword}{const};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{115   [[nodiscard]] boost::posix\_time::ptime GetLastUpdateTime() \textcolor{keyword}{const};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{122   [[nodiscard]] boost::posix\_time::ptime GetExpireTime() \textcolor{keyword}{const};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{129   [[nodiscard]] boost::posix\_time::ptime GetCreateTime() \textcolor{keyword}{const};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{136   [[nodiscard]] \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} GetPrimaryKeyLength() \textcolor{keyword}{const};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{144   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasEncryptionCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{153   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasActualEncryptionCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{161   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasSigningCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{169   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasActualSigningCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{177   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasCertificationCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{185   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasActualCertificationCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{193   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasAuthenticationCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{201   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasActualAuthenticationCapability() \textcolor{keyword}{const};}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{209   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasCardKey() \textcolor{keyword}{const};}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{217   [[nodiscard]] \textcolor{keywordtype}{bool} IsPrivateKey() \textcolor{keyword}{const};}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{225   [[nodiscard]] \textcolor{keywordtype}{bool} IsExpired() \textcolor{keyword}{const};}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{233   [[nodiscard]] \textcolor{keywordtype}{bool} IsRevoked() \textcolor{keyword}{const};}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{241   [[nodiscard]] \textcolor{keywordtype}{bool} IsDisabled() \textcolor{keyword}{const};}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{249   [[nodiscard]] \textcolor{keywordtype}{bool} IsHasMasterKey() \textcolor{keyword}{const};}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{256   [[nodiscard]] std::unique\_ptr<std::vector<GpgSubKey>> GetSubKeys() \textcolor{keyword}{const};}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{263   [[nodiscard]] std::unique\_ptr<std::vector<GpgUID>> GetUIDs() \textcolor{keyword}{const};}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{269   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}{GpgKey}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{276   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}(gpgme\_key\_t\&\& key);}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{282   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}{\string~GpgKey}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{289   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}{GpgKey}}(\textcolor{keyword}{const} gpgme\_key\_t\& key) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{296   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}(\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\&\& k) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{304   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& operator=(\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\&\& k) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{312   \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_ac2735d7bec89fb81ec1d88de5402bceb}{operator=}}(\textcolor{keyword}{const} gpgme\_key\_t\& key) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{313 }
+\DoxyCodeLine{321   \textcolor{keywordtype}{bool} operator==(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& o) \textcolor{keyword}{const};}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{330   \textcolor{keywordtype}{bool} operator<=(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& o) \textcolor{keyword}{const};}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{337   \textcolor{keyword}{explicit} \textcolor{keyword}{operator} gpgme\_key\_t() \textcolor{keyword}{const};}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{344   [[nodiscard]] \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}} Copy() \textcolor{keyword}{const};}
+\DoxyCodeLine{345 }
+\DoxyCodeLine{346  \textcolor{keyword}{private}:}
+\DoxyCodeLine{351   \textcolor{keyword}{struct }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter}{\_key\_ref\_deleter}} \{}
+\DoxyCodeLine{352     \textcolor{keywordtype}{void} operator()(gpgme\_key\_t \_key);}
+\DoxyCodeLine{353   \};}
+\DoxyCodeLine{354 }
+\DoxyCodeLine{355   \textcolor{keyword}{using} KeyRefHandler =}
+\DoxyCodeLine{356       std::unique\_ptr<struct \_gpgme\_key, \_key\_ref\_deleter>;  }
+\DoxyCodeLine{357 }
+\DoxyCodeLine{358   KeyRefHandler key\_ref\_ = \textcolor{keyword}{nullptr};  }
+\DoxyCodeLine{359 \};}
+\DoxyCodeLine{360 }
+\DoxyCodeLine{361 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{362 }
+\DoxyCodeLine{363 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_GPGKEY\_H}}
+
+\end{DoxyCode}

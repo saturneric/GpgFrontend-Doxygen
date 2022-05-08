@@ -1,0 +1,42 @@
+\hypertarget{KeyUIDSignDialog_8h_source}{}\doxysection{Key\+UIDSign\+Dialog.\+h}
+\label{KeyUIDSignDialog_8h_source}\index{src/ui/keypair\_details/KeyUIDSignDialog.h@{src/ui/keypair\_details/KeyUIDSignDialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_KEYUIDSIGNDIALOG\_H}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define GPGFRONTEND\_KEYUIDSIGNDIALOG\_H}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/widgets/KeyList.h"{}}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog}{KeyUIDSignDialog}} : \textcolor{keyword}{public} QDialog \{}
+\DoxyCodeLine{37   Q\_OBJECT}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39  \textcolor{keyword}{public}:}
+\DoxyCodeLine{47   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}{KeyUIDSignDialog}}(\textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& key, UIDArgsListPtr uid,}
+\DoxyCodeLine{48                             QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50  signals:}
+\DoxyCodeLine{55   \textcolor{keywordtype}{void} SignalKeyUIDSignUpdate();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57  \textcolor{keyword}{private}:}
+\DoxyCodeLine{58   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{KeyList}}* m\_key\_list\_;           }
+\DoxyCodeLine{59   QPushButton* sign\_key\_button\_;  }
+\DoxyCodeLine{60   QDateTimeEdit* expires\_edit\_;   }
+\DoxyCodeLine{61   QCheckBox* non\_expire\_check\_;   }
+\DoxyCodeLine{62   UIDArgsListPtr m\_uids\_;         }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64   \textcolor{keyword}{const} \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{GpgKey}}\& m\_key\_;  }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{72   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}{slot\_sign\_key}}(\textcolor{keywordtype}{bool} clicked);}
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_KEYUIDSIGNDIALOG\_H}}
+
+\end{DoxyCode}

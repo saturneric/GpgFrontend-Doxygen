@@ -1,0 +1,78 @@
+\hypertarget{KeygenDialog_8h_source}{}\doxysection{Keygen\+Dialog.\+h}
+\label{KeygenDialog_8h_source}\index{src/ui/key\_generate/KeygenDialog.h@{src/ui/key\_generate/KeygenDialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#ifndef \_\_KEYGENDIALOG\_H\_\_}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define \_\_KEYGENDIALOG\_H\_\_}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}core/GpgContext.h"{}}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}core/GpgGenKeyInfo.h"{}}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog}{KeyGenDialog}} : \textcolor{keyword}{public} QDialog \{}
+\DoxyCodeLine{41   Q\_OBJECT}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43  \textcolor{keyword}{public}:}
+\DoxyCodeLine{51   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3aef8d2bb8e0d36842532726a6796ab9}{KeyGenDialog}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53  signals:}
+\DoxyCodeLine{58   \textcolor{keywordtype}{void} SignalKeyGenerated();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60  \textcolor{keyword}{private}:}
+\DoxyCodeLine{66   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e6554b47e0dd6c2025ccb0d1d0cb658}{create\_key\_usage\_group\_box}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73   QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}{create\_basic\_info\_group\_box}}();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79   QRegularExpression re\_email\_\{}
+\DoxyCodeLine{80       R\textcolor{stringliteral}{"{}((?:[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+(?:\(\backslash\).[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+)*|"{}(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21\(\backslash\)x23-\/\(\backslash\)x5b\(\backslash\)x5d-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])*"{})@(?:(?:[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?\(\backslash\).)+[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?|\(\backslash\)[(?:(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9]))\(\backslash\).)\{3\}(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9])|[a-\/z0-\/9-\/]*[a-\/z0-\/9]:(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21-\/\(\backslash\)x5a\(\backslash\)x53-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])+)\(\backslash\)]))"{}\};}}
+\DoxyCodeLine{81 \textcolor{stringliteral}{}}
+\DoxyCodeLine{86 \textcolor{stringliteral}{  QStringList \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03a8e1c8f2c1887732d36a346185bb40}{error\_messages\_}};  }}
+\DoxyCodeLine{88 \textcolor{stringliteral}{  std::unique\_ptr<GenKeyInfo> gen\_key\_info\_ =}}
+\DoxyCodeLine{89 \textcolor{stringliteral}{      std::make\_unique<GenKeyInfo>();  }}
+\DoxyCodeLine{90 \textcolor{stringliteral}{  QDialogButtonBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}{button\_box\_}};       }}
+\DoxyCodeLine{91 \textcolor{stringliteral}{  QLabel* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}{error\_label\_}}\{\};              }}
+\DoxyCodeLine{92 \textcolor{stringliteral}{  QLineEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}{name\_edit\_}}\{\};             }}
+\DoxyCodeLine{93 \textcolor{stringliteral}{  QLineEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}{email\_edit\_}}\{\};            }}
+\DoxyCodeLine{94 \textcolor{stringliteral}{  QLineEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}{comment\_edit\_}}\{\};          }}
+\DoxyCodeLine{95 \textcolor{stringliteral}{  QSpinBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}{key\_size\_spin\_box\_}}\{\};      }}
+\DoxyCodeLine{96 \textcolor{stringliteral}{  QComboBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}{key\_type\_combo\_box\_}}\{\};    }}
+\DoxyCodeLine{97 \textcolor{stringliteral}{  QDateTimeEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}{date\_edit\_}}\{\};         }}
+\DoxyCodeLine{98 \textcolor{stringliteral}{  QCheckBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}{expire\_check\_box\_}}\{\};      }}
+\DoxyCodeLine{99 \textcolor{stringliteral}{  QCheckBox* no\_pass\_phrase\_check\_box\_\{\};}}
+\DoxyCodeLine{100 \textcolor{stringliteral}{  QGroupBox* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7b1b9cb46c0547c1e561e56d55616cf1}{key\_usage\_group\_box\_}}\{\};  }}
+\DoxyCodeLine{102 \textcolor{stringliteral}{  QDateTime max\_date\_time\_;           }}
+\DoxyCodeLine{103 \textcolor{stringliteral}{  std::vector<QCheckBox*> \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}{key\_usage\_check\_boxes\_}};  }}
+\DoxyCodeLine{104 \textcolor{stringliteral}{}}
+\DoxyCodeLine{109 \textcolor{stringliteral}{  }\textcolor{keywordtype}{void} generate\_key\_dialog();}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{114   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a4eb53559f200092cd299f7a90c03cdbb}{refresh\_widgets\_state}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{120   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\_signal\_slot}}();}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{129   \textcolor{keywordtype}{bool} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae8aeaff7be0b1552b29d1f209af0bd28}{check\_email\_address}}(\textcolor{keyword}{const} QString\& str);}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{137   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a516aa59c71a9ddf06c51e93252e93b76}{slot\_expire\_box\_changed}}();}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{143   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}{slot\_key\_gen\_accept}}();}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{150   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae611933ccd6fd67e65a2cf1ff09b5e8f}{slot\_encryption\_box\_changed}}(\textcolor{keywordtype}{int} state);}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{157   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03b7fe3e34147e404ca3ca6a0aa80cfc}{slot\_signing\_box\_changed}}(\textcolor{keywordtype}{int} state);}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{164   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a48e953cd49efde2315868e8606af7226}{slot\_certification\_box\_changed}}(\textcolor{keywordtype}{int} state);}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{171   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a904d5e72a1946382ddfca80dc57c4db5}{slot\_authentication\_box\_changed}}(\textcolor{keywordtype}{int} state);}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{178   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046abb56d53bdbe67838b84fdc}{slot\_activated\_key\_type}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{179 \};}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_KEYGENDIALOG\_H\_\_}}
+
+\end{DoxyCode}

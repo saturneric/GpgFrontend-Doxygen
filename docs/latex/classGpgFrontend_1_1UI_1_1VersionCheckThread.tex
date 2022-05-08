@@ -1,0 +1,60 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread}{}\doxysection{Gpg\+Frontend\+::UI\+::Version\+Check\+Thread Class Reference}
+\label{classGpgFrontend_1_1UI_1_1VersionCheckThread}\index{GpgFrontend::UI::VersionCheckThread@{GpgFrontend::UI::VersionCheckThread}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Version\+Check\+Thread\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Version\+Check\+Thread\+:
+% FIG 1
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckThread_a61ba582623b570964e8fc1515407d636}{Signal\+Upgrade\+Version}} (\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} version)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread_a75ad15966d6a8e24ca65b7d7ea608c25}\label{classGpgFrontend_1_1UI_1_1VersionCheckThread_a75ad15966d6a8e24ca65b7d7ea608c25}} 
+{\bfseries Version\+Check\+Thread} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Version Check Thread object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread_a9ee63ba62c4bf94c1d2ca25773331abb}\label{classGpgFrontend_1_1UI_1_1VersionCheckThread_a9ee63ba62c4bf94c1d2ca25773331abb}} 
+void {\bfseries run} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread_a78325710b994a7ee11ac7e5fb81ee9a3}\label{classGpgFrontend_1_1UI_1_1VersionCheckThread_a78325710b994a7ee11ac7e5fb81ee9a3}} 
+QByte\+Array {\bfseries latest\+\_\+reply\+\_\+bytes\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread_ad5b96e0558a4fe1416fc8db8c1ae34f9}\label{classGpgFrontend_1_1UI_1_1VersionCheckThread_ad5b96e0558a4fe1416fc8db8c1ae34f9}} 
+QByte\+Array {\bfseries current\+\_\+reply\+\_\+bytes\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VersionCheckThread_a61ba582623b570964e8fc1515407d636}\label{classGpgFrontend_1_1UI_1_1VersionCheckThread_a61ba582623b570964e8fc1515407d636}} 
+\index{GpgFrontend::UI::VersionCheckThread@{GpgFrontend::UI::VersionCheckThread}!SignalUpgradeVersion@{SignalUpgradeVersion}}
+\index{SignalUpgradeVersion@{SignalUpgradeVersion}!GpgFrontend::UI::VersionCheckThread@{GpgFrontend::UI::VersionCheckThread}}
+\doxysubsubsection{\texorpdfstring{SignalUpgradeVersion}{SignalUpgradeVersion}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Version\+Check\+Thread\+::\+Signal\+Upgrade\+Version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}}}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}{Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::get\+Latest\+Version()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a08ba4521f68c488b23b651e201011759}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/thread/Version\+Check\+Thread.\+h\item 
+src/ui/thread/Version\+Check\+Thread.\+cpp\end{DoxyCompactItemize}

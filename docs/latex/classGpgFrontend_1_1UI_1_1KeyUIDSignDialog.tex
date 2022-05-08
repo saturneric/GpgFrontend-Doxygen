@@ -1,0 +1,103 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog}{}\doxysection{Gpg\+Frontend\+::UI\+::Key\+UIDSign\+Dialog Class Reference}
+\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog}\index{GpgFrontend::UI::KeyUIDSignDialog@{GpgFrontend::UI::KeyUIDSignDialog}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+UIDSign\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+UIDSign\+Dialog\+:
+% FIG 1
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ae1943f11c25f5696103f113493462a76}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ae1943f11c25f5696103f113493462a76}} 
+void {\bfseries Signal\+Key\+UIDSign\+Update} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}{Key\+UIDSign\+Dialog}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, UIDArgs\+List\+Ptr uid, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Key U I D Sign Dialog object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}{slot\+\_\+sign\+\_\+key}} (bool clicked)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a1deb1df41b7a9b4f93fb717280d3b502}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a1deb1df41b7a9b4f93fb717280d3b502}} 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{Key\+List}} $\ast$ {\bfseries m\+\_\+key\+\_\+list\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ab510bc8feea27f5a2f5361475a50d106}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ab510bc8feea27f5a2f5361475a50d106}} 
+QPush\+Button $\ast$ {\bfseries sign\+\_\+key\+\_\+button\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a8201baff3129df1090311964f009ae2b}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a8201baff3129df1090311964f009ae2b}} 
+QDate\+Time\+Edit $\ast$ {\bfseries expires\+\_\+edit\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ad493cf9abfab589f5560131cda68539d}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ad493cf9abfab589f5560131cda68539d}} 
+QCheck\+Box $\ast$ {\bfseries non\+\_\+expire\+\_\+check\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_acb34dd25f9d75feb0ec625ce81d47cff}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_acb34dd25f9d75feb0ec625ce81d47cff}} 
+UIDArgs\+List\+Ptr {\bfseries m\+\_\+uids\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ad9ae0e31f60685d600a695d1d4b0c025}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_ad9ae0e31f60685d600a695d1d4b0c025}} 
+const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \& {\bfseries m\+\_\+key\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}} 
+\index{GpgFrontend::UI::KeyUIDSignDialog@{GpgFrontend::UI::KeyUIDSignDialog}!KeyUIDSignDialog@{KeyUIDSignDialog}}
+\index{KeyUIDSignDialog@{KeyUIDSignDialog}!GpgFrontend::UI::KeyUIDSignDialog@{GpgFrontend::UI::KeyUIDSignDialog}}
+\doxysubsubsection{\texorpdfstring{KeyUIDSignDialog()}{KeyUIDSignDialog()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{UIDArgs\+List\+Ptr}]{uid,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Key U I D Sign Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em uid} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+A Date\+Time after 5 Years is recommend.
+
+Note further that the Open\+PGP protocol uses 32 bit values for timestamps and thus can only encode dates up to the year 2106.
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}{Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a8930f958f3ca1f5566f63e8c2273837e}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}{Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a7eaf1e722d8a59f6a86d8e732217d89c}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a66711ffd7f4af58594b7de984a13c327}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a2d28e72cfb741deeadfe02ff456fb490}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Certification\+Capability()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_aadac1b776764ee9d0ca4f8bb9f9e0741}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a637f2a5e9b9b7cafcdaada00c2f7de87}{Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}{slot\+\_\+sign\+\_\+key()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}\label{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}} 
+\index{GpgFrontend::UI::KeyUIDSignDialog@{GpgFrontend::UI::KeyUIDSignDialog}!slot\_sign\_key@{slot\_sign\_key}}
+\index{slot\_sign\_key@{slot\_sign\_key}!GpgFrontend::UI::KeyUIDSignDialog@{GpgFrontend::UI::KeyUIDSignDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_sign\_key}{slot\_sign\_key}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::slot\+\_\+sign\+\_\+key (\begin{DoxyParamCaption}\item[{bool}]{clicked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em clicked} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ac1e5046770c36f67aab34715e50c0a33}{Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Checked()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Manager $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_aa5979c21af58b874b33c203752dcc805}{Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Keys()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}{Key\+UIDSign\+Dialog()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/keypair\+\_\+details/Key\+UIDSign\+Dialog.\+h\item 
+src/ui/keypair\+\_\+details/Key\+UIDSign\+Dialog.\+cpp\end{DoxyCompactItemize}

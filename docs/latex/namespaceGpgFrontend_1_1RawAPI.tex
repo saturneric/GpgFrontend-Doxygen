@@ -1,0 +1,103 @@
+\hypertarget{namespaceGpgFrontend_1_1RawAPI}{}\doxysection{Gpg\+Frontend\+::Raw\+API Namespace Reference}
+\label{namespaceGpgFrontend_1_1RawAPI}\index{GpgFrontend::RawAPI@{GpgFrontend::RawAPI}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_a1f2f6c82e9c904c3875a123a65564697}{aes\+\_\+256\+\_\+cbc\+\_\+init}} (uint8\+\_\+t $\ast$key\+\_\+data, int key\+\_\+data\+\_\+len, uint8\+\_\+t $\ast$salt, EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$e\+\_\+ctx, EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$d\+\_\+ctx)
+\begin{DoxyCompactList}\small\item\em Create a 256 bit key and IV using the supplied key\+\_\+data. salt can be added for taste. Fills in the encryption and decryption ctx objects and returns 0 on success. \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_aa2bc88cf78b8da893f1b5c7e2e8ccf42}{aes\+\_\+256\+\_\+cbc\+\_\+encrypt}} (EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$e, uint8\+\_\+t $\ast$plaintext, int $\ast$len)
+\begin{DoxyCompactList}\small\item\em Encrypt $\ast$len bytes of data All data going in \& out is considered binary (uint8\+\_\+t\mbox{[}\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI_a2e388ecafc7b859eda84b4e3c4e2576f}{aes\+\_\+256\+\_\+cbc\+\_\+decrypt}} (EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$e, uint8\+\_\+t $\ast$ciphertext, int $\ast$len)
+\begin{DoxyCompactList}\small\item\em Decrypt $\ast$len bytes of ciphertext. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later
+
+AES encryption/decryption demo program using Open\+SSL EVP apis gcc -\/Wall openssl\+\_\+aes.\+c -\/lcrypto this is public domain code. Saju Pillai (\href{mailto:saju.pillai@gmail.com}{\texttt{ saju.\+pillai@gmail.\+com}}) 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1RawAPI_a2e388ecafc7b859eda84b4e3c4e2576f}\label{namespaceGpgFrontend_1_1RawAPI_a2e388ecafc7b859eda84b4e3c4e2576f}} 
+\index{GpgFrontend::RawAPI@{GpgFrontend::RawAPI}!aes\_256\_cbc\_decrypt@{aes\_256\_cbc\_decrypt}}
+\index{aes\_256\_cbc\_decrypt@{aes\_256\_cbc\_decrypt}!GpgFrontend::RawAPI@{GpgFrontend::RawAPI}}
+\doxysubsubsection{\texorpdfstring{aes\_256\_cbc\_decrypt()}{aes\_256\_cbc\_decrypt()}}
+{\footnotesize\ttfamily uint8\+\_\+t $\ast$ Gpg\+Frontend\+::\+Raw\+API\+::aes\+\_\+256\+\_\+cbc\+\_\+decrypt (\begin{DoxyParamCaption}\item[{EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$}]{e,  }\item[{uint8\+\_\+t $\ast$}]{ciphertext,  }\item[{int $\ast$}]{len }\end{DoxyParamCaption})}
+
+
+
+Decrypt $\ast$len bytes of ciphertext. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+{\em ciphertext} & \\
+\hline
+{\em len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1RawAPI_aa2bc88cf78b8da893f1b5c7e2e8ccf42}\label{namespaceGpgFrontend_1_1RawAPI_aa2bc88cf78b8da893f1b5c7e2e8ccf42}} 
+\index{GpgFrontend::RawAPI@{GpgFrontend::RawAPI}!aes\_256\_cbc\_encrypt@{aes\_256\_cbc\_encrypt}}
+\index{aes\_256\_cbc\_encrypt@{aes\_256\_cbc\_encrypt}!GpgFrontend::RawAPI@{GpgFrontend::RawAPI}}
+\doxysubsubsection{\texorpdfstring{aes\_256\_cbc\_encrypt()}{aes\_256\_cbc\_encrypt()}}
+{\footnotesize\ttfamily uint8\+\_\+t $\ast$ Gpg\+Frontend\+::\+Raw\+API\+::aes\+\_\+256\+\_\+cbc\+\_\+encrypt (\begin{DoxyParamCaption}\item[{EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$}]{e,  }\item[{uint8\+\_\+t $\ast$}]{plaintext,  }\item[{int $\ast$}]{len }\end{DoxyParamCaption})}
+
+
+
+Encrypt $\ast$len bytes of data All data going in \& out is considered binary (uint8\+\_\+t\mbox{[}\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+{\em plaintext} & \\
+\hline
+{\em len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1RawAPI_a1f2f6c82e9c904c3875a123a65564697}\label{namespaceGpgFrontend_1_1RawAPI_a1f2f6c82e9c904c3875a123a65564697}} 
+\index{GpgFrontend::RawAPI@{GpgFrontend::RawAPI}!aes\_256\_cbc\_init@{aes\_256\_cbc\_init}}
+\index{aes\_256\_cbc\_init@{aes\_256\_cbc\_init}!GpgFrontend::RawAPI@{GpgFrontend::RawAPI}}
+\doxysubsubsection{\texorpdfstring{aes\_256\_cbc\_init()}{aes\_256\_cbc\_init()}}
+{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Raw\+API\+::aes\+\_\+256\+\_\+cbc\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{key\+\_\+data,  }\item[{int}]{key\+\_\+data\+\_\+len,  }\item[{uint8\+\_\+t $\ast$}]{salt,  }\item[{EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$}]{e\+\_\+ctx,  }\item[{EVP\+\_\+\+CIPHER\+\_\+\+CTX $\ast$}]{d\+\_\+ctx }\end{DoxyParamCaption})}
+
+
+
+Create a 256 bit key and IV using the supplied key\+\_\+data. salt can be added for taste. Fills in the encryption and decryption ctx objects and returns 0 on success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+data} & \\
+\hline
+{\em key\+\_\+data\+\_\+len} & \\
+\hline
+{\em salt} & \\
+\hline
+{\em e\+\_\+ctx} & \\
+\hline
+{\em d\+\_\+ctx} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

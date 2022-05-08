@@ -1,0 +1,312 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog}{}\doxysection{Gpg\+Frontend\+::UI\+::Key\+Server\+Import\+Dialog Class Reference}
+\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog}\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+Server\+Import\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Server\+Import\+Dialog\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1e17305d6b470d0f7050eb8e3e6ee3d8}{Slot\+Import}} (const Key\+Id\+Args\+List\+Ptr \&keys)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1a7298fa8c6aa085794b21fe6d8ed1eb}{Slot\+Import}} (const QString\+List \&key\+Ids, const QUrl \&keyserver\+Url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad7f4df9aa6ee20ff4a36049bbf3e7f6e}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad7f4df9aa6ee20ff4a36049bbf3e7f6e}} 
+void {\bfseries Signal\+Key\+Imported} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a96b40e94b5c5a3216f513b9699820063}{Key\+Server\+Import\+Dialog}} (bool automatic, QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new Key Server Import Dialog object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4c4e44963dcd4f656b10788a7fafbb4e}{Key\+Server\+Import\+Dialog}} (QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new Key Server Import Dialog object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ac9c14bbc97945c94fd02c8e067ccab06}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ac9c14bbc97945c94fd02c8e067ccab06}} 
+void {\bfseries slot\+\_\+import} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4e387503359dee5771e855218d5f1561}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4e387503359dee5771e855218d5f1561}} 
+void {\bfseries slot\+\_\+search\+\_\+finished} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}{slot\+\_\+import\+\_\+finished}} (const QString \&keyid)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_adc7249b039e078c84f705c7111a148b0}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_adc7249b039e078c84f705c7111a148b0}} 
+void {\bfseries slot\+\_\+search} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad184316a91466181dbc9c109f8a03d01}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad184316a91466181dbc9c109f8a03d01}} 
+void {\bfseries slot\+\_\+save\+\_\+window\+\_\+state} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a6f006d4702885fb41317d10d654dfa3c}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a6f006d4702885fb41317d10d654dfa3c}} 
+void {\bfseries create\+\_\+keys\+\_\+table} ()
+\begin{DoxyCompactList}\small\item\em Create a keys table object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab93fbf5e0626bffe398f5baa2bc00b1a}{set\+\_\+message}} (const QString \&text, bool error)
+\begin{DoxyCompactList}\small\item\em Set the message object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3b818c2a3e5c32fc32425b17e63367e2}{import\+\_\+keys}} (Byte\+Array\+Ptr in\+\_\+data)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad4a75da57fa18bfcfaeb7fc601f1c8f6}{set\+\_\+loading}} (bool status)
+\begin{DoxyCompactList}\small\item\em Set the loading object. \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d9ea855fb06f48cca9d85c8ed2c7580}{create\+\_\+button}} (const QString \&text, const char $\ast$member)
+\begin{DoxyCompactList}\small\item\em Create a button object. \end{DoxyCompactList}\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab9e2fe38d54c0f0d3d73907300faa513}{create\+\_\+combo\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Create a combo\+Box object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_aab814c68a1d532bef6e0e77b6614c622}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_aab814c68a1d532bef6e0e77b6614c622}} 
+bool {\bfseries m\+\_\+automatic\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_af615a531375a74aa4b46a7dd53d38422}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_af615a531375a74aa4b46a7dd53d38422}} 
+QLine\+Edit $\ast$ {\bfseries search\+\_\+line\+\_\+edit\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4cbacc689425edd3105af64083c7b3a1}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4cbacc689425edd3105af64083c7b3a1}} 
+QCombo\+Box $\ast$ {\bfseries key\+\_\+server\+\_\+combo\+\_\+box\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab2e8ddb2180df363ad2cf8fc27fabee3}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab2e8ddb2180df363ad2cf8fc27fabee3}} 
+QProgress\+Bar $\ast$ {\bfseries waiting\+\_\+bar\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a95460bd9977b72ef20d4566f5e231dab}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a95460bd9977b72ef20d4566f5e231dab}} 
+QLabel $\ast$ {\bfseries search\+\_\+label\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a9d752319d7342f0156f8dfa15868fc48}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a9d752319d7342f0156f8dfa15868fc48}} 
+QLabel $\ast$ {\bfseries key\+\_\+server\+\_\+label\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a228c855a0676155572d691cb0df9c328}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a228c855a0676155572d691cb0df9c328}} 
+QLabel $\ast$ {\bfseries message\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a7f6e60d52be1bc06e2f9ddad4ca11d98}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a7f6e60d52be1bc06e2f9ddad4ca11d98}} 
+QLabel $\ast$ {\bfseries icon\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_abdf29b8b4337573cafd839fd4ce25104}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_abdf29b8b4337573cafd839fd4ce25104}} 
+QPush\+Button $\ast$ {\bfseries close\+\_\+button\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_afae8573a9f425bd53c84828576f4ac1f}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_afae8573a9f425bd53c84828576f4ac1f}} 
+QPush\+Button $\ast$ {\bfseries import\+\_\+button\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3d2e0010ac4e4ed0b2a88d9487d2732c}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3d2e0010ac4e4ed0b2a88d9487d2732c}} 
+QPush\+Button $\ast$ {\bfseries search\+\_\+button\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_af48f4a6d2744bad2759e691f9c59f209}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_af48f4a6d2744bad2759e691f9c59f209}} 
+QTable\+Widget $\ast$ {\bfseries keys\+\_\+table\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_acb2e410d862b05f335fdaa108b6e15ee}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_acb2e410d862b05f335fdaa108b6e15ee}} 
+QNetwork\+Access\+Manager $\ast$ {\bfseries network\+\_\+access\+\_\+manager\+\_\+} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a96b40e94b5c5a3216f513b9699820063}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a96b40e94b5c5a3216f513b9699820063}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!KeyServerImportDialog@{KeyServerImportDialog}}
+\index{KeyServerImportDialog@{KeyServerImportDialog}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{KeyServerImportDialog()}{KeyServerImportDialog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Key\+Server\+Import\+Dialog (\begin{DoxyParamCaption}\item[{bool}]{automatic,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Construct a new Key Server Import Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em automatic} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab9e2fe38d54c0f0d3d73907300faa513}{create\+\_\+combo\+Box()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a6f006d4702885fb41317d10d654dfa3c}{create\+\_\+keys\+\_\+table()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}{Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4c4e44963dcd4f656b10788a7fafbb4e}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a4c4e44963dcd4f656b10788a7fafbb4e}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!KeyServerImportDialog@{KeyServerImportDialog}}
+\index{KeyServerImportDialog@{KeyServerImportDialog}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{KeyServerImportDialog()}{KeyServerImportDialog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Key\+Server\+Import\+Dialog (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Key Server Import Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab9e2fe38d54c0f0d3d73907300faa513}{create\+\_\+combo\+Box()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d9ea855fb06f48cca9d85c8ed2c7580}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d9ea855fb06f48cca9d85c8ed2c7580}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!create\_button@{create\_button}}
+\index{create\_button@{create\_button}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{create\_button()}{create\_button()}}
+{\footnotesize\ttfamily QPush\+Button $\ast$ Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::create\+\_\+button (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{const char $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a button object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em member} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QPush\+Button$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab9e2fe38d54c0f0d3d73907300faa513}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab9e2fe38d54c0f0d3d73907300faa513}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!create\_comboBox@{create\_comboBox}}
+\index{create\_comboBox@{create\_comboBox}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{create\_comboBox()}{create\_comboBox()}}
+{\footnotesize\ttfamily QCombo\+Box $\ast$ Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::create\+\_\+combo\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a combo\+Box object. 
+
+\begin{DoxyReturn}{Returns}
+QCombo\+Box$\ast$ 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a96b40e94b5c5a3216f513b9699820063}{Key\+Server\+Import\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3b818c2a3e5c32fc32425b17e63367e2}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3b818c2a3e5c32fc32425b17e63367e2}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!import\_keys@{import\_keys}}
+\index{import\_keys@{import\_keys}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{import\_keys()}{import\_keys()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::import\+\_\+keys (\begin{DoxyParamCaption}\item[{Byte\+Array\+Ptr}]{in\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}{slot\+\_\+import\+\_\+finished()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad4a75da57fa18bfcfaeb7fc601f1c8f6}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad4a75da57fa18bfcfaeb7fc601f1c8f6}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!set\_loading@{set\_loading}}
+\index{set\_loading@{set\_loading}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{set\_loading()}{set\_loading()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::set\+\_\+loading (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the loading object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1a7298fa8c6aa085794b21fe6d8ed1eb}{Slot\+Import()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab93fbf5e0626bffe398f5baa2bc00b1a}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab93fbf5e0626bffe398f5baa2bc00b1a}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!set\_message@{set\_message}}
+\index{set\_message@{set\_message}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{set\_message()}{set\_message()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::set\+\_\+message (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{bool}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the message object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em error} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}{slot\+\_\+import\+\_\+finished()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!slot\_import\_finished@{slot\_import\_finished}}
+\index{slot\_import\_finished@{slot\_import\_finished}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{slot\_import\_finished}{slot\_import\_finished}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::slot\+\_\+import\+\_\+finished (\begin{DoxyParamCaption}\item[{const QString \&}]{keyid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyid} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a3b818c2a3e5c32fc32425b17e63367e2}{import\+\_\+keys()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ab93fbf5e0626bffe398f5baa2bc00b1a}{set\+\_\+message()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1a7298fa8c6aa085794b21fe6d8ed1eb}{Slot\+Import()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1e17305d6b470d0f7050eb8e3e6ee3d8}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1e17305d6b470d0f7050eb8e3e6ee3d8}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!SlotImport@{SlotImport}}
+\index{SlotImport@{SlotImport}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{SlotImport}{SlotImport}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Slot\+Import (\begin{DoxyParamCaption}\item[{const Key\+Id\+Args\+List\+Ptr \&}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1e17305d6b470d0f7050eb8e3e6ee3d8}{Slot\+Import()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1e17305d6b470d0f7050eb8e3e6ee3d8}{Slot\+Import()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1a7298fa8c6aa085794b21fe6d8ed1eb}\label{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1a7298fa8c6aa085794b21fe6d8ed1eb}} 
+\index{GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}!SlotImport@{SlotImport}}
+\index{SlotImport@{SlotImport}!GpgFrontend::UI::KeyServerImportDialog@{GpgFrontend::UI::KeyServerImportDialog}}
+\doxysubsubsection{\texorpdfstring{SlotImport}{SlotImport}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Slot\+Import (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{key\+Ids,  }\item[{const QUrl \&}]{keyserver\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Ids} & \\
+\hline
+{\em keyserver\+Url} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_ad4a75da57fa18bfcfaeb7fc601f1c8f6}{set\+\_\+loading()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a1d083105603805219fe01f37d773693f}{slot\+\_\+import\+\_\+finished()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/import\+\_\+export/Key\+Server\+Import\+Dialog.\+h\item 
+src/ui/import\+\_\+export/Key\+Server\+Import\+Dialog.\+cpp\end{DoxyCompactItemize}

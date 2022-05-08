@@ -1,0 +1,14 @@
+digraph "GpgFrontend::UI::AboutDialog"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::AboutDialog\n||+ AboutDialog()\l# showEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class for handling the about dialog."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{QDialog\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -update_tab_" ,arrowhead="odiamond"];
+  Node3 [label="{GpgFrontend::UI::UpdateTab\n|- current_version_label_\l- latest_version_label_\l- upgrade_label_\l- pb_\l- current_version_\l- download_button_\l|+ UpdateTab()\l+ getLatestVersion()\l- slot_show_version_status()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGpgFrontend_1_1UI_1_1UpdateTab.html",tooltip="Class containing the main tab of about dialog."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node4 [label="{QWidget\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

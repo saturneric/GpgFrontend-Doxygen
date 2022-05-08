@@ -1,0 +1,118 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab}{}\doxysection{Gpg\+Frontend\+::UI\+::Update\+Tab Class Reference}
+\label{classGpgFrontend_1_1UI_1_1UpdateTab}\index{GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}}
+
+
+Class containing the main tab of about dialog.  
+
+
+
+
+{\ttfamily \#include $<$About\+Dialog.\+h$>$}
+
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Update\+Tab\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Update\+Tab\+:
+% FIG 1
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a5e752e01539ccfdc6bbe41a404ddaa95}{Signal\+Reply\+From\+Update\+Server}} (QByte\+Array data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a833c5f709607032bac530aacf389a117}{Update\+Tab}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Update Tab object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}} 
+void {\bfseries get\+Latest\+Version} ()
+\begin{DoxyCompactList}\small\item\em Get the Latest Version object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}{slot\+\_\+show\+\_\+version\+\_\+status}} (const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} \&version)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a3718c15db336b2ca0090ee492c429adb}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a3718c15db336b2ca0090ee492c429adb}} 
+QLabel $\ast$ {\bfseries current\+\_\+version\+\_\+label\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a84579badda70b12cfd79add18d1ef94f}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a84579badda70b12cfd79add18d1ef94f}} 
+QLabel $\ast$ {\bfseries latest\+\_\+version\+\_\+label\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_ab209ef238583efea25c6a58aa4831628}\label{classGpgFrontend_1_1UI_1_1UpdateTab_ab209ef238583efea25c6a58aa4831628}} 
+QLabel $\ast$ {\bfseries upgrade\+\_\+label\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a9dedd8bc17bbc53d31c9d292429be68b}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a9dedd8bc17bbc53d31c9d292429be68b}} 
+QProgress\+Bar $\ast$ {\bfseries pb\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_ad180d1f434e8052f3e0974522c92ae61}\label{classGpgFrontend_1_1UI_1_1UpdateTab_ad180d1f434e8052f3e0974522c92ae61}} 
+QString {\bfseries current\+\_\+version\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a67358193095af7b39184f16706bf1bff}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a67358193095af7b39184f16706bf1bff}} 
+QPush\+Button $\ast$ {\bfseries download\+\_\+button\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing the main tab of about dialog. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a833c5f709607032bac530aacf389a117}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a833c5f709607032bac530aacf389a117}} 
+\index{GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}!UpdateTab@{UpdateTab}}
+\index{UpdateTab@{UpdateTab}!GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}}
+\doxysubsubsection{\texorpdfstring{UpdateTab()}{UpdateTab()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::\+Update\+Tab (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Update Tab object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a5e752e01539ccfdc6bbe41a404ddaa95}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a5e752e01539ccfdc6bbe41a404ddaa95}} 
+\index{GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}!SignalReplyFromUpdateServer@{SignalReplyFromUpdateServer}}
+\index{SignalReplyFromUpdateServer@{SignalReplyFromUpdateServer}!GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}}
+\doxysubsubsection{\texorpdfstring{SignalReplyFromUpdateServer}{SignalReplyFromUpdateServer}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::\+Signal\+Reply\+From\+Update\+Server (\begin{DoxyParamCaption}\item[{QByte\+Array}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}} 
+\index{GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}!slot\_show\_version\_status@{slot\_show\_version\_status}}
+\index{slot\_show\_version\_status@{slot\_show\_version\_status}!GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}}
+\doxysubsubsection{\texorpdfstring{slot\_show\_version\_status}{slot\_show\_version\_status}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+version\+\_\+status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} \&}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_a43663cd2d086299a0f0304f5bde9c663}{Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Current\+Version\+Released()}}, \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_abc311fd0e15da1a04b995587ca74e1a6}{Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Need\+Upgrade()}}, and \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_a587a3fdb047a15c3771c2af5eebdbf4b}{Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Version\+With\+Drawn()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}{get\+Latest\+Version()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/help/About\+Dialog.\+h\item 
+src/ui/help/About\+Dialog.\+cpp\end{DoxyCompactItemize}

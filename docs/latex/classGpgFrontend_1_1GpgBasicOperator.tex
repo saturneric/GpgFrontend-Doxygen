@@ -1,0 +1,375 @@
+\hypertarget{classGpgFrontend_1_1GpgBasicOperator}{}\doxysection{Gpg\+Frontend\+::Gpg\+Basic\+Operator Class Reference}
+\label{classGpgFrontend_1_1GpgBasicOperator}\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+
+
+Basic operation collection.  
+
+
+
+
+{\ttfamily \#include $<$Gpg\+Basic\+Operator.\+h$>$}
+
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Basic\+Operator\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Basic\+Operator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a139be86330f88e5f833aa24263a3b2ae}{Gpg\+Basic\+Operator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em Construct a new Basic Operator object. \end{DoxyCompactList}\item 
+gpg\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}{Encrypt}} (Key\+List\+Ptr keys, Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme for encryption operation. \end{DoxyCompactList}\item 
+gpg\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}{Encrypt\+Symmetric}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by GPGME to symmetrical encryption. \end{DoxyCompactList}\item 
+gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}{Encrypt\+Sign}} (Key\+List\+Ptr keys, Key\+List\+Ptr signers, Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&encr\+\_\+result, Gpg\+Sign\+Result \&sign\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme to perform encryption and signature operations at the same time. \end{DoxyCompactList}\item 
+gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}{Decrypt}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Decr\+Result \&result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme for decryption operation. \end{DoxyCompactList}\item 
+gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}{Decrypt\+Verify}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Decr\+Result \&decrypt\+\_\+result, Gpg\+Verify\+Result \&verify\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme to perform decryption and verification operations at the same time. \end{DoxyCompactList}\item 
+gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}{Verify}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&sig\+\_\+buffer, Gpg\+Verify\+Result \&result) const
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme for verification operation. \end{DoxyCompactList}\item 
+gpg\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a988d7e65e85fc7a578f26300332a65d3}{Sign}} (Key\+List\+Ptr signers, Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, gpgme\+\_\+sig\+\_\+mode\+\_\+t mode, Gpg\+Sign\+Result \&result)
+\begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme for signing operation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_ad6ea3596ba7d7543fb1b8233d09996df}{Set\+Signers}} (Key\+Args\+List \&signers)
+\begin{DoxyCompactList}\small\item\em Set the private key for signatures, this operation is a global operation. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ Key\+Args\+List $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a78f37b8d5afd6c0248665a4415f880cf}{Get\+Signers}} ()
+\begin{DoxyCompactList}\small\item\em Get a global signature private keys that has been set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_afad990a43ab06a060a93db9948ebb740}{ctx\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Corresponding context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Basic operation collection. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a139be86330f88e5f833aa24263a3b2ae}\label{classGpgFrontend_1_1GpgBasicOperator_a139be86330f88e5f833aa24263a3b2ae}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!GpgBasicOperator@{GpgBasicOperator}}
+\index{GpgBasicOperator@{GpgBasicOperator}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{GpgBasicOperator()}{GpgBasicOperator()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Gpg\+Basic\+Operator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Basic Operator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel corresponding to the context\\
+\hline
+\end{DoxyParams}
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}\label{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt (\begin{DoxyParamCaption}\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Gpg\+Frontend\+::\+Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{Gpg\+Frontend\+::\+Gpg\+Decr\+Result \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by gpgme for decryption operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+buffer} & data that needs to be decrypted \\
+\hline
+{\em out\+\_\+buffer} & decrypted data \\
+\hline
+{\em result} & the result of the operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae2d89e2cc6c99ff0e16b396d2381f904}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}\label{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!DecryptVerify@{DecryptVerify}}
+\index{DecryptVerify@{DecryptVerify}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{DecryptVerify()}{DecryptVerify()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify (\begin{DoxyParamCaption}\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{Gpg\+Decr\+Result \&}]{decrypt\+\_\+result,  }\item[{Gpg\+Verify\+Result \&}]{verify\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by gpgme to perform decryption and verification operations at the same time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+buffer} & data to be manipulated \\
+\hline
+{\em out\+\_\+buffer} & data resulting from decryption operation \\
+\hline
+{\em decrypt\+\_\+result} & the result of the decrypting operation \\
+\hline
+{\em verify\+\_\+result} & the result of the verifying operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a1d61ea803e6c825bd54f42ba9ae85919}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}\label{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{keys,  }\item[{Gpg\+Frontend\+::\+Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Gpg\+Frontend\+::\+Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{Gpg\+Frontend\+::\+Gpg\+Encr\+Result \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by gpgme for encryption operation. 
+
+All incoming data pointers out\+\_\+buffer will be replaced with new valid values
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & list of public keys \\
+\hline
+{\em in\+\_\+buffer} & data that needs to be encrypted \\
+\hline
+{\em out\+\_\+buffer} & encrypted data \\
+\hline
+{\em result} & the result of the operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae11d01211c2914ecc148e13dd7de506e}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}\label{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!EncryptSign@{EncryptSign}}
+\index{EncryptSign@{EncryptSign}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{EncryptSign()}{EncryptSign()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{keys,  }\item[{Key\+List\+Ptr}]{signers,  }\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{Gpg\+Encr\+Result \&}]{encr\+\_\+result,  }\item[{Gpg\+Sign\+Result \&}]{sign\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by gpgme to perform encryption and signature operations at the same time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & List of public keys \\
+\hline
+{\em signers} & Private key for signatures \\
+\hline
+{\em in\+\_\+buffer} & Data for operation \\
+\hline
+{\em out\+\_\+buffer} & Encrypted data \\
+\hline
+{\em encr\+\_\+result} & Encrypted results \\
+\hline
+{\em sign\+\_\+result} & Signature result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a304efe91afa31b32725caa00c27475a4}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}\label{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!EncryptSymmetric@{EncryptSymmetric}}
+\index{EncryptSymmetric@{EncryptSymmetric}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{EncryptSymmetric()}{EncryptSymmetric()}}
+{\footnotesize\ttfamily gpg\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric (\begin{DoxyParamCaption}\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{Gpg\+Encr\+Result \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by GPGME to symmetrical encryption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+buffer} & Data for encryption \\
+\hline
+{\em out\+\_\+buffer} & Encrypted data \\
+\hline
+{\em result} & Encrypted results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gpg\+\_\+error\+\_\+t 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae11d01211c2914ecc148e13dd7de506e}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a78f37b8d5afd6c0248665a4415f880cf}\label{classGpgFrontend_1_1GpgBasicOperator_a78f37b8d5afd6c0248665a4415f880cf}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!GetSigners@{GetSigners}}
+\index{GetSigners@{GetSigners}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{GetSigners()}{GetSigners()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ Gpg\+Frontend\+::\+Key\+Args\+List $>$ Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Get\+Signers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a global signature private keys that has been set. 
+
+\begin{DoxyReturn}{Returns}
+Intelligent pointer pointing to the private key list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_ad6ea3596ba7d7543fb1b8233d09996df}\label{classGpgFrontend_1_1GpgBasicOperator_ad6ea3596ba7d7543fb1b8233d09996df}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!SetSigners@{SetSigners}}
+\index{SetSigners@{SetSigners}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{SetSigners()}{SetSigners()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Set\+Signers (\begin{DoxyParamCaption}\item[{Key\+Args\+List \&}]{signers }\end{DoxyParamCaption})}
+
+
+
+Set the private key for signatures, this operation is a global operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}{Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a988d7e65e85fc7a578f26300332a65d3}\label{classGpgFrontend_1_1GpgBasicOperator_a988d7e65e85fc7a578f26300332a65d3}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Sign@{Sign}}
+\index{Sign@{Sign}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{signers,  }\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{gpgme\+\_\+sig\+\_\+mode\+\_\+t}]{mode,  }\item[{Gpg\+Sign\+Result \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Call the interface provided by gpgme for signing operation. 
+
+The signing modes are as follows\+: `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+NORMAL' A normal signature is made, the output includes the plaintext and the signature. `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+DETACH' A detached signature is made. `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+CLEAR' A clear text signature is made. The ASCII armor and text mode settings of the context are ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em signers} & private keys for signing operations \\
+\hline
+{\em in\+\_\+buffer} & data that needs to be signed \\
+\hline
+{\em out\+\_\+buffer} & verified data \\
+\hline
+{\em mode} & signing mode \\
+\hline
+{\em result} & the result of the operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a3f3d03b0ec22385bee559fbd2aeb881b}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}\label{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Verify@{Verify}}
+\index{Verify@{Verify}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{Verify()}{Verify()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify (\begin{DoxyParamCaption}\item[{Bype\+Array\+Ref}]{in\+\_\+buffer,  }\item[{Byte\+Array\+Ptr \&}]{sig\+\_\+buffer,  }\item[{Gpg\+Verify\+Result \&}]{result }\end{DoxyParamCaption}) const}
+
+
+
+Call the interface provided by gpgme for verification operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+buffer} & data that needs to be verified \\
+\hline
+{\em out\+\_\+buffer} & verified data \\
+\hline
+{\em result} & the result of the operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{Gpg\+Frontend\+::\+\_\+new\+\_\+result()}}, and \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_aa9c986dd95984811479ea93230c74b5d}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}{Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_afad990a43ab06a060a93db9948ebb740}\label{classGpgFrontend_1_1GpgBasicOperator_afad990a43ab06a060a93db9948ebb740}} 
+\index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!ctx\_@{ctx\_}}
+\index{ctx\_@{ctx\_}!GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}}
+\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{GpgContext::GetInstance}}(}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+
+\end{DoxyCode}
+
+
+Corresponding context. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Basic\+Operator.\+h\item 
+src/core/function/gpg/Gpg\+Basic\+Operator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,124 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1HelpPage}{}\doxysection{Gpg\+Frontend\+::UI\+::Help\+Page Class Reference}
+\label{classGpgFrontend_1_1UI_1_1HelpPage}\index{GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Help\+Page\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Help\+Page\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a51ff99077a75507365307f5dd783df99}{slot\+\_\+open\+\_\+url}} (const QUrl \&url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a1be8f5b79fef3d1d62ff4620b8535006}{Help\+Page}} (const QString \&path, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Help Page object. \end{DoxyCompactList}\item 
+QText\+Browser $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a92c31eea47b42be28c86431384b27846}{Get\+Browser}} ()
+\begin{DoxyCompactList}\small\item\em Get the Browser object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QUrl \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}{localized\+\_\+help}} (const QUrl \&path)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}{Help\+Page\+::localized\+\_\+help}} check if the requested file is also available with the locale, e.\+g. return index.\+de.\+html if index.\+html was requested but the locale is de and index.\+de.\+html is available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1HelpPage_af4f61342fae06a49c95d8d20ca51ca2c}\label{classGpgFrontend_1_1UI_1_1HelpPage_af4f61342fae06a49c95d8d20ca51ca2c}} 
+QText\+Browser $\ast$ {\bfseries browser\+\_\+}
+\begin{DoxyCompactList}\small\item\em The textbrowser of the tab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1HelpPage_a1be8f5b79fef3d1d62ff4620b8535006}\label{classGpgFrontend_1_1UI_1_1HelpPage_a1be8f5b79fef3d1d62ff4620b8535006}} 
+\index{GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}!HelpPage@{HelpPage}}
+\index{HelpPage@{HelpPage}!GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}}
+\doxysubsubsection{\texorpdfstring{HelpPage()}{HelpPage()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Help\+Page\+::\+Help\+Page (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Help Page object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_af4f61342fae06a49c95d8d20ca51ca2c}{browser\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}{localized\+\_\+help()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a51ff99077a75507365307f5dd783df99}{slot\+\_\+open\+\_\+url()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1HelpPage_a92c31eea47b42be28c86431384b27846}\label{classGpgFrontend_1_1UI_1_1HelpPage_a92c31eea47b42be28c86431384b27846}} 
+\index{GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}!GetBrowser@{GetBrowser}}
+\index{GetBrowser@{GetBrowser}!GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}}
+\doxysubsubsection{\texorpdfstring{GetBrowser()}{GetBrowser()}}
+{\footnotesize\ttfamily QText\+Browser $\ast$ Gpg\+Frontend\+::\+UI\+::\+Help\+Page\+::\+Get\+Browser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Browser object. 
+
+\begin{DoxyReturn}{Returns}
+QText\+Browser$\ast$ 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_af4f61342fae06a49c95d8d20ca51ca2c}{browser\+\_\+}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}\label{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}} 
+\index{GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}!localized\_help@{localized\_help}}
+\index{localized\_help@{localized\_help}!GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}}
+\doxysubsubsection{\texorpdfstring{localized\_help()}{localized\_help()}}
+{\footnotesize\ttfamily QUrl Gpg\+Frontend\+::\+UI\+::\+Help\+Page\+::localized\+\_\+help (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}{Help\+Page\+::localized\+\_\+help}} check if the requested file is also available with the locale, e.\+g. return index.\+de.\+html if index.\+html was requested but the locale is de and index.\+de.\+html is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a1be8f5b79fef3d1d62ff4620b8535006}{Help\+Page()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a51ff99077a75507365307f5dd783df99}{slot\+\_\+open\+\_\+url()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1HelpPage_a51ff99077a75507365307f5dd783df99}\label{classGpgFrontend_1_1UI_1_1HelpPage_a51ff99077a75507365307f5dd783df99}} 
+\index{GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}!slot\_open\_url@{slot\_open\_url}}
+\index{slot\_open\_url@{slot\_open\_url}!GpgFrontend::UI::HelpPage@{GpgFrontend::UI::HelpPage}}
+\doxysubsubsection{\texorpdfstring{slot\_open\_url}{slot\_open\_url}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Help\+Page\+::slot\+\_\+open\+\_\+url (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_af4f61342fae06a49c95d8d20ca51ca2c}{browser\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a49fbde87f2ef385b44225acd6ffbc84f}{localized\+\_\+help()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage_a1be8f5b79fef3d1d62ff4620b8535006}{Help\+Page()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/widgets/Help\+Page.\+h\item 
+src/ui/widgets/Help\+Page.\+cpp\end{DoxyCompactItemize}

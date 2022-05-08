@@ -1,0 +1,91 @@
+\hypertarget{KeyMgmt_8h_source}{}\doxysection{Key\+Mgmt.\+h}
+\label{KeyMgmt_8h_source}\index{src/ui/KeyMgmt.h@{src/ui/KeyMgmt.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef \_\_KEYMGMT\_H\_\_}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define \_\_KEYMGMT\_H\_\_}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}import\_export/KeyImportDetailDialog.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}import\_export/KeyServerImportDialog.h"{}}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}ui/key\_generate/KeygenDialog.h"{}}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include "{}ui/keypair\_details/KeyDetailsDialog.h"{}}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#include "{}ui/widgets/KeyList.h"{}}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt}{KeyMgmt}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{46   Q\_OBJECT}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48  \textcolor{keyword}{public}:}
+\DoxyCodeLine{54   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{KeyMgmt}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56  \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62   \textcolor{keywordtype}{void} SlotGenerateSubKey();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68   \textcolor{keywordtype}{void} SlotExportKeyToKeyPackage();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74   \textcolor{keywordtype}{void} SlotExportKeyToClipboard();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80   \textcolor{keywordtype}{void} SlotExportAsOpenSSHFormat();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86   \textcolor{keywordtype}{void} SlotDeleteSelectedKeys();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{92   \textcolor{keywordtype}{void} SlotDeleteCheckedKeys();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{98   \textcolor{keywordtype}{void} SlotGenerateKeyDialog();}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{104   \textcolor{keywordtype}{void} SlotShowKeyDetails();}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{110   \textcolor{keywordtype}{void} SlotSaveWindowState();}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{116   \textcolor{keywordtype}{void} SlotImportKeyPackage();}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118  signals:}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124   \textcolor{keywordtype}{void} SignalStatusBarChanged(QString);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{130   \textcolor{keywordtype}{void} SignalKeyStatusUpdated();}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132  \textcolor{keyword}{private}:}
+\DoxyCodeLine{137   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}{create\_menus}}();}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{143   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{create\_actions}}();}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{149   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}{create\_tool\_bars}}();}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{156   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b139ae0d4baa234932cf228e94abd6b}{delete\_keys\_with\_warning}}(GpgFrontend::KeyIdArgsListPtr uidList);}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{KeyList}}* key\_list\_;                            }
+\DoxyCodeLine{159   QMenu* file\_menu\_\{\};                           }
+\DoxyCodeLine{160   QMenu* key\_menu\_\{\};                            }
+\DoxyCodeLine{161   QMenu* generate\_key\_menu\_\{\};                   }
+\DoxyCodeLine{162   QMenu* import\_key\_menu\_\{\};                     }
+\DoxyCodeLine{163   QAction* open\_key\_file\_act\_\{\};                 }
+\DoxyCodeLine{164   QAction* export\_key\_to\_file\_act\_\{\};            }
+\DoxyCodeLine{165   QAction* export\_key\_as\_open\_ssh\_format\_\{\};     }
+\DoxyCodeLine{166   QAction* export\_key\_to\_clipboard\_act\_\{\};       }
+\DoxyCodeLine{167   QAction* delete\_checked\_keys\_act\_\{\};           }
+\DoxyCodeLine{168   QAction* delete\_selected\_keys\_act\_\{\};          }
+\DoxyCodeLine{169   QAction* generate\_key\_dialog\_act\_\{\};           }
+\DoxyCodeLine{170   QAction* generate\_key\_pair\_act\_\{\};             }
+\DoxyCodeLine{171   QAction* generate\_subkey\_act\_\{\};               }
+\DoxyCodeLine{172   QAction* import\_key\_from\_clipboard\_act\_\{\};     }
+\DoxyCodeLine{173   QAction* import\_key\_from\_file\_act\_\{\};          }
+\DoxyCodeLine{174   QAction* import\_key\_from\_key\_server\_act\_\{\};    }
+\DoxyCodeLine{175   QAction* import\_keys\_from\_key\_package\_act\_\{\};  }
+\DoxyCodeLine{176   QAction* close\_act\_\{\};                         }
+\DoxyCodeLine{177   QAction* show\_key\_details\_act\_\{\};              }
+\DoxyCodeLine{178   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog}{KeyServerImportDialog}}* import\_dialog\_\{\};       }
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{186   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a78b53193b055e10550938f403b641b31}{closeEvent}}(QCloseEvent* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{187 \};}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// \_\_KEYMGMT\_H\_\_}}
+
+\end{DoxyCode}

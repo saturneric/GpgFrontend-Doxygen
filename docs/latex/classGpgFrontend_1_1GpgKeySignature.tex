@@ -1,0 +1,262 @@
+\hypertarget{classGpgFrontend_1_1GpgKeySignature}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Signature Class Reference}
+\label{classGpgFrontend_1_1GpgKeySignature}\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Signature\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a9aa824b0a9e03dfbcc7849a7b526ef67}{Is\+Revoked}} () const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_aec39e4f67f17358f26bbbeb4cf62b7f4}{Is\+Expired}} () const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a1725474a1c61c0a3d724dc2f999cb24a}{Is\+Invalid}} () const
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a19fc1ca3733b576e12628e333e2c449e}{Is\+Exportable}} () const
+\item 
+gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_af2639fe6d2774ba286308f3a7b58ba73}{Get\+Status}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a4277f6deb7c07aaba62fbe8e7867b1fe}{Get\+Key\+ID}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a217a2a8b31e44d4c9b463470362a1522}{Get\+Pubkey\+Algo}} () const
+\item 
+boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_adc8ad65688a6dab0993cf655f5361df8}{Get\+Create\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Create a time object. \end{DoxyCompactList}\item 
+boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a59ab21f52b88355ca36ff5ebd77093a6}{Get\+Expire\+Time}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a95254ea2c00829b9dc87adc4a317cde5}{Get\+UID}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_acd5e46397ebea3224761a6af15eea4fb}{Get\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_abdff0ce4d5e8b7be0aa2e46e0003b22f}{Get\+Email}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a8b025f50bc527b0bbe58bd016bb47772}{Get\+Comment}} () const
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a8a9c792c963ef610e511b7deb6829c0b}{Gpg\+Key\+Signature}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Signature object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_ab4d7044f4e1ddcf0ae0d28be43f0fcb3}\label{classGpgFrontend_1_1GpgKeySignature_ab4d7044f4e1ddcf0ae0d28be43f0fcb3}} 
+{\bfseries $\sim$\+Gpg\+Key\+Signature} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Gpg Key Signature object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_abb4571e79c921261c03f57980d502e72}{Gpg\+Key\+Signature}} (gpgme\+\_\+key\+\_\+sig\+\_\+t sig)
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Signature object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a9ba501d98265c9677d00e3dca3e8d903}\label{classGpgFrontend_1_1GpgKeySignature_a9ba501d98265c9677d00e3dca3e8d903}} 
+{\bfseries Gpg\+Key\+Signature} (\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&\&) noexcept
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Signature object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a4a501aa3a549a6a6914e2aeed4ff302e}\label{classGpgFrontend_1_1GpgKeySignature_a4a501aa3a549a6a6914e2aeed4ff302e}} 
+{\bfseries Gpg\+Key\+Signature} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Signature object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a4ae987707a6579cec3dfe540b3410bc6}{operator=}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&\&) noexcept
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature_a16fc4ae385f8b501602186ed9a2defbf}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a9c7253e7602e834ac3311cca0cbe84a7}\label{classGpgFrontend_1_1GpgKeySignature_a9c7253e7602e834ac3311cca0cbe84a7}} 
+using {\bfseries Key\+Signatrue\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+key\+\_\+sig, std\+::function$<$ void(gpgme\+\_\+key\+\_\+sig\+\_\+t)$>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a224130c0da22538adba625c197b32fff}\label{classGpgFrontend_1_1GpgKeySignature_a224130c0da22538adba625c197b32fff}} 
+Key\+Signatrue\+Ref\+Handler {\bfseries signature\+\_\+ref\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a8a9c792c963ef610e511b7deb6829c0b}\label{classGpgFrontend_1_1GpgKeySignature_a8a9c792c963ef610e511b7deb6829c0b}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GpgKeySignature@{GpgKeySignature}}
+\index{GpgKeySignature@{GpgKeySignature}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GpgKeySignature()}{GpgKeySignature()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Gpg\+Key\+Signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new Gpg Key Signature object. 
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_abb4571e79c921261c03f57980d502e72}\label{classGpgFrontend_1_1GpgKeySignature_abb4571e79c921261c03f57980d502e72}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GpgKeySignature@{GpgKeySignature}}
+\index{GpgKeySignature@{GpgKeySignature}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GpgKeySignature()}{GpgKeySignature()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Gpg\+Key\+Signature (\begin{DoxyParamCaption}\item[{gpgme\+\_\+key\+\_\+sig\+\_\+t}]{sig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Key Signature object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sig} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a8b025f50bc527b0bbe58bd016bb47772}\label{classGpgFrontend_1_1GpgKeySignature_a8b025f50bc527b0bbe58bd016bb47772}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetComment@{GetComment}}
+\index{GetComment@{GetComment}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetComment()}{GetComment()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_adc8ad65688a6dab0993cf655f5361df8}\label{classGpgFrontend_1_1GpgKeySignature_adc8ad65688a6dab0993cf655f5361df8}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetCreateTime@{GetCreateTime}}
+\index{GetCreateTime@{GetCreateTime}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetCreateTime()}{GetCreateTime()}}
+{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Create\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Create a time object. 
+
+\begin{DoxyReturn}{Returns}
+boost\+::posix\+\_\+time\+::ptime 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_abdff0ce4d5e8b7be0aa2e46e0003b22f}\label{classGpgFrontend_1_1GpgKeySignature_abdff0ce4d5e8b7be0aa2e46e0003b22f}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetEmail@{GetEmail}}
+\index{GetEmail@{GetEmail}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetEmail()}{GetEmail()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a59ab21f52b88355ca36ff5ebd77093a6}\label{classGpgFrontend_1_1GpgKeySignature_a59ab21f52b88355ca36ff5ebd77093a6}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetExpireTime@{GetExpireTime}}
+\index{GetExpireTime@{GetExpireTime}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetExpireTime()}{GetExpireTime()}}
+{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+boost\+::posix\+\_\+time\+::ptime 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a4277f6deb7c07aaba62fbe8e7867b1fe}\label{classGpgFrontend_1_1GpgKeySignature_a4277f6deb7c07aaba62fbe8e7867b1fe}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetKeyID@{GetKeyID}}
+\index{GetKeyID@{GetKeyID}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetKeyID()}{GetKeyID()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Key\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_acd5e46397ebea3224761a6af15eea4fb}\label{classGpgFrontend_1_1GpgKeySignature_acd5e46397ebea3224761a6af15eea4fb}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetName@{GetName}}
+\index{GetName@{GetName}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a217a2a8b31e44d4c9b463470362a1522}\label{classGpgFrontend_1_1GpgKeySignature_a217a2a8b31e44d4c9b463470362a1522}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetPubkeyAlgo@{GetPubkeyAlgo}}
+\index{GetPubkeyAlgo@{GetPubkeyAlgo}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetPubkeyAlgo()}{GetPubkeyAlgo()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Pubkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_af2639fe6d2774ba286308f3a7b58ba73}\label{classGpgFrontend_1_1GpgKeySignature_af2639fe6d2774ba286308f3a7b58ba73}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+gpgme\+\_\+error\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a95254ea2c00829b9dc87adc4a317cde5}\label{classGpgFrontend_1_1GpgKeySignature_a95254ea2c00829b9dc87adc4a317cde5}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!GetUID@{GetUID}}
+\index{GetUID@{GetUID}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{GetUID()}{GetUID()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Get\+UID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_aec39e4f67f17358f26bbbeb4cf62b7f4}\label{classGpgFrontend_1_1GpgKeySignature_aec39e4f67f17358f26bbbeb4cf62b7f4}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!IsExpired@{IsExpired}}
+\index{IsExpired@{IsExpired}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{IsExpired()}{IsExpired()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Is\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a19fc1ca3733b576e12628e333e2c449e}\label{classGpgFrontend_1_1GpgKeySignature_a19fc1ca3733b576e12628e333e2c449e}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!IsExportable@{IsExportable}}
+\index{IsExportable@{IsExportable}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{IsExportable()}{IsExportable()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Is\+Exportable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a1725474a1c61c0a3d724dc2f999cb24a}\label{classGpgFrontend_1_1GpgKeySignature_a1725474a1c61c0a3d724dc2f999cb24a}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!IsInvalid@{IsInvalid}}
+\index{IsInvalid@{IsInvalid}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{IsInvalid()}{IsInvalid()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Is\+Invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a9aa824b0a9e03dfbcc7849a7b526ef67}\label{classGpgFrontend_1_1GpgKeySignature_a9aa824b0a9e03dfbcc7849a7b526ef67}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!IsRevoked@{IsRevoked}}
+\index{IsRevoked@{IsRevoked}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{IsRevoked()}{IsRevoked()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::\+Is\+Revoked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a16fc4ae385f8b501602186ed9a2defbf}\label{classGpgFrontend_1_1GpgKeySignature_a16fc4ae385f8b501602186ed9a2defbf}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!operator=@{operator=}}
+\index{operator=@{operator=}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \& Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeySignature_a4ae987707a6579cec3dfe540b3410bc6}\label{classGpgFrontend_1_1GpgKeySignature_a4ae987707a6579cec3dfe540b3410bc6}} 
+\index{GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}!operator=@{operator=}}
+\index{operator=@{operator=}!GpgFrontend::GpgKeySignature@{GpgFrontend::GpgKeySignature}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Frontend\+::\+Gpg\+Key\+Signature}} \& Gpg\+Frontend\+::\+Gpg\+Key\+Signature\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}}\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/model/Gpg\+Key\+Signature.\+h\item 
+src/core/model/Gpg\+Key\+Signature.\+cpp\end{DoxyCompactItemize}

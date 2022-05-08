@@ -1,0 +1,45 @@
+\hypertarget{FindWidget_8h_source}{}\doxysection{Find\+Widget.\+h}
+\label{FindWidget_8h_source}\index{src/ui/widgets/FindWidget.h@{src/ui/widgets/FindWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef FINDWIDGET\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define FINDWIDGET\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}ui/widgets/PlainTextEditorPage.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget}{FindWidget}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{41   Q\_OBJECT}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43  \textcolor{keyword}{public}:}
+\DoxyCodeLine{49   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_a495f281e72e5ddc10c8e944183b96dd9}{FindWidget}}(QWidget* parent, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage}{PlainTextEditorPage}}* edit);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{57   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_a6e2264a989c2bb2db6bc8980b43e65f0}{keyPressEvent}}(QKeyEvent* e) \textcolor{keyword}{override};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59  \textcolor{keyword}{private}:}
+\DoxyCodeLine{64   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_a0c531f2c673caed29225a323e750205f}{set\_background}}();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66   \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage}{PlainTextEditorPage}}*}
+\DoxyCodeLine{67       \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_a11f9d0f07b704539ad1df15a5c15dca9}{m\_text\_page\_}};       }
+\DoxyCodeLine{68   QLineEdit* \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget_af420832720942dd1e7cb3f3841c7cbfe}{find\_edit\_}};  }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{76   \textcolor{keywordtype}{void} slot\_find\_next();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{82   \textcolor{keywordtype}{void} slot\_find\_previous();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{88   \textcolor{keywordtype}{void} slot\_find();}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{94   \textcolor{keywordtype}{void} slot\_close();}
+\DoxyCodeLine{95 \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// FINDWIDGET\_H}}
+
+\end{DoxyCode}

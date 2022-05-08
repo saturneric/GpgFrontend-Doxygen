@@ -1,0 +1,10 @@
+digraph "GpgFrontend::UI::KeyList"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::KeyList\n|- buffered_key_list_mutex_\l- ui_\l- m_key_list_\l- m_key_tables_\l- popup_menu_\l- buffered_keys_list_\l- m_action_\l- menu_ability_\l|+ KeyList()\l+ AddListGroupTab()\l+ SetDoubleClickedAction()\l+ SetColumnWidth()\l+ AddMenuAction()\l+ AddSeparator()\l+ GetChecked()\l+ GetPrivateChecked()\l+ GetAllPrivateKeys()\l+ SetChecked()\l+ GetSelected()\l+ GetSelectedKey()\l+ ContainsPrivateKeys()\l+ GetChecked()\l+ SetChecked()\l+ MarkKeys()\l+ SlotRefresh()\l# contextMenuEvent()\l# dragEnterEvent()\l# dropEvent()\l- init()\l- import_keys()\l- uncheck_all()\l- check_all()\l- slot_double_clicked()\l- slot_refresh_ui()\l- slot_sync_with_key\l_server()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{QWidget\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

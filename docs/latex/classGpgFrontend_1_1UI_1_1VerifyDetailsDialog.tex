@@ -1,0 +1,76 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog}{}\doxysection{Gpg\+Frontend\+::UI\+::Verify\+Details\+Dialog Class Reference}
+\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog}\index{GpgFrontend::UI::VerifyDetailsDialog@{GpgFrontend::UI::VerifyDetailsDialog}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Verify\+Details\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Verify\+Details\+Dialog\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ac73f0405e249f623ddd0de22b5130fda}{Verify\+Details\+Dialog}} (QWidget $\ast$parent, Gpg\+Error error, Gpg\+Verify\+Result result)
+\begin{DoxyCompactList}\small\item\em Construct a new Verify Details Dialog object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a79d6071c0cedd9e18588137783823fad}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a79d6071c0cedd9e18588137783823fad}} 
+void {\bfseries slot\+\_\+refresh} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ab130aae968f83b9125cbe7054b6ca96d}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ab130aae968f83b9125cbe7054b6ca96d}} 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{Key\+List}} $\ast$ {\bfseries key\+\_\+list\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a37a315ff2a1ed0402adf1e15325990ba}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a37a315ff2a1ed0402adf1e15325990ba}} 
+QHBox\+Layout $\ast$ {\bfseries main\+\_\+layout\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a7849527f1e93581103bca3e7c66456c4}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a7849527f1e93581103bca3e7c66456c4}} 
+QWidget $\ast$ {\bfseries m\+\_\+vbox\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_aeb3a7c48297d448d25b2b84a2aa64ad0}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_aeb3a7c48297d448d25b2b84a2aa64ad0}} 
+QByte\+Array $\ast$ {\bfseries input\+\_\+data\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ae66e988b812817ab95c35a7c080e8c06}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ae66e988b812817ab95c35a7c080e8c06}} 
+QByte\+Array $\ast$ {\bfseries input\+\_\+signature\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a263f2a4030c261a849ded182cd889b3f}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_a263f2a4030c261a849ded182cd889b3f}} 
+QDialog\+Button\+Box $\ast$ {\bfseries button\+\_\+box\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_aeef0138e48f7e5f823f2cce9692d4649}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_aeef0138e48f7e5f823f2cce9692d4649}} 
+Gpg\+Verify\+Result {\bfseries m\+\_\+result\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ae15d7e9e60c58dea08ae117645e8b32a}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ae15d7e9e60c58dea08ae117645e8b32a}} 
+gpgme\+\_\+error\+\_\+t {\bfseries error\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ac73f0405e249f623ddd0de22b5130fda}\label{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog_ac73f0405e249f623ddd0de22b5130fda}} 
+\index{GpgFrontend::UI::VerifyDetailsDialog@{GpgFrontend::UI::VerifyDetailsDialog}!VerifyDetailsDialog@{VerifyDetailsDialog}}
+\index{VerifyDetailsDialog@{VerifyDetailsDialog}!GpgFrontend::UI::VerifyDetailsDialog@{GpgFrontend::UI::VerifyDetailsDialog}}
+\doxysubsubsection{\texorpdfstring{VerifyDetailsDialog()}{VerifyDetailsDialog()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Verify\+Details\+Dialog\+::\+Verify\+Details\+Dialog (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{Gpg\+Error}]{error,  }\item[{Gpg\+Verify\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Verify Details Dialog object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em error} & \\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/details/Verify\+Details\+Dialog.\+h\item 
+src/ui/details/Verify\+Details\+Dialog.\+cpp\end{DoxyCompactItemize}

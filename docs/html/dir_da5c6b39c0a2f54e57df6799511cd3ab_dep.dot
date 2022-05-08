@@ -1,0 +1,26 @@
+digraph "src/ui"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="src", fontname="Helvetica", fontsize="10", URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"]
+  subgraph clusterdir_da5c6b39c0a2f54e57df6799511cd3ab {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_da5c6b39c0a2f54e57df6799511cd3ab.html"]
+    dir_da5c6b39c0a2f54e57df6799511cd3ab [shape=plaintext, label="ui"];
+  dir_b3dcad687043023d21a08bb9ff2e9a69 [shape=box, label="details", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_b3dcad687043023d21a08bb9ff2e9a69.html"];
+  dir_60d155722ad55e64f9b6ab1078feff11 [shape=box, label="dialog", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_60d155722ad55e64f9b6ab1078feff11.html"];
+  dir_339e756bd7e594063a4f371b962f549a [shape=box, label="help", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_339e756bd7e594063a4f371b962f549a.html"];
+  dir_3d7cdd7fbfa4715d9319666ec5111ec9 [shape=box, label="import_export", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_3d7cdd7fbfa4715d9319666ec5111ec9.html"];
+  dir_18205f693eaa3d1d3d92159ae8558e07 [shape=box, label="key_generate", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_18205f693eaa3d1d3d92159ae8558e07.html"];
+  dir_be96635c88cbde2113e66f957baee3c5 [shape=box, label="keypair_details", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_be96635c88cbde2113e66f957baee3c5.html"];
+  dir_b7e232576c264c97fe14815134a8cffa [shape=box, label="main_window", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_b7e232576c264c97fe14815134a8cffa.html"];
+  dir_de56a105f7c21a78ac2526330527c47b [shape=box, label="settings", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_de56a105f7c21a78ac2526330527c47b.html"];
+  dir_77b5d71c36a073b86db318490f5560d0 [shape=box, label="struct", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_77b5d71c36a073b86db318490f5560d0.html"];
+  dir_0cd9bde2c64af64bc3733ed8ca8e04b3 [shape=box, label="thread", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_0cd9bde2c64af64bc3733ed8ca8e04b3.html"];
+  dir_f3911b9629b0e27ea480d06d47573cbf [shape=box, label="widgets", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_f3911b9629b0e27ea480d06d47573cbf.html"];
+  }
+  }
+}

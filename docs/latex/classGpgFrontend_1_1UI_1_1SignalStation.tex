@@ -1,0 +1,91 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1SignalStation}{}\doxysection{Gpg\+Frontend\+::UI\+::Signal\+Station Class Reference}
+\label{classGpgFrontend_1_1UI_1_1SignalStation}\index{GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Signal\+Station\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::Signal\+Station\+:
+% FIG 1
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignalStation_a1581aaebc459f3eda06195c1e43f068f}\label{classGpgFrontend_1_1UI_1_1SignalStation_a1581aaebc459f3eda06195c1e43f068f}} 
+void {\bfseries Signal\+Key\+Database\+Refresh} ()
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_a94d4c7d79e0deb7026083689bc5dc2ad}{Signal\+Refresh\+Info\+Board}} (const QString \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}} verify\+\_\+label\+\_\+status)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_a7b5fb2e2c0ad238313650a08ea648ce3}{Signal\+Refresh\+Status\+Bar}} (const QString \&message, int timeout)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation}{Signal\+Station}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignalStation_ac98e4fff1e400f810ecea9903ee880df}\label{classGpgFrontend_1_1UI_1_1SignalStation_ac98e4fff1e400f810ecea9903ee880df}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation}{Signal\+Station}} $>$ {\bfseries \+\_\+instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}\label{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}} 
+\index{GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation}{Signal\+Station}} $\ast$ Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Signal\+Station$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}{Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Common\+Utils()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adeef521a8838bf2a1692c25d9b108010}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Info\+Board\+Widget()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a08ba4521f68c488b23b651e201011759}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3aef8d2bb8e0d36842532726a6796ab9}{Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyNewUIDDialog_a7226b139dc7a491e8ba780135654be27}{Gpg\+Frontend\+::\+UI\+::\+Key\+New\+UIDDialog\+::\+Key\+New\+UIDDialog()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a76efd8f8d623813be1a329ad01972444}{Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab_a93abe5c0467c7c4a29e0c45437a10732}{Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairUIDTab_af18c4f08a127d919a316c7e27ba338d3}{Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+UIDTab\+::\+Key\+Pair\+UIDTab()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog_a96b40e94b5c5a3216f513b9699820063}{Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Key\+Server\+Import\+Dialog()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}{Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a8f9d8baa7b576a4aa857818b87c26bcd}{Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignalStation_a94d4c7d79e0deb7026083689bc5dc2ad}\label{classGpgFrontend_1_1UI_1_1SignalStation_a94d4c7d79e0deb7026083689bc5dc2ad}} 
+\index{GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}!SignalRefreshInfoBoard@{SignalRefreshInfoBoard}}
+\index{SignalRefreshInfoBoard@{SignalRefreshInfoBoard}!GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}}
+\doxysubsubsection{\texorpdfstring{SignalRefreshInfoBoard}{SignalRefreshInfoBoard}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Signal\+Refresh\+Info\+Board (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}}}]{verify\+\_\+label\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em verify\+\_\+label\+\_\+status} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adeef521a8838bf2a1692c25d9b108010}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Info\+Board\+Widget()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignalStation_a7b5fb2e2c0ad238313650a08ea648ce3}\label{classGpgFrontend_1_1UI_1_1SignalStation_a7b5fb2e2c0ad238313650a08ea648ce3}} 
+\index{GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}!SignalRefreshStatusBar@{SignalRefreshStatusBar}}
+\index{SignalRefreshStatusBar@{SignalRefreshStatusBar}!GpgFrontend::UI::SignalStation@{GpgFrontend::UI::SignalStation}}
+\doxysubsubsection{\texorpdfstring{SignalRefreshStatusBar}{SignalRefreshStatusBar}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Signal\+Refresh\+Status\+Bar (\begin{DoxyParamCaption}\item[{const QString \&}]{message,  }\item[{int}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em timeout} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a08ba4521f68c488b23b651e201011759}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ui/Signal\+Station.\+h\item 
+src/ui/Signal\+Station.\+cpp\end{DoxyCompactItemize}

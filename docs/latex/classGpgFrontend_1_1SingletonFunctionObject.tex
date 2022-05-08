@@ -1,0 +1,313 @@
+\hypertarget{classGpgFrontend_1_1SingletonFunctionObject}{}\doxysection{Gpg\+Frontend\+::Singleton\+Function\+Object\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classGpgFrontend_1_1SingletonFunctionObject}\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Gpg\+Function\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Gpg\+Frontend\+::Singleton\+Function\+Object\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Singleton\+Function\+Object\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{Get\+Channel}} () const
+\begin{DoxyCompactList}\small\item\em Get the Channel object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aabc5fe8e5a372ac276a265286457cb9a}\label{classGpgFrontend_1_1SingletonFunctionObject_aabc5fe8e5a372ac276a265286457cb9a}} 
+{\bfseries Singleton\+Function\+Object} (T \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Construct a new Singleton Function Object object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a7090636bed6f4bad5b99f28f6872c645}\label{classGpgFrontend_1_1SingletonFunctionObject_a7090636bed6f4bad5b99f28f6872c645}} 
+{\bfseries Singleton\+Function\+Object} (const T \&)=delete
+\begin{DoxyCompactList}\small\item\em Construct a new Singleton Function Object object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a03ce3095a745ecbf5e6a032e7da4bc97}\label{classGpgFrontend_1_1SingletonFunctionObject_a03ce3095a745ecbf5e6a032e7da4bc97}} 
+void {\bfseries operator=} (const T \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Get\+Instance}} (int channel=Gpg\+Frontend\+::\+GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\item 
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a459af8206b25fed21b423aeb61c408fe}{Create\+Instance}} (int channel, std\+::function$<$ std\+::unique\+\_\+ptr$<$ T $>$(void)$>$ factory)
+\begin{DoxyCompactList}\small\item\em Create a Instance object. \end{DoxyCompactList}\item 
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a3116637b021c316ec3b615baaa5a77a1}{Create\+Instance}} (int channel, std\+::unique\+\_\+ptr$<$ T $>$ p\+\_\+obj=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a Instance object. \end{DoxyCompactList}\item 
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_abb1ea69c668223ee9da79e6c92d5a9fa}{Release\+Channel}} (int channel)
+\item 
+static int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Get\+Default\+Channel}} ()
+\begin{DoxyCompactList}\small\item\em Get the Default Channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a02e76b42ab51d77588b01c7508bed258}\label{classGpgFrontend_1_1SingletonFunctionObject_a02e76b42ab51d77588b01c7508bed258}} 
+{\bfseries Singleton\+Function\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new Singleton Function Object object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a4aa7f1eb1d3281bb1fccfcbb1b416251}{Singleton\+Function\+Object}} (int channel)
+\begin{DoxyCompactList}\small\item\em Construct a new Singleton Function Object object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a8296be8c449f88175285186831b995bc}\label{classGpgFrontend_1_1SingletonFunctionObject_a8296be8c449f88175285186831b995bc}} 
+virtual {\bfseries $\sim$\+Singleton\+Function\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Singleton Function Object object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a56ba12077251893e48f5ec360e8c7040}{Set\+Channel}} (int channel)
+\begin{DoxyCompactList}\small\item\em Set the Channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}{find\+\_\+object\+\_\+in\+\_\+channel}} (int channel)
+\item 
+static T $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}{set\+\_\+object\+\_\+in\+\_\+channel}} (int channel, std\+::unique\+\_\+ptr$<$ T $>$ p\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Set the object in channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a03629fe438e2ab6b9e278bbe36e8ba72}\label{classGpgFrontend_1_1SingletonFunctionObject_a03629fe438e2ab6b9e278bbe36e8ba72}} 
+int {\bfseries channel\+\_\+} = \+\_\+default\+\_\+channel
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ae22a3ffbf6ef1adde906178a022c973c}{\+\_\+default\+\_\+channel}}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a6bf75b5dab3e8bb0f81a69df4fed4c39}\label{classGpgFrontend_1_1SingletonFunctionObject_a6bf75b5dab3e8bb0f81a69df4fed4c39}} 
+static std\+::mutex {\bfseries \+\_\+instance\+\_\+mutex}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aecf86e20874606b7176bfe7063efc2e0}\label{classGpgFrontend_1_1SingletonFunctionObject_aecf86e20874606b7176bfe7063efc2e0}} 
+static std\+::shared\+\_\+mutex {\bfseries \+\_\+instances\+\_\+mutex}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_ac07ca33d2400724851c5e96dff4d54a4}\label{classGpgFrontend_1_1SingletonFunctionObject_ac07ca33d2400724851c5e96dff4d54a4}} 
+static std\+::unique\+\_\+ptr$<$ T $>$ {\bfseries \+\_\+instance} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a09a5ce042da5d1528bdef02932e17717}\label{classGpgFrontend_1_1SingletonFunctionObject_a09a5ce042da5d1528bdef02932e17717}} 
+static std\+::map$<$ int, std\+::unique\+\_\+ptr$<$ T $>$ $>$ {\bfseries \+\_\+instances\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a4aa7f1eb1d3281bb1fccfcbb1b416251}\label{classGpgFrontend_1_1SingletonFunctionObject_a4aa7f1eb1d3281bb1fccfcbb1b416251}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!SingletonFunctionObject@{SingletonFunctionObject}}
+\index{SingletonFunctionObject@{SingletonFunctionObject}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SingletonFunctionObject()}{SingletonFunctionObject()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Singleton\+Function\+Object (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+Construct a new Singleton Function Object object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a459af8206b25fed21b423aeb61c408fe}\label{classGpgFrontend_1_1SingletonFunctionObject_a459af8206b25fed21b423aeb61c408fe}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!CreateInstance@{CreateInstance}}
+\index{CreateInstance@{CreateInstance}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CreateInstance()}{CreateInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Create\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{std\+::function$<$ std\+::unique\+\_\+ptr$<$ T $>$(void)$>$}]{factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a Instance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+{\em factory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::find\+\_\+object\+\_\+in\+\_\+channel()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::set\+\_\+object\+\_\+in\+\_\+channel()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a3116637b021c316ec3b615baaa5a77a1}\label{classGpgFrontend_1_1SingletonFunctionObject_a3116637b021c316ec3b615baaa5a77a1}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!CreateInstance@{CreateInstance}}
+\index{CreateInstance@{CreateInstance}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CreateInstance()}{CreateInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Create\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{std\+::unique\+\_\+ptr$<$ T $>$}]{p\+\_\+obj = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a Instance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+{\em p\+\_\+obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::find\+\_\+object\+\_\+in\+\_\+channel()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::set\+\_\+object\+\_\+in\+\_\+channel()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}\label{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!find\_object\_in\_channel@{find\_object\_in\_channel}}
+\index{find\_object\_in\_channel@{find\_object\_in\_channel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find\_object\_in\_channel()}{find\_object\_in\_channel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::find\+\_\+object\+\_\+in\+\_\+channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a459af8206b25fed21b423aeb61c408fe}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Create\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Get\+Instance()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}\label{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetChannel@{GetChannel}}
+\index{GetChannel@{GetChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetChannel()}{GetChannel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Get\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Channel object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}\label{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetDefaultChannel@{GetDefaultChannel}}
+\index{GetDefaultChannel@{GetDefaultChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetDefaultChannel()}{GetDefaultChannel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Get\+Default\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Default Channel object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}\label{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Get\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily GpgFrontend\+:\+:GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a7ad3a06b1a64d953f4861f6c9d360c8a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::find\+\_\+object\+\_\+in\+\_\+channel()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::set\+\_\+object\+\_\+in\+\_\+channel()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_abb1ea69c668223ee9da79e6c92d5a9fa}\label{classGpgFrontend_1_1SingletonFunctionObject_abb1ea69c668223ee9da79e6c92d5a9fa}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!ReleaseChannel@{ReleaseChannel}}
+\index{ReleaseChannel@{ReleaseChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ReleaseChannel()}{ReleaseChannel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Release\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}\label{classGpgFrontend_1_1SingletonFunctionObject_a51f705fc4b4a60f07e924d0e5a027d2a}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!set\_object\_in\_channel@{set\_object\_in\_channel}}
+\index{set\_object\_in\_channel@{set\_object\_in\_channel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set\_object\_in\_channel()}{set\_object\_in\_channel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::set\+\_\+object\+\_\+in\+\_\+channel (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{std\+::unique\+\_\+ptr$<$ T $>$}]{p\+\_\+obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Set the object in channel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+{\em p\+\_\+obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a459af8206b25fed21b423aeb61c408fe}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Create\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Get\+Instance()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a56ba12077251893e48f5ec360e8c7040}\label{classGpgFrontend_1_1SingletonFunctionObject_a56ba12077251893e48f5ec360e8c7040}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!SetChannel@{SetChannel}}
+\index{SetChannel@{SetChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetChannel()}{SetChannel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+Set\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Set the Channel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_ae22a3ffbf6ef1adde906178a022c973c}\label{classGpgFrontend_1_1SingletonFunctionObject_ae22a3ffbf6ef1adde906178a022c973c}} 
+\index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!\_default\_channel@{\_default\_channel}}
+\index{\_default\_channel@{\_default\_channel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_default\_channel}{\_default\_channel}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::\+\_\+default\+\_\+channel\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    GpgFrontend::GPGFRONTEND\_DEFAULT\_CHANNEL}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/Gpg\+Function\+Object.\+h\end{DoxyCompactItemize}

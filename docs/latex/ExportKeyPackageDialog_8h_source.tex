@@ -1,0 +1,30 @@
+\hypertarget{ExportKeyPackageDialog_8h_source}{}\doxysection{Export\+Key\+Package\+Dialog.\+h}
+\label{ExportKeyPackageDialog_8h_source}\index{src/ui/import\_export/ExportKeyPackageDialog.h@{src/ui/import\_export/ExportKeyPackageDialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_EXPORTKEYPACKAGEDIALOG\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_EXPORTKEYPACKAGEDIALOG\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}GpgFrontendUI.h"{}}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{class }Ui\_exportKeyPackageDialog;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog}{ExportKeyPackageDialog}} : \textcolor{keyword}{public} QDialog \{}
+\DoxyCodeLine{43   Q\_OBJECT}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45  \textcolor{keyword}{public}:}
+\DoxyCodeLine{52   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog_a7d1899302ef743671c3002d04f6c9dd8}{ExportKeyPackageDialog}}(KeyIdArgsListPtr key\_ids, QWidget* parent);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54  \textcolor{keyword}{private}:}
+\DoxyCodeLine{55   std::shared\_ptr<Ui\_exportKeyPackageDialog> ui\_;  }
+\DoxyCodeLine{56   KeyIdArgsListPtr key\_ids\_;                       }
+\DoxyCodeLine{57   std::string passphrase\_;                         }
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_EXPORTKEYPACKAGEDIALOG\_H}}
+
+\end{DoxyCode}

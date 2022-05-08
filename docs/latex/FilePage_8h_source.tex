@@ -1,0 +1,83 @@
+\hypertarget{FilePage_8h_source}{}\doxysection{File\+Page.\+h}
+\label{FilePage_8h_source}\index{src/ui/widgets/FilePage.h@{src/ui/widgets/FilePage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_FILEPAGE\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_FILEPAGE\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include "{}ui/GpgFrontendUI.h"{}}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}ui/widgets/InfoBoardWidget.h"{}}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{class }Ui\_FilePage;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{GpgFrontend::UI}} \{}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45 \textcolor{keyword}{class }\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage}{FilePage}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{46   Q\_OBJECT}
+\DoxyCodeLine{47  \textcolor{keyword}{public}:}
+\DoxyCodeLine{53   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a48fb14a3296f19f9b1c3b9b48c3a1bf3}{FilePage}}(QWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60   [[nodiscard]] QString \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a3c114d414b96d3e4b2ca833ab6a48605}{GetSelected}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62  \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{67   \textcolor{keywordtype}{void} SlotGoPath();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69  signals:}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aec462d16a2097024a4ced24012b905a7}{SignalPathChanged}}(\textcolor{keyword}{const} QString\& path);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{84   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a301c5c7747ad251b14c490d58b5d678f}{SignalRefreshInfoBoard}}(\textcolor{keyword}{const} QString\& text,}
+\DoxyCodeLine{85                               \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{InfoBoardStatus}} verify\_label\_status);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{94   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a676917817d6f519e043742d1d87f97f1}{slot\_file\_tree\_view\_item\_clicked}}(\textcolor{keyword}{const} QModelIndex\& index);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{101   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_ad3c54320bdafbbb2c06a20d6c7dea9d6}{slot\_file\_tree\_view\_item\_double\_clicked}}(\textcolor{keyword}{const} QModelIndex\& index);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{107   \textcolor{keywordtype}{void} slot\_up\_level();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{113   \textcolor{keywordtype}{void} slot\_open\_item();}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{119   \textcolor{keywordtype}{void} slot\_rename\_item();}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{125   \textcolor{keywordtype}{void} slot\_delete\_item();}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{131   \textcolor{keywordtype}{void} slot\_calculate\_hash();}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{137   \textcolor{keywordtype}{void} slot\_mkdir();}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{143   \textcolor{keywordtype}{void} slot\_create\_empty\_file();}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{149   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}{slot\_compress\_files}}();}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{157   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aea388ad7876e287f71e93085e6715495}{keyPressEvent}}(QKeyEvent* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{164   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aa80dc1b74a0ec65d06e5dffaa21cc785}{onCustomContextMenu}}(\textcolor{keyword}{const} QPoint\& point);}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166  \textcolor{keyword}{private}:}
+\DoxyCodeLine{171   \textcolor{keywordtype}{void} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}{create\_popup\_menu}}();}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173   std::shared\_ptr<Ui\_FilePage> ui\_;  }
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175   QFileSystemModel* dir\_model\_;            }
+\DoxyCodeLine{176   QCompleter* path\_edit\_completer\_;        }
+\DoxyCodeLine{177   QStringListModel* path\_complete\_model\_;  }
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179   std::filesystem::path m\_path\_;         }
+\DoxyCodeLine{180   std::filesystem::path selected\_path\_;  }
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182   QMenu* popup\_menu\_\{\};         }
+\DoxyCodeLine{183   QMenu* option\_popup\_menu\_\{\};  }
+\DoxyCodeLine{184   QWidget* first\_parent\_\{\};     }
+\DoxyCodeLine{185 \};}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187 \}  \textcolor{comment}{// namespace GpgFrontend::UI}}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_FILEPAGE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,20 @@
+digraph "GpgFrontend::GpgImportInformation"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::GpgImportInformation\n|+ considered\l+ no_user_id\l+ imported\l+ imported_rsa\l+ unchanged\l+ new_user_ids\l+ new_sub_keys\l+ new_signatures\l+ new_revocations\l+ secret_read\l+ secret_imported\l+ secret_unchanged\l+ not_imported\l|+ GpgImportInformation()\l+ GpgImportInformation()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +importedKeys" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{std::list\< GpgImportedKey \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{GpgFrontend::GpgImportedKey\n|+ import_status\l|}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classGpgFrontend_1_1GpgImportedKey.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +fpr" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{std::string\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{std::basic_string\<\l Char \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="orange",fontsize="10",style="solid",label=" \< GpgImportedKey \>" ,fontname="Helvetica"];
+  Node6 [label="{std::list\< T \>\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{T\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "GpgFrontend::UI::KeyPairDetailTab"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GpgFrontend::UI::KeyPair\lDetailTab\n|- key_\l- owner_box_\l- key_box_\l- fingerprint_box_\l- additional_uid_box_\l- name_var_label_\l- email_var_label_\l- comment_var_label_\l- key_size_var_label_\l- expire_var_label_\land 10 more...\l|+ KeyPairDetailTab()\l- slot_copy_fingerprint()\l- slot_refresh_key_info()\l- slot_refresh_key()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{QWidget\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

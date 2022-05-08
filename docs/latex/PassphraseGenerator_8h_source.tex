@@ -1,0 +1,46 @@
+\hypertarget{PassphraseGenerator_8h_source}{}\doxysection{Passphrase\+Generator.\+h}
+\label{PassphraseGenerator_8h_source}\index{src/core/function/PassphraseGenerator.h@{src/core/function/PassphraseGenerator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#ifndef GPGFRONTEND\_PASSPHRASEGENERATOR\_H}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define GPGFRONTEND\_PASSPHRASEGENERATOR\_H}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}core/GpgFrontendCore.h"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}core/GpgFunctionObject.h"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceGpgFrontend}{GpgFrontend}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{42 \textcolor{keyword}{class }GPGFRONTEND\_CORE\_EXPORT \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{PassphraseGenerator}}}
+\DoxyCodeLine{43     : \textcolor{keyword}{public} \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{SingletonFunctionObject}}<PassphraseGenerator> \{}
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keyword}{explicit} \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}{PassphraseGenerator}}(}
+\DoxyCodeLine{51       \textcolor{keywordtype}{int} channel = \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{SingletonFunctionObject::GetDefaultChannel}}())}
+\DoxyCodeLine{52       : \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{SingletonFunctionObject}}<\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{PassphraseGenerator}}>(channel) \{\}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60   std::string \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}{Generate}}(\textcolor{keywordtype}{int} len) \{}
+\DoxyCodeLine{61     std::uniform\_int\_distribution<int> dist(999, 99999);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keyword}{auto} file\_string = boost::format(\textcolor{stringliteral}{"{}KeyPackage\_\%1\%"{}}) \% dist(mt\_);}
+\DoxyCodeLine{64     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{char} alphanum[] =}
+\DoxyCodeLine{65         \textcolor{stringliteral}{"{}0123456789"{}}}
+\DoxyCodeLine{66         \textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZ"{}}}
+\DoxyCodeLine{67         \textcolor{stringliteral}{"{}abcdefghijklmnopqrstuvwxyz"{}};}
+\DoxyCodeLine{68     std::string tmp\_str;}
+\DoxyCodeLine{69     tmp\_str.reserve(len);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < len; ++i) \{}
+\DoxyCodeLine{72       tmp\_str += alphanum[dist(mt\_) \% (\textcolor{keyword}{sizeof}(alphanum) -\/ 1)];}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74     \textcolor{keywordflow}{return} tmp\_str;}
+\DoxyCodeLine{75   \}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77   std::random\_device \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}{rd\_}};                  }
+\DoxyCodeLine{78   std::mt19937 mt\_ = std::mt19937(rd\_());  }
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \}  \textcolor{comment}{// namespace GpgFrontend}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GPGFRONTEND\_PASSPHRASEGENERATOR\_H}}
+
+\end{DoxyCode}

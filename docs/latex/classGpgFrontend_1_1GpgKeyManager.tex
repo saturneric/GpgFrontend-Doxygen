@@ -1,0 +1,159 @@
+\hypertarget{classGpgFrontend_1_1GpgKeyManager}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Manager Class Reference}
+\label{classGpgFrontend_1_1GpgKeyManager}\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Key\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a210b717fd8ee63b064d77f32b0df4c5d}{Gpg\+Key\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Manager object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}{Sign\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&target, Key\+Args\+List \&keys, const std\+::string \&uid, const std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
+\begin{DoxyCompactList}\small\item\em Sign a key pair(actually a certain uid) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}{Rev\+Sign}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&key, const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&signature\+\_\+id)
+\item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&subkey, std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
+\begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a073f96ccfa483a8856197610b8bdee9e}{ctx\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a210b717fd8ee63b064d77f32b0df4c5d}\label{classGpgFrontend_1_1GpgKeyManager_a210b717fd8ee63b064d77f32b0df4c5d}} 
+\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!GpgKeyManager@{GpgKeyManager}}
+\index{GpgKeyManager@{GpgKeyManager}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+\doxysubsubsection{\texorpdfstring{GpgKeyManager()}{GpgKeyManager()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Gpg\+Key\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Key Manager object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}\label{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}} 
+\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!RevSign@{RevSign}}
+\index{RevSign@{RevSign}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+\doxysubsubsection{\texorpdfstring{RevSign()}{RevSign()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&}]{key,  }\item[{const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&}]{signature\+\_\+id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em signature\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, and \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}\label{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}} 
+\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SetExpire@{SetExpire}}
+\index{SetExpire@{SetExpire}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+\doxysubsubsection{\texorpdfstring{SetExpire()}{SetExpire()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&}]{subkey,  }\item[{std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&}]{expires }\end{DoxyParamCaption})}
+
+
+
+Set the Expire object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em subkey} & \\
+\hline
+{\em expires} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, and \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}\label{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}} 
+\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SignKey@{SignKey}}
+\index{SignKey@{SignKey}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+\doxysubsubsection{\texorpdfstring{SignKey()}{SignKey()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{target,  }\item[{Gpg\+Frontend\+::\+Key\+Args\+List \&}]{keys,  }\item[{const std\+::string \&}]{uid,  }\item[{const std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&}]{expires }\end{DoxyParamCaption})}
+
+
+
+Sign a key pair(actually a certain uid) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & target key pair \\
+\hline
+{\em uid} & target \\
+\hline
+{\em expires} & expire date and time of the signature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if successful 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error()}}, \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_ad6ea3596ba7d7543fb1b8233d09996df}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Set\+Signers()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a073f96ccfa483a8856197610b8bdee9e}\label{classGpgFrontend_1_1GpgKeyManager_a073f96ccfa483a8856197610b8bdee9e}} 
+\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!ctx\_@{ctx\_}}
+\index{ctx\_@{ctx\_}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
+\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Key\+Manager.\+h\item 
+src/core/function/gpg/Gpg\+Key\+Manager.\+cpp\end{DoxyCompactItemize}

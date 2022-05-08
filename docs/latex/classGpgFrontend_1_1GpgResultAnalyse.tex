@@ -1,0 +1,115 @@
+\hypertarget{classGpgFrontend_1_1GpgResultAnalyse}{}\doxysection{Gpg\+Frontend\+::Gpg\+Result\+Analyse Class Reference}
+\label{classGpgFrontend_1_1GpgResultAnalyse}\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Result\+Analyse\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Result\+Analyse\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_aa3c9bdf1ea4c87476010ef32fd2fb426}\label{classGpgFrontend_1_1GpgResultAnalyse_aa3c9bdf1ea4c87476010ef32fd2fb426}} 
+{\bfseries Gpg\+Result\+Analyse} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new Result Analyse object. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}{Get\+Result\+Report}} () const
+\begin{DoxyCompactList}\small\item\em Get the Result Report object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}{Get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Get the Status object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a80c80d597391d2d531345d3dd507b038}\label{classGpgFrontend_1_1GpgResultAnalyse_a80c80d597391d2d531345d3dd507b038}} 
+void {\bfseries Analyse} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a3664c37fe30b7006f50e18792957bf58}\label{classGpgFrontend_1_1GpgResultAnalyse_a3664c37fe30b7006f50e18792957bf58}} 
+virtual void {\bfseries do\+\_\+analyse} ()=0
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}{set\+\_\+status}} (int m\+\_\+status)
+\begin{DoxyCompactList}\small\item\em Set the status object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_abb323cb23d9be5aa0d842d686bbad962}\label{classGpgFrontend_1_1GpgResultAnalyse_abb323cb23d9be5aa0d842d686bbad962}} 
+std\+::stringstream {\bfseries stream\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_ad5160473724e6af2c21a4851c635cbc6}\label{classGpgFrontend_1_1GpgResultAnalyse_ad5160473724e6af2c21a4851c635cbc6}} 
+int {\bfseries status\+\_\+} = 1
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_af82d2d107c9834daea98560f9bca2873}\label{classGpgFrontend_1_1GpgResultAnalyse_af82d2d107c9834daea98560f9bca2873}} 
+bool {\bfseries analysed\+\_\+} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}\label{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}} 
+\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!GetResultReport@{GetResultReport}}
+\index{GetResultReport@{GetResultReport}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
+\doxysubsubsection{\texorpdfstring{GetResultReport()}{GetResultReport()}}
+{\footnotesize\ttfamily const std\+::string Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Result\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Result Report object. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string
+\end{DoxyReturn}
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+Referenced by \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}{Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}\label{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}} 
+\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Status object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}{Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}\label{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}} 
+\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!set\_status@{set\_status}}
+\index{set\_status@{set\_status}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
+\doxysubsubsection{\texorpdfstring{set\_status()}{set\_status()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::set\+\_\+status (\begin{DoxyParamCaption}\item[{int}]{m\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set the status object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+status} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/result\+\_\+analyse/Gpg\+Result\+Analyse.\+h\item 
+src/core/function/result\+\_\+analyse/Gpg\+Result\+Analyse.\+cpp\end{DoxyCompactItemize}

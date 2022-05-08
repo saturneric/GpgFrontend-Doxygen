@@ -1,0 +1,277 @@
+\hypertarget{classGpgFrontend_1_1GpgFileOpera}{}\doxysection{Gpg\+Frontend\+::Gpg\+File\+Opera Class Reference}
+\label{classGpgFrontend_1_1GpgFileOpera}\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+File\+Opera\+:
+% FIG 0
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+File\+Opera\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_aa81da3d72c4fbc57e7138bfec7731152}{Gpg\+File\+Opera}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}{Encrypt\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\begin{DoxyCompactList}\small\item\em Encrypted file. \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}{Encrypt\+File\+Symmetric}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\begin{DoxyCompactList}\small\item\em 运用对称加密算法加密文件 \end{DoxyCompactList}\item 
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}{Decrypt\+File}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Decr\+Result \&result)
+\item 
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}{Sign\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Sign\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\item 
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}{Verify\+File}} (const std\+::string \&data\+\_\+path, const std\+::string \&sign\+\_\+path, Gpg\+Verify\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\item 
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}{Encrypt\+Sign\+File}} (Key\+List\+Ptr keys, Key\+List\+Ptr signer\+\_\+keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&encr\+\_\+res, Gpg\+Sign\+Result \&sign\+\_\+res, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+\item 
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}{Decrypt\+Verify\+File}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Decr\+Result \&decr\+\_\+res, Gpg\+Verify\+Result \&verify\+\_\+res)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_aa81da3d72c4fbc57e7138bfec7731152}\label{classGpgFrontend_1_1GpgFileOpera_aa81da3d72c4fbc57e7138bfec7731152}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!GpgFileOpera@{GpgFileOpera}}
+\index{GpgFileOpera@{GpgFileOpera}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{GpgFileOpera()}{GpgFileOpera()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Gpg\+File\+Opera (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}\label{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!DecryptFile@{DecryptFile}}
+\index{DecryptFile@{DecryptFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{DecryptFile()}{DecryptFile()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Decr\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+path} & \\
+\hline
+{\em out\+\_\+path} & \\
+\hline
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0a6d0618f2835a6dcae707a4ca770a48}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}\label{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!DecryptVerifyFile@{DecryptVerifyFile}}
+\index{DecryptVerifyFile@{DecryptVerifyFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{DecryptVerifyFile()}{DecryptVerifyFile()}}
+{\footnotesize\ttfamily gpg\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Decr\+Result \&}]{decr\+\_\+res,  }\item[{Gpg\+Verify\+Result \&}]{verify\+\_\+res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+path} & \\
+\hline
+{\em out\+\_\+path} & \\
+\hline
+{\em decr\+\_\+res} & \\
+\hline
+{\em verify\+\_\+res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ab23c7e67dd1f5295b3c49ad79dfd5919}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}\label{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptFile@{EncryptFile}}
+\index{EncryptFile@{EncryptFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{EncryptFile()}{EncryptFile()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{keys,  }\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Encr\+Result \&}]{result,  }\item[{int}]{\+\_\+channel = {\ttfamily GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encrypted file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & Used public key \\
+\hline
+{\em in\+\_\+path} & The path where the enter file is located \\
+\hline
+{\em out\+\_\+path} & The path where the output file is located \\
+\hline
+{\em result} & Encrypted results \\
+\hline
+{\em \+\_\+channel} & Channel in context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int error code 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a9ec699536a35a37961a8c6da1e231ae3}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}\label{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptFileSymmetric@{EncryptFileSymmetric}}
+\index{EncryptFileSymmetric@{EncryptFileSymmetric}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{EncryptFileSymmetric()}{EncryptFileSymmetric()}}
+{\footnotesize\ttfamily unsigned int Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Frontend\+::\+Gpg\+Encr\+Result \&}]{result,  }\item[{int}]{\+\_\+channel = {\ttfamily GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+运用对称加密算法加密文件 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+path} & \\
+\hline
+{\em out\+\_\+path} & \\
+\hline
+{\em result} & \\
+\hline
+{\em \+\_\+channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a9ec699536a35a37961a8c6da1e231ae3}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}\label{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptSignFile@{EncryptSignFile}}
+\index{EncryptSignFile@{EncryptSignFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{EncryptSignFile()}{EncryptSignFile()}}
+{\footnotesize\ttfamily gpg\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{keys,  }\item[{Key\+List\+Ptr}]{signer\+\_\+keys,  }\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Encr\+Result \&}]{encr\+\_\+res,  }\item[{Gpg\+Sign\+Result \&}]{sign\+\_\+res,  }\item[{int}]{\+\_\+channel = {\ttfamily GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+{\em signer\+\_\+keys} & \\
+\hline
+{\em in\+\_\+path} & \\
+\hline
+{\em out\+\_\+path} & \\
+\hline
+{\em encr\+\_\+res} & \\
+\hline
+{\em sign\+\_\+res} & \\
+\hline
+{\em \+\_\+channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a25a2e4017d77cffc8362bde9606fad30}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}\label{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!SignFile@{SignFile}}
+\index{SignFile@{SignFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{SignFile()}{SignFile()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File (\begin{DoxyParamCaption}\item[{Key\+List\+Ptr}]{keys,  }\item[{const std\+::string \&}]{in\+\_\+path,  }\item[{const std\+::string \&}]{out\+\_\+path,  }\item[{Gpg\+Sign\+Result \&}]{result,  }\item[{int}]{\+\_\+channel = {\ttfamily GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+{\em in\+\_\+path} & \\
+\hline
+{\em out\+\_\+path} & \\
+\hline
+{\em result} & \\
+\hline
+{\em \+\_\+channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a988d7e65e85fc7a578f26300332a65d3}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign()}}, and \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a8bcdcbe678b8dc0837fffda2ebfe79bf}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign()}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}\label{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}} 
+\index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!VerifyFile@{VerifyFile}}
+\index{VerifyFile@{VerifyFile}!GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}}
+\doxysubsubsection{\texorpdfstring{VerifyFile()}{VerifyFile()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+\_\+path,  }\item[{const std\+::string \&}]{sign\+\_\+path,  }\item[{Gpg\+Verify\+Result \&}]{result,  }\item[{int}]{\+\_\+channel = {\ttfamily GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+path} & \\
+\hline
+{\em sign\+\_\+path} & \\
+\hline
+{\em result} & \\
+\hline
+{\em \+\_\+channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}{Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}{Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a9879061cfd321c6757c77f75d46dc7d8}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+File\+Opera.\+h\item 
+src/core/function/gpg/Gpg\+File\+Opera.\+cpp\end{DoxyCompactItemize}
