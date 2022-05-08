@@ -1,11 +1,13 @@
 var classGpgFrontend_1_1UI_1_1TextEdit =
 [
+    [ "TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html#a0f1c7997b1cd56045091e5c9677f5d0e", null ],
     [ "CurFilePage", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa30daf558cb85bbdcad55a805a106109", null ],
     [ "CurTextPage", "classGpgFrontend_1_1UI_1_1TextEdit.html#a7aa1230fbf796225bd6b83d381e11a3b", null ],
     [ "LoadFile", "classGpgFrontend_1_1UI_1_1TextEdit.html#a72ed46454c833adb038c36d8d4322d18", null ],
     [ "maybe_save_current_tab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a8fad090a19479a9fe89432300cca2b6c", null ],
     [ "MaybeSaveAnyTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3c976a5494d06c2186d94e7cc8ebe457", null ],
     [ "save_file", "classGpgFrontend_1_1UI_1_1TextEdit.html#a66b6f6633e7ac71e5fe8b7814a81cadf", null ],
+    [ "slot_file_page_path_changed", "classGpgFrontend_1_1UI_1_1TextEdit.html#aeb2048d8028907d521f5f35c077832c2", null ],
     [ "slot_remove_tab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a12f65fbc4984c266a5df4505ecde7c42", null ],
     [ "SlotCloseTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa21659aa7acba98dfd6286d69e00ab9b", null ],
     [ "SlotCopy", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3599bd01636a873cf3437ab6b9d38780", null ],
@@ -29,8 +31,11 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "SlotSwitchTabDown", "classGpgFrontend_1_1UI_1_1TextEdit.html#a576e06390e65576465297d2ab8d7d474", null ],
     [ "SlotSwitchTabUp", "classGpgFrontend_1_1UI_1_1TextEdit.html#af1e364b513f566c743a5d36c19098762", null ],
     [ "SlotUndo", "classGpgFrontend_1_1UI_1_1TextEdit.html#a4a81e69f6dc74ea649ca9a2358342fd5", null ],
+    [ "SlotZoomIn", "classGpgFrontend_1_1UI_1_1TextEdit.html#ac9e2fb3d6ebb721f03416aa2da5e1fd1", null ],
+    [ "SlotZoomOut", "classGpgFrontend_1_1UI_1_1TextEdit.html#a32327f592965d8922eb7095af117336d", null ],
     [ "stripped_name", "classGpgFrontend_1_1UI_1_1TextEdit.html#afb9b7a7d88154d774b3d727d8e640cbb", null ],
     [ "TabCount", "classGpgFrontend_1_1UI_1_1TextEdit.html#a05c54658597b04c3976c72d3a5f9add9", null ],
     [ "UnsavedDocuments", "classGpgFrontend_1_1UI_1_1TextEdit.html#a82fe98d45f54909ebea933b540367c39", null ],
-    [ "count_page_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a747d3740a88295e6c9565788d4cf56ec", null ]
+    [ "count_page_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a747d3740a88295e6c9565788d4cf56ec", null ],
+    [ "tab_widget_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a725048d1c6de8ed7ba29062afa72767b", null ]
 ];

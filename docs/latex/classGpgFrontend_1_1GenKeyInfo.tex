@@ -3,7 +3,13 @@
 
 
 Collaboration diagram for Gpg\+Frontend\+::Gen\+Key\+Info\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1GenKeyInfo__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,7 +31,7 @@ std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a76721be08c1890776
 \begin{DoxyCompactList}\small\item\em Get the Email object. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}{Get\+Comment}} () const
 \begin{DoxyCompactList}\small\item\em Get the Comment object. \end{DoxyCompactList}\item 
-const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a93bad2a1ef8269f46f044bf3405c7838}{Get\+Algo}} () const
+const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}{Get\+Algo}} () const
 \begin{DoxyCompactList}\small\item\em Get the Algo object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo}} (const std\+::string \&m\+\_\+algo)
 \begin{DoxyCompactList}\small\item\em Set the Algo object. \end{DoxyCompactList}\item 
@@ -35,7 +41,7 @@ int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a4927a9091fa2b2f68f6b60ce78a
 \begin{DoxyCompactList}\small\item\em Get the Key Size object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ae744395012e4dcb9734ad5a30aa8ed75}{Set\+Key\+Length}} (int m\+\_\+key\+\_\+size)
 \begin{DoxyCompactList}\small\item\em Set the Key Size object. \end{DoxyCompactList}\item 
-const boost\+::posix\+\_\+time\+::ptime \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a5ef495960bc09d1ab2a983f322a3d636}{Get\+Expire\+Time}} () const
+const boost\+::posix\+\_\+time\+::ptime \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}{Get\+Expire\+Time}} () const
 \begin{DoxyCompactList}\small\item\em Get the Expired object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aa3bfeda7fc7c83dc8d48ee2b80780c3a}{Set\+Expire\+Time}} (const boost\+::posix\+\_\+time\+::ptime \&m\+\_\+expired)
 \begin{DoxyCompactList}\small\item\em Set the Expired object. \end{DoxyCompactList}\item 
@@ -65,7 +71,7 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aac51d251682ed1bc1090416ebfeba4de}{Set\+Allow\+Authentication}} (bool m\+\_\+allow\+\_\+authentication)
 \begin{DoxyCompactList}\small\item\em Set the Allow Authentication object. \end{DoxyCompactList}\item 
-const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a82dcaf06e99d877e7b934108293e2f8a}{Get\+Pass\+Phrase}} () const
+const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}{Get\+Pass\+Phrase}} () const
 \begin{DoxyCompactList}\small\item\em Get the Pass Phrase object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_afe1760d4ead397f6096925290a38e1a4}{Set\+Pass\+Phrase}} (const std\+::string \&m\+\_\+pass\+\_\+phrase)
 \begin{DoxyCompactList}\small\item\em Set the Pass Phrase object. \end{DoxyCompactList}\item 
@@ -126,7 +132,7 @@ std\+::string {\bfseries algo\+\_\+}
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a34392244d8cd477a590d02f02567a665}\label{classGpgFrontend_1_1GenKeyInfo_a34392244d8cd477a590d02f02567a665}} 
 int {\bfseries key\+\_\+size\+\_\+} = 2048
 \item 
-boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a48c113454bd67cd0d918da0469924727}{expired\+\_\+}}
+boost\+::posix\+\_\+time\+::ptime {\bfseries expired\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7b8c6d162f1cb8a74e3ff150908270f5}\label{classGpgFrontend_1_1GenKeyInfo_a7b8c6d162f1cb8a74e3ff150908270f5}} 
 bool {\bfseries non\+\_\+expired\+\_\+} = false
@@ -195,16 +201,16 @@ Construct a new Gen Key Info object.
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+References Set\+Algo().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a93bad2a1ef8269f46f044bf3405c7838}\label{classGpgFrontend_1_1GenKeyInfo_a93bad2a1ef8269f46f044bf3405c7838}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}\label{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetAlgo@{GetAlgo}}
 \index{GetAlgo@{GetAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetAlgo()}{GetAlgo()}}
-{\footnotesize\ttfamily const std\+::string \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const std\+::string\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -213,6 +219,10 @@ Get the Algo object.
 \begin{DoxyReturn}{Returns}
 const std\+::string\& 
 \end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), and Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}\label{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetComment@{GetComment}}
 \index{GetComment@{GetComment}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
@@ -239,11 +249,11 @@ Get the Email object.
 \begin{DoxyReturn}{Returns}
 std\+::string 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a5ef495960bc09d1ab2a983f322a3d636}\label{classGpgFrontend_1_1GenKeyInfo_a5ef495960bc09d1ab2a983f322a3d636}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}\label{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetExpireTime@{GetExpireTime}}
 \index{GetExpireTime@{GetExpireTime}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetExpireTime()}{GetExpireTime()}}
-{\footnotesize\ttfamily const boost\+::posix\+\_\+time\+::ptime \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const boost\+::posix\+\_\+time\+::ptime\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -278,6 +288,10 @@ Get the Key Size Str object.
 \begin{DoxyReturn}{Returns}
 std\+::string 
 \end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), and Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abb3e1366dca0288bdc42123e55d77335}\label{classGpgFrontend_1_1GenKeyInfo_abb3e1366dca0288bdc42123e55d77335}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetName@{GetName}}
 \index{GetName@{GetName}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
@@ -291,11 +305,11 @@ Get the Name object.
 \begin{DoxyReturn}{Returns}
 std\+::string 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a82dcaf06e99d877e7b934108293e2f8a}\label{classGpgFrontend_1_1GenKeyInfo_a82dcaf06e99d877e7b934108293e2f8a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}\label{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetPassPhrase@{GetPassPhrase}}
 \index{GetPassPhrase@{GetPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetPassPhrase()}{GetPassPhrase()}}
-{\footnotesize\ttfamily const std\+::string \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const std\+::string\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -358,7 +372,7 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}{Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a029017ad2e025a43d21144f1b7427593}{Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), Gpg\+Frontend\+::\+U\+I\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), and Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}\label{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedKeyAlgoStandalone@{GetSupportedKeyAlgoStandalone}}
@@ -375,7 +389,7 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}\label{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgo@{GetSupportedSubkeyAlgo}}
@@ -392,7 +406,7 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}\label{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgoStandalone@{GetSupportedSubkeyAlgoStandalone}}
@@ -409,7 +423,7 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4ee4a0659e76376d9bfc527c334392e1}\label{classGpgFrontend_1_1GenKeyInfo_a4ee4a0659e76376d9bfc527c334392e1}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetUserid@{GetUserid}}
@@ -424,6 +438,10 @@ Get the Userid object.
 \begin{DoxyReturn}{Returns}
 std\+::string 
 \end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b9b9c87}\label{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b9b9c87}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowAuthentication@{IsAllowAuthentication}}
 \index{IsAllowAuthentication@{IsAllowAuthentication}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
@@ -556,6 +574,10 @@ true
 
 false 
 \end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}\label{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAlgo@{SetAlgo}}
 \index{SetAlgo@{SetAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
@@ -568,36 +590,34 @@ Set the Algo object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m\+\_\+algo} & \\
+{\em m\+\_\+algo} & Copyright (C) 2021 Saturneric\\
 \hline
 \end{DoxyParams}
-Copyright (C) 2021 Saturneric
-
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later RSA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. Gnu\+PG supports RSA with key sizes of between 1024 and 4096 bits.
+S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later R\+SA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. Gnu\+PG supports R\+SA with key sizes of between 1024 and 4096 bits.
 
-Algorithm (DSA) as a government standard for digital signatures. Originally, it supported key lengths between 512 and 1024 bits. Recently, NIST has declared 512-\/bit keys obsolete\+: now, DSA is available in 1024, 2048 and 3072-\/bit lengths.
-
-Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
+Algorithm (D\+SA) as a government standard for digital signatures. Originally, it supported key lengths between 512 and 1024 bits. Recently, N\+I\+ST has declared 512-\/bit keys obsolete\+: now, D\+SA is available in 1024, 2048 and 3072-\/bit lengths.
 
 Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
 
-References \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}{Get\+Supported\+Key\+Algo()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}{Get\+Supported\+Key\+Algo\+Standalone()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}{Get\+Supported\+Subkey\+Algo()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}{Get\+Supported\+Subkey\+Algo\+Standalone()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aac51d251682ed1bc1090416ebfeba4de}{Set\+Allow\+Authentication()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac5f52f74566618c71a29bdc5e70fce2e}{Set\+Allow\+Certification()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a965014232f6de22c6d33320231ca4454}{Set\+Allow\+Encryption()}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a1a01518b24d40d95e187ef73f4dcd52a}{Set\+Allow\+Signing()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ae744395012e4dcb9734ad5a30aa8ed75}{Set\+Key\+Length()}}.
+Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
+
+References Get\+Supported\+Key\+Algo(), Get\+Supported\+Key\+Algo\+Standalone(), Get\+Supported\+Subkey\+Algo(), Get\+Supported\+Subkey\+Algo\+Standalone(), Set\+Allow\+Authentication(), Set\+Allow\+Certification(), Set\+Allow\+Encryption(), Set\+Allow\+Signing(), and Set\+Key\+Length().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a34eca1662ba8d4645751f3ee66582b04}{Gen\+Key\+Info()}}.
+Referenced by Gen\+Key\+Info().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aac51d251682ed1bc1090416ebfeba4de}\label{classGpgFrontend_1_1GenKeyInfo_aac51d251682ed1bc1090416ebfeba4de}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowAuthentication@{SetAllowAuthentication}}
@@ -616,7 +636,7 @@ Set the Allow Authentication object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac5f52f74566618c71a29bdc5e70fce2e}\label{classGpgFrontend_1_1GenKeyInfo_ac5f52f74566618c71a29bdc5e70fce2e}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowCertification@{SetAllowCertification}}
@@ -635,7 +655,7 @@ Set the Allow Certification object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a965014232f6de22c6d33320231ca4454}\label{classGpgFrontend_1_1GenKeyInfo_a965014232f6de22c6d33320231ca4454}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowEncryption@{SetAllowEncryption}}
@@ -654,7 +674,7 @@ Set the Allow Encryption object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a1a01518b24d40d95e187ef73f4dcd52a}\label{classGpgFrontend_1_1GenKeyInfo_a1a01518b24d40d95e187ef73f4dcd52a}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowSigning@{SetAllowSigning}}
@@ -673,7 +693,7 @@ Set the Allow Signing object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a947886456f5699241b1c1b9332e4b29e}\label{classGpgFrontend_1_1GenKeyInfo_a947886456f5699241b1c1b9332e4b29e}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetComment@{SetComment}}
@@ -752,7 +772,7 @@ Set the Key Size object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo()}}.
+Referenced by Set\+Algo().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a65ebc487e0e64c325f65474c812615f7}\label{classGpgFrontend_1_1GenKeyInfo_a65ebc487e0e64c325f65474c812615f7}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetName@{SetName}}

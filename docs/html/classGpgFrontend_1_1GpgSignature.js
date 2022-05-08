@@ -1,5 +1,6 @@
 var classGpgFrontend_1_1GpgSignature =
 [
+    [ "KeySignatrueRefHandler", "classGpgFrontend_1_1GpgSignature.html#aa6f0821b573bfcc81d4c0fbc23fdec29", null ],
     [ "GpgSignature", "classGpgFrontend_1_1GpgSignature.html#ab7a4489b35d918503076b2659d14fafe", null ],
     [ "~GpgSignature", "classGpgFrontend_1_1GpgSignature.html#a44f137a457ac109d145a1cdd8e544e3a", null ],
     [ "GpgSignature", "classGpgFrontend_1_1GpgSignature.html#aea05d301ccf75f4a3aec2be58541eca8", null ],
@@ -13,6 +14,7 @@ var classGpgFrontend_1_1GpgSignature =
     [ "GetStatus", "classGpgFrontend_1_1GpgSignature.html#a859b4a3788c8490937f954d92686f490", null ],
     [ "GetSummary", "classGpgFrontend_1_1GpgSignature.html#a3b143f6e13b71663d81fc0f326aad17f", null ],
     [ "GetValidity", "classGpgFrontend_1_1GpgSignature.html#a09cb6b465e85dffcf7867e70a276e9ad", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgSignature.html#a355168d70352f19c621528c9cc352710", null ],
-    [ "operator=", "classGpgFrontend_1_1GpgSignature.html#aca9c1f1a92fddaecc7d601f1f25a90de", null ]
+    [ "operator=", "classGpgFrontend_1_1GpgSignature.html#a0b2f5d9e08d407050a392ba0f7881986", null ],
+    [ "operator=", "classGpgFrontend_1_1GpgSignature.html#aca9c1f1a92fddaecc7d601f1f25a90de", null ],
+    [ "signature_ref_", "classGpgFrontend_1_1GpgSignature.html#a1c4fbd2d10a769c1ed0b644f06e4f871", null ]
 ];

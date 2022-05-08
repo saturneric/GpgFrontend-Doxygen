@@ -4,5 +4,10 @@ var classGpgFrontend_1_1UI_1_1KeyImportDetailDialog =
     [ "create_button_box", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8", null ],
     [ "create_general_info_box", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#af88ee416b2227ce847a3b8123a23ce24", null ],
     [ "create_keys_table", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6", null ],
-    [ "get_status_string", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4", null ]
+    [ "get_status_string", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4", null ],
+    [ "button_box_", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#affc26751c72e51c702eea3a251f284db", null ],
+    [ "general_info_box_", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a8bc7fdc44432686d8b154783b2d156e8", null ],
+    [ "key_info_box_", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a1f82af3b6aee0e6e5999b1b146b36938", null ],
+    [ "keys_table_", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a2abf6522dd8c254074d9174fcde1d2be", null ],
+    [ "m_result_", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a238e3af4b4980dd563e1fe6ea12f4474", null ]
 ];

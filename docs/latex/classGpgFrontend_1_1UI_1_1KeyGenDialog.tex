@@ -3,11 +3,23 @@
 
 
 Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+Gen\+Dialog\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classGpgFrontend_1_1UI_1_1KeyGenDialog__inherit__graph}
+\end{center}
+\end{figure}
 
 
 Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Gen\+Dialog\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1KeyGenDialog__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,7 +29,7 @@ void {\bfseries Signal\+Key\+Generated} ()
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3aef8d2bb8e0d36842532726a6796ab9}{Key\+Gen\+Dialog}} (QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3aef8d2bb8e0d36842532726a6796ab9}{Key\+Gen\+Dialog}} (Q\+Widget $\ast$parent=nullptr)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
@@ -39,67 +51,66 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046abb56d53b
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-QGroup\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e6554b47e0dd6c2025ccb0d1d0cb658}{create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box}} ()
+Q\+Group\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e6554b47e0dd6c2025ccb0d1d0cb658}{create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box}} ()
 \begin{DoxyCompactList}\small\item\em Create a key usage group box object. \end{DoxyCompactList}\item 
-QGroup\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}{create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box}} ()
+Q\+Group\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}{create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box}} ()
 \begin{DoxyCompactList}\small\item\em Create a basic info group box object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a10677e68994c32676acb051a0153375d}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a10677e68994c32676acb051a0153375d}} 
 void {\bfseries generate\+\_\+key\+\_\+dialog} ()
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a4eb53559f200092cd299f7a90c03cdbb}{refresh\+\_\+widgets\+\_\+state}} ()
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}} 
-void {\bfseries set\+\_\+signal\+\_\+slot} ()
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot}} ()
 \begin{DoxyCompactList}\small\item\em Set the signal slot object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae8aeaff7be0b1552b29d1f209af0bd28}{check\+\_\+email\+\_\+address}} (const QString \&str)
+bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae8aeaff7be0b1552b29d1f209af0bd28}{check\+\_\+email\+\_\+address}} (const Q\+String \&str)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-QRegular\+Expression \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8ecbb5721d5a2a0f85fd7b362f62bf83}{re\+\_\+email\+\_\+}}
+Q\+Regular\+Expression {\bfseries re\+\_\+email\+\_\+}
 \item 
-QString\+List \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03a8e1c8f2c1887732d36a346185bb40}{error\+\_\+messages\+\_\+}}
+Q\+String\+List \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03a8e1c8f2c1887732d36a346185bb40}{error\+\_\+messages\+\_\+}}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a104dcf364452ab5fe019f51c6db7f7d9}{gen\+\_\+key\+\_\+info\+\_\+}}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+key\+\_\+info\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}} 
-QDialog\+Button\+Box $\ast$ {\bfseries button\+\_\+box\+\_\+}
+Q\+Dialog\+Button\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}{button\+\_\+box\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Box for standard buttons. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}} 
-QLabel $\ast$ {\bfseries error\+\_\+label\+\_\+} \{\}
+Q\+Label $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}{error\+\_\+label\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Label containing error message. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}} 
-QLine\+Edit $\ast$ {\bfseries name\+\_\+edit\+\_\+} \{\}
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}{name\+\_\+edit\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Line edit for the keys name. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}} 
-QLine\+Edit $\ast$ {\bfseries email\+\_\+edit\+\_\+} \{\}
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}{email\+\_\+edit\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Line edit for the keys email. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}} 
-QLine\+Edit $\ast$ {\bfseries comment\+\_\+edit\+\_\+} \{\}
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}{comment\+\_\+edit\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Line edit for the keys comment. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}} 
-QSpin\+Box $\ast$ {\bfseries key\+\_\+size\+\_\+spin\+\_\+box\+\_\+} \{\}
+Q\+Spin\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Spinbox for the keys size (in bit) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}} 
-QCombo\+Box $\ast$ {\bfseries key\+\_\+type\+\_\+combo\+\_\+box\+\_\+} \{\}
+Q\+Combo\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}{key\+\_\+type\+\_\+combo\+\_\+box\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Combobox for Key type. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}} 
-QDate\+Time\+Edit $\ast$ {\bfseries date\+\_\+edit\+\_\+} \{\}
+Q\+Date\+Time\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}{date\+\_\+edit\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Date edit for expiration date. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}} 
-QCheck\+Box $\ast$ {\bfseries expire\+\_\+check\+\_\+box\+\_\+} \{\}
+Q\+Check\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}{expire\+\_\+check\+\_\+box\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Checkbox, if key should expire. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a52bf44c05cf1280ba13369ae2c33c60a}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a52bf44c05cf1280ba13369ae2c33c60a}} 
-QCheck\+Box $\ast$ {\bfseries no\+\_\+pass\+\_\+phrase\+\_\+check\+\_\+box\+\_\+} \{\}
+Q\+Check\+Box $\ast$ {\bfseries no\+\_\+pass\+\_\+phrase\+\_\+check\+\_\+box\+\_\+} \{\}
 \item 
-QGroup\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7b1b9cb46c0547c1e561e56d55616cf1}{key\+\_\+usage\+\_\+group\+\_\+box\+\_\+}} \{\}
+Q\+Group\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7b1b9cb46c0547c1e561e56d55616cf1}{key\+\_\+usage\+\_\+group\+\_\+box\+\_\+}} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aff131dd6f7178c63ef2e2f85d30828a2}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aff131dd6f7178c63ef2e2f85d30828a2}} 
-QDate\+Time {\bfseries max\+\_\+date\+\_\+time\+\_\+}
+Q\+Date\+Time {\bfseries max\+\_\+date\+\_\+time\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}} 
-std\+::vector$<$ QCheck\+Box $\ast$ $>$ {\bfseries key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}
-\begin{DoxyCompactList}\small\item\em ENCR, SIGN, CERT, AUTH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+std\+::vector$<$ Q\+Check\+Box $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}
+\begin{DoxyCompactList}\small\item\em E\+N\+CR, S\+I\+GN, C\+E\+RT, A\+U\+TH. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -107,7 +118,7 @@ std\+::vector$<$ QCheck\+Box $\ast$ $>$ {\bfseries key\+\_\+usage\+\_\+check\+\_
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!KeyGenDialog@{KeyGenDialog}}
 \index{KeyGenDialog@{KeyGenDialog}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{KeyGenDialog()}{KeyGenDialog()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructor of this class
 
@@ -122,7 +133,7 @@ Constructor of this class
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}{button\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation_abe381ce56a7b157a3760b2fd9c3b7419}{Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}.
+References button\+\_\+box\+\_\+, Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings().
 
 
 
@@ -131,7 +142,7 @@ References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa6
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!check\_email\_address@{check\_email\_address}}
 \index{check\_email\_address@{check\_email\_address}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{check\_email\_address()}{check\_email\_address()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::check\+\_\+email\+\_\+address (\begin{DoxyParamCaption}\item[{const QString \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::check\+\_\+email\+\_\+address (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -145,61 +156,75 @@ false
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}{slot\+\_\+key\+\_\+gen\+\_\+accept()}}.
+Referenced by slot\+\_\+key\+\_\+gen\+\_\+accept().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a010acccfd5fb5475769658f9cf68da7b}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!create\_basic\_info\_group\_box@{create\_basic\_info\_group\_box}}
 \index{create\_basic\_info\_group\_box@{create\_basic\_info\_group\_box}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{create\_basic\_info\_group\_box()}{create\_basic\_info\_group\_box()}}
-{\footnotesize\ttfamily QGroup\+Box $\ast$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+Group\+Box $\ast$ Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Create a basic info group box object. 
 
 \begin{DoxyReturn}{Returns}
-QGroup\+Box$\ast$ 
+Q\+Group\+Box$\ast$ 
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}{comment\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}{date\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}{email\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}{error\+\_\+label\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}{expire\+\_\+check\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}{Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}{key\+\_\+type\+\_\+combo\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}{name\+\_\+edit\+\_\+}}.
+References comment\+\_\+edit\+\_\+, date\+\_\+edit\+\_\+, email\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, key\+\_\+type\+\_\+combo\+\_\+box\+\_\+, and name\+\_\+edit\+\_\+.
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e6554b47e0dd6c2025ccb0d1d0cb658}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e6554b47e0dd6c2025ccb0d1d0cb658}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!create\_key\_usage\_group\_box@{create\_key\_usage\_group\_box}}
 \index{create\_key\_usage\_group\_box@{create\_key\_usage\_group\_box}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{create\_key\_usage\_group\_box()}{create\_key\_usage\_group\_box()}}
-{\footnotesize\ttfamily QGroup\+Box $\ast$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+Group\+Box $\ast$ Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Create a key usage group box object. 
 
 \begin{DoxyReturn}{Returns}
-QGroup\+Box$\ast$ 
+Q\+Group\+Box$\ast$ 
 \end{DoxyReturn}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}.
+References key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+.
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a4eb53559f200092cd299f7a90c03cdbb}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a4eb53559f200092cd299f7a90c03cdbb}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!refresh\_widgets\_state@{refresh\_widgets\_state}}
 \index{refresh\_widgets\_state@{refresh\_widgets\_state}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{refresh\_widgets\_state()}{refresh\_widgets\_state()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::refresh\+\_\+widgets\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::refresh\+\_\+widgets\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Refresh widgets state by \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab0ccac068670a3e28ce78ff87a40b2fc}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}.
+References key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, and key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+.
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046abb56d53bdbe67838b84fdc}{slot\+\_\+activated\+\_\+key\+\_\+type()}}.
+Referenced by slot\+\_\+activated\+\_\+key\+\_\+type().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}} 
+\index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!set\_signal\_slot@{set\_signal\_slot}}
+\index{set\_signal\_slot@{set\_signal\_slot}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
+\doxysubsubsection{\texorpdfstring{set\_signal\_slot()}{set\_signal\_slot()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::set\+\_\+signal\+\_\+slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the signal slot object. 
+
+
+
+References button\+\_\+box\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, key\+\_\+type\+\_\+combo\+\_\+box\+\_\+, key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+, slot\+\_\+activated\+\_\+key\+\_\+type(), slot\+\_\+authentication\+\_\+box\+\_\+changed(), slot\+\_\+certification\+\_\+box\+\_\+changed(), slot\+\_\+encryption\+\_\+box\+\_\+changed(), slot\+\_\+expire\+\_\+box\+\_\+changed(), slot\+\_\+key\+\_\+gen\+\_\+accept(), and slot\+\_\+signing\+\_\+box\+\_\+changed().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046abb56d53bdbe67838b84fdc}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046abb56d53bdbe67838b84fdc}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_activated\_key\_type@{slot\_activated\_key\_type}}
 \index{slot\_activated\_key\_type@{slot\_activated\_key\_type}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_activated\_key\_type}{slot\_activated\_key\_type}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+activated\+\_\+key\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+activated\+\_\+key\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -208,17 +233,17 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ab8f04b046
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a281bfffd99fcb600d07c4604bf2a8841}{key\+\_\+type\+\_\+combo\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a4eb53559f200092cd299f7a90c03cdbb}{refresh\+\_\+widgets\+\_\+state()}}.
+References key\+\_\+type\+\_\+combo\+\_\+box\+\_\+, and refresh\+\_\+widgets\+\_\+state().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a904d5e72a1946382ddfca80dc57c4db5}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a904d5e72a1946382ddfca80dc57c4db5}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_authentication\_box\_changed@{slot\_authentication\_box\_changed}}
 \index{slot\_authentication\_box\_changed@{slot\_authentication\_box\_changed}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_authentication\_box\_changed}{slot\_authentication\_box\_changed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+authentication\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+authentication\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -227,13 +252,13 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61ce
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a48e953cd49efde2315868e8606af7226}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a48e953cd49efde2315868e8606af7226}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_certification\_box\_changed@{slot\_certification\_box\_changed}}
 \index{slot\_certification\_box\_changed@{slot\_certification\_box\_changed}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_certification\_box\_changed}{slot\_certification\_box\_changed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+certification\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+certification\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -242,13 +267,13 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61ce
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae611933ccd6fd67e65a2cf1ff09b5e8f}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae611933ccd6fd67e65a2cf1ff09b5e8f}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_encryption\_box\_changed@{slot\_encryption\_box\_changed}}
 \index{slot\_encryption\_box\_changed@{slot\_encryption\_box\_changed}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_encryption\_box\_changed}{slot\_encryption\_box\_changed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+encryption\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+encryption\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -257,27 +282,27 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61ce
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a516aa59c71a9ddf06c51e93252e93b76}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a516aa59c71a9ddf06c51e93252e93b76}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_expire\_box\_changed@{slot\_expire\_box\_changed}}
 \index{slot\_expire\_box\_changed@{slot\_expire\_box\_changed}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_expire\_box\_changed}{slot\_expire\_box\_changed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+expire\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+expire\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 when expirebox was checked/unchecked, enable/disable the expiration date box 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}{date\+\_\+edit\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}{expire\+\_\+check\+\_\+box\+\_\+}}.
+References date\+\_\+edit\+\_\+, and expire\+\_\+check\+\_\+box\+\_\+.
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_key\_gen\_accept@{slot\_key\_gen\_accept}}
 \index{slot\_key\_gen\_accept@{slot\_key\_gen\_accept}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_key\_gen\_accept}{slot\_key\_gen\_accept}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 check all lineedits for false entries. Show error, when there is one, otherwise generate the key check for errors in keygen dialog input
 
@@ -287,17 +312,17 @@ create the string for key generation
 
 create error message
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_ae8aeaff7be0b1552b29d1f209af0bd28}{check\+\_\+email\+\_\+address()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3008e2a9879a8e122e422f67cf0018f8}{comment\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a242a3245de709ede086087d7a096e6cd}{date\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3453d1a8a4c0411472b2779d018abdc3}{email\+\_\+edit\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8e500e3153558364fe5ba5b8bab6f219}{error\+\_\+label\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a196ef707a7a2cfd717f69c8a5bc3278d}{expire\+\_\+check\+\_\+box\+\_\+}}, \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a4cc3ac91613164d7dc61a016a2b4caea}{Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key()}}, \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aaa9b55830c39ce854e4ede26d916a844}{key\+\_\+size\+\_\+spin\+\_\+box\+\_\+}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7ed095cce29c658741ae0520049010c0}{name\+\_\+edit\+\_\+}}.
+References check\+\_\+email\+\_\+address(), comment\+\_\+edit\+\_\+, date\+\_\+edit\+\_\+, email\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, and name\+\_\+edit\+\_\+.
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03b7fe3e34147e404ca3ca6a0aa80cfc}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03b7fe3e34147e404ca3ca6a0aa80cfc}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_signing\_box\_changed@{slot\_signing\_box\_changed}}
 \index{slot\_signing\_box\_changed@{slot\_signing\_box\_changed}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_signing\_box\_changed}{slot\_signing\_box\_changed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+signing\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::slot\+\_\+signing\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -306,7 +331,7 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61ce
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61cedb98f919f10e35d4e6b5146}{set\+\_\+signal\+\_\+slot()}}.
+Referenced by set\+\_\+signal\+\_\+slot().
 
 
 
@@ -315,13 +340,13 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa36de61ce
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!error\_messages\_@{error\_messages\_}}
 \index{error\_messages\_@{error\_messages\_}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{error\_messages\_}{error\_messages\_}}
-{\footnotesize\ttfamily QString\+List Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::error\+\_\+messages\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+String\+List Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::error\+\_\+messages\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 List of errors occurring when checking entries of line edits \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a104dcf364452ab5fe019f51c6db7f7d9}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a104dcf364452ab5fe019f51c6db7f7d9}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!gen\_key\_info\_@{gen\_key\_info\_}}
 \index{gen\_key\_info\_@{gen\_key\_info\_}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{gen\_key\_info\_}{gen\_key\_info\_}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
@@ -333,18 +358,18 @@ List of errors occurring when checking entries of line edits \mbox{\Hypertarget{
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!key\_usage\_group\_box\_@{key\_usage\_group\_box\_}}
 \index{key\_usage\_group\_box\_@{key\_usage\_group\_box\_}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{key\_usage\_group\_box\_}{key\_usage\_group\_box\_}}
-{\footnotesize\ttfamily QGroup\+Box$\ast$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::key\+\_\+usage\+\_\+group\+\_\+box\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+Group\+Box$\ast$ Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::key\+\_\+usage\+\_\+group\+\_\+box\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [private]}}
 
 Group of Widgets detecting the usage of the Key \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8ecbb5721d5a2a0f85fd7b362f62bf83}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a8ecbb5721d5a2a0f85fd7b362f62bf83}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!re\_email\_@{re\_email\_}}
 \index{re\_email\_@{re\_email\_}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{re\_email\_}{re\_email\_}}
-{\footnotesize\ttfamily QRegular\+Expression Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::re\+\_\+email\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+Regular\+Expression Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::re\+\_\+email\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\{}
-\DoxyCodeLine{      R\textcolor{stringliteral}{"{}((?:[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+(?:\(\backslash\).[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+)*|"{}(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21\(\backslash\)x23-\/\(\backslash\)x5b\(\backslash\)x5d-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])*"{})@(?:(?:[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?\(\backslash\).)+[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?|\(\backslash\)[(?:(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9]))\(\backslash\).)\{3\}(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9])|[a-\/z0-\/9-\/]*[a-\/z0-\/9]:(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21-\/\(\backslash\)x5a\(\backslash\)x53-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])+)\(\backslash\)]))"{}\}}}
+\DoxyCodeLine{      R\textcolor{stringliteral}{"((?:[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+(?:\(\backslash\).[a-\/z0-\/9!\#\$\%\&'*+/=?\string^\_`\{|\}\string~-\/]+)*|"(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21\(\backslash\)x23-\/\(\backslash\)x5b\(\backslash\)x5d-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])*")@(?:(?:[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?\(\backslash\).)+[a-\/z0-\/9](?:[a-\/z0-\/9-\/]*[a-\/z0-\/9])?|\(\backslash\)[(?:(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9]))\(\backslash\).)\{3\}(?:(2(5[0-\/5]|[0-\/4][0-\/9])|1[0-\/9][0-\/9]|[1-\/9]?[0-\/9])|[a-\/z0-\/9-\/]*[a-\/z0-\/9]:(?:[\(\backslash\)x01-\/\(\backslash\)x08\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x1f\(\backslash\)x21-\/\(\backslash\)x5a\(\backslash\)x53-\/\(\backslash\)x7f]|\(\backslash\)\(\backslash\)[\(\backslash\)x01-\/\(\backslash\)x09\(\backslash\)x0b\(\backslash\)x0c\(\backslash\)x0e-\/\(\backslash\)x7f])+)\(\backslash\)]))"\}}}
 
 \end{DoxyCode}
 

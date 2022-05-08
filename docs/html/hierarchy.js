@@ -28,7 +28,7 @@ var hierarchy =
     [ "GpgFrontend::GpgSubKey", "classGpgFrontend_1_1GpgSubKey.html", null ],
     [ "GpgFrontend::GpgTOFUInfo", "classGpgFrontend_1_1GpgTOFUInfo.html", null ],
     [ "GpgFrontend::GpgUID", "classGpgFrontend_1_1GpgUID.html", null ],
-    [ "nlohmann::json", null, [
+    [ "json", null, [
       [ "GpgFrontend::UI::SettingsObject", "classGpgFrontend_1_1UI_1_1SettingsObject.html", null ]
     ] ],
     [ "GpgFrontend::UI::KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", null ],
@@ -92,8 +92,8 @@ var hierarchy =
       [ "GpgFrontend::UI::KeyserverTab", "classGpgFrontend_1_1UI_1_1KeyserverTab.html", null ],
       [ "GpgFrontend::UI::NetworkTab", "classGpgFrontend_1_1UI_1_1NetworkTab.html", null ],
       [ "GpgFrontend::UI::PlainTextEditorPage", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html", null ],
-      [ "GpgFrontend::UI::TOFUInfoPage", "classGpgFrontend_1_1UI_1_1TOFUInfoPage.html", null ],
       [ "GpgFrontend::UI::TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html", null ],
+      [ "GpgFrontend::UI::TOFUInfoPage", "classGpgFrontend_1_1UI_1_1TOFUInfoPage.html", null ],
       [ "GpgFrontend::UI::TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", null ],
       [ "GpgFrontend::UI::UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", null ]
     ] ],

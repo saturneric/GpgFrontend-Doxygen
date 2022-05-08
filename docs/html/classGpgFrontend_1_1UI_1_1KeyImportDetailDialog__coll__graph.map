@@ -1,0 +1,11 @@
+<map id="GpgFrontend::UI::KeyImportDetailDialog" name="GpgFrontend::UI::KeyImportDetailDialog">
+<area shape="rect" id="node1" title=" " alt="" coords="5,897,208,1092"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,662,85,739"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgImportInformation.html" title=" " alt="" coords="109,567,368,835"/>
+<area shape="rect" id="node4" title=" " alt="" coords="134,427,343,504"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1GpgImportedKey.html" title=" " alt="" coords="34,287,257,364"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="102,147,189,224"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="76,5,215,97"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="281,287,389,364"/>
+<area shape="rect" id="node9" title=" " alt="" coords="315,147,354,224"/>
+</map>

@@ -3,11 +3,23 @@
 
 
 Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+List\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1KeyList__inherit__graph}
+\end{center}
+\end{figure}
 
 
 Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+List\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1KeyList__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,7 +29,7 @@ void {\bfseries Slot\+Refresh} ()
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a947f4ce45285b58bbde94f4ae879ff7a}{Signal\+Refresh\+Status\+Bar}} (const QString \&message, int timeout)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a947f4ce45285b58bbde94f4ae879ff7a}{Signal\+Refresh\+Status\+Bar}} (const Q\+String \&message, int timeout)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a86a294a8baa9feaeb808f0af956ef522}\label{classGpgFrontend_1_1UI_1_1KeyList_a86a294a8baa9feaeb808f0af956ef522}} 
 void {\bfseries Signal\+Refresh\+Database} ()
@@ -25,15 +37,15 @@ void {\bfseries Signal\+Refresh\+Database} ()
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7c9d5cacdb42e1fbda5d3cc96e861418}{Key\+List}} (Key\+Menu\+Ability\+::\+Ability\+Type menu\+\_\+ability, QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7c9d5cacdb42e1fbda5d3cc96e861418}{Key\+List}} (Key\+Menu\+Ability\+::\+Ability\+Type menu\+\_\+ability, Q\+Widget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Key List object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}{Add\+List\+Group\+Tab}} (const QString \&name, Key\+List\+Row\+::\+Key\+Type select\+Type=Key\+List\+Row\+::\+SECRET\+\_\+\+OR\+\_\+\+PUBLIC\+\_\+\+KEY, Key\+List\+Column\+::\+Info\+Type info\+Type=Key\+List\+Column\+::\+ALL, const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&) -\/$>$ bool \{ return true;\})
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}{Add\+List\+Group\+Tab}} (const Q\+String \&name, Key\+List\+Row\+::\+Key\+Type select\+Type=Key\+List\+Row\+::\+S\+E\+C\+R\+E\+T\+\_\+\+O\+R\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+K\+EY, Key\+List\+Column\+::\+Info\+Type info\+Type=Key\+List\+Column\+::\+A\+LL, const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&) -\/$>$ bool \{ return true;\})
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7d75246eee6368be295c9ab5fe5ef291}{Set\+Double\+Clicked\+Action}} (std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, QWidget $\ast$)$>$ action)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7d75246eee6368be295c9ab5fe5ef291}{Set\+Double\+Clicked\+Action}} (std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, Q\+Widget $\ast$)$>$ action)
 \begin{DoxyCompactList}\small\item\em Set the Double Clicked Action object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_aab3f4facfc850e7eeb917571ca89f4a5}{Set\+Column\+Width}} (int row, int size)
 \begin{DoxyCompactList}\small\item\em Set the Column Width object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_aa961e3ba3c48f84dea4bb7ab4f756886}{Add\+Menu\+Action}} (QAction $\ast$act)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_aa961e3ba3c48f84dea4bb7ab4f756886}{Add\+Menu\+Action}} (Q\+Action $\ast$act)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a0ea28d6f108bad10aaa8844fa86db033}\label{classGpgFrontend_1_1UI_1_1KeyList_a0ea28d6f108bad10aaa8844fa86db033}} 
 void {\bfseries Add\+Separator} ()
@@ -59,21 +71,21 @@ static Key\+Id\+Args\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyLi
 \begin{DoxyCompactList}\small\item\em Get the Checked object. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab0182646beb01850779260b3772bd8fe}{Set\+Checked}} (const Key\+Id\+Args\+List\+Ptr \&key\+Ids, const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&key\+\_\+table)
 \begin{DoxyCompactList}\small\item\em Set the Checked object. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a31a4c067eed90830203862cb4adf951e}{Mark\+Keys}} (QString\+List $\ast$key\+Ids)
+static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a31a4c067eed90830203862cb4adf951e}{Mark\+Keys}} (Q\+String\+List $\ast$key\+Ids)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a82da61a76a08023b2ddbe2a6869f4190}{context\+Menu\+Event}} (QContext\+Menu\+Event $\ast$event) override
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a82da61a76a08023b2ddbe2a6869f4190}{context\+Menu\+Event}} (Q\+Context\+Menu\+Event $\ast$event) override
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ae3ad87e114432b0d659a0297d520d72f}{drag\+Enter\+Event}} (QDrag\+Enter\+Event $\ast$event) override
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ae3ad87e114432b0d659a0297d520d72f}{drag\+Enter\+Event}} (Q\+Drag\+Enter\+Event $\ast$event) override
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a23ebf79be8de637560d41afd0433c35f}{drop\+Event}} (QDrop\+Event $\ast$event) override
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a23ebf79be8de637560d41afd0433c35f}{drop\+Event}} (Q\+Drop\+Event $\ast$event) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a69e54f06d546d516a0dcdf1055b8028e}{slot\+\_\+double\+\_\+clicked}} (const QModel\+Index \&index)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a69e54f06d546d516a0dcdf1055b8028e}{slot\+\_\+double\+\_\+clicked}} (const Q\+Model\+Index \&index)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_aad57901bf84aaf7849e7cf7bb9f8fc99}\label{classGpgFrontend_1_1UI_1_1KeyList_aad57901bf84aaf7849e7cf7bb9f8fc99}} 
 void {\bfseries slot\+\_\+refresh\+\_\+ui} ()
@@ -87,7 +99,7 @@ void {\bfseries slot\+\_\+sync\+\_\+with\+\_\+key\+\_\+server} ()
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a79416ec91e91f19712bf72aeb6440175}\label{classGpgFrontend_1_1UI_1_1KeyList_a79416ec91e91f19712bf72aeb6440175}} 
 void {\bfseries init} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab64ba3049fac1aaa9fed4fb1c5919153}{import\+\_\+keys}} (const QByte\+Array \&in\+Buffer)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab64ba3049fac1aaa9fed4fb1c5919153}{import\+\_\+keys}} (const Q\+Byte\+Array \&in\+Buffer)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ae9667bbf246913ea22413d46bcda675a}\label{classGpgFrontend_1_1UI_1_1KeyList_ae9667bbf246913ea22413d46bcda675a}} 
 void {\bfseries uncheck\+\_\+all} ()
@@ -105,22 +117,22 @@ std\+::mutex {\bfseries buffered\+\_\+key\+\_\+list\+\_\+mutex\+\_\+}
 std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+Key\+List $>$ {\bfseries ui\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a8d1e2fde8e54d111581adc701e3191bb}\label{classGpgFrontend_1_1UI_1_1KeyList_a8d1e2fde8e54d111581adc701e3191bb}} 
-QTable\+Widget $\ast$ {\bfseries m\+\_\+key\+\_\+list\+\_\+} \{\}
+Q\+Table\+Widget $\ast$ {\bfseries m\+\_\+key\+\_\+list\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ad3b6021ff2b2f03874bc9886bc08c152}\label{classGpgFrontend_1_1UI_1_1KeyList_ad3b6021ff2b2f03874bc9886bc08c152}} 
 std\+::vector$<$ \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} $>$ {\bfseries m\+\_\+key\+\_\+tables\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ac4d74ae5a34617b0be9915a43a2abdaa}\label{classGpgFrontend_1_1UI_1_1KeyList_ac4d74ae5a34617b0be9915a43a2abdaa}} 
-QMenu $\ast$ {\bfseries popup\+\_\+menu\+\_\+} \{\}
+Q\+Menu $\ast$ {\bfseries popup\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a19b3f64d41843bb267fcd6c9956fde88}\label{classGpgFrontend_1_1UI_1_1KeyList_a19b3f64d41843bb267fcd6c9956fde88}} 
 Gpg\+Frontend\+::\+Key\+Link\+List\+Ptr {\bfseries buffered\+\_\+keys\+\_\+list\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a74ef918cd437730e111171660df06c81}\label{classGpgFrontend_1_1UI_1_1KeyList_a74ef918cd437730e111171660df06c81}} 
-std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, QWidget $\ast$)$>$ {\bfseries m\+\_\+action\+\_\+} = nullptr
+std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, Q\+Widget $\ast$)$>$ {\bfseries m\+\_\+action\+\_\+} = nullptr
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ade6f1511cb60ceafcfe8e50a2ef28c73}\label{classGpgFrontend_1_1UI_1_1KeyList_ade6f1511cb60ceafcfe8e50a2ef28c73}} 
-Key\+Menu\+Ability\+::\+Ability\+Type {\bfseries menu\+\_\+ability\+\_\+} = Key\+Menu\+Ability\+::\+ALL
+Key\+Menu\+Ability\+::\+Ability\+Type {\bfseries menu\+\_\+ability\+\_\+} = Key\+Menu\+Ability\+::\+A\+LL
 \end{DoxyCompactItemize}
 
 
@@ -129,7 +141,7 @@ Key\+Menu\+Ability\+::\+Ability\+Type {\bfseries menu\+\_\+ability\+\_\+} = Key\
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!KeyList@{KeyList}}
 \index{KeyList@{KeyList}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{KeyList()}{KeyList()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Key\+List (\begin{DoxyParamCaption}\item[{Key\+Menu\+Ability\+::\+Ability\+Type}]{menu\+\_\+ability,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Key\+List (\begin{DoxyParamCaption}\item[{Key\+Menu\+Ability\+::\+Ability\+Type}]{menu\+\_\+ability,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -149,7 +161,7 @@ Construct a new Key List object.
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!AddListGroupTab@{AddListGroupTab}}
 \index{AddListGroupTab@{AddListGroupTab}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{AddListGroupTab()}{AddListGroupTab()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{Key\+List\+Row\+::\+Key\+Type}]{select\+Type = {\ttfamily KeyListRow\+:\+:SECRET\+\_\+OR\+\_\+PUBLIC\+\_\+KEY},  }\item[{Key\+List\+Column\+::\+Info\+Type}]{info\+Type = {\ttfamily KeyListColumn\+:\+:ALL},  }\item[{const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&}]{filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Add\+List\+Group\+Tab (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name,  }\item[{Key\+List\+Row\+::\+Key\+Type}]{select\+Type = {\ttfamily KeyListRow\+:\+:SECRET\+\_\+OR\+\_\+PUBLIC\+\_\+KEY},  }\item[{Key\+List\+Column\+::\+Info\+Type}]{info\+Type = {\ttfamily KeyListColumn\+:\+:ALL},  }\item[{const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&}]{filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -164,17 +176,17 @@ Construct a new Key List object.
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a69e54f06d546d516a0dcdf1055b8028e}{slot\+\_\+double\+\_\+clicked()}}.
+References slot\+\_\+double\+\_\+clicked().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a04668246525874760f47a340b4b7d8de}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_aaa06ce342178802e76119bec6b26cc55}{Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_a02c3ba737702894fc6d4ac1a1c543ccb}{Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Signers\+Picker()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog(), and Gpg\+Frontend\+::\+U\+I\+::\+Signers\+Picker\+::\+Signers\+Picker().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_aa961e3ba3c48f84dea4bb7ab4f756886}\label{classGpgFrontend_1_1UI_1_1KeyList_aa961e3ba3c48f84dea4bb7ab4f756886}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!AddMenuAction@{AddMenuAction}}
 \index{AddMenuAction@{AddMenuAction}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{AddMenuAction()}{AddMenuAction()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+Menu\+Action (\begin{DoxyParamCaption}\item[{QAction $\ast$}]{act }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Add\+Menu\+Action (\begin{DoxyParamCaption}\item[{Q\+Action $\ast$}]{act }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -183,13 +195,13 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a04668246525
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a08ba4521f68c488b23b651e201011759}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Init(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a20c4a242f49123bd64982952fdad08e9}\label{classGpgFrontend_1_1UI_1_1KeyList_a20c4a242f49123bd64982952fdad08e9}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!ContainsPrivateKeys@{ContainsPrivateKeys}}
 \index{ContainsPrivateKeys@{ContainsPrivateKeys}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{ContainsPrivateKeys()}{ContainsPrivateKeys()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Contains\+Private\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Contains\+Private\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -200,7 +212,7 @@ false
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!contextMenuEvent@{contextMenuEvent}}
 \index{contextMenuEvent@{contextMenuEvent}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{contextMenuEvent()}{contextMenuEvent()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::context\+Menu\+Event (\begin{DoxyParamCaption}\item[{QContext\+Menu\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::context\+Menu\+Event (\begin{DoxyParamCaption}\item[{Q\+Context\+Menu\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -211,7 +223,7 @@ false
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!dragEnterEvent@{dragEnterEvent}}
 \index{dragEnterEvent@{dragEnterEvent}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{dragEnterEvent()}{dragEnterEvent()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drag\+Enter\+Event (\begin{DoxyParamCaption}\item[{QDrag\+Enter\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::drag\+Enter\+Event (\begin{DoxyParamCaption}\item[{Q\+Drag\+Enter\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -222,7 +234,7 @@ false
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!dropEvent@{dropEvent}}
 \index{dropEvent@{dropEvent}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{dropEvent()}{dropEvent()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event (\begin{DoxyParamCaption}\item[{QDrop\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::drop\+Event (\begin{DoxyParamCaption}\item[{Q\+Drop\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -231,13 +243,13 @@ false
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance()}}, \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab64ba3049fac1aaa9fed4fb1c5919153}{import\+\_\+keys()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}{Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Sync\+Settings()}}.
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings(), import\+\_\+keys(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Sync\+Settings().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a7ead8845ceb7c9310e3f4742251e1d87}\label{classGpgFrontend_1_1UI_1_1KeyList_a7ead8845ceb7c9310e3f4742251e1d87}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetAllPrivateKeys@{GetAllPrivateKeys}}
 \index{GetAllPrivateKeys@{GetAllPrivateKeys}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetAllPrivateKeys()}{GetAllPrivateKeys()}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+All\+Private\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+All\+Private\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -250,7 +262,7 @@ Key\+Id\+Args\+List\+Ptr
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetChecked@{GetChecked}}
 \index{GetChecked@{GetChecked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetChecked()}{GetChecked()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -261,13 +273,13 @@ Key\+Id\+Args\+List\+Ptr
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a7a4b6490038470a8849231e48282da98}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::save\+\_\+settings()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ae11d01211c2914ecc148e13dd7de506e}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a304efe91afa31b32725caa00c27475a4}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog_a82f6bf641ff3b64341a0bdcf76571c43}{Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::slot\+\_\+sign\+\_\+key()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a9ec699536a35a37961a8c6da1e231ae3}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a25a2e4017d77cffc8362bde9606fad30}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a8bcdcbe678b8dc0837fffda2ebfe79bf}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::save\+\_\+settings(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::slot\+\_\+sign\+\_\+key(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a4e5862299b0aebe07daf8fbc642a4c38}\label{classGpgFrontend_1_1UI_1_1KeyList_a4e5862299b0aebe07daf8fbc642a4c38}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetChecked@{GetChecked}}
 \index{GetChecked@{GetChecked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetChecked()}{GetChecked()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Checked (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&}]{key\+\_\+table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+Checked (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&}]{key\+\_\+table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -285,7 +297,7 @@ Key\+Id\+Args\+List\+Ptr
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetPrivateChecked@{GetPrivateChecked}}
 \index{GetPrivateChecked@{GetPrivateChecked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetPrivateChecked()}{GetPrivateChecked()}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Private\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+Private\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -296,13 +308,13 @@ Key\+Id\+Args\+List\+Ptr
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_a2e98dcdf647a2e0e6455998b018aed00}{Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Get\+Checked\+Signers()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a3f3d03b0ec22385bee559fbd2aeb881b}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Signers\+Picker\+::\+Get\+Checked\+Signers(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a1bcca32b18c539a2ae83c30fc07db544}\label{classGpgFrontend_1_1UI_1_1KeyList_a1bcca32b18c539a2ae83c30fc07db544}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetSelected@{GetSelected}}
 \index{GetSelected@{GetSelected}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetSelected()}{GetSelected()}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -313,13 +325,13 @@ Key\+Id\+Args\+List\+Ptr
 \end{DoxyReturn}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_adfa3b3ae1de1fd04c5ea09e3c97c3e98}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::refresh\+\_\+keys\+\_\+from\+\_\+key\+\_\+server()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a76bf3784d751db78ed13bd9962e14472}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_af93d72eaf58326f1f9e926752c6b1fc6}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+copy\+\_\+mail\+\_\+address\+\_\+to\+\_\+clipboard()}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a033d448541b44fa48b76dec828a4eb0e}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+show\+\_\+key\+\_\+details()}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ad27dcf3f534f13d8df71df680c4d177c}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::upload\+\_\+key\+\_\+to\+\_\+server()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::refresh\+\_\+keys\+\_\+from\+\_\+key\+\_\+server(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+copy\+\_\+mail\+\_\+address\+\_\+to\+\_\+clipboard(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+show\+\_\+key\+\_\+details(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::upload\+\_\+key\+\_\+to\+\_\+server().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ab4368b81402e2468a9e960de8fb7080f}\label{classGpgFrontend_1_1UI_1_1KeyList_ab4368b81402e2468a9e960de8fb7080f}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!GetSelectedKey@{GetSelectedKey}}
 \index{GetSelectedKey@{GetSelectedKey}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{GetSelectedKey()}{GetSelectedKey()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Selected\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Get\+Selected\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -332,7 +344,7 @@ std\+::string
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!import\_keys@{import\_keys}}
 \index{import\_keys@{import\_keys}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{import\_keys()}{import\_keys()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::import\+\_\+keys (\begin{DoxyParamCaption}\item[{const QByte\+Array \&}]{in\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::import\+\_\+keys (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{in\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -341,28 +353,28 @@ std\+::string
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ab7a9be5283047695cd47562775adf79d}{Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key()}}.
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a23ebf79be8de637560d41afd0433c35f}{drop\+Event()}}.
+Referenced by drop\+Event().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a31a4c067eed90830203862cb4adf951e}\label{classGpgFrontend_1_1UI_1_1KeyList_a31a4c067eed90830203862cb4adf951e}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!MarkKeys@{MarkKeys}}
 \index{MarkKeys@{MarkKeys}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{MarkKeys()}{MarkKeys()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Mark\+Keys (\begin{DoxyParamCaption}\item[{QString\+List $\ast$}]{key\+Ids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Mark\+Keys (\begin{DoxyParamCaption}\item[{Q\+String\+List $\ast$}]{key\+Ids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 \begin{DoxyParams}{Parameters}
-{\em key\+Ids} & \\
+{\em key\+Ids} & set background color for Keys and put them to top \\
 \hline
 \end{DoxyParams}
-set background color for Keys and put them to top \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ab0182646beb01850779260b3772bd8fe}\label{classGpgFrontend_1_1UI_1_1KeyList_ab0182646beb01850779260b3772bd8fe}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ab0182646beb01850779260b3772bd8fe}\label{classGpgFrontend_1_1UI_1_1KeyList_ab0182646beb01850779260b3772bd8fe}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!SetChecked@{SetChecked}}
 \index{SetChecked@{SetChecked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{SetChecked()}{SetChecked()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Checked (\begin{DoxyParamCaption}\item[{const Key\+Id\+Args\+List\+Ptr \&}]{key\+Ids,  }\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&}]{key\+\_\+table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Set\+Checked (\begin{DoxyParamCaption}\item[{const Key\+Id\+Args\+List\+Ptr \&}]{key\+Ids,  }\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&}]{key\+\_\+table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -379,7 +391,7 @@ Set the Checked object.
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!SetChecked@{SetChecked}}
 \index{SetChecked@{SetChecked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{SetChecked()}{SetChecked()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Checked (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr}]{key\+\_\+ids }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Set\+Checked (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr}]{key\+\_\+ids }\end{DoxyParamCaption})}
 
 
 
@@ -392,13 +404,13 @@ Set the Checked object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a210ab31f4d949a50507d0690c0d1598a}{Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::restore\+\_\+settings()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::restore\+\_\+settings().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_aab3f4facfc850e7eeb917571ca89f4a5}\label{classGpgFrontend_1_1UI_1_1KeyList_aab3f4facfc850e7eeb917571ca89f4a5}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!SetColumnWidth@{SetColumnWidth}}
 \index{SetColumnWidth@{SetColumnWidth}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{SetColumnWidth()}{SetColumnWidth()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Column\+Width (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Set\+Column\+Width (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{size }\end{DoxyParamCaption})}
 
 
 
@@ -415,7 +427,7 @@ Set the Column Width object.
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!SetDoubleClickedAction@{SetDoubleClickedAction}}
 \index{SetDoubleClickedAction@{SetDoubleClickedAction}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{SetDoubleClickedAction()}{SetDoubleClickedAction()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Double\+Clicked\+Action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, QWidget $\ast$)$>$}]{action }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Set\+Double\+Clicked\+Action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, Q\+Widget $\ast$)$>$}]{action }\end{DoxyParamCaption})}
 
 
 
@@ -428,13 +440,13 @@ Set the Double Clicked Action object.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt()}}.
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a947f4ce45285b58bbde94f4ae879ff7a}\label{classGpgFrontend_1_1UI_1_1KeyList_a947f4ce45285b58bbde94f4ae879ff7a}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!SignalRefreshStatusBar@{SignalRefreshStatusBar}}
 \index{SignalRefreshStatusBar@{SignalRefreshStatusBar}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{SignalRefreshStatusBar}{SignalRefreshStatusBar}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Signal\+Refresh\+Status\+Bar (\begin{DoxyParamCaption}\item[{const QString \&}]{message,  }\item[{int}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Signal\+Refresh\+Status\+Bar (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{message,  }\item[{int}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -447,7 +459,7 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf1
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!slot\_double\_clicked@{slot\_double\_clicked}}
 \index{slot\_double\_clicked@{slot\_double\_clicked}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{slot\_double\_clicked}{slot\_double\_clicked}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::slot\+\_\+double\+\_\+clicked (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::slot\+\_\+double\+\_\+clicked (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -456,11 +468,11 @@ Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf1
 \end{DoxyParams}
 
 
-References \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a8a378452876a685af879e04bfa456b6f}{Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance()}}, and \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a9ae7ccc48f6ada97bb6f57c422bfabc4}{Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key()}}.
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key().
 
 
 
-Referenced by \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}{Add\+List\+Group\+Tab()}}.
+Referenced by Add\+List\+Group\+Tab().
 
 
 

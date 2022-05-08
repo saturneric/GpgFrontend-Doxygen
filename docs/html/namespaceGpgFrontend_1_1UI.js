@@ -1,7 +1,7 @@
 var namespaceGpgFrontend_1_1UI =
 [
     [ "AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", "classGpgFrontend_1_1UI_1_1AboutDialog" ],
-    [ "AdvancedTab", "classGpgFrontend_1_1UI_1_1AdvancedTab.html", null ],
+    [ "AdvancedTab", "classGpgFrontend_1_1UI_1_1AdvancedTab.html", "classGpgFrontend_1_1UI_1_1AdvancedTab" ],
     [ "AppearanceTab", "classGpgFrontend_1_1UI_1_1AppearanceTab.html", "classGpgFrontend_1_1UI_1_1AppearanceTab" ],
     [ "ChoosePage", "classGpgFrontend_1_1UI_1_1ChoosePage.html", "classGpgFrontend_1_1UI_1_1ChoosePage" ],
     [ "CommonUtils", "classGpgFrontend_1_1UI_1_1CommonUtils.html", "classGpgFrontend_1_1UI_1_1CommonUtils" ],
@@ -15,14 +15,14 @@ var namespaceGpgFrontend_1_1UI =
     [ "InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", "classGpgFrontend_1_1UI_1_1InfoBoardWidget" ],
     [ "InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", "classGpgFrontend_1_1UI_1_1InfoTab" ],
     [ "IntroPage", "classGpgFrontend_1_1UI_1_1IntroPage.html", "classGpgFrontend_1_1UI_1_1IntroPage" ],
-    [ "KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", null ],
+    [ "KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog" ],
     [ "KeyGenDialog", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html", "classGpgFrontend_1_1UI_1_1KeyGenDialog" ],
     [ "KeyGenPage", "classGpgFrontend_1_1UI_1_1KeyGenPage.html", "classGpgFrontend_1_1UI_1_1KeyGenPage" ],
     [ "KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog" ],
     [ "KeyList", "classGpgFrontend_1_1UI_1_1KeyList.html", "classGpgFrontend_1_1UI_1_1KeyList" ],
-    [ "KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", null ],
-    [ "KeyListRow", "structGpgFrontend_1_1UI_1_1KeyListRow.html", null ],
-    [ "KeyMenuAbility", "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html", null ],
+    [ "KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", "structGpgFrontend_1_1UI_1_1KeyListColumn" ],
+    [ "KeyListRow", "structGpgFrontend_1_1UI_1_1KeyListRow.html", "structGpgFrontend_1_1UI_1_1KeyListRow" ],
+    [ "KeyMenuAbility", "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html", "structGpgFrontend_1_1UI_1_1KeyMenuAbility" ],
     [ "KeyMgmt", "classGpgFrontend_1_1UI_1_1KeyMgmt.html", "classGpgFrontend_1_1UI_1_1KeyMgmt" ],
     [ "KeyNewUIDDialog", "classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html", "classGpgFrontend_1_1UI_1_1KeyNewUIDDialog" ],
     [ "KeyPairDetailTab", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab" ],
@@ -55,19 +55,5 @@ var namespaceGpgFrontend_1_1UI =
     [ "VerifyKeyDetailBox", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox" ],
     [ "VersionCheckThread", "classGpgFrontend_1_1UI_1_1VersionCheckThread.html", "classGpgFrontend_1_1UI_1_1VersionCheckThread" ],
     [ "WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", "classGpgFrontend_1_1UI_1_1WaitingDialog" ],
-    [ "Wizard", "classGpgFrontend_1_1UI_1_1Wizard.html", "classGpgFrontend_1_1UI_1_1Wizard" ],
-    [ "InfoBoardStatus", "namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d", [
-      [ "INFO_ERROR_OK", "namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00dad9f9b62d50036c2f35892e1ca67bdde2", null ],
-      [ "INFO_ERROR_WARN", "namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00da3af9444bf2929ab4b80b863da415cd69", null ],
-      [ "INFO_ERROR_CRITICAL", "namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00da64c9ad5698bff378b442691d32b2efb6", null ],
-      [ "INFO_ERROR_NEUTRAL", "namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00dad42d12553e87485f9eada4819c9d3315", null ]
-    ] ],
-    [ "import_unknown_key_from_keyserver", "namespaceGpgFrontend_1_1UI.html#a9ab218dde057182cb4911c4792acd925", null ],
-    [ "process_directory_into_tarball", "namespaceGpgFrontend_1_1UI.html#a5470872566b41ce628f64039f34b964a", null ],
-    [ "process_operation", "namespaceGpgFrontend_1_1UI.html#a915af1392056ddeb14099632d9679fc4", null ],
-    [ "process_result_analyse", "namespaceGpgFrontend_1_1UI.html#abd3c7c636954390d52150b4e6d38e1b3", null ],
-    [ "process_result_analyse", "namespaceGpgFrontend_1_1UI.html#a60b5887adabc74015700795dc3c07ae9", null ],
-    [ "process_tarball_into_directory", "namespaceGpgFrontend_1_1UI.html#a57d0a4dba23cd3d9b42222d40c710dc1", null ],
-    [ "refresh_info_board", "namespaceGpgFrontend_1_1UI.html#a204156a333cde4f705f0ace91cd3d333", null ],
-    [ "show_verify_details", "namespaceGpgFrontend_1_1UI.html#a590a26051105940a6d6e0743b147e281", null ]
+    [ "Wizard", "classGpgFrontend_1_1UI_1_1Wizard.html", "classGpgFrontend_1_1UI_1_1Wizard" ]
 ];

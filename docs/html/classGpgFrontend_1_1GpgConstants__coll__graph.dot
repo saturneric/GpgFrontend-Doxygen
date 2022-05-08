@@ -1,8 +1,0 @@
-digraph "GpgFrontend::GpgConstants"
-{
- // INTERACTIVE_SVG=YES
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{GpgFrontend::GpgConstants\n|+ PGP_CRYPT_BEGIN\l+ PGP_CRYPT_END\l+ PGP_SIGNED_BEGIN\l+ PGP_SIGNED_END\l+ PGP_SIGNATURE_BEGIN\l+ PGP_SIGNATURE_END\l+ PGP_PUBLIC_KEY_BEGIN\l+ PGP_PRIVATE_KEY_BEGIN\l+ GPG_FRONTEND_SHORT\l_CRYPTO_HEAD\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
-}
