@@ -1,0 +1,57 @@
+name: Doxygen GitHub Pages Deploy Action
+
+on:
+  schedule:
+    - cron:  '0 30 4 ? * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          ref: main
+          path: GpgFrontend
+
+      - uses: actions/checkout@v3
+        with:
+          repository: saturneric/GpgFrontend-Doxygen
+          ref: develop
+          path: GpgFrontend-Doxygen
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Install Doxygen Dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install doxygen graphviz
+          sudo apt-get -y install git gpg
+
+      - name: Generate New Document
+        run: |
+          cd ${{github.workspace}}/GpgFrontend/
+          doxygen Doxyfile
+  
+      - name: Copy Document
+        run: |
+          cd ${{github.workspace}}
+          rm -rf ${{github.workspace}}/GpgFrontend-Doxygen/docs
+          cp -rf ${{github.workspace}}/GpgFrontend/docs ${{github.workspace}}/GpgFrontend-Doxygen/docs
+      
+      - name: Commit Document
+        run: |
+          cd ${{github.workspace}}/GpgFrontend-Doxygen/
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git add .
+          git commit -m "Update Doxygen on $(date '+%Y-%m-%d %H:%M:%S')"
+          git config --global --add safe.directory /github/workspace
+  
+      - name: Push Document into Repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: '${{github.workspace}}/GpgFrontend-Doxygen'
+          branch: develop
