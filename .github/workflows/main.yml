@@ -2,9 +2,9 @@ name: Doxygen GitHub Pages Deploy Action
 
 on:
   push:
-    branches: [ main, 'develop' ]
+    branches: [ main ]
   repository_dispatch:
-    types: [code_push]
+    types: [ CodePush ]
 
 jobs:
   deploy:
