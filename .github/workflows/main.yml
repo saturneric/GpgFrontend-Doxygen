@@ -14,7 +14,7 @@ jobs:
         with:
           repository: saturneric/GpgFrontend
           submodules: recursive
-          ref: ${{ github.event.client_payload.message.branch }}
+          ref: ${{ github.event.client_payload.message.branch || "main" }}
           path: GpgFrontend
 
       - uses: actions/checkout@v3
@@ -48,7 +48,7 @@ jobs:
           git config --local user.email "$(git log --format='%ae' HEAD^!)"
           git config --local user.name "$(git log --format='%an' HEAD^!)"
           git add .
-          git commit -m "Update Doxygen ref ${{ github.event.client_payload.message.branch }} on $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Update Doxygen ref ${{ github.event.client_payload.message.branch || "main" }} on $(date '+%Y-%m-%d %H:%M:%S')"
           git config --global --add safe.directory /github/workspace
   
       - name: Push Document into Repo
