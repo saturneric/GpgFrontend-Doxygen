@@ -1,5 +1,6 @@
 <map id="GpgFrontend::GpgCommandExecutor" name="GpgFrontend::GpgCommandExecutor">
-<area shape="rect" id="node1" title="Extra commands related to GPG." alt="" coords="5,859,268,951"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="15,439,258,809"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="22,5,251,376"/>
+<area shape="rect" id="node1" title="Extra commands related to GPG." alt="" coords="5,883,268,975"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="15,551,258,833"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="27,5,235,156"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="153,205,382,488"/>
 </map>

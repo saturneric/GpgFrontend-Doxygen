@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['_7eglobalsettingstation_619',['~GlobalSettingStation',['../classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451',1,'GpgFrontend::GlobalSettingStation']]],
-  ['_7egpgcontext_620',['~GpgContext',['../classGpgFrontend_1_1GpgContext.html#ae89dee551354c1541337881898832725',1,'GpgFrontend::GpgContext']]],
-  ['_7egpgkey_621',['~GpgKey',['../classGpgFrontend_1_1GpgKey.html#a1e9223bb1ad8fbb4e769680de39b3697',1,'GpgFrontend::GpgKey']]],
-  ['_7egpgkeysignature_622',['~GpgKeySignature',['../classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3',1,'GpgFrontend::GpgKeySignature']]],
-  ['_7egpgsignature_623',['~GpgSignature',['../classGpgFrontend_1_1GpgSignature.html#a44f137a457ac109d145a1cdd8e544e3a',1,'GpgFrontend::GpgSignature']]],
-  ['_7esettingsobject_624',['~SettingsObject',['../classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c',1,'GpgFrontend::UI::SettingsObject']]],
-  ['_7esingletonfunctionobject_625',['~SingletonFunctionObject',['../classGpgFrontend_1_1SingletonFunctionObject.html#a8296be8c449f88175285186831b995bc',1,'GpgFrontend::SingletonFunctionObject']]]
+  ['_7eglobalsettingstation_636',['~GlobalSettingStation',['../classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451',1,'GpgFrontend::GlobalSettingStation']]],
+  ['_7egpgcontext_637',['~GpgContext',['../classGpgFrontend_1_1GpgContext.html#ae89dee551354c1541337881898832725',1,'GpgFrontend::GpgContext']]],
+  ['_7egpgkey_638',['~GpgKey',['../classGpgFrontend_1_1GpgKey.html#a1e9223bb1ad8fbb4e769680de39b3697',1,'GpgFrontend::GpgKey']]],
+  ['_7egpgkeysignature_639',['~GpgKeySignature',['../classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3',1,'GpgFrontend::GpgKeySignature']]],
+  ['_7egpgsignature_640',['~GpgSignature',['../classGpgFrontend_1_1GpgSignature.html#a44f137a457ac109d145a1cdd8e544e3a',1,'GpgFrontend::GpgSignature']]],
+  ['_7esettingsobject_641',['~SettingsObject',['../classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c',1,'GpgFrontend::UI::SettingsObject']]],
+  ['_7esingletonfunctionobject_642',['~SingletonFunctionObject',['../classGpgFrontend_1_1SingletonFunctionObject.html#a8296be8c449f88175285186831b995bc',1,'GpgFrontend::SingletonFunctionObject']]]
 ];

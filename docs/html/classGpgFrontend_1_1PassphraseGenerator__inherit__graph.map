@@ -1,5 +1,6 @@
 <map id="GpgFrontend::PassphraseGenerator" name="GpgFrontend::PassphraseGenerator">
-<area shape="rect" id="node1" title="The PassphraseGenerator class." alt="" coords="5,859,256,965"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="15,439,247,809"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="16,5,245,376"/>
+<area shape="rect" id="node1" title="The PassphraseGenerator class." alt="" coords="5,883,256,989"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="15,551,247,833"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="21,5,229,156"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="147,205,376,488"/>
 </map>

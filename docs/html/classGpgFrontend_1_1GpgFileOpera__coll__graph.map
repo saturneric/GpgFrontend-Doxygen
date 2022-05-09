@@ -1,14 +1,6 @@
 <map id="GpgFrontend::GpgFileOpera" name="GpgFrontend::GpgFileOpera">
-<area shape="rect" id="node1" title=" " alt="" coords="5,145,207,325"/>
-<area shape="rect" id="node3" title=" " alt="" coords="144,410,327,502"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="361,961,590,1273"/>
-<area shape="rect" id="node8" title=" " alt="" coords="263,689,495,781"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="231,197,389,274"/>
-<area shape="rect" id="node5" title=" " alt="" coords="323,5,361,83"/>
-<area shape="rect" id="node9" title="STL class." alt="" coords="413,197,548,274"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="561,417,704,495"/>
-<area shape="rect" id="node11" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="695,572,925,899"/>
-<area shape="rect" id="node7" title="STL class." alt="" coords="973,417,1065,495"/>
-<area shape="rect" id="node12" title=" " alt="" coords="729,403,881,509"/>
-<area shape="rect" id="node10" title=" " alt="" coords="463,5,501,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="19,883,221,1063"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,551,235,833"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,205,365,488"/>
 </map>
