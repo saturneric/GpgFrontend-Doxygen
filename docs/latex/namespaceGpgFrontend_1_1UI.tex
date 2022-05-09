@@ -130,8 +130,13 @@ enum \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb0
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_adc988a5b6f6b3f2b15d660f2eceb6d96}\label{namespaceGpgFrontend_1_1UI_adc988a5b6f6b3f2b15d660f2eceb6d96}} 
 void {\bfseries init\+\_\+logging} ()
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd1bf2287419d4a20cad5983dd20067c}{Init\+Gpg\+Frontend\+UI}} ()
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}{init\+\_\+locale}} ()
+\begin{DoxyCompactList}\small\item\em setup the locale and load the translations \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a6d0382875d4f5c0b4dc98866d140d0a2}{Init\+Gpg\+Frontend\+UI}} ()
 \begin{DoxyCompactList}\small\item\em init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a6a29543f0c6306e49ee85824158f34db}\label{namespaceGpgFrontend_1_1UI_a6a29543f0c6306e49ee85824158f34db}} 
+int \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a6a29543f0c6306e49ee85824158f34db}{Run\+Gpg\+Frontend\+UI}} ()
+\begin{DoxyCompactList}\small\item\em run main window \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}\label{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}} 
 bool {\bfseries path\+\_\+pre\+\_\+check} (Q\+Widget $\ast$parent, const Q\+String \&path)
 \item 
@@ -218,11 +223,29 @@ References Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Get\+Signatures(
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_abd1bf2287419d4a20cad5983dd20067c}\label{namespaceGpgFrontend_1_1UI_abd1bf2287419d4a20cad5983dd20067c}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}\label{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}} 
+\index{GpgFrontend::UI@{GpgFrontend::UI}!init\_locale@{init\_locale}}
+\index{init\_locale@{init\_locale}!GpgFrontend::UI@{GpgFrontend::UI}}
+\doxysubsubsection{\texorpdfstring{init\_locale()}{init\_locale()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::init\+\_\+locale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+setup the locale and load the translations 
+
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+Locale\+Dir(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Sync\+Settings().
+
+
+
+Referenced by Init\+Gpg\+Frontend\+U\+I().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a6d0382875d4f5c0b4dc98866d140d0a2}\label{namespaceGpgFrontend_1_1UI_a6d0382875d4f5c0b4dc98866d140d0a2}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!InitGpgFrontendUI@{InitGpgFrontendUI}}
 \index{InitGpgFrontendUI@{InitGpgFrontendUI}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{InitGpgFrontendUI()}{InitGpgFrontendUI()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Init\+Gpg\+Frontend\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+U\+I\+\_\+\+E\+X\+P\+O\+RT Gpg\+Frontend\+::\+U\+I\+::\+Init\+Gpg\+Frontend\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -230,7 +253,7 @@ init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library
 
 
 
-References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Get\+Instance(), and Gpg\+Frontend\+::init\+\_\+logging().
+References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Get\+Instance(), init\+\_\+locale(), and Gpg\+Frontend\+::init\+\_\+logging().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}\label{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_directory\_into\_tarball@{process\_directory\_into\_tarball}}
