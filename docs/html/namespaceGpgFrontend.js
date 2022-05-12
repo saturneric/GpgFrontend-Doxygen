@@ -5,6 +5,7 @@ var namespaceGpgFrontend =
     [ "ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", "classGpgFrontend_1_1ArchiveFileOperator" ],
     [ "ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", "structGpgFrontend_1_1ArchiveStruct" ],
     [ "ChannelObject", "classGpgFrontend_1_1ChannelObject.html", "classGpgFrontend_1_1ChannelObject" ],
+    [ "CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", "classGpgFrontend_1_1CharsetOperator" ],
     [ "CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", "classGpgFrontend_1_1CoreCommonUtil" ],
     [ "CtxCheckThread", "classGpgFrontend_1_1CtxCheckThread.html", "classGpgFrontend_1_1CtxCheckThread" ],
     [ "DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", "classGpgFrontend_1_1DataObjectOperator" ],

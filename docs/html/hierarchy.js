@@ -45,6 +45,7 @@ var hierarchy =
         [ "GpgFrontend::PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", null ]
       ] ]
     ] ],
+    [ "GpgFrontend::CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", null ],
     [ "class", "classclass.html", null ],
     [ "GpgFrontend::UI::MainWindow::CryptoMenu", "structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html", null ],
     [ "GpgFrontend::FileOperator", "classGpgFrontend_1_1FileOperator.html", null ],
