@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a8bc7fdc44432686d8b154783b2d156e8":[2,0,0,0,18,6],
 "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6":[2,0,0,0,18,3],
 "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8":[2,0,0,0,18,1],
 "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4":[2,0,0,0,18,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#ae1943f11c25f5696103f113493462a76":[2,0,0,0,33,1],
 "classGpgFrontend_1_1UI_1_1KeyUploadDialog.html":[2,0,0,0,34],
 "classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6":[2,0,0,0,34,2],
-"classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a168859b1774aa38b8ad4c423fe01f1c5":[2,0,0,0,34,3],
-"classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf":[2,0,0,0,34,0]
+"classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a168859b1774aa38b8ad4c423fe01f1c5":[2,0,0,0,34,3]
 };

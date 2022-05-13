@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quitdialog_733',['QuitDialog',['../classGpgFrontend_1_1UI_1_1QuitDialog.html',1,'GpgFrontend::UI']]]
+  ['quitdialog_734',['QuitDialog',['../classGpgFrontend_1_1UI_1_1QuitDialog.html',1,'GpgFrontend::UI']]]
 ];

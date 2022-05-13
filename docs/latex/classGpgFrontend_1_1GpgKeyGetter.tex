@@ -25,11 +25,11 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Getter\+:
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a8eeee9f6dd74dc24c24794ce63c62285}{Gpg\+Key\+Getter}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Getter object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_ada46e39c09db8ae8ce9c87ca3ed3a876}{Get\+Key}} (const std\+::string \&id)
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a94243d09c9418c8ebf0c7cdab4a2b7f1}{Get\+Key}} (const std\+::string \&id, bool use\+\_\+cache=true)
 \begin{DoxyCompactList}\small\item\em Get the Key object. \end{DoxyCompactList}\item 
 Key\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_aa5979c21af58b874b33c203752dcc805}{Get\+Keys}} (const Key\+Id\+Args\+List\+Ptr \&ids)
 \begin{DoxyCompactList}\small\item\em Get the Keys object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a841c3fd042e99a76a40ab568f84e77e3}{Get\+Pubkey}} (const std\+::string \&id)
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a7a8bc7c0f12a11e108051e4c824fc430}{Get\+Pubkey}} (const std\+::string \&id, bool use\+\_\+cache=true)
 \begin{DoxyCompactList}\small\item\em Get the Pubkey object. \end{DoxyCompactList}\item 
 Key\+Link\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_afe78ac470287d70e7df51aae327b9f54}{Fetch\+Key}} ()
 \begin{DoxyCompactList}\small\item\em Get all the keys by receiving a linked list. \end{DoxyCompactList}\item 
@@ -39,15 +39,20 @@ Key\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a7ec8d8431a771c
 \begin{DoxyCompactList}\small\item\em Get the Keys Copy object. \end{DoxyCompactList}\item 
 Key\+Link\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a028fe69516a51c526bbd2ec4235053ad}{Get\+Keys\+Copy}} (const Key\+Link\+List\+Ptr \&keys)
 \begin{DoxyCompactList}\small\item\em Get the Keys Copy object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_ab5196ef4ed5323fc2af70abf801ea260}{get\+\_\+key\+\_\+in\+\_\+cache}} (const std\+::string \&id)
+\begin{DoxyCompactList}\small\item\em Get the Key object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& {\bfseries ctx\+\_\+}
-\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_aa4aef315d82123726be879097d3df147}{ctx\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Get the gpgme context object. \end{DoxyCompactList}\item 
 std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a81941e1f562dc22977a71d00dd10956a}{ctx\+\_\+mutex\+\_\+}}
 \begin{DoxyCompactList}\small\item\em shared mutex for the keys cache \end{DoxyCompactList}\item 
 std\+::map$<$ std\+::string, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a9567d5e08ae73c5bafcd1dc378fed066}{keys\+\_\+cache\+\_\+}}
-\begin{DoxyCompactList}\small\item\em cache the keys with key fpr \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em cache the keys with key id \end{DoxyCompactList}\item 
 std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_ae1d7846ad2fa17ab90c72b3186ba5335}{keys\+\_\+cache\+\_\+mutex\+\_\+}}
 \begin{DoxyCompactList}\small\item\em shared mutex for the keys cache \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
@@ -119,11 +124,29 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::slot\+\_\+update\+\_\+key\+\_\+status().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_ada46e39c09db8ae8ce9c87ca3ed3a876}\label{classGpgFrontend_1_1GpgKeyGetter_ada46e39c09db8ae8ce9c87ca3ed3a876}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_ab5196ef4ed5323fc2af70abf801ea260}\label{classGpgFrontend_1_1GpgKeyGetter_ab5196ef4ed5323fc2af70abf801ea260}} 
+\index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!get\_key\_in\_cache@{get\_key\_in\_cache}}
+\index{get\_key\_in\_cache@{get\_key\_in\_cache}!GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}}
+\doxysubsubsection{\texorpdfstring{get\_key\_in\_cache()}{get\_key\_in\_cache()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::get\+\_\+key\+\_\+in\+\_\+cache (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the Key object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a94243d09c9418c8ebf0c7cdab4a2b7f1}\label{classGpgFrontend_1_1GpgKeyGetter_a94243d09c9418c8ebf0c7cdab4a2b7f1}} 
 \index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!GetKey@{GetKey}}
 \index{GetKey@{GetKey}!GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}}
 \doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id,  }\item[{bool}]{use\+\_\+cache = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 
@@ -199,11 +222,11 @@ Get the Keys Copy object.
 \begin{DoxyReturn}{Returns}
 Key\+List\+Ptr 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a841c3fd042e99a76a40ab568f84e77e3}\label{classGpgFrontend_1_1GpgKeyGetter_a841c3fd042e99a76a40ab568f84e77e3}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a7a8bc7c0f12a11e108051e4c824fc430}\label{classGpgFrontend_1_1GpgKeyGetter_a7a8bc7c0f12a11e108051e4c824fc430}} 
 \index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!GetPubkey@{GetPubkey}}
 \index{GetPubkey@{GetPubkey}!GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}}
 \doxysubsubsection{\texorpdfstring{GetPubkey()}{GetPubkey()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Pubkey (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Pubkey (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id,  }\item[{bool}]{use\+\_\+cache = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 
@@ -232,6 +255,10 @@ Get the Pubkey object.
 \DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
 
 \end{DoxyCode}
+
+
+Get the gpgme context object. 
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a81941e1f562dc22977a71d00dd10956a}\label{classGpgFrontend_1_1GpgKeyGetter_a81941e1f562dc22977a71d00dd10956a}} 
 \index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!ctx\_mutex\_@{ctx\_mutex\_}}
 \index{ctx\_mutex\_@{ctx\_mutex\_}!GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}}
@@ -250,7 +277,7 @@ shared mutex for the keys cache
 
 
 
-cache the keys with key fpr 
+cache the keys with key id 
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_ae1d7846ad2fa17ab90c72b3186ba5335}\label{classGpgFrontend_1_1GpgKeyGetter_ae1d7846ad2fa17ab90c72b3186ba5335}} 
 \index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!keys\_cache\_mutex\_@{keys\_cache\_mutex\_}}
