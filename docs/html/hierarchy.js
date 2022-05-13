@@ -43,6 +43,9 @@ var hierarchy =
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< PassphraseGenerator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< TaskRunnerGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::Thread::TaskRunnerGetter", "classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html", null ]
       ] ]
     ] ],
     [ "GpgFrontend::CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", null ],
@@ -105,11 +108,17 @@ var hierarchy =
     ] ],
     [ "QObject", null, [
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
+      [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
+        [ "GpgFrontend::Thread::CtxCheckTask", "classGpgFrontend_1_1Thread_1_1CtxCheckTask.html", null ],
+        [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ]
+      ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
     ] ],
+    [ "QRunnable", null, [
+      [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", null ]
+    ] ],
     [ "QThread", null, [
-      [ "GpgFrontend::CtxCheckThread", "classGpgFrontend_1_1CtxCheckThread.html", null ],
-      [ "GpgFrontend::UI::FileReadThread", "classGpgFrontend_1_1UI_1_1FileReadThread.html", null ],
+      [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
       [ "GpgFrontend::UI::ListedKeyServerTestThread", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html", null ],
       [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ],
       [ "GpgFrontend::UI::VersionCheckThread", "classGpgFrontend_1_1UI_1_1VersionCheckThread.html", null ]

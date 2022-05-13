@@ -1,7 +1,7 @@
 <map id="GpgFrontend::UI::FindWidget" name="GpgFrontend::UI::FindWidget">
-<area shape="rect" id="node1" title="Class for handling the find widget shown at buttom of a textedit&#45;page." alt="" coords="5,932,213,1097"/>
+<area shape="rect" id="node1" title="Class for handling the find widget shown at buttom of a textedit&#45;page." alt="" coords="5,903,213,1068"/>
 <area shape="rect" id="node2" title=" " alt="" coords="65,307,143,385"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html" title="Class for handling a single tab of the tabwidget." alt="" coords="125,469,328,869"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html" title="Class for handling a single tab of the tabwidget." alt="" coords="125,469,328,840"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="175,307,262,385"/>
 <area shape="rect" id="node5" title="STL class." alt="" coords="149,145,288,237"/>
 <area shape="rect" id="node6" title=" " alt="" coords="306,300,454,392"/>

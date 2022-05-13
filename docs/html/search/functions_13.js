@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['tabcount_1229',['TabCount',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a05c54658597b04c3976c72d3a5f9add9',1,'GpgFrontend::UI::TextEdit']]],
-  ['takechargeofresult_1230',['TakeChargeOfResult',['../classGpgFrontend_1_1GpgVerifyResultAnalyse.html#acdb7839a5158f078b38d60f0fefc5155',1,'GpgFrontend::GpgVerifyResultAnalyse']]],
-  ['test_5fpassphrase_5fcb_1231',['test_passphrase_cb',['../classGpgFrontend_1_1GpgContext.html#acc4234054002065dfbc5d5261a4950d4',1,'GpgFrontend::GpgContext']]],
-  ['test_5fstatus_5fcb_1232',['test_status_cb',['../classGpgFrontend_1_1GpgContext.html#a3844cd0966134939e5c4be9a725e5271',1,'GpgFrontend::GpgContext']]],
-  ['text_5fis_5fsigned_1233',['text_is_signed',['../namespaceGpgFrontend.html#a2a0394c8bdd277f5235f9875a1d69a99',1,'GpgFrontend']]],
-  ['tofuinfopage_1234',['TOFUInfoPage',['../classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395',1,'GpgFrontend::UI::TOFUInfoPage']]],
-  ['translatorstab_1235',['TranslatorsTab',['../classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e',1,'GpgFrontend::UI::TranslatorsTab']]]
+  ['tabcount_1244',['TabCount',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a05c54658597b04c3976c72d3a5f9add9',1,'GpgFrontend::UI::TextEdit']]],
+  ['takechargeofresult_1245',['TakeChargeOfResult',['../classGpgFrontend_1_1GpgVerifyResultAnalyse.html#acdb7839a5158f078b38d60f0fefc5155',1,'GpgFrontend::GpgVerifyResultAnalyse']]],
+  ['task_1246',['Task',['../classGpgFrontend_1_1Thread_1_1Task.html#a1ec53d301fc83e0da39e43055ded5d14',1,'GpgFrontend::Thread::Task::Task()'],['../classGpgFrontend_1_1Thread_1_1Task.html#a57754a42ad43000a1c1d3c98a29edbb2',1,'GpgFrontend::Thread::Task::Task(TaskCallback callback)'],['../classGpgFrontend_1_1Thread_1_1Task.html#a91e831792863218c044fc3b0b0d17808',1,'GpgFrontend::Thread::Task::Task(TaskRunnable runnable, TaskCallback callback=[](int) {})']]],
+  ['taskrunner_1247',['TaskRunner',['../classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf',1,'GpgFrontend::Thread::TaskRunner']]],
+  ['taskrunnergetter_1248',['TaskRunnerGetter',['../classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html#a80794d81179f66f4b4ed3122a64f27cf',1,'GpgFrontend::Thread::TaskRunnerGetter']]],
+  ['test_5fpassphrase_5fcb_1249',['test_passphrase_cb',['../classGpgFrontend_1_1GpgContext.html#acc4234054002065dfbc5d5261a4950d4',1,'GpgFrontend::GpgContext']]],
+  ['test_5fstatus_5fcb_1250',['test_status_cb',['../classGpgFrontend_1_1GpgContext.html#a3844cd0966134939e5c4be9a725e5271',1,'GpgFrontend::GpgContext']]],
+  ['text_5fis_5fsigned_1251',['text_is_signed',['../namespaceGpgFrontend.html#a2a0394c8bdd277f5235f9875a1d69a99',1,'GpgFrontend']]],
+  ['tofuinfopage_1252',['TOFUInfoPage',['../classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395',1,'GpgFrontend::UI::TOFUInfoPage']]],
+  ['translatorstab_1253',['TranslatorsTab',['../classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e',1,'GpgFrontend::UI::TranslatorsTab']]]
 ];

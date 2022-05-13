@@ -1,0 +1,87 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask}{}\doxysection{Gpg\+Frontend\+::UI\+::File\+Read\+Task Class Reference}
+\label{classGpgFrontend_1_1UI_1_1FileReadTask}\index{GpgFrontend::UI::FileReadTask@{GpgFrontend::UI::FileReadTask}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::File\+Read\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classGpgFrontend_1_1UI_1_1FileReadTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::File\+Read\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classGpgFrontend_1_1UI_1_1FileReadTask__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a4e3c97cfac764af80919ed838bc00561}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a4e3c97cfac764af80919ed838bc00561}} 
+void {\bfseries Signal\+File\+Bytes\+Read} (Q\+Byte\+Array bytes)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_ae5787665efd04214a14111787deee57c}\label{classGpgFrontend_1_1UI_1_1FileReadTask_ae5787665efd04214a14111787deee57c}} 
+void {\bfseries Signal\+File\+Bytes\+Read\+End} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a964920606f5873fd6a9407b9865e8fba}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a964920606f5873fd6a9407b9865e8fba}} 
+void {\bfseries Signal\+File\+Bytes\+Read\+Next} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_abf21650d2597034d3307f530ebfb7f18}\label{classGpgFrontend_1_1UI_1_1FileReadTask_abf21650d2597034d3307f530ebfb7f18}} 
+{\bfseries File\+Read\+Task} (std\+::string path)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}{Run}} () override
+\begin{DoxyCompactList}\small\item\em Run -\/ run the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_afe44eab4abfe0b3b950f332d54662159}\label{classGpgFrontend_1_1UI_1_1FileReadTask_afe44eab4abfe0b3b950f332d54662159}} 
+void {\bfseries read\+\_\+bytes} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_ac00874dbef395dda534e32c6502c7913}\label{classGpgFrontend_1_1UI_1_1FileReadTask_ac00874dbef395dda534e32c6502c7913}} 
+std\+::filesystem\+::path {\bfseries read\+\_\+file\+\_\+path\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_af3896c6ef4dc49bd371746aa9fea1120}\label{classGpgFrontend_1_1UI_1_1FileReadTask_af3896c6ef4dc49bd371746aa9fea1120}} 
+Q\+File {\bfseries target\+\_\+file\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a2bc7e5bb1c67490ba12c82200634bd97}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a2bc7e5bb1c67490ba12c82200634bd97}} 
+const size\+\_\+t {\bfseries buffer\+\_\+size\+\_\+} = 4096
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_afb248c339ac074f0a7602711ed2f5e39}\label{classGpgFrontend_1_1UI_1_1FileReadTask_afb248c339ac074f0a7602711ed2f5e39}} 
+Q\+Event\+Loop {\bfseries looper}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}} 
+\index{GpgFrontend::UI::FileReadTask@{GpgFrontend::UI::FileReadTask}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::UI::FileReadTask@{GpgFrontend::UI::FileReadTask}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Read\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Run -\/ run the task. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ac60aa71a24f452fd8031597ff4cbbd00}{Gpg\+Frontend\+::\+Thread\+::\+Task}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/thread/File\+Read\+Task.\+h\item 
+src/core/thread/File\+Read\+Task.\+cpp\end{DoxyCompactItemize}

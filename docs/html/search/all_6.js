@@ -5,7 +5,7 @@ var searchData=
   ['file_5ftool_5fbar_5f_146',['file_tool_bar_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a1e0d23d361b8e339ca85410db2bdfb64',1,'GpgFrontend::UI::MainWindow']]],
   ['fileoperator_147',['FileOperator',['../classGpgFrontend_1_1FileOperator.html',1,'GpgFrontend']]],
   ['filepage_148',['FilePage',['../classGpgFrontend_1_1UI_1_1FilePage.html',1,'GpgFrontend::UI::FilePage'],['../classGpgFrontend_1_1UI_1_1FilePage.html#a48fb14a3296f19f9b1c3b9b48c3a1bf3',1,'GpgFrontend::UI::FilePage::FilePage()']]],
-  ['filereadthread_149',['FileReadThread',['../classGpgFrontend_1_1UI_1_1FileReadThread.html',1,'GpgFrontend::UI::FileReadThread'],['../classGpgFrontend_1_1UI_1_1FileReadThread.html#abceee444fe8212efd638c8d5b98b24c5',1,'GpgFrontend::UI::FileReadThread::FileReadThread()']]],
+  ['filereadtask_149',['FileReadTask',['../classGpgFrontend_1_1UI_1_1FileReadTask.html',1,'GpgFrontend::UI']]],
   ['find_5fact_5f_150',['find_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a6154f5dbdc9cebc0644e5d1e25895df8',1,'GpgFrontend::UI::MainWindow']]],
   ['find_5fedit_5f_151',['find_edit_',['../classGpgFrontend_1_1UI_1_1FindWidget.html#af420832720942dd1e7cb3f3841c7cbfe',1,'GpgFrontend::UI::FindWidget']]],
   ['findobjectinchannel_152',['FindObjectInChannel',['../classGpgFrontend_1_1SingletonStorage.html#a4c16c32e549494e394a0ddd859890a02',1,'GpgFrontend::SingletonStorage']]],

@@ -29,6 +29,11 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Plain\+Text\+Editor\+Page\+:
 \includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1PlainTextEditorPage__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}{Signal\+U\+I\+Bytes\+Displayed}} ()
+\begin{DoxyCompactList}\small\item\em this signal is emitted when the bytes has been append in texteditor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -49,9 +54,6 @@ void {\bfseries Read\+File} ()
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}{Read\+Done}} () const
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a36781cbecac79299404bd5e1f7e608ea}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a36781cbecac79299404bd5e1f7e608ea}} 
-void {\bfseries Prepare\+To\+Destroy} ()
-\item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}{Will\+Charset\+Change}} () const
 \begin{DoxyCompactList}\small\item\em detect if the charset of the file will change \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}{Notify\+File\+Saved}} ()
@@ -61,7 +63,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba95
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}{slot\+\_\+format\+\_\+gpg\+\_\+header}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}{slot\+\_\+insert\+\_\+text}} (const std\+::string \&data)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}{slot\+\_\+insert\+\_\+text}} (Q\+Byte\+Array bytes\+\_\+data)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -84,9 +86,6 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef788
 \begin{DoxyCompactList}\small\item\em true, if the signed header is marked, false if not \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}} 
 bool {\bfseries read\+\_\+done\+\_\+} = false
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a46cf39e2449ed63abad59e0a177635fd}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a46cf39e2449ed63abad59e0a177635fd}} 
-Q\+Thread $\ast$ {\bfseries read\+\_\+thread\+\_\+} = nullptr
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}} 
 bool {\bfseries binary\+\_\+mode\+\_\+} = false
@@ -280,6 +279,20 @@ Show additional widget at buttom of currently active tab
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+find().
 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}} 
+\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!SignalUIBytesDisplayed@{SignalUIBytesDisplayed}}
+\index{SignalUIBytesDisplayed@{SignalUIBytesDisplayed}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
+\doxysubsubsection{\texorpdfstring{SignalUIBytesDisplayed}{SignalUIBytesDisplayed}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Signal\+U\+I\+Bytes\+Displayed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+this signal is emitted when the bytes has been append in texteditor. 
+
+
+
+Referenced by slot\+\_\+insert\+\_\+text().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_format\_gpg\_header@{slot\_format\_gpg\_header}}
 \index{slot\_format\_gpg\_header@{slot\_format\_gpg\_header}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
@@ -290,11 +303,11 @@ Format the gpg header in another font-\/style
 
 References sign\+\_\+marked\+\_\+.
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8ba8f52aa2d1102d3513fdf0f4760b28}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_insert\_text@{slot\_insert\_text}}
 \index{slot\_insert\_text@{slot\_insert\_text}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{slot\_insert\_text}{slot\_insert\_text}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+insert\+\_\+text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+insert\+\_\+text (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{bytes\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -303,7 +316,7 @@ References sign\+\_\+marked\+\_\+.
 \end{DoxyParams}
 
 
-References detect\+\_\+cr\+\_\+lf(), detect\+\_\+encoding(), and Get\+Text\+Page().
+References detect\+\_\+cr\+\_\+lf(), detect\+\_\+encoding(), Get\+Text\+Page(), and Signal\+U\+I\+Bytes\+Displayed().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!WillCharsetChange@{WillCharsetChange}}

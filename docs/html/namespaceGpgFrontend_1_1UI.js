@@ -8,7 +8,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "ConclusionPage", "classGpgFrontend_1_1UI_1_1ConclusionPage.html", "classGpgFrontend_1_1UI_1_1ConclusionPage" ],
     [ "ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog" ],
     [ "FilePage", "classGpgFrontend_1_1UI_1_1FilePage.html", "classGpgFrontend_1_1UI_1_1FilePage" ],
-    [ "FileReadThread", "classGpgFrontend_1_1UI_1_1FileReadThread.html", "classGpgFrontend_1_1UI_1_1FileReadThread" ],
+    [ "FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", "classGpgFrontend_1_1UI_1_1FileReadTask" ],
     [ "FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", "classGpgFrontend_1_1UI_1_1FindWidget" ],
     [ "GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", "classGpgFrontend_1_1UI_1_1GeneralTab" ],
     [ "HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", "classGpgFrontend_1_1UI_1_1HelpPage" ],

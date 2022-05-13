@@ -57,7 +57,7 @@ var searchData=
   ['cryptomenu_94',['CryptoMenu',['../structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html',1,'GpgFrontend::UI::MainWindow']]],
   ['ctx_5f_95',['ctx_',['../classGpgFrontend_1_1GpgBasicOperator.html#afad990a43ab06a060a93db9948ebb740',1,'GpgFrontend::GpgBasicOperator::ctx_()'],['../classGpgFrontend_1_1GpgCommandExecutor.html#aefc4f18ec852b98c539d97da1c712a02',1,'GpgFrontend::GpgCommandExecutor::ctx_()'],['../classGpgFrontend_1_1GpgKeyGetter.html#aa4aef315d82123726be879097d3df147',1,'GpgFrontend::GpgKeyGetter::ctx_()']]],
   ['ctx_5fmutex_5f_96',['ctx_mutex_',['../classGpgFrontend_1_1GpgKeyGetter.html#a81941e1f562dc22977a71d00dd10956a',1,'GpgFrontend::GpgKeyGetter']]],
-  ['ctxcheckthread_97',['CtxCheckThread',['../classGpgFrontend_1_1CtxCheckThread.html',1,'GpgFrontend::CtxCheckThread'],['../classGpgFrontend_1_1CtxCheckThread.html#a48cefc5f06e87df15c8336017d2b322f',1,'GpgFrontend::CtxCheckThread::CtxCheckThread()']]],
+  ['ctxchecktask_97',['CtxCheckTask',['../classGpgFrontend_1_1Thread_1_1CtxCheckTask.html',1,'GpgFrontend::Thread::CtxCheckTask'],['../classGpgFrontend_1_1Thread_1_1CtxCheckTask.html#a9d5f0969bcedc5687e0a50ed3b36a869',1,'GpgFrontend::Thread::CtxCheckTask::CtxCheckTask()']]],
   ['curfilepage_98',['CurFilePage',['../classGpgFrontend_1_1UI_1_1TextEdit.html#aa30daf558cb85bbdcad55a805a106109',1,'GpgFrontend::UI::TextEdit']]],
   ['currentversionreleased_99',['CurrentVersionReleased',['../structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663',1,'GpgFrontend::UI::SoftwareVersion']]],
   ['curtextpage_100',['CurTextPage',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a7aa1230fbf796225bd6b83d381e11a3b',1,'GpgFrontend::UI::TextEdit']]],
