@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html#a1dec67f70f17e45e7f78a92414d05485":[2,0,0,17,0,0],
 "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html":[2,0,0,24,0],
 "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html#a9427ebabbbae929fe1489a2e8534c752":[2,0,0,24,0,0],
 "structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html":[2,0,0,0,1,0,0],

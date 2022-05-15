@@ -117,13 +117,14 @@ var NAVTREEINDEX2 =
 "classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html#aa2f427dd9cb0d68187504a7363e2d746aa6137891f9f6f5d09bd29c9194bf65c1":[2,0,0,0,3,0,0],
 "classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html#aa2f427dd9cb0d68187504a7363e2d746aba946fe7627d4f2d5fcf6baf17ec6fee":[2,0,0,0,3,0,2],
 "classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html":[2,0,0,0,1,0],
-"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a0e1ab5e5bf5ef647a30a5ee2884ac63a":[2,0,0,0,1,0,4],
-"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a17252d07835dab3772381639ec8473ea":[2,0,0,0,1,0,3],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a0e1ab5e5bf5ef647a30a5ee2884ac63a":[2,0,0,0,1,0,5],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a17252d07835dab3772381639ec8473ea":[2,0,0,0,1,0,4],
 "classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a521dccfd42e13769b4edc4286318cc4c":[2,0,0,0,1,0,2],
-"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a5ef5ddec0b82017cc4ad7f34b9b13f64":[2,0,0,0,1,0,6],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a5812bb84c6241e89f8b8b04d2a2f3b55":[2,0,0,0,1,0,3],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a5ef5ddec0b82017cc4ad7f34b9b13f64":[2,0,0,0,1,0,7],
 "classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a85bb3c482bf6f47edcd6593cca568a22":[2,0,0,0,1,0,1],
-"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#aa35e6ad1ef3a5733fb338f3333b5c637":[2,0,0,0,1,0,5],
-"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#add6080349c4774da4f37a62ab68561c7":[2,0,0,0,1,0,7],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#aa35e6ad1ef3a5733fb338f3333b5c637":[2,0,0,0,1,0,6],
+"classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#add6080349c4774da4f37a62ab68561c7":[2,0,0,0,1,0,8],
 "classGpgFrontend_1_1UI_1_1AboutDialog.html":[2,0,0,1,0],
 "classGpgFrontend_1_1UI_1_1AboutDialog.html#ab04683ab4c4d682af1e259705c60d85a":[2,0,0,1,0,0],
 "classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083":[2,0,0,1,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a2c23091fa2fd5b97a045ac6c492caaca":[2,0,0,1,12,8],
 "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a456f15315a03107f7757d84362c1af71":[2,0,0,1,12,1],
 "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a4d18a72ae1c460a12b8902d426d9d395":[2,0,0,1,12,13],
-"classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a4fd6f91eb435feb41ae93e44485646ab":[2,0,0,1,12,3],
-"classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a6380776ea1bf9a020370589e1e20efd3":[2,0,0,1,12,12]
+"classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a4fd6f91eb435feb41ae93e44485646ab":[2,0,0,1,12,3]
 };

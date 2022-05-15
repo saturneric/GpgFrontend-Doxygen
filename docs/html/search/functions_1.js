@@ -9,7 +9,7 @@ var searchData=
   ['aes_5f256_5fcbc_5fencrypt_806',['aes_256_cbc_encrypt',['../namespaceGpgFrontend_1_1RawAPI.html#aa2bc88cf78b8da893f1b5c7e2e8ccf42',1,'GpgFrontend::RawAPI']]],
   ['aes_5f256_5fcbc_5finit_807',['aes_256_cbc_init',['../namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697',1,'GpgFrontend::RawAPI']]],
   ['appearancetab_808',['AppearanceTab',['../classGpgFrontend_1_1UI_1_1AppearanceTab.html#abfca670540bc0409b9be4459ee6a3b6c',1,'GpgFrontend::UI::AppearanceTab']]],
-  ['appendobject_809',['AppendObject',['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a521dccfd42e13769b4edc4286318cc4c',1,'GpgFrontend::Thread::Task::DataObject']]],
+  ['appendobject_809',['AppendObject',['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a521dccfd42e13769b4edc4286318cc4c',1,'GpgFrontend::Thread::Task::DataObject::AppendObject(T &amp;&amp;obj)'],['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a5812bb84c6241e89f8b8b04d2a2f3b55',1,'GpgFrontend::Thread::Task::DataObject::AppendObject(T *obj)']]],
   ['associatetabwidget_810',['AssociateTabWidget',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#adfa4acd435d2ec29f951f4e7e6a43f38',1,'GpgFrontend::UI::InfoBoardWidget']]],
   ['associatetextedit_811',['AssociateTextEdit',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a4fd6f91eb435feb41ae93e44485646ab',1,'GpgFrontend::UI::InfoBoardWidget']]]
 ];

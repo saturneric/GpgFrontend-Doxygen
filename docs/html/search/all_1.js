@@ -24,7 +24,7 @@ var searchData=
   ['app_5fsecure_5fpath_5f_27',['app_secure_path_',['../classGpgFrontend_1_1DataObjectOperator.html#a6d38d25c91c33c48d083ec4de051108a',1,'GpgFrontend::DataObjectOperator']]],
   ['appearancetab_28',['AppearanceTab',['../classGpgFrontend_1_1UI_1_1AppearanceTab.html',1,'GpgFrontend::UI::AppearanceTab'],['../classGpgFrontend_1_1UI_1_1AppearanceTab.html#abfca670540bc0409b9be4459ee6a3b6c',1,'GpgFrontend::UI::AppearanceTab::AppearanceTab()']]],
   ['append_5fselected_5fkeys_5fact_5f_29',['append_selected_keys_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#ab67486a71126073e7c39ca12603198f4',1,'GpgFrontend::UI::MainWindow']]],
-  ['appendobject_30',['AppendObject',['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a521dccfd42e13769b4edc4286318cc4c',1,'GpgFrontend::Thread::Task::DataObject']]],
+  ['appendobject_30',['AppendObject',['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a521dccfd42e13769b4edc4286318cc4c',1,'GpgFrontend::Thread::Task::DataObject::AppendObject(T &amp;&amp;obj)'],['../classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a5812bb84c6241e89f8b8b04d2a2f3b55',1,'GpgFrontend::Thread::Task::DataObject::AppendObject(T *obj)']]],
   ['apppath_31',['AppPath',['../classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0',1,'GpgFrontend::GpgInfo']]],
   ['archivefileoperator_32',['ArchiveFileOperator',['../classGpgFrontend_1_1ArchiveFileOperator.html',1,'GpgFrontend']]],
   ['archivestruct_33',['ArchiveStruct',['../structGpgFrontend_1_1ArchiveStruct.html',1,'GpgFrontend']]],

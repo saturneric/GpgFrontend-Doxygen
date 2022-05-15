@@ -1,5 +1,5 @@
 <map id="GpgFrontend::Thread::Task::DataObject" name="GpgFrontend::Thread::Task::DataObject">
-<area shape="rect" id="node1" title="DataObject to be passed to the callback function." alt="" coords="59,513,217,679"/>
+<area shape="rect" id="node1" title="DataObject to be passed to the callback function." alt="" coords="59,513,217,693"/>
 <area shape="rect" id="node2" title=" " alt="" coords="41,344,235,451"/>
 <area shape="rect" id="node3" href="$structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="5,145,164,267"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="189,167,311,245"/>

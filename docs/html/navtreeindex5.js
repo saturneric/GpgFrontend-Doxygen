@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1SettingsDialog.html#a204f8e834337aea7df2779a494dc6216":[2,0,0,1,41,4],
 "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a44f48d9578d62b1786cbf10a8f20a518":[2,0,0,1,41,1],
 "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a4e2ce62b4f14bb77d577efe208655bcb":[2,0,0,1,41,7],
 "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a6532bcf29023e2d18209caae9960fd3f":[2,0,0,1,41,8],
@@ -175,8 +176,8 @@ var NAVTREEINDEX5 =
 "functions_d.html":[2,3,0,4],
 "functions_e.html":[2,3,0,5],
 "functions_f.html":[2,3,0,6],
-"functions_func.html":[2,3,1,0],
 "functions_func.html":[2,3,1],
+"functions_func.html":[2,3,1,0],
 "functions_func_c.html":[2,3,1,1],
 "functions_func_d.html":[2,3,1,2],
 "functions_func_e.html":[2,3,1,3],
@@ -218,15 +219,15 @@ var NAVTREEINDEX5 =
 "functions_z.html":[2,3,0,23],
 "functions_~.html":[2,3,0,24],
 "hierarchy.html":[2,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "namespaceGpgFrontend.html":[1,0,0],
 "namespaceGpgFrontend.html":[2,0,0],
 "namespaceGpgFrontend_1_1RawAPI.html":[1,0,0,0],
-"namespaceGpgFrontend_1_1Thread.html":[2,0,0,0],
 "namespaceGpgFrontend_1_1Thread.html":[1,0,0,1],
-"namespaceGpgFrontend_1_1UI.html":[1,0,0,2],
+"namespaceGpgFrontend_1_1Thread.html":[2,0,0,0],
 "namespaceGpgFrontend_1_1UI.html":[2,0,0,1],
+"namespaceGpgFrontend_1_1UI.html":[1,0,0,2],
 "namespacemembers.html":[1,1,0],
 "namespacemembers_enum.html":[1,1,2],
 "namespacemembers_func.html":[1,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structGpgFrontend_1_1GpgContextInitArgs.html#ac2679300c14d3f0ce29625a267054e6b":[2,0,0,16,5],
 "structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html":[2,0,0,15,0],
 "structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html#a1975ed97838072cf98bd80eef72fd3a8":[2,0,0,15,0,0],
-"structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html":[2,0,0,17,0],
-"structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html#a1dec67f70f17e45e7f78a92414d05485":[2,0,0,17,0,0]
+"structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html":[2,0,0,17,0]
 };
