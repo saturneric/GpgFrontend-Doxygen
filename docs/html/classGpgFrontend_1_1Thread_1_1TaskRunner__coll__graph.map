@@ -1,11 +1,19 @@
 <map id="GpgFrontend::Thread::TaskRunner" name="GpgFrontend::Thread::TaskRunner">
-<area shape="rect" id="node1" title=" " alt="" coords="74,645,233,781"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,498,83,575"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="107,498,199,575"/>
-<area shape="rect" id="node4" title=" " alt="" coords="223,491,411,583"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="144,145,307,413"/>
-<area shape="rect" id="node6" title=" " alt="" coords="120,5,195,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="219,5,312,83"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="331,241,459,318"/>
-<area shape="rect" id="node9" title=" " alt="" coords="375,5,414,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="285,1521,443,1657"/>
+<area shape="rect" id="node2" title=" " alt="" coords="216,1374,293,1451"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="318,1374,410,1451"/>
+<area shape="rect" id="node4" title=" " alt="" coords="434,1367,622,1459"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="184,992,347,1304"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,852,80,929"/>
+<area shape="rect" id="node7" title=" " alt="" coords="104,852,197,929"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="222,852,309,929"/>
+<area shape="rect" id="node9" title="STL class." alt="" coords="163,661,301,753"/>
+<area shape="rect" id="node10" title=" " alt="" coords="333,852,555,929"/>
+<area shape="rect" id="node11" href="$classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html" title="DataObject to be passed to the callback function." alt="" coords="326,624,485,789"/>
+<area shape="rect" id="node12" title=" " alt="" coords="199,392,393,499"/>
+<area shape="rect" id="node13" href="$structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="109,145,267,267"/>
+<area shape="rect" id="node14" title="STL class." alt="" coords="327,167,449,245"/>
+<area shape="rect" id="node15" title=" " alt="" coords="583,5,622,83"/>
+<area shape="rect" id="node16" title="STL class." alt="" coords="524,291,681,368"/>
+<area shape="rect" id="node17" title="STL class." alt="" coords="637,523,765,600"/>
 </map>

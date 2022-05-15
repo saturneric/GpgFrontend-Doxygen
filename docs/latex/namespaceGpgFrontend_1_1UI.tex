@@ -154,7 +154,7 @@ void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1
 \item 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a60b5887adabc74015700795dc3c07ae9}{process\+\_\+result\+\_\+analyse}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit}{Text\+Edit}} $\ast$edit, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+a, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+b)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}{process\+\_\+operation}} (Q\+Widget $\ast$parent, const std\+::string \&waiting\+\_\+title, const std\+::function$<$ void()$>$ \&func)
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}{process\+\_\+operation}} (Q\+Widget $\ast$parent, const std\+::string \&waiting\+\_\+title, const Thread\+::\+Task\+::\+Task\+Runnable func, const Thread\+::\+Task\+::\+Task\+Callback callback, Thread\+::\+Task\+::\+Data\+Object\+Ptr data\+\_\+object)
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}\label{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}} 
 std\+::string {\bfseries binary\+\_\+to\+\_\+string} (const std\+::string \&source)
@@ -280,11 +280,11 @@ References process\+\_\+operation().
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}\label{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}\label{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_operation@{process\_operation}}
 \index{process\_operation@{process\_operation}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{process\_operation()}{process\_operation()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{const std\+::string \&}]{waiting\+\_\+title,  }\item[{const std\+::function$<$ void()$>$ \&}]{func }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{const std\+::string \&}]{waiting\+\_\+title,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Runnable}]{func,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Callback}]{callback = {\ttfamily nullptr},  }\item[{Thread\+::\+Task\+::\+Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -295,6 +295,10 @@ Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt
 {\em func} & \\
 \hline
 \end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
 
 
 Referenced by process\+\_\+directory\+\_\+into\+\_\+tarball(), process\+\_\+tarball\+\_\+into\+\_\+directory(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().

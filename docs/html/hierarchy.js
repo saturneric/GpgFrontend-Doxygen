@@ -51,6 +51,8 @@ var hierarchy =
     [ "GpgFrontend::CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", null ],
     [ "class", "classclass.html", null ],
     [ "GpgFrontend::UI::MainWindow::CryptoMenu", "structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html", null ],
+    [ "GpgFrontend::Thread::Task::DataObject", "classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html", null ],
+    [ "GpgFrontend::Thread::Task::DataObject::Destructor", "structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html", null ],
     [ "GpgFrontend::FileOperator", "classGpgFrontend_1_1FileOperator.html", null ],
     [ "GpgFrontend::GenKeyInfo", "classGpgFrontend_1_1GenKeyInfo.html", null ],
     [ "GpgFrontend::GpgConstants", "classGpgFrontend_1_1GpgConstants.html", null ],
