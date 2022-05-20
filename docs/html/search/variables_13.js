@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['ui_5fcfg_5f_1411',['ui_cfg_',['../classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c',1,'GpgFrontend::GlobalSettingStation']]],
-  ['ui_5fconfig_5fdir_5fpath_5f_1412',['ui_config_dir_path_',['../classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb',1,'GpgFrontend::GlobalSettingStation']]],
-  ['ui_5fconfig_5fpath_5f_1413',['ui_config_path_',['../classGpgFrontend_1_1GlobalSettingStation.html#afa99ddc25c0d5fd59a4c5f0e61d13830',1,'GpgFrontend::GlobalSettingStation']]],
-  ['undo_5fact_5f_1414',['undo_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#aa498dfecac36590e4b60d50824dff58c',1,'GpgFrontend::UI::MainWindow']]]
+  ['tasks_1427',['tasks',['../classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2',1,'GpgFrontend::Thread::TaskRunner']]],
+  ['tasks_5fmutex_5f_1428',['tasks_mutex_',['../classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1',1,'GpgFrontend::Thread::TaskRunner']]],
+  ['translate_5fact_5f_1429',['translate_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#adbac799672c43c90810366825d837e4e',1,'GpgFrontend::UI::MainWindow']]]
 ];

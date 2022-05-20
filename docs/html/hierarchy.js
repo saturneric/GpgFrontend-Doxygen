@@ -82,6 +82,9 @@ var hierarchy =
     [ "GpgFrontend::KeyPackageOperator", "classGpgFrontend_1_1KeyPackageOperator.html", null ],
     [ "GpgFrontend::UI::KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", null ],
     [ "ProxyConnectionTestThread", "classProxyConnectionTestThread.html", null ],
+    [ "QApplication", null, [
+      [ "GpgFrontend::UI::GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", null ]
+    ] ],
     [ "QDialog", null, [
       [ "GpgFrontend::UI::AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", null ],
       [ "GpgFrontend::UI::ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", null ],
@@ -112,7 +115,8 @@ var hierarchy =
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
         [ "GpgFrontend::Thread::CtxCheckTask", "classGpgFrontend_1_1Thread_1_1CtxCheckTask.html", null ],
-        [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ]
+        [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ],
+        [ "GpgFrontend::UI::VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", null ]
       ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
     ] ],
@@ -122,8 +126,7 @@ var hierarchy =
     [ "QThread", null, [
       [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
       [ "GpgFrontend::UI::ListedKeyServerTestThread", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html", null ],
-      [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ],
-      [ "GpgFrontend::UI::VersionCheckThread", "classGpgFrontend_1_1UI_1_1VersionCheckThread.html", null ]
+      [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ]
     ] ],
     [ "QWidget", null, [
       [ "GpgFrontend::UI::AdvancedTab", "classGpgFrontend_1_1UI_1_1AdvancedTab.html", null ],

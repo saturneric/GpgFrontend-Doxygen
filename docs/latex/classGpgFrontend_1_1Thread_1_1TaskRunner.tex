@@ -41,6 +41,9 @@ void {\bfseries run} () override
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}} 
 std\+::queue$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}{tasks}}
 \begin{DoxyCompactList}\small\item\em The task queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}{pending\+\_\+tasks\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The pending tasks. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}} 
 std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}{tasks\+\_\+mutex\+\_\+}}
 \begin{DoxyCompactList}\small\item\em The task queue mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -95,7 +98,7 @@ Destroy the \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} Runner o
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+U\+U\+I\+D(), tasks, and tasks\+\_\+mutex\+\_\+.
+References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+U\+U\+I\+D(), pending\+\_\+tasks\+\_\+, tasks, and tasks\+\_\+mutex\+\_\+.
 
 
 

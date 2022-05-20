@@ -11,6 +11,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", "classGpgFrontend_1_1UI_1_1FileReadTask" ],
     [ "FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", "classGpgFrontend_1_1UI_1_1FindWidget" ],
     [ "GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", "classGpgFrontend_1_1UI_1_1GeneralTab" ],
+    [ "GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication" ],
     [ "HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", "classGpgFrontend_1_1UI_1_1HelpPage" ],
     [ "InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", "classGpgFrontend_1_1UI_1_1InfoBoardWidget" ],
     [ "InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", "classGpgFrontend_1_1UI_1_1InfoTab" ],
@@ -53,7 +54,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", "classGpgFrontend_1_1UI_1_1UpdateTab" ],
     [ "VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog" ],
     [ "VerifyKeyDetailBox", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox" ],
-    [ "VersionCheckThread", "classGpgFrontend_1_1UI_1_1VersionCheckThread.html", "classGpgFrontend_1_1UI_1_1VersionCheckThread" ],
+    [ "VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", "classGpgFrontend_1_1UI_1_1VersionCheckTask" ],
     [ "WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", "classGpgFrontend_1_1UI_1_1WaitingDialog" ],
     [ "Wizard", "classGpgFrontend_1_1UI_1_1Wizard.html", "classGpgFrontend_1_1UI_1_1Wizard" ]
 ];

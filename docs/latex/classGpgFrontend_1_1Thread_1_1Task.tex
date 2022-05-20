@@ -42,6 +42,9 @@ using {\bfseries Task\+Callback} = std\+::function$<$ void(int, Data\+Object\+Pt
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_af50c7642efe45554c61943fb3d8825b3}\label{classGpgFrontend_1_1Thread_1_1Task_af50c7642efe45554c61943fb3d8825b3}} 
 void {\bfseries Signal\+Task\+Finished} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a0902637c033d34cc3c4281e309c10830}\label{classGpgFrontend_1_1Thread_1_1Task_a0902637c033d34cc3c4281e309c10830}} 
+void {\bfseries Signal\+Task\+Post\+Finished\+Done} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -171,7 +174,7 @@ Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} obje
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!````~Task@{$\sim$Task}}
 \index{````~Task@{$\sim$Task}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{$\sim$Task()}{~Task()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::$\sim$\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::$\sim$\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -214,7 +217,7 @@ Run -\/ run the task.
 
 
 
-Reimplemented in \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1CtxCheckTask_a1c94cb1290df40a9043fe2d1a9a231f2}{Gpg\+Frontend\+::\+Thread\+::\+Ctx\+Check\+Task}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}{Gpg\+Frontend\+::\+U\+I\+::\+File\+Read\+Task}}.
+Reimplemented in \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckTask_a9156325af41c378f8d7e77187d445c12}{Gpg\+Frontend\+::\+U\+I\+::\+Version\+Check\+Task}}, \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1CtxCheckTask_a1c94cb1290df40a9043fe2d1a9a231f2}{Gpg\+Frontend\+::\+Thread\+::\+Ctx\+Check\+Task}}, and \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}{Gpg\+Frontend\+::\+U\+I\+::\+File\+Read\+Task}}.
 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a689969e7d88ba7ad73a693a1b38aedd7}\label{classGpgFrontend_1_1Thread_1_1Task_a689969e7d88ba7ad73a693a1b38aedd7}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!SetFinishAfterRun@{SetFinishAfterRun}}
@@ -233,7 +236,7 @@ Set the Finish After Run object.
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+File\+Read\+Task\+::\+Run().
+Referenced by Gpg\+Frontend\+::\+U\+I\+::\+File\+Read\+Task\+::\+Run(), and Gpg\+Frontend\+::\+U\+I\+::\+Version\+Check\+Task\+::\+Run().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aa6d702417bdd6a88c447ed6a457fa098}\label{classGpgFrontend_1_1Thread_1_1Task_aa6d702417bdd6a88c447ed6a457fa098}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!SetRTN@{SetRTN}}

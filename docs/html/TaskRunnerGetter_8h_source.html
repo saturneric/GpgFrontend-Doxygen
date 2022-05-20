@@ -103,27 +103,28 @@ $(document).ready(function(){initNavTree('TaskRunnerGetter_8h_source.html',''); 
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    kTaskRunnerType_Default,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    kTaskRunnerType_GPG,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    kTaskRunnerType_IO,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html">TaskRunnerGetter</a>(<span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">TaskRunner</a> *GetTaskRunner(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      TaskRunnerType runner_type = kTaskRunnerType_Default);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::map&lt;TaskRunnerType, TaskRunner *&gt; task_runners_;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_TASKRUNNERGETTER_H</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    kTaskRunnerType_Network,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html">TaskRunnerGetter</a>(<span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">TaskRunner</a> *GetTaskRunner(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      TaskRunnerType runner_type = kTaskRunnerType_Default);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::map&lt;TaskRunnerType, TaskRunner *&gt; task_runners_;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_TASKRUNNERGETTER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:159</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:148</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">GpgFrontend::Thread::TaskRunner</a></div><div class="ttdef"><b>Definition:</b> TaskRunner.h:39</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunnerGetter_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html">GpgFrontend::Thread::TaskRunnerGetter</a></div><div class="ttdef"><b>Definition:</b> TaskRunnerGetter.h:36</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1Thread_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Thread.html">GpgFrontend::Thread</a></div><div class="ttdef"><b>Definition:</b> CtxCheckTask.h:33</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:245</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:232</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunnerGetter_html_a80794d81179f66f4b4ed3122a64f27cf"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html#a80794d81179f66f4b4ed3122a64f27cf">GpgFrontend::Thread::TaskRunnerGetter::TaskRunnerGetter</a></div><div class="ttdeci">TaskRunnerGetter(int channel=SingletonFunctionObject::GetDefaultChannel())</div><div class="ttdef"><b>Definition:</b> TaskRunnerGetter.cpp:29</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

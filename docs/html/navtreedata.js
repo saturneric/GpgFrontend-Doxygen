@@ -51,12 +51,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AboutDialog_8h_source.html",
-"classGpgFrontend_1_1GpgContext.html",
-"classGpgFrontend_1_1GpgTOFUInfo.html#abc53f7ca1b737ed1a913ad2f90a346e4",
-"classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a6380776ea1bf9a020370589e1e20efd3",
-"classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#aa0fb2623234f3dea2ef40809c9571360",
-"classGpgFrontend_1_1UI_1_1SettingsDialog.html#a204f8e834337aea7df2779a494dc6216",
-"structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html#a1dec67f70f17e45e7f78a92414d05485"
+"classGpgFrontend_1_1GpgConstants.html#accb94e62d07af77123b79462971b4d55",
+"classGpgFrontend_1_1GpgTOFUInfo.html#aaabb02aef76162ed59647445b4c1f6de",
+"classGpgFrontend_1_1UI_1_1HelpPage.html#a49fbde87f2ef385b44225acd6ffbc84f",
+"classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#a4569bb5afb56e0caaa6eeadac05a53d6",
+"classGpgFrontend_1_1UI_1_1QuitDialog.html#a1624ecd7f9b5d32622bf6f9b7eb46a1b",
+"structGpgFrontend_1_1ArchiveStruct.html#a1ecfc9b7c9978678e8184745ea9f5c53"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

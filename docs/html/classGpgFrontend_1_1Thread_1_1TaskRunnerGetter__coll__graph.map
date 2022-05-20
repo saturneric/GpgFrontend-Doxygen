@@ -1,26 +1,27 @@
 <map id="GpgFrontend::Thread::TaskRunnerGetter" name="GpgFrontend::Thread::TaskRunnerGetter">
-<area shape="rect" id="node1" title=" " alt="" coords="392,2300,555,2407"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="223,1955,452,2237"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="132,1396,340,1547"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="264,1609,493,1892"/>
-<area shape="rect" id="node5" title=" " alt="" coords="477,2050,747,2142"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1Thread_1_1TaskRunner.html" title=" " alt="" coords="522,1683,681,1819"/>
-<area shape="rect" id="node7" title=" " alt="" coords="368,1433,445,1510"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="470,1433,562,1510"/>
-<area shape="rect" id="node9" title=" " alt="" coords="586,1425,774,1517"/>
-<area shape="rect" id="node10" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="184,1021,347,1333"/>
-<area shape="rect" id="node11" title=" " alt="" coords="5,867,80,944"/>
-<area shape="rect" id="node12" title=" " alt="" coords="104,867,197,944"/>
-<area shape="rect" id="node13" title="STL class." alt="" coords="222,867,309,944"/>
-<area shape="rect" id="node14" title="STL class." alt="" coords="165,668,304,760"/>
-<area shape="rect" id="node15" title=" " alt="" coords="333,867,555,944"/>
-<area shape="rect" id="node16" href="$classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html" title="DataObject to be passed to the callback function." alt="" coords="329,624,487,804"/>
-<area shape="rect" id="node17" title=" " alt="" coords="202,392,395,499"/>
-<area shape="rect" id="node18" href="$structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="111,145,270,267"/>
-<area shape="rect" id="node19" title="STL class." alt="" coords="329,167,452,245"/>
-<area shape="rect" id="node20" title=" " alt="" coords="635,5,674,83"/>
-<area shape="rect" id="node21" title="STL class." alt="" coords="527,291,684,368"/>
-<area shape="rect" id="node22" title="STL class." alt="" coords="640,523,768,600"/>
-<area shape="rect" id="node23" title="STL class." alt="" coords="806,167,941,245"/>
-<area shape="rect" id="node24" title=" " alt="" coords="854,5,893,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="316,2329,479,2436"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="147,1984,376,2267"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="5,1411,213,1561"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="147,1639,376,1921"/>
+<area shape="rect" id="node5" title=" " alt="" coords="435,2079,706,2171"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1Thread_1_1TaskRunner.html" title=" " alt="" coords="491,1712,650,1848"/>
+<area shape="rect" id="node7" title=" " alt="" coords="567,1447,644,1525"/>
+<area shape="rect" id="node8" title=" " alt="" coords="668,1433,831,1539"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="475,1021,637,1333"/>
+<area shape="rect" id="node24" title=" " alt="" coords="354,1440,542,1532"/>
+<area shape="rect" id="node10" title=" " alt="" coords="584,881,659,959"/>
+<area shape="rect" id="node11" title=" " alt="" coords="467,881,560,959"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="683,881,770,959"/>
+<area shape="rect" id="node13" title="STL class." alt="" coords="652,668,791,760"/>
+<area shape="rect" id="node14" title=" " alt="" coords="219,881,442,959"/>
+<area shape="rect" id="node15" href="$classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html" title="DataObject to be passed to the callback function." alt="" coords="466,624,625,804"/>
+<area shape="rect" id="node16" title=" " alt="" coords="449,392,642,499"/>
+<area shape="rect" id="node17" href="$structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="391,145,550,267"/>
+<area shape="rect" id="node18" title="STL class." alt="" coords="575,167,697,245"/>
+<area shape="rect" id="node19" title=" " alt="" coords="465,5,503,83"/>
+<area shape="rect" id="node20" title="STL class." alt="" coords="255,523,412,600"/>
+<area shape="rect" id="node21" title="STL class." alt="" coords="807,1139,942,1216"/>
+<area shape="rect" id="node25" title="STL class." alt="" coords="113,291,241,368"/>
+<area shape="rect" id="node22" title=" " alt="" coords="866,881,905,959"/>
+<area shape="rect" id="node23" title="STL class." alt="" coords="238,1447,330,1525"/>
 </map>

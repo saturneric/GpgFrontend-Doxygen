@@ -96,7 +96,7 @@ Inheritance diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__inherit__graph.png" border="0" usemap="#GpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" alt="Inheritance graph"/></div>
 <map name="GpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" id="GpgFrontend_1_1Thread_1_1TaskRunner_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,164,281"/>
+<area shape="rect" title=" " alt="" coords="5,131,164,296"/>
 <area shape="rect" title=" " alt="" coords="46,5,123,83"/>
 </map>
 </div>
@@ -105,23 +105,26 @@ Collaboration diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__coll__graph.png" border="0" usemap="#GpgFrontend_1_1Thread_1_1TaskRunner_coll__map" alt="Collaboration graph"/></div>
 <map name="GpgFrontend_1_1Thread_1_1TaskRunner_coll__map" id="GpgFrontend_1_1Thread_1_1TaskRunner_coll__map">
-<area shape="rect" title=" " alt="" coords="285,1536,443,1672"/>
-<area shape="rect" title=" " alt="" coords="216,1389,293,1466"/>
-<area shape="rect" title="STL class." alt="" coords="318,1389,410,1466"/>
-<area shape="rect" title=" " alt="" coords="434,1381,622,1473"/>
-<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="184,1007,347,1319"/>
-<area shape="rect" title=" " alt="" coords="5,867,80,944"/>
-<area shape="rect" title=" " alt="" coords="104,867,197,944"/>
-<area shape="rect" title="STL class." alt="" coords="222,867,309,944"/>
-<area shape="rect" title="STL class." alt="" coords="163,668,301,760"/>
-<area shape="rect" title=" " alt="" coords="333,867,555,944"/>
-<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html" title="DataObject to be passed to the callback function." alt="" coords="326,624,485,804"/>
-<area shape="rect" title=" " alt="" coords="199,392,393,499"/>
-<area shape="rect" href="structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="109,145,267,267"/>
-<area shape="rect" title="STL class." alt="" coords="327,167,449,245"/>
-<area shape="rect" title=" " alt="" coords="583,5,622,83"/>
-<area shape="rect" title="STL class." alt="" coords="524,291,681,368"/>
-<area shape="rect" title="STL class." alt="" coords="637,523,765,600"/>
+<area shape="rect" title=" " alt="" coords="253,1565,412,1701"/>
+<area shape="rect" title=" " alt="" coords="71,1411,149,1488"/>
+<area shape="rect" title=" " alt="" coords="173,1396,335,1503"/>
+<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="362,1021,525,1333"/>
+<area shape="rect" title=" " alt="" coords="476,1403,664,1495"/>
+<area shape="rect" title=" " alt="" coords="686,881,761,959"/>
+<area shape="rect" title=" " alt="" coords="322,881,415,959"/>
+<area shape="rect" title="STL class." alt="" coords="211,881,297,959"/>
+<area shape="rect" title="STL class." alt="" coords="169,668,307,760"/>
+<area shape="rect" title=" " alt="" coords="440,881,663,959"/>
+<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html" title="DataObject to be passed to the callback function." alt="" coords="488,624,647,804"/>
+<area shape="rect" title=" " alt="" coords="448,392,641,499"/>
+<area shape="rect" href="structGpgFrontend_1_1Thread_1_1Task_1_1DataObject_1_1Destructor.html" title=" " alt="" coords="357,145,516,267"/>
+<area shape="rect" title="STL class." alt="" coords="541,167,663,245"/>
+<area shape="rect" title=" " alt="" coords="365,5,404,83"/>
+<area shape="rect" title="STL class." alt="" coords="249,523,406,600"/>
+<area shape="rect" title="STL class." alt="" coords="5,167,140,245"/>
+<area shape="rect" title="STL class." alt="" coords="773,291,901,368"/>
+<area shape="rect" title=" " alt="" coords="53,5,92,83"/>
+<area shape="rect" title="STL class." alt="" coords="360,1411,452,1488"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -148,6 +151,10 @@ Private Attributes</h2></td></tr>
 std::queue&lt; <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a></td></tr>
 <tr class="memdesc:a774775e9a91d33072b27dcf78cead6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The task queue. <br /></td></tr>
 <tr class="separator:a774775e9a91d33072b27dcf78cead6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d92421bbbfcf3136335a5173d1b2a22"><td class="memItemLeft" align="right" valign="top"><a id="a6d92421bbbfcf3136335a5173d1b2a22"></a>
+std::map&lt; std::string, <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">pending_tasks_</a></td></tr>
+<tr class="memdesc:a6d92421bbbfcf3136335a5173d1b2a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pending tasks. <br /></td></tr>
+<tr class="separator:a6d92421bbbfcf3136335a5173d1b2a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e72f1ce00d41c225a4304f1ed20b3f1"><td class="memItemLeft" align="right" valign="top"><a id="a5e72f1ce00d41c225a4304f1ed20b3f1"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a></td></tr>
 <tr class="memdesc:a5e72f1ce00d41c225a4304f1ed20b3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The task queue mutex. <br /></td></tr>
@@ -246,7 +253,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf">GpgFrontend::Thread::Task::GetUUID()</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>, and <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf">GpgFrontend::Thread::Task::GetUUID()</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">pending_tasks_</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>, and <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>.</p>
 
 </div>
 </div>

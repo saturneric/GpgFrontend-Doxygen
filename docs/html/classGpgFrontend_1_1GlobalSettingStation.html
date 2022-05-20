@@ -430,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the Log Dir object. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::filesystem::path </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend.html#affb72eb1b5f3ac8fe48cc1f37dd557ee">GpgFrontend::init_logging()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend_1_1UI.html#a834d05cb1918760d1a9c5a67aa3a7da3">GpgFrontend::UI::init_logging_system()</a>, and <a class="el" href="namespaceGpgFrontend.html#aff3e12940da2d43ce7aedeb795643434">GpgFrontend::InitLoggingSystem()</a>.</p>
 
 </div>
 </div>
@@ -460,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the Resource Dir object. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::filesystem::path </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e">GpgFrontend::UI::TranslatorsTab::TranslatorsTab()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">GpgFrontend::UI::InitGpgFrontendUI()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e">GpgFrontend::UI::TranslatorsTab::TranslatorsTab()</a>.</p>
 
 </div>
 </div>
@@ -748,7 +748,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      qApp-&gt;applicationDirPath().toStdString()</div>
+<div class="line">      QCoreApplication::applicationDirPath().toStdString()</div>
 </div><!-- fragment -->
 <p>Program Location. </p>
 
@@ -845,11 +845,11 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1d94a126c78ac01ec01f10d2ce575388"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">GpgFrontend::GlobalSettingStation::app_resource_path_</a></div><div class="ttdeci">std::filesystem::path app_resource_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:165</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a58fff8a42f98ad7989bffb8322344cd6"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">GpgFrontend::GlobalSettingStation::app_data_path_</a></div><div class="ttdeci">std::filesystem::path app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:152</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ab618fef68cfd4ff6e42d4a4aa8ea94bb"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">GpgFrontend::GlobalSettingStation::ui_config_dir_path_</a></div><div class="ttdeci">std::filesystem::path ui_config_dir_path_</div><div class="ttdoc">Configure File Directory Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:180</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a678f8ba120f9ad050d0adfec4476d7ac"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">GpgFrontend::GlobalSettingStation::app_path_</a></div><div class="ttdeci">std::filesystem::path app_path_</div><div class="ttdoc">Program Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:150</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a4d04bb665571921421b853f18b8b300a"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">GpgFrontend::GlobalSettingStation::app_configure_path_</a></div><div class="ttdeci">std::filesystem::path app_configure_path_</div><div class="ttdoc">Program Configure Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:177</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1d94a126c78ac01ec01f10d2ce575388"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">GpgFrontend::GlobalSettingStation::app_resource_path_</a></div><div class="ttdeci">std::filesystem::path app_resource_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:160</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a58fff8a42f98ad7989bffb8322344cd6"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">GpgFrontend::GlobalSettingStation::app_data_path_</a></div><div class="ttdeci">std::filesystem::path app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:147</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ab618fef68cfd4ff6e42d4a4aa8ea94bb"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">GpgFrontend::GlobalSettingStation::ui_config_dir_path_</a></div><div class="ttdeci">std::filesystem::path ui_config_dir_path_</div><div class="ttdoc">Configure File Directory Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:175</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a678f8ba120f9ad050d0adfec4476d7ac"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">GpgFrontend::GlobalSettingStation::app_path_</a></div><div class="ttdeci">std::filesystem::path app_path_</div><div class="ttdoc">Program Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:145</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a4d04bb665571921421b853f18b8b300a"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">GpgFrontend::GlobalSettingStation::app_configure_path_</a></div><div class="ttdeci">std::filesystem::path app_configure_path_</div><div class="ttdoc">Program Configure Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:172</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

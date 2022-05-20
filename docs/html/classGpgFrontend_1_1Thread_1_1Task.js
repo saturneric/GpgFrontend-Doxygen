@@ -17,6 +17,7 @@ var classGpgFrontend_1_1Thread_1_1Task =
     [ "SetFinishAfterRun", "classGpgFrontend_1_1Thread_1_1Task.html#a689969e7d88ba7ad73a693a1b38aedd7", null ],
     [ "SetRTN", "classGpgFrontend_1_1Thread_1_1Task.html#aa6d702417bdd6a88c447ed6a457fa098", null ],
     [ "SignalTaskFinished", "classGpgFrontend_1_1Thread_1_1Task.html#af50c7642efe45554c61943fb3d8825b3", null ],
+    [ "SignalTaskPostFinishedDone", "classGpgFrontend_1_1Thread_1_1Task.html#a0902637c033d34cc3c4281e309c10830", null ],
     [ "TaskRunner", "classGpgFrontend_1_1Thread_1_1Task.html#a1956d94b45592a4096a335641aab65f8", null ],
     [ "callback_", "classGpgFrontend_1_1Thread_1_1Task.html#a5b47295d027309aee116d219b50de4f8", null ],
     [ "callback_thread_", "classGpgFrontend_1_1Thread_1_1Task.html#a1a6a92c92febc94e8abbc1a96d489446", null ],

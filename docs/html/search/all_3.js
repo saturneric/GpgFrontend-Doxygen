@@ -59,8 +59,9 @@ var searchData=
   ['ctx_5fmutex_5f_97',['ctx_mutex_',['../classGpgFrontend_1_1GpgKeyGetter.html#a81941e1f562dc22977a71d00dd10956a',1,'GpgFrontend::GpgKeyGetter']]],
   ['ctxchecktask_98',['CtxCheckTask',['../classGpgFrontend_1_1Thread_1_1CtxCheckTask.html',1,'GpgFrontend::Thread::CtxCheckTask'],['../classGpgFrontend_1_1Thread_1_1CtxCheckTask.html#a9d5f0969bcedc5687e0a50ed3b36a869',1,'GpgFrontend::Thread::CtxCheckTask::CtxCheckTask()']]],
   ['curfilepage_99',['CurFilePage',['../classGpgFrontend_1_1UI_1_1TextEdit.html#aa30daf558cb85bbdcad55a805a106109',1,'GpgFrontend::UI::TextEdit']]],
-  ['currentversionreleased_100',['CurrentVersionReleased',['../structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663',1,'GpgFrontend::UI::SoftwareVersion']]],
-  ['curtextpage_101',['CurTextPage',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a7aa1230fbf796225bd6b83d381e11a3b',1,'GpgFrontend::UI::TextEdit']]],
-  ['cut_5fact_5f_102',['cut_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a2c2f6c021219564846f1624f6bb5b9a2',1,'GpgFrontend::UI::MainWindow']]],
-  ['cut_5fpgp_5fheader_5fact_5f_103',['cut_pgp_header_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a313a5d7d0847114a6f11e4d7870edd86',1,'GpgFrontend::UI::MainWindow']]]
+  ['current_5freply_5f_100',['current_reply_',['../classGpgFrontend_1_1UI_1_1VersionCheckTask.html#a9679bc6bcdf2e64ec82f6119620b6f2e',1,'GpgFrontend::UI::VersionCheckTask']]],
+  ['currentversionreleased_101',['CurrentVersionReleased',['../structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663',1,'GpgFrontend::UI::SoftwareVersion']]],
+  ['curtextpage_102',['CurTextPage',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a7aa1230fbf796225bd6b83d381e11a3b',1,'GpgFrontend::UI::TextEdit']]],
+  ['cut_5fact_5f_103',['cut_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a2c2f6c021219564846f1624f6bb5b9a2',1,'GpgFrontend::UI::MainWindow']]],
+  ['cut_5fpgp_5fheader_5fact_5f_104',['cut_pgp_header_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a313a5d7d0847114a6f11e4d7870edd86',1,'GpgFrontend::UI::MainWindow']]]
 ];
