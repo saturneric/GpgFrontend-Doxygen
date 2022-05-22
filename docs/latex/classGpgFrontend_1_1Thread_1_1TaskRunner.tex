@@ -1,0 +1,108 @@
+\hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner}{}\doxysection{Gpg\+Frontend\+::Thread\+::Task\+Runner Class Reference}
+\label{classGpgFrontend_1_1Thread_1_1TaskRunner}\index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classGpgFrontend_1_1Thread_1_1TaskRunner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1Thread_1_1TaskRunner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}{Post\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_ad3c8612cbe60112f9b14e616fb0a4acf}{Task\+Runner}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} Runner object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_ac3e57b59d537e2a75e741d4a5418ae6d}{$\sim$\+Task\+Runner}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} Runner object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a66d2cce41130ada199636815c52332a6}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a66d2cce41130ada199636815c52332a6}} 
+void {\bfseries run} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}} 
+std\+::queue$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a774775e9a91d33072b27dcf78cead6e2}{tasks}}
+\begin{DoxyCompactList}\small\item\em The task queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a6d92421bbbfcf3136335a5173d1b2a22}{pending\+\_\+tasks\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The pending tasks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}} 
+std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a5e72f1ce00d41c225a4304f1ed20b3f1}{tasks\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The task queue mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_ad3c8612cbe60112f9b14e616fb0a4acf}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_ad3c8612cbe60112f9b14e616fb0a4acf}} 
+\index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!TaskRunner@{TaskRunner}}
+\index{TaskRunner@{TaskRunner}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
+\doxysubsubsection{\texorpdfstring{TaskRunner()}{TaskRunner()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Task\+Runner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} Runner object. 
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+
+The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_ac3e57b59d537e2a75e741d4a5418ae6d}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_ac3e57b59d537e2a75e741d4a5418ae6d}} 
+\index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!````~TaskRunner@{$\sim$TaskRunner}}
+\index{````~TaskRunner@{$\sim$TaskRunner}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
+\doxysubsubsection{\texorpdfstring{$\sim$TaskRunner()}{~TaskRunner()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::$\sim$\+Task\+Runner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} Runner object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}} 
+\index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!PostTask@{PostTask}}
+\index{PostTask@{PostTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
+\doxysubsubsection{\texorpdfstring{PostTask}{PostTask}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+U\+U\+I\+D(), pending\+\_\+tasks\+\_\+, tasks, and tasks\+\_\+mutex\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/thread/Task\+Runner.\+h\item 
+src/core/thread/Task\+Runner.\+cpp\end{DoxyCompactItemize}

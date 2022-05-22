@@ -109,9 +109,6 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>set_message()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#ab93fbf5e0626bffe398f5baa2bc00b1a">GpgFrontend::UI::KeyServerImportDialog</a>
 </li>
-<li>set_object_in_channel()
-: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a7377f8bddac073dbf9aa631726d8c021">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
-</li>
 <li>set_signal_slot()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyGenDialog.html#aa36de61cedb98f919f10e35d4e6b5146">GpgFrontend::UI::KeyGenDialog</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a90900b67eceb2d16af5de27f9f038f7f">GpgFrontend::UI::SubkeyGenerateDialog</a>
@@ -135,7 +132,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a1a01518b24d40d95e187ef73f4dcd52a">GpgFrontend::GenKeyInfo</a>
 </li>
 <li>SetChannel()
-: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a56ba12077251893e48f5ec360e8c7040">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+: <a class="el" href="classGpgFrontend_1_1ChannelObject.html#aa3b19cad6d873b314bba32a3dae85f09">GpgFrontend::ChannelObject</a>
 </li>
 <li>SetChecked()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a68b595a2bb83dfafa61b3e467dd15689">GpgFrontend::UI::KeyList</a>
@@ -166,6 +163,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>SetFilePath()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#aa9e82690824c82e7628ba4ace9d6e2fe">GpgFrontend::UI::PlainTextEditorPage</a>
 </li>
+<li>SetFinishAfterRun()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a689969e7d88ba7ad73a693a1b38aedd7">GpgFrontend::Thread::Task</a>
+</li>
 <li>SetInfoBoard()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#ac936cfc8e1b3af65d0d71b74fb3f0b02">GpgFrontend::UI::InfoBoardWidget</a>
 </li>
@@ -184,6 +184,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>SetNonPassPhrase()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a864407216cbdbef9e7b35e6be694d3ef">GpgFrontend::GenKeyInfo</a>
 </li>
+<li>SetObjectInChannel()
+: <a class="el" href="classGpgFrontend_1_1SingletonStorage.html#ab0097bb648b2303d68a975c7cbea5a52">GpgFrontend::SingletonStorage</a>
+</li>
 <li>SetPassPhrase()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afe1760d4ead397f6096925290a38e1a4">GpgFrontend::GenKeyInfo</a>
 </li>
@@ -192,6 +195,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SetPrimaryUID()
 : <a class="el" href="classGpgFrontend_1_1GpgUIDOperator.html#acbdabec97df508382b0c9b1fffbf1dd5">GpgFrontend::GpgUIDOperator</a>
+</li>
+<li>SetRTN()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#aa6d702417bdd6a88c447ed6a457fa098">GpgFrontend::Thread::Task</a>
 </li>
 <li>SetSettings()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1AppearanceTab.html#a2fed39a2657407fcdb37d2431ef28e56">GpgFrontend::UI::AppearanceTab</a>
@@ -226,6 +232,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>sign_marked_
 : <a class="el" href="classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a4f94e9ef7889a169bda5a47b7f657358">GpgFrontend::UI::PlainTextEditorPage</a>
 </li>
+<li>SignalKeyDatabaseRefreshDone()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a1abc83bba95579aa94d0870181991a28">GpgFrontend::UI::CommonUtils</a>
+</li>
 <li>SignalKeyServerListTestResult()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html#a41071f083c60ca708e8cc29896803940">GpgFrontend::UI::ListedKeyServerTestThread</a>
 </li>
@@ -257,11 +266,11 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">GpgFrontend::UI::KeyserverTab</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a91b25637962923a4bc646e8e1ab5d068">GpgFrontend::UI::SettingsDialog</a>
 </li>
-<li>SignalSendReadBlock()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1FileReadThread.html#a152a32021b66ea7de5aaf8cf6376c9ab">GpgFrontend::UI::FileReadThread</a>
+<li>SignalUIBytesDisplayed()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#afd3749488fdd3d1c53446fb8c833f3f4">GpgFrontend::UI::PlainTextEditorPage</a>
 </li>
 <li>SignalUpgradeVersion()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1VersionCheckThread.html#a61ba582623b570964e8fc1515407d636">GpgFrontend::UI::VersionCheckThread</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1VersionCheckTask.html#a36c5597674253348477d78ad6af380ab">GpgFrontend::UI::VersionCheckTask</a>
 </li>
 <li>SignersPicker()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">GpgFrontend::UI::SignersPicker</a>
@@ -273,7 +282,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classGpgFrontend_1_1GpgKeyManager.html#a12138780c53add7589f78f056019e5e0">GpgFrontend::GpgKeyManager</a>
 </li>
 <li>SingletonFunctionObject()
-: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aabc5fe8e5a372ac276a265286457cb9a">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a194e49b07d46345bdad386505d743a61">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
 </li>
 <li>slot_activated_key_type()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyGenDialog.html#ab8f04b046abb56d53bdbe67838b84fdc">GpgFrontend::UI::KeyGenDialog</a>
@@ -362,7 +371,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a55926649e28a96318b89afba01b966bf">GpgFrontend::UI::MainWindow</a>
 </li>
 <li>slot_insert_text()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a8ba8f52aa2d1102d3513fdf0f4760b28">GpgFrontend::UI::PlainTextEditorPage</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a184985104f23da8fdf2b9aaf7b27405b">GpgFrontend::UI::PlainTextEditorPage</a>
 </li>
 <li>slot_jump_page()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1ChoosePage.html#af0d7890fe65385b7785719b9cff0718b">GpgFrontend::UI::ChoosePage</a>
@@ -410,6 +419,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>slot_start_wizard()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#aabf3ddf6b624790369f164b4889c95be">GpgFrontend::UI::MainWindow</a>
+</li>
+<li>slot_update_key_status()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#ab4ac26378d6a07757720163eb4b1cb0e">GpgFrontend::UI::CommonUtils</a>
 </li>
 <li>slot_upload_key_to_server()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">GpgFrontend::UI::KeyUploadDialog</a>
@@ -460,7 +472,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1TextEdit.html#af466ec2b8ab3f695d206efc0574bbe20">GpgFrontend::UI::TextEdit</a>
 </li>
 <li>SlotImport()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a1e17305d6b470d0f7050eb8e3e6ee3d8">GpgFrontend::UI::KeyServerImportDialog</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a1a7298fa8c6aa085794b21fe6d8ed1eb">GpgFrontend::UI::KeyServerImportDialog</a>
 </li>
 <li>SlotImportKeyFromClipboard()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a0c8bf56fc5371cd2c5e9d2a0f67bf72a">GpgFrontend::UI::CommonUtils</a>
@@ -469,7 +481,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a057526790f6b2f6288c3a35322c34d8d">GpgFrontend::UI::CommonUtils</a>
 </li>
 <li>SlotImportKeyFromKeyServer()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a35a47fc31b81b6c4f5899e8ab5c4c51a">GpgFrontend::UI::CommonUtils</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#af1b3538d3119c8564e83c7661f73f6ea">GpgFrontend::UI::CommonUtils</a>
 </li>
 <li>SlotImportKeys()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a3bc26cc1e0f00f0ce2f95c0b6c8778d8">GpgFrontend::UI::CommonUtils</a>
@@ -537,6 +549,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>steganography_menu_
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#af763a506aed7d0fb2125d1859583b853">GpgFrontend::UI::MainWindow</a>
+</li>
+<li>storages_mutex_
+: <a class="el" href="classGpgFrontend_1_1SingletonStorageCollection.html#ab648cb257beb2475eb5fca6453c331f9">GpgFrontend::SingletonStorageCollection</a>
 </li>
 <li>stripped_name()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1TextEdit.html#afb9b7a7d88154d774b3d727d8e640cbb">GpgFrontend::UI::TextEdit</a>

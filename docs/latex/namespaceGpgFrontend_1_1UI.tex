@@ -19,11 +19,13 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog}{Export\
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage}{File\+Page}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadThread}{File\+Read\+Thread}}
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask}{File\+Read\+Task}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget}{Find\+Widget}}
 \begin{DoxyCompactList}\small\item\em Class for handling the find widget shown at buttom of a textedit-\/page. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab}{General\+Tab}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GpgFrontendApplication}{Gpg\+Frontend\+Application}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1HelpPage}{Help\+Page}}
 \item 
@@ -109,7 +111,7 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyDetailsDialog}{Verify\+De
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox}{Verify\+Key\+Detail\+Box}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckThread}{Version\+Check\+Thread}}
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckTask}{Version\+Check\+Task}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1WaitingDialog}{Waiting\+Dialog}}
 \item 
@@ -127,9 +129,15 @@ enum \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb0
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_adc988a5b6f6b3f2b15d660f2eceb6d96}\label{namespaceGpgFrontend_1_1UI_adc988a5b6f6b3f2b15d660f2eceb6d96}} 
-void {\bfseries init\+\_\+logging} ()
-\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a834d05cb1918760d1a9c5a67aa3a7da3}{init\+\_\+logging\+\_\+system}} ()
+\begin{DoxyCompactList}\small\item\em initialize the logging system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}{init\+\_\+locale}} ()
+\begin{DoxyCompactList}\small\item\em setup the locale and load the translations \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}{Init\+Gpg\+Frontend\+UI}} (Q\+Application $\ast$)
+\begin{DoxyCompactList}\small\item\em init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}\label{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}} 
+int \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}{Run\+Gpg\+Frontend\+UI}} (Q\+Application $\ast$)
+\begin{DoxyCompactList}\small\item\em run main window \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}\label{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}} 
 bool {\bfseries path\+\_\+pre\+\_\+check} (Q\+Widget $\ast$parent, const Q\+String \&path)
 \item 
@@ -147,7 +155,7 @@ void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1
 \item 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a60b5887adabc74015700795dc3c07ae9}{process\+\_\+result\+\_\+analyse}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit}{Text\+Edit}} $\ast$edit, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+a, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+b)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}{process\+\_\+operation}} (Q\+Widget $\ast$parent, const std\+::string \&waiting\+\_\+title, const std\+::function$<$ void()$>$ \&func)
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}{process\+\_\+operation}} (Q\+Widget $\ast$parent, const std\+::string \&waiting\+\_\+title, const Thread\+::\+Task\+::\+Task\+Runnable func, const Thread\+::\+Task\+::\+Task\+Callback callback, Thread\+::\+Task\+::\+Data\+Object\+Ptr data\+\_\+object)
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}\label{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}} 
 std\+::string {\bfseries binary\+\_\+to\+\_\+string} (const std\+::string \&source)
@@ -167,9 +175,7 @@ You should have received a copy of the G\+NU General Public License along with \
 
 The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later
+The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 Copyright (C) 2021 Saturneric
 
@@ -183,7 +189,9 @@ You should have received a copy of the G\+NU General Public License along with \
 
 The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Enumeration Type Documentation}
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}\label{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}} 
@@ -216,6 +224,70 @@ References Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Get\+Signatures(
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().
 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}\label{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}} 
+\index{GpgFrontend::UI@{GpgFrontend::UI}!init\_locale@{init\_locale}}
+\index{init\_locale@{init\_locale}!GpgFrontend::UI@{GpgFrontend::UI}}
+\doxysubsubsection{\texorpdfstring{init\_locale()}{init\_locale()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::init\+\_\+locale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+setup the locale and load the translations 
+
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+Locale\+Dir(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Sync\+Settings().
+
+
+
+Referenced by Init\+Gpg\+Frontend\+U\+I().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a834d05cb1918760d1a9c5a67aa3a7da3}\label{namespaceGpgFrontend_1_1UI_a834d05cb1918760d1a9c5a67aa3a7da3}} 
+\index{GpgFrontend::UI@{GpgFrontend::UI}!init\_logging\_system@{init\_logging\_system}}
+\index{init\_logging\_system@{init\_logging\_system}!GpgFrontend::UI@{GpgFrontend::UI}}
+\doxysubsubsection{\texorpdfstring{init\_logging\_system()}{init\_logging\_system()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::init\+\_\+logging\+\_\+system (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize the logging system. 
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+Log\+Dir().
+
+
+
+Referenced by Init\+Gpg\+Frontend\+U\+I().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}\label{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}} 
+\index{GpgFrontend::UI@{GpgFrontend::UI}!InitGpgFrontendUI@{InitGpgFrontendUI}}
+\index{InitGpgFrontendUI@{InitGpgFrontendUI}!GpgFrontend::UI@{GpgFrontend::UI}}
+\doxysubsubsection{\texorpdfstring{InitGpgFrontendUI()}{InitGpgFrontendUI()}}
+{\footnotesize\ttfamily void G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+U\+I\+\_\+\+E\+X\+P\+O\+RT Gpg\+Frontend\+::\+U\+I\+::\+Init\+Gpg\+Frontend\+UI (\begin{DoxyParamCaption}\item[{Q\+Application $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library 
+
+
+
+References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+Resource\+Dir(), init\+\_\+locale(), and init\+\_\+logging\+\_\+system().
+
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}\label{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_directory\_into\_tarball@{process\_directory\_into\_tarball}}
 \index{process\_directory\_into\_tarball@{process\_directory\_into\_tarball}!GpgFrontend::UI@{GpgFrontend::UI}}
@@ -241,11 +313,11 @@ References process\+\_\+operation().
 
 Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}\label{namespaceGpgFrontend_1_1UI_a915af1392056ddeb14099632d9679fc4}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}\label{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_operation@{process\_operation}}
 \index{process\_operation@{process\_operation}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{process\_operation()}{process\_operation()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{const std\+::string \&}]{waiting\+\_\+title,  }\item[{const std\+::function$<$ void()$>$ \&}]{func }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{const std\+::string \&}]{waiting\+\_\+title,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Runnable}]{func,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Callback}]{callback = {\ttfamily nullptr},  }\item[{Thread\+::\+Task\+::\+Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -256,6 +328,10 @@ Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt
 {\em func} & \\
 \hline
 \end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
 
 
 Referenced by process\+\_\+directory\+\_\+into\+\_\+tarball(), process\+\_\+tarball\+\_\+into\+\_\+directory(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().

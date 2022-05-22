@@ -1,0 +1,111 @@
+\hypertarget{classGpgFrontend_1_1SingletonStorage}{}\doxysection{Gpg\+Frontend\+::Singleton\+Storage Class Reference}
+\label{classGpgFrontend_1_1SingletonStorage}\index{GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Singleton\+Storage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1SingletonStorage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_adb22cc80a1ab040b6e4bce962625edfd}{Release\+Channel}} (int channel)
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_a4c16c32e549494e394a0ddd859890a02}{Find\+Object\+In\+Channel}} (int channel)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_a3f09424ebdc097fbdab77564a7d723ea}{Get\+All\+Channel\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get all the channel ids. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_ab0097bb648b2303d68a975c7cbea5a52}{Set\+Object\+In\+Channel}} (int channel, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$ p\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Set a new object in channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_a15161d0afafec602018a89266dab5641}\label{classGpgFrontend_1_1SingletonStorage_a15161d0afafec602018a89266dab5641}} 
+std\+::shared\+\_\+mutex \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_a15161d0afafec602018a89266dab5641}{instances\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em mutex for \+\_\+instances\+\_\+map \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_a6181f2b5af39c6b86de89e1ba9eeff1c}\label{classGpgFrontend_1_1SingletonStorage_a6181f2b5af39c6b86de89e1ba9eeff1c}} 
+std\+::map$<$ int, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_a6181f2b5af39c6b86de89e1ba9eeff1c}{instances\+\_\+map\+\_\+}}
+\begin{DoxyCompactList}\small\item\em map of singleton instances \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_a4c16c32e549494e394a0ddd859890a02}\label{classGpgFrontend_1_1SingletonStorage_a4c16c32e549494e394a0ddd859890a02}} 
+\index{GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}!FindObjectInChannel@{FindObjectInChannel}}
+\index{FindObjectInChannel@{FindObjectInChannel}!GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}}
+\doxysubsubsection{\texorpdfstring{FindObjectInChannel()}{FindObjectInChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Gpg\+Frontend\+::\+Channel\+Object}} $\ast$ Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Find\+Object\+In\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_a3f09424ebdc097fbdab77564a7d723ea}\label{classGpgFrontend_1_1SingletonStorage_a3f09424ebdc097fbdab77564a7d723ea}} 
+\index{GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}!GetAllChannelId@{GetAllChannelId}}
+\index{GetAllChannelId@{GetAllChannelId}!GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}}
+\doxysubsubsection{\texorpdfstring{GetAllChannelId()}{GetAllChannelId()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Get\+All\+Channel\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all the channel ids. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+All\+Channel\+Id().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_adb22cc80a1ab040b6e4bce962625edfd}\label{classGpgFrontend_1_1SingletonStorage_adb22cc80a1ab040b6e4bce962625edfd}} 
+\index{GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}!ReleaseChannel@{ReleaseChannel}}
+\index{ReleaseChannel@{ReleaseChannel}!GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}}
+\doxysubsubsection{\texorpdfstring{ReleaseChannel()}{ReleaseChannel()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Release\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Release\+Channel().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_ab0097bb648b2303d68a975c7cbea5a52}\label{classGpgFrontend_1_1SingletonStorage_ab0097bb648b2303d68a975c7cbea5a52}} 
+\index{GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}!SetObjectInChannel@{SetObjectInChannel}}
+\index{SetObjectInChannel@{SetObjectInChannel}!GpgFrontend::SingletonStorage@{GpgFrontend::SingletonStorage}}
+\doxysubsubsection{\texorpdfstring{SetObjectInChannel()}{SetObjectInChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Gpg\+Frontend\+::\+Channel\+Object}} $\ast$ Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Set\+Object\+In\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$}]{p\+\_\+obj }\end{DoxyParamCaption})}
+
+
+
+Set a new object in channel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+{\em p\+\_\+obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Channel\+Object\+::\+Set\+Channel().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/Gpg\+Function\+Object.\+h\item 
+src/core/Gpg\+Function\+Object.\+cpp\end{DoxyCompactItemize}

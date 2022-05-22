@@ -5,6 +5,8 @@
 \item 
  \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI}{Raw\+A\+PI}}
 \item 
+ \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}}
+\item 
  \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Classes}
@@ -16,9 +18,11 @@ class \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator}{Archive\+File\+O
 \item 
 struct \mbox{\hyperlink{structGpgFrontend_1_1ArchiveStruct}{Archive\+Struct}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1CoreCommonUtil}{Core\+Common\+Util}}
+class \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}}
+\begin{DoxyCompactList}\small\item\em object which in channel system \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1CharsetOperator}{Charset\+Operator}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1CtxCheckThread}{Ctx\+Check\+Thread}}
+class \mbox{\hyperlink{classGpgFrontend_1_1CoreCommonUtil}{Core\+Common\+Util}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator}{Data\+Object\+Operator}}
 \item 
@@ -85,6 +89,10 @@ class \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator}{Key\+Package\+Ope
 class \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} class. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
@@ -207,7 +215,7 @@ std\+::string \mbox{\hyperlink{namespaceGpgFrontend_a5a2f5fc1ad3de55e41a1b7a3888
 \begin{DoxyCompactList}\small\item\em Get the only file name with path object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{namespaceGpgFrontend_a2a0394c8bdd277f5235f9875a1d69a99}{text\+\_\+is\+\_\+signed}} (Bype\+Array\+Ref text)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_affb72eb1b5f3ac8fe48cc1f37dd557ee}{init\+\_\+logging}} ()
+void \mbox{\hyperlink{namespaceGpgFrontend_aff3e12940da2d43ce7aedeb795643434}{Init\+Logging\+System}} ()
 \begin{DoxyCompactList}\small\item\em setup logging system and do proper initialization \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a5c172444c7aacf11b2f8b2ebe72fb053}\label{namespaceGpgFrontend_a5c172444c7aacf11b2f8b2ebe72fb053}} 
 void {\bfseries init\+\_\+gpgfrontend\+\_\+core} ()
@@ -401,7 +409,7 @@ gpg\+\_\+err\+\_\+code\+\_\+t
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Add\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+S\+S\+H(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Fetch\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Context\+::\+Gpg\+Context(), Gpg\+Frontend\+::\+Gpg\+Context\+::init\+\_\+ctx(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign(), Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Rev\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire(), Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Set\+Primary\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign().
+Referenced by Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Add\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+S\+S\+H(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Flush\+Key\+Cache(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Context\+::\+Gpg\+Context(), Gpg\+Frontend\+::\+Gpg\+Context\+::init\+\_\+ctx(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign(), Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Rev\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire(), Gpg\+Frontend\+::\+Gpg\+U\+I\+D\+Operator\+::\+Set\+Primary\+U\+I\+D(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_acff2cf5dd5b112b324fa6574ee935f79}\label{namespaceGpgFrontend_acff2cf5dd5b112b324fa6574ee935f79}} 
 \index{GpgFrontend@{GpgFrontend}!get\_file\_extension@{get\_file\_extension}}
@@ -439,11 +447,11 @@ Get the only file name with path object.
 \begin{DoxyReturn}{Returns}
 std\+::string 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_affb72eb1b5f3ac8fe48cc1f37dd557ee}\label{namespaceGpgFrontend_affb72eb1b5f3ac8fe48cc1f37dd557ee}} 
-\index{GpgFrontend@{GpgFrontend}!init\_logging@{init\_logging}}
-\index{init\_logging@{init\_logging}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{init\_logging()}{init\_logging()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::init\+\_\+logging (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_aff3e12940da2d43ce7aedeb795643434}\label{namespaceGpgFrontend_aff3e12940da2d43ce7aedeb795643434}} 
+\index{GpgFrontend@{GpgFrontend}!InitLoggingSystem@{InitLoggingSystem}}
+\index{InitLoggingSystem@{InitLoggingSystem}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{InitLoggingSystem()}{InitLoggingSystem()}}
+{\footnotesize\ttfamily void G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Gpg\+Frontend\+::\+Init\+Logging\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 

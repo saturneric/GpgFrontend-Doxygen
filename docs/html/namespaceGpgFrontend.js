@@ -1,11 +1,13 @@
 var namespaceGpgFrontend =
 [
+    [ "Thread", "namespaceGpgFrontend_1_1Thread.html", "namespaceGpgFrontend_1_1Thread" ],
     [ "UI", "namespaceGpgFrontend_1_1UI.html", "namespaceGpgFrontend_1_1UI" ],
     [ "_result_ref_deletor", "structGpgFrontend_1_1__result__ref__deletor.html", "structGpgFrontend_1_1__result__ref__deletor" ],
     [ "ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", "classGpgFrontend_1_1ArchiveFileOperator" ],
     [ "ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", "structGpgFrontend_1_1ArchiveStruct" ],
+    [ "ChannelObject", "classGpgFrontend_1_1ChannelObject.html", "classGpgFrontend_1_1ChannelObject" ],
+    [ "CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", "classGpgFrontend_1_1CharsetOperator" ],
     [ "CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", "classGpgFrontend_1_1CoreCommonUtil" ],
-    [ "CtxCheckThread", "classGpgFrontend_1_1CtxCheckThread.html", "classGpgFrontend_1_1CtxCheckThread" ],
     [ "DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", "classGpgFrontend_1_1DataObjectOperator" ],
     [ "FileOperator", "classGpgFrontend_1_1FileOperator.html", "classGpgFrontend_1_1FileOperator" ],
     [ "GenKeyInfo", "classGpgFrontend_1_1GenKeyInfo.html", "classGpgFrontend_1_1GenKeyInfo" ],
@@ -38,5 +40,7 @@ var namespaceGpgFrontend =
     [ "GpgVerifyResultAnalyse", "classGpgFrontend_1_1GpgVerifyResultAnalyse.html", "classGpgFrontend_1_1GpgVerifyResultAnalyse" ],
     [ "KeyPackageOperator", "classGpgFrontend_1_1KeyPackageOperator.html", "classGpgFrontend_1_1KeyPackageOperator" ],
     [ "PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", "classGpgFrontend_1_1PassphraseGenerator" ],
-    [ "SingletonFunctionObject", "classGpgFrontend_1_1SingletonFunctionObject.html", "classGpgFrontend_1_1SingletonFunctionObject" ]
+    [ "SingletonFunctionObject", "classGpgFrontend_1_1SingletonFunctionObject.html", "classGpgFrontend_1_1SingletonFunctionObject" ],
+    [ "SingletonStorage", "classGpgFrontend_1_1SingletonStorage.html", "classGpgFrontend_1_1SingletonStorage" ],
+    [ "SingletonStorageCollection", "classGpgFrontend_1_1SingletonStorageCollection.html", "classGpgFrontend_1_1SingletonStorageCollection" ]
 ];

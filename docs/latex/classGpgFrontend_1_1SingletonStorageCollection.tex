@@ -1,0 +1,79 @@
+\hypertarget{classGpgFrontend_1_1SingletonStorageCollection}{}\doxysection{Gpg\+Frontend\+::Singleton\+Storage\+Collection Class Reference}
+\label{classGpgFrontend_1_1SingletonStorageCollection}\index{GpgFrontend::SingletonStorageCollection@{GpgFrontend::SingletonStorageCollection}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Singleton\+Storage\+Collection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1SingletonStorageCollection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_a6f933390c54b7f55d5ffb4624074725f}{Get\+Singleton\+Storage}} (const std\+::type\+\_\+info \&)
+\begin{DoxyCompactList}\small\item\em Get the Singleton Storage object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_a16b4729ca79dcdccc794df70aa2a5aaf}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_ab648cb257beb2475eb5fca6453c331f9}\label{classGpgFrontend_1_1SingletonStorageCollection_ab648cb257beb2475eb5fca6453c331f9}} 
+std\+::shared\+\_\+mutex \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_ab648cb257beb2475eb5fca6453c331f9}{storages\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em mutex for storages\+\_\+map\+\_\+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_ae28930630a2dce804cff5589155aadfc}\label{classGpgFrontend_1_1SingletonStorageCollection_ae28930630a2dce804cff5589155aadfc}} 
+std\+::map$<$ size\+\_\+t, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}} $>$ $>$ {\bfseries storages\+\_\+map\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_a16b4729ca79dcdccc794df70aa2a5aaf}\label{classGpgFrontend_1_1SingletonStorageCollection_a16b4729ca79dcdccc794df70aa2a5aaf}} 
+\index{GpgFrontend::SingletonStorageCollection@{GpgFrontend::SingletonStorageCollection}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::SingletonStorageCollection@{GpgFrontend::SingletonStorageCollection}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Gpg\+Frontend\+::\+Singleton\+Storage\+Collection}} $\ast$ Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Singleton\+Storage\+Collection$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Create\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+All\+Channel\+Id(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Release\+Channel().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_a6f933390c54b7f55d5ffb4624074725f}\label{classGpgFrontend_1_1SingletonStorageCollection_a6f933390c54b7f55d5ffb4624074725f}} 
+\index{GpgFrontend::SingletonStorageCollection@{GpgFrontend::SingletonStorageCollection}!GetSingletonStorage@{GetSingletonStorage}}
+\index{GetSingletonStorage@{GetSingletonStorage}!GpgFrontend::SingletonStorageCollection@{GpgFrontend::SingletonStorageCollection}}
+\doxysubsubsection{\texorpdfstring{GetSingletonStorage()}{GetSingletonStorage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Gpg\+Frontend\+::\+Singleton\+Storage}} $\ast$ Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Singleton\+Storage (\begin{DoxyParamCaption}\item[{const std\+::type\+\_\+info \&}]{type\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Get the Singleton Storage object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em singleton\+\_\+function\+\_\+object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Singleton\+Storage$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Create\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+All\+Channel\+Id(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Release\+Channel().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/Gpg\+Function\+Object.\+h\item 
+src/core/Gpg\+Function\+Object.\+cpp\end{DoxyCompactItemize}

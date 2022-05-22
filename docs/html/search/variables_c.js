@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['open_5fact_5f_1293',['open_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a4a1edafb8c67b181ff3c29394147571d',1,'GpgFrontend::UI::MainWindow']]],
-  ['open_5fkey_5fmanagement_5fact_5f_1294',['open_key_management_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#ad7b22560df7e3bb38b660d3ffc84dc83',1,'GpgFrontend::UI::MainWindow']]],
-  ['open_5fsettings_5fact_5f_1295',['open_settings_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#afab1e0363a4b97ff68228cd4bd7cbc62',1,'GpgFrontend::UI::MainWindow']]],
-  ['owner_5fbox_5f_1296',['owner_box_',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#ad8c25061351d8e739b70d5466b87410e',1,'GpgFrontend::UI::KeyPairDetailTab']]]
+  ['m_5ftext_5fpage_5f_1398',['m_text_page_',['../classGpgFrontend_1_1UI_1_1FindWidget.html#a11f9d0f07b704539ad1df15a5c15dca9',1,'GpgFrontend::UI::FindWidget::m_text_page_()'],['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a6380776ea1bf9a020370589e1e20efd3',1,'GpgFrontend::UI::InfoBoardWidget::m_text_page_()']]],
+  ['mt_5f_1399',['mt_',['../classGpgFrontend_1_1DataObjectOperator.html#a9fc92c7d497f2a2057776adfca40e8ca',1,'GpgFrontend::DataObjectOperator::mt_()'],['../classGpgFrontend_1_1PassphraseGenerator.html#a19ac4999bbd5fb7e6c42a4aef9606892',1,'GpgFrontend::PassphraseGenerator::mt_()']]]
 ];

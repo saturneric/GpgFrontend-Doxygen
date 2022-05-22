@@ -1,9 +1,4 @@
 <map id="GpgFrontend::SingletonFunctionObject&lt; T &gt;" name="GpgFrontend::SingletonFunctionObject&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="121,469,350,796"/>
-<area shape="rect" id="node2" title="STL class." alt="" coords="5,315,148,392"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="189,315,281,392"/>
-<area shape="rect" id="node4" title=" " alt="" coords="311,300,463,407"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="320,145,455,223"/>
-<area shape="rect" id="node6" title=" " alt="" coords="331,5,369,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="407,5,445,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,204,235,487"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="16,5,224,156"/>
 </map>

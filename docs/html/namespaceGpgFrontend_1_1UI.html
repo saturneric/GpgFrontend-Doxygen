@@ -110,12 +110,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html">FilePage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FileReadThread.html">FileReadThread</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FindWidget.html">FindWidget</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for handling the find widget shown at buttom of a textedit-page.  <a href="classGpgFrontend_1_1UI_1_1FindWidget.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GeneralTab.html">GeneralTab</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html">GpgFrontendApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1HelpPage.html">HelpPage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +210,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">VerifyKeyDetailBox</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1VersionCheckThread.html">VersionCheckThread</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1VersionCheckTask.html">VersionCheckTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">WaitingDialog</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,9 +228,19 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adc988a5b6f6b3f2b15d660f2eceb6d96"><td class="memItemLeft" align="right" valign="top"><a id="adc988a5b6f6b3f2b15d660f2eceb6d96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_logging</b> ()</td></tr>
-<tr class="separator:adc988a5b6f6b3f2b15d660f2eceb6d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834d05cb1918760d1a9c5a67aa3a7da3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a834d05cb1918760d1a9c5a67aa3a7da3">init_logging_system</a> ()</td></tr>
+<tr class="memdesc:a834d05cb1918760d1a9c5a67aa3a7da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the logging system.  <a href="namespaceGpgFrontend_1_1UI.html#a834d05cb1918760d1a9c5a67aa3a7da3">More...</a><br /></td></tr>
+<tr class="separator:a834d05cb1918760d1a9c5a67aa3a7da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157c74e50283da9ed554cf7bf90afbee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a157c74e50283da9ed554cf7bf90afbee">init_locale</a> ()</td></tr>
+<tr class="memdesc:a157c74e50283da9ed554cf7bf90afbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup the locale and load the translations  <a href="namespaceGpgFrontend_1_1UI.html#a157c74e50283da9ed554cf7bf90afbee">More...</a><br /></td></tr>
+<tr class="separator:a157c74e50283da9ed554cf7bf90afbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0311557c1d7bde9c56cbca85fefa6ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">InitGpgFrontendUI</a> (QApplication *)</td></tr>
+<tr class="memdesc:ab0311557c1d7bde9c56cbca85fefa6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">init the <a class="el" href="namespaceGpgFrontend_1_1UI.html">UI</a> library  <a href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">More...</a><br /></td></tr>
+<tr class="separator:ab0311557c1d7bde9c56cbca85fefa6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2d085812ef8fdd6f19ea94a241b4da"><td class="memItemLeft" align="right" valign="top"><a id="a9e2d085812ef8fdd6f19ea94a241b4da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a9e2d085812ef8fdd6f19ea94a241b4da">RunGpgFrontendUI</a> (QApplication *)</td></tr>
+<tr class="memdesc:a9e2d085812ef8fdd6f19ea94a241b4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">run main window <br /></td></tr>
+<tr class="separator:a9e2d085812ef8fdd6f19ea94a241b4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dea2a35c4dbc3868317beb26d4508fc"><td class="memItemLeft" align="right" valign="top"><a id="a4dea2a35c4dbc3868317beb26d4508fc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>path_pre_check</b> (QWidget *parent, const QString &amp;path)</td></tr>
 <tr class="separator:a4dea2a35c4dbc3868317beb26d4508fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,8 +260,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>path_pre_check</b> (Q
 <tr class="separator:abd3c7c636954390d52150b4e6d38e1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b5887adabc74015700795dc3c07ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a60b5887adabc74015700795dc3c07ae9">process_result_analyse</a> (<a class="el" href="classGpgFrontend_1_1UI_1_1TextEdit.html">TextEdit</a> *edit, <a class="el" href="classGpgFrontend_1_1UI_1_1InfoBoardWidget.html">InfoBoardWidget</a> *info_board, const <a class="el" href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgResultAnalyse</a> &amp;result_analyse_a, const <a class="el" href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgResultAnalyse</a> &amp;result_analyse_b)</td></tr>
 <tr class="separator:a60b5887adabc74015700795dc3c07ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915af1392056ddeb14099632d9679fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a915af1392056ddeb14099632d9679fc4">process_operation</a> (QWidget *parent, const std::string &amp;waiting_title, const std::function&lt; void()&gt; &amp;func)</td></tr>
-<tr class="separator:a915af1392056ddeb14099632d9679fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c971eeb5c620d08d6d92f0752ceaf9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1UI.html#a3c971eeb5c620d08d6d92f0752ceaf9f">process_operation</a> (QWidget *parent, const std::string &amp;waiting_title, const Thread::Task::TaskRunnable func, const Thread::Task::TaskCallback callback, Thread::Task::DataObjectPtr data_object)</td></tr>
+<tr class="separator:a3c971eeb5c620d08d6d92f0752ceaf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f6c9bfe9ecb5da132f2f6d2ba7eeb80"><td class="memItemLeft" align="right" valign="top"><a id="a4f6c9bfe9ecb5da132f2f6d2ba7eeb80"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_string</b> (const std::string &amp;source)</td></tr>
 <tr class="separator:a4f6c9bfe9ecb5da132f2f6d2ba7eeb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,15 +273,15 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
 <p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
 <p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
-<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
-<p>SPDX-License-Identifier: GPL-3.0-or-later</p>
+<p>The source code version of this software was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a><a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
 <p>Copyright (C) 2021 Saturneric</p>
 <p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
 <p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
 <p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
-<p>The source code version of this software was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a><a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021. </p>
+<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
+<p>SPDX-License-Identifier: GPL-3.0-or-later </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="acbaebd342a317b1f067942e5144bb00d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbaebd342a317b1f067942e5144bb00d">&#9670;&nbsp;</a></span>InfoBoardStatus</h2>
@@ -326,6 +338,82 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
 
 </div>
 </div>
+<a id="a157c74e50283da9ed554cf7bf90afbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157c74e50283da9ed554cf7bf90afbee">&#9670;&nbsp;</a></span>init_locale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::UI::init_locale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setup the locale and load the translations </p>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">GpgFrontend::GlobalSettingStation::GetLocaleDir()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b">GpgFrontend::GlobalSettingStation::GetUISettings()</a>, and <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#ac061ac8e5308f67ea52b98888bbb2e8d">GpgFrontend::GlobalSettingStation::SyncSettings()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">InitGpgFrontendUI()</a>.</p>
+
+</div>
+</div>
+<a id="a834d05cb1918760d1a9c5a67aa3a7da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834d05cb1918760d1a9c5a67aa3a7da3">&#9670;&nbsp;</a></span>init_logging_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::UI::init_logging_system </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initialize the logging system. </p>
+<p>Copyright (C) 2021 Saturneric</p>
+<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
+<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
+<p>SPDX-License-Identifier: GPL-3.0-or-later </p>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, and <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">GpgFrontend::GlobalSettingStation::GetLogDir()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">InitGpgFrontendUI()</a>.</p>
+
+</div>
+</div>
+<a id="ab0311557c1d7bde9c56cbca85fefa6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0311557c1d7bde9c56cbca85fefa6ad">&#9670;&nbsp;</a></span>InitGpgFrontendUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPGFRONTEND_UI_EXPORT GpgFrontend::UI::InitGpgFrontendUI </td>
+          <td>(</td>
+          <td class="paramtype">QApplication *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init the <a class="el" href="namespaceGpgFrontend_1_1UI.html">UI</a> library </p>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1SignalStation.html#abe381ce56a7b157a3760b2fd9c3b7419">GpgFrontend::UI::SignalStation::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#aed529969f54e39e3f9da14ae6dd00d49">GpgFrontend::UI::CommonUtils::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; TaskRunnerGetter &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">GpgFrontend::GlobalSettingStation::GetResourceDir()</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#a157c74e50283da9ed554cf7bf90afbee">init_locale()</a>, and <a class="el" href="namespaceGpgFrontend_1_1UI.html#a834d05cb1918760d1a9c5a67aa3a7da3">init_logging_system()</a>.</p>
+
+</div>
+</div>
 <a id="a5470872566b41ce628f64039f34b964a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5470872566b41ce628f64039f34b964a">&#9670;&nbsp;</a></span>process_directory_into_tarball()</h2>
 
@@ -361,14 +449,14 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#a915af1392056ddeb14099632d9679fc4">process_operation()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#a3c971eeb5c620d08d6d92f0752ceaf9f">process_operation()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9ec699536a35a37961a8c6da1e231ae3">GpgFrontend::UI::MainWindow::SlotFileEncrypt()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a25a2e4017d77cffc8362bde9606fad30">GpgFrontend::UI::MainWindow::SlotFileEncryptSign()</a>.</p>
 
 </div>
 </div>
-<a id="a915af1392056ddeb14099632d9679fc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915af1392056ddeb14099632d9679fc4">&#9670;&nbsp;</a></span>process_operation()</h2>
+<a id="a3c971eeb5c620d08d6d92f0752ceaf9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c971eeb5c620d08d6d92f0752ceaf9f">&#9670;&nbsp;</a></span>process_operation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,8 +476,20 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
+          <td class="paramtype">GpgFrontend::Thread::Task::TaskRunnable&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GpgFrontend::Thread::Task::TaskCallback&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Thread::Task::DataObjectPtr&#160;</td>
+          <td class="paramname"><em>data_object</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -406,6 +506,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
   </table>
   </dd>
 </dl>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; TaskRunnerGetter &gt;::GetInstance()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend_1_1UI.html#a5470872566b41ce628f64039f34b964a">process_directory_into_tarball()</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#a57d0a4dba23cd3d9b42222d40c710dc1">process_tarball_into_directory()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#ae2d89e2cc6c99ff0e16b396d2381f904">GpgFrontend::UI::MainWindow::slot_decrypt()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a1d61ea803e6c825bd54f42ba9ae85919">GpgFrontend::UI::MainWindow::slot_decrypt_verify()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#ae11d01211c2914ecc148e13dd7de506e">GpgFrontend::UI::MainWindow::slot_encrypt()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a304efe91afa31b32725caa00c27475a4">GpgFrontend::UI::MainWindow::slot_encrypt_sign()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a3f3d03b0ec22385bee559fbd2aeb881b">GpgFrontend::UI::MainWindow::slot_sign()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#aa9c986dd95984811479ea93230c74b5d">GpgFrontend::UI::MainWindow::slot_verify()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a0a6d0618f2835a6dcae707a4ca770a48">GpgFrontend::UI::MainWindow::SlotFileDecrypt()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#ab23c7e67dd1f5295b3c49ad79dfd5919">GpgFrontend::UI::MainWindow::SlotFileDecryptVerify()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9ec699536a35a37961a8c6da1e231ae3">GpgFrontend::UI::MainWindow::SlotFileEncrypt()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a25a2e4017d77cffc8362bde9606fad30">GpgFrontend::UI::MainWindow::SlotFileEncryptSign()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a8bcdcbe678b8dc0837fffda2ebfe79bf">GpgFrontend::UI::MainWindow::SlotFileSign()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9879061cfd321c6757c77f75d46dc7d8">GpgFrontend::UI::MainWindow::SlotFileVerify()</a>.</p>
 
@@ -544,7 +646,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>binary_to_stri
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#a915af1392056ddeb14099632d9679fc4">process_operation()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#a3c971eeb5c620d08d6d92f0752ceaf9f">process_operation()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a0a6d0618f2835a6dcae707a4ca770a48">GpgFrontend::UI::MainWindow::SlotFileDecrypt()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#ab23c7e67dd1f5295b3c49ad79dfd5919">GpgFrontend::UI::MainWindow::SlotFileDecryptVerify()</a>.</p>
 

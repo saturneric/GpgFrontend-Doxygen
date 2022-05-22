@@ -11,6 +11,7 @@ var dir_da5c6b39c0a2f54e57df6799511cd3ab =
     [ "struct", "dir_77b5d71c36a073b86db318490f5560d0.html", "dir_77b5d71c36a073b86db318490f5560d0" ],
     [ "thread", "dir_0cd9bde2c64af64bc3733ed8ca8e04b3.html", "dir_0cd9bde2c64af64bc3733ed8ca8e04b3" ],
     [ "widgets", "dir_f3911b9629b0e27ea480d06d47573cbf.html", "dir_f3911b9629b0e27ea480d06d47573cbf" ],
+    [ "GpgFrontendApplication.h", "GpgFrontendApplication_8h_source.html", null ],
     [ "GpgFrontendUI.h", "GpgFrontendUI_8h_source.html", null ],
     [ "GpgFrontendUIInit.h", "GpgFrontendUIInit_8h_source.html", null ],
     [ "KeyMgmt.h", "KeyMgmt_8h_source.html", null ],

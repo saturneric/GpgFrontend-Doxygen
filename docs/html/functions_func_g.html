@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>generate_key_package_name()
 : <a class="el" href="classGpgFrontend_1_1KeyPackageOperator.html#a825d987dacd8a99d9d87729e1861a152">GpgFrontend::KeyPackageOperator</a>
 </li>
+<li>generate_uuid()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a96d087abb7cf99d16f778f1a93b4f9e5">GpgFrontend::Thread::Task</a>
+</li>
 <li>GenerateKey()
 : <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a4cc3ac91613164d7dc61a016a2b4caea">GpgFrontend::GpgKeyOpera</a>
 </li>
@@ -114,6 +117,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>GenKeyInfo()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a34eca1662ba8d4645751f3ee66582b04">GpgFrontend::GenKeyInfo</a>
+</li>
+<li>get_heap_ptr()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#a0e1ab5e5bf5ef647a30a5ee2884ac63a">GpgFrontend::Thread::Task::DataObject</a>
+</li>
+<li>get_key_in_cache()
+: <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#ab5196ef4ed5323fc2af70abf801ea260">GpgFrontend::GpgKeyGetter</a>
 </li>
 <li>get_restart_needed()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a7fdaae01c50d540ecd8672091cdfbcc0">GpgFrontend::UI::MainWindow</a>
@@ -137,6 +146,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetAlgo()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6a65ba347156373b6cf98eb8e851d28d">GpgFrontend::GenKeyInfo</a>
 </li>
+<li>GetAllChannelId()
+: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a5f2f0474871971f86ff91fb6a2408621">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+, <a class="el" href="classGpgFrontend_1_1SingletonStorage.html#a3f09424ebdc097fbdab77564a7d723ea">GpgFrontend::SingletonStorage</a>
+</li>
 <li>GetAllPrivateKeys()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a7ead8845ceb7c9310e3f4742251e1d87">GpgFrontend::UI::KeyList</a>
 </li>
@@ -150,10 +163,11 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GpgFrontend::GlobalSettingStation</a>
 </li>
 <li>GetChannel()
-: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+: <a class="el" href="classGpgFrontend_1_1ChannelObject.html#a0e13a4bff1cfb679f68a3a2590a3b1b8">GpgFrontend::ChannelObject</a>
+, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
 </li>
 <li>GetChecked()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ac1e5046770c36f67aab34715e50c0a33">GpgFrontend::UI::KeyList</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a4e5862299b0aebe07daf8fbc642a4c38">GpgFrontend::UI::KeyList</a>
 , <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e">GpgFrontend::UI::KeyTable</a>
 </li>
 <li>GetCheckedSigners()
@@ -172,7 +186,8 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 , <a class="el" href="classGpgFrontend_1_1GpgSubKey.html#a5e897d439606a35103a0b260be28c6a4">GpgFrontend::GpgSubKey</a>
 </li>
 <li>GetDefaultChannel()
-: <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+: <a class="el" href="classGpgFrontend_1_1ChannelObject.html#aece9c525c49900734bc1bebf85b644ef">GpgFrontend::ChannelObject</a>
+, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
 </li>
 <li>GetDescription()
 : <a class="el" href="classGpgFrontend_1_1GpgTOFUInfo.html#a471a08bc906d74699f394e34d2581b78">GpgFrontend::GpgTOFUInfo</a>
@@ -219,14 +234,16 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetInstance()
 : <a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#a8588dfa6ccb57c055f022b13e2da1e7c">GpgFrontend::CoreCommonUtil</a>
 , <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; T &gt;</a>
+, <a class="el" href="classGpgFrontend_1_1SingletonStorageCollection.html#a16b4729ca79dcdccc794df70aa2a5aaf">GpgFrontend::SingletonStorageCollection</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#aed529969f54e39e3f9da14ae6dd00d49">GpgFrontend::UI::CommonUtils</a>
+, <a class="el" href="classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html#a9b341a1a903cec0c70a6af4bb230905e">GpgFrontend::UI::GpgFrontendApplication</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1SignalStation.html#abe381ce56a7b157a3760b2fd9c3b7419">GpgFrontend::UI::SignalStation</a>
 </li>
 <li>GetInvalid()
 : <a class="el" href="classGpgFrontend_1_1GpgUID.html#a388ad367d353edd5eeb6e529977c924c">GpgFrontend::GpgUID</a>
 </li>
 <li>GetKey()
-: <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#a9ae7ccc48f6ada97bb6f57c422bfabc4">GpgFrontend::GpgKeyGetter</a>
+: <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#a94243d09c9418c8ebf0c7cdab4a2b7f1">GpgFrontend::GpgKeyGetter</a>
 </li>
 <li>GetKeyID()
 : <a class="el" href="classGpgFrontend_1_1GpgKeySignature.html#a4277f6deb7c07aaba62fbe8e7867b1fe">GpgFrontend::GpgKeySignature</a>
@@ -262,6 +279,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 , <a class="el" href="classGpgFrontend_1_1GpgKeySignature.html#acd5e46397ebea3224761a6af15eea4fb">GpgFrontend::GpgKeySignature</a>
 , <a class="el" href="classGpgFrontend_1_1GpgUID.html#acca1fff5f12a216b05f2a6186b1e436b">GpgFrontend::GpgUID</a>
 </li>
+<li>GetObjectSize()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html#aa35e6ad1ef3a5733fb338f3333b5c637">GpgFrontend::Thread::Task::DataObject</a>
+</li>
 <li>GetOwnerTrust()
 : <a class="el" href="classGpgFrontend_1_1GpgKey.html#a3327ad34ff14feb75f3fbfc2bfb7fc44">GpgFrontend::GpgKey</a>
 </li>
@@ -281,7 +301,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1GpgKey.html#ad2440a2902c81192d5549fe951ddb130">GpgFrontend::GpgKey</a>
 </li>
 <li>GetPubkey()
-: <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#a024522e5208a7e6a3d23b922a3c018a4">GpgFrontend::GpgKeyGetter</a>
+: <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#a7a8bc7c0f12a11e108051e4c824fc430">GpgFrontend::GpgKeyGetter</a>
 </li>
 <li>GetPubkeyAlgo()
 : <a class="el" href="classGpgFrontend_1_1GpgKeySignature.html#a217a2a8b31e44d4c9b463470362a1522">GpgFrontend::GpgKeySignature</a>
@@ -322,6 +342,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>GetSignLast()
 : <a class="el" href="classGpgFrontend_1_1GpgTOFUInfo.html#a746cbcf731af6b19ade42debbf1e2c8f">GpgFrontend::GpgTOFUInfo</a>
+</li>
+<li>GetSingletonStorage()
+: <a class="el" href="classGpgFrontend_1_1SingletonStorageCollection.html#a6f933390c54b7f55d5ffb4624074725f">GpgFrontend::SingletonStorageCollection</a>
 </li>
 <li>GetSizeChangeStep()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac211a7a615805ae97ff284b46abfeab7">GpgFrontend::GenKeyInfo</a>
@@ -383,6 +406,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetUserid()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a4ee4a0659e76376d9bfc527c334392e1">GpgFrontend::GenKeyInfo</a>
 </li>
+<li>GetUUID()
+: <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf">GpgFrontend::Thread::Task</a>
+</li>
 <li>GetValidity()
 : <a class="el" href="classGpgFrontend_1_1GpgSignature.html#a09cb6b465e85dffcf7867e70a276e9ad">GpgFrontend::GpgSignature</a>
 , <a class="el" href="classGpgFrontend_1_1GpgTOFUInfo.html#a8770062c9e0c3875083d2c92ebe8ccb0">GpgFrontend::GpgTOFUInfo</a>
@@ -400,7 +426,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1GpgCommandExecutor.html#a94240f423464600938bfcafa2b186c38">GpgFrontend::GpgCommandExecutor</a>
 </li>
 <li>GpgContext()
-: <a class="el" href="classGpgFrontend_1_1GpgContext.html#a39882b323569987592231f722a2ef147">GpgFrontend::GpgContext</a>
+: <a class="el" href="classGpgFrontend_1_1GpgContext.html#a2429d3f9daa189b4d5d8624c9f4d528b">GpgFrontend::GpgContext</a>
 </li>
 <li>GpgData()
 : <a class="el" href="classGpgFrontend_1_1GpgData.html#a5e607c3bb69f998aaac761f400dd6440">GpgFrontend::GpgData</a>
@@ -414,11 +440,14 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GpgFileOpera()
 : <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#aa81da3d72c4fbc57e7138bfec7731152">GpgFrontend::GpgFileOpera</a>
 </li>
+<li>GpgFrontendApplication()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html#ae0c8f5dda829371d9f1e2d4d6913be21">GpgFrontend::UI::GpgFrontendApplication</a>
+</li>
 <li>GpgImportInformation()
 : <a class="el" href="classGpgFrontend_1_1GpgImportInformation.html#ab282d4f701403cd68eb02d1aad30be56">GpgFrontend::GpgImportInformation</a>
 </li>
 <li>GpgKey()
-: <a class="el" href="classGpgFrontend_1_1GpgKey.html#aa599159ab1041c2f5a5fbf09666489b9">GpgFrontend::GpgKey</a>
+: <a class="el" href="classGpgFrontend_1_1GpgKey.html#aeb316f8728b10e966eed6f0291794eed">GpgFrontend::GpgKey</a>
 </li>
 <li>GpgKeyGetter()
 : <a class="el" href="classGpgFrontend_1_1GpgKeyGetter.html#a8eeee9f6dd74dc24c24794ce63c62285">GpgFrontend::GpgKeyGetter</a>
@@ -433,25 +462,25 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a01d6a920156a38a34c57d9c49c361079">GpgFrontend::GpgKeyOpera</a>
 </li>
 <li>GpgKeySignature()
-: <a class="el" href="classGpgFrontend_1_1GpgKeySignature.html#a4a501aa3a549a6a6914e2aeed4ff302e">GpgFrontend::GpgKeySignature</a>
+: <a class="el" href="classGpgFrontend_1_1GpgKeySignature.html#abb4571e79c921261c03f57980d502e72">GpgFrontend::GpgKeySignature</a>
 </li>
 <li>GpgResultAnalyse()
 : <a class="el" href="classGpgFrontend_1_1GpgResultAnalyse.html#aa3c9bdf1ea4c87476010ef32fd2fb426">GpgFrontend::GpgResultAnalyse</a>
 </li>
 <li>GpgSignature()
-: <a class="el" href="classGpgFrontend_1_1GpgSignature.html#a1b705f45de8f6d0ae97f1ffda28185b7">GpgFrontend::GpgSignature</a>
+: <a class="el" href="classGpgFrontend_1_1GpgSignature.html#aeae075c7b9c628f558d6fedbc8b9233a">GpgFrontend::GpgSignature</a>
 </li>
 <li>GpgSignResultAnalyse()
 : <a class="el" href="classGpgFrontend_1_1GpgSignResultAnalyse.html#a3ddd2d52ad91fdf7f4c8740312570c8e">GpgFrontend::GpgSignResultAnalyse</a>
 </li>
 <li>GpgSubKey()
-: <a class="el" href="classGpgFrontend_1_1GpgSubKey.html#a3c9605e6ccb7fa53d9c9013453d561fe">GpgFrontend::GpgSubKey</a>
+: <a class="el" href="classGpgFrontend_1_1GpgSubKey.html#a6e8df85f8c1dea7705b761e68bb949ab">GpgFrontend::GpgSubKey</a>
 </li>
 <li>GpgTOFUInfo()
-: <a class="el" href="classGpgFrontend_1_1GpgTOFUInfo.html#aa953ff4b877b4b831d34e4a5678b0cd3">GpgFrontend::GpgTOFUInfo</a>
+: <a class="el" href="classGpgFrontend_1_1GpgTOFUInfo.html#a80acb09347a74cc35776d58b9874cf37">GpgFrontend::GpgTOFUInfo</a>
 </li>
 <li>GpgUID()
-: <a class="el" href="classGpgFrontend_1_1GpgUID.html#ae1fb528a9d06d6e9f1feaf1bc291fe64">GpgFrontend::GpgUID</a>
+: <a class="el" href="classGpgFrontend_1_1GpgUID.html#a7210ece9b898981dae83f8d29b1ca453">GpgFrontend::GpgUID</a>
 </li>
 <li>GpgUIDOperator()
 : <a class="el" href="classGpgFrontend_1_1GpgUIDOperator.html#ab74a830c858ab9ff135375743393a7c7">GpgFrontend::GpgUIDOperator</a>
