@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a02ed478164a2e7d4b5a1a26e99486f2f":[2,0,0,1,40,3],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a497bb7f1b92c67f2e754fd66ca3a6666":[2,0,0,1,40,1],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a538a78e0149906bf19e850ba71c00ada":[2,0,0,1,40,0],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a9b8bb804b4c0bc48d5e26c3d103c5a64":[2,0,0,1,40,5],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#ae6ccca4d5325bbb1235fa6b27479ee2c":[2,0,0,1,40,4],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#aedafa7b22e024be537658fd8096e5f6f":[2,0,0,1,40,2],
+"classGpgFrontend_1_1UI_1_1QuitDialog.html":[2,0,0,1,41],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html#a1624ecd7f9b5d32622bf6f9b7eb46a1b":[2,0,0,1,41,4],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html#a4c4bc06d1d168f01569ed83dcfd50d55":[2,0,0,1,41,2],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html#a60419bf8e817db25128c2f941fc42a3d":[2,0,0,1,41,0],
@@ -192,8 +199,8 @@ var NAVTREEINDEX5 =
 "functions_d.html":[2,3,0,4],
 "functions_e.html":[2,3,0,5],
 "functions_f.html":[2,3,0,6],
-"functions_func.html":[2,3,1,0],
 "functions_func.html":[2,3,1],
+"functions_func.html":[2,3,1,0],
 "functions_func_c.html":[2,3,1,1],
 "functions_func_d.html":[2,3,1,2],
 "functions_func_e.html":[2,3,1,3],
@@ -237,17 +244,10 @@ var NAVTREEINDEX5 =
 "hierarchy.html":[2,2],
 "index.html":[],
 "index.html":[0],
-"namespaceGpgFrontend.html":[2,0,0],
 "namespaceGpgFrontend.html":[1,0,0],
+"namespaceGpgFrontend.html":[2,0,0],
 "namespaceGpgFrontend_1_1RawAPI.html":[1,0,0,0],
 "namespaceGpgFrontend_1_1Thread.html":[2,0,0,0],
 "namespaceGpgFrontend_1_1Thread.html":[1,0,0,1],
-"namespaceGpgFrontend_1_1UI.html":[2,0,0,1],
-"namespaceGpgFrontend_1_1UI.html":[1,0,0,2],
-"namespacemembers.html":[1,1,0],
-"namespacemembers_enum.html":[1,1,2],
-"namespacemembers_func.html":[1,1,1],
-"namespaces.html":[1,0],
-"pages.html":[],
-"structGpgFrontend_1_1ArchiveStruct.html":[2,0,0,4]
+"namespaceGpgFrontend_1_1UI.html":[2,0,0,1]
 };

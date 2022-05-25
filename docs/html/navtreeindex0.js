@@ -60,7 +60,7 @@ var NAVTREEINDEX0 =
 "KeyUIDSignDialog_8h_source.html":[3,0,0,1,5,7],
 "KeyUploadDialog_8h_source.html":[3,0,0,1,3,3],
 "KeygenDialog_8h_source.html":[3,0,0,1,4,0],
-"ListedKeyServerTestThread_8h_source.html":[3,0,0,1,9,0],
+"ListedKeyServerTestTask_8h_source.html":[3,0,0,1,9,0],
 "MainWindow_8h_source.html":[3,0,0,1,6,0],
 "PassphraseGenerator_8h_source.html":[3,0,0,0,1,9],
 "PlainTextEditorPage_8h_source.html":[3,0,0,1,10,5],

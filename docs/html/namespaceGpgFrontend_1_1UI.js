@@ -36,7 +36,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", "structGpgFrontend_1_1UI_1_1KeyTable" ],
     [ "KeyUIDSignDialog", "classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html", "classGpgFrontend_1_1UI_1_1KeyUIDSignDialog" ],
     [ "KeyUploadDialog", "classGpgFrontend_1_1UI_1_1KeyUploadDialog.html", "classGpgFrontend_1_1UI_1_1KeyUploadDialog" ],
-    [ "ListedKeyServerTestThread", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread" ],
+    [ "ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask" ],
     [ "MainWindow", "classGpgFrontend_1_1UI_1_1MainWindow.html", "classGpgFrontend_1_1UI_1_1MainWindow" ],
     [ "NetworkTab", "classGpgFrontend_1_1UI_1_1NetworkTab.html", "classGpgFrontend_1_1UI_1_1NetworkTab" ],
     [ "PlainTextEditorPage", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage" ],

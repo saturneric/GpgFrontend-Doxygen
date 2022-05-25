@@ -116,6 +116,7 @@ var hierarchy =
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
         [ "GpgFrontend::Thread::CtxCheckTask", "classGpgFrontend_1_1Thread_1_1CtxCheckTask.html", null ],
         [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ],
+        [ "GpgFrontend::UI::ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", null ],
         [ "GpgFrontend::UI::VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", null ]
       ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
@@ -125,7 +126,6 @@ var hierarchy =
     ] ],
     [ "QThread", null, [
       [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
-      [ "GpgFrontend::UI::ListedKeyServerTestThread", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html", null ],
       [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ]
     ] ],
     [ "QWidget", null, [
