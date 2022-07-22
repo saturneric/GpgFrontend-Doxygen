@@ -1,4 +1,5 @@
 <map id="GpgFrontend::UI::SubkeyGenerateDialog" name="GpgFrontend::UI::SubkeyGenerateDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,248,575"/>
-<area shape="rect" id="node2" title=" " alt="" coords="89,5,164,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,344,248,788"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="33,131,220,296"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,5,164,83"/>
 </map>
