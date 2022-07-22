@@ -147,8 +147,8 @@ $(document).ready(function(){initNavTree('GlobalSettingStation_8h_source.html','
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">void</span> SyncSettings() noexcept;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; private:</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">  145</a></span>&#160;  std::filesystem::path app_path_ =</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      QCoreApplication::applicationDirPath().toStdString();  </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">  145</a></span>&#160;  std::filesystem::path app_path_ = QCoreApplication::applicationDirPath()</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                        .toStdString();  </div>
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">  147</a></span>&#160;  std::filesystem::path app_data_path_ =</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;          .toStdString();  </div>

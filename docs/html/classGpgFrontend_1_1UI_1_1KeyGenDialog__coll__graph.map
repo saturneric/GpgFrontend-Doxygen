@@ -1,12 +1,13 @@
 <map id="GpgFrontend::UI::KeyGenDialog" name="GpgFrontend::UI::KeyGenDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="209,1021,442,1524"/>
-<area shape="rect" id="node2" title=" " alt="" coords="117,874,192,951"/>
-<area shape="rect" id="node3" title=" " alt="" coords="217,867,434,959"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1GenKeyInfo.html" title=" " alt="" coords="5,345,291,804"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="105,147,191,224"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="79,5,217,97"/>
-<area shape="rect" id="node7" title="STL class." alt="" coords="315,536,472,613"/>
-<area shape="rect" id="node8" title=" " alt="" coords="457,147,495,224"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="497,536,626,613"/>
-<area shape="rect" id="node9" title=" " alt="" coords="458,874,665,951"/>
+<area shape="rect" id="node1" title=" " alt="" coords="310,1021,543,1524"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,499,192,650"/>
+<area shape="rect" id="node3" title=" " alt="" coords="61,147,136,224"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="218,147,305,224"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1GenKeyInfo.html" title=" " alt="" coords="216,345,501,804"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="192,5,331,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="318,867,535,959"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="525,536,683,613"/>
+<area shape="rect" id="node9" title=" " alt="" coords="667,147,706,224"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="707,536,837,613"/>
+<area shape="rect" id="node10" title=" " alt="" coords="601,874,807,951"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="GpgFrontend::UI::KeyServerImportDialog" name="GpgFrontend::UI::KeyServerImportDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,212,604"/>
-<area shape="rect" id="node2" title=" " alt="" coords="71,5,146,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,487,207,931"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="13,287,199,437"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,147,122,224"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="147,147,233,224"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="121,5,259,97"/>
 </map>
