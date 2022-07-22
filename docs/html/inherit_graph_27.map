@@ -1,13 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="15,105,89,131"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1CoreCommonUtil.html" title=" " alt="" coords="147,54,372,81"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="180,156,339,197"/>
-<area shape="rect" id="node10" href="$classGpgFrontend_1_1UI_1_1SignalStation.html" title=" " alt="" coords="149,105,370,131"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1Thread_1_1CtxCheckTask.html" title=" " alt="" coords="451,5,609,47"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="420,71,640,98"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="429,123,631,164"/>
-<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="429,188,631,229"/>
-<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="431,253,629,295"/>
-<area shape="rect" id="node9" href="$classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="439,319,621,360"/>
-<area shape="rect" id="node11" title=" " alt="" coords="5,163,99,190"/>
+<area shape="rect" id="node1" title=" " alt="" coords="15,56,89,83"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1CoreCommonUtil.html" title=" " alt="" coords="147,5,372,32"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="180,107,339,149"/>
+<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1SignalStation.html" title=" " alt="" coords="149,56,370,83"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1Thread_1_1CtxCheckTask.html" title=" " alt="" coords="451,19,609,61"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="420,85,640,112"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="431,137,629,178"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="439,202,621,243"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,115,99,141"/>
 </map>

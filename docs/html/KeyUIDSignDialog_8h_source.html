@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/keypair_details/KeyUIDSignDialog.h Source File</title>
+<title>GpgFrontend Project: src/ui/keypair_details/KeyUIDSignDialog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,61 +92,59 @@ $(document).ready(function(){initNavTree('KeyUIDSignDialog_8h_source.html',''); 
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/KeyList.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">KeyUIDSignDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">KeyUIDSignDialog</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, UIDArgsListPtr uid,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; signals:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> SignalKeyUIDSignUpdate();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* m_key_list_;           </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  QPushButton* sign_key_button_;  </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QDateTimeEdit* expires_edit_;   </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QCheckBox* non_expire_check_;   </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  UIDArgsListPtr m_uids_;         </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; m_key_;  </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#a82f6bf641ff3b64341a0bdcf76571c43">slot_sign_key</a>(<span class="keywordtype">bool</span> clicked);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_KEYUIDSIGNDIALOG_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/KeyList.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">KeyUIDSignDialog</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">KeyUIDSignDialog</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, UIDArgsListPtr uid,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; signals:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> SignalKeyUIDSignUpdate();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* m_key_list_;           </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  QPushButton* sign_key_button_;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  QDateTimeEdit* expires_edit_;   </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QCheckBox* non_expire_check_;   </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  UIDArgsListPtr m_uids_;         </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; m_key_;  </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#a82f6bf641ff3b64341a0bdcf76571c43">slot_sign_key</a>(<span class="keywordtype">bool</span> clicked);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_KEYUIDSIGNDIALOG_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a8930f958f3ca1f5566f63e8c2273837e"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a8930f958f3ca1f5566f63e8c2273837e">GpgFrontend::GpgKey::GetId</a></div><div class="ttdeci">std::string GetId() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:52</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a8930f958f3ca1f5566f63e8c2273837e"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a8930f958f3ca1f5566f63e8c2273837e">GpgFrontend::GpgKey::GetId</a></div><div class="ttdeci">std::string GetId() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:54</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance</a></div><div class="ttdeci">static GpgKeyGetter &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUIDSignDialog_html_aaa06ce342178802e76119bec6b26cc55"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">GpgFrontend::UI::KeyUIDSignDialog::KeyUIDSignDialog</a></div><div class="ttdeci">KeyUIDSignDialog(const GpgKey &amp;key, UIDArgsListPtr uid, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Key U I D Sign Dialog object.</div><div class="ttdef"><b>Definition:</b> KeyUIDSignDialog.cpp:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a73ddb7feb1f70eac44e038c3dc925fec"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a73ddb7feb1f70eac44e038c3dc925fec">GpgFrontend::UI::KeyList::AddListGroupTab</a></div><div class="ttdeci">void AddListGroupTab(const QString &amp;name, KeyListRow::KeyType selectType=KeyListRow::SECRET_OR_PUBLIC_KEY, KeyListColumn::InfoType infoType=KeyListColumn::ALL, const std::function&lt; bool(const GpgKey &amp;)&gt; &amp;filter=[](const GpgKey &amp;) -&gt; bool { return true;})</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:99</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_ac1e5046770c36f67aab34715e50c0a33"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#ac1e5046770c36f67aab34715e50c0a33">GpgFrontend::UI::KeyList::GetChecked</a></div><div class="ttdeci">KeyIdArgsListPtr GetChecked()</div><div class="ttdoc">Get the Checked object.</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:181</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUIDSignDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">GpgFrontend::UI::KeyUIDSignDialog</a></div><div class="ttdef"><b>Definition:</b> KeyUIDSignDialog.h:37</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUIDSignDialog_html_a82f6bf641ff3b64341a0bdcf76571c43"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#a82f6bf641ff3b64341a0bdcf76571c43">GpgFrontend::UI::KeyUIDSignDialog::slot_sign_key</a></div><div class="ttdeci">void slot_sign_key(bool clicked)</div><div class="ttdef"><b>Definition:</b> KeyUIDSignDialog.cpp:106</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUIDSignDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html">GpgFrontend::UI::KeyUIDSignDialog</a></div><div class="ttdef"><b>Definition:</b> KeyUIDSignDialog.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUIDSignDialog_html_a82f6bf641ff3b64341a0bdcf76571c43"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#a82f6bf641ff3b64341a0bdcf76571c43">GpgFrontend::UI::KeyUIDSignDialog::slot_sign_key</a></div><div class="ttdeci">void slot_sign_key(bool clicked)</div><div class="ttdef"><b>Definition:</b> KeyUIDSignDialog.cpp:104</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:152</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a66711ffd7f4af58594b7de984a13c327"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a66711ffd7f4af58594b7de984a13c327">GpgFrontend::GpgKey::IsExpired</a></div><div class="ttdeci">bool IsExpired() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a66711ffd7f4af58594b7de984a13c327"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a66711ffd7f4af58594b7de984a13c327">GpgFrontend::GpgKey::IsExpired</a></div><div class="ttdeci">bool IsExpired() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:142</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignalStation_html_abe381ce56a7b157a3760b2fd9c3b7419"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignalStation.html#abe381ce56a7b157a3760b2fd9c3b7419">GpgFrontend::UI::SignalStation::GetInstance</a></div><div class="ttdeci">static SignalStation * GetInstance()</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> SignalStation.cpp:37</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a637f2a5e9b9b7cafcdaada00c2f7de87"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a637f2a5e9b9b7cafcdaada00c2f7de87">GpgFrontend::GpgKey::IsRevoked</a></div><div class="ttdeci">bool IsRevoked() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:142</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7eaf1e722d8a59f6a86d8e732217d89c"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7eaf1e722d8a59f6a86d8e732217d89c">GpgFrontend::GpgKey::IsDisabled</a></div><div class="ttdeci">bool IsDisabled() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:144</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a637f2a5e9b9b7cafcdaada00c2f7de87"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a637f2a5e9b9b7cafcdaada00c2f7de87">GpgFrontend::GpgKey::IsRevoked</a></div><div class="ttdeci">bool IsRevoked() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:144</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7eaf1e722d8a59f6a86d8e732217d89c"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7eaf1e722d8a59f6a86d8e732217d89c">GpgFrontend::GpgKey::IsDisabled</a></div><div class="ttdeci">bool IsDisabled() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:146</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyGetter_html_aa5979c21af58b874b33c203752dcc805"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyGetter.html#aa5979c21af58b874b33c203752dcc805">GpgFrontend::GpgKeyGetter::GetKeys</a></div><div class="ttdeci">KeyListPtr GetKeys(const KeyIdArgsListPtr &amp;ids)</div><div class="ttdoc">Get the Keys object.</div><div class="ttdef"><b>Definition:</b> GpgKeyGetter.cpp:148</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a2d28e72cfb741deeadfe02ff456fb490"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a2d28e72cfb741deeadfe02ff456fb490">GpgFrontend::GpgKey::IsHasCertificationCapability</a></div><div class="ttdeci">bool IsHasCertificationCapability() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:123</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aadac1b776764ee9d0ca4f8bb9f9e0741"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey</a></div><div class="ttdeci">bool IsHasMasterKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:146</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a2d28e72cfb741deeadfe02ff456fb490"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a2d28e72cfb741deeadfe02ff456fb490">GpgFrontend::GpgKey::IsHasCertificationCapability</a></div><div class="ttdeci">bool IsHasCertificationCapability() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:125</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aadac1b776764ee9d0ca4f8bb9f9e0741"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey</a></div><div class="ttdeci">bool IsHasMasterKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:148</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:41</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><a class="el" href="dir_11afffa0017fe763467cff6465c6cba1.html">keypair_details</a></li><li class="navelem"><b>KeyUIDSignDialog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_be96635c88cbde2113e66f957baee3c5.html">keypair_details</a></li><li class="navelem"><b>KeyUIDSignDialog.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/import_export/KeyImportDetailDialog.h Source File</title>
+<title>GpgFrontend Project: src/ui/import_export/KeyImportDetailDialog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,56 +93,54 @@ $(document).ready(function(){initNavTree('KeyImportDetailDialog_8h_source.html',
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgKeyImportExporter.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">KeyImportDetailDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a0177cdaa19d1f83c9e519039aa7a8ce1">KeyImportDetailDialog</a>(<a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> result, <span class="keywordtype">bool</span> automatic,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#af88ee416b2227ce847a3b8123a23ce24">create_general_info_box</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6">create_keys_table</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8">create_button_box</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4">get_status_string</a>(<span class="keywordtype">int</span> keyStatus);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QTableWidget* keys_table_{};      </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QGroupBox* general_info_box_{};   </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QGroupBox* key_info_box_{};       </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QDialogButtonBox* button_box_{};  </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> m_result_;   </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // __KEYIMPORTDETAILSDIALOG_H__</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">KeyImportDetailDialog</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a0177cdaa19d1f83c9e519039aa7a8ce1">KeyImportDetailDialog</a>(<a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> result, <span class="keywordtype">bool</span> automatic,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#af88ee416b2227ce847a3b8123a23ce24">create_general_info_box</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6">create_keys_table</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8">create_button_box</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">static</span> QString <a class="code" href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4">get_status_string</a>(<span class="keywordtype">int</span> keyStatus);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  QTableWidget* keys_table_{};      </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QGroupBox* general_info_box_{};   </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QGroupBox* key_info_box_{};       </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QDialogButtonBox* button_box_{};  </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> m_result_;   </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // __KEYIMPORTDETAILSDIALOG_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_ae682853c7eccfd3a6be43765f162f5a4"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4">GpgFrontend::UI::KeyImportDetailDialog::get_status_string</a></div><div class="ttdeci">static QString get_status_string(int keyStatus)</div><div class="ttdoc">Get the status string object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:167</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_ae682853c7eccfd3a6be43765f162f5a4"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4">GpgFrontend::UI::KeyImportDetailDialog::get_status_string</a></div><div class="ttdeci">static QString get_status_string(int keyStatus)</div><div class="ttdoc">Get the status string object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:166</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance</a></div><div class="ttdeci">static GpgKeyGetter &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a55a6485f6c2cc5bec0fdf02cd7e0d8ea"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a55a6485f6c2cc5bec0fdf02cd7e0d8ea">GpgFrontend::GpgKey::GetEmail</a></div><div class="ttdeci">std::string GetEmail() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:60</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a55a6485f6c2cc5bec0fdf02cd7e0d8ea"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a55a6485f6c2cc5bec0fdf02cd7e0d8ea">GpgFrontend::GpgKey::GetEmail</a></div><div class="ttdeci">std::string GetEmail() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:62</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_a0177cdaa19d1f83c9e519039aa7a8ce1"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a0177cdaa19d1f83c9e519039aa7a8ce1">GpgFrontend::UI::KeyImportDetailDialog::KeyImportDetailDialog</a></div><div class="ttdeci">KeyImportDetailDialog(GpgImportInformation result, bool automatic, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Key Import Detail Dialog object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:34</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">GpgFrontend::UI::KeyImportDetailDialog</a></div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a59e76d40f01e765f0544e5c6a2851be6"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a59e76d40f01e765f0544e5c6a2851be6">GpgFrontend::GpgKey::IsGood</a></div><div class="ttdeci">bool IsGood() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:50</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_a9e37a653a982e671977d2101b72ae3b6"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6">GpgFrontend::UI::KeyImportDetailDialog::create_keys_table</a></div><div class="ttdeci">void create_keys_table()</div><div class="ttdoc">Create a keys table object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:131</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html">GpgFrontend::UI::KeyImportDetailDialog</a></div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.h:42</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a59e76d40f01e765f0544e5c6a2851be6"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a59e76d40f01e765f0544e5c6a2851be6">GpgFrontend::GpgKey::IsGood</a></div><div class="ttdeci">bool IsGood() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:52</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_a9e37a653a982e671977d2101b72ae3b6"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9e37a653a982e671977d2101b72ae3b6">GpgFrontend::UI::KeyImportDetailDialog::create_keys_table</a></div><div class="ttdeci">void create_keys_table()</div><div class="ttdoc">Create a keys table object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:130</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyGetter_html_a94243d09c9418c8ebf0c7cdab4a2b7f1"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyGetter.html#a94243d09c9418c8ebf0c7cdab4a2b7f1">GpgFrontend::GpgKeyGetter::GetKey</a></div><div class="ttdeci">GpgKey GetKey(const std::string &amp;id, bool use_cache=true)</div><div class="ttdoc">Get the Key object.</div><div class="ttdef"><b>Definition:</b> GpgKeyGetter.cpp:47</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_a9f5912ff99e3820d5fa6a58ed14a70c8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8">GpgFrontend::UI::KeyImportDetailDialog::create_button_box</a></div><div class="ttdeci">void create_button_box()</div><div class="ttdoc">Create a button box object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:199</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_af88ee416b2227ce847a3b8123a23ce24"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#af88ee416b2227ce847a3b8123a23ce24">GpgFrontend::UI::KeyImportDetailDialog::create_general_info_box</a></div><div class="ttdeci">void create_general_info_box()</div><div class="ttdoc">Create a general info box object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:77</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_a9f5912ff99e3820d5fa6a58ed14a70c8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a9f5912ff99e3820d5fa6a58ed14a70c8">GpgFrontend::UI::KeyImportDetailDialog::create_button_box</a></div><div class="ttdeci">void create_button_box()</div><div class="ttdoc">Create a button box object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:198</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyImportDetailDialog_html_af88ee416b2227ce847a3b8123a23ce24"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#af88ee416b2227ce847a3b8123a23ce24">GpgFrontend::UI::KeyImportDetailDialog::create_general_info_box</a></div><div class="ttdeci">void create_general_info_box()</div><div class="ttdoc">Create a general info box object.</div><div class="ttdef"><b>Definition:</b> KeyImportDetailDialog.cpp:76</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgImportInformation_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgImportInformation.html">GpgFrontend::GpgImportInformation</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:57</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7bceca68800c3ada9280c29eaeb5affc"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7bceca68800c3ada9280c29eaeb5affc">GpgFrontend::GpgKey::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:56</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7bceca68800c3ada9280c29eaeb5affc"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7bceca68800c3ada9280c29eaeb5affc">GpgFrontend::GpgKey::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:58</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><a class="el" href="dir_0652c688762e27a1001e51709de145a7.html">import_export</a></li><li class="navelem"><b>KeyImportDetailDialog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_3d7cdd7fbfa4715d9319666ec5111ec9.html">import_export</a></li><li class="navelem"><b>KeyImportDetailDialog.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

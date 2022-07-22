@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/main_window/KeyMgmt.h Source File</title>
+<title>GpgFrontend Project: src/ui/KeyMgmt.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,122 +91,127 @@ $(document).ready(function(){initNavTree('KeyMgmt_8h_source.html',''); initResiz
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __KEYMGMT_H__</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/import_export/KeyImportDetailDialog.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/import_export/KeyServerImportDialog.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/key_generate/KeygenDialog.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/keypair_details/KeyDetailsDialog.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;ui/main_window/GeneralMainWindow.h&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/KeyList.h&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">KeyMgmt</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html">GeneralMainWindow</a> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">KeyMgmt</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> SlotGenerateSubKey();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> SlotExportKeyToKeyPackage();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> SlotExportKeyToClipboard();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> SlotExportAsOpenSSHFormat();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> SlotDeleteSelectedKeys();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> SlotDeleteCheckedKeys();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> SlotGenerateKeyDialog();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> SlotShowKeyDetails();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> SlotImportKeyPackage();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; signals:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> SignalStatusBarChanged(QString);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">void</span> SignalKeyStatusUpdated();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46">create_menus</a>();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">create_actions</a>();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5">create_tool_bars</a>();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b">delete_keys_with_warning</a>(GpgFrontend::KeyIdArgsListPtr uidList);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;                            </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  QMenu* file_menu_{};                           </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  QMenu* key_menu_{};                            </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  QMenu* generate_key_menu_{};                   </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  QMenu* import_key_menu_{};                     </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  QAction* open_key_file_act_{};                 </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  QAction* export_key_to_file_act_{};            </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  QAction* export_key_as_open_ssh_format_{};     </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  QAction* export_key_to_clipboard_act_{};       </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  QAction* delete_checked_keys_act_{};           </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  QAction* delete_selected_keys_act_{};          </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  QAction* generate_key_dialog_act_{};           </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  QAction* generate_key_pair_act_{};             </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  QAction* generate_subkey_act_{};               </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  QAction* import_key_from_clipboard_act_{};     </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  QAction* import_key_from_file_act_{};          </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  QAction* import_key_from_key_server_act_{};    </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  QAction* import_keys_from_key_package_act_{};  </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  QAction* close_act_{};                         </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  QAction* show_key_details_act_{};              </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html">KeyServerImportDialog</a>* import_dialog_{};       </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif  // __KEYMGMT_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/import_export/KeyImportDetailDialog.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/import_export/KeyServerImportDialog.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui/key_generate/KeygenDialog.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ui/keypair_details/KeyDetailsDialog.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/KeyList.h&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">KeyMgmt</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">KeyMgmt</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> SlotGenerateSubKey();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> SlotExportKeyToKeyPackage();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> SlotExportKeyToClipboard();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> SlotExportAsOpenSSHFormat();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> SlotDeleteSelectedKeys();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> SlotDeleteCheckedKeys();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> SlotGenerateKeyDialog();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> SlotShowKeyDetails();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">void</span> SlotSaveWindowState();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> SlotImportKeyPackage();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; signals:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">void</span> SignalStatusBarChanged(QString);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> SignalKeyStatusUpdated();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46">create_menus</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">create_actions</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5">create_tool_bars</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b">delete_keys_with_warning</a>(GpgFrontend::KeyIdArgsListPtr uidList);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;                            </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  QMenu* file_menu_{};                           </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  QMenu* key_menu_{};                            </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  QMenu* generate_key_menu_{};                   </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  QMenu* import_key_menu_{};                     </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  QAction* open_key_file_act_{};                 </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  QAction* export_key_to_file_act_{};            </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  QAction* export_key_as_open_ssh_format_{};     </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  QAction* export_key_to_clipboard_act_{};       </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  QAction* delete_checked_keys_act_{};           </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  QAction* delete_selected_keys_act_{};          </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  QAction* generate_key_dialog_act_{};           </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  QAction* generate_key_pair_act_{};             </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  QAction* generate_subkey_act_{};               </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  QAction* import_key_from_clipboard_act_{};     </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  QAction* import_key_from_file_act_{};          </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  QAction* import_key_from_key_server_act_{};    </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  QAction* import_keys_from_key_package_act_{};  </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  QAction* close_act_{};                         </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  QAction* show_key_details_act_{};              </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html">KeyServerImportDialog</a>* import_dialog_{};       </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a78b53193b055e10550938f403b641b31">closeEvent</a>(QCloseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif  // __KEYMGMT_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_aefc27b57830cf14a85c2225664f89f64"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">GpgFrontend::UI::KeyMgmt::KeyMgmt</a></div><div class="ttdeci">KeyMgmt(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Key Mgmt object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:46</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a6ee90b63414038e9f840933a5b2c5e46"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46">GpgFrontend::UI::KeyMgmt::create_menus</a></div><div class="ttdeci">void create_menus()</div><div class="ttdoc">Create a menus object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:219</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a23cf6665537f2a96708e9d5423ce3bb8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">GpgFrontend::UI::KeyMgmt::create_actions</a></div><div class="ttdeci">void create_actions()</div><div class="ttdoc">Create a actions object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:123</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a6ee90b63414038e9f840933a5b2c5e46"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46">GpgFrontend::UI::KeyMgmt::create_menus</a></div><div class="ttdeci">void create_menus()</div><div class="ttdoc">Create a menus object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:265</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a23cf6665537f2a96708e9d5423ce3bb8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">GpgFrontend::UI::KeyMgmt::create_actions</a></div><div class="ttdeci">void create_actions()</div><div class="ttdoc">Create a actions object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:169</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1KeyPackageOperator_html_a89538b180a42eb7d6ae53583fe10ee07"><div class="ttname"><a href="classGpgFrontend_1_1KeyPackageOperator.html#a89538b180a42eb7d6ae53583fe10ee07">GpgFrontend::KeyPackageOperator::ImportKeyPackage</a></div><div class="ttdeci">static bool ImportKeyPackage(const std::filesystem::path &amp;key_package_path, const std::filesystem::path &amp;phrase_path, GpgFrontend::GpgImportInformation &amp;import_info)</div><div class="ttdoc">import key package</div><div class="ttdef"><b>Definition:</b> KeyPackageOperator.cpp:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralMainWindow_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html">GpgFrontend::UI::GeneralMainWindow</a></div><div class="ttdef"><b>Definition:</b> GeneralMainWindow.h:39</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html_a5135069571678eda9c1f07d17ed9ac41"><div class="ttname"><a href="namespaceGpgFrontend.html#a5135069571678eda9c1f07d17ed9ac41">GpgFrontend::write_buffer_to_file</a></div><div class="ttdeci">GPGFRONTEND_CORE_EXPORT bool write_buffer_to_file(const std::string &amp;path, const std::string &amp;out_buffer)</div><div class="ttdef"><b>Definition:</b> GpgConstants.cpp:128</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ac061ac8e5308f67ea52b98888bbb2e8d"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ac061ac8e5308f67ea52b98888bbb2e8d">GpgFrontend::GlobalSettingStation::SyncSettings</a></div><div class="ttdeci">void SyncSettings() noexcept</div><div class="ttdoc">sync the settings to the file</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.cpp:33</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance</a></div><div class="ttdeci">static GlobalSettingStation &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a14433405831283cd95091d741614d03b"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b">GpgFrontend::GlobalSettingStation::GetUISettings</a></div><div class="ttdeci">libconfig::Setting &amp; GetUISettings() noexcept</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:63</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a73ddb7feb1f70eac44e038c3dc925fec"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a73ddb7feb1f70eac44e038c3dc925fec">GpgFrontend::UI::KeyList::AddListGroupTab</a></div><div class="ttdeci">void AddListGroupTab(const QString &amp;name, KeyListRow::KeyType selectType=KeyListRow::SECRET_OR_PUBLIC_KEY, KeyListColumn::InfoType infoType=KeyListColumn::ALL, const std::function&lt; bool(const GpgKey &amp;)&gt; &amp;filter=[](const GpgKey &amp;) -&gt; bool { return true;})</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:99</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a78b53193b055e10550938f403b641b31"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a78b53193b055e10550938f403b641b31">GpgFrontend::UI::KeyMgmt::closeEvent</a></div><div class="ttdeci">void closeEvent(QCloseEvent *event) override</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:409</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_ac1e5046770c36f67aab34715e50c0a33"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#ac1e5046770c36f67aab34715e50c0a33">GpgFrontend::UI::KeyList::GetChecked</a></div><div class="ttdeci">KeyIdArgsListPtr GetChecked()</div><div class="ttdoc">Get the Checked object.</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:181</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">GpgFrontend::UI::KeyMgmt</a></div><div class="ttdef"><b>Definition:</b> KeyMgmt.h:46</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html">GpgFrontend::UI::KeyMgmt</a></div><div class="ttdef"><b>Definition:</b> KeyMgmt.h:45</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_aa961e3ba3c48f84dea4bb7ab4f756886"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#aa961e3ba3c48f84dea4bb7ab4f756886">GpgFrontend::UI::KeyList::AddMenuAction</a></div><div class="ttdeci">void AddMenuAction(QAction *act)</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:300</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyServerImportDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html">GpgFrontend::UI::KeyServerImportDialog</a></div><div class="ttdef"><b>Definition:</b> KeyServerImportDialog.h:46</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyDetailsDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html">GpgFrontend::UI::KeyDetailsDialog</a></div><div class="ttdef"><b>Definition:</b> KeyDetailsDialog.h:38</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyServerImportDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html">GpgFrontend::UI::KeyServerImportDialog</a></div><div class="ttdef"><b>Definition:</b> KeyServerImportDialog.h:43</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyDetailsDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html">GpgFrontend::UI::KeyDetailsDialog</a></div><div class="ttdef"><b>Definition:</b> KeyDetailsDialog.h:37</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyGetter_html_a94243d09c9418c8ebf0c7cdab4a2b7f1"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyGetter.html#a94243d09c9418c8ebf0c7cdab4a2b7f1">GpgFrontend::GpgKeyGetter::GetKey</a></div><div class="ttdeci">GpgKey GetKey(const std::string &amp;id, bool use_cache=true)</div><div class="ttdoc">Get the Key object.</div><div class="ttdef"><b>Definition:</b> GpgKeyGetter.cpp:47</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a1bcca32b18c539a2ae83c30fc07db544"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a1bcca32b18c539a2ae83c30fc07db544">GpgFrontend::UI::KeyList::GetSelected</a></div><div class="ttdeci">KeyIdArgsListPtr GetSelected()</div><div class="ttdoc">Get the Selected object.</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:253</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1CommonUtils_html_a057526790f6b2f6288c3a35322c34d8d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a057526790f6b2f6288c3a35322c34d8d">GpgFrontend::UI::CommonUtils::SlotImportKeyFromFile</a></div><div class="ttdeci">void SlotImportKeyFromFile(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> UserInterfaceUtils.cpp:188</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a6791486fd94567d504d48050c23476b5"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5">GpgFrontend::UI::KeyMgmt::create_tool_bars</a></div><div class="ttdeci">void create_tool_bars()</div><div class="ttdoc">Create a tool bars object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:242</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a888c0263f04bdd52967e092b9c73eb6d"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a888c0263f04bdd52967e092b9c73eb6d">GpgFrontend::GpgKey::IsPrivateKey</a></div><div class="ttdeci">bool IsPrivateKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:138</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a6791486fd94567d504d48050c23476b5"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5">GpgFrontend::UI::KeyMgmt::create_tool_bars</a></div><div class="ttdeci">void create_tool_bars()</div><div class="ttdoc">Create a tool bars object.</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:288</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a888c0263f04bdd52967e092b9c73eb6d"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a888c0263f04bdd52967e092b9c73eb6d">GpgFrontend::GpgKey::IsPrivateKey</a></div><div class="ttdeci">bool IsPrivateKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:140</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a7d75246eee6368be295c9ab5fe5ef291"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a7d75246eee6368be295c9ab5fe5ef291">GpgFrontend::UI::KeyList::SetDoubleClickedAction</a></div><div class="ttdeci">void SetDoubleClickedAction(std::function&lt; void(const GpgKey &amp;, QWidget *)&gt; action)</div><div class="ttdoc">Set the Double Clicked Action object.</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:403</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a0b139ae0d4baa234932cf228e94abd6b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b">GpgFrontend::UI::KeyMgmt::delete_keys_with_warning</a></div><div class="ttdeci">void delete_keys_with_warning(GpgFrontend::KeyIdArgsListPtr uidList)</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:282</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyMgmt_html_a0b139ae0d4baa234932cf228e94abd6b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b">GpgFrontend::UI::KeyMgmt::delete_keys_with_warning</a></div><div class="ttdeci">void delete_keys_with_warning(GpgFrontend::KeyIdArgsListPtr uidList)</div><div class="ttdef"><b>Definition:</b> KeyMgmt.cpp:328</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1CommonUtils_html_af1b3538d3119c8564e83c7661f73f6ea"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1CommonUtils.html#af1b3538d3119c8564e83c7661f73f6ea">GpgFrontend::UI::CommonUtils::SlotImportKeyFromKeyServer</a></div><div class="ttdeci">void SlotImportKeyFromKeyServer(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> UserInterfaceUtils.cpp:204</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:152</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a66711ffd7f4af58594b7de984a13c327"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a66711ffd7f4af58594b7de984a13c327">GpgFrontend::GpgKey::IsExpired</a></div><div class="ttdeci">bool IsExpired() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a66711ffd7f4af58594b7de984a13c327"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a66711ffd7f4af58594b7de984a13c327">GpgFrontend::GpgKey::IsExpired</a></div><div class="ttdeci">bool IsExpired() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:142</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignalStation_html_abe381ce56a7b157a3760b2fd9c3b7419"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignalStation.html#abe381ce56a7b157a3760b2fd9c3b7419">GpgFrontend::UI::SignalStation::GetInstance</a></div><div class="ttdeci">static SignalStation * GetInstance()</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> SignalStation.cpp:37</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1CommonUtils_html_a0c8bf56fc5371cd2c5e9d2a0f67bf72a"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a0c8bf56fc5371cd2c5e9d2a0f67bf72a">GpgFrontend::UI::CommonUtils::SlotImportKeyFromClipboard</a></div><div class="ttdeci">void SlotImportKeyFromClipboard(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> UserInterfaceUtils.cpp:209</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a637f2a5e9b9b7cafcdaada00c2f7de87"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a637f2a5e9b9b7cafcdaada00c2f7de87">GpgFrontend::GpgKey::IsRevoked</a></div><div class="ttdeci">bool IsRevoked() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:142</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7eaf1e722d8a59f6a86d8e732217d89c"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7eaf1e722d8a59f6a86d8e732217d89c">GpgFrontend::GpgKey::IsDisabled</a></div><div class="ttdeci">bool IsDisabled() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:144</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aadac1b776764ee9d0ca4f8bb9f9e0741"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey</a></div><div class="ttdeci">bool IsHasMasterKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:146</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a637f2a5e9b9b7cafcdaada00c2f7de87"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a637f2a5e9b9b7cafcdaada00c2f7de87">GpgFrontend::GpgKey::IsRevoked</a></div><div class="ttdeci">bool IsRevoked() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:144</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_a7eaf1e722d8a59f6a86d8e732217d89c"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#a7eaf1e722d8a59f6a86d8e732217d89c">GpgFrontend::GpgKey::IsDisabled</a></div><div class="ttdeci">bool IsDisabled() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:146</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aadac1b776764ee9d0ca4f8bb9f9e0741"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey</a></div><div class="ttdeci">bool IsHasMasterKey() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:148</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1CommonUtils_html_aed529969f54e39e3f9da14ae6dd00d49"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1CommonUtils.html#aed529969f54e39e3f9da14ae6dd00d49">GpgFrontend::UI::CommonUtils::GetInstance</a></div><div class="ttdeci">static CommonUtils * GetInstance()</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> UserInterfaceUtils.cpp:143</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKeyOpera_html_a8a06d0f7a600d4428359b653a68f717e"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyOpera.html#a8a06d0f7a600d4428359b653a68f717e">GpgFrontend::GpgKeyOpera::DeleteKeys</a></div><div class="ttdeci">void DeleteKeys(KeyIdArgsListPtr key_ids)</div><div class="ttdef"><b>Definition:</b> GpgKeyOpera.cpp:51</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKeyOpera_html_a8a06d0f7a600d4428359b653a68f717e"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyOpera.html#a8a06d0f7a600d4428359b653a68f717e">GpgFrontend::GpgKeyOpera::DeleteKeys</a></div><div class="ttdeci">void DeleteKeys(KeyIdArgsListPtr key_ids)</div><div class="ttdef"><b>Definition:</b> GpgKeyOpera.cpp:52</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignalStation_html_a7b5fb2e2c0ad238313650a08ea648ce3"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignalStation.html#a7b5fb2e2c0ad238313650a08ea648ce3">GpgFrontend::UI::SignalStation::SignalRefreshStatusBar</a></div><div class="ttdeci">void SignalRefreshStatusBar(const QString &amp;message, int timeout)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_b7e232576c264c97fe14815134a8cffa.html">main_window</a></li><li class="navelem"><b>KeyMgmt.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><b>KeyMgmt.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

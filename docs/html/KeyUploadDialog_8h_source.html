@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/import_export/KeyUploadDialog.h Source File</title>
+<title>GpgFrontend Project: src/ui/import_export/KeyUploadDialog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,48 +92,46 @@ $(document).ready(function(){initNavTree('KeyUploadDialog_8h_source.html',''); i
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">KeyUploadDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf">KeyUploadDialog</a>(<span class="keyword">const</span> KeyIdArgsListPtr&amp; keys_ids, QWidget* parent);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> SlotUpload();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">slot_upload_key_to_server</a>(<span class="keyword">const</span> GpgFrontend::ByteArray&amp; keys_data);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> slot_upload_finished();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  KeyListPtr m_keys_;      </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QByteArray m_key_data_;  </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_KEYUPLOADWIDGET_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">KeyUploadDialog</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf">KeyUploadDialog</a>(<span class="keyword">const</span> KeyIdArgsListPtr&amp; keys_ids, QWidget* parent);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> SlotUpload();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">slot_upload_key_to_server</a>(<span class="keyword">const</span> GpgFrontend::ByteArray&amp; keys_data);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> slot_upload_finished();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  KeyListPtr m_keys_;      </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QByteArray m_key_data_;  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_KEYUPLOADWIDGET_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyImportExporter_html_aa9fbda8f6c3fa36a503075d7a124fa3f"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyImportExporter.html#aa9fbda8f6c3fa36a503075d7a124fa3f">GpgFrontend::GpgKeyImportExporter::ExportKeys</a></div><div class="ttdeci">bool ExportKeys(KeyIdArgsListPtr &amp;uid_list, ByteArrayPtr &amp;out_buffer, bool secret=false) const</div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.cpp:71</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgKeyImportExporter &gt;::GetInstance</a></div><div class="ttdeci">static GpgKeyImportExporter &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a0f724649ca953b888f07d69c97fe45b6"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">GpgFrontend::UI::KeyUploadDialog::slot_upload_key_to_server</a></div><div class="ttdeci">void slot_upload_key_to_server(const GpgFrontend::ByteArray &amp;keys_data)</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:65</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a0f724649ca953b888f07d69c97fe45b6"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">GpgFrontend::UI::KeyUploadDialog::slot_upload_key_to_server</a></div><div class="ttdeci">void slot_upload_key_to_server(const GpgFrontend::ByteArray &amp;keys_data)</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:64</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a14433405831283cd95091d741614d03b"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b">GpgFrontend::GlobalSettingStation::GetUISettings</a></div><div class="ttdeci">libconfig::Setting &amp; GetUISettings() noexcept</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:63</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyGetter_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyGetter.html">GpgFrontend::GpgKeyGetter</a></div><div class="ttdef"><b>Definition:</b> GpgKeyGetter.h:45</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a51f63e30f26f7923def91519d347c0cf"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf">GpgFrontend::UI::KeyUploadDialog::KeyUploadDialog</a></div><div class="ttdeci">KeyUploadDialog(const KeyIdArgsListPtr &amp;keys_ids, QWidget *parent)</div><div class="ttdoc">Construct a new Key Upload Dialog object.</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">GpgFrontend::UI::KeyUploadDialog</a></div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.h:42</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">GpgFrontend::UI::KeyUploadDialog</a></div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.h:41</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><a class="el" href="dir_0652c688762e27a1001e51709de145a7.html">import_export</a></li><li class="navelem"><b>KeyUploadDialog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_3d7cdd7fbfa4715d9319666ec5111ec9.html">import_export</a></li><li class="navelem"><b>KeyUploadDialog.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

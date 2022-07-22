@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/SignersPicker.h Source File</title>
+<title>GpgFrontend Project: src/ui/widgets/SignersPicker.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,44 +86,17 @@ $(document).ready(function(){initNavTree('SignersPicker_8h_source.html',''); ini
 <div class="title">SignersPicker.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c) 2022. Saturneric</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  This file is part of GpgFrontend.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * GpgFrontend is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * GpgFrontend is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with GpgFrontend. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * The initial version of the source code is inherited from</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * the gpg4usb project, which is under GPL-3.0-or-later.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * All the source code of GpgFrontend was modified and released by</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * Saturneric&lt;eric@bktus.com&gt; starting on May 12, 2021.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * SPDX-License-Identifier: GPL-3.0-or-later</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/dialog//GeneralDialog.h&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendUI.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>KeyList;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1SignersPicker.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html">SignersPicker</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1SignersPicker.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html">SignersPicker</a> : <span class="keyword">public</span> QDialog {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
@@ -131,33 +104,28 @@ $(document).ready(function(){initNavTree('SignersPicker_8h_source.html',''); ini
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  GpgFrontend::KeyIdArgsListPtr <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a2e98dcdf647a2e0e6455998b018aed00">GetCheckedSigners</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#aba7633983da57c7a7eb2710a1f33f7ac">GetStatus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;  </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> accepted_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_ZH_CN_TS_SIGNERSPIRCKER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a73ddb7feb1f70eac44e038c3dc925fec"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a73ddb7feb1f70eac44e038c3dc925fec">GpgFrontend::UI::KeyList::AddListGroupTab</a></div><div class="ttdeci">void AddListGroupTab(const QString &amp;name, KeyListRow::KeyType selectType=KeyListRow::SECRET_OR_PUBLIC_KEY, KeyListColumn::InfoType infoType=KeyListColumn::ALL, const std::function&lt; bool(const GpgKey &amp;)&gt; &amp;filter=[](const GpgKey &amp;) -&gt; bool { return true;})</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:99</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_aba7633983da57c7a7eb2710a1f33f7ac"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#aba7633983da57c7a7eb2710a1f33f7ac">GpgFrontend::UI::SignersPicker::GetStatus</a></div><div class="ttdeci">bool GetStatus() const</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:81</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a2e98dcdf647a2e0e6455998b018aed00"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a2e98dcdf647a2e0e6455998b018aed00">GpgFrontend::UI::SignersPicker::GetCheckedSigners</a></div><div class="ttdeci">GpgFrontend::KeyIdArgsListPtr GetCheckedSigners()</div><div class="ttdoc">Get the Checked Signers object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:77</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a2e98dcdf647a2e0e6455998b018aed00"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a2e98dcdf647a2e0e6455998b018aed00">GpgFrontend::UI::SignersPicker::GetCheckedSigners</a></div><div class="ttdeci">GpgFrontend::KeyIdArgsListPtr GetCheckedSigners()</div><div class="ttdoc">Get the Checked Signers object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:70</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html_a81c2e36427371fa6ae6381870b9b5bdd"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html#a81c2e36427371fa6ae6381870b9b5bdd">GpgFrontend::UI::KeyList::GetPrivateChecked</a></div><div class="ttdeci">KeyIdArgsListPtr GetPrivateChecked()</div><div class="ttdoc">Get the Private Checked object.</div><div class="ttdef"><b>Definition:</b> KeyList.cpp:209</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html">GpgFrontend::UI::SignersPicker</a></div><div class="ttdef"><b>Definition:</b> SignersPicker.h:42</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aefa0a44adb1b7c49553a85b545fdffe1"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aefa0a44adb1b7c49553a85b545fdffe1">GpgFrontend::GpgKey::IsHasActualSigningCapability</a></div><div class="ttdeci">bool IsHasActualSigningCapability() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:172</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html_aefa0a44adb1b7c49553a85b545fdffe1"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html#aefa0a44adb1b7c49553a85b545fdffe1">GpgFrontend::GpgKey::IsHasActualSigningCapability</a></div><div class="ttdeci">bool IsHasActualSigningCapability() const</div><div class="ttdef"><b>Definition:</b> GpgKey.cpp:174</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:152</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a02c3ba737702894fc6d4ac1a1c543ccb"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">GpgFrontend::UI::SignersPicker::SignersPicker</a></div><div class="ttdeci">SignersPicker(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Signers Picker object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:34</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a02c3ba737702894fc6d4ac1a1c543ccb"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">GpgFrontend::UI::SignersPicker::SignersPicker</a></div><div class="ttdeci">SignersPicker(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Signers Picker object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:41</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><b>SignersPicker.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_f3911b9629b0e27ea480d06d47573cbf.html">widgets</a></li><li class="navelem"><b>SignersPicker.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

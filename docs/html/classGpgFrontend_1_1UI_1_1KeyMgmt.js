@@ -1,6 +1,7 @@
 var classGpgFrontend_1_1UI_1_1KeyMgmt =
 [
     [ "KeyMgmt", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64", null ],
+    [ "closeEvent", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a78b53193b055e10550938f403b641b31", null ],
     [ "create_actions", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8", null ],
     [ "create_menus", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46", null ],
     [ "create_tool_bars", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5", null ],
@@ -15,6 +16,7 @@ var classGpgFrontend_1_1UI_1_1KeyMgmt =
     [ "SlotGenerateKeyDialog", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#aa10636ab18ccf63bcd3dfa60bdd9cbc7", null ],
     [ "SlotGenerateSubKey", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#ab06b65fbb2581eb1245d45273ed3885a", null ],
     [ "SlotImportKeyPackage", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#aa5cd08927c720e1d545149e8318559c8", null ],
+    [ "SlotSaveWindowState", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a36a6d0f038e826f8d440d9f82826644f", null ],
     [ "SlotShowKeyDetails", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a905d55ac2c7de8579db9f5a7b91a0abf", null ],
     [ "close_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#ab3698ef93ee48a949915f205452f8743", null ],
     [ "delete_checked_keys_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#ac06a816b6898b4d3e0c7a74bc7b4f4be", null ],

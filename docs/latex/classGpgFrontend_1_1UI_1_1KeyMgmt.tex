@@ -7,7 +7,7 @@ Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+Mgmt\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1KeyMgmt__inherit__graph}
+\includegraphics[width=257pt]{classGpgFrontend_1_1UI_1_1KeyMgmt__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -47,6 +47,9 @@ void {\bfseries Slot\+Generate\+Key\+Dialog} ()
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a905d55ac2c7de8579db9f5a7b91a0abf}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a905d55ac2c7de8579db9f5a7b91a0abf}} 
 void {\bfseries Slot\+Show\+Key\+Details} ()
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a36a6d0f038e826f8d440d9f82826644f}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a36a6d0f038e826f8d440d9f82826644f}} 
+void {\bfseries Slot\+Save\+Window\+State} ()
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_aa5cd08927c720e1d545149e8318559c8}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_aa5cd08927c720e1d545149e8318559c8}} 
 void {\bfseries Slot\+Import\+Key\+Package} ()
 \end{DoxyCompactItemize}
@@ -64,6 +67,11 @@ void {\bfseries Signal\+Key\+Status\+Updated} ()
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Key\+Mgmt}} (Q\+Widget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Key Mgmt object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a78b53193b055e10550938f403b641b31}{close\+Event}} (Q\+Close\+Event $\ast$event) override
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -141,7 +149,6 @@ Q\+Action $\ast$ {\bfseries show\+\_\+key\+\_\+details\+\_\+act\+\_\+} \{\}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a08ce0587e28ac312273fdb0988f63bbe}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a08ce0587e28ac312273fdb0988f63bbe}} 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog}{Key\+Server\+Import\+Dialog}} $\ast$ {\bfseries import\+\_\+dialog\+\_\+} \{\}
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -167,6 +174,17 @@ References Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a78b53193b055e10550938f403b641b31}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a78b53193b055e10550938f403b641b31}} 
+\index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}} 
 \index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!create\_actions@{create\_actions}}
 \index{create\_actions@{create\_actions}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
@@ -232,5 +250,5 @@ References Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys(), Gpg\+Frontend
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/main\+\_\+window/Key\+Mgmt.\+h\item 
-src/ui/main\+\_\+window/Key\+Mgmt.\+cpp\end{DoxyCompactItemize}
+src/ui/Key\+Mgmt.\+h\item 
+src/ui/Key\+Mgmt.\+cpp\end{DoxyCompactItemize}

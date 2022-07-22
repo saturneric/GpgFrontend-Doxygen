@@ -1,9 +1,6 @@
 <map id="GpgFrontend::UI::AboutDialog" name="GpgFrontend::UI::AboutDialog">
-<area shape="rect" id="node1" title="Class for handling the about dialog." alt="" coords="101,529,315,621"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,301,192,452"/>
-<area shape="rect" id="node3" title=" " alt="" coords="9,147,84,224"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="109,147,195,224"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="83,5,221,97"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1UpdateTab.html" title="Class containing the main tab of about dialog." alt="" coords="216,287,424,467"/>
-<area shape="rect" id="node7" title=" " alt="" coords="281,147,359,224"/>
+<area shape="rect" id="node1" title="Class for handling the about dialog." alt="" coords="5,375,220,467"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,183,98,261"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1UpdateTab.html" title="Class containing the main tab of about dialog." alt="" coords="122,132,330,312"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,5,265,83"/>
 </map>

@@ -99,52 +99,53 @@ $(document).ready(function(){initNavTree('GpgFileOpera_8h_source.html',''); init
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgFileOpera.html">   43</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgFileOpera&gt; {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a>(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> EncryptFile(KeyListPtr keys, <span class="keyword">const</span> std::string&amp; in_path,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                  <span class="keyword">const</span> std::string&amp; out_path,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  GpgEncrResult&amp; result,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> EncryptFileSymmetric(</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> std::string&amp; in_path, <span class="keyword">const</span> std::string&amp; out_path,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      GpgEncrResult&amp; result, <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> GpgError DecryptFile(<span class="keyword">const</span> std::string&amp; in_path,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              <span class="keyword">const</span> std::string&amp; out_path,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              GpgDecrResult&amp; result);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">static</span> GpgError SignFile(KeyListPtr keys, <span class="keyword">const</span> std::string&amp; in_path,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                           <span class="keyword">const</span> std::string&amp; out_path, GpgSignResult&amp; result,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                           <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">static</span> GpgError VerifyFile(<span class="keyword">const</span> std::string&amp; data_path,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                             <span class="keyword">const</span> std::string&amp; sign_path,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                             GpgVerifyResult&amp; result,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                             <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> GpgError EncryptSignFile(KeyListPtr keys, KeyListPtr signer_keys,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                  <span class="keyword">const</span> std::string&amp; in_path,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                  <span class="keyword">const</span> std::string&amp; out_path,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                  GpgEncrResult&amp; encr_res,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                  GpgSignResult&amp; sign_res,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                  <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keyword">static</span> GpgError DecryptVerifyFile(<span class="keyword">const</span> std::string&amp; in_path,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                    <span class="keyword">const</span> std::string&amp; out_path,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                    GpgDecrResult&amp; decr_res,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                    GpgVerifyResult&amp; verify_res);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_GPGFILEOPERA_H</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> EncryptFile(KeyListPtr keys, <span class="keyword">const</span> std::string&amp; in_path,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  <span class="keyword">const</span> std::string&amp; out_path,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  GpgEncrResult&amp; result,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                  <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> EncryptFileSymmetric(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">const</span> std::string&amp; in_path, <span class="keyword">const</span> std::string&amp; out_path,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      GpgEncrResult&amp; result, <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">static</span> GpgError DecryptFile(<span class="keyword">const</span> std::string&amp; in_path,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              <span class="keyword">const</span> std::string&amp; out_path,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                              GpgDecrResult&amp; result);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">static</span> GpgError SignFile(KeyListPtr keys, <span class="keyword">const</span> std::string&amp; in_path,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                           <span class="keyword">const</span> std::string&amp; out_path, GpgSignResult&amp; result,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                           <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">static</span> GpgError VerifyFile(<span class="keyword">const</span> std::string&amp; data_path,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                             <span class="keyword">const</span> std::string&amp; sign_path,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                             GpgVerifyResult&amp; result,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                             <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">static</span> GpgError EncryptSignFile(KeyListPtr keys, KeyListPtr signer_keys,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                  <span class="keyword">const</span> std::string&amp; in_path,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                  <span class="keyword">const</span> std::string&amp; out_path,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                  GpgEncrResult&amp; encr_res,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                  GpgSignResult&amp; sign_res,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                  <span class="keywordtype">int</span> _channel = GPGFRONTEND_DEFAULT_CHANNEL);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">static</span> GpgError DecryptVerifyFile(<span class="keyword">const</span> std::string&amp; in_path,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                    <span class="keyword">const</span> std::string&amp; out_path,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                    GpgDecrResult&amp; decr_res,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                    GpgVerifyResult&amp; verify_res);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;};</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif  // GPGFRONTEND_GPGFILEOPERA_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassGpgFrontend_1_1GpgFileOpera_html_a350df1c07c054625c4755a78e6ca5ca8"><div class="ttname"><a href="classGpgFrontend_1_1GpgFileOpera.html#a350df1c07c054625c4755a78e6ca5ca8">GpgFrontend::GpgFileOpera::SignFile</a></div><div class="ttdeci">static GpgError SignFile(KeyListPtr keys, const std::string &amp;in_path, const std::string &amp;out_path, GpgSignResult &amp;result, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdef"><b>Definition:</b> GpgFileOpera.cpp:103</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:148</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1FileOperator_html_a51121c94dc32a83d7073fbe7138b603b"><div class="ttname"><a href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd</a></div><div class="ttdeci">static bool WriteFileStd(const std::filesystem::path &amp;file_name, const std::string &amp;data)</div><div class="ttdoc">write file content using std struct</div><div class="ttdef"><b>Definition:</b> FileOperator.cpp:69</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1FileOperator_html_a51121c94dc32a83d7073fbe7138b603b"><div class="ttname"><a href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd</a></div><div class="ttdeci">static bool WriteFileStd(const std::filesystem::path &amp;file_name, const std::string &amp;data)</div><div class="ttdoc">write file content using std struct</div><div class="ttdef"><b>Definition:</b> FileOperator.cpp:67</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgBasicOperator_html_a9ea9e81194917e08f46eb657281b7953"><div class="ttname"><a href="classGpgFrontend_1_1GpgBasicOperator.html#a9ea9e81194917e08f46eb657281b7953">GpgFrontend::GpgBasicOperator::Decrypt</a></div><div class="ttdeci">gpgme_error_t Decrypt(BypeArrayRef in_buffer, ByteArrayPtr &amp;out_buffer, GpgDecrResult &amp;result)</div><div class="ttdoc">Call the interface provided by gpgme for decryption operation.</div><div class="ttdef"><b>Definition:</b> GpgBasicOperator.cpp:64</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance</a></div><div class="ttdeci">static GpgBasicOperator &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
