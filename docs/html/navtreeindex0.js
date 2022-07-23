@@ -14,6 +14,7 @@ var NAVTREEINDEX0 =
 "GeneralDialog_8h_source.html":[3,0,0,1,0,6],
 "GeneralMainWindow_8h_source.html":[3,0,0,1,1,0],
 "GlobalSettingStation_8h_source.html":[3,0,0,0,1,7],
+"GnupgTab_8h_source.html":[3,0,0,1,0,1,1],
 "GpgBasicOperator_8h_source.html":[3,0,0,0,1,1,0],
 "GpgCommandExecutor_8h_source.html":[3,0,0,0,1,1,1],
 "GpgConstants_8h_source.html":[3,0,0,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classGpgFrontend_1_1GpgConstants.html":[2,0,0,14],
 "classGpgFrontend_1_1GpgConstants.html#a237006d6db30c7e3f8de171210eb35f2":[2,0,0,14,1],
 "classGpgFrontend_1_1GpgConstants.html#a2c92d804e331fea2a57cba3028aa51ae":[2,0,0,14,0],
-"classGpgFrontend_1_1GpgConstants.html#a36861cbbc85a53f4a42fa07153aa0150":[2,0,0,14,7],
-"classGpgFrontend_1_1GpgConstants.html#a53310750d959947f316c793504e6eac1":[2,0,0,14,6]
+"classGpgFrontend_1_1GpgConstants.html#a36861cbbc85a53f4a42fa07153aa0150":[2,0,0,14,7]
 };

@@ -7,6 +7,7 @@ var classGpgFrontend_1_1UI_1_1GeneralMainWindow =
     [ "slot_save_settings", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a8ddf641e1266d00cb876ddf786e5ccb8", null ],
     [ "font_size_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#ab0dd85f0fcbbab2f15eee995458d2dfb", null ],
     [ "icon_size_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#abb5b9f6dd7aed18f42cea885af85c741", null ],
+    [ "icon_style_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a6ded03c8319326809b09bc90c94e890c", null ],
     [ "name_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#ac581df0af500c9e8a73b8f988739600b", null ],
     [ "pos_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#ad799871eab498f2e535f52f0082f8b8b", null ],
     [ "size_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a5c0bb4c6847846d57ca7524d5f5e4d53", null ]

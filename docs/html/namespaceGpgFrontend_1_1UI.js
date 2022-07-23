@@ -13,6 +13,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", "classGpgFrontend_1_1UI_1_1GeneralDialog" ],
     [ "GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html", "classGpgFrontend_1_1UI_1_1GeneralMainWindow" ],
     [ "GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", "classGpgFrontend_1_1UI_1_1GeneralTab" ],
+    [ "GnupgTab", "classGpgFrontend_1_1UI_1_1GnupgTab.html", "classGpgFrontend_1_1UI_1_1GnupgTab" ],
     [ "GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication" ],
     [ "HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", "classGpgFrontend_1_1UI_1_1HelpPage" ],
     [ "InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", "classGpgFrontend_1_1UI_1_1InfoBoardWidget" ],

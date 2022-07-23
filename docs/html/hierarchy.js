@@ -141,6 +141,7 @@ var hierarchy =
       [ "GpgFrontend::UI::FilePage", "classGpgFrontend_1_1UI_1_1FilePage.html", null ],
       [ "GpgFrontend::UI::FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", null ],
       [ "GpgFrontend::UI::GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", null ],
+      [ "GpgFrontend::UI::GnupgTab", "classGpgFrontend_1_1UI_1_1GnupgTab.html", null ],
       [ "GpgFrontend::UI::HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", null ],
       [ "GpgFrontend::UI::InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", null ],
       [ "GpgFrontend::UI::InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", null ],
