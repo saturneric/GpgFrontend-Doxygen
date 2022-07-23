@@ -86,20 +86,22 @@ var hierarchy =
       [ "GpgFrontend::UI::GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", null ]
     ] ],
     [ "QDialog", null, [
-      [ "GpgFrontend::UI::AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", null ],
-      [ "GpgFrontend::UI::ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", null ],
-      [ "GpgFrontend::UI::KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", null ],
-      [ "GpgFrontend::UI::KeyGenDialog", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html", null ],
-      [ "GpgFrontend::UI::KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", null ],
-      [ "GpgFrontend::UI::KeyNewUIDDialog", "classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html", null ],
-      [ "GpgFrontend::UI::KeyServerImportDialog", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html", null ],
-      [ "GpgFrontend::UI::KeySetExpireDateDialog", "classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html", null ],
-      [ "GpgFrontend::UI::KeyUIDSignDialog", "classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html", null ],
-      [ "GpgFrontend::UI::KeyUploadDialog", "classGpgFrontend_1_1UI_1_1KeyUploadDialog.html", null ],
-      [ "GpgFrontend::UI::QuitDialog", "classGpgFrontend_1_1UI_1_1QuitDialog.html", null ],
-      [ "GpgFrontend::UI::SettingsDialog", "classGpgFrontend_1_1UI_1_1SettingsDialog.html", null ],
-      [ "GpgFrontend::UI::SignersPicker", "classGpgFrontend_1_1UI_1_1SignersPicker.html", null ],
-      [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ],
+      [ "GpgFrontend::UI::GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", [
+        [ "GpgFrontend::UI::AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", null ],
+        [ "GpgFrontend::UI::ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", null ],
+        [ "GpgFrontend::UI::KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", null ],
+        [ "GpgFrontend::UI::KeyGenDialog", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html", null ],
+        [ "GpgFrontend::UI::KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", null ],
+        [ "GpgFrontend::UI::KeyNewUIDDialog", "classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html", null ],
+        [ "GpgFrontend::UI::KeyServerImportDialog", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html", null ],
+        [ "GpgFrontend::UI::KeySetExpireDateDialog", "classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html", null ],
+        [ "GpgFrontend::UI::KeyUIDSignDialog", "classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html", null ],
+        [ "GpgFrontend::UI::KeyUploadDialog", "classGpgFrontend_1_1UI_1_1KeyUploadDialog.html", null ],
+        [ "GpgFrontend::UI::QuitDialog", "classGpgFrontend_1_1UI_1_1QuitDialog.html", null ],
+        [ "GpgFrontend::UI::SettingsDialog", "classGpgFrontend_1_1UI_1_1SettingsDialog.html", null ],
+        [ "GpgFrontend::UI::SignersPicker", "classGpgFrontend_1_1UI_1_1SignersPicker.html", null ],
+        [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ]
+      ] ],
       [ "GpgFrontend::UI::VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", null ],
       [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ],
       [ "SignatureDetailsDialog", "classSignatureDetailsDialog.html", null ]
@@ -108,14 +110,19 @@ var hierarchy =
       [ "GpgFrontend::UI::VerifyKeyDetailBox", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html", null ]
     ] ],
     [ "QMainWindow", null, [
-      [ "GpgFrontend::UI::KeyMgmt", "classGpgFrontend_1_1UI_1_1KeyMgmt.html", null ],
-      [ "GpgFrontend::UI::MainWindow", "classGpgFrontend_1_1UI_1_1MainWindow.html", null ]
+      [ "GpgFrontend::UI::GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html", [
+        [ "GpgFrontend::UI::KeyMgmt", "classGpgFrontend_1_1UI_1_1KeyMgmt.html", null ],
+        [ "GpgFrontend::UI::MainWindow", "classGpgFrontend_1_1UI_1_1MainWindow.html", null ]
+      ] ]
     ] ],
     [ "QObject", null, [
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
         [ "GpgFrontend::Thread::CtxCheckTask", "classGpgFrontend_1_1Thread_1_1CtxCheckTask.html", null ],
         [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ],
+        [ "GpgFrontend::UI::KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", null ],
+        [ "GpgFrontend::UI::KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", null ],
+        [ "GpgFrontend::UI::ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", null ],
         [ "GpgFrontend::UI::VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", null ]
       ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
@@ -125,7 +132,6 @@ var hierarchy =
     ] ],
     [ "QThread", null, [
       [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
-      [ "GpgFrontend::UI::ListedKeyServerTestThread", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestThread.html", null ],
       [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ]
     ] ],
     [ "QWidget", null, [
@@ -135,6 +141,7 @@ var hierarchy =
       [ "GpgFrontend::UI::FilePage", "classGpgFrontend_1_1UI_1_1FilePage.html", null ],
       [ "GpgFrontend::UI::FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", null ],
       [ "GpgFrontend::UI::GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", null ],
+      [ "GpgFrontend::UI::GnupgTab", "classGpgFrontend_1_1UI_1_1GnupgTab.html", null ],
       [ "GpgFrontend::UI::HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", null ],
       [ "GpgFrontend::UI::InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", null ],
       [ "GpgFrontend::UI::InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", null ],

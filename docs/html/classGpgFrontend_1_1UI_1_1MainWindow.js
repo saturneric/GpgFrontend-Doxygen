@@ -72,6 +72,7 @@ var classGpgFrontend_1_1UI_1_1MainWindow =
     [ "file_menu_", "classGpgFrontend_1_1UI_1_1MainWindow.html#af08c62c38a750382ee218191c8e13f4f", null ],
     [ "file_tool_bar_", "classGpgFrontend_1_1UI_1_1MainWindow.html#a1e0d23d361b8e339ca85410db2bdfb64", null ],
     [ "find_act_", "classGpgFrontend_1_1UI_1_1MainWindow.html#a6154f5dbdc9cebc0644e5d1e25895df8", null ],
+    [ "gnupg_act_", "classGpgFrontend_1_1UI_1_1MainWindow.html#a79b83f536a7c4299eaa3d22e4e875227", null ],
     [ "help_menu_", "classGpgFrontend_1_1UI_1_1MainWindow.html#a89fa105ed54d2189d762668262d74c63", null ],
     [ "import_button_", "classGpgFrontend_1_1UI_1_1MainWindow.html#a8538940a9a5dea7ddf53c89acdeb83be", null ],
     [ "import_key_from_clipboard_act_", "classGpgFrontend_1_1UI_1_1MainWindow.html#ad0a47aadbd6ae3a4bd0fe3372d247e7d", null ],

@@ -1,8 +1,11 @@
 <map id="GpgFrontend::Thread::Task" name="GpgFrontend::Thread::Task">
-<area shape="rect" id="node1" title=" " alt="" coords="217,131,379,472"/>
+<area shape="rect" id="node1" title=" " alt="" coords="563,131,726,472"/>
 <area shape="rect" id="node4" href="$classGpgFrontend_1_1Thread_1_1CtxCheckTask.html" title=" " alt="" coords="5,586,164,693"/>
 <area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="188,557,408,722"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="432,520,671,759"/>
-<area shape="rect" id="node2" title=" " alt="" coords="207,5,282,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="306,5,399,83"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="432,542,633,737"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="657,549,859,729"/>
+<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="883,542,1089,737"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="1113,520,1352,759"/>
+<area shape="rect" id="node2" title=" " alt="" coords="554,5,629,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="653,5,746,83"/>
 </map>
