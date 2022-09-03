@@ -1,13 +1,13 @@
 <map id="GpgFrontend::UI::KeySetExpireDateDialog" name="GpgFrontend::UI::KeySetExpireDateDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="197,848,419,999"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,598,192,749"/>
-<area shape="rect" id="node3" title=" " alt="" coords="61,329,136,407"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="179,329,266,407"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="153,145,292,237"/>
-<area shape="rect" id="node6" title=" " alt="" coords="261,445,491,537"/>
-<area shape="rect" id="node7" title="STL class." alt="" coords="328,153,485,230"/>
-<area shape="rect" id="node8" title=" " alt="" coords="478,5,517,83"/>
-<area shape="rect" id="node11" title="STL class." alt="" coords="515,153,672,230"/>
-<area shape="rect" id="node9" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="445,561,622,785"/>
-<area shape="rect" id="node10" title=" " alt="" coords="487,315,657,421"/>
+<area shape="rect" id="node1" title=" " alt="" coords="203,848,424,999"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,591,197,756"/>
+<area shape="rect" id="node3" title=" " alt="" coords="64,329,139,407"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="183,329,270,407"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="157,145,296,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="266,445,497,537"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="332,153,489,230"/>
+<area shape="rect" id="node8" title=" " alt="" coords="482,5,521,83"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="520,153,677,230"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="449,561,626,785"/>
+<area shape="rect" id="node10" title=" " alt="" coords="492,315,663,421"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="GpgFrontend::UI::KeyUploadDialog" name="GpgFrontend::UI::KeyUploadDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="125,513,331,664"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="31,300,217,451"/>
+<area shape="rect" id="node1" title=" " alt="" coords="124,528,329,679"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="25,300,217,465"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,160,80,237"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="105,160,191,237"/>
 <area shape="rect" id="node5" title="STL class." alt="" coords="79,5,217,97"/>
-<area shape="rect" id="node6" title=" " alt="" coords="241,329,428,421"/>
+<area shape="rect" id="node6" title=" " alt="" coords="241,337,428,429"/>
 <area shape="rect" id="node7" title="STL class." alt="" coords="219,160,349,237"/>
 <area shape="rect" id="node8" title=" " alt="" coords="333,13,371,90"/>
 <area shape="rect" id="node9" title="STL class." alt="" coords="373,160,531,237"/>
