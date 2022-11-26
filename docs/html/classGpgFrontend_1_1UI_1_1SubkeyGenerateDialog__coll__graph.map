@@ -1,15 +1,14 @@
 <map id="GpgFrontend::UI::SubkeyGenerateDialog" name="GpgFrontend::UI::SubkeyGenerateDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="548,1229,791,1629"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,505,197,671"/>
-<area shape="rect" id="node3" title=" " alt="" coords="64,160,139,237"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="275,160,362,237"/>
-<area shape="rect" id="node7" href="$classGpgFrontend_1_1GenKeyInfo.html" title=" " alt="" coords="221,359,507,817"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="249,5,388,97"/>
-<area shape="rect" id="node6" title=" " alt="" coords="446,1009,663,1101"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="732,160,889,237"/>
-<area shape="rect" id="node11" title=" " alt="" coords="780,535,951,641"/>
-<area shape="rect" id="node9" title=" " alt="" coords="878,13,917,90"/>
-<area shape="rect" id="node13" title="STL class." alt="" coords="918,160,1047,237"/>
-<area shape="rect" id="node10" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="697,943,874,1167"/>
-<area shape="rect" id="node12" title=" " alt="" coords="879,841,1086,919"/>
+<area shape="rect" id="node1" title=" " alt="" coords="240,848,483,1292"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,569,248,778"/>
+<area shape="rect" id="node3" title=" " alt="" coords="15,329,89,407"/>
+<area shape="rect" id="node4" title=" " alt="" coords="114,329,201,407"/>
+<area shape="rect" id="node5" title=" " alt="" coords="88,145,227,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="187,445,405,537"/>
+<area shape="rect" id="node7" title=" " alt="" coords="433,153,591,230"/>
+<area shape="rect" id="node10" title=" " alt="" coords="427,315,597,421"/>
+<area shape="rect" id="node8" title=" " alt="" coords="577,5,615,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="619,153,749,230"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="423,561,601,785"/>
+<area shape="rect" id="node11" title=" " alt="" coords="586,453,793,530"/>
 </map>

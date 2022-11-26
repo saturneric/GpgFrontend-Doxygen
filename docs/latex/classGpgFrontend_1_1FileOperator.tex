@@ -26,9 +26,9 @@ static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a
 \begin{DoxyCompactList}\small\item\em read file content using std struct \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a51121c94dc32a83d7073fbe7138b603b}{Write\+File\+Std}} (const std\+::filesystem\+::path \&file\+\_\+name, const std\+::string \&data)
 \begin{DoxyCompactList}\small\item\em write file content using std struct \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a28a3572dc01192b6a4d50b544181084c}{Read\+File}} (const Q\+String \&file\+\_\+name, Q\+Byte\+Array \&data)
+static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a28a3572dc01192b6a4d50b544181084c}{Read\+File}} (const QString \&file\+\_\+name, QByte\+Array \&data)
 \begin{DoxyCompactList}\small\item\em read file content \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a2f21ef4a88448b1eddf756302913d338}{Write\+File}} (const Q\+String \&file\+\_\+name, const Q\+Byte\+Array \&data)
+static bool \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a2f21ef4a88448b1eddf756302913d338}{Write\+File}} (const QString \&file\+\_\+name, const QByte\+Array \&data)
 \begin{DoxyCompactList}\small\item\em write file content \end{DoxyCompactList}\item 
 static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a08baef750a723ee709804120a34d19c9}{Calculate\+Hash}} (const std\+::filesystem\+::path \&file\+\_\+path)
 \end{DoxyCompactItemize}
@@ -36,8 +36,6 @@ static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1FileOperator_a08baef75
 
 \doxysubsection{Detailed Description}
 provides file operations 
-
-
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1FileOperator_a08baef750a723ee709804120a34d19c9}\label{classGpgFrontend_1_1FileOperator_a08baef750a723ee709804120a34d19c9}} 
@@ -58,7 +56,7 @@ calculate the hash of a file
 \index{GpgFrontend::FileOperator@{GpgFrontend::FileOperator}!ReadFile@{ReadFile}}
 \index{ReadFile@{ReadFile}!GpgFrontend::FileOperator@{GpgFrontend::FileOperator}}
 \doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+\_\+name,  }\item[{Q\+Byte\+Array \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name,  }\item[{QByte\+Array \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -80,19 +78,19 @@ Copyright (C) 2021 Saturneric
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+File().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+File().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}\label{classGpgFrontend_1_1FileOperator_ad4424bce4f22ae75a16c542dfb4ddf0a}} 
 \index{GpgFrontend::FileOperator@{GpgFrontend::FileOperator}!ReadFileStd@{ReadFileStd}}
@@ -122,7 +120,7 @@ Referenced by Gpg\+Frontend\+::\+Data\+Object\+Operator\+::\+Data\+Object\+Opera
 \index{GpgFrontend::FileOperator@{GpgFrontend::FileOperator}!WriteFile@{WriteFile}}
 \index{WriteFile@{WriteFile}!GpgFrontend::FileOperator@{GpgFrontend::FileOperator}}
 \doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+\_\+name,  }\item[{const Q\+Byte\+Array \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name,  }\item[{const QByte\+Array \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

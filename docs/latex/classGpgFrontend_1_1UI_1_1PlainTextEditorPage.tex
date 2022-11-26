@@ -32,20 +32,21 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Plain\+Text\+Editor\+Page\+:
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}{Signal\+U\+I\+Bytes\+Displayed}} ()
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}} 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}{Signal\+UIBytes\+Displayed}} ()
 \begin{DoxyCompactList}\small\item\em this signal is emitted when the bytes has been append in texteditor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8759224e57d4c322933ed3df6d96e5f1}{Plain\+Text\+Editor\+Page}} (Q\+String file\+\_\+path=\{\}, Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8759224e57d4c322933ed3df6d96e5f1}{Plain\+Text\+Editor\+Page}} (QString file\+\_\+path=\{\}, QWidget $\ast$parent=nullptr)
 \item 
-const Q\+String \& \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}{Get\+File\+Path}} () const
+const QString \& \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}{Get\+File\+Path}} () const
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}{Set\+File\+Path}} (const Q\+String \&file\+Path)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}{Set\+File\+Path}} (const QString \&file\+Path)
 \item 
-Q\+Plain\+Text\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}{Get\+Text\+Page}} ()
+QPlain\+Text\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}{Get\+Text\+Page}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}{Show\+Notification\+Widget}} (Q\+Widget $\ast$widget, const char $\ast$class\+Name)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}{Show\+Notification\+Widget}} (QWidget $\ast$widget, const char $\ast$class\+Name)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aee4f46e54f29da671838ed232e526700}{Close\+Note\+By\+Class}} (const char $\ast$class\+Name)
 \item 
@@ -54,8 +55,10 @@ void {\bfseries Read\+File} ()
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}{Read\+Done}} () const
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}} 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}{Will\+Charset\+Change}} () const
 \begin{DoxyCompactList}\small\item\em detect if the charset of the file will change \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}{Notify\+File\+Saved}} ()
 \begin{DoxyCompactList}\small\item\em notify the user that the file has been saved. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
@@ -63,7 +66,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba95
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}{slot\+\_\+format\+\_\+gpg\+\_\+header}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}{slot\+\_\+insert\+\_\+text}} (Q\+Byte\+Array bytes\+\_\+data)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}{slot\+\_\+insert\+\_\+text}} (QByte\+Array bytes\+\_\+data)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -79,7 +82,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eae
 std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+Plain\+Text\+Editor $>$ {\bfseries ui\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}} 
-Q\+String \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}{full\+\_\+file\+\_\+path\+\_\+}}
+QString \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae867b6329fcb1978479a9d70f7b017db}{full\+\_\+file\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em The path to the file handled in the tab. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}} 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef7889a169bda5a47b7f657358}{sign\+\_\+marked\+\_\+}} \{\}
@@ -110,14 +113,12 @@ bool {\bfseries is\+\_\+crlf\+\_\+} = false
 \doxysubsection{Detailed Description}
 Class for handling a single tab of the tabwidget. 
 
-
-
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8759224e57d4c322933ed3df6d96e5f1}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a8759224e57d4c322933ed3df6d96e5f1}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!PlainTextEditorPage@{PlainTextEditorPage}}
 \index{PlainTextEditorPage@{PlainTextEditorPage}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{PlainTextEditorPage()}{PlainTextEditorPage()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Plain\+Text\+Editor\+Page (\begin{DoxyParamCaption}\item[{Q\+String}]{file\+\_\+path = {\ttfamily \{\}},  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Plain\+Text\+Editor\+Page (\begin{DoxyParamCaption}\item[{QString}]{file\+\_\+path = {\ttfamily \{\}},  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Add layout and add plaintextedit
 
@@ -130,7 +131,7 @@ Add layout and add plaintextedit
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+U\+I\+::\+Settings\+Object\+::\+Check(), and full\+\_\+file\+\_\+path\+\_\+.
+References Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check(), and full\+\_\+file\+\_\+path\+\_\+.
 
 
 
@@ -139,7 +140,7 @@ References Gpg\+Frontend\+::\+U\+I\+::\+Settings\+Object\+::\+Check(), and full\
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!CloseNoteByClass@{CloseNoteByClass}}
 \index{CloseNoteByClass@{CloseNoteByClass}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{CloseNoteByClass()}{CloseNoteByClass()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Close\+Note\+By\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Close\+Note\+By\+Class (\begin{DoxyParamCaption}\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
 
 Hide all widgets with the given class\+Name
 
@@ -150,13 +151,13 @@ Hide all widgets with the given class\+Name
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+find().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+find().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eaec76403b12dc6e42df546c}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eaec76403b12dc6e42df546c}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_cr\_lf@{detect\_cr\_lf}}
 \index{detect\_cr\_lf@{detect\_cr\_lf}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{detect\_cr\_lf()}{detect\_cr\_lf()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+cr\+\_\+lf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+cr\+\_\+lf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -171,7 +172,7 @@ Referenced by slot\+\_\+insert\+\_\+text().
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_encoding@{detect\_encoding}}
 \index{detect\_encoding@{detect\_encoding}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{detect\_encoding()}{detect\_encoding()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+encoding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+encoding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -190,7 +191,7 @@ Referenced by slot\+\_\+insert\+\_\+text().
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!GetFilePath@{GetFilePath}}
 \index{GetFilePath@{GetFilePath}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
-{\footnotesize\ttfamily const Q\+String \& Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const QString \& Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Get the filepath of the currently activated tab. 
 
@@ -198,37 +199,23 @@ References full\+\_\+file\+\_\+path\+\_\+.
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Save(), and Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Save\+As().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Save\+As().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a6218e6e12bdba0228e4ab4276f7fed7a}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!GetTextPage@{GetTextPage}}
 \index{GetTextPage@{GetTextPage}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{GetTextPage()}{GetTextPage()}}
-{\footnotesize\ttfamily Q\+Plain\+Text\+Edit $\ast$ Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily QPlain\+Text\+Edit $\ast$ Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Return pointer tp the textedit of the currently activated tab. 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Load\+File(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::save\+\_\+file(), Gpg\+Frontend\+::\+U\+I\+::\+Find\+Widget\+::set\+\_\+background(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+add\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+clean\+\_\+double\+\_\+line\+\_\+breaks(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+cut\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit(), slot\+\_\+insert\+\_\+text(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Close\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Copy(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Cut(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Fill\+Text\+Edit\+With\+Text(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Paste(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Print(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Redo(), Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Select\+All(), and Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+Undo().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}} 
-\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!NotifyFileSaved@{NotifyFileSaved}}
-\index{NotifyFileSaved@{NotifyFileSaved}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
-\doxysubsubsection{\texorpdfstring{NotifyFileSaved()}{NotifyFileSaved()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Notify\+File\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-notify the user that the file has been saved. 
-
-
-
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::save\+\_\+file().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file(), Gpg\+Frontend\+::\+UI\+::\+Find\+Widget\+::set\+\_\+background(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+add\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+clean\+\_\+double\+\_\+line\+\_\+breaks(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+cut\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit(), slot\+\_\+insert\+\_\+text(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!ReadDone@{ReadDone}}
 \index{ReadDone@{ReadDone}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{ReadDone()}{ReadDone()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Read\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Read\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -237,13 +224,13 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aa9e82690824c82e7628ba4ace9d6e2fe}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!SetFilePath@{SetFilePath}}
 \index{SetFilePath@{SetFilePath}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{SetFilePath()}{SetFilePath()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Set\+File\+Path (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Set\+File\+Path (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path }\end{DoxyParamCaption})}
 
 Set filepath of currently activated tab.
 
@@ -258,13 +245,13 @@ References full\+\_\+file\+\_\+path\+\_\+.
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Load\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::save\+\_\+file().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af5dfdfd48ef64cc46e524ec70a22fe3a}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!ShowNotificationWidget@{ShowNotificationWidget}}
 \index{ShowNotificationWidget@{ShowNotificationWidget}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{ShowNotificationWidget()}{ShowNotificationWidget()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Show\+Notification\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{widget,  }\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Show\+Notification\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{widget,  }\item[{const char $\ast$}]{class\+Name }\end{DoxyParamCaption})}
 
 Show additional widget at buttom of currently active tab
 
@@ -277,27 +264,13 @@ Show additional widget at buttom of currently active tab
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+find().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_afd3749488fdd3d1c53446fb8c833f3f4}} 
-\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!SignalUIBytesDisplayed@{SignalUIBytesDisplayed}}
-\index{SignalUIBytesDisplayed@{SignalUIBytesDisplayed}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
-\doxysubsubsection{\texorpdfstring{SignalUIBytesDisplayed}{SignalUIBytesDisplayed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Signal\+U\+I\+Bytes\+Displayed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
-
-
-
-this signal is emitted when the bytes has been append in texteditor. 
-
-
-
-Referenced by slot\+\_\+insert\+\_\+text().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+find().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_format\_gpg\_header@{slot\_format\_gpg\_header}}
 \index{slot\_format\_gpg\_header@{slot\_format\_gpg\_header}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{slot\_format\_gpg\_header}{slot\_format\_gpg\_header}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+format\+\_\+gpg\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+format\+\_\+gpg\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 Format the gpg header in another font-\/style 
 
@@ -307,7 +280,7 @@ References sign\+\_\+marked\+\_\+.
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!slot\_insert\_text@{slot\_insert\_text}}
 \index{slot\_insert\_text@{slot\_insert\_text}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
 \doxysubsubsection{\texorpdfstring{slot\_insert\_text}{slot\_insert\_text}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+insert\+\_\+text (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{bytes\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::slot\+\_\+insert\+\_\+text (\begin{DoxyParamCaption}\item[{QByte\+Array}]{bytes\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -316,21 +289,7 @@ References sign\+\_\+marked\+\_\+.
 \end{DoxyParams}
 
 
-References detect\+\_\+cr\+\_\+lf(), detect\+\_\+encoding(), Get\+Text\+Page(), and Signal\+U\+I\+Bytes\+Displayed().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}} 
-\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!WillCharsetChange@{WillCharsetChange}}
-\index{WillCharsetChange@{WillCharsetChange}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
-\doxysubsubsection{\texorpdfstring{WillCharsetChange()}{WillCharsetChange()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+U\+I\+::\+Plain\+Text\+Editor\+Page\+::\+Will\+Charset\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-detect if the charset of the file will change 
-
-
-
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::save\+\_\+file().
+References detect\+\_\+cr\+\_\+lf(), detect\+\_\+encoding(), Get\+Text\+Page(), and Signal\+UIBytes\+Displayed().
 
 
 

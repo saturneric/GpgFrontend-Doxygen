@@ -35,22 +35,22 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Info\+Board\+Widget\+:
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac576ad298acc83cc313b6753e3715441}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac576ad298acc83cc313b6753e3715441}} 
 void {\bfseries Slot\+Reset} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a68f984815100f4ce281b9794f193e516}{Slot\+Refresh}} (const Q\+String \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Status}} status)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a68f984815100f4ce281b9794f193e516}{Slot\+Refresh}} (const QString \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Status}} status)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adeef521a8838bf2a1692c25d9b108010}{Info\+Board\+Widget}} (Q\+Widget $\ast$parent)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adeef521a8838bf2a1692c25d9b108010}{Info\+Board\+Widget}} (QWidget $\ast$parent)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4fd6f91eb435feb41ae93e44485646ab}{Associate\+Text\+Edit}} (Q\+Text\+Edit $\ast$edit)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4fd6f91eb435feb41ae93e44485646ab}{Associate\+Text\+Edit}} (QText\+Edit $\ast$edit)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adfa4acd435d2ec29f951f4e7e6a43f38}{Associate\+Tab\+Widget}} (Q\+Tab\+Widget $\ast$tab)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adfa4acd435d2ec29f951f4e7e6a43f38}{Associate\+Tab\+Widget}} (QTab\+Widget $\ast$tab)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a456f15315a03107f7757d84362c1af71}{Add\+Optional\+Action}} (const Q\+String \&name, const std\+::function$<$ void()$>$ \&action)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a456f15315a03107f7757d84362c1af71}{Add\+Optional\+Action}} (const QString \&name, const std\+::function$<$ void()$>$ \&action)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a7d7504339221bd680fb18698dd829b32}{Reset\+Option\+Actions\+Menu}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac936cfc8e1b3af65d0d71b74fb3f0b02}{Set\+Info\+Board}} (const Q\+String \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Status}} verify\+\_\+label\+\_\+status)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac936cfc8e1b3af65d0d71b74fb3f0b02}{Set\+Info\+Board}} (const QString \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Status}} verify\+\_\+label\+\_\+status)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
@@ -64,7 +64,7 @@ void {\bfseries slot\+\_\+save} ()
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a852c1fe10c7d3153a2146bcea4dbe9ad}{delete\+\_\+widgets\+\_\+in\+\_\+layout}} (Q\+Layout $\ast$layout, int start\+\_\+index=0)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a852c1fe10c7d3153a2146bcea4dbe9ad}{delete\+\_\+widgets\+\_\+in\+\_\+layout}} (QLayout $\ast$layout, int start\+\_\+index=0)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -72,10 +72,10 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a852c1fe10c7d315
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4d18a72ae1c460a12b8902d426d9d395}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4d18a72ae1c460a12b8902d426d9d395}} 
 std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+Info\+Board $>$ {\bfseries ui\+\_\+}
 \item 
-Q\+Text\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a6380776ea1bf9a020370589e1e20efd3}{m\+\_\+text\+\_\+page\+\_\+}}
+QText\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a6380776ea1bf9a020370589e1e20efd3}{m\+\_\+text\+\_\+page\+\_\+}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit}{Text\+Edit}} associated to the notification. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ad30591c31d19936cfd256e1a3c35d08f}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ad30591c31d19936cfd256e1a3c35d08f}} 
-Q\+Tab\+Widget $\ast$ {\bfseries m\+\_\+tab\+\_\+widget\+\_\+} \{nullptr\}
+QTab\+Widget $\ast$ {\bfseries m\+\_\+tab\+\_\+widget\+\_\+} \{nullptr\}
 \end{DoxyCompactItemize}
 
 
@@ -87,18 +87,18 @@ Class for handling the verify label shown at bottom of a textedit-\/page.
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!InfoBoardWidget@{InfoBoardWidget}}
 \index{InfoBoardWidget@{InfoBoardWidget}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{InfoBoardWidget()}{InfoBoardWidget()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Info\+Board\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Info\+Board\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 \begin{DoxyParams}{Parameters}
-{\em ctx} & The G\+P\+Gme-\/\+Context \\
+{\em ctx} & The GPGme-\/\+Context \\
 \hline
 {\em parent} & The parent widget \\
 \hline
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Signal\+Refresh\+Info\+Board(), and Slot\+Refresh().
+References Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Signal\+Refresh\+Info\+Board(), and Slot\+Refresh().
 
 
 
@@ -107,7 +107,7 @@ References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gp
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!AddOptionalAction@{AddOptionalAction}}
 \index{AddOptionalAction@{AddOptionalAction}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{AddOptionalAction()}{AddOptionalAction()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Add\+Optional\+Action (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name,  }\item[{const std\+::function$<$ void()$>$ \&}]{action }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Add\+Optional\+Action (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const std\+::function$<$ void()$>$ \&}]{action }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -118,13 +118,13 @@ References Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gp
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::show\+\_\+verify\+\_\+details().
+Referenced by Gpg\+Frontend\+::\+UI\+::show\+\_\+verify\+\_\+details().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adfa4acd435d2ec29f951f4e7e6a43f38}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_adfa4acd435d2ec29f951f4e7e6a43f38}} 
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!AssociateTabWidget@{AssociateTabWidget}}
 \index{AssociateTabWidget@{AssociateTabWidget}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{AssociateTabWidget()}{AssociateTabWidget()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Associate\+Tab\+Widget (\begin{DoxyParamCaption}\item[{Q\+Tab\+Widget $\ast$}]{tab }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Associate\+Tab\+Widget (\begin{DoxyParamCaption}\item[{QTab\+Widget $\ast$}]{tab }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -137,13 +137,13 @@ References m\+\_\+text\+\_\+page\+\_\+.
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::process\+\_\+result\+\_\+analyse().
+Referenced by Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4fd6f91eb435feb41ae93e44485646ab}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_a4fd6f91eb435feb41ae93e44485646ab}} 
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!AssociateTextEdit@{AssociateTextEdit}}
 \index{AssociateTextEdit@{AssociateTextEdit}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{AssociateTextEdit()}{AssociateTextEdit()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Associate\+Text\+Edit (\begin{DoxyParamCaption}\item[{Q\+Text\+Edit $\ast$}]{edit }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Associate\+Text\+Edit (\begin{DoxyParamCaption}\item[{QText\+Edit $\ast$}]{edit }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -158,7 +158,7 @@ References m\+\_\+text\+\_\+page\+\_\+.
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!delete\_widgets\_in\_layout@{delete\_widgets\_in\_layout}}
 \index{delete\_widgets\_in\_layout@{delete\_widgets\_in\_layout}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{delete\_widgets\_in\_layout()}{delete\_widgets\_in\_layout()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::delete\+\_\+widgets\+\_\+in\+\_\+layout (\begin{DoxyParamCaption}\item[{Q\+Layout $\ast$}]{layout,  }\item[{int}]{start\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::delete\+\_\+widgets\+\_\+in\+\_\+layout (\begin{DoxyParamCaption}\item[{QLayout $\ast$}]{layout,  }\item[{int}]{start\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -177,7 +177,7 @@ Referenced by Reset\+Option\+Actions\+Menu().
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!ResetOptionActionsMenu@{ResetOptionActionsMenu}}
 \index{ResetOptionActionsMenu@{ResetOptionActionsMenu}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{ResetOptionActionsMenu()}{ResetOptionActionsMenu()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Reset\+Option\+Actions\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Reset\+Option\+Actions\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Delete All item in action\+Button\+Layout 
 
@@ -185,13 +185,13 @@ References delete\+\_\+widgets\+\_\+in\+\_\+layout().
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::show\+\_\+verify\+\_\+details(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign().
+Referenced by Gpg\+Frontend\+::\+UI\+::show\+\_\+verify\+\_\+details(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac936cfc8e1b3af65d0d71b74fb3f0b02}\label{classGpgFrontend_1_1UI_1_1InfoBoardWidget_ac936cfc8e1b3af65d0d71b74fb3f0b02}} 
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!SetInfoBoard@{SetInfoBoard}}
 \index{SetInfoBoard@{SetInfoBoard}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{SetInfoBoard()}{SetInfoBoard()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Set\+Info\+Board (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Status}}}]{verify\+\_\+label\+\_\+status }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Set\+Info\+Board (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Status}}}]{verify\+\_\+label\+\_\+status }\end{DoxyParamCaption})}
 
 Set the text and background-\/color of verify notification.
 
@@ -204,7 +204,7 @@ Set the text and background-\/color of verify notification.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+U\+I\+::\+Settings\+Object\+::\+Check().
+References Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check().
 
 
 
@@ -214,7 +214,7 @@ Referenced by Slot\+Refresh().
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!SlotRefresh@{SlotRefresh}}
 \index{SlotRefresh@{SlotRefresh}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{SlotRefresh}{SlotRefresh}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::\+Slot\+Refresh (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Slot\+Refresh (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 Refresh the contents of dialog. 
 
@@ -222,7 +222,7 @@ References Set\+Info\+Board().
 
 
 
-Referenced by Info\+Board\+Widget(), and Gpg\+Frontend\+::\+U\+I\+::refresh\+\_\+info\+\_\+board().
+Referenced by Info\+Board\+Widget(), and Gpg\+Frontend\+::\+UI\+::refresh\+\_\+info\+\_\+board().
 
 
 
@@ -231,7 +231,7 @@ Referenced by Info\+Board\+Widget(), and Gpg\+Frontend\+::\+U\+I\+::refresh\+\_\
 \index{GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}!m\_text\_page\_@{m\_text\_page\_}}
 \index{m\_text\_page\_@{m\_text\_page\_}!GpgFrontend::UI::InfoBoardWidget@{GpgFrontend::UI::InfoBoardWidget}}
 \doxysubsubsection{\texorpdfstring{m\_text\_page\_}{m\_text\_page\_}}
-{\footnotesize\ttfamily Q\+Text\+Edit$\ast$ Gpg\+Frontend\+::\+U\+I\+::\+Info\+Board\+Widget\+::m\+\_\+text\+\_\+page\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily QText\+Edit$\ast$ Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::m\+\_\+text\+\_\+page\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}

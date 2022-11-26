@@ -23,11 +23,13 @@ Collaboration diagram for Gpg\+Frontend\+::Global\+Setting\+Station\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_abdc6dda369d4214e43ffa2930f7386b0}\label{classGpgFrontend_1_1GlobalSettingStation_abdc6dda369d4214e43ffa2930f7386b0}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_abdc6dda369d4214e43ffa2930f7386b0}{Global\+Setting\+Station}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()) noexcept
 \begin{DoxyCompactList}\small\item\em Construct a new Global Setting Station object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}\label{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}{$\sim$\+Global\+Setting\+Station}} () noexcept override
 \begin{DoxyCompactList}\small\item\em Destroy the Global Setting Station object. \end{DoxyCompactList}\item 
-libconfig\+::\+Setting \& \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a14433405831283cd95091d741614d03b}{Get\+U\+I\+Settings}} () noexcept
+libconfig\+::\+Setting \& \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a14433405831283cd95091d741614d03b}{Get\+UISettings}} () noexcept
 \item 
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ae9d1da3d01c4a834120968636596c3c3}{Get\+App\+Dir}} () const
 \begin{DoxyCompactList}\small\item\em Get the App Dir object. \end{DoxyCompactList}\item 
@@ -84,33 +86,6 @@ libconfig\+::\+Config \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_
 \doxysubsection*{Additional Inherited Members}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_abdc6dda369d4214e43ffa2930f7386b0}\label{classGpgFrontend_1_1GlobalSettingStation_abdc6dda369d4214e43ffa2930f7386b0}} 
-\index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GlobalSettingStation@{GlobalSettingStation}}
-\index{GlobalSettingStation@{GlobalSettingStation}!GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}}
-\doxysubsubsection{\texorpdfstring{GlobalSettingStation()}{GlobalSettingStation()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Global\+Setting\+Station (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
-
-
-
-Construct a new Global Setting Station object. 
-
-
-
-References app\+\_\+configure\+\_\+path\+\_\+, app\+\_\+data\+\_\+path\+\_\+, app\+\_\+locale\+\_\+path\+\_\+, app\+\_\+log\+\_\+path\+\_\+, app\+\_\+path\+\_\+, ui\+\_\+cfg\+\_\+, ui\+\_\+config\+\_\+dir\+\_\+path\+\_\+, and ui\+\_\+config\+\_\+path\+\_\+.
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}\label{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}} 
-\index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!````~GlobalSettingStation@{$\sim$GlobalSettingStation}}
-\index{````~GlobalSettingStation@{$\sim$GlobalSettingStation}!GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}}
-\doxysubsubsection{\texorpdfstring{$\sim$GlobalSettingStation()}{~GlobalSettingStation()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Global\+Setting\+Station\+::$\sim$\+Global\+Setting\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
-
-
-
-Destroy the Global Setting Station object. 
-
-
-
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_ae9d1da3d01c4a834120968636596c3c3}\label{classGpgFrontend_1_1GlobalSettingStation_ae9d1da3d01c4a834120968636596c3c3}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetAppDir@{GetAppDir}}
@@ -153,7 +128,7 @@ std\+::filesystem\+::path
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::init\+\_\+locale(), and Gpg\+Frontend\+::\+U\+I\+::\+Settings\+Dialog\+::\+List\+Languages().
+Referenced by Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), and Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a7da9b08291ef2391892f5c9375b8db23}\label{classGpgFrontend_1_1GlobalSettingStation_a7da9b08291ef2391892f5c9375b8db23}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetLogDir@{GetLogDir}}
@@ -170,7 +145,7 @@ std\+::filesystem\+::path
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::init\+\_\+logging\+\_\+system(), and Gpg\+Frontend\+::\+Init\+Logging\+System().
+Referenced by Gpg\+Frontend\+::\+Init\+Logging\+System().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_afc1aa3dec55ae4e741f92fce1140a2d0}\label{classGpgFrontend_1_1GlobalSettingStation_afc1aa3dec55ae4e741f92fce1140a2d0}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetResourceDir@{GetResourceDir}}
@@ -187,7 +162,7 @@ std\+::filesystem\+::path
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Init\+Gpg\+Frontend\+U\+I(), and Gpg\+Frontend\+::\+U\+I\+::\+Translators\+Tab\+::\+Translators\+Tab().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Translators\+Tab\+::\+Translators\+Tab().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_af484ca46c5df831a9dd76f3a88d66332}\label{classGpgFrontend_1_1GlobalSettingStation_af484ca46c5df831a9dd76f3a88d66332}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetStandaloneDatabaseDir@{GetStandaloneDatabaseDir}}
@@ -219,14 +194,14 @@ std\+::filesystem\+::path
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetUISettings@{GetUISettings}}
 \index{GetUISettings@{GetUISettings}!GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}}
 \doxysubsubsection{\texorpdfstring{GetUISettings()}{GetUISettings()}}
-{\footnotesize\ttfamily libconfig\+::\+Setting\& Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily libconfig\+::\+Setting\& Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 \begin{DoxyReturn}{Returns}
 libconfig\+::\+Setting\& 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Init(), Gpg\+Frontend\+::\+U\+I\+::init\+\_\+locale(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::restore\+\_\+settings(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::save\+\_\+settings(), Gpg\+Frontend\+::\+U\+I\+::\+Network\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+U\+I\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server(), Gpg\+Frontend\+::\+U\+I\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), and Gpg\+Frontend\+::\+U\+I\+::\+Wizard\+::\+Wizard().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), and Gpg\+Frontend\+::\+UI\+::\+Wizard\+::\+Wizard().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}\label{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!SyncSettings@{SyncSettings}}
@@ -242,23 +217,23 @@ Copyright (C) 2021 Saturneric
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 References ui\+\_\+cfg\+\_\+, and ui\+\_\+config\+\_\+path\+\_\+.
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+U\+I\+::init\+\_\+locale(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::restore\+\_\+settings(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::save\+\_\+settings().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), and Gpg\+Frontend\+::\+UI\+::init\+\_\+locale().
 
 
 
@@ -293,7 +268,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"objs"}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}objs"{}}}
 
 \end{DoxyCode}
 
@@ -330,7 +305,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d94a126c78ac01ec01f10d2ce575388}{app\_resource\_path\_}} / \textcolor{stringliteral}{"locales"}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d94a126c78ac01ec01f10d2ce575388}{app\_resource\_path\_}} / \textcolor{stringliteral}{"{}locales"{}}}
 
 \end{DoxyCode}
 
@@ -350,7 +325,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"logs"}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}logs"{}}}
 
 \end{DoxyCode}
 
@@ -407,7 +382,7 @@ Program Data Location.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
 \DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a4d04bb665571921421b853f18b8b300a}{app\_configure\_path\_}} /}
-\DoxyCodeLine{      \textcolor{stringliteral}{"UserInterface"}}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}UserInterface"{}}}
 
 \end{DoxyCode}
 
@@ -427,7 +402,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ab618fef68cfd4ff6e42d4a4aa8ea94bb}{ui\_config\_dir\_path\_}} / \textcolor{stringliteral}{"ui.cfg"}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ab618fef68cfd4ff6e42d4a4aa8ea94bb}{ui\_config\_dir\_path\_}} / \textcolor{stringliteral}{"{}ui.cfg"{}}}
 
 \end{DoxyCode}
 
