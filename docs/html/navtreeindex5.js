@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1MainWindow.html#af77f66b6b869f6ddb3d2caa3bc40bb09":[2,0,0,1,39,57],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#af93d72eaf58326f1f9e926752c6b1fc6":[2,0,0,1,39,20],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#af9640e5732c2595d0c094e7ff7e371ac":[2,0,0,1,39,94],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#afab1e0363a4b97ff68228cd4bd7cbc62":[2,0,0,1,39,89],
@@ -235,8 +236,8 @@ var NAVTREEINDEX5 =
 "dir_fc6c58bf49530122ab17df13a9869378.html":[3,0,0,0,1,2],
 "dir_fd71accbf528c1576ca21e7ec5716833.html":[3,0,0,0,3],
 "files.html":[3,0],
-"functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
+"functions.html":[2,3,0],
 "functions_a.html":[2,3,0,1],
 "functions_b.html":[2,3,0,2],
 "functions_c.html":[2,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "functions_func_c.html":[2,3,1,1],
 "functions_func_d.html":[2,3,1,2],
 "functions_func_e.html":[2,3,1,3],
-"functions_func_f.html":[2,3,1,4],
-"functions_func_g.html":[2,3,1,5]
+"functions_func_f.html":[2,3,1,4]
 };
