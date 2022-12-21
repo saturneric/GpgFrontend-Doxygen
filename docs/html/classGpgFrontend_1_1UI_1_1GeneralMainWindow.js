@@ -2,7 +2,7 @@ var classGpgFrontend_1_1UI_1_1GeneralMainWindow =
 [
     [ "GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a62b24183ebf9da18852084879bcb1013", null ],
     [ "~GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a60f3fab73cb82114b17b10d6ac2f3b1a", null ],
-    [ "closeEvent", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#acc10569862d1575d9453d1c1aa539242", null ],
+    [ "closeEvent", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#af5c86754836a678c7058e6f633968863", null ],
     [ "slot_restore_settings", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a42d1bc5a70f0e81cb49c88eb23544255", null ],
     [ "slot_save_settings", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a8ddf641e1266d00cb876ddf786e5ccb8", null ],
     [ "font_size_", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#ab0dd85f0fcbbab2f15eee995458d2dfb", null ],

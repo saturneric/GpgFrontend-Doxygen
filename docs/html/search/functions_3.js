@@ -8,7 +8,7 @@ var searchData=
   ['check_5fgpg_5ferror_5f2_5ferr_5fcode_846',['check_gpg_error_2_err_code',['../namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684',1,'GpgFrontend']]],
   ['choosepage_847',['ChoosePage',['../classGpgFrontend_1_1UI_1_1ChoosePage.html#ae370e789009be3926410cb749c86907b',1,'GpgFrontend::UI::ChoosePage']]],
   ['close_5fattachment_5fdock_848',['close_attachment_dock',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a473b679fa0dc3cdf4f6f98d6553fa0ec',1,'GpgFrontend::UI::MainWindow']]],
-  ['closeevent_849',['closeEvent',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a1759412cb7ee71600c4b6e3c6e752d2e',1,'GpgFrontend::UI::MainWindow::closeEvent()'],['../classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#acc10569862d1575d9453d1c1aa539242',1,'GpgFrontend::UI::GeneralMainWindow::closeEvent()']]],
+  ['closeevent_849',['closeEvent',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a1759412cb7ee71600c4b6e3c6e752d2e',1,'GpgFrontend::UI::MainWindow::closeEvent()'],['../classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#af5c86754836a678c7058e6f633968863',1,'GpgFrontend::UI::GeneralMainWindow::closeEvent()']]],
   ['closenotebyclass_850',['CloseNoteByClass',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#aee4f46e54f29da671838ed232e526700',1,'GpgFrontend::UI::PlainTextEditorPage']]],
   ['commonutils_851',['CommonUtils',['../classGpgFrontend_1_1UI_1_1CommonUtils.html#a78f5c2696152e9326e845c76c94be965',1,'GpgFrontend::UI::CommonUtils']]],
   ['conclusionpage_852',['ConclusionPage',['../classGpgFrontend_1_1UI_1_1ConclusionPage.html#afcd98b4735047807d384e6b3d3aea3a7',1,'GpgFrontend::UI::ConclusionPage']]],

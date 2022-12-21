@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1MainWindow.html#af763a506aed7d0fb2125d1859583b853":[2,0,0,1,39,105],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#af77f66b6b869f6ddb3d2caa3bc40bb09":[2,0,0,1,39,57],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#af93d72eaf58326f1f9e926752c6b1fc6":[2,0,0,1,39,20],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#af9640e5732c2595d0c094e7ff7e371ac":[2,0,0,1,39,94],
@@ -244,10 +245,9 @@ var NAVTREEINDEX5 =
 "functions_d.html":[2,3,0,4],
 "functions_e.html":[2,3,0,5],
 "functions_f.html":[2,3,0,6],
-"functions_func.html":[2,3,1],
 "functions_func.html":[2,3,1,0],
+"functions_func.html":[2,3,1],
 "functions_func_c.html":[2,3,1,1],
 "functions_func_d.html":[2,3,1,2],
-"functions_func_e.html":[2,3,1,3],
-"functions_func_f.html":[2,3,1,4]
+"functions_func_e.html":[2,3,1,3]
 };

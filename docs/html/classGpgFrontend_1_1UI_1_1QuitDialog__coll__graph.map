@@ -1,7 +1,7 @@
 <map id="GpgFrontend::UI::QuitDialog" name="GpgFrontend::UI::QuitDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="25,545,229,681"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,287,248,496"/>
-<area shape="rect" id="node3" title=" " alt="" coords="68,147,143,224"/>
-<area shape="rect" id="node4" title=" " alt="" coords="167,147,254,224"/>
-<area shape="rect" id="node5" title=" " alt="" coords="141,5,280,97"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,487,209,623"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="14,287,201,437"/>
+<area shape="rect" id="node3" title=" " alt="" coords="49,147,123,224"/>
+<area shape="rect" id="node4" title=" " alt="" coords="148,147,235,224"/>
+<area shape="rect" id="node5" title=" " alt="" coords="122,5,261,97"/>
 </map>

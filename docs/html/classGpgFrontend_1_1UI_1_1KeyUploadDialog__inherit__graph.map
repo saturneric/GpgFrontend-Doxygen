@@ -1,5 +1,5 @@
 <map id="GpgFrontend::UI::KeyUploadDialog" name="GpgFrontend::UI::KeyUploadDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="24,403,229,568"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,131,248,355"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,5,164,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,344,211,509"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="15,131,201,296"/>
+<area shape="rect" id="node3" title=" " alt="" coords="71,5,145,83"/>
 </map>

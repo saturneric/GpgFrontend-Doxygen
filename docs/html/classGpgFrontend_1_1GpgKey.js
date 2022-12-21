@@ -42,6 +42,5 @@ var classGpgFrontend_1_1GpgKey =
     [ "operator=", "classGpgFrontend_1_1GpgKey.html#a6b243df2320999ebcdaf9645531b925a", null ],
     [ "operator=", "classGpgFrontend_1_1GpgKey.html#ae58bc1fdcefaaf646f6b8740cb69eef6", null ],
     [ "operator==", "classGpgFrontend_1_1GpgKey.html#a4f50b2f13b3a5dc7298ee9665e7a5367", null ],
-    [ "gpgme_key_opera_mutex", "classGpgFrontend_1_1GpgKey.html#ad1784bcc872f42b87e48bcfa40dab4cd", null ],
     [ "key_ref_", "classGpgFrontend_1_1GpgKey.html#aec4e7e1845073f23cf55dc660c69c44a", null ]
 ];
