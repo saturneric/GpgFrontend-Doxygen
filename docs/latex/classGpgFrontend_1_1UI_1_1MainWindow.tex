@@ -45,7 +45,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a25a2e4017d77cffc8362
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ab23c7e67dd1f5295b3c49ad79dfd5919}{Slot\+File\+Decrypt\+Verify}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ab1fb798caf43dd067beca5285444d47d}{Slot\+Set\+Restart\+Needed}} (bool needed)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}{Slot\+Set\+Restart\+Needed}} (int)
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -133,8 +133,8 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a210ab31f4d949a50507d
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a7a4b6490038470a8849231e48282da98}{save\+\_\+settings}} ()
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a7fdaae01c50d540ecd8672091cdfbcc0}\label{classGpgFrontend_1_1UI_1_1MainWindow_a7fdaae01c50d540ecd8672091cdfbcc0}} 
-bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a7fdaae01c50d540ecd8672091cdfbcc0}{get\+\_\+restart\+\_\+needed}} () const
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}} 
+int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}{get\+\_\+restart\+\_\+needed}} () const
 \begin{DoxyCompactList}\small\item\em return true, if restart is needed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -332,8 +332,8 @@ QLabel $\ast$ {\bfseries status\+\_\+bar\+\_\+icon\+\_\+} \{\}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_aad0c8d50952f4592eac7b7221b5d1ec5}\label{classGpgFrontend_1_1UI_1_1MainWindow_aad0c8d50952f4592eac7b7221b5d1ec5}} 
 bool {\bfseries attachment\+\_\+dock\+\_\+created\+\_\+} \{\}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a68ab283b12d2a5400dc90555772c44ab}\label{classGpgFrontend_1_1UI_1_1MainWindow_a68ab283b12d2a5400dc90555772c44ab}} 
-bool {\bfseries restart\+\_\+needed\+\_\+} \{\}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5806e6f5e740e6aa311e0fa5f064302a}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5806e6f5e740e6aa311e0fa5f064302a}} 
+int {\bfseries restart\+\_\+needed\+\_\+} \{0\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a24e58eb0b84709ea665db95e54da865b}\label{classGpgFrontend_1_1UI_1_1MainWindow_a24e58eb0b84709ea665db95e54da865b}} 
 bool {\bfseries prohibit\+\_\+update\+\_\+checking\+\_\+} = false
@@ -818,11 +818,11 @@ Open a new tab for path
 
 References edit\+\_\+, and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Open\+File().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ab1fb798caf43dd067beca5285444d47d}\label{classGpgFrontend_1_1UI_1_1MainWindow_ab1fb798caf43dd067beca5285444d47d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}\label{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotSetRestartNeeded@{SlotSetRestartNeeded}}
 \index{SlotSetRestartNeeded@{SlotSetRestartNeeded}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{SlotSetRestartNeeded}{SlotSetRestartNeeded}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed (\begin{DoxyParamCaption}\item[{bool}]{needed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 get value of member restart\+Needed to needed. 
 \begin{DoxyParams}{Parameters}

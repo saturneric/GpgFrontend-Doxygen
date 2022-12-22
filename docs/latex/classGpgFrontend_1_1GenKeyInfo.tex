@@ -33,7 +33,7 @@ std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba3
 \begin{DoxyCompactList}\small\item\em Get the Comment object. \end{DoxyCompactList}\item 
 const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}{Get\+Algo}} () const
 \begin{DoxyCompactList}\small\item\em Get the Algo object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}{Set\+Algo}} (const std\+::string \&m\+\_\+algo)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}{Set\+Algo}} (const Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo \&m\+\_\+algo)
 \begin{DoxyCompactList}\small\item\em Set the Algo object. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a0bda4b4161d805582869ec0e56ade07c}{Get\+Key\+Size\+Str}} () const
 \begin{DoxyCompactList}\small\item\em Get the Key Size Str object. \end{DoxyCompactList}\item 
@@ -94,14 +94,20 @@ int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac211a7a615805ae97ff284b46ab
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}{Get\+Supported\+Key\+Algo}} ()
+static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}{Get\+Supported\+Key\+Algo}} ()
 \begin{DoxyCompactList}\small\item\em Get the Supported Key Algo object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}{Get\+Supported\+Subkey\+Algo}} ()
+static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}{Get\+Supported\+Subkey\+Algo}} ()
 \begin{DoxyCompactList}\small\item\em Get the Supported Subkey Algo object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}{Get\+Supported\+Key\+Algo\+Standalone}} ()
+static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}{Get\+Supported\+Key\+Algo\+Standalone}} ()
 \begin{DoxyCompactList}\small\item\em Get the Supported Key Algo Standalone object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}{Get\+Supported\+Subkey\+Algo\+Standalone}} ()
+static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}{Get\+Supported\+Subkey\+Algo\+Standalone}} ()
 \begin{DoxyCompactList}\small\item\em Get the Supported Subkey Algo Standalone object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7eda73ff0625a635f041365c21531c60}\label{classGpgFrontend_1_1GenKeyInfo_a7eda73ff0625a635f041365c21531c60}} 
+using {\bfseries Key\+Gen\+Algo} = std\+::pair$<$ std\+::string, std\+::string $>$
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -201,7 +207,7 @@ Construct a new Gen Key Info object.
 \end{DoxyParams}
 
 
-References Set\+Algo().
+References Get\+Supported\+Key\+Algo(), and Set\+Algo().
 
 
 
@@ -349,11 +355,11 @@ Get the Suggest Min Key Size object.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}\label{classGpgFrontend_1_1GenKeyInfo_a185c7be801854f81879351a6c4dd9071}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}\label{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedKeyAlgo@{GetSupportedKeyAlgo}}
 \index{GetSupportedKeyAlgo@{GetSupportedKeyAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedKeyAlgo()}{GetSupportedKeyAlgo()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -364,13 +370,13 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), and Set\+Algo().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), Gen\+Key\+Info(), and Set\+Algo().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}\label{classGpgFrontend_1_1GenKeyInfo_a8b054a66cb0678af6c42090eea1518e4}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}\label{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedKeyAlgoStandalone@{GetSupportedKeyAlgoStandalone}}
 \index{GetSupportedKeyAlgoStandalone@{GetSupportedKeyAlgoStandalone}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedKeyAlgoStandalone()}{GetSupportedKeyAlgoStandalone()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -383,11 +389,11 @@ const std\+::vector$<$std\+::string$>$\&
 
 Referenced by Set\+Algo().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}\label{classGpgFrontend_1_1GenKeyInfo_a7855d9fe9b6872ff08a60fe21640d07f}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}\label{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgo@{GetSupportedSubkeyAlgo}}
 \index{GetSupportedSubkeyAlgo@{GetSupportedSubkeyAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedSubkeyAlgo()}{GetSupportedSubkeyAlgo()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -398,13 +404,13 @@ const std\+::vector$<$std\+::string$>$\&
 \end{DoxyReturn}
 
 
-Referenced by Set\+Algo().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), and Set\+Algo().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}\label{classGpgFrontend_1_1GenKeyInfo_a310fd0cdac03d0b0a7fde006105866d6}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}\label{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgoStandalone@{GetSupportedSubkeyAlgoStandalone}}
 \index{GetSupportedSubkeyAlgoStandalone@{GetSupportedSubkeyAlgoStandalone}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedSubkeyAlgoStandalone()}{GetSupportedSubkeyAlgoStandalone()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -562,11 +568,11 @@ true
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}\label{classGpgFrontend_1_1GenKeyInfo_a378ea10385ab401bea45a7edb3df122d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}\label{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAlgo@{SetAlgo}}
 \index{SetAlgo@{SetAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetAlgo()}{SetAlgo()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Algo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m\+\_\+algo }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Algo (\begin{DoxyParamCaption}\item[{const Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo \&}]{m\+\_\+algo }\end{DoxyParamCaption})}
 
 
 
@@ -592,8 +598,6 @@ All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} wa
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later RSA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. Gnu\+PG supports RSA with key sizes of between 1024 and 4096 bits.
 
 Algorithm (DSA) as a government standard for digital signatures. Originally, it supported key lengths between 512 and 1024 bits. Recently, NIST has declared 512-\/bit keys obsolete\+: now, DSA is available in 1024, 2048 and 3072-\/bit lengths.
-
-Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
 
 Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
 

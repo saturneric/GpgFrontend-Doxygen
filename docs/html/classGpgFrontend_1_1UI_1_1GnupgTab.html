@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1UI_1_1GnupgTab.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1UI_1_1GnupgTab-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GpgFrontend::UI::GnupgTab Class Reference</div>  </div>
@@ -94,7 +96,7 @@ Inheritance diagram for GpgFrontend::UI::GnupgTab:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1GnupgTab__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1GnupgTab_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1GnupgTab_inherit__map" id="aGpgFrontend_1_1UI_1_1GnupgTab_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,204,208"/>
+<area shape="rect" title=" " alt="" coords="5,131,204,252"/>
 <area shape="rect" title=" " alt="" coords="65,5,144,83"/>
 </map>
 </div>
@@ -103,8 +105,11 @@ Collaboration diagram for GpgFrontend::UI::GnupgTab:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1GnupgTab__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1GnupgTab_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1GnupgTab_coll__map" id="aGpgFrontend_1_1UI_1_1GnupgTab_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,204,208"/>
-<area shape="rect" title=" " alt="" coords="65,5,144,83"/>
+<area shape="rect" title=" " alt="" coords="5,440,204,547"/>
+<area shape="rect" title=" " alt="" coords="20,293,99,370"/>
+<area shape="rect" title=" " alt="" coords="123,285,271,377"/>
+<area shape="rect" title=" " alt="" coords="118,145,275,223"/>
+<area shape="rect" title=" " alt="" coords="177,5,216,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -113,6 +118,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9d9e8af4494659f13b87804e7318a79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">GnupgTab</a> (QWidget *parent=nullptr)</td></tr>
 <tr class="memdesc:ab9d9e8af4494659f13b87804e7318a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Info Tab object.  <a href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">More...</a><br /></td></tr>
 <tr class="separator:ab9d9e8af4494659f13b87804e7318a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:aa721fabc3ca35bb6b41e351732fe1081"><td class="memItemLeft" align="right" valign="top"><a id="aa721fabc3ca35bb6b41e351732fe1081"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_components_info</b> (int, QProcess::ExitStatus)</td></tr>
+<tr class="separator:aa721fabc3ca35bb6b41e351732fe1081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afd915ad09684b960ec63e28753f833e9"><td class="memItemLeft" align="right" valign="top"><a id="afd915ad09684b960ec63e28753f833e9"></a>
+std::shared_ptr&lt; Ui_GnuPGInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ui_</b></td></tr>
+<tr class="separator:afd915ad09684b960ec63e28753f833e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c103293e8cb053a829466cc77a0840"><td class="memItemLeft" align="right" valign="top"><a id="a31c103293e8cb053a829466cc77a0840"></a>
+QProcess *&#160;</td><td class="memItemRight" valign="bottom"><b>gpgconf_process_</b></td></tr>
+<tr class="separator:a31c103293e8cb053a829466cc77a0840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9d9e8af4494659f13b87804e7318a79"></a>

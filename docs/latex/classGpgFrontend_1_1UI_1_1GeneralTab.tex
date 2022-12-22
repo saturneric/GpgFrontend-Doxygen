@@ -24,6 +24,8 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::General\+Tab\+:
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}{Signal\+Restart\+Needed}} (bool needed)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}{Signal\+Deep\+Restart\+Needed}} (bool needed)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -68,11 +70,26 @@ Construct a new General Tab object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages(), and Set\+Settings().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings(), and Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages().
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}\label{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}} 
+\index{GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}!SignalDeepRestartNeeded@{SignalDeepRestartNeeded}}
+\index{SignalDeepRestartNeeded@{SignalDeepRestartNeeded}!GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}}
+\doxysubsubsection{\texorpdfstring{SignalDeepRestartNeeded}{SignalDeepRestartNeeded}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed (\begin{DoxyParamCaption}\item[{bool}]{needed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em needed} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}\label{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}} 
 \index{GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}!SignalRestartNeeded@{SignalRestartNeeded}}
 \index{SignalRestartNeeded@{SignalRestartNeeded}!GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}}

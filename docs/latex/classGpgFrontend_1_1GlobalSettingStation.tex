@@ -79,7 +79,7 @@ std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStat
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ab618fef68cfd4ff6e42d4a4aa8ea94bb}{ui\+\_\+config\+\_\+dir\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Configure File Directory Location. \end{DoxyCompactList}\item 
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_afa99ddc25c0d5fd59a4c5f0e61d13830}{ui\+\_\+config\+\_\+path\+\_\+}}
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} Configure File Location. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Main Configure File Location. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a1818e08063d6a886975f77354fc5d85c}\label{classGpgFrontend_1_1GlobalSettingStation_a1818e08063d6a886975f77354fc5d85c}} 
 libconfig\+::\+Config \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1818e08063d6a886975f77354fc5d85c}{ui\+\_\+cfg\+\_\+}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} Configure File. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -201,7 +201,7 @@ libconfig\+::\+Setting\&
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Key\+Upload\+Dialog\+::slot\+\_\+upload\+\_\+key\+\_\+to\+\_\+server(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), and Gpg\+Frontend\+::\+UI\+::\+Wizard\+::\+Wizard().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+General\+Tab(), Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), and Gpg\+Frontend\+::\+UI\+::\+Wizard\+::\+Wizard().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}\label{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!SyncSettings@{SyncSettings}}
@@ -381,8 +381,7 @@ Program Data Location.
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a4d04bb665571921421b853f18b8b300a}{app\_configure\_path\_}} /}
-\DoxyCodeLine{      \textcolor{stringliteral}{"{}UserInterface"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a4d04bb665571921421b853f18b8b300a}{app\_configure\_path\_}} / \textcolor{stringliteral}{"{}conf"{}}}
 
 \end{DoxyCode}
 
@@ -402,12 +401,12 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ab618fef68cfd4ff6e42d4a4aa8ea94bb}{ui\_config\_dir\_path\_}} / \textcolor{stringliteral}{"{}ui.cfg"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ab618fef68cfd4ff6e42d4a4aa8ea94bb}{ui\_config\_dir\_path\_}} / \textcolor{stringliteral}{"{}main.cfg"{}}}
 
 \end{DoxyCode}
 
 
-\mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} Configure File Location. 
+Main Configure File Location. 
 
 
 

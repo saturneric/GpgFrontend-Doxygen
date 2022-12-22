@@ -123,19 +123,25 @@ $(document).ready(function(){initNavTree('GnupgTab_8h_source.html',''); initResi
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnupgTab.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1GnupgTab.html">GnupgTab</a>: <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">GnupgTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GNUPGTAB_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnupgTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnupgTab.html">GpgFrontend::UI::GnupgTab</a></div><div class="ttdef"><b>Definition:</b> GnupgTab.h:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnupgTab_html_ab9d9e8af4494659f13b87804e7318a79"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">GpgFrontend::UI::GnupgTab::GnupgTab</a></div><div class="ttdeci">GnupgTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Info Tab object.</div><div class="ttdef"><b>Definition:</b> GnupgTab.cpp:34</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Ui_GnuPGInfo;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnupgTab.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1GnupgTab.html">GnupgTab</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">GnupgTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::shared_ptr&lt;Ui_GnuPGInfo&gt; ui_;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  QProcess* gpgconf_process_;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> process_components_info(<span class="keywordtype">int</span>, QProcess::ExitStatus);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GNUPGTAB_H</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnupgTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnupgTab.html">GpgFrontend::UI::GnupgTab</a></div><div class="ttdef"><b>Definition:</b> GnupgTab.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnupgTab_html_ab9d9e8af4494659f13b87804e7318a79"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnupgTab.html#ab9d9e8af4494659f13b87804e7318a79">GpgFrontend::UI::GnupgTab::GnupgTab</a></div><div class="ttdeci">GnupgTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Info Tab object.</div><div class="ttdef"><b>Definition:</b> GnupgTab.cpp:37</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
