@@ -33,7 +33,7 @@ void {\bfseries Slot\+Export\+Key\+To\+Key\+Package} ()
 void {\bfseries Slot\+Export\+Key\+To\+Clipboard} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b4b2f521362d8e24a9875d51b0f877c}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b4b2f521362d8e24a9875d51b0f877c}} 
-void {\bfseries Slot\+Export\+As\+Open\+S\+S\+H\+Format} ()
+void {\bfseries Slot\+Export\+As\+Open\+SSHFormat} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_aca369a078ec127d150a466d9b2b219c2}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_aca369a078ec127d150a466d9b2b219c2}} 
 void {\bfseries Slot\+Delete\+Selected\+Keys} ()
@@ -54,7 +54,7 @@ void {\bfseries Slot\+Import\+Key\+Package} ()
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a2166d56c56ad66fd415d6628cfffd9b7}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a2166d56c56ad66fd415d6628cfffd9b7}} 
-void {\bfseries Signal\+Status\+Bar\+Changed} (Q\+String)
+void {\bfseries Signal\+Status\+Bar\+Changed} (QString)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a137117a6c303eaf7bdca7a11edcc178c}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a137117a6c303eaf7bdca7a11edcc178c}} 
 void {\bfseries Signal\+Key\+Status\+Updated} ()
@@ -62,15 +62,18 @@ void {\bfseries Signal\+Key\+Status\+Updated} ()
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Key\+Mgmt}} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_aefc27b57830cf14a85c2225664f89f64}{Key\+Mgmt}} (QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Key Mgmt object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}{create\+\_\+menus}} ()
 \begin{DoxyCompactList}\small\item\em Create a menus object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}{create\+\_\+actions}} ()
 \begin{DoxyCompactList}\small\item\em Create a actions object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}{create\+\_\+tool\+\_\+bars}} ()
 \begin{DoxyCompactList}\small\item\em Create a tool bars object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b139ae0d4baa234932cf228e94abd6b}{delete\+\_\+keys\+\_\+with\+\_\+warning}} (Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr uid\+List)
@@ -82,61 +85,61 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b139ae0d4baa234932cf22
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList}{Key\+List}} $\ast$ {\bfseries key\+\_\+list\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a75e6e38da08275188c7a78fb57fa6641}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a75e6e38da08275188c7a78fb57fa6641}} 
-Q\+Menu $\ast$ {\bfseries file\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries file\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_adff3b71d088f4a13ef3d032b3c0ecebc}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_adff3b71d088f4a13ef3d032b3c0ecebc}} 
-Q\+Menu $\ast$ {\bfseries key\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries key\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a1d5091c7be671b5c0446b52bef3eeb48}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a1d5091c7be671b5c0446b52bef3eeb48}} 
-Q\+Menu $\ast$ {\bfseries generate\+\_\+key\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries generate\+\_\+key\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_ae41fbcbbf621133fb7655e566f36768b}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_ae41fbcbbf621133fb7655e566f36768b}} 
-Q\+Menu $\ast$ {\bfseries import\+\_\+key\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries import\+\_\+key\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a876e257c8d8bb7e47ceb70e1da4f9da7}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a876e257c8d8bb7e47ceb70e1da4f9da7}} 
-Q\+Action $\ast$ {\bfseries open\+\_\+key\+\_\+file\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries open\+\_\+key\+\_\+file\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_abf0f05743185c40b3cd0936ddccf8f9d}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_abf0f05743185c40b3cd0936ddccf8f9d}} 
-Q\+Action $\ast$ {\bfseries export\+\_\+key\+\_\+to\+\_\+file\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries export\+\_\+key\+\_\+to\+\_\+file\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_afa24ed000e0833c2cb8f7fea1111299c}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_afa24ed000e0833c2cb8f7fea1111299c}} 
-Q\+Action $\ast$ {\bfseries export\+\_\+key\+\_\+as\+\_\+open\+\_\+ssh\+\_\+format\+\_\+} \{\}
+QAction $\ast$ {\bfseries export\+\_\+key\+\_\+as\+\_\+open\+\_\+ssh\+\_\+format\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a2bcdba46a4ace5bb9dd742759a00f4e3}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a2bcdba46a4ace5bb9dd742759a00f4e3}} 
-Q\+Action $\ast$ {\bfseries export\+\_\+key\+\_\+to\+\_\+clipboard\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries export\+\_\+key\+\_\+to\+\_\+clipboard\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_ac06a816b6898b4d3e0c7a74bc7b4f4be}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_ac06a816b6898b4d3e0c7a74bc7b4f4be}} 
-Q\+Action $\ast$ {\bfseries delete\+\_\+checked\+\_\+keys\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries delete\+\_\+checked\+\_\+keys\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a0380d65d9d12fb2b9d66c212287b8b92}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a0380d65d9d12fb2b9d66c212287b8b92}} 
-Q\+Action $\ast$ {\bfseries delete\+\_\+selected\+\_\+keys\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries delete\+\_\+selected\+\_\+keys\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_ac6b43abecc2477164e4947759fc97237}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_ac6b43abecc2477164e4947759fc97237}} 
-Q\+Action $\ast$ {\bfseries generate\+\_\+key\+\_\+dialog\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries generate\+\_\+key\+\_\+dialog\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a0eae43c328a32aedfa4a5a55cf328966}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a0eae43c328a32aedfa4a5a55cf328966}} 
-Q\+Action $\ast$ {\bfseries generate\+\_\+key\+\_\+pair\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries generate\+\_\+key\+\_\+pair\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a33e88ef94386833575afede7a7ff144a}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a33e88ef94386833575afede7a7ff144a}} 
-Q\+Action $\ast$ {\bfseries generate\+\_\+subkey\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries generate\+\_\+subkey\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a00fdf40c55943c8542eaebab041f02b8}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a00fdf40c55943c8542eaebab041f02b8}} 
-Q\+Action $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+clipboard\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+clipboard\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_acadb7692e422ca8efac192604d875457}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_acadb7692e422ca8efac192604d875457}} 
-Q\+Action $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+file\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+file\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_acd9298492830efcbf7c77dfb6bd829e7}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_acd9298492830efcbf7c77dfb6bd829e7}} 
-Q\+Action $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+key\+\_\+server\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries import\+\_\+key\+\_\+from\+\_\+key\+\_\+server\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_ad8f69aa0d0564245a9924a7cf7ed0c3d}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_ad8f69aa0d0564245a9924a7cf7ed0c3d}} 
-Q\+Action $\ast$ {\bfseries import\+\_\+keys\+\_\+from\+\_\+key\+\_\+package\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries import\+\_\+keys\+\_\+from\+\_\+key\+\_\+package\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_ab3698ef93ee48a949915f205452f8743}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_ab3698ef93ee48a949915f205452f8743}} 
-Q\+Action $\ast$ {\bfseries close\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries close\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a6266d640cb37c14fbe2c96bdb9c15935}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a6266d640cb37c14fbe2c96bdb9c15935}} 
-Q\+Action $\ast$ {\bfseries show\+\_\+key\+\_\+details\+\_\+act\+\_\+} \{\}
+QAction $\ast$ {\bfseries show\+\_\+key\+\_\+details\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a08ce0587e28ac312273fdb0988f63bbe}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a08ce0587e28ac312273fdb0988f63bbe}} 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportDialog}{Key\+Server\+Import\+Dialog}} $\ast$ {\bfseries import\+\_\+dialog\+\_\+} \{\}
@@ -149,7 +152,7 @@ Q\+Action $\ast$ {\bfseries show\+\_\+key\+\_\+details\+\_\+act\+\_\+} \{\}
 \index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!KeyMgmt@{KeyMgmt}}
 \index{KeyMgmt@{KeyMgmt}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
 \doxysubsubsection{\texorpdfstring{KeyMgmt()}{KeyMgmt()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -162,71 +165,25 @@ Construct a new Key Mgmt object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Add\+Menu\+Action(), create\+\_\+actions(), create\+\_\+menus(), create\+\_\+tool\+\_\+bars(), Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+List\+::\+Set\+Double\+Clicked\+Action(), and Gpg\+Frontend\+::\+U\+I\+::\+Signal\+Station\+::\+Signal\+Refresh\+Status\+Bar().
+References Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+Menu\+Action(), create\+\_\+actions(), create\+\_\+menus(), create\+\_\+tool\+\_\+bars(), Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked(), Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Double\+Clicked\+Action(), and Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Signal\+Refresh\+Status\+Bar().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a23cf6665537f2a96708e9d5423ce3bb8}} 
-\index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!create\_actions@{create\_actions}}
-\index{create\_actions@{create\_actions}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
-\doxysubsubsection{\texorpdfstring{create\_actions()}{create\_actions()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::create\+\_\+actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Create a actions object. 
-
-
-
-References Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Clipboard(), Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server().
-
-
-
-Referenced by Key\+Mgmt().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a6ee90b63414038e9f840933a5b2c5e46}} 
-\index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!create\_menus@{create\_menus}}
-\index{create\_menus@{create\_menus}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
-\doxysubsubsection{\texorpdfstring{create\_menus()}{create\_menus()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::create\+\_\+menus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Create a menus object. 
-
-
-
-Referenced by Key\+Mgmt().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a6791486fd94567d504d48050c23476b5}} 
-\index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!create\_tool\_bars@{create\_tool\_bars}}
-\index{create\_tool\_bars@{create\_tool\_bars}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
-\doxysubsubsection{\texorpdfstring{create\_tool\_bars()}{create\_tool\_bars()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::create\+\_\+tool\+\_\+bars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Create a tool bars object. 
-
-
-
-Referenced by Key\+Mgmt().
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b139ae0d4baa234932cf228e94abd6b}\label{classGpgFrontend_1_1UI_1_1KeyMgmt_a0b139ae0d4baa234932cf228e94abd6b}} 
 \index{GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}!delete\_keys\_with\_warning@{delete\_keys\_with\_warning}}
 \index{delete\_keys\_with\_warning@{delete\_keys\_with\_warning}!GpgFrontend::UI::KeyMgmt@{GpgFrontend::UI::KeyMgmt}}
 \doxysubsubsection{\texorpdfstring{delete\_keys\_with\_warning()}{delete\_keys\_with\_warning()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::delete\+\_\+keys\+\_\+with\+\_\+warning (\begin{DoxyParamCaption}\item[{Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr}]{uid\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::delete\+\_\+keys\+\_\+with\+\_\+warning (\begin{DoxyParamCaption}\item[{Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr}]{uid\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
 {\em uid\+List} & \\
 \hline
 \end{DoxyParams}
-T\+O\+DO\+: Different Messages for private/public key, check if more than one selected... compare to seahorse \char`\"{}delete-\/dialog\char`\"{}
+TODO\+: Different Messages for private/public key, check if more than one selected... compare to seahorse \char`\"{}delete-\/dialog\char`\"{}
 
-References Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key().
+References Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key().
 
 
 

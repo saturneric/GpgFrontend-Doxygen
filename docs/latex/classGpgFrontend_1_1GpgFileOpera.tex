@@ -28,17 +28,17 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+File\+Opera\+:
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}{Encrypt\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+H\+A\+N\+N\+EL)
+static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}{Encrypt\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
 \begin{DoxyCompactList}\small\item\em Encrypted file. \end{DoxyCompactList}\item 
-static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}{Encrypt\+File\+Symmetric}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+H\+A\+N\+N\+EL)
+static unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}{Encrypt\+File\+Symmetric}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
 \begin{DoxyCompactList}\small\item\em 运用对称加密算法加密文件 \end{DoxyCompactList}\item 
 static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}{Decrypt\+File}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Decr\+Result \&result)
 \item 
-static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}{Sign\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Sign\+Result \&result, int \+\_\+channel=G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+H\+A\+N\+N\+EL)
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}{Sign\+File}} (Key\+List\+Ptr keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Sign\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
 \item 
-static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}{Verify\+File}} (const std\+::string \&data\+\_\+path, const std\+::string \&sign\+\_\+path, Gpg\+Verify\+Result \&result, int \+\_\+channel=G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+H\+A\+N\+N\+EL)
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}{Verify\+File}} (const std\+::string \&data\+\_\+path, const std\+::string \&sign\+\_\+path, Gpg\+Verify\+Result \&result, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
 \item 
-static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}{Encrypt\+Sign\+File}} (Key\+List\+Ptr keys, Key\+List\+Ptr signer\+\_\+keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&encr\+\_\+res, Gpg\+Sign\+Result \&sign\+\_\+res, int \+\_\+channel=G\+P\+G\+F\+R\+O\+N\+T\+E\+N\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+H\+A\+N\+N\+EL)
+static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}{Encrypt\+Sign\+File}} (Key\+List\+Ptr keys, Key\+List\+Ptr signer\+\_\+keys, const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Encr\+Result \&encr\+\_\+res, Gpg\+Sign\+Result \&sign\+\_\+res, int \+\_\+channel=GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
 \item 
 static Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}{Decrypt\+Verify\+File}} (const std\+::string \&in\+\_\+path, const std\+::string \&out\+\_\+path, Gpg\+Decr\+Result \&decr\+\_\+res, Gpg\+Verify\+Result \&verify\+\_\+res)
 \end{DoxyCompactItemize}
@@ -56,17 +56,17 @@ Copyright (C) 2021 Saturneric
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}\label{classGpgFrontend_1_1GpgFileOpera_a74eb3ba532a236d8ad284b41265b0ccd}} 
@@ -93,7 +93,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}\label{classGpgFrontend_1_1GpgFileOpera_a90949b4e9e6116784260cd0e416551db}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!DecryptVerifyFile@{DecryptVerifyFile}}
@@ -121,7 +121,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}\label{classGpgFrontend_1_1GpgFileOpera_a234d939ae0b2c3f799dd01130fad9379}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptFile@{EncryptFile}}
@@ -155,7 +155,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}\label{classGpgFrontend_1_1GpgFileOpera_a826efca057afb07157453b3b9e267b0f}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptFileSymmetric@{EncryptFileSymmetric}}
@@ -187,7 +187,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}\label{classGpgFrontend_1_1GpgFileOpera_a6353e1688b113e5746aced6aa7f3876e}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!EncryptSignFile@{EncryptSignFile}}
@@ -221,7 +221,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}\label{classGpgFrontend_1_1GpgFileOpera_a350df1c07c054625c4755a78e6ca5ca8}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!SignFile@{SignFile}}
@@ -251,7 +251,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}\label{classGpgFrontend_1_1GpgFileOpera_a14cddfe822c9410cd9c301d08963b7e7}} 
 \index{GpgFrontend::GpgFileOpera@{GpgFrontend::GpgFileOpera}!VerifyFile@{VerifyFile}}
@@ -279,7 +279,7 @@ References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operato
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
 
 
 

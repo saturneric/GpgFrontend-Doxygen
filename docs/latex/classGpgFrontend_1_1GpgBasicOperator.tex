@@ -37,7 +37,7 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Basic\+Operator\+:
 gpg\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}{Encrypt}} (Key\+List\+Ptr keys, Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&result)
 \begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme for encryption operation. \end{DoxyCompactList}\item 
 gpg\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}{Encrypt\+Symmetric}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&result)
-\begin{DoxyCompactList}\small\item\em Call the interface provided by G\+P\+G\+ME to symmetrical encryption. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Call the interface provided by GPGME to symmetrical encryption. \end{DoxyCompactList}\item 
 gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}{Encrypt\+Sign}} (Key\+List\+Ptr keys, Key\+List\+Ptr signers, Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Encr\+Result \&encr\+\_\+result, Gpg\+Sign\+Result \&sign\+\_\+result)
 \begin{DoxyCompactList}\small\item\em Call the interface provided by gpgme to perform encryption and signature operations at the same time. \end{DoxyCompactList}\item 
 gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}{Decrypt}} (Bype\+Array\+Ref in\+\_\+buffer, Byte\+Array\+Ptr \&out\+\_\+buffer, Gpg\+Decr\+Result \&result)
@@ -63,8 +63,6 @@ std\+::unique\+\_\+ptr$<$ Key\+Args\+List $>$ \mbox{\hyperlink{classGpgFrontend_
 \doxysubsection{Detailed Description}
 Basic operation collection. 
 
-
-
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a139be86330f88e5f833aa24263a3b2ae}\label{classGpgFrontend_1_1GpgBasicOperator_a139be86330f88e5f833aa24263a3b2ae}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!GpgBasicOperator@{GpgBasicOperator}}
@@ -85,17 +83,17 @@ Copyright (C) 2021 Saturneric
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}\label{classGpgFrontend_1_1GpgBasicOperator_a9ea9e81194917e08f46eb657281b7953}} 
@@ -126,7 +124,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}\label{classGpgFrontend_1_1GpgBasicOperator_a11845a9a3ea2941e14faa9130f0ac9ef}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!DecryptVerify@{DecryptVerify}}
@@ -158,7 +156,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}\label{classGpgFrontend_1_1GpgBasicOperator_a32e1eac6bb0f322588ae75ae36a9884a}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Encrypt@{Encrypt}}
@@ -192,7 +190,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}\label{classGpgFrontend_1_1GpgBasicOperator_a08906cf2bc2ddad8489438610f388f8a}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!EncryptSign@{EncryptSign}}
@@ -228,7 +226,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}\label{classGpgFrontend_1_1GpgBasicOperator_a8f4ef57e941a066ad9d070eee51e2073}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!EncryptSymmetric@{EncryptSymmetric}}
@@ -238,7 +236,7 @@ Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), an
 
 
 
-Call the interface provided by G\+P\+G\+ME to symmetrical encryption. 
+Call the interface provided by GPGME to symmetrical encryption. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -258,7 +256,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+encrypt().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_a78f37b8d5afd6c0248665a4415f880cf}\label{classGpgFrontend_1_1GpgBasicOperator_a78f37b8d5afd6c0248665a4415f880cf}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!GetSigners@{GetSigners}}
@@ -306,7 +304,7 @@ Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key().
 
 Call the interface provided by gpgme for signing operation. 
 
-The signing modes are as follows\+: `G\+P\+G\+M\+E\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL' A normal signature is made, the output includes the plaintext and the signature. `G\+P\+G\+M\+E\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+T\+A\+CH' A detached signature is made. `G\+P\+G\+M\+E\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+E\+AR' A clear text signature is made. The A\+S\+C\+II armor and text mode settings of the context are ignored.
+The signing modes are as follows\+: `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+NORMAL' A normal signature is made, the output includes the plaintext and the signature. `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+DETACH' A detached signature is made. `GPGME\+\_\+\+SIG\+\_\+\+MODE\+\_\+\+CLEAR' A clear text signature is made. The ASCII armor and text mode settings of the context are ignored.
 
 
 \begin{DoxyParams}{Parameters}
@@ -330,7 +328,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\
 
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+sign().
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}\label{classGpgFrontend_1_1GpgBasicOperator_af0347cb28ff73b2250395ceaa9001509}} 
 \index{GpgFrontend::GpgBasicOperator@{GpgFrontend::GpgBasicOperator}!Verify@{Verify}}
@@ -360,7 +358,7 @@ References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), and Gpg\+Frontend\+::check\
 
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::slot\+\_\+verify(), and Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify(), and Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File().
 
 
 

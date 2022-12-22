@@ -29,30 +29,30 @@ void {\bfseries Slot\+Go\+Path} ()
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aec462d16a2097024a4ced24012b905a7}{Signal\+Path\+Changed}} (const Q\+String \&path)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aec462d16a2097024a4ced24012b905a7}{Signal\+Path\+Changed}} (const QString \&path)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a301c5c7747ad251b14c490d58b5d678f}{Signal\+Refresh\+Info\+Board}} (const Q\+String \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}} verify\+\_\+label\+\_\+status)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a301c5c7747ad251b14c490d58b5d678f}{Signal\+Refresh\+Info\+Board}} (const QString \&text, \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}} verify\+\_\+label\+\_\+status)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a48fb14a3296f19f9b1c3b9b48c3a1bf3}{File\+Page}} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a48fb14a3296f19f9b1c3b9b48c3a1bf3}{File\+Page}} (QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new File Page object. \end{DoxyCompactList}\item 
-Q\+String \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a3c114d414b96d3e4b2ca833ab6a48605}{Get\+Selected}} () const
+QString \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a3c114d414b96d3e4b2ca833ab6a48605}{Get\+Selected}} () const
 \begin{DoxyCompactList}\small\item\em Get the Selected object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aea388ad7876e287f71e93085e6715495}{key\+Press\+Event}} (Q\+Key\+Event $\ast$event) override
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aea388ad7876e287f71e93085e6715495}{key\+Press\+Event}} (QKey\+Event $\ast$event) override
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aa80dc1b74a0ec65d06e5dffaa21cc785}{on\+Custom\+Context\+Menu}} (const Q\+Point \&point)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_aa80dc1b74a0ec65d06e5dffaa21cc785}{on\+Custom\+Context\+Menu}} (const QPoint \&point)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a676917817d6f519e043742d1d87f97f1}{slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+clicked}} (const Q\+Model\+Index \&index)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a676917817d6f519e043742d1d87f97f1}{slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+clicked}} (const QModel\+Index \&index)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_ad3c54320bdafbbb2c06a20d6c7dea9d6}{slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+double\+\_\+clicked}} (const Q\+Model\+Index \&index)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_ad3c54320bdafbbb2c06a20d6c7dea9d6}{slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+double\+\_\+clicked}} (const QModel\+Index \&index)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a48fde4a93676b1b9810ab88fe265d8a8}\label{classGpgFrontend_1_1UI_1_1FilePage_a48fde4a93676b1b9810ab88fe265d8a8}} 
 void {\bfseries slot\+\_\+up\+\_\+level} ()
@@ -75,11 +75,13 @@ void {\bfseries slot\+\_\+mkdir} ()
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_ab4c7e70027f55aae7ef1ed78bb1d9646}\label{classGpgFrontend_1_1UI_1_1FilePage_ab4c7e70027f55aae7ef1ed78bb1d9646}} 
 void {\bfseries slot\+\_\+create\+\_\+empty\+\_\+file} ()
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}\label{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}{slot\+\_\+compress\+\_\+files}} ()
 \begin{DoxyCompactList}\small\item\em compress directory into gpg-\/zip \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}\label{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}{create\+\_\+popup\+\_\+menu}} ()
 \begin{DoxyCompactList}\small\item\em Create a popup menu object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
@@ -89,13 +91,13 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f218
 std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+File\+Page $>$ {\bfseries ui\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_ae649c1f6144bad1c9dab277fd9ce45d4}\label{classGpgFrontend_1_1UI_1_1FilePage_ae649c1f6144bad1c9dab277fd9ce45d4}} 
-Q\+File\+System\+Model $\ast$ {\bfseries dir\+\_\+model\+\_\+}
+QFile\+System\+Model $\ast$ {\bfseries dir\+\_\+model\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_aca3e2a213ec519e4f8aec27cfe9973ad}\label{classGpgFrontend_1_1UI_1_1FilePage_aca3e2a213ec519e4f8aec27cfe9973ad}} 
-Q\+Completer $\ast$ {\bfseries path\+\_\+edit\+\_\+completer\+\_\+}
+QCompleter $\ast$ {\bfseries path\+\_\+edit\+\_\+completer\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a379abfff5c0e3935b478aee938528ba1}\label{classGpgFrontend_1_1UI_1_1FilePage_a379abfff5c0e3935b478aee938528ba1}} 
-Q\+String\+List\+Model $\ast$ {\bfseries path\+\_\+complete\+\_\+model\+\_\+}
+QString\+List\+Model $\ast$ {\bfseries path\+\_\+complete\+\_\+model\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_ae834468425b52162842f1f4f52009cae}\label{classGpgFrontend_1_1UI_1_1FilePage_ae834468425b52162842f1f4f52009cae}} 
 std\+::filesystem\+::path {\bfseries m\+\_\+path\+\_\+}
@@ -104,13 +106,13 @@ std\+::filesystem\+::path {\bfseries m\+\_\+path\+\_\+}
 std\+::filesystem\+::path {\bfseries selected\+\_\+path\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_aea773a182e0776154611ff51431c7d6c}\label{classGpgFrontend_1_1UI_1_1FilePage_aea773a182e0776154611ff51431c7d6c}} 
-Q\+Menu $\ast$ {\bfseries popup\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries popup\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a6ddf29e46120a9cd7a31285d748ddb12}\label{classGpgFrontend_1_1UI_1_1FilePage_a6ddf29e46120a9cd7a31285d748ddb12}} 
-Q\+Menu $\ast$ {\bfseries option\+\_\+popup\+\_\+menu\+\_\+} \{\}
+QMenu $\ast$ {\bfseries option\+\_\+popup\+\_\+menu\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a3e367cd297e307e80a7cded37b7af74e}\label{classGpgFrontend_1_1UI_1_1FilePage_a3e367cd297e307e80a7cded37b7af74e}} 
-Q\+Widget $\ast$ {\bfseries first\+\_\+parent\+\_\+} \{\}
+QWidget $\ast$ {\bfseries first\+\_\+parent\+\_\+} \{\}
 \end{DoxyCompactItemize}
 
 
@@ -119,7 +121,7 @@ Q\+Widget $\ast$ {\bfseries first\+\_\+parent\+\_\+} \{\}
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!FilePage@{FilePage}}
 \index{FilePage@{FilePage}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{FilePage()}{FilePage()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::\+File\+Page (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::\+File\+Page (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -137,42 +139,28 @@ References create\+\_\+popup\+\_\+menu(), on\+Custom\+Context\+Menu(), slot\+\_\
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}\label{classGpgFrontend_1_1UI_1_1FilePage_a73e4b62f4926b1aeb3f2183a1d05d871}} 
-\index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!create\_popup\_menu@{create\_popup\_menu}}
-\index{create\_popup\_menu@{create\_popup\_menu}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
-\doxysubsubsection{\texorpdfstring{create\_popup\_menu()}{create\_popup\_menu()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::create\+\_\+popup\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Create a popup menu object. 
-
-
-
-Referenced by File\+Page().
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a3c114d414b96d3e4b2ca833ab6a48605}\label{classGpgFrontend_1_1UI_1_1FilePage_a3c114d414b96d3e4b2ca833ab6a48605}} 
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!GetSelected@{GetSelected}}
 \index{GetSelected@{GetSelected}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{GetSelected()}{GetSelected()}}
-{\footnotesize\ttfamily Q\+String Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::\+Get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::\+Get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Get the Selected object. 
 
 \begin{DoxyReturn}{Returns}
-Q\+String 
+QString 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_aea388ad7876e287f71e93085e6715495}\label{classGpgFrontend_1_1UI_1_1FilePage_aea388ad7876e287f71e93085e6715495}} 
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!keyPressEvent@{keyPressEvent}}
 \index{keyPressEvent@{keyPressEvent}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Key\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -183,7 +171,7 @@ Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::\+Slot\+File\+Decrypt
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!onCustomContextMenu@{onCustomContextMenu}}
 \index{onCustomContextMenu@{onCustomContextMenu}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{onCustomContextMenu()}{onCustomContextMenu()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::on\+Custom\+Context\+Menu (\begin{DoxyParamCaption}\item[{const Q\+Point \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::on\+Custom\+Context\+Menu (\begin{DoxyParamCaption}\item[{const QPoint \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -198,22 +186,18 @@ Referenced by File\+Page().
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!SignalPathChanged@{SignalPathChanged}}
 \index{SignalPathChanged@{SignalPathChanged}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{SignalPathChanged}{SignalPathChanged}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::\+Signal\+Path\+Changed (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::\+Signal\+Path\+Changed (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 \begin{DoxyParams}{Parameters}
 {\em path} & \\
 \hline
 \end{DoxyParams}
-
-
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+New\+File\+Tab().
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a301c5c7747ad251b14c490d58b5d678f}\label{classGpgFrontend_1_1UI_1_1FilePage_a301c5c7747ad251b14c490d58b5d678f}} 
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!SignalRefreshInfoBoard@{SignalRefreshInfoBoard}}
 \index{SignalRefreshInfoBoard@{SignalRefreshInfoBoard}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{SignalRefreshInfoBoard}{SignalRefreshInfoBoard}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::\+Signal\+Refresh\+Info\+Board (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}}}]{verify\+\_\+label\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::\+Signal\+Refresh\+Info\+Board (\begin{DoxyParamCaption}\item[{const QString \&}]{text,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb00d}{Info\+Board\+Status}}}]{verify\+\_\+label\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -222,21 +206,11 @@ Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Text\+Edit\+::\+Slot\+New\+File\+Tab(
 {\em verify\+\_\+label\+\_\+status} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}\label{classGpgFrontend_1_1UI_1_1FilePage_a250b1950f874c1d11549cd5c0ea9693f}} 
-\index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!slot\_compress\_files@{slot\_compress\_files}}
-\index{slot\_compress\_files@{slot\_compress\_files}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
-\doxysubsubsection{\texorpdfstring{slot\_compress\_files}{slot\_compress\_files}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::slot\+\_\+compress\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
-
-
-
-compress directory into gpg-\/zip 
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FilePage_a676917817d6f519e043742d1d87f97f1}\label{classGpgFrontend_1_1UI_1_1FilePage_a676917817d6f519e043742d1d87f97f1}} 
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!slot\_file\_tree\_view\_item\_clicked@{slot\_file\_tree\_view\_item\_clicked}}
 \index{slot\_file\_tree\_view\_item\_clicked@{slot\_file\_tree\_view\_item\_clicked}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{slot\_file\_tree\_view\_item\_clicked}{slot\_file\_tree\_view\_item\_clicked}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+clicked (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+clicked (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -251,7 +225,7 @@ Referenced by File\+Page().
 \index{GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}!slot\_file\_tree\_view\_item\_double\_clicked@{slot\_file\_tree\_view\_item\_double\_clicked}}
 \index{slot\_file\_tree\_view\_item\_double\_clicked@{slot\_file\_tree\_view\_item\_double\_clicked}!GpgFrontend::UI::FilePage@{GpgFrontend::UI::FilePage}}
 \doxysubsubsection{\texorpdfstring{slot\_file\_tree\_view\_item\_double\_clicked}{slot\_file\_tree\_view\_item\_double\_clicked}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+File\+Page\+::slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+double\+\_\+clicked (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Page\+::slot\+\_\+file\+\_\+tree\+\_\+view\+\_\+item\+\_\+double\+\_\+clicked (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}

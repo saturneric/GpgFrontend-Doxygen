@@ -7,21 +7,23 @@ var hierarchy =
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", null ],
     [ "GpgFrontend::ChannelObject", "classGpgFrontend_1_1ChannelObject.html", [
-      [ "GpgFrontend::SingletonFunctionObject< T >", "classGpgFrontend_1_1SingletonFunctionObject.html", null ],
-      [ "GpgFrontend::SingletonFunctionObject< DataObjectOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GlobalSettingStation >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< GpgKeyManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgKeyManager", "classGpgFrontend_1_1GpgKeyManager.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< TaskRunnerGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::Thread::TaskRunnerGetter", "classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< GpgKeyImportExporter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgKeyImportExporter", "classGpgFrontend_1_1GpgKeyImportExporter.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgCommandExecutor >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgCommandExecutor", "classGpgFrontend_1_1GpgCommandExecutor.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgContext >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgContext", "classGpgFrontend_1_1GpgContext.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< GpgKeyOpera >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgKeyOpera", "classGpgFrontend_1_1GpgKeyOpera.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgFileOpera >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgFileOpera", "classGpgFrontend_1_1GpgFileOpera.html", null ]
@@ -29,24 +31,22 @@ var hierarchy =
       [ "GpgFrontend::SingletonFunctionObject< GpgKeyGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgKeyImportExporter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgKeyImportExporter", "classGpgFrontend_1_1GpgKeyImportExporter.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgKeyManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgKeyManager", "classGpgFrontend_1_1GpgKeyManager.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< GlobalSettingStation >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgKeyOpera >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgKeyOpera", "classGpgFrontend_1_1GpgKeyOpera.html", null ]
-      ] ],
-      [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", null ]
+      [ "GpgFrontend::SingletonFunctionObject< DataObjectOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< PassphraseGenerator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< TaskRunnerGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::Thread::TaskRunnerGetter", "classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html", null ]
-      ] ]
+      [ "GpgFrontend::SingletonFunctionObject< GpgContext >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgContext", "classGpgFrontend_1_1GpgContext.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< T >", "classGpgFrontend_1_1SingletonFunctionObject.html", null ]
     ] ],
     [ "GpgFrontend::CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", null ],
     [ "class", "classclass.html", null ],
@@ -73,7 +73,7 @@ var hierarchy =
     [ "GpgFrontend::GpgSubKey", "classGpgFrontend_1_1GpgSubKey.html", null ],
     [ "GpgFrontend::GpgTOFUInfo", "classGpgFrontend_1_1GpgTOFUInfo.html", null ],
     [ "GpgFrontend::GpgUID", "classGpgFrontend_1_1GpgUID.html", null ],
-    [ "json", null, [
+    [ "nlohmann::json", null, [
       [ "GpgFrontend::UI::SettingsObject", "classGpgFrontend_1_1UI_1_1SettingsObject.html", null ]
     ] ],
     [ "GpgFrontend::UI::KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", null ],
@@ -153,8 +153,8 @@ var hierarchy =
       [ "GpgFrontend::UI::KeyserverTab", "classGpgFrontend_1_1UI_1_1KeyserverTab.html", null ],
       [ "GpgFrontend::UI::NetworkTab", "classGpgFrontend_1_1UI_1_1NetworkTab.html", null ],
       [ "GpgFrontend::UI::PlainTextEditorPage", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html", null ],
-      [ "GpgFrontend::UI::TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html", null ],
       [ "GpgFrontend::UI::TOFUInfoPage", "classGpgFrontend_1_1UI_1_1TOFUInfoPage.html", null ],
+      [ "GpgFrontend::UI::TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html", null ],
       [ "GpgFrontend::UI::TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", null ],
       [ "GpgFrontend::UI::UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", null ]
     ] ],

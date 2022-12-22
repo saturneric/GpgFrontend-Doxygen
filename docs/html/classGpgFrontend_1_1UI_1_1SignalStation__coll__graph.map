@@ -1,7 +1,7 @@
 <map id="GpgFrontend::UI::SignalStation" name="GpgFrontend::UI::SignalStation">
-<area shape="rect" id="node1" title=" " alt="" coords="193,145,415,223"/>
-<area shape="rect" id="node3" title=" " alt="" coords="139,300,357,392"/>
-<area shape="rect" id="node2" title=" " alt="" coords="267,5,341,83"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="5,145,163,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="65,5,103,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,455,227,532"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,307,132,385"/>
+<area shape="rect" id="node3" title=" " alt="" coords="157,300,374,392"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,145,344,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="246,5,285,83"/>
 </map>

@@ -14,8 +14,8 @@
 <area shape="rect" id="node25" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="2821,551,3053,833"/>
 <area shape="rect" id="node27" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="3080,551,3309,833"/>
 <area shape="rect" id="node2" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="1563,5,1771,156"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1GpgKeyManager.html" title=" " alt="" coords="10,1029,230,1151"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1GpgUIDOperator.html" title=" " alt="" coords="263,1022,483,1158"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1GpgUIDOperator.html" title=" " alt="" coords="10,1022,230,1158"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1GpgKeyManager.html" title=" " alt="" coords="263,1029,483,1151"/>
 <area shape="rect" id="node8" href="$classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html" title=" " alt="" coords="545,1037,708,1143"/>
 <area shape="rect" id="node10" href="$classGpgFrontend_1_1GpgKeyImportExporter.html" title=" " alt="" coords="783,993,991,1187"/>
 <area shape="rect" id="node12" href="$classGpgFrontend_1_1GpgCommandExecutor.html" title="Extra commands related to GPG." alt="" coords="1022,1044,1285,1136"/>

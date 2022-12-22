@@ -7,7 +7,7 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1GpgKey__coll__graph}
+\includegraphics[width=350pt]{classGpgFrontend_1_1GpgKey__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
@@ -74,12 +74,14 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_aadac1b776764ee9d0ca4f8bb9f9e07
 \item 
 std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a746699842f6c49687af0487a8b3b163d}{Get\+Sub\+Keys}} () const
 \item 
-std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+U\+ID}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_ac8b13b45e487cdc423b78d3017897f99}{Get\+U\+I\+Ds}} () const
+std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}} $>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_ac8b13b45e487cdc423b78d3017897f99}{Get\+UIDs}} () const
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}\label{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}{Gpg\+Key}} ()=default
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Key object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_aa599159ab1041c2f5a5fbf09666489b9}{Gpg\+Key}} (gpgme\+\_\+key\+\_\+t \&\&key)
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Key object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}\label{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}{$\sim$\+Gpg\+Key}} ()=default
 \begin{DoxyCompactList}\small\item\em Destroy the Gpg Key objects. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}{Gpg\+Key}} (const gpgme\+\_\+key\+\_\+t \&key)=delete
@@ -109,24 +111,17 @@ using {\bfseries Key\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ struct \+\_\+gpg
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_aec4e7e1845073f23cf55dc660c69c44a}\label{classGpgFrontend_1_1GpgKey_aec4e7e1845073f23cf55dc660c69c44a}} 
 Key\+Ref\+Handler {\bfseries key\+\_\+ref\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_ad1784bcc872f42b87e48bcfa40dab4cd}\label{classGpgFrontend_1_1GpgKey_ad1784bcc872f42b87e48bcfa40dab4cd}} 
+std\+::mutex {\bfseries gpgme\+\_\+key\+\_\+opera\+\_\+mutex}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}\label{classGpgFrontend_1_1GpgKey_a3b08060c07a9cc207eb8c98771bd4bc1}} 
-\index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GpgKey@{GpgKey}}
-\index{GpgKey@{GpgKey}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
-\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+::\+Gpg\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
-
-
-
-Construct a new Gpg Key object. 
-
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_aa599159ab1041c2f5a5fbf09666489b9}\label{classGpgFrontend_1_1GpgKey_aa599159ab1041c2f5a5fbf09666489b9}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GpgKey@{GpgKey}}
 \index{GpgKey@{GpgKey}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
-\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+::\+Gpg\+Key (\begin{DoxyParamCaption}\item[{gpgme\+\_\+key\+\_\+t \&\&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -140,30 +135,20 @@ Construct a new Gpg Key object.
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}\label{classGpgFrontend_1_1GpgKey_a1e9223bb1ad8fbb4e769680de39b3697}} 
-\index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!````~GpgKey@{$\sim$GpgKey}}
-\index{````~GpgKey@{$\sim$GpgKey}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
-\doxysubsubsection{\texorpdfstring{$\sim$GpgKey()}{~GpgKey()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+::$\sim$\+Gpg\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
-
-
-
-Destroy the Gpg Key objects. 
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}\label{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}} 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}\label{classGpgFrontend_1_1GpgKey_a1d6e415e77625c1281dac1cc5f33f804}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GpgKey@{GpgKey}}
 \index{GpgKey@{GpgKey}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
-\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+::\+Gpg\+Key (\begin{DoxyParamCaption}\item[{const gpgme\+\_\+key\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 
@@ -178,7 +163,7 @@ Construct a new Gpg Key object.
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_aeb316f8728b10e966eed6f0291794eed}\label{classGpgFrontend_1_1GpgKey_aeb316f8728b10e966eed6f0291794eed}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GpgKey@{GpgKey}}
 \index{GpgKey@{GpgKey}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
-\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\doxysubsubsection{\texorpdfstring{GpgKey()}{GpgKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+::\+Gpg\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&\&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 
@@ -235,7 +220,7 @@ std\+::string
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), Gpg\+Frontend\+::\+UI\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a7b1e0398bedaecbfa2757243e5f4f0ab}\label{classGpgFrontend_1_1GpgKey_a7b1e0398bedaecbfa2757243e5f4f0ab}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GetExpireTime@{GetExpireTime}}
@@ -270,7 +255,7 @@ std\+::string
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+S\+S\+H(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog(), operator$<$=(), operator==(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Set\+Expire(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+SSH(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog(), operator$<$=(), operator==(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Set\+Expire(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a3532e20298b642f5d312712fa8a791df}\label{classGpgFrontend_1_1GpgKey_a3532e20298b642f5d312712fa8a791df}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GetLastUpdateTime@{GetLastUpdateTime}}
@@ -292,7 +277,7 @@ std\+::string
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table(), Gpg\+Frontend\+::\+Gpg\+Decrypt\+Result\+Analyse\+::print\+\_\+recipient(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), Gpg\+Frontend\+::\+UI\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table(), Gpg\+Frontend\+::\+Gpg\+Decrypt\+Result\+Analyse\+::print\+\_\+recipient(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a3327ad34ff14feb75f3fbfc2bfb7fc44}\label{classGpgFrontend_1_1GpgKey_a3327ad34ff14feb75f3fbfc2bfb7fc44}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GetOwnerTrust@{GetOwnerTrust}}
@@ -345,16 +330,16 @@ std\+::unique\+\_\+ptr$<$std\+::vector$<$\+Gpg\+Sub\+Key$>$$>$
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_ac8b13b45e487cdc423b78d3017897f99}\label{classGpgFrontend_1_1GpgKey_ac8b13b45e487cdc423b78d3017897f99}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!GetUIDs@{GetUIDs}}
 \index{GetUIDs@{GetUIDs}!GpgFrontend::GpgKey@{GpgFrontend::GpgKey}}
 \doxysubsubsection{\texorpdfstring{GetUIDs()}{GetUIDs()}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+Frontend\+::\+Gpg\+U\+ID}} $>$ $>$ Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+U\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+Frontend\+::\+Gpg\+UID}} $>$ $>$ Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+UIDs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
-std\+::unique\+\_\+ptr$<$std\+::vector$<$\+Gpg\+U\+I\+D$>$$>$ 
+std\+::unique\+\_\+ptr$<$std\+::vector$<$\+Gpg\+UID$>$$>$ 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a7eaf1e722d8a59f6a86d8e732217d89c}\label{classGpgFrontend_1_1GpgKey_a7eaf1e722d8a59f6a86d8e732217d89c}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsDisabled@{IsDisabled}}
@@ -369,7 +354,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a66711ffd7f4af58594b7de984a13c327}\label{classGpgFrontend_1_1GpgKey_a66711ffd7f4af58594b7de984a13c327}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsExpired@{IsExpired}}
@@ -384,7 +369,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a59e76d40f01e765f0544e5c6a2851be6}\label{classGpgFrontend_1_1GpgKey_a59e76d40f01e765f0544e5c6a2851be6}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsGood@{IsGood}}
@@ -399,7 +384,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Import\+Detail\+Dialog\+::create\+\_\+keys\+\_\+table().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a371a24c4e9d3b99a36f76ff8c7f2d0e6}\label{classGpgFrontend_1_1GpgKey_a371a24c4e9d3b99a36f76ff8c7f2d0e6}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsHasActualAuthenticationCapability@{IsHasActualAuthenticationCapability}}
@@ -463,7 +448,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Signers\+Picker\+::\+Signers\+Picker().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Signers\+Picker().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_afdffba6dfb6009a0b320623df7a26be0}\label{classGpgFrontend_1_1GpgKey_afdffba6dfb6009a0b320623df7a26be0}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsHasAuthenticationCapability@{IsHasAuthenticationCapability}}
@@ -500,7 +485,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a60b342ca6e1062d4489d8ba8f7a5a605}\label{classGpgFrontend_1_1GpgKey_a60b342ca6e1062d4489d8ba8f7a5a605}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsHasEncryptionCapability@{IsHasEncryptionCapability}}
@@ -526,7 +511,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+U\+I\+D\+Tab\+::create\+\_\+manage\+\_\+uid\+\_\+menu(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+U\+I\+D\+Tab\+::create\+\_\+uid\+\_\+popup\+\_\+menu(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+U\+I\+D\+Tab\+::\+Key\+Pair\+U\+I\+D\+Tab(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+UIDTab\+::create\+\_\+manage\+\_\+uid\+\_\+menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+UIDTab\+::create\+\_\+uid\+\_\+popup\+\_\+menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+UIDTab\+::\+Key\+Pair\+UIDTab(), and Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a635bbf8f08268cfdac1bc120981df877}\label{classGpgFrontend_1_1GpgKey_a635bbf8f08268cfdac1bc120981df877}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsHasSigningCapability@{IsHasSigningCapability}}
@@ -552,7 +537,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Subkey\+Tab\+::\+Key\+Pair\+Subkey\+Tab().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a637f2a5e9b9b7cafcdaada00c2f7de87}\label{classGpgFrontend_1_1GpgKey_a637f2a5e9b9b7cafcdaada00c2f7de87}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!IsRevoked@{IsRevoked}}
@@ -567,7 +552,7 @@ false
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+U\+I\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+U\+I\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+U\+I\+::\+Key\+U\+I\+D\+Sign\+Dialog\+::\+Key\+U\+I\+D\+Sign\+Dialog().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), and Gpg\+Frontend\+::\+UI\+::\+Key\+UIDSign\+Dialog\+::\+Key\+UIDSign\+Dialog().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKey_a827962251cf47c41dbea56665ae4207b}\label{classGpgFrontend_1_1GpgKey_a827962251cf47c41dbea56665ae4207b}} 
 \index{GpgFrontend::GpgKey@{GpgFrontend::GpgKey}!operator gpgme\_key\_t@{operator gpgme\_key\_t}}

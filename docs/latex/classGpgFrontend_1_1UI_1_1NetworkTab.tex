@@ -23,8 +23,9 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Network\+Tab\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a444d3630919c1f9c4db495a58acbb9a8}{Network\+Tab}} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a444d3630919c1f9c4db495a58acbb9a8}{Network\+Tab}} (QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Network Tab object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1NetworkTab_a51cd114731899b6480cc1b6d5a80826a}\label{classGpgFrontend_1_1UI_1_1NetworkTab_a51cd114731899b6480cc1b6d5a80826a}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a51cd114731899b6480cc1b6d5a80826a}{Set\+Settings}} ()
 \begin{DoxyCompactList}\small\item\em Set the Settings object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1NetworkTab_a52fa421fe4e6c122a26ed7c766c000f7}\label{classGpgFrontend_1_1UI_1_1NetworkTab_a52fa421fe4e6c122a26ed7c766c000f7}} 
@@ -44,7 +45,7 @@ void {\bfseries apply\+\_\+proxy\+\_\+settings} ()
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_ae3d97948f205e84f0604d4da634a4513}{switch\+\_\+ui\+\_\+enabled}} (bool enabled)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a1b0297158f13daec77645c88e5a8adcd}{switch\+\_\+ui\+\_\+proxy\+\_\+type}} (const Q\+String \&type\+\_\+text)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a1b0297158f13daec77645c88e5a8adcd}{switch\+\_\+ui\+\_\+proxy\+\_\+type}} (const QString \&type\+\_\+text)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -53,7 +54,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1NetworkTab_a1b0297158f13daec7764
 std\+::shared\+\_\+ptr$<$ Ui\+\_\+\+Network\+Settings $>$ {\bfseries ui\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1NetworkTab_a1713e1268a364f51f57b3a2752efc641}\label{classGpgFrontend_1_1UI_1_1NetworkTab_a1713e1268a364f51f57b3a2752efc641}} 
-Q\+Network\+Proxy\+::\+Proxy\+Type {\bfseries proxy\+\_\+type\+\_\+} = Q\+Network\+Proxy\+::\+Http\+Proxy
+QNetwork\+Proxy\+::\+Proxy\+Type {\bfseries proxy\+\_\+type\+\_\+} = QNetwork\+Proxy\+::\+Http\+Proxy
 \end{DoxyCompactItemize}
 
 
@@ -62,7 +63,7 @@ Q\+Network\+Proxy\+::\+Proxy\+Type {\bfseries proxy\+\_\+type\+\_\+} = Q\+Networ
 \index{GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}!NetworkTab@{NetworkTab}}
 \index{NetworkTab@{NetworkTab}!GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}}
 \doxysubsubsection{\texorpdfstring{NetworkTab()}{NetworkTab()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+U\+I\+::\+Network\+Tab\+::\+Network\+Tab (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Network\+Tab (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -75,46 +76,28 @@ Construct a new Network Tab object.
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the G\+NU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
 
-The initial version of the source code is inherited from the gpg4usb project, which is under G\+P\+L-\/3.\+0-\/or-\/later.
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
-S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/3.\+0-\/or-\/later 
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 References Set\+Settings().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1NetworkTab_a51cd114731899b6480cc1b6d5a80826a}\label{classGpgFrontend_1_1UI_1_1NetworkTab_a51cd114731899b6480cc1b6d5a80826a}} 
-\index{GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}!SetSettings@{SetSettings}}
-\index{SetSettings@{SetSettings}!GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}}
-\doxysubsubsection{\texorpdfstring{SetSettings()}{SetSettings()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Network\+Tab\+::\+Set\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Set the Settings object. 
-
-
-
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+U\+I\+Settings().
-
-
-
-Referenced by Network\+Tab().
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1NetworkTab_ae3d97948f205e84f0604d4da634a4513}\label{classGpgFrontend_1_1UI_1_1NetworkTab_ae3d97948f205e84f0604d4da634a4513}} 
 \index{GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}!switch\_ui\_enabled@{switch\_ui\_enabled}}
 \index{switch\_ui\_enabled@{switch\_ui\_enabled}!GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}}
 \doxysubsubsection{\texorpdfstring{switch\_ui\_enabled()}{switch\_ui\_enabled()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Network\+Tab\+::switch\+\_\+ui\+\_\+enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::switch\+\_\+ui\+\_\+enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -125,7 +108,7 @@ Referenced by Network\+Tab().
 \index{GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}!switch\_ui\_proxy\_type@{switch\_ui\_proxy\_type}}
 \index{switch\_ui\_proxy\_type@{switch\_ui\_proxy\_type}!GpgFrontend::UI::NetworkTab@{GpgFrontend::UI::NetworkTab}}
 \doxysubsubsection{\texorpdfstring{switch\_ui\_proxy\_type()}{switch\_ui\_proxy\_type()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+U\+I\+::\+Network\+Tab\+::switch\+\_\+ui\+\_\+proxy\+\_\+type (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{type\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::switch\+\_\+ui\+\_\+proxy\+\_\+type (\begin{DoxyParamCaption}\item[{const QString \&}]{type\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
