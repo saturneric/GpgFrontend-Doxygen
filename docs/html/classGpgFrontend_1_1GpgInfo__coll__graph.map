@@ -1,5 +1,11 @@
 <map id="GpgFrontend::GpgInfo" name="GpgFrontend::GpgInfo">
-<area shape="rect" id="node1" title="Use to record some info about gnupg." alt="" coords="5,375,169,452"/>
-<area shape="rect" id="node2" title=" " alt="" coords="44,147,131,224"/>
-<area shape="rect" id="node3" title=" " alt="" coords="18,5,157,97"/>
+<area shape="rect" id="node1" title="Use to record some info about gnupg." alt="" coords="5,727,169,804"/>
+<area shape="rect" id="node2" title=" " alt="" coords="167,528,373,620"/>
+<area shape="rect" id="node3" title=" " alt="" coords="153,160,240,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="103,300,290,377"/>
+<area shape="rect" id="node4" title=" " alt="" coords="127,5,266,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="308,160,437,237"/>
+<area shape="rect" id="node7" title=" " alt="" coords="408,13,447,90"/>
+<area shape="rect" id="node8" title=" " alt="" coords="461,160,596,237"/>
+<area shape="rect" id="node9" title=" " alt="" coords="569,13,608,90"/>
 </map>

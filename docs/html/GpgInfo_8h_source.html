@@ -99,13 +99,18 @@ $(document).ready(function(){initNavTree('GpgInfo_8h_source.html',''); initResiz
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::string DatabasePath;  </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::string GnupgVersion;  </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::string GpgConfPath;   </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string AssuanPath;   </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string AssuanPath;    </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::string CMSPath;       </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string GpgMEVersion;  </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ComponentsInfo;        </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ConfigurationsInfo;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; OptionsInfo;           </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; AvailableOptionsInfo;  </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html">GpgFrontend::GpgInfo</a></div><div class="ttdoc">Use to record some info about gnupg.</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:39</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a2416ae0ab9bedc61782d16075750a9c0"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">GpgFrontend::GpgInfo::AppPath</a></div><div class="ttdeci">std::string AppPath</div><div class="ttdoc">executable binary path of gnupg</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:41</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>

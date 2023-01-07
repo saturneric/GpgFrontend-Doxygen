@@ -7,6 +7,7 @@ var classGpgFrontend_1_1UI_1_1CommonUtils =
     [ "SignalKeyDatabaseRefreshDone", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a1abc83bba95579aa94d0870181991a28", null ],
     [ "SignalKeyStatusUpdated", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a4bc9e91daa0d3c4ee4141ba4bd8726bb", null ],
     [ "slot_update_key_status", "classGpgFrontend_1_1UI_1_1CommonUtils.html#ab4ac26378d6a07757720163eb4b1cb0e", null ],
+    [ "SlotExecuteCommand", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a95cd625a2e0e74ee4d564843c6d16791", null ],
     [ "SlotExecuteGpgCommand", "classGpgFrontend_1_1UI_1_1CommonUtils.html#afc845c1c37487c99f78d8e66f6874f6d", null ],
     [ "SlotImportKeyFromClipboard", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a0c8bf56fc5371cd2c5e9d2a0f67bf72a", null ],
     [ "SlotImportKeyFromFile", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a057526790f6b2f6288c3a35322c34d8d", null ],

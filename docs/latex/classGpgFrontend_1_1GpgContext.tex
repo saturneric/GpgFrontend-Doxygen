@@ -37,7 +37,7 @@ struct \mbox{\hyperlink{structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter}{
 \begin{DoxyCompactList}\small\item\em Destroy the Gpg Context object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a73c505a2f3d39d1638dc4d9a3e13a913}{good}} () const
 \item 
-const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_ad9af3461de36f74ee85be2523f6038e2}{Get\+Info}} () const
+const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a4a8f6ff37e45979159ab375b2c7d48c3}{Get\+Info}} (bool refresh=false)
 \begin{DoxyCompactList}\small\item\em Get the Info object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a5b419175bd9927f3d449637db8ba6524}{operator gpgme\+\_\+ctx\+\_\+t}} () const
 \item 
@@ -69,6 +69,9 @@ void \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a3377fd6a325aafc18c119431f6
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a4765cccf9f994a9c7b3d962a24bed77e}\label{classGpgFrontend_1_1GpgContext_a4765cccf9f994a9c7b3d962a24bed77e}} 
 \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} {\bfseries args\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_ad89cdcb4fd0d8ad759e59254e4b7281c}\label{classGpgFrontend_1_1GpgContext_ad89cdcb4fd0d8ad759e59254e4b7281c}} 
+bool {\bfseries extend\+\_\+info\+\_\+loaded\+\_\+} = false
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_aaf3f5b4528b35bf0dc7a50163224a9a3}\label{classGpgFrontend_1_1GpgContext_aaf3f5b4528b35bf0dc7a50163224a9a3}} 
 Ctx\+Ref\+Handler {\bfseries \+\_\+ctx\+\_\+ref} = nullptr
@@ -117,11 +120,11 @@ Construct a new Gpg Context object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_ad9af3461de36f74ee85be2523f6038e2}\label{classGpgFrontend_1_1GpgContext_ad9af3461de36f74ee85be2523f6038e2}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a4a8f6ff37e45979159ab375b2c7d48c3}\label{classGpgFrontend_1_1GpgContext_a4a8f6ff37e45979159ab375b2c7d48c3}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!GetInfo@{GetInfo}}
 \index{GetInfo@{GetInfo}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
 \doxysubsubsection{\texorpdfstring{GetInfo()}{GetInfo()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}}\& Gpg\+Frontend\+::\+Gpg\+Context\+::\+Get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}} \& Gpg\+Frontend\+::\+Gpg\+Context\+::\+Get\+Info (\begin{DoxyParamCaption}\item[{bool}]{refresh = {\ttfamily false} }\end{DoxyParamCaption})}
 
 
 
@@ -130,6 +133,10 @@ Get the Info object.
 \begin{DoxyReturn}{Returns}
 const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}}\& 
 \end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Gnupg\+Tab\+::\+Gnupg\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command().

@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('structGpgFrontend_1_1UI_1_1SoftwareVer
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="structGpgFrontend_1_1UI_1_1SoftwareVersion-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GpgFrontend::UI::SoftwareVersion Struct Reference</div>  </div>
@@ -95,7 +96,7 @@ Collaboration diagram for GpgFrontend::UI::SoftwareVersion:</div>
 <div class="dyncontent">
 <div class="center"><img src="structGpgFrontend_1_1UI_1_1SoftwareVersion__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1SoftwareVersion_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1SoftwareVersion_coll__map" id="aGpgFrontend_1_1UI_1_1SoftwareVersion_coll__map">
-<area shape="rect" title=" " alt="" coords="5,331,208,540"/>
+<area shape="rect" title=" " alt="" coords="5,331,208,555"/>
 <area shape="rect" title=" " alt="" coords="63,147,150,224"/>
 <area shape="rect" title=" " alt="" coords="37,5,176,97"/>
 </map>
@@ -103,8 +104,8 @@ Collaboration diagram for GpgFrontend::UI::SoftwareVersion:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4e6c8fddaa530a04c5bbea29cfceb793"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a4e6c8fddaa530a04c5bbea29cfceb793">InfoVaild</a> () const</td></tr>
-<tr class="separator:a4e6c8fddaa530a04c5bbea29cfceb793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec79eefdc19c90e046cb48bca347ff1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#aec79eefdc19c90e046cb48bca347ff1c">InfoValid</a> () const</td></tr>
+<tr class="separator:aec79eefdc19c90e046cb48bca347ff1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc311fd0e15da1a04b995587ca74e1a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#abc311fd0e15da1a04b995587ca74e1a6">NeedUpgrade</a> () const</td></tr>
 <tr class="separator:abc311fd0e15da1a04b995587ca74e1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a587a3fdb047a15c3771c2af5eebdbf4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b">VersionWithDrawn</a> () const</td></tr>
@@ -144,6 +145,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>publish_date</
 <tr class="memitem:acbff398f6a35bbcd3593a958cf89e22e"><td class="memItemLeft" align="right" valign="top"><a id="acbff398f6a35bbcd3593a958cf89e22e"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>release_note</b></td></tr>
 <tr class="separator:acbff398f6a35bbcd3593a958cf89e22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ae1989b6a34c76103f4bd06f35686d536"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#ae1989b6a34c76103f4bd06f35686d536">version_compare</a> (const std::string &amp;a, const std::string &amp;b)</td></tr>
+<tr class="separator:ae1989b6a34c76103f4bd06f35686d536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a43663cd2d086299a0f0304f5bde9c663"></a>
@@ -151,9 +157,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>release_note</
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool GpgFrontend::UI::SoftwareVersion::CurrentVersionReleased </td>
@@ -162,11 +165,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>release_note</
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -176,8 +174,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a4e6c8fddaa530a04c5bbea29cfceb793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e6c8fddaa530a04c5bbea29cfceb793">&#9670;&nbsp;</a></span>InfoVaild()</h2>
+<a id="aec79eefdc19c90e046cb48bca347ff1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec79eefdc19c90e046cb48bca347ff1c">&#9670;&nbsp;</a></span>InfoValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +184,7 @@ false </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::UI::SoftwareVersion::InfoVaild </td>
+          <td class="memname">bool GpgFrontend::UI::SoftwareVersion::InfoValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -211,9 +209,6 @@ false </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool GpgFrontend::UI::SoftwareVersion::NeedUpgrade </td>
@@ -222,11 +217,6 @@ false </dd></dl>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -236,8 +226,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a587a3fdb047a15c3771c2af5eebdbf4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a587a3fdb047a15c3771c2af5eebdbf4b">&#9670;&nbsp;</a></span>VersionWithDrawn()</h2>
+<a id="ae1989b6a34c76103f4bd06f35686d536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1989b6a34c76103f4bd06f35686d536">&#9670;&nbsp;</a></span>version_compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,17 +236,53 @@ false </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">int GpgFrontend::UI::SoftwareVersion::version_compare </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copyright (C) 2021 Saturneric</p>
+<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
+<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
+<p>SPDX-License-Identifier: GPL-3.0-or-later </p>
+
+</div>
+</div>
+<a id="a587a3fdb047a15c3771c2af5eebdbf4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587a3fdb047a15c3771c2af5eebdbf4b">&#9670;&nbsp;</a></span>VersionWithDrawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
           <td class="memname">bool GpgFrontend::UI::SoftwareVersion::VersionWithDrawn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -266,8 +292,9 @@ false </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/ui/struct/<a class="el" href="SoftwareVersion_8h_source.html">SoftwareVersion.h</a></li>
+<li>src/ui/struct/SoftwareVersion.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,88 @@
+\hypertarget{classGpgFrontend_1_1GpgAdvancedOperator}{}\doxysection{Gpg\+Frontend\+::Gpg\+Advanced\+Operator Class Reference}
+\label{classGpgFrontend_1_1GpgAdvancedOperator}\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Advanced\+Operator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgAdvancedOperator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Advanced\+Operator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1GpgAdvancedOperator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}{Gpg\+Advanced\+Operator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em Construct a new Basic Operator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a71eb87ed095754ee1e9fa79125240f3e}\label{classGpgFrontend_1_1GpgAdvancedOperator_a71eb87ed095754ee1e9fa79125240f3e}} 
+bool {\bfseries Clear\+Gpg\+Password\+Cache} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a6876b6ee63ff7147c274e4f9538d29ce}\label{classGpgFrontend_1_1GpgAdvancedOperator_a6876b6ee63ff7147c274e4f9538d29ce}} 
+bool {\bfseries Reload\+Gpg\+Components} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a5801bf4ea7391cbcc60efd2513d41041}\label{classGpgFrontend_1_1GpgAdvancedOperator_a5801bf4ea7391cbcc60efd2513d41041}} 
+bool {\bfseries Restart\+Gpg\+Components} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a209f6d1d664ab672437198dc10ed8226}\label{classGpgFrontend_1_1GpgAdvancedOperator_a209f6d1d664ab672437198dc10ed8226}} 
+bool {\bfseries Reset\+Configures} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}{ctx\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Corresponding context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}\label{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}} 
+\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!GpgAdvancedOperator@{GpgAdvancedOperator}}
+\index{GpgAdvancedOperator@{GpgAdvancedOperator}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
+\doxysubsubsection{\texorpdfstring{GpgAdvancedOperator()}{GpgAdvancedOperator()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Gpg\+Advanced\+Operator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Basic Operator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel corresponding to the context \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}\label{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}} 
+\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!ctx\_@{ctx\_}}
+\index{ctx\_@{ctx\_}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
+\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+
+\end{DoxyCode}
+
+
+Corresponding context. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Advanced\+Operator.\+h\item 
+src/core/function/gpg/Gpg\+Advanced\+Operator.\+cpp\end{DoxyCompactItemize}

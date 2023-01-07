@@ -164,9 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35f3065116d2295bb2ddc9f41b1192bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a35f3065116d2295bb2ddc9f41b1192bb">Task</a> (TaskCallback callback, DataObjectPtr data_object=nullptr)</td></tr>
 <tr class="memdesc:a35f3065116d2295bb2ddc9f41b1192bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a35f3065116d2295bb2ddc9f41b1192bb">More...</a><br /></td></tr>
 <tr class="separator:a35f3065116d2295bb2ddc9f41b1192bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa242a8e025c448aacd0704b7d0b3c001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#aa242a8e025c448aacd0704b7d0b3c001">Task</a> (TaskRunnable runnable, TaskCallback callback=[](int, std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a> &gt;) {}, DataObjectPtr data=nullptr)</td></tr>
-<tr class="memdesc:aa242a8e025c448aacd0704b7d0b3c001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#aa242a8e025c448aacd0704b7d0b3c001">More...</a><br /></td></tr>
-<tr class="separator:aa242a8e025c448aacd0704b7d0b3c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efa02bb81d79961d88198a057c9ac64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a8efa02bb81d79961d88198a057c9ac64">Task</a> (TaskRunnable runnable, TaskCallback callback=[](int, const std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a> &gt; &amp;) {}, DataObjectPtr data=nullptr)</td></tr>
+<tr class="memdesc:a8efa02bb81d79961d88198a057c9ac64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a8efa02bb81d79961d88198a057c9ac64">More...</a><br /></td></tr>
+<tr class="separator:a8efa02bb81d79961d88198a057c9ac64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37766a505662b33ad14672c29e209ea8"><td class="memItemLeft" align="right" valign="top"><a id="a37766a505662b33ad14672c29e209ea8"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a37766a505662b33ad14672c29e209ea8">~Task</a> () override</td></tr>
 <tr class="memdesc:a37766a505662b33ad14672c29e209ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. <br /></td></tr>
@@ -265,6 +265,9 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GpgFrontend::Thread::Task::Task </td>
@@ -284,6 +287,11 @@ Friends</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. </p>
@@ -296,11 +304,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aa242a8e025c448aacd0704b7d0b3c001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa242a8e025c448aacd0704b7d0b3c001">&#9670;&nbsp;</a></span>Task() <span class="overload">[3/3]</span></h2>
+<a id="a8efa02bb81d79961d88198a057c9ac64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efa02bb81d79961d88198a057c9ac64">&#9670;&nbsp;</a></span>Task() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GpgFrontend::Thread::Task::Task </td>
@@ -312,7 +323,7 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TaskCallback&#160;</td>
-          <td class="paramname"><em>callback</em> = <code>[](int,&#160;std::shared_ptr&lt;<a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a>&gt;)&#160;{}</code>, </td>
+          <td class="paramname"><em>callback</em> = <code>[](int,&#160;const&#160;std::shared_ptr&lt;<a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a>&gt;&#160;&amp;)&#160;{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -326,6 +337,11 @@ Friends</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. </p>

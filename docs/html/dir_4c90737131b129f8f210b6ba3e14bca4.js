@@ -1,5 +1,6 @@
 var dir_4c90737131b129f8f210b6ba3e14bca4 =
 [
+    [ "GpgAdvancedOperator.h", "GpgAdvancedOperator_8h_source.html", null ],
     [ "GpgBasicOperator.h", "GpgBasicOperator_8h_source.html", null ],
     [ "GpgCommandExecutor.h", "GpgCommandExecutor_8h_source.html", null ],
     [ "GpgFileOpera.h", "GpgFileOpera_8h_source.html", null ],

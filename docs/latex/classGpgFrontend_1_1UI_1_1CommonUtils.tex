@@ -17,7 +17,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Common\+Utils\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1UI_1_1CommonUtils__coll__graph}
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1CommonUtils__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Types}
@@ -40,6 +40,8 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e
 static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}{Slot\+Import\+Key\+From\+Key\+Server}} (const Gpg\+Frontend\+::\+Key\+Id\+Args\+List \&key\+\_\+ids, const Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Import\+Callback\+Functiopn \&callback)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}{Slot\+Execute\+Gpg\+Command}} (const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}{Slot\+Execute\+Command}} (const std\+::string \&cmd, const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -96,6 +98,19 @@ Common\+Utils$\ast$
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit().
 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotExecuteCommand@{SlotExecuteCommand}}
+\index{SlotExecuteCommand@{SlotExecuteCommand}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{SlotExecuteCommand}{SlotExecuteCommand}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmd,  }\item[{const QString\+List \&}]{arguments,  }\item[{const std\+::function$<$ void(QProcess $\ast$)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & \\
+\hline
+{\em interact\+\_\+func} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}\label{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotExecuteGpgCommand@{SlotExecuteGpgCommand}}
 \index{SlotExecuteGpgCommand@{SlotExecuteGpgCommand}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}

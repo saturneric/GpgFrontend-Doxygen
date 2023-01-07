@@ -34,6 +34,9 @@ var hierarchy =
       [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
       ] ],
+      [ "GpgFrontend::SingletonFunctionObject< GpgAdvancedOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::GpgAdvancedOperator", "classGpgFrontend_1_1GpgAdvancedOperator.html", null ]
+      ] ],
       [ "GpgFrontend::SingletonFunctionObject< GlobalSettingStation >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html", null ]
       ] ],

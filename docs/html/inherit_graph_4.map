@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="5,438,213,465"/>
+<area shape="rect" id="node1" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="5,470,213,497"/>
 <area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,5,497,47"/>
 <area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,71,497,112"/>
 <area shape="rect" id="node6" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,136,497,177"/>
@@ -9,11 +9,12 @@
 <area shape="rect" id="node14" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,397,497,439"/>
 <area shape="rect" id="node16" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,463,497,504"/>
 <area shape="rect" id="node18" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,528,497,569"/>
-<area shape="rect" id="node20" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,593,497,635"/>
+<area shape="rect" id="node20" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="262,593,503,635"/>
 <area shape="rect" id="node22" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,659,497,700"/>
-<area shape="rect" id="node24" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="267,724,499,765"/>
-<area shape="rect" id="node26" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,789,497,831"/>
+<area shape="rect" id="node24" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,724,497,765"/>
+<area shape="rect" id="node26" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="267,789,499,831"/>
 <area shape="rect" id="node28" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,855,497,896"/>
+<area shape="rect" id="node30" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="268,920,497,961"/>
 <area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgUIDOperator.html" title=" " alt="" coords="573,13,793,39"/>
 <area shape="rect" id="node5" href="$classGpgFrontend_1_1GpgKeyManager.html" title=" " alt="" coords="573,78,793,105"/>
 <area shape="rect" id="node7" href="$classGpgFrontend_1_1Thread_1_1TaskRunnerGetter.html" title=" " alt="" coords="604,136,763,177"/>
@@ -23,8 +24,9 @@
 <area shape="rect" id="node15" href="$classGpgFrontend_1_1GpgFileOpera.html" title=" " alt="" coords="583,405,784,431"/>
 <area shape="rect" id="node17" href="$classGpgFrontend_1_1GpgKeyGetter.html" title=" " alt="" coords="581,470,785,497"/>
 <area shape="rect" id="node19" href="$classGpgFrontend_1_1GpgBasicOperator.html" title="Basic operation collection." alt="" coords="568,535,799,562"/>
-<area shape="rect" id="node21" href="$classGpgFrontend_1_1GlobalSettingStation.html" title=" " alt="" coords="583,593,784,635"/>
-<area shape="rect" id="node23" href="$classGpgFrontend_1_1DataObjectOperator.html" title=" " alt="" coords="562,666,805,693"/>
-<area shape="rect" id="node25" href="$classGpgFrontend_1_1PassphraseGenerator.html" title="The PassphraseGenerator class." alt="" coords="558,731,809,758"/>
-<area shape="rect" id="node27" href="$classGpgFrontend_1_1GpgContext.html" title=" " alt="" coords="588,797,779,823"/>
+<area shape="rect" id="node21" href="$classGpgFrontend_1_1GpgAdvancedOperator.html" title=" " alt="" coords="582,593,785,635"/>
+<area shape="rect" id="node23" href="$classGpgFrontend_1_1GlobalSettingStation.html" title=" " alt="" coords="583,659,784,700"/>
+<area shape="rect" id="node25" href="$classGpgFrontend_1_1DataObjectOperator.html" title=" " alt="" coords="562,731,805,758"/>
+<area shape="rect" id="node27" href="$classGpgFrontend_1_1PassphraseGenerator.html" title="The PassphraseGenerator class." alt="" coords="558,797,809,823"/>
+<area shape="rect" id="node29" href="$classGpgFrontend_1_1GpgContext.html" title=" " alt="" coords="588,862,779,889"/>
 </map>

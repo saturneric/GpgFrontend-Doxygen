@@ -34,7 +34,7 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Command\+Executor\+:
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_a94240f423464600938bfcafa2b186c38}{Gpg\+Command\+Executor}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Command Executor object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}{Execute}} (String\+Args\+Ref arguments, const std\+::function$<$ void(boost\+::process\+::async\+\_\+pipe \&in, boost\+::process\+::async\+\_\+pipe \&out)$>$ \&interact\+\_\+func)
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_affa984ec4c2982c527761289f73c1ab4}{Execute}} (std\+::string cmd, std\+::vector$<$ std\+::string $>$ arguments, std\+::function$<$ void(int, std\+::string, std\+::string)$>$ callback=\mbox{[}$\,$\mbox{]}(int, std\+::string, std\+::string) \{\}, std\+::function$<$ void(QProcess $\ast$)$>$ interact\+\_\+func=\mbox{[}$\,$\mbox{]}(QProcess $\ast$) \{\})
 \begin{DoxyCompactList}\small\item\em Excuting an order. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -80,11 +80,11 @@ All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} wa
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}\label{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_affa984ec4c2982c527761289f73c1ab4}\label{classGpgFrontend_1_1GpgCommandExecutor_affa984ec4c2982c527761289f73c1ab4}} 
 \index{GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}!Execute@{Execute}}
 \index{Execute@{Execute}!GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}}
 \doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute (\begin{DoxyParamCaption}\item[{String\+Args\+Ref}]{arguments,  }\item[{const std\+::function$<$ void(boost\+::process\+::async\+\_\+pipe \&in, boost\+::process\+::async\+\_\+pipe \&out)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute (\begin{DoxyParamCaption}\item[{std\+::string}]{cmd,  }\item[{std\+::vector$<$ std\+::string $>$}]{arguments,  }\item[{std\+::function$<$ void(int, std\+::string, std\+::string)$>$}]{callback = {\ttfamily \mbox{[}\mbox{]}(int,~std\+:\+:string,~std\+:\+:string)~\{\}},  }\item[{std\+::function$<$ void(QProcess $\ast$)$>$}]{interact\+\_\+func = {\ttfamily \mbox{[}\mbox{]}(QProcess~$\ast$)~\{\}} }\end{DoxyParamCaption})}
 
 
 
@@ -99,7 +99,11 @@ Excuting an order.
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Context\+::\+Get\+Info().
 
 
 

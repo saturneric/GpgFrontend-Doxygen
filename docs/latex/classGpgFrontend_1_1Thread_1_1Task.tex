@@ -53,7 +53,7 @@ void {\bfseries Signal\+Task\+Post\+Finished\+Done} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a35f3065116d2295bb2ddc9f41b1192bb}{Task}} (Task\+Callback callback, Data\+Object\+Ptr data\+\_\+object=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_aa242a8e025c448aacd0704b7d0b3c001}{Task}} (Task\+Runnable runnable, Task\+Callback callback=\mbox{[}$\,$\mbox{]}(int, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}} $>$) \{\}, Data\+Object\+Ptr data=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a8efa02bb81d79961d88198a057c9ac64}{Task}} (Task\+Runnable runnable, Task\+Callback callback=\mbox{[}$\,$\mbox{]}(int, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}} $>$ \&) \{\}, Data\+Object\+Ptr data=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}\label{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}} 
 virtual \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}{$\sim$\+Task}} () override
@@ -146,7 +146,7 @@ The source code version of this software was modified and released by Saturneric
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!Task@{Task}}
 \index{Task@{Task}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Callback}]{callback,  }\item[{Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Callback}]{callback,  }\item[{Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -157,11 +157,11 @@ Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} obje
 {\em callback} & The callback function to be executed. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aa242a8e025c448aacd0704b7d0b3c001}\label{classGpgFrontend_1_1Thread_1_1Task_aa242a8e025c448aacd0704b7d0b3c001}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a8efa02bb81d79961d88198a057c9ac64}\label{classGpgFrontend_1_1Thread_1_1Task_a8efa02bb81d79961d88198a057c9ac64}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!Task@{Task}}
 \index{Task@{Task}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{Task\+Callback}]{callback = {\ttfamily \mbox{[}\mbox{]}(int,~std\+:\+:shared\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}}$>$)~\{\}},  }\item[{Data\+Object\+Ptr}]{data = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{Task\+Callback}]{callback = {\ttfamily \mbox{[}\mbox{]}(int,~const~std\+:\+:shared\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}}$>$~\&)~\{\}},  }\item[{Data\+Object\+Ptr}]{data = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 

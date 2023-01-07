@@ -13,7 +13,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Software\+Version\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_a4e6c8fddaa530a04c5bbea29cfceb793}{Info\+Vaild}} () const
+bool \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_aec79eefdc19c90e046cb48bca347ff1c}{Info\+Valid}} () const
 \item 
 bool \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_abc311fd0e15da1a04b995587ca74e1a6}{Need\+Upgrade}} () const
 \item 
@@ -54,6 +54,11 @@ std\+::string {\bfseries publish\+\_\+date}
 \mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_acbff398f6a35bbcd3593a958cf89e22e}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_acbff398f6a35bbcd3593a958cf89e22e}} 
 std\+::string {\bfseries release\+\_\+note}
 \end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion_ae1989b6a34c76103f4bd06f35686d536}{version\+\_\+compare}} (const std\+::string \&a, const std\+::string \&b)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -61,7 +66,7 @@ std\+::string {\bfseries release\+\_\+note}
 \index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!CurrentVersionReleased@{CurrentVersionReleased}}
 \index{CurrentVersionReleased@{CurrentVersionReleased}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
 \doxysubsubsection{\texorpdfstring{CurrentVersionReleased()}{CurrentVersionReleased()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Current\+Version\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Current\+Version\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -72,11 +77,11 @@ false
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+version\+\_\+status(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+version\+\_\+upgrade().
 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_a4e6c8fddaa530a04c5bbea29cfceb793}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_a4e6c8fddaa530a04c5bbea29cfceb793}} 
-\index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!InfoVaild@{InfoVaild}}
-\index{InfoVaild@{InfoVaild}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
-\doxysubsubsection{\texorpdfstring{InfoVaild()}{InfoVaild()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Info\+Vaild (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_aec79eefdc19c90e046cb48bca347ff1c}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_aec79eefdc19c90e046cb48bca347ff1c}} 
+\index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!InfoValid@{InfoValid}}
+\index{InfoValid@{InfoValid}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
+\doxysubsubsection{\texorpdfstring{InfoValid()}{InfoValid()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Info\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -91,7 +96,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+version\+\_\+
 \index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!NeedUpgrade@{NeedUpgrade}}
 \index{NeedUpgrade@{NeedUpgrade}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
 \doxysubsubsection{\texorpdfstring{NeedUpgrade()}{NeedUpgrade()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Need\+Upgrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Need\+Upgrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -102,11 +107,31 @@ false
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+version\+\_\+status(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+version\+\_\+upgrade().
 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_a587a3fdb047a15c3771c2af5eebdbf4b}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_a587a3fdb047a15c3771c2af5eebdbf4b}} 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_ae1989b6a34c76103f4bd06f35686d536}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_ae1989b6a34c76103f4bd06f35686d536}} 
+\index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!version\_compare@{version\_compare}}
+\index{version\_compare@{version\_compare}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
+\doxysubsubsection{\texorpdfstring{version\_compare()}{version\_compare()}}
+{\footnotesize\ttfamily int Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::version\+\_\+compare (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{a,  }\item[{const std\+::string \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1SoftwareVersion_a587a3fdb047a15c3771c2af5eebdbf4b}\label{structGpgFrontend_1_1UI_1_1SoftwareVersion_a587a3fdb047a15c3771c2af5eebdbf4b}} 
 \index{GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}!VersionWithDrawn@{VersionWithDrawn}}
 \index{VersionWithDrawn@{VersionWithDrawn}!GpgFrontend::UI::SoftwareVersion@{GpgFrontend::UI::SoftwareVersion}}
 \doxysubsubsection{\texorpdfstring{VersionWithDrawn()}{VersionWithDrawn()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Version\+With\+Drawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Version\+With\+Drawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -119,6 +144,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+vers
 
 
 
-The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/struct/Software\+Version.\+h\end{DoxyCompactItemize}
+src/ui/struct/Software\+Version.\+h\item 
+src/ui/struct/Software\+Version.\+cpp\end{DoxyCompactItemize}

@@ -14,6 +14,7 @@ var namespaceGpgFrontend =
     [ "DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", "classGpgFrontend_1_1DataObjectOperator" ],
     [ "FileOperator", "classGpgFrontend_1_1FileOperator.html", "classGpgFrontend_1_1FileOperator" ],
     [ "GlobalSettingStation", "classGpgFrontend_1_1GlobalSettingStation.html", "classGpgFrontend_1_1GlobalSettingStation" ],
+    [ "GpgAdvancedOperator", "classGpgFrontend_1_1GpgAdvancedOperator.html", "classGpgFrontend_1_1GpgAdvancedOperator" ],
     [ "GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", "classGpgFrontend_1_1GpgBasicOperator" ],
     [ "GpgCommandExecutor", "classGpgFrontend_1_1GpgCommandExecutor.html", "classGpgFrontend_1_1GpgCommandExecutor" ],
     [ "GpgFileOpera", "classGpgFrontend_1_1GpgFileOpera.html", "classGpgFrontend_1_1GpgFileOpera" ],
