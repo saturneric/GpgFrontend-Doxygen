@@ -59,7 +59,7 @@ var NAVTREEINDEX =
 "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a73a47d699a33419a6cc265d55b89be50",
 "classGpgFrontend_1_1UI_1_1MainWindow.html#a79b83f536a7c4299eaa3d22e4e875227",
 "classGpgFrontend_1_1UI_1_1VersionCheckTask.html#a9156325af41c378f8d7e77187d445c12",
-"structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663"
+"structGpgFrontend_1_1UI_1_1SoftwareVersion.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

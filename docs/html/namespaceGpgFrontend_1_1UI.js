@@ -74,6 +74,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "init_locale", "namespaceGpgFrontend_1_1UI.html#a157c74e50283da9ed554cf7bf90afbee", null ],
     [ "init_logging_system", "namespaceGpgFrontend_1_1UI.html#a834d05cb1918760d1a9c5a67aa3a7da3", null ],
     [ "InitGpgFrontendUI", "namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad", null ],
+    [ "InitUILoggingSystem", "namespaceGpgFrontend_1_1UI.html#a75ce194e83468251e5f443cedebd8e3c", null ],
     [ "path_pre_check", "namespaceGpgFrontend_1_1UI.html#a4dea2a35c4dbc3868317beb26d4508fc", null ],
     [ "process_directory_into_tarball", "namespaceGpgFrontend_1_1UI.html#a5470872566b41ce628f64039f34b964a", null ],
     [ "process_operation", "namespaceGpgFrontend_1_1UI.html#a3c971eeb5c620d08d6d92f0752ceaf9f", null ],
@@ -82,5 +83,6 @@ var namespaceGpgFrontend_1_1UI =
     [ "process_tarball_into_directory", "namespaceGpgFrontend_1_1UI.html#a57d0a4dba23cd3d9b42222d40c710dc1", null ],
     [ "refresh_info_board", "namespaceGpgFrontend_1_1UI.html#a204156a333cde4f705f0ace91cd3d333", null ],
     [ "RunGpgFrontendUI", "namespaceGpgFrontend_1_1UI.html#a9e2d085812ef8fdd6f19ea94a241b4da", null ],
-    [ "show_verify_details", "namespaceGpgFrontend_1_1UI.html#a590a26051105940a6d6e0743b147e281", null ]
+    [ "show_verify_details", "namespaceGpgFrontend_1_1UI.html#a590a26051105940a6d6e0743b147e281", null ],
+    [ "ShutdownUILoggingSystem", "namespaceGpgFrontend_1_1UI.html#afaa12ab40cfca0bc8c9c8e2d24116a9d", null ]
 ];

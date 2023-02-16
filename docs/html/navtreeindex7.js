@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"structGpgFrontend_1_1UI_1_1SoftwareVersion.html":[2,0,0,1,42],
+"structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a105c94ebdef4201963c8ae83b9cc44d6":[2,0,0,1,42,6],
+"structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a396e555fe47dacbd08e67e65e4c3aba6":[2,0,0,1,42,11],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663":[2,0,0,1,42,0],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a492ce222f6a361d5a05552dd35d41fca":[2,0,0,1,42,7],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b":[2,0,0,1,42,4],
