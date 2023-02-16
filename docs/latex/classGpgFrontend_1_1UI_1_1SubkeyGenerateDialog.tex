@@ -89,6 +89,12 @@ QDate\+Time\+Edit $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenera
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}} 
 QCheck\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_afa21ac4d45a6474afc1bc594486ed8e2}{expire\+\_\+check\+\_\+box\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Checkbox, if key should expire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}} 
+QCheck\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}{no\+\_\+pass\+\_\+phrase\+\_\+check\+\_\+box\+\_\+}} \{\}
+\begin{DoxyCompactList}\small\item\em Checkbox, if key should expire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a9cbb5bcf775a873a0d866a9aa0a5acd0}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a9cbb5bcf775a873a0d866a9aa0a5acd0}} 
+QLine\+Edit $\ast$ {\bfseries passphrase\+\_\+edit\+\_\+} \{\}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}} 
 std\+::vector$<$ QCheck\+Box $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}
 \begin{DoxyCompactList}\small\item\em ENCR, SIGN, CERT, AUTH. \end{DoxyCompactList}\item 
@@ -138,7 +144,7 @@ QGroup\+Box$\ast$
 \end{DoxyReturn}
 
 
-References date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, and key\+\_\+type\+\_\+combo\+\_\+box\+\_\+.
+References date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, key\+\_\+type\+\_\+combo\+\_\+box\+\_\+, and no\+\_\+pass\+\_\+phrase\+\_\+check\+\_\+box\+\_\+.
 
 
 
@@ -267,7 +273,7 @@ check all line edits for false entries. Show error, when there is one, otherwise
 
 create error message
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), and key\+\_\+size\+\_\+spin\+\_\+box\+\_\+.
+References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Reset\+Temp\+Cache\+Value(), and Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Set\+Temp\+Cache\+Value().
 
 
 

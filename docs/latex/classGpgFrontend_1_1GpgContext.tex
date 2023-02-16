@@ -25,6 +25,12 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Context\+:
 \item 
 struct \mbox{\hyperlink{structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter}{\+\_\+ctx\+\_\+ref\+\_\+deleter}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a36e807be6873698b5f8d4218bdfe8732}\label{classGpgFrontend_1_1GpgContext_a36e807be6873698b5f8d4218bdfe8732}} 
+void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,6 +54,8 @@ void \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a3399fc60086ff5010a089bff48
 \item 
 static gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_acc4234054002065dfbc5d5261a4950d4}{test\+\_\+passphrase\+\_\+cb}} (void $\ast$opaque, const char $\ast$uid\+\_\+hint, const char $\ast$passphrase\+\_\+info, int last\+\_\+was\+\_\+bad, int fd)
 \item 
+static gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_af46f09a4f5c77429c3e782b551812ec2}{custom\+\_\+passphrase\+\_\+cb}} (void $\ast$opaque, const char $\ast$uid\+\_\+hint, const char $\ast$passphrase\+\_\+info, int last\+\_\+was\+\_\+bad, int fd)
+\item 
 static gpgme\+\_\+error\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a3844cd0966134939e5c4be9a725e5271}{test\+\_\+status\+\_\+cb}} (void $\ast$hook, const char $\ast$keyword, const char $\ast$args)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Types}
@@ -59,8 +67,13 @@ using {\bfseries Ctx\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ struct gpgme\+\_
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a3377fd6a325aafc18c119431f602db9b}{init\+\_\+ctx}} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_aaf3f394ff1790897c315c3249b1f06fe}{post\+\_\+init\+\_\+ctx}} ()
+\item 
+std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_ac7c9b2212a77e7cede94d68243541b1b}{need\+\_\+user\+\_\+input\+\_\+passphrase}} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a76fba43d1439c7811e1a9424d0c16d40}\label{classGpgFrontend_1_1GpgContext_a76fba43d1439c7811e1a9424d0c16d40}} 
+std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgContext_a76fba43d1439c7811e1a9424d0c16d40}{check\+\_\+binary\+\_\+chacksum}} (std\+::filesystem\+::path)
+\begin{DoxyCompactList}\small\item\em Construct a new std\+::check component existence object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -100,7 +113,7 @@ Construct a new Gpg Context object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), and init\+\_\+ctx().
+References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), and post\+\_\+init\+\_\+ctx().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a2429d3f9daa189b4d5d8624c9f4d528b}\label{classGpgFrontend_1_1GpgContext_a2429d3f9daa189b4d5d8624c9f4d528b}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!GpgContext@{GpgContext}}
@@ -120,6 +133,36 @@ Construct a new Gpg Context object.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_af46f09a4f5c77429c3e782b551812ec2}\label{classGpgFrontend_1_1GpgContext_af46f09a4f5c77429c3e782b551812ec2}} 
+\index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!custom\_passphrase\_cb@{custom\_passphrase\_cb}}
+\index{custom\_passphrase\_cb@{custom\_passphrase\_cb}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
+\doxysubsubsection{\texorpdfstring{custom\_passphrase\_cb()}{custom\_passphrase\_cb()}}
+{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::\+Gpg\+Context\+::custom\+\_\+passphrase\+\_\+cb (\begin{DoxyParamCaption}\item[{void $\ast$}]{opaque,  }\item[{const char $\ast$}]{uid\+\_\+hint,  }\item[{const char $\ast$}]{passphrase\+\_\+info,  }\item[{int}]{last\+\_\+was\+\_\+bad,  }\item[{int}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & \\
+\hline
+{\em uid\+\_\+hint} & \\
+\hline
+{\em passphrase\+\_\+info} & \\
+\hline
+{\em last\+\_\+was\+\_\+bad} & \\
+\hline
+{\em fd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gpgme\+\_\+error\+\_\+t 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Get\+Temp\+Cache\+Value(), and need\+\_\+user\+\_\+input\+\_\+passphrase().
+
+
+
+Referenced by post\+\_\+init\+\_\+ctx().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a4a8f6ff37e45979159ab375b2c7d48c3}\label{classGpgFrontend_1_1GpgContext_a4a8f6ff37e45979159ab375b2c7d48c3}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!GetInfo@{GetInfo}}
 \index{GetInfo@{GetInfo}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
@@ -135,11 +178,11 @@ const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}}\&
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References check\+\_\+binary\+\_\+chacksum(), Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Gnupg\+Tab\+::\+Gnupg\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Gnupg\+Tab\+::\+Gnupg\+Tab(), post\+\_\+init\+\_\+ctx(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a73c505a2f3d39d1638dc4d9a3e13a913}\label{classGpgFrontend_1_1GpgContext_a73c505a2f3d39d1638dc4d9a3e13a913}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!good@{good}}
@@ -152,25 +195,22 @@ true
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a3377fd6a325aafc18c119431f602db9b}\label{classGpgFrontend_1_1GpgContext_a3377fd6a325aafc18c119431f602db9b}} 
-\index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!init\_ctx@{init\_ctx}}
-\index{init\_ctx@{init\_ctx}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
-\doxysubsubsection{\texorpdfstring{init\_ctx()}{init\_ctx()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Context\+::init\+\_\+ctx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_ac7c9b2212a77e7cede94d68243541b1b}\label{classGpgFrontend_1_1GpgContext_ac7c9b2212a77e7cede94d68243541b1b}} 
+\index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!need\_user\_input\_passphrase@{need\_user\_input\_passphrase}}
+\index{need\_user\_input\_passphrase@{need\_user\_input\_passphrase}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
+\doxysubsubsection{\texorpdfstring{need\_user\_input\_passphrase()}{need\_user\_input\_passphrase()}}
+{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Context\+::need\+\_\+user\+\_\+input\+\_\+passphrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Setting the output type must be done at the beginning
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
 
-think this means ascii-\/armor -\/-\/$>$ ?
 
-Setting the output type must be done at the beginning
-
-think this means ascii-\/armor -\/-\/$>$ ?
-
-References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Set\+Passphrase\+Cb(), test\+\_\+passphrase\+\_\+cb(), and test\+\_\+status\+\_\+cb().
+References Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance().
 
 
 
-Referenced by Gpg\+Context().
+Referenced by custom\+\_\+passphrase\+\_\+cb().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a5b419175bd9927f3d449637db8ba6524}\label{classGpgFrontend_1_1GpgContext_a5b419175bd9927f3d449637db8ba6524}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!operator gpgme\_ctx\_t@{operator gpgme\_ctx\_t}}
@@ -181,6 +221,26 @@ Referenced by Gpg\+Context().
 \begin{DoxyReturn}{Returns}
 gpgme\+\_\+ctx\+\_\+t 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_aaf3f394ff1790897c315c3249b1f06fe}\label{classGpgFrontend_1_1GpgContext_aaf3f394ff1790897c315c3249b1f06fe}} 
+\index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!post\_init\_ctx@{post\_init\_ctx}}
+\index{post\_init\_ctx@{post\_init\_ctx}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
+\doxysubsubsection{\texorpdfstring{post\_init\_ctx()}{post\_init\_ctx()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Context\+::post\+\_\+init\+\_\+ctx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setting the output type must be done at the beginning
+
+think this means ascii-\/armor -\/-\/$>$ ?
+
+Setting the output type must be done at the beginning
+
+think this means ascii-\/armor -\/-\/$>$ ?
+
+References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), custom\+\_\+passphrase\+\_\+cb(), Get\+Info(), Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance(), Set\+Passphrase\+Cb(), test\+\_\+passphrase\+\_\+cb(), and test\+\_\+status\+\_\+cb().
+
+
+
+Referenced by Gpg\+Context().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a3399fc60086ff5010a089bff48bbc63c}\label{classGpgFrontend_1_1GpgContext_a3399fc60086ff5010a089bff48bbc63c}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!SetPassphraseCb@{SetPassphraseCb}}
 \index{SetPassphraseCb@{SetPassphraseCb}!GpgFrontend::GpgContext@{GpgFrontend::GpgContext}}
@@ -198,7 +258,7 @@ Set the Passphrase Cb object.
 \end{DoxyParams}
 
 
-Referenced by init\+\_\+ctx().
+Referenced by post\+\_\+init\+\_\+ctx().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_acc4234054002065dfbc5d5261a4950d4}\label{classGpgFrontend_1_1GpgContext_acc4234054002065dfbc5d5261a4950d4}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!test\_passphrase\_cb@{test\_passphrase\_cb}}
@@ -224,7 +284,7 @@ gpgme\+\_\+error\+\_\+t
 \end{DoxyReturn}
 
 
-Referenced by init\+\_\+ctx().
+Referenced by post\+\_\+init\+\_\+ctx().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a3844cd0966134939e5c4be9a725e5271}\label{classGpgFrontend_1_1GpgContext_a3844cd0966134939e5c4be9a725e5271}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!test\_status\_cb@{test\_status\_cb}}
@@ -246,7 +306,7 @@ gpgme\+\_\+error\+\_\+t
 \end{DoxyReturn}
 
 
-Referenced by init\+\_\+ctx().
+Referenced by post\+\_\+init\+\_\+ctx().
 
 
 

@@ -1,0 +1,98 @@
+\hypertarget{classGpgFrontend_1_1CoreSignalStation}{}\doxysection{Gpg\+Frontend\+::Core\+Signal\+Station Class Reference}
+\label{classGpgFrontend_1_1CoreSignalStation}\index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Core\+Signal\+Station\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classGpgFrontend_1_1CoreSignalStation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Core\+Signal\+Station\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1CoreSignalStation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_aac91061a578d4afe738495b5c6b3883f}\label{classGpgFrontend_1_1CoreSignalStation_aac91061a578d4afe738495b5c6b3883f}} 
+void {\bfseries Signal\+User\+Input\+Passphrase\+Done} (QString passparase)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_af30315ec5659ca05557b4f21f5297b08}\label{classGpgFrontend_1_1CoreSignalStation_af30315ec5659ca05557b4f21f5297b08}} 
+void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}{\+\_\+instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}\label{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}} 
+\index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Gpg\+Frontend\+::\+Core\+Signal\+Station}} $\ast$ Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Signal\+Station$\ast$ 
+\end{DoxyReturn}
+
+
+References \+\_\+instance.
+
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Common\+Utils(), Gpg\+Frontend\+::\+Gpg\+Context\+::need\+\_\+user\+\_\+input\+\_\+passphrase(), and Gpg\+Frontend\+::\+Gpg\+Context\+::post\+\_\+init\+\_\+ctx().
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}\label{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}} 
+\index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Gpg\+Frontend\+::\+Core\+Signal\+Station}} $>$ Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+\_\+instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Copyright (C) 2021 Saturneric
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+Referenced by Get\+Instance().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Core\+Signal\+Station.\+h\item 
+src/core/function/Core\+Signal\+Station.\+cpp\end{DoxyCompactItemize}

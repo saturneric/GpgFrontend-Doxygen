@@ -16,7 +16,7 @@ Inheritance diagram for Gpg\+Frontend\+::UI\+::Text\+Edit\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=235pt]{classGpgFrontend_1_1UI_1_1TextEdit__inherit__graph}
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1TextEdit__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -26,7 +26,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Text\+Edit\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=235pt]{classGpgFrontend_1_1UI_1_1TextEdit__coll__graph}
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1TextEdit__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Slots}
@@ -50,13 +50,13 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_adca2bbfa746b5598f2a4f7
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a57a46ab5595622ae0b7bceef7d56bd7c}{Slot\+New\+Tab}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a72006c9f8f45ac4d154c67f62a29446d}{Slot\+Open\+File}} (QString \&path)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a60c73cc66a48a38c13e7890de49e86c3}{Slot\+Open\+File}} (const QString \&path)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a3c17fdf3abf9c4fb6ce35cfb8f0f8fc4}{slot\+New\+Help\+Tab}} (const QString \&title, const QString \&path) const
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_ae22ecadf31648f424eb8ab86bd28ef39}{Slot\+New\+File\+Tab}} () const
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a7544182198b729373843635bbfea082a}{Slot\+Show\+Modified}} () const
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_ab24adc1adb3b9b29469992e4c444436e}{Slot\+Show\+Modified}} (bool) const
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_aa21659aa7acba98dfd6286d69e00ab9b}{Slot\+Close\+Tab}} ()
 \item 
@@ -120,6 +120,8 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a66b6f6633e7ac71e5fe8b7
 void {\bfseries slot\+\_\+file\+\_\+page\+\_\+path\+\_\+changed} (const QString \&path) const
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a12f65fbc4984c266a5df4505ecde7c42}{slot\+\_\+remove\+\_\+tab}} (int index)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a1bf57ebe1e32b12c48bb633b7dd7a4f1}{slot\+\_\+save\+\_\+status\+\_\+to\+\_\+cache\+\_\+for\+\_\+revovery}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -133,6 +135,9 @@ static QString \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_afb9b7a7d8815
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a1d8948316e9231f50809e6fb9b337546}\label{classGpgFrontend_1_1UI_1_1TextEdit_a1d8948316e9231f50809e6fb9b337546}} 
+uint {\bfseries text\+\_\+page\+\_\+data\+\_\+modified\+\_\+count\+\_\+} = 0
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a747d3740a88295e6c9565788d4cf56ec}\label{classGpgFrontend_1_1UI_1_1TextEdit_a747d3740a88295e6c9565788d4cf56ec}} 
 int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit_a747d3740a88295e6c9565788d4cf56ec}{count\+\_\+page\+\_\+}}
@@ -253,6 +258,17 @@ Remove the tab with given index
 {\em index} & Tab-\/number to remove \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a1bf57ebe1e32b12c48bb633b7dd7a4f1}\label{classGpgFrontend_1_1UI_1_1TextEdit_a1bf57ebe1e32b12c48bb633b7dd7a4f1}} 
+\index{GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}!slot\_save\_status\_to\_cache\_for\_revovery@{slot\_save\_status\_to\_cache\_for\_revovery}}
+\index{slot\_save\_status\_to\_cache\_for\_revovery@{slot\_save\_status\_to\_cache\_for\_revovery}!GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}}
+\doxysubsubsection{\texorpdfstring{slot\_save\_status\_to\_cache\_for\_revovery}{slot\_save\_status\_to\_cache\_for\_revovery}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::slot\+\_\+save\+\_\+status\+\_\+to\+\_\+cache\+\_\+for\+\_\+revovery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_aa21659aa7acba98dfd6286d69e00ab9b}\label{classGpgFrontend_1_1UI_1_1TextEdit_aa21659aa7acba98dfd6286d69e00ab9b}} 
 \index{GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}!SlotCloseTab@{SlotCloseTab}}
 \index{SlotCloseTab@{SlotCloseTab}!GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}}
@@ -363,11 +379,11 @@ Show an Open\+File\+Doalog and open the file in a new tab. Shows an error dialog
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a72006c9f8f45ac4d154c67f62a29446d}\label{classGpgFrontend_1_1UI_1_1TextEdit_a72006c9f8f45ac4d154c67f62a29446d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a60c73cc66a48a38c13e7890de49e86c3}\label{classGpgFrontend_1_1UI_1_1TextEdit_a60c73cc66a48a38c13e7890de49e86c3}} 
 \index{GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}!SlotOpenFile@{SlotOpenFile}}
 \index{SlotOpenFile@{SlotOpenFile}!GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}}
 \doxysubsubsection{\texorpdfstring{SlotOpenFile}{SlotOpenFile}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Open\+File (\begin{DoxyParamCaption}\item[{QString \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Open\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 Adds a new tab with opening file by path 
 
@@ -432,11 +448,11 @@ References Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+File\+
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a7544182198b729373843635bbfea082a}\label{classGpgFrontend_1_1UI_1_1TextEdit_a7544182198b729373843635bbfea082a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_ab24adc1adb3b9b29469992e4c444436e}\label{classGpgFrontend_1_1UI_1_1TextEdit_ab24adc1adb3b9b29469992e4c444436e}} 
 \index{GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}!SlotShowModified@{SlotShowModified}}
 \index{SlotShowModified@{SlotShowModified}!GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}}
 \doxysubsubsection{\texorpdfstring{SlotShowModified}{SlotShowModified}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Show\+Modified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Show\+Modified (\begin{DoxyParamCaption}\item[{bool}]{changed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [slot]}}
 
 put a $\ast$ in front of current tabs title, if current textedit is modified \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1TextEdit_a576e06390e65576465297d2ab8d7d474}\label{classGpgFrontend_1_1UI_1_1TextEdit_a576e06390e65576465297d2ab8d7d474}} 
 \index{GpgFrontend::UI::TextEdit@{GpgFrontend::UI::TextEdit}!SlotSwitchTabDown@{SlotSwitchTabDown}}

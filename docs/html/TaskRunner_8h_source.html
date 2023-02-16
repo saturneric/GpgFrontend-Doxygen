@@ -90,40 +90,43 @@ $(document).ready(function(){initNavTree('TaskRunner_8h_source.html',''); initRe
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_TASKRUNNER_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define GPGFRONTEND_TASKRUNNER_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1Thread.html">GpgFrontend::Thread</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>Task;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">   39</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">TaskRunner</a> : <span class="keyword">public</span> QThread {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf">   46</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf">TaskRunner</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d">   52</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d">~TaskRunner</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  [[noreturn]] <span class="keywordtype">void</span> run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> PostTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">   70</a></span>&#160;  std::queue&lt;Task*&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>;                      </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">   71</a></span>&#160;  std::map&lt;std::string, Task*&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">pending_tasks_</a>;  </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">   72</a></span>&#160;  std::mutex <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>;                      </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_TASKRUNNER_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">GpgFrontend::Thread::TaskRunner</a></div><div class="ttdef"><b>Definition:</b> TaskRunner.h:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a5e72f1ce00d41c225a4304f1ed20b3f1"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">GpgFrontend::Thread::TaskRunner::tasks_mutex_</a></div><div class="ttdeci">std::mutex tasks_mutex_</div><div class="ttdoc">The task queue mutex.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:72</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a6d92421bbbfcf3136335a5173d1b2a22"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">GpgFrontend::Thread::TaskRunner::pending_tasks_</a></div><div class="ttdeci">std::map&lt; std::string, Task * &gt; pending_tasks_</div><div class="ttdoc">The pending tasks.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a774775e9a91d33072b27dcf78cead6e2"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">GpgFrontend::Thread::TaskRunner::tasks</a></div><div class="ttdeci">std::queue&lt; Task * &gt; tasks</div><div class="ttdoc">The task queue.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:70</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1Thread.html">GpgFrontend::Thread</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Task;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">TaskRunner</a> : <span class="keyword">public</span> QThread {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf">   47</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf">TaskRunner</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d">   53</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d">~TaskRunner</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  [[noreturn]] <span class="keywordtype">void</span> run() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> PostTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> PostScheduleTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task, <span class="keywordtype">size_t</span> seconds);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">   79</a></span>&#160;  std::queue&lt;Task*&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>;                      </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">   80</a></span>&#160;  std::map&lt;std::string, Task*&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">pending_tasks_</a>;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">   81</a></span>&#160;  std::mutex <a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>;                      </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_TASKRUNNER_H</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">GpgFrontend::Thread::TaskRunner</a></div><div class="ttdef"><b>Definition:</b> TaskRunner.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a5e72f1ce00d41c225a4304f1ed20b3f1"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">GpgFrontend::Thread::TaskRunner::tasks_mutex_</a></div><div class="ttdeci">std::mutex tasks_mutex_</div><div class="ttdoc">The task queue mutex.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:81</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a6d92421bbbfcf3136335a5173d1b2a22"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">GpgFrontend::Thread::TaskRunner::pending_tasks_</a></div><div class="ttdeci">std::map&lt; std::string, Task * &gt; pending_tasks_</div><div class="ttdoc">The pending tasks.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:80</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_a774775e9a91d33072b27dcf78cead6e2"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">GpgFrontend::Thread::TaskRunner::tasks</a></div><div class="ttdeci">std::queue&lt; Task * &gt; tasks</div><div class="ttdoc">The task queue.</div><div class="ttdef"><b>Definition:</b> TaskRunner.h:79</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_ac3e57b59d537e2a75e741d4a5418ae6d"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d">GpgFrontend::Thread::TaskRunner::~TaskRunner</a></div><div class="ttdeci">virtual ~TaskRunner() override</div><div class="ttdoc">Destroy the Task Runner object.</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html_ad3c8612cbe60112f9b14e616fb0a4acf"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#ad3c8612cbe60112f9b14e616fb0a4acf">GpgFrontend::Thread::TaskRunner::TaskRunner</a></div><div class="ttdeci">TaskRunner()</div><div class="ttdoc">Construct a new Task Runner object.</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:45</div></div>

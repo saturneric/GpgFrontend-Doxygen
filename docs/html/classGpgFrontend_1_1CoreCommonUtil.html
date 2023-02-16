@@ -84,7 +84,9 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1CoreCommonUtil.htm
 <div class="header">
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1CoreCommonUtil-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,7 +98,7 @@ Inheritance diagram for GpgFrontend::CoreCommonUtil:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1CoreCommonUtil__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1CoreCommonUtil_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1CoreCommonUtil_inherit__map" id="aGpgFrontend_1_1CoreCommonUtil_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,231,223"/>
+<area shape="rect" title=" " alt="" coords="5,131,231,281"/>
 <area shape="rect" title=" " alt="" coords="81,5,155,83"/>
 </map>
 </div>
@@ -105,11 +107,16 @@ Collaboration diagram for GpgFrontend::CoreCommonUtil:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1CoreCommonUtil__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1CoreCommonUtil_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1CoreCommonUtil_coll__map" id="aGpgFrontend_1_1CoreCommonUtil_coll__map">
-<area shape="rect" title=" " alt="" coords="5,455,231,547"/>
-<area shape="rect" title=" " alt="" coords="59,307,134,385"/>
-<area shape="rect" title=" " alt="" coords="159,300,376,392"/>
-<area shape="rect" title=" " alt="" coords="189,145,346,223"/>
-<area shape="rect" title=" " alt="" coords="248,5,287,83"/>
+<area shape="rect" title=" " alt="" coords="101,469,326,605"/>
+<area shape="rect" title=" " alt="" coords="5,322,80,399"/>
+<area shape="rect" title=" " alt="" coords="105,315,322,407"/>
+<area shape="rect" title=" " alt="" coords="131,160,288,237"/>
+<area shape="rect" title=" " alt="" coords="255,13,294,90"/>
+<area shape="rect" title=" " alt="" coords="354,160,489,237"/>
+<area shape="rect" title=" " alt="" coords="355,315,517,407"/>
+<area shape="rect" title=" " alt="" coords="537,160,623,237"/>
+<area shape="rect" title=" " alt="" coords="511,5,649,97"/>
+<area shape="rect" title=" " alt="" coords="402,13,441,90"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -119,6 +126,19 @@ Signals</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalGnupgNotInstall</b> ()</td></tr>
 <tr class="separator:ae78bbd20a519cbd8b4384e443c98231e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a62bb080c6c04970fd2e02a460ea91d2a"><td class="memItemLeft" align="right" valign="top"><a id="a62bb080c6c04970fd2e02a460ea91d2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#a62bb080c6c04970fd2e02a460ea91d2a">SetTempCacheValue</a> (const std::string, const std::string)</td></tr>
+<tr class="memdesc:a62bb080c6c04970fd2e02a460ea91d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a temp cache under a certain key <br /></td></tr>
+<tr class="separator:a62bb080c6c04970fd2e02a460ea91d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7689d3abb54a1cef6a826fc944d9dec7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#a7689d3abb54a1cef6a826fc944d9dec7">GetTempCacheValue</a> (const std::string)</td></tr>
+<tr class="memdesc:a7689d3abb54a1cef6a826fc944d9dec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">after get the temp cache, its value will be imediately ease in storage  <a href="classGpgFrontend_1_1CoreCommonUtil.html#a7689d3abb54a1cef6a826fc944d9dec7">More...</a><br /></td></tr>
+<tr class="separator:a7689d3abb54a1cef6a826fc944d9dec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354c4f7cb7f102964e43012fc10d1e52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#a354c4f7cb7f102964e43012fc10d1e52">ResetTempCacheValue</a> (const std::string)</td></tr>
+<tr class="memdesc:a354c4f7cb7f102964e43012fc10d1e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">imediately ease temp cache in storage  <a href="classGpgFrontend_1_1CoreCommonUtil.html#a354c4f7cb7f102964e43012fc10d1e52">More...</a><br /></td></tr>
+<tr class="separator:a354c4f7cb7f102964e43012fc10d1e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8588dfa6ccb57c055f022b13e2da1e7c"><td class="memItemLeft" align="right" valign="top"><a id="a8588dfa6ccb57c055f022b13e2da1e7c"></a>
@@ -126,12 +146,65 @@ static <a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html">CoreCommonUt
 <tr class="memdesc:a8588dfa6ccb57c055f022b13e2da1e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Core Common Util object. <br /></td></tr>
 <tr class="separator:a8588dfa6ccb57c055f022b13e2da1e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4d36aa8744c3fb246080075ca1d81c9a"><td class="memItemLeft" align="right" valign="top"><a id="a4d36aa8744c3fb246080075ca1d81c9a"></a>
+std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>temp_cache_</b></td></tr>
+<tr class="separator:a4d36aa8744c3fb246080075ca1d81c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a84e293c5806f34231e682426092ed298"><td class="memItemLeft" align="right" valign="top"><a id="a84e293c5806f34231e682426092ed298"></a>
 static std::unique_ptr&lt; <a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html">CoreCommonUtil</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>instance_</b> = nullptr</td></tr>
 <tr class="separator:a84e293c5806f34231e682426092ed298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7689d3abb54a1cef6a826fc944d9dec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7689d3abb54a1cef6a826fc944d9dec7">&#9670;&nbsp;</a></span>GetTempCacheValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GpgFrontend::CoreCommonUtil::GetTempCacheValue </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>after get the temp cache, its value will be imediately ease in storage </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgContext.html#af46f09a4f5c77429c3e782b551812ec2">GpgFrontend::GpgContext::custom_passphrase_cb()</a>.</p>
+
+</div>
+</div>
+<a id="a354c4f7cb7f102964e43012fc10d1e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354c4f7cb7f102964e43012fc10d1e52">&#9670;&nbsp;</a></span>ResetTempCacheValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::CoreCommonUtil::ResetTempCacheValue </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>imediately ease temp cache in storage </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyGenDialog.html#af1f7a62dcb024513453766ee8816d514">GpgFrontend::UI::KeyGenDialog::slot_key_gen_accept()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aab426dec4b4655b215b09b490e05ad05">GpgFrontend::UI::SubkeyGenerateDialog::slot_key_gen_accept()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/core/common/<a class="el" href="CoreCommonUtil_8h_source.html">CoreCommonUtil.h</a></li>
 <li>src/core/common/CoreCommonUtil.cpp</li>

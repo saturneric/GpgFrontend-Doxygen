@@ -54,7 +54,13 @@ void {\bfseries Signal\+Gnupg\+Not\+Install} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}{Signal\+Key\+Database\+Refresh\+Done}} ()
-\begin{DoxyCompactList}\small\item\em emit when the key database is refreshed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em emit when the key database is refreshed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a1e7dff5252d5ec77c8450ad356891ebb}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a1e7dff5252d5ec77c8450ad356891ebb}} 
+void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}} 
+void {\bfseries Signal\+User\+Input\+Passphrase\+Done} (QString passphrase)
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -71,7 +77,10 @@ static \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}{slot\+\_\+update\+\_\+key\+\_\+status}} ()
-\begin{DoxyCompactList}\small\item\em update the key status when signal is emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em update the key status when signal is emitted \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}} 
+void {\bfseries slot\+\_\+popup\+\_\+passphrase\+\_\+input\+\_\+dialog} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 

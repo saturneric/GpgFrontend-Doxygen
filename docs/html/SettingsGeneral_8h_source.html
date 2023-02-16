@@ -131,20 +131,22 @@ $(document).ready(function(){initNavTree('SettingsGeneral_8h_source.html',''); i
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_key_database_path_label(<span class="keywordtype">int</span> state);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> slot_key_databse_path_changed();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_gnupg_install_path_label(<span class="keywordtype">int</span> state);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_SETTINGSGENERAL_H</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> slot_gnupg_stettings_changed();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_SETTINGSGENERAL_H</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html">GpgFrontend::UI::GeneralTab</a></div><div class="ttdef"><b>Definition:</b> SettingsGeneral.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html_a214079dfbacdc6898146c8468611cf0c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html#a214079dfbacdc6898146c8468611cf0c">GpgFrontend::UI::GeneralTab::GeneralTab</a></div><div class="ttdeci">GeneralTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new General Tab object.</div><div class="ttdef"><b>Definition:</b> SettingsGeneral.cpp:42</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html_a7b26d8a088ce8f50b1fd0e719e38534b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html#a7b26d8a088ce8f50b1fd0e719e38534b">GpgFrontend::UI::GeneralTab::SetSettings</a></div><div class="ttdeci">void SetSettings()</div><div class="ttdoc">Set the Settings object.</div><div class="ttdef"><b>Definition:</b> SettingsGeneral.cpp:135</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html_a7b26d8a088ce8f50b1fd0e719e38534b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html#a7b26d8a088ce8f50b1fd0e719e38534b">GpgFrontend::UI::GeneralTab::SetSettings</a></div><div class="ttdeci">void SetSettings()</div><div class="ttdoc">Set the Settings object.</div><div class="ttdef"><b>Definition:</b> SettingsGeneral.cpp:178</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html_aa88ccbda61728be6de0aa2d9b92e0b69"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html#aa88ccbda61728be6de0aa2d9b92e0b69">GpgFrontend::UI::GeneralTab::SignalRestartNeeded</a></div><div class="ttdeci">void SignalRestartNeeded(bool needed)</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html_afc107d56f13000aa28436a5e26a0876b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html#afc107d56f13000aa28436a5e26a0876b">GpgFrontend::UI::GeneralTab::SignalDeepRestartNeeded</a></div><div class="ttdeci">void SignalDeepRestartNeeded(bool needed)</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:152</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

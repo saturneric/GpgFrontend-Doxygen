@@ -9,6 +9,7 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "save_file", "classGpgFrontend_1_1UI_1_1TextEdit.html#a66b6f6633e7ac71e5fe8b7814a81cadf", null ],
     [ "slot_file_page_path_changed", "classGpgFrontend_1_1UI_1_1TextEdit.html#aeb2048d8028907d521f5f35c077832c2", null ],
     [ "slot_remove_tab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a12f65fbc4984c266a5df4505ecde7c42", null ],
+    [ "slot_save_status_to_cache_for_revovery", "classGpgFrontend_1_1UI_1_1TextEdit.html#a1bf57ebe1e32b12c48bb633b7dd7a4f1", null ],
     [ "SlotCloseTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa21659aa7acba98dfd6286d69e00ab9b", null ],
     [ "SlotCopy", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3599bd01636a873cf3437ab6b9d38780", null ],
     [ "SlotCurPageFileTreeView", "classGpgFrontend_1_1UI_1_1TextEdit.html#a72014409d407c161b048e07c061b4cf9", null ],
@@ -19,7 +20,7 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "slotNewHelpTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3c17fdf3abf9c4fb6ce35cfb8f0f8fc4", null ],
     [ "SlotNewTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a57a46ab5595622ae0b7bceef7d56bd7c", null ],
     [ "SlotOpen", "classGpgFrontend_1_1UI_1_1TextEdit.html#a15335d38187ddf580b7200d856768cfb", null ],
-    [ "SlotOpenFile", "classGpgFrontend_1_1UI_1_1TextEdit.html#a72006c9f8f45ac4d154c67f62a29446d", null ],
+    [ "SlotOpenFile", "classGpgFrontend_1_1UI_1_1TextEdit.html#a60c73cc66a48a38c13e7890de49e86c3", null ],
     [ "SlotPaste", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa2230418dc8f72c400f5a90082a983c9", null ],
     [ "SlotPrint", "classGpgFrontend_1_1UI_1_1TextEdit.html#adca2bbfa746b5598f2a4f74026b84224", null ],
     [ "SlotQuote", "classGpgFrontend_1_1UI_1_1TextEdit.html#a6a02fce9dc4039c982d6dd19231517ee", null ],
@@ -27,7 +28,7 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "SlotSave", "classGpgFrontend_1_1UI_1_1TextEdit.html#ace0b8f4c161db9f4f5db5ecbfd7a91c0", null ],
     [ "SlotSaveAs", "classGpgFrontend_1_1UI_1_1TextEdit.html#a02fa44ba0c56f3f6ae125f8490faf254", null ],
     [ "SlotSelectAll", "classGpgFrontend_1_1UI_1_1TextEdit.html#a6c814253dfc061bfdae0fa71c6196c55", null ],
-    [ "SlotShowModified", "classGpgFrontend_1_1UI_1_1TextEdit.html#a7544182198b729373843635bbfea082a", null ],
+    [ "SlotShowModified", "classGpgFrontend_1_1UI_1_1TextEdit.html#ab24adc1adb3b9b29469992e4c444436e", null ],
     [ "SlotSwitchTabDown", "classGpgFrontend_1_1UI_1_1TextEdit.html#a576e06390e65576465297d2ab8d7d474", null ],
     [ "SlotSwitchTabUp", "classGpgFrontend_1_1UI_1_1TextEdit.html#af1e364b513f566c743a5d36c19098762", null ],
     [ "SlotUndo", "classGpgFrontend_1_1UI_1_1TextEdit.html#a4a81e69f6dc74ea649ca9a2358342fd5", null ],
@@ -37,5 +38,6 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "TabCount", "classGpgFrontend_1_1UI_1_1TextEdit.html#a05c54658597b04c3976c72d3a5f9add9", null ],
     [ "UnsavedDocuments", "classGpgFrontend_1_1UI_1_1TextEdit.html#a82fe98d45f54909ebea933b540367c39", null ],
     [ "count_page_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a747d3740a88295e6c9565788d4cf56ec", null ],
-    [ "tab_widget_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a725048d1c6de8ed7ba29062afa72767b", null ]
+    [ "tab_widget_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a725048d1c6de8ed7ba29062afa72767b", null ],
+    [ "text_page_data_modified_count_", "classGpgFrontend_1_1UI_1_1TextEdit.html#a1d8948316e9231f50809e6fb9b337546", null ]
 ];

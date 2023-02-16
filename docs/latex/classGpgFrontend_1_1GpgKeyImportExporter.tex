@@ -31,6 +31,8 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_aa9fbda8f6c3fa36a
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a8157afa844c8bf964ce83f5de71efc5a}{Export\+Keys}} (const Key\+Args\+List \&keys, Byte\+Array\+Ptr \&out\+Buffer, bool secret=false) const
 \item 
+bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_ae7d61a8c39ef7e7f1562895dbf108e68}{Export\+All\+Keys}} (Key\+Id\+Args\+List\+Ptr \&uid\+\_\+list, Byte\+Array\+Ptr \&out\+\_\+buffer, bool secret) const
+\item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}{Export\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+\_\+buffer) const
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter_aa0a73314ef94f397e2ef53d40abc9731}{Export\+Key\+Open\+SSH}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, Byte\+Array\+Ptr \&out\+\_\+buffer) const
@@ -78,6 +80,36 @@ All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} wa
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_ae7d61a8c39ef7e7f1562895dbf108e68}\label{classGpgFrontend_1_1GpgKeyImportExporter_ae7d61a8c39ef7e7f1562895dbf108e68}} 
+\index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportAllKeys@{ExportAllKeys}}
+\index{ExportAllKeys@{ExportAllKeys}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}
+\doxysubsubsection{\texorpdfstring{ExportAllKeys()}{ExportAllKeys()}}
+{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+All\+Keys (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr \&}]{uid\+\_\+list,  }\item[{Byte\+Array\+Ptr \&}]{out\+\_\+buffer,  }\item[{bool}]{secret }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & \\
+\hline
+{\em out\+Buffer} & \\
+\hline
+{\em secret} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false
+\end{DoxyReturn}
+Export all the keys both private and public keys 
+\begin{DoxyParams}{Parameters}
+{\em uid\+\_\+list} & key ids \\
+\hline
+{\em out\+\_\+buffer} & output byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if success 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}\label{classGpgFrontend_1_1GpgKeyImportExporter_a51cb18aa7302d7a48ccd1ee17f060391}} 
 \index{GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}!ExportKey@{ExportKey}}
 \index{ExportKey@{ExportKey}!GpgFrontend::GpgKeyImportExporter@{GpgFrontend::GpgKeyImportExporter}}

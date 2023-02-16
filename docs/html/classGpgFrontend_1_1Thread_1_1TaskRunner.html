@@ -96,8 +96,8 @@ Inheritance diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" id="aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,164,296"/>
-<area shape="rect" title=" " alt="" coords="46,5,123,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,168,311"/>
+<area shape="rect" title=" " alt="" coords="48,5,125,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -105,7 +105,7 @@ Collaboration diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map" id="aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map">
-<area shape="rect" title=" " alt="" coords="514,1076,673,1212"/>
+<area shape="rect" title=" " alt="" coords="512,1076,675,1227"/>
 <area shape="rect" title=" " alt="" coords="329,921,407,999"/>
 <area shape="rect" title=" " alt="" coords="431,907,593,1013"/>
 <area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="207,532,369,844"/>
@@ -128,6 +128,8 @@ Collaboration diagram for GpgFrontend::Thread::TaskRunner:</div>
 Public Slots</h2></td></tr>
 <tr class="memitem:a4fae01eb0a5b296b8c4c6bf8408f1c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a4fae01eb0a5b296b8c4c6bf8408f1c6b">PostTask</a> (<a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> *task)</td></tr>
 <tr class="separator:a4fae01eb0a5b296b8c4c6bf8408f1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddb0cdd8eb57aac08ca9caf8b8e6bac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#aaddb0cdd8eb57aac08ca9caf8b8e6bac">PostScheduleTask</a> (<a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> *task, size_t seconds)</td></tr>
+<tr class="separator:aaddb0cdd8eb57aac08ca9caf8b8e6bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -193,6 +195,49 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaddb0cdd8eb57aac08ca9caf8b8e6bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddb0cdd8eb57aac08ca9caf8b8e6bac">&#9670;&nbsp;</a></span>PostScheduleTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::Thread::TaskRunner::PostScheduleTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> *&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>seconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task</td><td></td></tr>
+    <tr><td class="paramname">seconds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4fae01eb0a5b296b8c4c6bf8408f1c6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fae01eb0a5b296b8c4c6bf8408f1c6b">&#9670;&nbsp;</a></span>PostTask</h2>
 

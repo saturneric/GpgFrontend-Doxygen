@@ -30,5 +30,6 @@ var classGpgFrontend_1_1UI_1_1KeyGenDialog =
     [ "max_date_time_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#aff131dd6f7178c63ef2e2f85d30828a2", null ],
     [ "name_edit_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a7ed095cce29c658741ae0520049010c0", null ],
     [ "no_pass_phrase_check_box_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a52bf44c05cf1280ba13369ae2c33c60a", null ],
+    [ "passphrase_edit_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a43850a47ceaeb2e693027a0672bf77f7", null ],
     [ "re_email_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a8ecbb5721d5a2a0f85fd7b362f62bf83", null ]
 ];

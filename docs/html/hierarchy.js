@@ -6,6 +6,7 @@ var hierarchy =
     [ "GpgFrontend::_result_ref_deletor", "structGpgFrontend_1_1__result__ref__deletor.html", null ],
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", null ],
+    [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
     [ "GpgFrontend::ChannelObject", "classGpgFrontend_1_1ChannelObject.html", [
       [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", null ]
@@ -120,6 +121,8 @@ var hierarchy =
     ] ],
     [ "QObject", null, [
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
+      [ "GpgFrontend::CoreSignalStation", "classGpgFrontend_1_1CoreSignalStation.html", null ],
+      [ "GpgFrontend::GpgContext", "classGpgFrontend_1_1GpgContext.html", null ],
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
         [ "GpgFrontend::Thread::CtxCheckTask", "classGpgFrontend_1_1Thread_1_1CtxCheckTask.html", null ],
         [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ],

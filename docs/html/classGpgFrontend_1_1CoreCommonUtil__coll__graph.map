@@ -1,7 +1,12 @@
 <map id="GpgFrontend::CoreCommonUtil" name="GpgFrontend::CoreCommonUtil">
-<area shape="rect" id="node1" title=" " alt="" coords="5,455,231,547"/>
-<area shape="rect" id="node2" title=" " alt="" coords="59,307,134,385"/>
-<area shape="rect" id="node3" title=" " alt="" coords="159,300,376,392"/>
-<area shape="rect" id="node4" title=" " alt="" coords="189,145,346,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="248,5,287,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="101,469,326,605"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,322,80,399"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,315,322,407"/>
+<area shape="rect" id="node4" title=" " alt="" coords="131,160,288,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="255,13,294,90"/>
+<area shape="rect" id="node9" title=" " alt="" coords="354,160,489,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="355,315,517,407"/>
+<area shape="rect" id="node7" title=" " alt="" coords="537,160,623,237"/>
+<area shape="rect" id="node8" title=" " alt="" coords="511,5,649,97"/>
+<area shape="rect" id="node10" title=" " alt="" coords="402,13,441,90"/>
 </map>
