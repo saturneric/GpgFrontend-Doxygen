@@ -78,13 +78,16 @@ std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgCon
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a838e2ec5571dc810af7c075c28d630db}\label{classGpgFrontend_1_1GpgContext_a838e2ec5571dc810af7c075c28d630db}} 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}} {\bfseries info\+\_\+}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}} {\bfseries info\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a4765cccf9f994a9c7b3d962a24bed77e}\label{classGpgFrontend_1_1GpgContext_a4765cccf9f994a9c7b3d962a24bed77e}} 
-\mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} {\bfseries args\+\_\+}
+\mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} {\bfseries args\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_ad89cdcb4fd0d8ad759e59254e4b7281c}\label{classGpgFrontend_1_1GpgContext_ad89cdcb4fd0d8ad759e59254e4b7281c}} 
 bool {\bfseries extend\+\_\+info\+\_\+loaded\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a4fb92a23d989f514536a26509b4d0993}\label{classGpgFrontend_1_1GpgContext_a4fb92a23d989f514536a26509b4d0993}} 
+std\+::shared\+\_\+mutex {\bfseries preload\+\_\+lock\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_aaf3f5b4528b35bf0dc7a50163224a9a3}\label{classGpgFrontend_1_1GpgContext_aaf3f5b4528b35bf0dc7a50163224a9a3}} 
 Ctx\+Ref\+Handler {\bfseries \+\_\+ctx\+\_\+ref} = nullptr
@@ -113,7 +116,7 @@ Construct a new Gpg Context object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), and post\+\_\+init\+\_\+ctx().
+References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Assuan\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+CMSPath, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Database\+Path, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gnupg\+Version, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gpg\+Conf\+Path, and post\+\_\+init\+\_\+ctx().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a2429d3f9daa189b4d5d8624c9f4d528b}\label{classGpgFrontend_1_1GpgContext_a2429d3f9daa189b4d5d8624c9f4d528b}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!GpgContext@{GpgContext}}
@@ -178,11 +181,11 @@ const \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}}\&
 \end{DoxyReturn}
 
 
-References check\+\_\+binary\+\_\+chacksum(), Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References check\+\_\+binary\+\_\+chacksum(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+Dirmngr\+Path, Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gnu\+PGHome\+Path, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gnupg\+Version, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gpg\+Agent\+Path, Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gpg\+Conf\+Path, and Gpg\+Frontend\+::\+Gpg\+Info\+::\+Keyboxd\+Path.
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Gnupg\+Tab\+::\+Gnupg\+Tab(), post\+\_\+init\+\_\+ctx(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command().
+Referenced by post\+\_\+init\+\_\+ctx(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Gpg\+Command().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_a73c505a2f3d39d1638dc4d9a3e13a913}\label{classGpgFrontend_1_1GpgContext_a73c505a2f3d39d1638dc4d9a3e13a913}} 
 \index{GpgFrontend::GpgContext@{GpgFrontend::GpgContext}!good@{good}}
@@ -235,7 +238,7 @@ Setting the output type must be done at the beginning
 
 think this means ascii-\/armor -\/-\/$>$ ?
 
-References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), custom\+\_\+passphrase\+\_\+cb(), Get\+Info(), Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance(), Set\+Passphrase\+Cb(), test\+\_\+passphrase\+\_\+cb(), and test\+\_\+status\+\_\+cb().
+References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), custom\+\_\+passphrase\+\_\+cb(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+Database\+Path, Get\+Info(), Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gnupg\+Version, Set\+Passphrase\+Cb(), test\+\_\+passphrase\+\_\+cb(), and test\+\_\+status\+\_\+cb().
 
 
 
@@ -256,6 +259,10 @@ Set the Passphrase Cb object.
 {\em func} & \\
 \hline
 \end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Gpg\+Info\+::\+Gnupg\+Version.
+
 
 
 Referenced by post\+\_\+init\+\_\+ctx().

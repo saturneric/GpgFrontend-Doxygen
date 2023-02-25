@@ -35,7 +35,10 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Command\+Executor\+:
 \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_a94240f423464600938bfcafa2b186c38}{Gpg\+Command\+Executor}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Command Executor object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_affa984ec4c2982c527761289f73c1ab4}{Execute}} (std\+::string cmd, std\+::vector$<$ std\+::string $>$ arguments, std\+::function$<$ void(int, std\+::string, std\+::string)$>$ callback=\mbox{[}$\,$\mbox{]}(int, std\+::string, std\+::string) \{\}, std\+::function$<$ void(QProcess $\ast$)$>$ interact\+\_\+func=\mbox{[}$\,$\mbox{]}(QProcess $\ast$) \{\})
-\begin{DoxyCompactList}\small\item\em Excuting an order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Excuting a command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_a9025336aea731e48e9411dc96f6cbc28}\label{classGpgFrontend_1_1GpgCommandExecutor_a9025336aea731e48e9411dc96f6cbc28}} 
+void {\bfseries Execute\+Concurrently} (std\+::string cmd, std\+::vector$<$ std\+::string $>$ arguments, std\+::function$<$ void(int, std\+::string, std\+::string)$>$ callback, std\+::function$<$ void(QProcess $\ast$)$>$ interact\+\_\+func=\mbox{[}$\,$\mbox{]}(QProcess $\ast$) \{\})
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -88,7 +91,7 @@ SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later
 
 
 
-Excuting an order. 
+Excuting a command. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -99,7 +102,7 @@ Excuting an order.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Signal\+Task\+End().
 
 
 

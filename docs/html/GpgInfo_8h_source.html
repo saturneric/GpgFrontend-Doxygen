@@ -90,33 +90,47 @@ $(document).ready(function(){initNavTree('GpgInfo_8h_source.html',''); initResiz
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1GpgInfo.html">GpgInfo</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">   41</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">AppPath</a>;        </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::string DatabasePath;   </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::string GnupgVersion;   </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::string GpgConfPath;    </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string AssuanPath;     </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::string CMSPath;        </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string GpgAgentPath;   </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string DirmngrPath;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::string KeyboxdPath;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::string GpgMEVersion;   </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::string GnuPGHomePath;  </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ComponentsInfo;        </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ConfigurationsInfo;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; OptionsInfo;           </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; AvailableOptionsInfo;  </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html">GpgFrontend::GpgInfo</a></div><div class="ttdoc">Use to record some info about gnupg.</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a2416ae0ab9bedc61782d16075750a9c0"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">GpgFrontend::GpgInfo::AppPath</a></div><div class="ttdeci">std::string AppPath</div><div class="ttdoc">executable binary path of gnupg</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:41</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1GpgInfo.html">GpgInfo</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#abbb3d503b10073bebf86d79bbaeab4c9">   42</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#abbb3d503b10073bebf86d79bbaeab4c9">GnupgVersion</a>;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::string GpgMEVersion;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">   45</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">AppPath</a>;       </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a7347d47006bdf41f1da979ea3289de7e">   46</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a7347d47006bdf41f1da979ea3289de7e">DatabasePath</a>;  </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a2fcd53b59bc251c38eb8d79cec946777">   47</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a2fcd53b59bc251c38eb8d79cec946777">GpgConfPath</a>;   </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a48659b780f8d0153ca0eb985a072b5ba">   48</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a48659b780f8d0153ca0eb985a072b5ba">AssuanPath</a>;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#ac8ecbf438d05dc434c77825dd38dfdf2">   49</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#ac8ecbf438d05dc434c77825dd38dfdf2">CMSPath</a>;       </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#af6ca2e99ffc487b8e4aa251d3cb23191">   50</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#af6ca2e99ffc487b8e4aa251d3cb23191">GpgAgentPath</a>;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a8c7e75d67b2438c61bbe4cebe68a7029">   51</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a8c7e75d67b2438c61bbe4cebe68a7029">DirmngrPath</a>;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a072503811cb59dad27040e4e8914d18b">   52</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a072503811cb59dad27040e4e8914d18b">KeyboxdPath</a>;   </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgInfo.html#a0c1dbdb54f880a620419fdbd8336dc5d">   54</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1GpgInfo.html#a0c1dbdb54f880a620419fdbd8336dc5d">GnuPGHomePath</a>;  </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ComponentsInfo;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; ConfigurationsInfo;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; OptionsInfo;           </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; AvailableOptionsInfo;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::shared_mutex Lock;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_GPGINFO_H</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html">GpgFrontend::GpgInfo</a></div><div class="ttdoc">Use to record some info about gnupg.</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a072503811cb59dad27040e4e8914d18b"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a072503811cb59dad27040e4e8914d18b">GpgFrontend::GpgInfo::KeyboxdPath</a></div><div class="ttdeci">std::string KeyboxdPath</div><div class="ttdoc">executable binary path of keyboxd</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:52</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a0c1dbdb54f880a620419fdbd8336dc5d"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a0c1dbdb54f880a620419fdbd8336dc5d">GpgFrontend::GpgInfo::GnuPGHomePath</a></div><div class="ttdeci">std::string GnuPGHomePath</div><div class="ttdoc">value of —homedir</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:54</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a2416ae0ab9bedc61782d16075750a9c0"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a2416ae0ab9bedc61782d16075750a9c0">GpgFrontend::GpgInfo::AppPath</a></div><div class="ttdeci">std::string AppPath</div><div class="ttdoc">executable binary path of gnupg</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:45</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a2fcd53b59bc251c38eb8d79cec946777"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a2fcd53b59bc251c38eb8d79cec946777">GpgFrontend::GpgInfo::GpgConfPath</a></div><div class="ttdeci">std::string GpgConfPath</div><div class="ttdoc">executable binary path of gpgconf</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:47</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a48659b780f8d0153ca0eb985a072b5ba"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a48659b780f8d0153ca0eb985a072b5ba">GpgFrontend::GpgInfo::AssuanPath</a></div><div class="ttdeci">std::string AssuanPath</div><div class="ttdoc">executable binary path of assuan</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:48</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a7347d47006bdf41f1da979ea3289de7e"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a7347d47006bdf41f1da979ea3289de7e">GpgFrontend::GpgInfo::DatabasePath</a></div><div class="ttdeci">std::string DatabasePath</div><div class="ttdoc">key database path</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:46</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_a8c7e75d67b2438c61bbe4cebe68a7029"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#a8c7e75d67b2438c61bbe4cebe68a7029">GpgFrontend::GpgInfo::DirmngrPath</a></div><div class="ttdeci">std::string DirmngrPath</div><div class="ttdoc">executable binary path of dirmgr</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:51</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_abbb3d503b10073bebf86d79bbaeab4c9"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#abbb3d503b10073bebf86d79bbaeab4c9">GpgFrontend::GpgInfo::GnupgVersion</a></div><div class="ttdeci">std::string GnupgVersion</div><div class="ttdoc">version of gnupg</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:42</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_ac8ecbf438d05dc434c77825dd38dfdf2"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#ac8ecbf438d05dc434c77825dd38dfdf2">GpgFrontend::GpgInfo::CMSPath</a></div><div class="ttdeci">std::string CMSPath</div><div class="ttdoc">executable binary path of cms</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:49</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgInfo_html_af6ca2e99ffc487b8e4aa251d3cb23191"><div class="ttname"><a href="classGpgFrontend_1_1GpgInfo.html#af6ca2e99ffc487b8e4aa251d3cb23191">GpgFrontend::GpgInfo::GpgAgentPath</a></div><div class="ttdeci">std::string GpgAgentPath</div><div class="ttdoc">executable binary path of gpg-agent</div><div class="ttdef"><b>Definition:</b> GpgInfo.h:50</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

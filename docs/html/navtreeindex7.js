@@ -1,5 +1,16 @@
 var NAVTREEINDEX7 =
 {
+"structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c":[2,0,0,1,56,4],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#aeb37ccd5436993b7f1dd33667a36551e":[2,0,0,1,56,9],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html":[2,0,0,1,39,0],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#a093ff65776f48511a2af0959a007cf1f":[2,0,0,1,39,0,7],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#a0e1d3d999bd2699a2e332f4e07ead822":[2,0,0,1,39,0,3],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#a2832941c8dec7b1c0ad40f4ff77c1814":[2,0,0,1,39,0,0],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#a2add79ec9a1c8e2602ebf5beb10df51f":[2,0,0,1,39,0,5],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#a6003e52fbe3a2eb4ad14b621f8dd7f8e":[2,0,0,1,39,0,4],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#abbd059f236b897f18b1d049e5739672b":[2,0,0,1,39,0,1],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#ac044f133fa3c5edfcba3a3da6a33db55":[2,0,0,1,39,0,2],
+"structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html#adeaa420019edb82abdf898c9c4f27000":[2,0,0,1,39,0,6],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html":[2,0,0,1,42],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a105c94ebdef4201963c8ae83b9cc44d6":[2,0,0,1,42,6],
 "structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a396e555fe47dacbd08e67e65e4c3aba6":[2,0,0,1,42,11],

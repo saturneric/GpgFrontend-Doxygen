@@ -30,5 +30,6 @@ var searchData=
   ['archivestruct_34',['ArchiveStruct',['../structGpgFrontend_1_1ArchiveStruct.html',1,'GpgFrontend']]],
   ['associatetabwidget_35',['AssociateTabWidget',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#adfa4acd435d2ec29f951f4e7e6a43f38',1,'GpgFrontend::UI::InfoBoardWidget']]],
   ['associatetextedit_36',['AssociateTextEdit',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a4fd6f91eb435feb41ae93e44485646ab',1,'GpgFrontend::UI::InfoBoardWidget']]],
-  ['attachment_5fdock_5f_37',['attachment_dock_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#afd243a5f00f86d65431081ead2cae153',1,'GpgFrontend::UI::MainWindow']]]
+  ['assuanpath_37',['AssuanPath',['../classGpgFrontend_1_1GpgInfo.html#a48659b780f8d0153ca0eb985a072b5ba',1,'GpgFrontend::GpgInfo']]],
+  ['attachment_5fdock_5f_38',['attachment_dock_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#afd243a5f00f86d65431081ead2cae153',1,'GpgFrontend::UI::MainWindow']]]
 ];

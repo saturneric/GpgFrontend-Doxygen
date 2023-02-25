@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1Thread_1_1TaskRunn
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1Thread_1_1TaskRunner-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,7 +97,7 @@ Inheritance diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map" id="aGpgFrontend_1_1Thread_1_1TaskRunner_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,168,311"/>
+<area shape="rect" title=" " alt="" coords="5,131,168,355"/>
 <area shape="rect" title=" " alt="" coords="48,5,125,83"/>
 </map>
 </div>
@@ -105,22 +106,22 @@ Collaboration diagram for GpgFrontend::Thread::TaskRunner:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1TaskRunner__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map" id="aGpgFrontend_1_1Thread_1_1TaskRunner_coll__map">
-<area shape="rect" title=" " alt="" coords="512,1076,675,1227"/>
-<area shape="rect" title=" " alt="" coords="329,921,407,999"/>
-<area shape="rect" title=" " alt="" coords="431,907,593,1013"/>
-<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="207,532,369,844"/>
-<area shape="rect" title=" " alt="" coords="143,315,217,392"/>
-<area shape="rect" title=" " alt="" coords="241,315,335,392"/>
+<area shape="rect" title=" " alt="" coords="533,1149,696,1329"/>
+<area shape="rect" title=" " alt="" coords="351,995,428,1072"/>
+<area shape="rect" title=" " alt="" coords="452,980,615,1087"/>
+<area shape="rect" href="classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="215,532,404,917"/>
+<area shape="rect" title=" " alt="" coords="164,315,239,392"/>
+<area shape="rect" title=" " alt="" coords="263,315,356,392"/>
 <area shape="rect" title=" " alt="" coords="31,315,118,392"/>
 <area shape="rect" title=" " alt="" coords="5,145,144,237"/>
-<area shape="rect" title=" " alt="" coords="359,315,582,392"/>
-<area shape="rect" title=" " alt="" coords="392,153,549,230"/>
-<area shape="rect" title=" " alt="" coords="641,5,679,83"/>
-<area shape="rect" title=" " alt="" coords="574,153,709,230"/>
-<area shape="rect" title=" " alt="" coords="787,153,915,230"/>
-<area shape="rect" title=" " alt="" coords="565,5,603,83"/>
-<area shape="rect" title=" " alt="" coords="618,921,710,999"/>
-<area shape="rect" title=" " alt="" coords="802,416,990,508"/>
+<area shape="rect" title=" " alt="" coords="381,315,603,392"/>
+<area shape="rect" title=" " alt="" coords="413,153,571,230"/>
+<area shape="rect" title=" " alt="" coords="679,5,718,83"/>
+<area shape="rect" title=" " alt="" coords="595,153,730,230"/>
+<area shape="rect" title=" " alt="" coords="804,153,932,230"/>
+<area shape="rect" title=" " alt="" coords="603,5,642,83"/>
+<area shape="rect" title=" " alt="" coords="639,995,731,1072"/>
+<area shape="rect" title=" " alt="" coords="823,416,1011,508"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -144,6 +145,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> () override</td></tr>
 <tr class="separator:a66d2cce41130ada199636815c52332a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abb18bb947433ecff7969dbd4e70f57be"><td class="memItemLeft" align="right" valign="top"><a id="abb18bb947433ecff7969dbd4e70f57be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unregister_finished_task</b> (std::string)</td></tr>
+<tr class="separator:abb18bb947433ecff7969dbd4e70f57be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a774775e9a91d33072b27dcf78cead6e2"><td class="memItemLeft" align="right" valign="top"><a id="a774775e9a91d33072b27dcf78cead6e2"></a>
@@ -158,6 +165,10 @@ std::map&lt; std::string, <a class="el" href="classGpgFrontend_1_1Thread_1_1Task
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a></td></tr>
 <tr class="memdesc:a5e72f1ce00d41c225a4304f1ed20b3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The task queue mutex. <br /></td></tr>
 <tr class="separator:a5e72f1ce00d41c225a4304f1ed20b3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdc321dd0732ba7a72499b2dc12f7c9"><td class="memItemLeft" align="right" valign="top"><a id="a2bdc321dd0732ba7a72499b2dc12f7c9"></a>
+QThreadPool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a2bdc321dd0732ba7a72499b2dc12f7c9">thread_pool_</a> {this}</td></tr>
+<tr class="memdesc:a2bdc321dd0732ba7a72499b2dc12f7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">run non-sequency task <br /></td></tr>
+<tr class="separator:a2bdc321dd0732ba7a72499b2dc12f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3c8612cbe60112f9b14e616fb0a4acf"></a>
@@ -268,7 +279,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf">GpgFrontend::Thread::Task::GetUUID()</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a6d92421bbbfcf3136335a5173d1b2a22">pending_tasks_</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>, and <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a3df2340426251e9145e5fe4419937e2a">GpgFrontend::Thread::Task::GetFullID()</a>, <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a774775e9a91d33072b27dcf78cead6e2">tasks</a>, and <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a5e72f1ce00d41c225a4304f1ed20b3f1">tasks_mutex_</a>.</p>
 
 </div>
 </div>

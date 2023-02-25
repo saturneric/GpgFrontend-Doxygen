@@ -14,5 +14,6 @@ var classGpgFrontend_1_1GpgInfo =
     [ "GpgConfPath", "classGpgFrontend_1_1GpgInfo.html#a2fcd53b59bc251c38eb8d79cec946777", null ],
     [ "GpgMEVersion", "classGpgFrontend_1_1GpgInfo.html#aaea5a9651daac0323495ce12c152dc23", null ],
     [ "KeyboxdPath", "classGpgFrontend_1_1GpgInfo.html#a072503811cb59dad27040e4e8914d18b", null ],
+    [ "Lock", "classGpgFrontend_1_1GpgInfo.html#a45516e791eb3655e7f66bcf99067d3bb", null ],
     [ "OptionsInfo", "classGpgFrontend_1_1GpgInfo.html#aa8224398d82e584e13a7859362139d56", null ]
 ];

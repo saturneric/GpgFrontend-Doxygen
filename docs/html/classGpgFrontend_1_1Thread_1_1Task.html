@@ -85,9 +85,12 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1Thread_1_1Task.htm
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -102,13 +105,13 @@ Inheritance diagram for GpgFrontend::Thread::Task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1Task__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1Task_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1Task_inherit__map" id="aGpgFrontend_1_1Thread_1_1Task_inherit__map">
-<area shape="rect" title=" " alt="" coords="563,131,726,472"/>
-<area shape="rect" href="classGpgFrontend_1_1Thread_1_1CtxCheckTask.html" title=" " alt="" coords="5,593,164,700"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="188,564,408,729"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="432,549,633,744"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="657,557,859,737"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="883,549,1089,744"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="1114,520,1311,773"/>
+<area shape="rect" title=" " alt="" coords="550,131,739,575"/>
+<area shape="rect" href="classGpgFrontend_1_1Thread_1_1CtxCheckTask.html" title=" " alt="" coords="5,696,164,803"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="188,667,408,832"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="432,652,633,847"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="657,659,859,839"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="883,652,1089,847"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1VersionCheckTask.html" title=" " alt="" coords="1114,623,1311,876"/>
 <area shape="rect" title=" " alt="" coords="554,5,629,83"/>
 <area shape="rect" title=" " alt="" coords="653,5,746,83"/>
 </map>
@@ -118,7 +121,7 @@ Collaboration diagram for GpgFrontend::Thread::Task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Thread_1_1Task__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Thread_1_1Task_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Thread_1_1Task_coll__map" id="aGpgFrontend_1_1Thread_1_1Task_coll__map">
-<area shape="rect" title=" " alt="" coords="108,440,271,752"/>
+<area shape="rect" title=" " alt="" coords="92,469,281,855"/>
 <area shape="rect" title=" " alt="" coords="5,300,80,377"/>
 <area shape="rect" title=" " alt="" coords="104,300,197,377"/>
 <area shape="rect" title=" " alt="" coords="222,300,309,377"/>
@@ -147,26 +150,35 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>TaskRunnable</b> = s
 using&#160;</td><td class="memItemRight" valign="bottom"><b>TaskCallback</b> = std::function&lt; void(int, DataObjectPtr)&gt;</td></tr>
 <tr class="separator:a492f8b0f6ec2832da20fc481bfa5cdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:aff3823caa1d44cb84b4bf2822a4ab125"><td class="memItemLeft" align="right" valign="top"><a id="aff3823caa1d44cb84b4bf2822a4ab125"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotRun</b> ()</td></tr>
+<tr class="separator:aff3823caa1d44cb84b4bf2822a4ab125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:af50c7642efe45554c61943fb3d8825b3"><td class="memItemLeft" align="right" valign="top"><a id="af50c7642efe45554c61943fb3d8825b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalTaskFinished</b> ()</td></tr>
-<tr class="separator:af50c7642efe45554c61943fb3d8825b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0902637c033d34cc3c4281e309c10830"><td class="memItemLeft" align="right" valign="top"><a id="a0902637c033d34cc3c4281e309c10830"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalTaskPostFinishedDone</b> ()</td></tr>
-<tr class="separator:a0902637c033d34cc3c4281e309c10830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125b7e71f21dadf10618e30ee0386b12"><td class="memItemLeft" align="right" valign="top"><a id="a125b7e71f21dadf10618e30ee0386b12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a125b7e71f21dadf10618e30ee0386b12">SignalTaskRunnableEnd</a> (int rtn)</td></tr>
+<tr class="memdesc:a125b7e71f21dadf10618e30ee0386b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">announce runnable finished <br /></td></tr>
+<tr class="separator:a125b7e71f21dadf10618e30ee0386b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbb68bcac48b6c31d6fe8ee1572f151"><td class="memItemLeft" align="right" valign="top"><a id="abbbb68bcac48b6c31d6fe8ee1572f151"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#abbbb68bcac48b6c31d6fe8ee1572f151">SignalTaskEnd</a> ()</td></tr>
+<tr class="memdesc:abbbb68bcac48b6c31d6fe8ee1572f151"><td class="mdescLeft">&#160;</td><td class="mdescRight">runnable and callabck all finished <br /></td></tr>
+<tr class="separator:abbbb68bcac48b6c31d6fe8ee1572f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ec53d301fc83e0da39e43055ded5d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a1ec53d301fc83e0da39e43055ded5d14">Task</a> ()</td></tr>
-<tr class="memdesc:a1ec53d301fc83e0da39e43055ded5d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a1ec53d301fc83e0da39e43055ded5d14">More...</a><br /></td></tr>
-<tr class="separator:a1ec53d301fc83e0da39e43055ded5d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f3065116d2295bb2ddc9f41b1192bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a35f3065116d2295bb2ddc9f41b1192bb">Task</a> (TaskCallback callback, DataObjectPtr data_object=nullptr)</td></tr>
-<tr class="memdesc:a35f3065116d2295bb2ddc9f41b1192bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a35f3065116d2295bb2ddc9f41b1192bb">More...</a><br /></td></tr>
-<tr class="separator:a35f3065116d2295bb2ddc9f41b1192bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efa02bb81d79961d88198a057c9ac64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a8efa02bb81d79961d88198a057c9ac64">Task</a> (TaskRunnable runnable, TaskCallback callback=[](int, const std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a> &gt; &amp;) {}, DataObjectPtr data=nullptr)</td></tr>
-<tr class="memdesc:a8efa02bb81d79961d88198a057c9ac64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a8efa02bb81d79961d88198a057c9ac64">More...</a><br /></td></tr>
-<tr class="separator:a8efa02bb81d79961d88198a057c9ac64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdff056f5c96f00ac67bd1edcb5f0a48"><td class="memItemLeft" align="right" valign="top"><a id="abdff056f5c96f00ac67bd1edcb5f0a48"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#abdff056f5c96f00ac67bd1edcb5f0a48">Task</a> (std::string name=<a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a4a2cad8747108322152b41c049f99c72">DEFAULT_TASK_NAME</a>)</td></tr>
+<tr class="memdesc:abdff056f5c96f00ac67bd1edcb5f0a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. <br /></td></tr>
+<tr class="separator:abdff056f5c96f00ac67bd1edcb5f0a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f935428d2e03585673226228a7ffff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a79f935428d2e03585673226228a7ffff">Task</a> (TaskRunnable runnable, std::string name=<a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a4a2cad8747108322152b41c049f99c72">DEFAULT_TASK_NAME</a>, DataObjectPtr data_object=nullptr, bool sequency=true)</td></tr>
+<tr class="memdesc:a79f935428d2e03585673226228a7ffff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a79f935428d2e03585673226228a7ffff">More...</a><br /></td></tr>
+<tr class="separator:a79f935428d2e03585673226228a7ffff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59047d6d26fdf78f9b43ddc189d84958"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a59047d6d26fdf78f9b43ddc189d84958">Task</a> (TaskRunnable runnable, std::string name, DataObjectPtr data, TaskCallback callback=[](int, const std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a> &gt; &amp;) {}, bool sequency=true)</td></tr>
+<tr class="memdesc:a59047d6d26fdf78f9b43ddc189d84958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object.  <a href="classGpgFrontend_1_1Thread_1_1Task.html#a59047d6d26fdf78f9b43ddc189d84958">More...</a><br /></td></tr>
+<tr class="separator:a59047d6d26fdf78f9b43ddc189d84958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37766a505662b33ad14672c29e209ea8"><td class="memItemLeft" align="right" valign="top"><a id="a37766a505662b33ad14672c29e209ea8"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a37766a505662b33ad14672c29e209ea8">~Task</a> () override</td></tr>
 <tr class="memdesc:a37766a505662b33ad14672c29e209ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. <br /></td></tr>
@@ -177,6 +189,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ac60aa71a24f452fd8031597ff4cbbd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b91d27874af31ef13c493b00824ccf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf">GetUUID</a> () const</td></tr>
 <tr class="separator:a50b91d27874af31ef13c493b00824ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df2340426251e9145e5fe4419937e2a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a3df2340426251e9145e5fe4419937e2a">GetFullID</a> () const</td></tr>
+<tr class="separator:a3df2340426251e9145e5fe4419937e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f47accc0832e3aee686ee2879b431e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a80f47accc0832e3aee686ee2879b431e">GetSequency</a> () const</td></tr>
+<tr class="separator:a80f47accc0832e3aee686ee2879b431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4a2cad8747108322152b41c049f99c72"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a4a2cad8747108322152b41c049f99c72">DEFAULT_TASK_NAME</a> = &quot;default-task&quot;</td></tr>
+<tr class="separator:a4a2cad8747108322152b41c049f99c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -186,11 +207,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa6d702417bdd6a88c447ed6a457fa098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#aa6d702417bdd6a88c447ed6a457fa098">SetRTN</a> (int rtn)</td></tr>
 <tr class="separator:aa6d702417bdd6a88c447ed6a457fa098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a57adc09be10715a0e36a4baa3d9437b5"><td class="memItemLeft" align="right" valign="top"><a id="a57adc09be10715a0e36a4baa3d9437b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_task_run_callback</b> (int rtn)</td></tr>
+<tr class="separator:a57adc09be10715a0e36a4baa3d9437b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a98486634324dc28d05fb0b812ed807e3"><td class="memItemLeft" align="right" valign="top"><a id="a98486634324dc28d05fb0b812ed807e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>before_finish_task</b> ()</td></tr>
-<tr class="separator:a98486634324dc28d05fb0b812ed807e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee1ea118ac5d91f005faecef54742b8"><td class="memItemLeft" align="right" valign="top"><a id="a5ee1ea118ac5d91f005faecef54742b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:a5ee1ea118ac5d91f005faecef54742b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,15 +232,22 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a468f4b05a8eb6b66c3f240bc2a660a08"><td class="memItemLeft" align="right" valign="top"><a id="a468f4b05a8eb6b66c3f240bc2a660a08"></a>
 const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>uuid_</b></td></tr>
 <tr class="separator:a468f4b05a8eb6b66c3f240bc2a660a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4e9a657a7b0c2afbb701fa2cba8591"><td class="memItemLeft" align="right" valign="top"><a id="afd4e9a657a7b0c2afbb701fa2cba8591"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
+<tr class="separator:afd4e9a657a7b0c2afbb701fa2cba8591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ed097a2c4b4b735fd385dfe87e6f57"><td class="memItemLeft" align="right" valign="top"><a id="a71ed097a2c4b4b735fd385dfe87e6f57"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a71ed097a2c4b4b735fd385dfe87e6f57">sequency_</a> = true</td></tr>
+<tr class="memdesc:a71ed097a2c4b4b735fd385dfe87e6f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">must run in the same thread <br /></td></tr>
+<tr class="separator:a71ed097a2c4b4b735fd385dfe87e6f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b47295d027309aee116d219b50de4f8"><td class="memItemLeft" align="right" valign="top"><a id="a5b47295d027309aee116d219b50de4f8"></a>
 TaskCallback&#160;</td><td class="memItemRight" valign="bottom"><b>callback_</b></td></tr>
 <tr class="separator:a5b47295d027309aee116d219b50de4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb0482d29d502870dc8d38b8aaedf68"><td class="memItemLeft" align="right" valign="top"><a id="a0cb0482d29d502870dc8d38b8aaedf68"></a>
 TaskRunnable&#160;</td><td class="memItemRight" valign="bottom"><b>runnable_</b></td></tr>
 <tr class="separator:a0cb0482d29d502870dc8d38b8aaedf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f29cfb3a72d718da6d835f3a049f7cc"><td class="memItemLeft" align="right" valign="top"><a id="a4f29cfb3a72d718da6d835f3a049f7cc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>finish_after_run_</b> = true</td></tr>
-<tr class="separator:a4f29cfb3a72d718da6d835f3a049f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c8c7527e896c7900fdccc1e336b6c8"><td class="memItemLeft" align="right" valign="top"><a id="a86c8c7527e896c7900fdccc1e336b6c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback_after_runnable_finished_</b> = true</td></tr>
+<tr class="separator:a86c8c7527e896c7900fdccc1e336b6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6388db7b0e4960db5bf8296481481dd"><td class="memItemLeft" align="right" valign="top"><a id="ad6388db7b0e4960db5bf8296481481dd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>rtn_</b> = 0</td></tr>
 <tr class="separator:ad6388db7b0e4960db5bf8296481481dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,34 +265,8 @@ Friends</h2></td></tr>
 <tr class="separator:a1956d94b45592a4096a335641aab65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1ec53d301fc83e0da39e43055ded5d14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ec53d301fc83e0da39e43055ded5d14">&#9670;&nbsp;</a></span>Task() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GpgFrontend::Thread::Task::Task </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct a new <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a> object. </p>
-<p>Copyright (C) 2021 Saturneric</p>
-<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
-<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
-<p>The source code version of this software was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a><a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021. </p>
-
-</div>
-</div>
-<a id="a35f3065116d2295bb2ddc9f41b1192bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35f3065116d2295bb2ddc9f41b1192bb">&#9670;&nbsp;</a></span>Task() <span class="overload">[2/3]</span></h2>
+<a id="a79f935428d2e03585673226228a7ffff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f935428d2e03585673226228a7ffff">&#9670;&nbsp;</a></span>Task() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,14 +277,26 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">GpgFrontend::Thread::Task::Task </td>
           <td>(</td>
-          <td class="paramtype">TaskCallback&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
+          <td class="paramtype">TaskRunnable&#160;</td>
+          <td class="paramname"><em>runnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code><a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a4a2cad8747108322152b41c049f99c72">DEFAULT_TASK_NAME</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">DataObjectPtr&#160;</td>
-          <td class="paramname"><em>data_object</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>data_object</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sequency</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -304,8 +321,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a8efa02bb81d79961d88198a057c9ac64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efa02bb81d79961d88198a057c9ac64">&#9670;&nbsp;</a></span>Task() <span class="overload">[3/3]</span></h2>
+<a id="a59047d6d26fdf78f9b43ddc189d84958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59047d6d26fdf78f9b43ddc189d84958">&#9670;&nbsp;</a></span>Task() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,14 +339,26 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataObjectPtr&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">TaskCallback&#160;</td>
           <td class="paramname"><em>callback</em> = <code>[](int,&#160;const&#160;std::shared_ptr&lt;<a class="el" href="classGpgFrontend_1_1Thread_1_1Task_1_1DataObject.html">DataObject</a>&gt;&#160;&amp;)&#160;{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DataObjectPtr&#160;</td>
-          <td class="paramname"><em>data</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sequency</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -351,6 +380,8 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#a3df2340426251e9145e5fe4419937e2a">GetFullID()</a>.</p>
 
 </div>
 </div>
@@ -381,6 +412,44 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a3df2340426251e9145e5fe4419937e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df2340426251e9145e5fe4419937e2a">&#9670;&nbsp;</a></span>GetFullID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GpgFrontend::Thread::Task::GetFullID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a4fae01eb0a5b296b8c4c6bf8408f1c6b">GpgFrontend::Thread::TaskRunner::PostTask()</a>, and <a class="el" href="classGpgFrontend_1_1Thread_1_1Task.html#abdff056f5c96f00ac67bd1edcb5f0a48">Task()</a>.</p>
+
+</div>
+</div>
+<a id="a80f47accc0832e3aee686ee2879b431e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f47accc0832e3aee686ee2879b431e">&#9670;&nbsp;</a></span>GetSequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GpgFrontend::Thread::Task::GetSequency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
 <a id="a50b91d27874af31ef13c493b00824ccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50b91d27874af31ef13c493b00824ccf">&#9670;&nbsp;</a></span>GetUUID()</h2>
 
@@ -396,8 +465,6 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1Thread_1_1TaskRunner.html#a4fae01eb0a5b296b8c4c6bf8408f1c6b">GpgFrontend::Thread::TaskRunner::PostTask()</a>.</p>
 
 </div>
 </div>
@@ -466,6 +533,36 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4a2cad8747108322152b41c049f99c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2cad8747108322152b41c049f99c72">&#9670;&nbsp;</a></span>DEFAULT_TASK_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string GpgFrontend::Thread::Task::DEFAULT_TASK_NAME = &quot;default-task&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copyright (C) 2021 Saturneric</p>
+<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
+<p>The source code version of this software was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a><a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021. </p>
 
 </div>
 </div>

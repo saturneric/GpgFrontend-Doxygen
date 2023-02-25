@@ -20,5 +20,6 @@ var classGpgFrontend_1_1GpgContext =
     [ "args_", "classGpgFrontend_1_1GpgContext.html#a4765cccf9f994a9c7b3d962a24bed77e", null ],
     [ "extend_info_loaded_", "classGpgFrontend_1_1GpgContext.html#ad89cdcb4fd0d8ad759e59254e4b7281c", null ],
     [ "good_", "classGpgFrontend_1_1GpgContext.html#a01e46d0718b61a224a52028b9da90468", null ],
-    [ "info_", "classGpgFrontend_1_1GpgContext.html#a838e2ec5571dc810af7c075c28d630db", null ]
+    [ "info_", "classGpgFrontend_1_1GpgContext.html#a838e2ec5571dc810af7c075c28d630db", null ],
+    [ "preload_lock_", "classGpgFrontend_1_1GpgContext.html#a4fb92a23d989f514536a26509b4d0993", null ]
 ];
