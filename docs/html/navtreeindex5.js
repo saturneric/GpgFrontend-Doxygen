@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1MainWindow.html#a5bbe43bdd25df9de8c1de23efd8d37a5":[2,0,0,1,39,55],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#a5e95f62dac9fba1ead6ec69c145923db":[2,0,0,1,39,10],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#a6154f5dbdc9cebc0644e5d1e25895df8":[2,0,0,1,39,72],
 "classGpgFrontend_1_1UI_1_1MainWindow.html#a62ea61c38e758022ba655c6faf54322b":[2,0,0,1,39,92],
@@ -107,13 +108,15 @@ var NAVTREEINDEX5 =
 "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#af5dfdfd48ef64cc46e524ec70a22fe3a":[2,0,0,1,58,10],
 "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#afd3749488fdd3d1c53446fb8c833f3f4":[2,0,0,1,58,11],
 "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#aff81f0f98a399fa55b6b0ebf2230d4cf":[2,0,0,1,58,4],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html":[2,0,0,1,46],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a02ed478164a2e7d4b5a1a26e99486f2f":[2,0,0,1,46,3],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a497bb7f1b92c67f2e754fd66ca3a6666":[2,0,0,1,46,1],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a538a78e0149906bf19e850ba71c00ada":[2,0,0,1,46,0],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#a9b8bb804b4c0bc48d5e26c3d103c5a64":[2,0,0,1,46,5],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#ae6ccca4d5325bbb1235fa6b27479ee2c":[2,0,0,1,46,4],
-"classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#aedafa7b22e024be537658fd8096e5f6f":[2,0,0,1,46,2],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html":[2,0,0,1,46],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a17ee65896bb3e7f1bf7176549a8ed615":[2,0,0,1,46,5],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a1f44b1bcb259067fe3d11201923ebef4":[2,0,0,1,46,4],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a31cd14d72c6c28c811c9183f118f5873":[2,0,0,1,46,2],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a612eabb08138bed927bdd845d0fdd3e6":[2,0,0,1,46,3],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a8036aaf9a2adcf033fc9f8e51da59956":[2,0,0,1,46,0],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a87e5fcd59129549d3eda0794f33fa254":[2,0,0,1,46,6],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#ad7cf6a9fe63ee3db64a3e302d0c83c94":[2,0,0,1,46,1],
+"classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#afd04dcd159e036500945605a001169af":[2,0,0,1,46,7],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html":[2,0,0,1,22],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html#a1624ecd7f9b5d32622bf6f9b7eb46a1b":[2,0,0,1,22,4],
 "classGpgFrontend_1_1UI_1_1QuitDialog.html#a4c4bc06d1d168f01569ed83dcfd50d55":[2,0,0,1,22,2],
@@ -180,6 +183,7 @@ var NAVTREEINDEX5 =
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aab426dec4b4655b215b09b490e05ad05":[2,0,0,1,13,11],
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab06b11f407fbb407139235fc84325de2":[2,0,0,1,13,13],
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab11f7f3e24f855d690f6f7d820ed7479":[2,0,0,1,13,22],
+"classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab7a4af76a1d56ad401274ecad80d16c5":[2,0,0,1,13,26],
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ac515dabcf6c094c5eeb2bf88aa3aa9d3":[2,0,0,1,13,20],
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#acca1d633219d245edba9135c80a90610":[2,0,0,1,13,5],
 "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aedef4e8784c8a3edb06b0f2821500552":[2,0,0,1,13,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#a37a315ff2a1ed0402adf1e15325990ba":[2,0,0,1,1,9],
 "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#a7849527f1e93581103bca3e7c66456c4":[2,0,0,1,1,8],
 "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#a79d6071c0cedd9e18588137783823fad":[2,0,0,1,1,1],
-"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ab130aae968f83b9125cbe7054b6ca96d":[2,0,0,1,1,6],
-"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda":[2,0,0,1,1,0],
-"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ae15d7e9e60c58dea08ae117645e8b32a":[2,0,0,1,1,3],
-"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ae66e988b812817ab95c35a7c080e8c06":[2,0,0,1,1,5],
-"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#aeb3a7c48297d448d25b2b84a2aa64ad0":[2,0,0,1,1,4]
+"classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ab130aae968f83b9125cbe7054b6ca96d":[2,0,0,1,1,6]
 };

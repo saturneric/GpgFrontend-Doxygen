@@ -129,6 +129,7 @@ var hierarchy =
         [ "GpgFrontend::UI::KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", null ],
         [ "GpgFrontend::UI::KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", null ],
         [ "GpgFrontend::UI::ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", null ],
+        [ "GpgFrontend::UI::ProxyConnectionTestTask", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html", null ],
         [ "GpgFrontend::UI::VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", null ]
       ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
@@ -137,8 +138,7 @@ var hierarchy =
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", null ]
     ] ],
     [ "QThread", null, [
-      [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
-      [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ]
+      [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ]
     ] ],
     [ "QWidget", null, [
       [ "GpgFrontend::UI::AdvancedTab", "classGpgFrontend_1_1UI_1_1AdvancedTab.html", null ],

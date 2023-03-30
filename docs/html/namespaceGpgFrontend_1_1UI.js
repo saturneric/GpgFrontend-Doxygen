@@ -46,7 +46,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", "classGpgFrontend_1_1UI_1_1KeyServerImportTask" ],
     [ "KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask" ],
     [ "ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask" ],
-    [ "ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread" ],
+    [ "ProxyConnectionTestTask", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask" ],
     [ "VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", "classGpgFrontend_1_1UI_1_1VersionCheckTask" ],
     [ "CommonUtils", "classGpgFrontend_1_1UI_1_1CommonUtils.html", "classGpgFrontend_1_1UI_1_1CommonUtils" ],
     [ "FilePage", "classGpgFrontend_1_1UI_1_1FilePage.html", "classGpgFrontend_1_1UI_1_1FilePage" ],

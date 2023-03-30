@@ -72,7 +72,7 @@ var NAVTREEINDEX0 =
 "MainWindow_8h_source.html":[3,0,0,1,1,2],
 "PassphraseGenerator_8h_source.html":[3,0,0,0,1,11],
 "PlainTextEditorPage_8h_source.html":[3,0,0,1,4,5],
-"ProxyConnectionTestThread_8h_source.html":[3,0,0,1,3,3],
+"ProxyConnectionTestTask_8h_source.html":[3,0,0,1,3,3],
 "QuitDialog_8h_source.html":[3,0,0,1,0,7],
 "SettingsAdvanced_8h_source.html":[3,0,0,1,0,5,0],
 "SettingsAppearance_8h_source.html":[3,0,0,1,0,5,1],
