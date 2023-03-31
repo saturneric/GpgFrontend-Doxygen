@@ -1,5 +1,17 @@
 var NAVTREEINDEX7 =
 {
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a33bef35c7c6c67f6a2b0ed9dfda8fcad":[2,0,0,1,55,1],
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a3e3f324385c69f3848297c5c60eb8012":[2,0,0,1,55,4],
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a632b87f5c86b4bb76e1af350f053107a":[2,0,0,1,55,6],
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#aa256cb1cde47d898011f49bb8a6d9820":[2,0,0,1,55,0],
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#af28d1d7fbfc66aea550f98db5a2a582b":[2,0,0,1,55,5],
+"structGpgFrontend_1_1UI_1_1KeyTable.html":[2,0,0,1,56],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a0719f023069e0f6e29db20b6cd0cf5ea":[2,0,0,1,56,5],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a5bce4bf0dc41ac05390a4f93da8b8985":[2,0,0,1,56,10],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e":[2,0,0,1,56,2],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a880d24a22ef291667e6d6c76a487fc57":[2,0,0,1,56,8],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a88606ba6954d60244faf38de419bfc47":[2,0,0,1,56,0],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a9ef84e0b2d9146b962ca4ca79e7f0e9c":[2,0,0,1,56,1],
 "structGpgFrontend_1_1UI_1_1KeyTable.html#aaac381e205c323444098803e0295060f":[2,0,0,1,56,3],
 "structGpgFrontend_1_1UI_1_1KeyTable.html#ab0aee9ed16af04048f456abddb4dc007":[2,0,0,1,56,11],
 "structGpgFrontend_1_1UI_1_1KeyTable.html#adb59ac00683aec02344804ae8c5670a5":[2,0,0,1,56,6],
