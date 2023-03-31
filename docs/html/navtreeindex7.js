@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a33bef35c7c6c67f6a2b0ed9dfda8fcad":[2,0,0,1,55,1],
-"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a3e3f324385c69f3848297c5c60eb8012":[2,0,0,1,55,4],
 "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a632b87f5c86b4bb76e1af350f053107a":[2,0,0,1,55,6],
 "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#aa256cb1cde47d898011f49bb8a6d9820":[2,0,0,1,55,0],
 "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#af28d1d7fbfc66aea550f98db5a2a582b":[2,0,0,1,55,5],
