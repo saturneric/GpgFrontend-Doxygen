@@ -26,6 +26,11 @@ var NAVTREE =
 [
   [ "GpgFrontend Project", "index.html", [
     [ "GpgFrontend Develop Document Main Page", "index.html", null ],
+    [ "Security Policy", "md_src_SECURITY.html", [
+      [ "Supported Versions", "md_src_SECURITY.html#autotoc_md1", null ],
+      [ "Platform & Library Support", "md_src_SECURITY.html#autotoc_md2", null ],
+      [ "Reporting a Vulnerability", "md_src_SECURITY.html#autotoc_md3", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -59,7 +64,7 @@ var NAVTREEINDEX =
 "classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html#ad4e09323a53992daee08173bed17bf9a",
 "classGpgFrontend_1_1UI_1_1MainWindow.html#a473b679fa0dc3cdf4f6f98d6553fa0ec",
 "classGpgFrontend_1_1UI_1_1UpdateTab.html#a9dedd8bc17bbc53d31c9d292429be68b",
-"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a632b87f5c86b4bb76e1af350f053107a"
+"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a1e9badf8cc20ca49b2374cdc705b7602"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
