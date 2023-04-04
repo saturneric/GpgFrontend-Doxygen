@@ -26,11 +26,6 @@ var NAVTREE =
 [
   [ "GpgFrontend Project", "index.html", [
     [ "GpgFrontend Develop Document Main Page", "index.html", null ],
-    [ "Security Policy", "md_src_SECURITY.html", [
-      [ "Supported Versions", "md_src_SECURITY.html#autotoc_md1", null ],
-      [ "Platform & Library Support", "md_src_SECURITY.html#autotoc_md2", null ],
-      [ "Reporting a Vulnerability", "md_src_SECURITY.html#autotoc_md3", null ]
-    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -58,13 +53,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AboutDialog_8h_source.html",
-"classGpgFrontend_1_1GpgAdvancedOperator.html#a387ad457bb729f340f680d0b743733ad",
-"classGpgFrontend_1_1GpgSignature.html#a3b143f6e13b71663d81fc0f326aad17f",
-"classGpgFrontend_1_1UI_1_1FilePage.html#a48fb14a3296f19f9b1c3b9b48c3a1bf3",
-"classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html#ad4e09323a53992daee08173bed17bf9a",
-"classGpgFrontend_1_1UI_1_1MainWindow.html#a473b679fa0dc3cdf4f6f98d6553fa0ec",
-"classGpgFrontend_1_1UI_1_1UpdateTab.html#a9dedd8bc17bbc53d31c9d292429be68b",
-"structGpgFrontend_1_1UI_1_1KeyMenuAbility.html#a1e9badf8cc20ca49b2374cdc705b7602"
+"classGpgFrontend_1_1GpgAdvancedOperator.html#a209f6d1d664ab672437198dc10ed8226",
+"classGpgFrontend_1_1GpgSignature.html#a222e57e5992e5e91ca36d8dcc77fd402",
+"classGpgFrontend_1_1UI_1_1FilePage.html#a250b1950f874c1d11549cd5c0ea9693f",
+"classGpgFrontend_1_1UI_1_1KeyMgmt.html#ad8f69aa0d0564245a9924a7cf7ed0c3d",
+"classGpgFrontend_1_1UI_1_1MainWindow.html#a2518a8a17ebcc217c7cc34c9c3a411f8",
+"classGpgFrontend_1_1UI_1_1TextEdit.html#ab24adc1adb3b9b29469992e4c444436e",
+"structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

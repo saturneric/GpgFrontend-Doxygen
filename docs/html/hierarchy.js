@@ -93,6 +93,7 @@ var hierarchy =
       [ "GpgFrontend::UI::GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", [
         [ "GpgFrontend::UI::AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", null ],
         [ "GpgFrontend::UI::ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", null ],
+        [ "GpgFrontend::UI::GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html", null ],
         [ "GpgFrontend::UI::KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", null ],
         [ "GpgFrontend::UI::KeyGenDialog", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html", null ],
         [ "GpgFrontend::UI::KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", null ],

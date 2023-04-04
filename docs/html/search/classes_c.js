@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networktab_831',['NetworkTab',['../classGpgFrontend_1_1UI_1_1NetworkTab.html',1,'GpgFrontend::UI']]]
+  ['networktab_832',['NetworkTab',['../classGpgFrontend_1_1UI_1_1NetworkTab.html',1,'GpgFrontend::UI']]]
 ];

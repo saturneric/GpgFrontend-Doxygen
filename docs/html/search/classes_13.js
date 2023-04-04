@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['waitingdialog_872',['WaitingDialog',['../classGpgFrontend_1_1UI_1_1WaitingDialog.html',1,'GpgFrontend::UI']]],
-  ['wizard_873',['Wizard',['../classGpgFrontend_1_1UI_1_1Wizard.html',1,'GpgFrontend::UI']]]
+  ['waitingdialog_873',['WaitingDialog',['../classGpgFrontend_1_1UI_1_1WaitingDialog.html',1,'GpgFrontend::UI']]],
+  ['wizard_874',['Wizard',['../classGpgFrontend_1_1UI_1_1Wizard.html',1,'GpgFrontend::UI']]]
 ];

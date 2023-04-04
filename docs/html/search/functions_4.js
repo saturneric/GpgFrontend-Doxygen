@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['dataobjectoperator_938',['DataObjectOperator',['../classGpgFrontend_1_1DataObjectOperator.html#a3a8ae5c36fec01d0d5c3e5f9aed457a6',1,'GpgFrontend::DataObjectOperator']]],
-  ['decrypt_939',['Decrypt',['../classGpgFrontend_1_1GpgBasicOperator.html#a9ea9e81194917e08f46eb657281b7953',1,'GpgFrontend::GpgBasicOperator']]],
-  ['decryptfile_940',['DecryptFile',['../classGpgFrontend_1_1GpgFileOpera.html#a74eb3ba532a236d8ad284b41265b0ccd',1,'GpgFrontend::GpgFileOpera']]],
-  ['decryptverify_941',['DecryptVerify',['../classGpgFrontend_1_1GpgBasicOperator.html#a11845a9a3ea2941e14faa9130f0ac9ef',1,'GpgFrontend::GpgBasicOperator']]],
-  ['decryptverifyfile_942',['DecryptVerifyFile',['../classGpgFrontend_1_1GpgFileOpera.html#a90949b4e9e6116784260cd0e416551db',1,'GpgFrontend::GpgFileOpera']]],
-  ['delete_5fkeys_5fwith_5fwarning_943',['delete_keys_with_warning',['../classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b',1,'GpgFrontend::UI::KeyMgmt']]],
-  ['delete_5fwidgets_5fin_5flayout_944',['delete_widgets_in_layout',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a852c1fe10c7d3153a2146bcea4dbe9ad',1,'GpgFrontend::UI::InfoBoardWidget']]],
-  ['deletekey_945',['DeleteKey',['../classGpgFrontend_1_1GpgKeyOpera.html#a151c47b997951e9162f8b036c3cb15e0',1,'GpgFrontend::GpgKeyOpera']]],
-  ['deletekeys_946',['DeleteKeys',['../classGpgFrontend_1_1GpgKeyOpera.html#a8a06d0f7a600d4428359b653a68f717e',1,'GpgFrontend::GpgKeyOpera']]],
-  ['detect_947',['Detect',['../classGpgFrontend_1_1CharsetOperator.html#a5a444a0fbd508f6af6a56f4151c21c1f',1,'GpgFrontend::CharsetOperator']]],
-  ['detect_5fcr_5flf_948',['detect_cr_lf',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#af08be6a1eaec76403b12dc6e42df546c',1,'GpgFrontend::UI::PlainTextEditorPage']]],
-  ['detect_5fencoding_949',['detect_encoding',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a14b7431a786ce59e98576e3680cb9a58',1,'GpgFrontend::UI::PlainTextEditorPage']]],
-  ['dragenterevent_950',['dragEnterEvent',['../classGpgFrontend_1_1UI_1_1KeyList.html#ae3ad87e114432b0d659a0297d520d72f',1,'GpgFrontend::UI::KeyList']]],
-  ['dropevent_951',['dropEvent',['../classGpgFrontend_1_1UI_1_1KeyList.html#a23ebf79be8de637560d41afd0433c35f',1,'GpgFrontend::UI::KeyList']]]
+  ['dataobjectoperator_939',['DataObjectOperator',['../classGpgFrontend_1_1DataObjectOperator.html#a3a8ae5c36fec01d0d5c3e5f9aed457a6',1,'GpgFrontend::DataObjectOperator']]],
+  ['decrypt_940',['Decrypt',['../classGpgFrontend_1_1GpgBasicOperator.html#a9ea9e81194917e08f46eb657281b7953',1,'GpgFrontend::GpgBasicOperator']]],
+  ['decryptfile_941',['DecryptFile',['../classGpgFrontend_1_1GpgFileOpera.html#a74eb3ba532a236d8ad284b41265b0ccd',1,'GpgFrontend::GpgFileOpera']]],
+  ['decryptverify_942',['DecryptVerify',['../classGpgFrontend_1_1GpgBasicOperator.html#a11845a9a3ea2941e14faa9130f0ac9ef',1,'GpgFrontend::GpgBasicOperator']]],
+  ['decryptverifyfile_943',['DecryptVerifyFile',['../classGpgFrontend_1_1GpgFileOpera.html#a90949b4e9e6116784260cd0e416551db',1,'GpgFrontend::GpgFileOpera']]],
+  ['delete_5fkeys_5fwith_5fwarning_944',['delete_keys_with_warning',['../classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b',1,'GpgFrontend::UI::KeyMgmt']]],
+  ['delete_5fwidgets_5fin_5flayout_945',['delete_widgets_in_layout',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a852c1fe10c7d3153a2146bcea4dbe9ad',1,'GpgFrontend::UI::InfoBoardWidget']]],
+  ['deletekey_946',['DeleteKey',['../classGpgFrontend_1_1GpgKeyOpera.html#a151c47b997951e9162f8b036c3cb15e0',1,'GpgFrontend::GpgKeyOpera']]],
+  ['deletekeys_947',['DeleteKeys',['../classGpgFrontend_1_1GpgKeyOpera.html#a8a06d0f7a600d4428359b653a68f717e',1,'GpgFrontend::GpgKeyOpera']]],
+  ['detect_948',['Detect',['../classGpgFrontend_1_1CharsetOperator.html#a5a444a0fbd508f6af6a56f4151c21c1f',1,'GpgFrontend::CharsetOperator']]],
+  ['detect_5fcr_5flf_949',['detect_cr_lf',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#af08be6a1eaec76403b12dc6e42df546c',1,'GpgFrontend::UI::PlainTextEditorPage']]],
+  ['detect_5fencoding_950',['detect_encoding',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a14b7431a786ce59e98576e3680cb9a58',1,'GpgFrontend::UI::PlainTextEditorPage']]],
+  ['dragenterevent_951',['dragEnterEvent',['../classGpgFrontend_1_1UI_1_1KeyList.html#ae3ad87e114432b0d659a0297d520d72f',1,'GpgFrontend::UI::KeyList']]],
+  ['dropevent_952',['dropEvent',['../classGpgFrontend_1_1UI_1_1KeyList.html#a23ebf79be8de637560d41afd0433c35f',1,'GpgFrontend::UI::KeyList']]]
 ];

@@ -11,6 +11,7 @@ var annotated_dup =
         [ "FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", "classGpgFrontend_1_1UI_1_1FileReadTask" ],
         [ "VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog" ],
         [ "GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", "classGpgFrontend_1_1UI_1_1GeneralDialog" ],
+        [ "GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog" ],
         [ "InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", "classGpgFrontend_1_1UI_1_1InfoTab" ],
         [ "TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", "classGpgFrontend_1_1UI_1_1TranslatorsTab" ],
         [ "UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", "classGpgFrontend_1_1UI_1_1UpdateTab" ],
