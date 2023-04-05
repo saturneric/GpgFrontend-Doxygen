@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html":[2,0,0,32,0],
+"structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html#a1975ed97838072cf98bd80eef72fd3a8":[2,0,0,32,0,0],
 "structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html":[2,0,0,39,0],
 "structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html#a1dec67f70f17e45e7f78a92414d05485":[2,0,0,39,0,0],
 "structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html":[2,0,0,40,0],

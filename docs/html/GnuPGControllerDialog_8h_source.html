@@ -90,51 +90,56 @@ $(document).ready(function(){initNavTree('GnuPGControllerDialog_8h_source.html',
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_GNUPGCONTROLLERDIALOGLOG_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_GNUPGCONTROLLERDIALOGLOG_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>Ui_GnuPGControllerDialog;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">GnuPGControllerDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#add69685b9c83ed03ed24d36f2badd835">GnuPGControllerDialog</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> SlotAccept();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; signals:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">SignalRestartNeeded</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">slot_set_restart_needed</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_key_database_path_label(<span class="keywordtype">int</span> state);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_gnupg_install_path_label(<span class="keywordtype">int</span> state);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::shared_ptr&lt;Ui_GnuPGControllerDialog&gt; ui_;  </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">int</span> restart_needed_{0};                         </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#aaf89f54f2124617e836d31df29066529">get_restart_needed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> set_settings();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> apply_settings();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GNUPGCONTROLLERDIALOGLOG_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>Ui_GnuPGControllerDialog;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">GnuPGControllerDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#add69685b9c83ed03ed24d36f2badd835">GnuPGControllerDialog</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> SlotAccept();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; signals:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">   64</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">SignalRestartNeeded</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">slot_set_restart_needed</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_key_database_path_label(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> slot_update_custom_gnupg_install_path_label(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::shared_ptr&lt;Ui_GnuPGControllerDialog&gt; ui_;  </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">int</span> restart_needed_{0};                         </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#aaf89f54f2124617e836d31df29066529">get_restart_needed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> set_settings();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> apply_settings();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">bool</span> check_custom_gnupg_path(std::string);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">bool</span> check_custom_gnupg_key_database_path(std::string);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GNUPGCONTROLLERDIALOGLOG_H</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">GpgFrontend::UI::GnuPGControllerDialog</a></div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.h:38</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_a2bb963a14733cf9b99736b6624c09d83"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">GpgFrontend::UI::GnuPGControllerDialog::slot_set_restart_needed</a></div><div class="ttdeci">void slot_set_restart_needed(int)</div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.cpp:410</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html">GpgFrontend::UI::GnuPGControllerDialog</a></div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_a2bb963a14733cf9b99736b6624c09d83"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">GpgFrontend::UI::GnuPGControllerDialog::slot_set_restart_needed</a></div><div class="ttdeci">void slot_set_restart_needed(int)</div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.cpp:371</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_a35a707865fbcc95b6261e382a6ff171c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">GpgFrontend::UI::GnuPGControllerDialog::SignalRestartNeeded</a></div><div class="ttdeci">void SignalRestartNeeded(int)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_aaf89f54f2124617e836d31df29066529"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#aaf89f54f2124617e836d31df29066529">GpgFrontend::UI::GnuPGControllerDialog::get_restart_needed</a></div><div class="ttdeci">int get_restart_needed() const</div><div class="ttdoc">Get the Restart Needed object.</div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.cpp:406</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_aaf89f54f2124617e836d31df29066529"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#aaf89f54f2124617e836d31df29066529">GpgFrontend::UI::GnuPGControllerDialog::get_restart_needed</a></div><div class="ttdeci">int get_restart_needed() const</div><div class="ttdoc">Get the Restart Needed object.</div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.cpp:367</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GnuPGControllerDialog_html_add69685b9c83ed03ed24d36f2badd835"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#add69685b9c83ed03ed24d36f2badd835">GpgFrontend::UI::GnuPGControllerDialog::GnuPGControllerDialog</a></div><div class="ttdeci">GnuPGControllerDialog(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new General Tab object.</div><div class="ttdef"><b>Definition:</b> GnuPGControllerDialog.cpp:40</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->

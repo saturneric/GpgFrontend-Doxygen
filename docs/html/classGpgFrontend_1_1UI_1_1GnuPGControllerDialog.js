@@ -2,6 +2,8 @@ var classGpgFrontend_1_1UI_1_1GnuPGControllerDialog =
 [
     [ "GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#add69685b9c83ed03ed24d36f2badd835", null ],
     [ "apply_settings", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a04611d5160fcc6ef36f6fce8dd94c645", null ],
+    [ "check_custom_gnupg_key_database_path", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#ada791c1b329841a2c68f18e7a4ddd909", null ],
+    [ "check_custom_gnupg_path", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a4d9ba1fc6f869c051854e2ed2841fd71", null ],
     [ "get_restart_needed", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#aaf89f54f2124617e836d31df29066529", null ],
     [ "set_settings", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a6eeca78f12b49f095610d762d4cf7d7e", null ],
     [ "SignalRestartNeeded", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c", null ],
