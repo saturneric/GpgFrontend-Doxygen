@@ -100,7 +100,7 @@ var searchData=
   ['gettofuinfos_273',['GetTofuInfos',['../classGpgFrontend_1_1GpgUID.html#a2a36376484f7c1a4a19377d24e47a0b2',1,'GpgFrontend::GpgUID']]],
   ['getuid_274',['GetUID',['../classGpgFrontend_1_1GpgKeySignature.html#a95254ea2c00829b9dc87adc4a317cde5',1,'GpgFrontend::GpgKeySignature::GetUID()'],['../classGpgFrontend_1_1GpgUID.html#a467897d43a18b0cadd2e2e44384f6cdd',1,'GpgFrontend::GpgUID::GetUID()']]],
   ['getuids_275',['GetUIDs',['../classGpgFrontend_1_1GpgKey.html#ac8b13b45e487cdc423b78d3017897f99',1,'GpgFrontend::GpgKey']]],
-  ['getuisettings_276',['GetUISettings',['../classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b',1,'GpgFrontend::GlobalSettingStation']]],
+  ['getuisettings_276',['GetUISettings',['../classGpgFrontend_1_1GlobalSettingStation.html#a1d8b9f91c75ef7a1d008a171f09f2c0e',1,'GpgFrontend::GlobalSettingStation']]],
   ['getuserid_277',['GetUserid',['../classGpgFrontend_1_1GenKeyInfo.html#a4ee4a0659e76376d9bfc527c334392e1',1,'GpgFrontend::GenKeyInfo']]],
   ['getuuid_278',['GetUUID',['../classGpgFrontend_1_1Thread_1_1Task.html#a50b91d27874af31ef13c493b00824ccf',1,'GpgFrontend::Thread::Task']]],
   ['getvalidity_279',['GetValidity',['../classGpgFrontend_1_1GpgSignature.html#a09cb6b465e85dffcf7867e70a276e9ad',1,'GpgFrontend::GpgSignature::GetValidity()'],['../classGpgFrontend_1_1GpgTOFUInfo.html#a8770062c9e0c3875083d2c92ebe8ccb0',1,'GpgFrontend::GpgTOFUInfo::GetValidity()']]],

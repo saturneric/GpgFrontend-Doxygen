@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classGpgFrontend_1_1GpgAdvancedOperator.html#a07c32ba25cf6153fbc8ee585c4ba377c":[2,0,0,11,6],
 "classGpgFrontend_1_1GpgAdvancedOperator.html#a209f6d1d664ab672437198dc10ed8226":[2,0,0,11,3],
 "classGpgFrontend_1_1GpgAdvancedOperator.html#a387ad457bb729f340f680d0b743733ad":[2,0,0,11,8],
 "classGpgFrontend_1_1GpgAdvancedOperator.html#a46085a11235894deccd312fc259d5078":[2,0,0,11,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classGpgFrontend_1_1GpgSignature.html#a0796249b259af85c30873f5c41a01101":[2,0,0,42,7],
 "classGpgFrontend_1_1GpgSignature.html#a09cb6b465e85dffcf7867e70a276e9ad":[2,0,0,42,13],
 "classGpgFrontend_1_1GpgSignature.html#a0b2f5d9e08d407050a392ba0f7881986":[2,0,0,42,14],
-"classGpgFrontend_1_1GpgSignature.html#a1b705f45de8f6d0ae97f1ffda28185b7":[2,0,0,42,5],
-"classGpgFrontend_1_1GpgSignature.html#a1c4fbd2d10a769c1ed0b644f06e4f871":[2,0,0,42,16]
+"classGpgFrontend_1_1GpgSignature.html#a1b705f45de8f6d0ae97f1ffda28185b7":[2,0,0,42,5]
 };

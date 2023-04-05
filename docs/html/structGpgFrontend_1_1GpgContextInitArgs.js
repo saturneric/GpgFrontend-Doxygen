@@ -10,5 +10,6 @@ var structGpgFrontend_1_1GpgContextInitArgs =
     [ "gpg_path", "structGpgFrontend_1_1GpgContextInitArgs.html#a825d8c5daced5eb06be1a949ae0eadfd", null ],
     [ "independent_database", "structGpgFrontend_1_1GpgContextInitArgs.html#ac2679300c14d3f0ce29625a267054e6b", null ],
     [ "offline_mode", "structGpgFrontend_1_1GpgContextInitArgs.html#a33cd883333581952ae49784ae86edae7", null ],
-    [ "test_mode", "structGpgFrontend_1_1GpgContextInitArgs.html#a25ca282a0a82ed7aa4cb677a86f53eef", null ]
+    [ "test_mode", "structGpgFrontend_1_1GpgContextInitArgs.html#a25ca282a0a82ed7aa4cb677a86f53eef", null ],
+    [ "use_pinentry", "structGpgFrontend_1_1GpgContextInitArgs.html#a2b09f18f4f10ca44370ed204d19de122", null ]
 ];
