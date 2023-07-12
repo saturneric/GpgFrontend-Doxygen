@@ -6,6 +6,7 @@ var hierarchy =
     [ "GpgFrontend::_result_ref_deletor", "structGpgFrontend_1_1__result__ref__deletor.html", null ],
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", null ],
+    [ "GpgFrontend::GpgKeyManager::AutomatonHandelStruct", "structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct.html", null ],
     [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
     [ "GpgFrontend::ChannelObject", "classGpgFrontend_1_1ChannelObject.html", [
       [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [

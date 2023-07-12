@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1UI_1_1KeyPairOpera
 
 <div class="header">
   <div class="summary">
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -96,7 +97,7 @@ Inheritance diagram for GpgFrontend::UI::KeyPairOperaTab:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1KeyPairOperaTab__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyPairOperaTab_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyPairOperaTab_inherit__map" id="aGpgFrontend_1_1UI_1_1KeyPairOperaTab_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,220,487"/>
+<area shape="rect" title=" " alt="" coords="5,131,220,516"/>
 <area shape="rect" title=" " alt="" coords="73,5,152,83"/>
 </map>
 </div>
@@ -105,7 +106,7 @@ Collaboration diagram for GpgFrontend::UI::KeyPairOperaTab:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1KeyPairOperaTab__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyPairOperaTab_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyPairOperaTab_coll__map" id="aGpgFrontend_1_1UI_1_1KeyPairOperaTab_coll__map">
-<area shape="rect" title=" " alt="" coords="5,756,220,1097"/>
+<area shape="rect" title=" " alt="" coords="5,756,220,1127"/>
 <area shape="rect" title=" " alt="" coords="52,543,131,620"/>
 <area shape="rect" href="classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="155,469,332,693"/>
 <area shape="rect" title=" " alt="" coords="93,315,185,392"/>
@@ -115,6 +116,12 @@ Collaboration diagram for GpgFrontend::UI::KeyPairOperaTab:</div>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ac6b09219bbf830ce6b2d997aa2bb0c04"><td class="memItemLeft" align="right" valign="top"><a id="ac6b09219bbf830ce6b2d997aa2bb0c04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalKeyDatabaseRefresh</b> ()</td></tr>
+<tr class="separator:ac6b09219bbf830ce6b2d997aa2bb0c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad4e209d7b4eb0ac6623b2f12ce5ecc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#aad4e209d7b4eb0ac6623b2f12ce5ecc5">KeyPairOperaTab</a> (const std::string &amp;key_id, QWidget *parent)</td></tr>
@@ -153,6 +160,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_gen_revoke_cert<
 <tr class="memitem:ab23cb5c7d25aabc0bed9ba530f3866ba"><td class="memItemLeft" align="right" valign="top"><a id="ab23cb5c7d25aabc0bed9ba530f3866ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_modify_tofu_policy</b> ()</td></tr>
 <tr class="separator:ab23cb5c7d25aabc0bed9ba530f3866ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83ec0e2803737488d368fd796a56ceb"><td class="memItemLeft" align="right" valign="top"><a id="ad83ec0e2803737488d368fd796a56ceb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_set_owner_trust_level</b> ()</td></tr>
+<tr class="separator:ad83ec0e2803737488d368fd796a56ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -202,7 +212,7 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>secret_key_export_
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">CreateOperaMenu()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d8b9f91c75ef7a1d008a171f09f2c0e">GpgFrontend::GlobalSettingStation::GetUISettings()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey()</a>, and <a class="el" href="classGpgFrontend_1_1GpgKey.html#a888c0263f04bdd52967e092b9c73eb6d">GpgFrontend::GpgKey::IsPrivateKey()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">CreateOperaMenu()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1SignalStation.html#abe381ce56a7b157a3760b2fd9c3b7419">GpgFrontend::UI::SignalStation::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d8b9f91c75ef7a1d008a171f09f2c0e">GpgFrontend::GlobalSettingStation::GetUISettings()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#aadac1b776764ee9d0ca4f8bb9f9e0741">GpgFrontend::GpgKey::IsHasMasterKey()</a>, and <a class="el" href="classGpgFrontend_1_1GpgKey.html#a888c0263f04bdd52967e092b9c73eb6d">GpgFrontend::GpgKey::IsPrivateKey()</a>.</p>
 
 </div>
 </div>
