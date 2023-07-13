@@ -90,146 +90,144 @@ $(document).ready(function(){initNavTree('GlobalSettingStation_8h_source.html','
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_GLOBALSETTINGSTATION_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_GLOBALSETTINGSTATION_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;sys/_types/_int64_t.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendBuildInstallInfo.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendBuildInstallInfo.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html">   46</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GlobalSettingStation&gt; {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a>(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>()) noexcept;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451">   60</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451">~GlobalSettingStation</a>() noexcept override;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  libconfig::Setting &amp;GetUISettings() noexcept;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  template &lt;typename T&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a819b3f4ea553fc1e839ef0ae230f0ea2">   75</a></span>&#160;  T LookupSettings(std::<span class="keywordtype">string</span> path, T default_value) noexcept {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    T value = default_value;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      value = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(GetUISettings().lookup(path));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      SPDLOG_WARN(<span class="stringliteral">&quot;setting not found: {}&quot;</span>, path);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">   90</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">GetAppDir</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> app_path_; }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  [[nodiscard]] std::filesystem::path GetAppDataPath()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> app_data_path_;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">  101</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">GetLogDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> app_log_path_;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">  110</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">GetStandaloneDatabaseDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">auto</span> db_path = app_configure_path_ / <span class="stringliteral">&quot;db&quot;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (!std::filesystem::exists(db_path)) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      std::filesystem::create_directory(db_path);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> db_path;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  [[nodiscard]] std::filesystem::path GetAppConfigPath()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> app_configure_path_;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">  127</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">GetStandaloneGpgBinDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> app_resource_path_ / <span class="stringliteral">&quot;gpg1.4&quot;</span> / <span class="stringliteral">&quot;gpg&quot;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">  136</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">GetLocaleDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> app_locale_path_;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">  145</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">GetResourceDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> app_resource_path_;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">  154</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GetCertsDir</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> app_resource_path_ / <span class="stringliteral">&quot;certs&quot;</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html">   44</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GlobalSettingStation&gt; {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a>(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>()) noexcept;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451">   58</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451">~GlobalSettingStation</a>() noexcept override;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  libconfig::Setting &amp;GetUISettings() noexcept;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  template &lt;typename T&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a819b3f4ea553fc1e839ef0ae230f0ea2">   73</a></span>&#160;  T LookupSettings(std::<span class="keywordtype">string</span> path, T default_value) noexcept {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    T value = default_value;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      value = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(GetUISettings().lookup(path));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      SPDLOG_WARN(<span class="stringliteral">&quot;setting not found: {}&quot;</span>, path);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">   88</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">GetAppDir</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> app_path_; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  [[nodiscard]] std::filesystem::path GetAppDataPath()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> app_data_path_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">   99</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">GetLogDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> app_log_path_;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">  108</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">GetStandaloneDatabaseDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">auto</span> db_path = app_configure_path_ / <span class="stringliteral">&quot;db&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">if</span> (!std::filesystem::exists(db_path)) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      std::filesystem::create_directory(db_path);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> db_path;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  [[nodiscard]] std::filesystem::path GetAppConfigPath()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> app_configure_path_;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">  125</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">GetStandaloneGpgBinDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> app_resource_path_ / <span class="stringliteral">&quot;gpg1.4&quot;</span> / <span class="stringliteral">&quot;gpg&quot;</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">  134</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">GetLocaleDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> app_locale_path_;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">  143</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">GetResourceDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> app_resource_path_;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">  152</a></span>&#160;  [[nodiscard]] std::filesystem::path <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GetCertsDir</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> app_resource_path_ / <span class="stringliteral">&quot;certs&quot;</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  [[nodiscard]] std::string GetLogFilesSize() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  [[nodiscard]] std::string GetLogFilesSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  [[nodiscard]] std::string GetDataObjectsFilesSize() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  [[nodiscard]] std::string GetDataObjectsFilesSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">void</span> ClearAllLogFiles() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> ClearAllLogFiles() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> ClearAllDataObjects() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">void</span> ClearAllDataObjects() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span> SyncSettings() noexcept;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; private:</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">  173</a></span>&#160;  std::filesystem::path app_path_ = QCoreApplication::applicationDirPath()</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                        .toStdString();  </div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">  175</a></span>&#160;  std::filesystem::path app_data_path_ =</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          .toStdString();  </div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a6459653a71cc8285fa554943c7fb3ca7">  178</a></span>&#160;  std::filesystem::path app_log_path_ =</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      app_data_path_ / &quot;logs&quot;;  </div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ad0600d475f6758503b1347722e2a933a">  180</a></span>&#160;  std::filesystem::path app_data_objs_path_ =</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      app_data_path_ / &quot;data_objs&quot;;  </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#ifdef LINUX_INSTALL_BUILD</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  std::filesystem::path app_resource_path_ =</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      std::filesystem::path(APP_LOCALSTATE_PATH) /</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="stringliteral">&quot;gpgfrontend&quot;</span>;  </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">  188</a></span>&#160;  std::filesystem::path app_resource_path_ =</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      RESOURCE_DIR_BOOST_PATH(app_path_);  </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#ifdef LINUX_INSTALL_BUILD</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  std::filesystem::path app_locale_path_ =</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      std::string(APP_LOCALE_PATH);  </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a25c1b45a2ccdc21dd2dcba58866169fb">  196</a></span>&#160;  std::filesystem::path app_locale_path_ =</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      app_resource_path_ / <span class="stringliteral">&quot;locales&quot;</span>;  </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">  200</a></span>&#160;  std::filesystem::path app_configure_path_ =</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;          .toStdString();  </div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">  203</a></span>&#160;  std::filesystem::path ui_config_dir_path_ =</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      app_configure_path_ / <span class="stringliteral">&quot;conf&quot;</span>;  </div>
-<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#afa99ddc25c0d5fd59a4c5f0e61d13830">  205</a></span>&#160;  std::filesystem::path ui_config_path_ =</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      ui_config_dir_path_ / <span class="stringliteral">&quot;main.cfg&quot;</span>;  </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">void</span> SyncSettings() noexcept;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; private:</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">  171</a></span>&#160;  std::filesystem::path app_path_ = QCoreApplication::applicationDirPath()</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                        .toStdString();  </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">  173</a></span>&#160;  std::filesystem::path app_data_path_ =</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          .toStdString();  </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a6459653a71cc8285fa554943c7fb3ca7">  176</a></span>&#160;  std::filesystem::path app_log_path_ =</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      app_data_path_ / &quot;logs&quot;;  </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ad0600d475f6758503b1347722e2a933a">  178</a></span>&#160;  std::filesystem::path app_data_objs_path_ =</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      app_data_path_ / &quot;data_objs&quot;;  </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#ifdef LINUX_INSTALL_BUILD</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  std::filesystem::path app_resource_path_ =</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      std::filesystem::path(APP_LOCALSTATE_PATH) /</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="stringliteral">&quot;gpgfrontend&quot;</span>;  </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">  186</a></span>&#160;  std::filesystem::path app_resource_path_ =</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      RESOURCE_DIR_BOOST_PATH(app_path_);  </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#ifdef LINUX_INSTALL_BUILD</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  std::filesystem::path app_locale_path_ =</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      std::string(APP_LOCALE_PATH);  </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a25c1b45a2ccdc21dd2dcba58866169fb">  194</a></span>&#160;  std::filesystem::path app_locale_path_ =</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      app_resource_path_ / <span class="stringliteral">&quot;locales&quot;</span>;  </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">  198</a></span>&#160;  std::filesystem::path app_configure_path_ =</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;          .toStdString();  </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">  201</a></span>&#160;  std::filesystem::path ui_config_dir_path_ =</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      app_configure_path_ / <span class="stringliteral">&quot;conf&quot;</span>;  </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#afa99ddc25c0d5fd59a4c5f0e61d13830">  203</a></span>&#160;  std::filesystem::path ui_config_path_ =</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      ui_config_dir_path_ / <span class="stringliteral">&quot;main.cfg&quot;</span>;  </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">  206</a></span>&#160;  libconfig::Config <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">ui_cfg_</a>;  </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">  208</a></span>&#160;  libconfig::Config <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">ui_cfg_</a>;  </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">void</span> init_app_secure_key();</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  int64_t get_files_size_at_path(std::filesystem::path path,</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                 std::string filename_pattern) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  std::string get_human_readable_size(int64_t size) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">void</span> delete_all_files(std::filesystem::path path,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        std::string filename_pattern) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GLOBALSETTINGSTATION_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html">GpgFrontend::GlobalSettingStation</a></div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:47</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a0b3780564305e9b210d66ef377c21565"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">GpgFrontend::GlobalSettingStation::GetLocaleDir</a></div><div class="ttdeci">std::filesystem::path GetLocaleDir() const</div><div class="ttdoc">Get the Locale Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:136</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1818e08063d6a886975f77354fc5d85c"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">GpgFrontend::GlobalSettingStation::ui_cfg_</a></div><div class="ttdeci">libconfig::Config ui_cfg_</div><div class="ttdoc">UI Configure File.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:208</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a385ae4ab6ad5b17742a5405fa693d789"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GpgFrontend::GlobalSettingStation::GetCertsDir</a></div><div class="ttdeci">std::filesystem::path GetCertsDir() const</div><div class="ttdoc">Get the Certs Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:154</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a7da9b08291ef2391892f5c9375b8db23"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">GpgFrontend::GlobalSettingStation::GetLogDir</a></div><div class="ttdeci">std::filesystem::path GetLogDir() const</div><div class="ttdoc">Get the Log Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:101</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_aa93b21af9ac6649d5749c83c809f5b00"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">GpgFrontend::GlobalSettingStation::GetStandaloneGpgBinDir</a></div><div class="ttdeci">std::filesystem::path GetStandaloneGpgBinDir() const</div><div class="ttdoc">Get the Standalone Gpg Bin Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:127</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ae9d1da3d01c4a834120968636596c3c3"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">GpgFrontend::GlobalSettingStation::GetAppDir</a></div><div class="ttdeci">std::filesystem::path GetAppDir() const</div><div class="ttdoc">Get the App Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:90</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_af484ca46c5df831a9dd76f3a88d66332"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">GpgFrontend::GlobalSettingStation::GetStandaloneDatabaseDir</a></div><div class="ttdeci">std::filesystem::path GetStandaloneDatabaseDir() const</div><div class="ttdoc">Get the Standalone Database Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:110</div></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">void</span> init_app_secure_key();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  int64_t get_files_size_at_path(std::filesystem::path path,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                 std::string filename_pattern) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  std::string get_human_readable_size(int64_t size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">void</span> delete_all_files(std::filesystem::path path,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        std::string filename_pattern) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GLOBALSETTINGSTATION_H</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html">GpgFrontend::GlobalSettingStation</a></div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:45</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a0b3780564305e9b210d66ef377c21565"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a0b3780564305e9b210d66ef377c21565">GpgFrontend::GlobalSettingStation::GetLocaleDir</a></div><div class="ttdeci">std::filesystem::path GetLocaleDir() const</div><div class="ttdoc">Get the Locale Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:134</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1818e08063d6a886975f77354fc5d85c"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c">GpgFrontend::GlobalSettingStation::ui_cfg_</a></div><div class="ttdeci">libconfig::Config ui_cfg_</div><div class="ttdoc">UI Configure File.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:206</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a385ae4ab6ad5b17742a5405fa693d789"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GpgFrontend::GlobalSettingStation::GetCertsDir</a></div><div class="ttdeci">std::filesystem::path GetCertsDir() const</div><div class="ttdoc">Get the Certs Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:152</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a7da9b08291ef2391892f5c9375b8db23"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a7da9b08291ef2391892f5c9375b8db23">GpgFrontend::GlobalSettingStation::GetLogDir</a></div><div class="ttdeci">std::filesystem::path GetLogDir() const</div><div class="ttdoc">Get the Log Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:99</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_aa93b21af9ac6649d5749c83c809f5b00"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#aa93b21af9ac6649d5749c83c809f5b00">GpgFrontend::GlobalSettingStation::GetStandaloneGpgBinDir</a></div><div class="ttdeci">std::filesystem::path GetStandaloneGpgBinDir() const</div><div class="ttdoc">Get the Standalone Gpg Bin Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:125</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ae9d1da3d01c4a834120968636596c3c3"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ae9d1da3d01c4a834120968636596c3c3">GpgFrontend::GlobalSettingStation::GetAppDir</a></div><div class="ttdeci">std::filesystem::path GetAppDir() const</div><div class="ttdoc">Get the App Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:88</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_af484ca46c5df831a9dd76f3a88d66332"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#af484ca46c5df831a9dd76f3a88d66332">GpgFrontend::GlobalSettingStation::GetStandaloneDatabaseDir</a></div><div class="ttdeci">std::filesystem::path GetStandaloneDatabaseDir() const</div><div class="ttdoc">Get the Standalone Database Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:108</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_af700161900e623a0ea14261d51616451"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451">GpgFrontend::GlobalSettingStation::~GlobalSettingStation</a></div><div class="ttdeci">~GlobalSettingStation() noexcept override</div><div class="ttdoc">Destroy the Global Setting Station object.</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_afc1aa3dec55ae4e741f92fce1140a2d0"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">GpgFrontend::GlobalSettingStation::GetResourceDir</a></div><div class="ttdeci">std::filesystem::path GetResourceDir() const</div><div class="ttdoc">Get the Resource Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:145</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_afc1aa3dec55ae4e741f92fce1140a2d0"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#afc1aa3dec55ae4e741f92fce1140a2d0">GpgFrontend::GlobalSettingStation::GetResourceDir</a></div><div class="ttdeci">std::filesystem::path GetResourceDir() const</div><div class="ttdoc">Get the Resource Dir object.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:143</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:150</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:251</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
