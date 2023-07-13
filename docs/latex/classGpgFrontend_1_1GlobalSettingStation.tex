@@ -53,6 +53,18 @@ std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStat
 \begin{DoxyCompactList}\small\item\em Get the Resource Dir object. \end{DoxyCompactList}\item 
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a385ae4ab6ad5b17742a5405fa693d789}{Get\+Certs\+Dir}} () const
 \begin{DoxyCompactList}\small\item\em Get the Certs Dir object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a3029ae27bcb2d845f61f7870f43f8c6f}\label{classGpgFrontend_1_1GlobalSettingStation_a3029ae27bcb2d845f61f7870f43f8c6f}} 
+std\+::string {\bfseries Get\+Log\+Files\+Size} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a4da1d828e5bb719025f5b8e279e0bd02}\label{classGpgFrontend_1_1GlobalSettingStation_a4da1d828e5bb719025f5b8e279e0bd02}} 
+std\+::string {\bfseries Get\+Data\+Objects\+Files\+Size} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a43c472c40896308e7bbc14796b5740af}\label{classGpgFrontend_1_1GlobalSettingStation_a43c472c40896308e7bbc14796b5740af}} 
+void {\bfseries Clear\+All\+Log\+Files} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a393186ae479062b007a41485f608636f}\label{classGpgFrontend_1_1GlobalSettingStation_a393186ae479062b007a41485f608636f}} 
+void {\bfseries Clear\+All\+Data\+Objects} () const
+\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}{Sync\+Settings}} () noexcept
 \begin{DoxyCompactList}\small\item\em sync the settings to the file \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
@@ -60,6 +72,15 @@ void \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67e
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a1e1993b72d0ad09d247b643b4447e57c}\label{classGpgFrontend_1_1GlobalSettingStation_a1e1993b72d0ad09d247b643b4447e57c}} 
 void {\bfseries init\+\_\+app\+\_\+secure\+\_\+key} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a4eb35bd5306e8c393ad168e91826aed4}\label{classGpgFrontend_1_1GlobalSettingStation_a4eb35bd5306e8c393ad168e91826aed4}} 
+int64\+\_\+t {\bfseries get\+\_\+files\+\_\+size\+\_\+at\+\_\+path} (std\+::filesystem\+::path path, std\+::string filename\+\_\+pattern) const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a369e57383a99bc673273c2819b8bebbb}\label{classGpgFrontend_1_1GlobalSettingStation_a369e57383a99bc673273c2819b8bebbb}} 
+std\+::string {\bfseries get\+\_\+human\+\_\+readable\+\_\+size} (int64\+\_\+t size) const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a2b40c59a9fce37873dd3564f8e1bd906}\label{classGpgFrontend_1_1GlobalSettingStation_a2b40c59a9fce37873dd3564f8e1bd906}} 
+void {\bfseries delete\+\_\+all\+\_\+files} (std\+::filesystem\+::path path, std\+::string filename\+\_\+pattern) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -288,7 +309,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}objs"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}data\_objs"{}}}
 
 \end{DoxyCode}
 

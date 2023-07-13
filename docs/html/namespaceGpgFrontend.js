@@ -10,6 +10,7 @@ var namespaceGpgFrontend =
     [ "CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", "classGpgFrontend_1_1CoreCommonUtil" ],
     [ "ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", "structGpgFrontend_1_1ArchiveStruct" ],
     [ "ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", "classGpgFrontend_1_1ArchiveFileOperator" ],
+    [ "ThreadSafeMap", "classGpgFrontend_1_1ThreadSafeMap.html", "classGpgFrontend_1_1ThreadSafeMap" ],
     [ "CacheManager", "classGpgFrontend_1_1CacheManager.html", "classGpgFrontend_1_1CacheManager" ],
     [ "CharsetOperator", "classGpgFrontend_1_1CharsetOperator.html", "classGpgFrontend_1_1CharsetOperator" ],
     [ "CoreSignalStation", "classGpgFrontend_1_1CoreSignalStation.html", "classGpgFrontend_1_1CoreSignalStation" ],

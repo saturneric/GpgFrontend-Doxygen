@@ -55,6 +55,12 @@ void {\bfseries Signal\+Loaded} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a23c517e1b4c63d03e0413bf3772ffb92}\label{classGpgFrontend_1_1UI_1_1MainWindow_a23c517e1b4c63d03e0413bf3772ffb92}} 
 void {\bfseries Signal\+Restart\+Application} (int)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a8de27a8002376b61e32f617910846412}\label{classGpgFrontend_1_1UI_1_1MainWindow_a8de27a8002376b61e32f617910846412}} 
+void {\bfseries Signal\+UIRefresh} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a2caccd72d474177e571c07dd47038e58}\label{classGpgFrontend_1_1UI_1_1MainWindow_a2caccd72d474177e571c07dd47038e58}} 
+void {\bfseries Signal\+Key\+Database\+Refresh} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -127,6 +133,15 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a24a0b0d974fc5f8fdda60c128a82d957}{slot\+\_\+disable\+\_\+tab\+\_\+actions}} (int number)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a48368c77af7b1f4cb632870b8d914a28}{slot\+\_\+version\+\_\+upgrade}} (const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} \&version)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a7ec169e4ce829f37c3605491ac617973}\label{classGpgFrontend_1_1UI_1_1MainWindow_a7ec169e4ce829f37c3605491ac617973}} 
+void {\bfseries slot\+\_\+add\+\_\+key\+\_\+2\+\_\+favourite} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a01aed2790d84479bd3a2551d1cc6fb91}\label{classGpgFrontend_1_1UI_1_1MainWindow_a01aed2790d84479bd3a2551d1cc6fb91}} 
+void {\bfseries slot\+\_\+remove\+\_\+key\+\_\+from\+\_\+favourite} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ace4433f21dbb4b1859b81c120b675e1d}\label{classGpgFrontend_1_1UI_1_1MainWindow_ace4433f21dbb4b1859b81c120b675e1d}} 
+void {\bfseries slot\+\_\+set\+\_\+owner\+\_\+trust\+\_\+level\+\_\+of\+\_\+key} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -146,6 +161,9 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a92a6d8d46e197e25eaac
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a473b679fa0dc3cdf4f6f98d6553fa0ec}{close\+\_\+attachment\+\_\+dock}} ()
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a210ab31f4d949a50507d0690c0d1598a}{restore\+\_\+settings}} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a4df2a05492bf237511d44c5e9cdd9413}\label{classGpgFrontend_1_1UI_1_1MainWindow_a4df2a05492bf237511d44c5e9cdd9413}} 
+void {\bfseries recover\+\_\+editor\+\_\+unsaved\+\_\+pages\+\_\+from\+\_\+cache} ()
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a7a4b6490038470a8849231e48282da98}{save\+\_\+settings}} ()
 \item 
@@ -297,6 +315,15 @@ QAction $\ast$ {\bfseries copy\+\_\+key\+\_\+id\+\_\+to\+\_\+clipboard\+\_\+act\
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ada8351319a2aaf032fc736f39bdcf9a5}\label{classGpgFrontend_1_1UI_1_1MainWindow_ada8351319a2aaf032fc736f39bdcf9a5}} 
 QAction $\ast$ {\bfseries copy\+\_\+key\+\_\+default\+\_\+uid\+\_\+to\+\_\+clipboard\+\_\+act\+\_\+} \{\}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ae9bc8395f2d2965c722442f4879902d8}\label{classGpgFrontend_1_1UI_1_1MainWindow_ae9bc8395f2d2965c722442f4879902d8}} 
+QAction $\ast$ {\bfseries add\+\_\+key\+\_\+2\+\_\+favourtie\+\_\+act\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a1ddc7e6246dd5065bed0777dca4e6fb6}\label{classGpgFrontend_1_1UI_1_1MainWindow_a1ddc7e6246dd5065bed0777dca4e6fb6}} 
+QAction $\ast$ {\bfseries remove\+\_\+key\+\_\+from\+\_\+favourtie\+\_\+act\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a34d67c0c4f63695751616b5f6624b674}\label{classGpgFrontend_1_1UI_1_1MainWindow_a34d67c0c4f63695751616b5f6624b674}} 
+QAction $\ast$ {\bfseries set\+\_\+owner\+\_\+trust\+\_\+of\+\_\+key\+\_\+act\+\_\+} \{\}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ad7b22560df7e3bb38b660d3ffc84dc83}\label{classGpgFrontend_1_1UI_1_1MainWindow_ad7b22560df7e3bb38b660d3ffc84dc83}} 
 QAction $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ad7b22560df7e3bb38b660d3ffc84dc83}{open\+\_\+key\+\_\+management\+\_\+act\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Action to open key management. \end{DoxyCompactList}\item 
@@ -429,7 +456,7 @@ Create attachment dock window. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1Main
 
 Create keylist-\/ and attachment-\/dockwindows. 
 
-References Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked(), key\+\_\+list\+\_\+dock\+\_\+, and view\+\_\+menu\+\_\+.
+References Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked(), key\+\_\+list\+\_\+dock\+\_\+, and view\+\_\+menu\+\_\+.
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}\label{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!create\_menus@{create\_menus}}

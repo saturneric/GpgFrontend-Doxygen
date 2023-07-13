@@ -1,3 +1,16 @@
 <map id="GpgFrontend::CacheManager" name="GpgFrontend::CacheManager">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,216,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="225,1219,436,1428"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,976,80,1053"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="104,873,333,1156"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="44,285,252,436"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="104,513,333,796"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1ThreadSafeMap.html" title=" " alt="" coords="358,910,573,1119"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1ThreadSafeMap.html" title=" " alt="" coords="358,572,573,737"/>
+<area shape="rect" id="node8" title=" " alt="" coords="307,322,450,399"/>
+<area shape="rect" id="node9" title=" " alt="" coords="474,315,651,407"/>
+<area shape="rect" id="node10" title=" " alt="" coords="495,145,630,223"/>
+<area shape="rect" id="node11" title=" " alt="" coords="506,5,545,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="582,5,621,83"/>
+<area shape="rect" id="node13" title=" " alt="" coords="610,976,697,1053"/>
+<area shape="rect" id="node14" title=" " alt="" coords="597,609,736,701"/>
 </map>

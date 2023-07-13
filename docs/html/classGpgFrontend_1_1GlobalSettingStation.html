@@ -96,7 +96,7 @@ Inheritance diagram for GpgFrontend::GlobalSettingStation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GlobalSettingStation__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1GlobalSettingStation_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1GlobalSettingStation_inherit__map" id="aGpgFrontend_1_1GlobalSettingStation_inherit__map">
-<area shape="rect" title=" " alt="" coords="8,883,232,1312"/>
+<area shape="rect" title=" " alt="" coords="8,883,232,1327"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,551,235,833"/>
 <area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,205,365,488"/>
@@ -107,7 +107,7 @@ Collaboration diagram for GpgFrontend::GlobalSettingStation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GlobalSettingStation__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GlobalSettingStation_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GlobalSettingStation_coll__map" id="aGpgFrontend_1_1GlobalSettingStation_coll__map">
-<area shape="rect" title=" " alt="" coords="8,883,232,1312"/>
+<area shape="rect" title=" " alt="" coords="8,883,232,1327"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,551,235,833"/>
 <area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,205,365,488"/>
@@ -156,6 +156,18 @@ std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><b>GetA
 <tr class="memitem:a385ae4ab6ad5b17742a5405fa693d789"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">GetCertsDir</a> () const</td></tr>
 <tr class="memdesc:a385ae4ab6ad5b17742a5405fa693d789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Certs Dir object.  <a href="classGpgFrontend_1_1GlobalSettingStation.html#a385ae4ab6ad5b17742a5405fa693d789">More...</a><br /></td></tr>
 <tr class="separator:a385ae4ab6ad5b17742a5405fa693d789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3029ae27bcb2d845f61f7870f43f8c6f"><td class="memItemLeft" align="right" valign="top"><a id="a3029ae27bcb2d845f61f7870f43f8c6f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetLogFilesSize</b> () const</td></tr>
+<tr class="separator:a3029ae27bcb2d845f61f7870f43f8c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da1d828e5bb719025f5b8e279e0bd02"><td class="memItemLeft" align="right" valign="top"><a id="a4da1d828e5bb719025f5b8e279e0bd02"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataObjectsFilesSize</b> () const</td></tr>
+<tr class="separator:a4da1d828e5bb719025f5b8e279e0bd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c472c40896308e7bbc14796b5740af"><td class="memItemLeft" align="right" valign="top"><a id="a43c472c40896308e7bbc14796b5740af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAllLogFiles</b> () const</td></tr>
+<tr class="separator:a43c472c40896308e7bbc14796b5740af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393186ae479062b007a41485f608636f"><td class="memItemLeft" align="right" valign="top"><a id="a393186ae479062b007a41485f608636f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAllDataObjects</b> () const</td></tr>
+<tr class="separator:a393186ae479062b007a41485f608636f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac061ac8e5308f67ea52b98888bbb2e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#ac061ac8e5308f67ea52b98888bbb2e8d">SyncSettings</a> () noexcept</td></tr>
 <tr class="memdesc:ac061ac8e5308f67ea52b98888bbb2e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sync the settings to the file  <a href="classGpgFrontend_1_1GlobalSettingStation.html#ac061ac8e5308f67ea52b98888bbb2e8d">More...</a><br /></td></tr>
 <tr class="separator:ac061ac8e5308f67ea52b98888bbb2e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +213,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a1e1993b72d0ad09d247b643b4447e57c"><td class="memItemLeft" align="right" valign="top"><a id="a1e1993b72d0ad09d247b643b4447e57c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init_app_secure_key</b> ()</td></tr>
 <tr class="separator:a1e1993b72d0ad09d247b643b4447e57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb35bd5306e8c393ad168e91826aed4"><td class="memItemLeft" align="right" valign="top"><a id="a4eb35bd5306e8c393ad168e91826aed4"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_files_size_at_path</b> (std::filesystem::path path, std::string filename_pattern) const</td></tr>
+<tr class="separator:a4eb35bd5306e8c393ad168e91826aed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369e57383a99bc673273c2819b8bebbb"><td class="memItemLeft" align="right" valign="top"><a id="a369e57383a99bc673273c2819b8bebbb"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_human_readable_size</b> (int64_t size) const</td></tr>
+<tr class="separator:a369e57383a99bc673273c2819b8bebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b40c59a9fce37873dd3564f8e1bd906"><td class="memItemLeft" align="right" valign="top"><a id="a2b40c59a9fce37873dd3564f8e1bd906"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delete_all_files</b> (std::filesystem::path path, std::string filename_pattern) const</td></tr>
+<tr class="separator:a2b40c59a9fce37873dd3564f8e1bd906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -633,8 +654,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">app_data_path_</a> / <span class="stringliteral">&quot;objs&quot;</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a58fff8a42f98ad7989bffb8322344cd6"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">GpgFrontend::GlobalSettingStation::app_data_path_</a></div><div class="ttdeci">std::filesystem::path app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:163</div></div>
+<div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">app_data_path_</a> / <span class="stringliteral">&quot;data_objs&quot;</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a58fff8a42f98ad7989bffb8322344cd6"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a58fff8a42f98ad7989bffb8322344cd6">GpgFrontend::GlobalSettingStation::app_data_path_</a></div><div class="ttdeci">std::filesystem::path app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:175</div></div>
 </div><!-- fragment -->
 <p>Object storage path. </p>
 
@@ -690,7 +711,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">app_resource_path_</a> / <span class="stringliteral">&quot;locales&quot;</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1d94a126c78ac01ec01f10d2ce575388"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">GpgFrontend::GlobalSettingStation::app_resource_path_</a></div><div class="ttdeci">std::filesystem::path app_resource_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:176</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a1d94a126c78ac01ec01f10d2ce575388"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a1d94a126c78ac01ec01f10d2ce575388">GpgFrontend::GlobalSettingStation::app_resource_path_</a></div><div class="ttdeci">std::filesystem::path app_resource_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:188</div></div>
 </div><!-- fragment -->
 <p>Program Data Location. </p>
 
@@ -775,7 +796,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      RESOURCE_DIR_BOOST_PATH(<a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">app_path_</a>)</div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a678f8ba120f9ad050d0adfec4476d7ac"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">GpgFrontend::GlobalSettingStation::app_path_</a></div><div class="ttdeci">std::filesystem::path app_path_</div><div class="ttdoc">Program Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:161</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a678f8ba120f9ad050d0adfec4476d7ac"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a678f8ba120f9ad050d0adfec4476d7ac">GpgFrontend::GlobalSettingStation::app_path_</a></div><div class="ttdeci">std::filesystem::path app_path_</div><div class="ttdoc">Program Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:173</div></div>
 </div><!-- fragment -->
 <p>Program Data Location. </p>
 
@@ -802,7 +823,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">app_configure_path_</a> / <span class="stringliteral">&quot;conf&quot;</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a4d04bb665571921421b853f18b8b300a"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">GpgFrontend::GlobalSettingStation::app_configure_path_</a></div><div class="ttdeci">std::filesystem::path app_configure_path_</div><div class="ttdoc">Program Configure Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:188</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a4d04bb665571921421b853f18b8b300a"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a4d04bb665571921421b853f18b8b300a">GpgFrontend::GlobalSettingStation::app_configure_path_</a></div><div class="ttdeci">std::filesystem::path app_configure_path_</div><div class="ttdoc">Program Configure Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:200</div></div>
 </div><!-- fragment -->
 <p>Configure File Directory Location. </p>
 
@@ -831,7 +852,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">ui_config_dir_path_</a> / <span class="stringliteral">&quot;main.cfg&quot;</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ab618fef68cfd4ff6e42d4a4aa8ea94bb"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">GpgFrontend::GlobalSettingStation::ui_config_dir_path_</a></div><div class="ttdeci">std::filesystem::path ui_config_dir_path_</div><div class="ttdoc">Configure File Directory Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:191</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_ab618fef68cfd4ff6e42d4a4aa8ea94bb"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb">GpgFrontend::GlobalSettingStation::ui_config_dir_path_</a></div><div class="ttdeci">std::filesystem::path ui_config_dir_path_</div><div class="ttdoc">Configure File Directory Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:203</div></div>
 </div><!-- fragment -->
 <p>Main Configure File Location. </p>
 

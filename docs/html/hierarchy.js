@@ -7,7 +7,6 @@ var hierarchy =
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", null ],
     [ "GpgFrontend::GpgKeyManager::AutomatonHandelStruct", "structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct.html", null ],
-    [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
     [ "GpgFrontend::ChannelObject", "classGpgFrontend_1_1ChannelObject.html", [
       [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", null ]
@@ -32,6 +31,9 @@ var hierarchy =
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgKeyGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< CacheManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
@@ -122,6 +124,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "QObject", null, [
+      [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
       [ "GpgFrontend::CoreSignalStation", "classGpgFrontend_1_1CoreSignalStation.html", null ],
       [ "GpgFrontend::GpgContext", "classGpgFrontend_1_1GpgContext.html", null ],
@@ -178,5 +181,7 @@ var hierarchy =
     [ "GpgFrontend::SingletonStorage", "classGpgFrontend_1_1SingletonStorage.html", null ],
     [ "GpgFrontend::SingletonStorageCollection", "classGpgFrontend_1_1SingletonStorageCollection.html", null ],
     [ "GpgFrontend::UI::SoftwareVersion", "structGpgFrontend_1_1UI_1_1SoftwareVersion.html", null ],
-    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ]
+    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ],
+    [ "GpgFrontend::ThreadSafeMap< Key, Value >", "classGpgFrontend_1_1ThreadSafeMap.html", null ],
+    [ "GpgFrontend::ThreadSafeMap< std::string, nlohmann::json >", "classGpgFrontend_1_1ThreadSafeMap.html", null ]
 ];

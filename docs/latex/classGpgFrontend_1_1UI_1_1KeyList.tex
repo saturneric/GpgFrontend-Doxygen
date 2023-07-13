@@ -25,6 +25,9 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+List\+:
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a152e66db4a0f033366f43b4ec89073f4}\label{classGpgFrontend_1_1UI_1_1KeyList_a152e66db4a0f033366f43b4ec89073f4}} 
 void {\bfseries Slot\+Refresh} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a84499e74d082e71e90a8526991c5331a}\label{classGpgFrontend_1_1UI_1_1KeyList_a84499e74d082e71e90a8526991c5331a}} 
+void {\bfseries Slot\+Refresh\+UI} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -39,7 +42,7 @@ void {\bfseries Signal\+Refresh\+Database} ()
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7c9d5cacdb42e1fbda5d3cc96e861418}{Key\+List}} (Key\+Menu\+Ability\+::\+Ability\+Type menu\+\_\+ability, QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Key List object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}{Add\+List\+Group\+Tab}} (const QString \&name, Key\+List\+Row\+::\+Key\+Type select\+Type=Key\+List\+Row\+::\+SECRET\+\_\+\+OR\+\_\+\+PUBLIC\+\_\+\+KEY, Key\+List\+Column\+::\+Info\+Type info\+Type=Key\+List\+Column\+::\+ALL, const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&) -\/$>$ bool \{ return true;\})
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_ab8663d18901d10c00dbcc0ba852b3bf4}{Add\+List\+Group\+Tab}} (const QString \&name, const QString \&id, Key\+List\+Row\+::\+Key\+Type select\+Type=Key\+List\+Row\+::\+SECRET\+\_\+\+OR\+\_\+\+PUBLIC\+\_\+\+KEY, Key\+List\+Column\+::\+Info\+Type info\+Type=Key\+List\+Column\+::\+ALL, const Key\+Table\+::\+Key\+Table\+Filter filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&) -\/$>$ bool \{ return true;\})
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyList_a7d75246eee6368be295c9ab5fe5ef291}{Set\+Double\+Clicked\+Action}} (std\+::function$<$ void(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, QWidget $\ast$)$>$ action)
 \begin{DoxyCompactList}\small\item\em Set the Double Clicked Action object. \end{DoxyCompactList}\item 
@@ -106,6 +109,9 @@ void {\bfseries uncheck\+\_\+all} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a0c3090591dff7b68bfb83c93d2c168e3}\label{classGpgFrontend_1_1UI_1_1KeyList_a0c3090591dff7b68bfb83c93d2c168e3}} 
 void {\bfseries check\+\_\+all} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_adc5099f326fdd4da9a82e34a68cb2fd7}\label{classGpgFrontend_1_1UI_1_1KeyList_adc5099f326fdd4da9a82e34a68cb2fd7}} 
+void {\bfseries filter\+\_\+by\+\_\+keyword} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -157,11 +163,11 @@ Construct a new Key List object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}\label{classGpgFrontend_1_1UI_1_1KeyList_a73ddb7feb1f70eac44e038c3dc925fec}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyList_ab8663d18901d10c00dbcc0ba852b3bf4}\label{classGpgFrontend_1_1UI_1_1KeyList_ab8663d18901d10c00dbcc0ba852b3bf4}} 
 \index{GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}!AddListGroupTab@{AddListGroupTab}}
 \index{AddListGroupTab@{AddListGroupTab}!GpgFrontend::UI::KeyList@{GpgFrontend::UI::KeyList}}
 \doxysubsubsection{\texorpdfstring{AddListGroupTab()}{AddListGroupTab()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{Key\+List\+Row\+::\+Key\+Type}]{select\+Type = {\ttfamily KeyListRow\+:\+:SECRET\+\_\+OR\+\_\+PUBLIC\+\_\+KEY},  }\item[{Key\+List\+Column\+::\+Info\+Type}]{info\+Type = {\ttfamily KeyListColumn\+:\+:ALL},  }\item[{const std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$ \&}]{filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QString \&}]{id,  }\item[{Key\+List\+Row\+::\+Key\+Type}]{select\+Type = {\ttfamily KeyListRow\+:\+:SECRET\+\_\+OR\+\_\+PUBLIC\+\_\+KEY},  }\item[{Key\+List\+Column\+::\+Info\+Type}]{info\+Type = {\ttfamily KeyListColumn\+:\+:ALL},  }\item[{const Key\+Table\+::\+Key\+Table\+Filter}]{filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&,~const~\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}

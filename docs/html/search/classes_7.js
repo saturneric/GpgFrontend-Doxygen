@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['helppage_807',['HelpPage',['../classGpgFrontend_1_1UI_1_1HelpPage.html',1,'GpgFrontend::UI']]]
+  ['helppage_810',['HelpPage',['../classGpgFrontend_1_1UI_1_1HelpPage.html',1,'GpgFrontend::UI']]]
 ];

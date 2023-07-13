@@ -2,8 +2,11 @@ var classGpgFrontend_1_1UI_1_1CommonUtils =
 [
     [ "ImportCallbackFunctiopn", "classGpgFrontend_1_1UI_1_1CommonUtils.html#aadd249062c24f9b7fc545c03296bbb83", null ],
     [ "CommonUtils", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a78f5c2696152e9326e845c76c94be965", null ],
+    [ "AddKey2Favourtie", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a7a7b01b992c465ded7e25e54e3ebacec", null ],
     [ "GetInstance", "classGpgFrontend_1_1UI_1_1CommonUtils.html#aed529969f54e39e3f9da14ae6dd00d49", null ],
     [ "isApplicationNeedRestart", "classGpgFrontend_1_1UI_1_1CommonUtils.html#abb25baa60d62d6842028e174f7e341fe", null ],
+    [ "KeyExistsinFavouriteList", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a570b6d08ceb683f950e94d648bf334ea", null ],
+    [ "RemoveKeyFromFavourite", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a0cf35e9d02ff3464cb83435a61d060c2", null ],
     [ "SignalGnupgNotInstall", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a4d2f10c2089c2bfb23be5c1f573af31f", null ],
     [ "SignalKeyDatabaseRefreshDone", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a1abc83bba95579aa94d0870181991a28", null ],
     [ "SignalKeyStatusUpdated", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a4bc9e91daa0d3c4ee4141ba4bd8726bb", null ],

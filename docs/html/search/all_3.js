@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cachemanager_44',['CacheManager',['../classGpgFrontend_1_1CacheManager.html',1,'GpgFrontend']]],
+  ['cachemanager_44',['CacheManager',['../classGpgFrontend_1_1CacheManager.html#a311ae4d0cc4f4d9425b44789aea6090a',1,'GpgFrontend::CacheManager::CacheManager()'],['../classGpgFrontend_1_1CacheManager.html',1,'GpgFrontend::CacheManager']]],
   ['calculatehash_45',['CalculateHash',['../classGpgFrontend_1_1FileOperator.html#a08baef750a723ee709804120a34d19c9',1,'GpgFrontend::FileOperator']]],
   ['channel_5f_46',['channel_',['../classGpgFrontend_1_1ChannelObject.html#aee5f8a5575adbdf522da4dd195c091ee',1,'GpgFrontend::ChannelObject']]],
   ['channelobject_47',['ChannelObject',['../classGpgFrontend_1_1ChannelObject.html#aedbf32eddc701e521bd8e790ef208da0',1,'GpgFrontend::ChannelObject::ChannelObject() noexcept'],['../classGpgFrontend_1_1ChannelObject.html#a68ad2a19339e3cd50626fe0eaad17ccd',1,'GpgFrontend::ChannelObject::ChannelObject(int channel)'],['../classGpgFrontend_1_1ChannelObject.html',1,'GpgFrontend::ChannelObject']]],

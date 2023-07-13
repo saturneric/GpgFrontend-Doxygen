@@ -1,25 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,557,84,584"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1AdvancedTab.html" title=" " alt="" coords="139,5,360,32"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1AppearanceTab.html" title=" " alt="" coords="132,56,367,83"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1CommonUtils.html" title=" " alt="" coords="137,107,361,133"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1FilePage.html" title=" " alt="" coords="155,157,344,184"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1FindWidget.html" title="Class for handling the find widget shown at buttom of a textedit&#45;page." alt="" coords="145,208,353,235"/>
-<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1GeneralTab.html" title=" " alt="" coords="145,259,353,285"/>
-<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1GnupgTab.html" title=" " alt="" coords="150,309,349,336"/>
-<area shape="rect" id="node9" href="$classGpgFrontend_1_1UI_1_1HelpPage.html" title=" " alt="" coords="151,360,347,387"/>
-<area shape="rect" id="node10" href="$classGpgFrontend_1_1UI_1_1InfoBoardWidget.html" title="Class for handling the verify label shown at bottom of a textedit&#45;page." alt="" coords="150,411,349,453"/>
-<area shape="rect" id="node11" href="$classGpgFrontend_1_1UI_1_1InfoTab.html" title="Class containing the main tab of about dialog." alt="" coords="158,477,341,504"/>
-<area shape="rect" id="node12" href="$classGpgFrontend_1_1UI_1_1KeyList.html" title=" " alt="" coords="158,528,341,555"/>
-<area shape="rect" id="node13" href="$classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html" title=" " alt="" coords="158,579,341,621"/>
-<area shape="rect" id="node14" href="$classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html" title=" " alt="" coords="158,645,341,686"/>
-<area shape="rect" id="node15" href="$classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html" title=" " alt="" coords="158,710,341,751"/>
-<area shape="rect" id="node16" href="$classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html" title=" " alt="" coords="158,775,341,817"/>
-<area shape="rect" id="node17" href="$classGpgFrontend_1_1UI_1_1KeyserverTab.html" title=" " alt="" coords="138,841,361,868"/>
-<area shape="rect" id="node18" href="$classGpgFrontend_1_1UI_1_1NetworkTab.html" title=" " alt="" coords="143,892,355,919"/>
-<area shape="rect" id="node19" href="$classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html" title="Class for handling a single tab of the tabwidget." alt="" coords="152,943,347,985"/>
-<area shape="rect" id="node20" href="$classGpgFrontend_1_1UI_1_1TOFUInfoPage.html" title=" " alt="" coords="136,1009,363,1036"/>
-<area shape="rect" id="node21" href="$classGpgFrontend_1_1UI_1_1TextEdit.html" title="TextEdit class." alt="" coords="156,1060,343,1087"/>
-<area shape="rect" id="node22" href="$classGpgFrontend_1_1UI_1_1TranslatorsTab.html" title="Class containing the translator tab of about dialog." alt="" coords="135,1111,363,1137"/>
-<area shape="rect" id="node23" href="$classGpgFrontend_1_1UI_1_1UpdateTab.html" title="Class containing the main tab of about dialog." alt="" coords="147,1161,351,1188"/>
+<area shape="rect" id="node1" href="$classGpgFrontend_1_1ThreadSafeMap.html" title=" " alt="" coords="5,5,220,61"/>
 </map>

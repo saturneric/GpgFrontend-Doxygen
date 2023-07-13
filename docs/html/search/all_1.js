@@ -4,7 +4,7 @@ var searchData=
   ['aboutdialog_8',['AboutDialog',['../classGpgFrontend_1_1UI_1_1AboutDialog.html#ab04683ab4c4d682af1e259705c60d85a',1,'GpgFrontend::UI::AboutDialog::AboutDialog()'],['../classGpgFrontend_1_1UI_1_1AboutDialog.html',1,'GpgFrontend::UI::AboutDialog']]],
   ['add_5fpgp_5fheader_5fact_5f_9',['add_pgp_header_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a95b2c86afbefe47e79af87e56032e306',1,'GpgFrontend::UI::MainWindow']]],
   ['additional_5fuid_5fbox_5f_10',['additional_uid_box_',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a265ef140feec330e7341c1369c0aefab',1,'GpgFrontend::UI::KeyPairDetailTab']]],
-  ['addlistgrouptab_11',['AddListGroupTab',['../classGpgFrontend_1_1UI_1_1KeyList.html#a73ddb7feb1f70eac44e038c3dc925fec',1,'GpgFrontend::UI::KeyList']]],
+  ['addlistgrouptab_11',['AddListGroupTab',['../classGpgFrontend_1_1UI_1_1KeyList.html#ab8663d18901d10c00dbcc0ba852b3bf4',1,'GpgFrontend::UI::KeyList']]],
   ['addmenuaction_12',['AddMenuAction',['../classGpgFrontend_1_1UI_1_1KeyList.html#aa961e3ba3c48f84dea4bb7ab4f756886',1,'GpgFrontend::UI::KeyList']]],
   ['addoptionalaction_13',['AddOptionalAction',['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a456f15315a03107f7757d84362c1af71',1,'GpgFrontend::UI::InfoBoardWidget']]],
   ['adduid_14',['AddUID',['../classGpgFrontend_1_1GpgUIDOperator.html#a672bbf74abac9140233c4e1c7864d15d',1,'GpgFrontend::GpgUIDOperator::AddUID(const GpgKey &amp;key, const std::string &amp;name, const std::string &amp;comment, const std::string &amp;email)'],['../classGpgFrontend_1_1GpgUIDOperator.html#a7c0de570de59d4ebc6c0bed681119bf7',1,'GpgFrontend::GpgUIDOperator::AddUID(const GpgKey &amp;key, const std::string &amp;uid)']]],

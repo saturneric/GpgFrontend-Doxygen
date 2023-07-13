@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('structGpgFrontend_1_1UI_1_1KeyTable.ht
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structGpgFrontend_1_1UI_1_1KeyTable-members.html">List of all members</a>  </div>
@@ -95,23 +96,31 @@ Collaboration diagram for GpgFrontend::UI::KeyTable:</div>
 <div class="dyncontent">
 <div class="center"><img src="structGpgFrontend_1_1UI_1_1KeyTable__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyTable_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyTable_coll__map" id="aGpgFrontend_1_1UI_1_1KeyTable_coll__map">
-<area shape="rect" title=" " alt="" coords="65,1036,259,1231"/>
+<area shape="rect" title=" " alt="" coords="348,1036,541,1275"/>
 <area shape="rect" title=" " alt="" coords="5,479,204,571"/>
 <area shape="rect" title=" " alt="" coords="241,145,398,223"/>
 <area shape="rect" title=" " alt="" coords="318,348,489,455"/>
 <area shape="rect" title=" " alt="" coords="409,5,448,83"/>
 <area shape="rect" title=" " alt="" coords="473,247,603,324"/>
-<area shape="rect" title=" " alt="" coords="281,881,470,973"/>
-<area shape="rect" href="classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="287,595,464,819"/>
+<area shape="rect" title=" " alt="" coords="592,889,679,966"/>
+<area shape="rect" title=" " alt="" coords="575,661,714,753"/>
+<area shape="rect" title=" " alt="" coords="350,881,539,973"/>
+<area shape="rect" href="classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="322,595,501,819"/>
 <area shape="rect" title=" " alt="" coords="188,363,280,440"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae99f56db14e21d673535cd34af74b22b"><td class="memItemLeft" align="right" valign="top"><a id="ae99f56db14e21d673535cd34af74b22b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyTableFilter</b> = std::function&lt; bool(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;)&gt;</td></tr>
+<tr class="separator:ae99f56db14e21d673535cd34af74b22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a88606ba6954d60244faf38de419bfc47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a88606ba6954d60244faf38de419bfc47">KeyTable</a> (QTableWidget *_key_list, KeyListRow::KeyType _select_type, KeyListColumn::InfoType _info_type, std::function&lt; bool(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;)&gt; _filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;) -&gt; bool { return true;})</td></tr>
-<tr class="memdesc:a88606ba6954d60244faf38de419bfc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key Table object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a88606ba6954d60244faf38de419bfc47">More...</a><br /></td></tr>
-<tr class="separator:a88606ba6954d60244faf38de419bfc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78160011d93abc43a1ca0f28c2ad943"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae78160011d93abc43a1ca0f28c2ad943">KeyTable</a> (QTableWidget *_key_list, KeyListRow::KeyType _select_type, KeyListColumn::InfoType _info_type, KeyTableFilter _filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;) -&gt; bool { return true;})</td></tr>
+<tr class="memdesc:ae78160011d93abc43a1ca0f28c2ad943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key Table object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae78160011d93abc43a1ca0f28c2ad943">More...</a><br /></td></tr>
+<tr class="separator:ae78160011d93abc43a1ca0f28c2ad943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac381e205c323444098803e0295060f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aaac381e205c323444098803e0295060f">Refresh</a> (KeyLinkListPtr m_keys=nullptr)</td></tr>
 <tr class="separator:aaac381e205c323444098803e0295060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77eba4055ecb7d32fab06f65b80ae07e"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e">GetChecked</a> ()</td></tr>
@@ -126,6 +135,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckALL</b> () const
 <tr class="memitem:ae0713ebbc21e78995db9a856d746fe6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c">SetChecked</a> (KeyIdArgsListPtr key_ids)</td></tr>
 <tr class="memdesc:ae0713ebbc21e78995db9a856d746fe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c">More...</a><br /></td></tr>
 <tr class="separator:ae0713ebbc21e78995db9a856d746fe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf3e9cf2ec39a47033d274ccf35911a"><td class="memItemLeft" align="right" valign="top"><a id="aacf3e9cf2ec39a47033d274ccf35911a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMenuAbility</b> (KeyMenuAbility::AbilityType ability)</td></tr>
+<tr class="separator:aacf3e9cf2ec39a47033d274ccf35911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc2e7dc05edc85834179da6ac4c846d"><td class="memItemLeft" align="right" valign="top"><a id="aabc2e7dc05edc85834179da6ac4c846d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterKeyword</b> (std::string keyword)</td></tr>
+<tr class="separator:aabc2e7dc05edc85834179da6ac4c846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -141,16 +156,22 @@ KeyListColumn::InfoType&#160;</td><td class="memItemRight" valign="bottom"><b>in
 <tr class="memitem:adb59ac00683aec02344804ae8c5670a5"><td class="memItemLeft" align="right" valign="top"><a id="adb59ac00683aec02344804ae8c5670a5"></a>
 std::vector&lt; <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffered_keys_</b></td></tr>
 <tr class="separator:adb59ac00683aec02344804ae8c5670a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880d24a22ef291667e6d6c76a487fc57"><td class="memItemLeft" align="right" valign="top"><a id="a880d24a22ef291667e6d6c76a487fc57"></a>
-std::function&lt; bool(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>filter_</b></td></tr>
-<tr class="separator:a880d24a22ef291667e6d6c76a487fc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1560962e3a6eac5f042ba4963f439f15"><td class="memItemLeft" align="right" valign="top"><a id="a1560962e3a6eac5f042ba4963f439f15"></a>
+KeyTableFilter&#160;</td><td class="memItemRight" valign="bottom"><b>filter_</b></td></tr>
+<tr class="separator:a1560962e3a6eac5f042ba4963f439f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3529625d70c3aa37f3d8cdc3bb8c63"><td class="memItemLeft" align="right" valign="top"><a id="add3529625d70c3aa37f3d8cdc3bb8c63"></a>
 KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><b>checked_key_ids_</b></td></tr>
 <tr class="separator:add3529625d70c3aa37f3d8cdc3bb8c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54360c35b11c469d708b5f57030ed41"><td class="memItemLeft" align="right" valign="top"><a id="ab54360c35b11c469d708b5f57030ed41"></a>
+KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><b>ability_</b></td></tr>
+<tr class="separator:ab54360c35b11c469d708b5f57030ed41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053be2a4f9d8594128d5400f4cc215aa"><td class="memItemLeft" align="right" valign="top"><a id="a053be2a4f9d8594128d5400f4cc215aa"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>keyword_</b></td></tr>
+<tr class="separator:a053be2a4f9d8594128d5400f4cc215aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a88606ba6954d60244faf38de419bfc47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88606ba6954d60244faf38de419bfc47">&#9670;&nbsp;</a></span>KeyTable()</h2>
+<a id="ae78160011d93abc43a1ca0f28c2ad943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78160011d93abc43a1ca0f28c2ad943">&#9670;&nbsp;</a></span>KeyTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,8 +200,8 @@ KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><b>checked_k
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; bool(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>_filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>&#160;</td>
+          <td class="paramtype">KeyTableFilter&#160;</td>
+          <td class="paramname"><em>_filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;,&#160;const&#160;<a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
