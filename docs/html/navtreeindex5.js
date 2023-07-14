@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classGpgFrontend_1_1UI_1_1KeyserverTab.html#a74f30a1f6314b6156f4df20652129c5d":[2,0,0,1,28,6],
 "classGpgFrontend_1_1UI_1_1KeyserverTab.html#a85b9bfdbd7ae71f0d74b9d6c32a194e1":[2,0,0,1,28,12],
 "classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8cbd6e448e187260730ab8301ad4892e":[2,0,0,1,28,2],
 "classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8fd9c3735ab43ecf2eb6df4c9b2ddd93":[2,0,0,1,28,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb":[2,0,0,1,30,0],
 "classGpgFrontend_1_1UI_1_1SignersPicker.html#a2e98dcdf647a2e0e6455998b018aed00":[2,0,0,1,30,1],
 "classGpgFrontend_1_1UI_1_1SignersPicker.html#a4daf860ef736aedd986e566383666be5":[2,0,0,1,30,4],
-"classGpgFrontend_1_1UI_1_1SignersPicker.html#a524ee72ddb4fe397d71c0d4b5eb69171":[2,0,0,1,30,3],
-"classGpgFrontend_1_1UI_1_1SignersPicker.html#aba7633983da57c7a7eb2710a1f33f7ac":[2,0,0,1,30,2]
+"classGpgFrontend_1_1UI_1_1SignersPicker.html#a524ee72ddb4fe397d71c0d4b5eb69171":[2,0,0,1,30,3]
 };

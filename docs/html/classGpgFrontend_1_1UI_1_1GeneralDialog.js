@@ -12,5 +12,6 @@ var classGpgFrontend_1_1UI_1_1GeneralDialog =
     [ "name_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#ae91392293866dc302132a9fc19209d8c", null ],
     [ "parent_rect_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#ab92573b0e63d9c792f2e1697d858cea7", null ],
     [ "rect_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a22f39850fae58b9f6c59c372b9fbb582", null ],
-    [ "rect_restored_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a4e4eb414ac80ba7dd1e853ed62e1ee68", null ]
+    [ "rect_restored_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a4e4eb414ac80ba7dd1e853ed62e1ee68", null ],
+    [ "screen_rect_", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#aa3af9313c4284df01685ce512d18d323", null ]
 ];
