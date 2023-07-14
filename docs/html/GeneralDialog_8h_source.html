@@ -131,21 +131,26 @@ $(document).ready(function(){initNavTree('GeneralDialog_8h_source.html',''); ini
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> movePosition2CenterOfParent();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> slot_restore_settings() noexcept;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> isRectRestored();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> slot_save_settings() noexcept;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::string name_;  </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QPoint pos_;        </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QSize size_;        </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QPoint parent_pos_;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QSize parent_size_;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GENERALDIALOG_H</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> showEvent(QShowEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> slot_restore_settings() noexcept;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> slot_save_settings() noexcept;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> update_rect_cache();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::string name_;  </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QRect rect_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QRect parent_rect_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">bool</span> rect_restored_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GENERALDIALOG_H</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html_ac9de4c49668ffaeb6916c64f878a202c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html#ac9de4c49668ffaeb6916c64f878a202c">GpgFrontend::UI::GeneralDialog::GeneralDialog</a></div><div class="ttdeci">GeneralDialog(std::string name, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GeneralDialog.cpp:32</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>

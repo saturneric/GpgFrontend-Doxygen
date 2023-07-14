@@ -1,6 +1,6 @@
 <map id="GpgFrontend::UI::KeyUIDSignDialog" name="GpgFrontend::UI::KeyUIDSignDialog">
 <area shape="rect" id="node1" title=" " alt="" coords="1060,2285,1271,2421"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,1157,248,1367"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,1143,248,1381"/>
 <area shape="rect" id="node3" title=" " alt="" coords="89,918,164,995"/>
 <area shape="rect" id="node4" title=" " alt="" coords="357,918,443,995"/>
 <area shape="rect" id="node15" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="657,1143,850,1381"/>

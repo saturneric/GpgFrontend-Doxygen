@@ -1,6 +1,6 @@
 <map id="GpgFrontend::UI::SignersPicker" name="GpgFrontend::UI::SignersPicker">
 <area shape="rect" id="node1" title=" " alt="" coords="137,2208,319,2329"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,1157,248,1367"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,1143,248,1381"/>
 <area shape="rect" id="node3" title=" " alt="" coords="45,918,120,995"/>
 <area shape="rect" id="node4" title=" " alt="" coords="146,918,233,995"/>
 <area shape="rect" id="node12" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="465,1143,658,1381"/>

@@ -108,10 +108,10 @@ var hierarchy =
         [ "GpgFrontend::UI::QuitDialog", "classGpgFrontend_1_1UI_1_1QuitDialog.html", null ],
         [ "GpgFrontend::UI::SettingsDialog", "classGpgFrontend_1_1UI_1_1SettingsDialog.html", null ],
         [ "GpgFrontend::UI::SignersPicker", "classGpgFrontend_1_1UI_1_1SignersPicker.html", null ],
-        [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ]
+        [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ],
+        [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ]
       ] ],
       [ "GpgFrontend::UI::VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", null ],
-      [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ],
       [ "SignatureDetailsDialog", "classSignatureDetailsDialog.html", null ]
     ] ],
     [ "QGroupBox", null, [
