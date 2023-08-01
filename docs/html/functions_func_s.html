@@ -91,9 +91,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>save_settings()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a7a4b6490038470a8849231e48282da98">GpgFrontend::UI::MainWindow</a>
 </li>
-<li>SaveCache()
-: <a class="el" href="classGpgFrontend_1_1CacheManager.html#a3cbc3238638dcd8b4722bfdf560c73fe">GpgFrontend::CacheManager</a>
-</li>
 <li>set_background()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1FindWidget.html#a0c531f2c673caed29225a323e750205f">GpgFrontend::UI::FindWidget</a>
 </li>
@@ -129,7 +126,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1ChannelObject.html#aa3b19cad6d873b314bba32a3dae85f09">GpgFrontend::ChannelObject</a>
 </li>
 <li>SetChecked()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a68b595a2bb83dfafa61b3e467dd15689">GpgFrontend::UI::KeyList</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab0182646beb01850779260b3772bd8fe">GpgFrontend::UI::KeyList</a>
 , <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c">GpgFrontend::UI::KeyTable</a>
 </li>
 <li>SetColumnWidth()
@@ -181,6 +178,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetObjectInChannel()
 : <a class="el" href="classGpgFrontend_1_1SingletonStorage.html#ab0097bb648b2303d68a975c7cbea5a52">GpgFrontend::SingletonStorage</a>
 </li>
+<li>SetOwnerTrustLevel()
+: <a class="el" href="classGpgFrontend_1_1GpgKeyManager.html#a0d4006daeccd574ddcc9e6c621739c48">GpgFrontend::GpgKeyManager</a>
+</li>
 <li>SetPassPhrase()
 : <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afe1760d4ead397f6096925290a38e1a4">GpgFrontend::GenKeyInfo</a>
 </li>
@@ -203,13 +203,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#ad6ea3596ba7d7543fb1b8233d09996df">GpgFrontend::GpgBasicOperator</a>
 </li>
 <li>SetTempCacheValue()
-: <a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#a62bb080c6c04970fd2e02a460ea91d2a">GpgFrontend::CoreCommonUtil</a>
+: <a class="el" href="classGpgFrontend_1_1CoreCommonUtil.html#abe5fa8731b0b672613505d59a576a3d7">GpgFrontend::CoreCommonUtil</a>
 </li>
 <li>SettingsDialog()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a1b7ddc7861d1b4b9dc3810ed98023ffc">GpgFrontend::UI::SettingsDialog</a>
 </li>
 <li>SettingsObject()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#ac11d19096b4e88cb288a208a4953af4d">GpgFrontend::UI::SettingsObject</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aad706a2c2b68d280b5d3ababff0ff302">GpgFrontend::UI::SettingsObject</a>
 </li>
 <li>showEvent()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083">GpgFrontend::UI::AboutDialog</a>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#aec462d16a2097024a4ced24012b905a7">GpgFrontend::UI::FilePage</a>
 </li>
 <li>SignalProxyConnectionTestResult()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html#aedafa7b22e024be537658fd8096e5f6f">GpgFrontend::UI::ProxyConnectionTestThread</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html#a31cd14d72c6c28c811c9183f118f5873">GpgFrontend::UI::ProxyConnectionTestTask</a>
 </li>
 <li>SignalRefreshInfoBoard()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#a301c5c7747ad251b14c490d58b5d678f">GpgFrontend::UI::FilePage</a>
@@ -260,6 +260,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>SignalRestartNeeded()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1GeneralTab.html#aa88ccbda61728be6de0aa2d9b92e0b69">GpgFrontend::UI::GeneralTab</a>
+, <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">GpgFrontend::UI::GnuPGControllerDialog</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">GpgFrontend::UI::KeyserverTab</a>
 , <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#af5ba6646af45d0d1d794bc52ee54b1b9">GpgFrontend::UI::SettingsDialog</a>
 </li>
@@ -314,8 +315,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>slot_compress_files()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#a250b1950f874c1d11549cd5c0ea9693f">GpgFrontend::UI::FilePage</a>
 </li>
+<li>slot_copy_default_uid_to_clipboard()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a3982432b140738859415e487e2c5f5eb">GpgFrontend::UI::MainWindow</a>
+</li>
 <li>slot_copy_fingerprint()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#af8b600fbd7cd0fbb5b6183403bf870b2">GpgFrontend::UI::KeyPairDetailTab</a>
+</li>
+<li>slot_copy_key_id_to_clipboard()
+: <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9e2ddb2135df42d76134bea168fbdce9">GpgFrontend::UI::MainWindow</a>
 </li>
 <li>slot_copy_mail_address_to_clipboard()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#af93d72eaf58326f1f9e926752c6b1fc6">GpgFrontend::UI::MainWindow</a>
@@ -411,7 +418,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classGpgFrontend_1_1UI_1_1TextEdit.html#a1bf57ebe1e32b12c48bb633b7dd7a4f1">GpgFrontend::UI::TextEdit</a>
 </li>
 <li>slot_set_restart_needed()
-: <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#acc6b4386de554fce6fbb60ac6d201952">GpgFrontend::UI::SettingsDialog</a>
+: <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">GpgFrontend::UI::GnuPGControllerDialog</a>
+, <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#acc6b4386de554fce6fbb60ac6d201952">GpgFrontend::UI::SettingsDialog</a>
 </li>
 <li>slot_show_key_details()
 : <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a033d448541b44fa48b76dec828a4eb0e">GpgFrontend::UI::MainWindow</a>

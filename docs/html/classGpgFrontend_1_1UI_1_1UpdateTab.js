@@ -6,7 +6,6 @@ var classGpgFrontend_1_1UI_1_1UpdateTab =
     [ "slot_show_version_status", "classGpgFrontend_1_1UI_1_1UpdateTab.html#a1003bd969ecbc5deba940e39436968f4", null ],
     [ "current_version_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#ad180d1f434e8052f3e0974522c92ae61", null ],
     [ "current_version_label_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#a3718c15db336b2ca0090ee492c429adb", null ],
-    [ "download_button_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#a67358193095af7b39184f16706bf1bff", null ],
     [ "latest_version_label_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#a84579badda70b12cfd79add18d1ef94f", null ],
     [ "pb_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#a9dedd8bc17bbc53d31c9d292429be68b", null ],
     [ "upgrade_label_", "classGpgFrontend_1_1UI_1_1UpdateTab.html#ab209ef238583efea25c6a58aa4831628", null ]

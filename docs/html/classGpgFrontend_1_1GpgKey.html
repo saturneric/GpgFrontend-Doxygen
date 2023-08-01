@@ -97,7 +97,7 @@ Collaboration diagram for GpgFrontend::GpgKey:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GpgKey__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgKey_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GpgKey_coll__map" id="aGpgFrontend_1_1GpgKey_coll__map">
-<area shape="rect" title=" " alt="" coords="67,469,244,693"/>
+<area shape="rect" title=" " alt="" coords="66,469,245,693"/>
 <area shape="rect" title=" " alt="" coords="5,315,97,392"/>
 <area shape="rect" title=" " alt="" coords="174,300,345,407"/>
 <area shape="rect" title=" " alt="" coords="181,145,338,223"/>
@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2440a2902c81192d5549fe951ddb130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3327ad34ff14feb75f3fbfc2bfb7fc44"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgKey.html#a3327ad34ff14feb75f3fbfc2bfb7fc44">GetOwnerTrust</a> () const</td></tr>
 <tr class="separator:a3327ad34ff14feb75f3fbfc2bfb7fc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ced7bda206a0d72a2548783198ae4fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgKey.html#a4ced7bda206a0d72a2548783198ae4fe">GetOwnerTrustLevel</a> () const</td></tr>
+<tr class="separator:a4ced7bda206a0d72a2548783198ae4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c21bc3b1788753f56272ad73052fc5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgKey.html#a1c21bc3b1788753f56272ad73052fc5f">GetPublicKeyAlgo</a> () const</td></tr>
 <tr class="separator:a1c21bc3b1788753f56272ad73052fc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3532e20298b642f5d312712fa8a791df"><td class="memItemLeft" align="right" valign="top">boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgKey.html#a3532e20298b642f5d312712fa8a791df">GetLastUpdateTime</a> () const</td></tr>
@@ -438,7 +440,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>gpgme_key_opera
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e">GpgFrontend::GpgKeyOpera::SetExpire()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e">GpgFrontend::GpgKeyOpera::SetExpire()</a>, and <a class="el" href="classGpgFrontend_1_1GpgKeyManager.html#a0d4006daeccd574ddcc9e6c621739c48">GpgFrontend::GpgKeyManager::SetOwnerTrustLevel()</a>.</p>
 
 </div>
 </div>
@@ -458,7 +460,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>gpgme_key_opera
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#a51cb18aa7302d7a48ccd1ee17f060391">GpgFrontend::GpgKeyImportExporter::ExportKey()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#aa0a73314ef94f397e2ef53d40abc9731">GpgFrontend::GpgKeyImportExporter::ExportKeyOpenSSH()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#a6a5e8d642ac5a3e98799af6495ef590b">GpgFrontend::GpgKeyImportExporter::ExportSecretKey()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#abf7c0442549ae8602e1249cdf0da55df">GpgFrontend::GpgKeyImportExporter::ExportSecretKeyShortest()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a882d99e8407cc22fb8b6e61c531fbe85">GpgFrontend::GpgKeyOpera::GenerateSubkey()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">GpgFrontend::UI::KeyUIDSignDialog::KeyUIDSignDialog()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#adc22a349796af0ff5dd4499624b6d03d">operator&lt;=()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#a4f50b2f13b3a5dc7298ee9665e7a5367">operator==()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e">GpgFrontend::GpgKeyOpera::SetExpire()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#a51cb18aa7302d7a48ccd1ee17f060391">GpgFrontend::GpgKeyImportExporter::ExportKey()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#aa0a73314ef94f397e2ef53d40abc9731">GpgFrontend::GpgKeyImportExporter::ExportKeyOpenSSH()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#a6a5e8d642ac5a3e98799af6495ef590b">GpgFrontend::GpgKeyImportExporter::ExportSecretKey()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#abf7c0442549ae8602e1249cdf0da55df">GpgFrontend::GpgKeyImportExporter::ExportSecretKeyShortest()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a882d99e8407cc22fb8b6e61c531fbe85">GpgFrontend::GpgKeyOpera::GenerateSubkey()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">GpgFrontend::UI::KeyUIDSignDialog::KeyUIDSignDialog()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#adc22a349796af0ff5dd4499624b6d03d">operator&lt;=()</a>, <a class="el" href="classGpgFrontend_1_1GpgKey.html#a4f50b2f13b3a5dc7298ee9665e7a5367">operator==()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyOpera.html#a12e6b05b23781861065d7e3243c9349e">GpgFrontend::GpgKeyOpera::SetExpire()</a>, <a class="el" href="classGpgFrontend_1_1GpgKeyManager.html#a0d4006daeccd574ddcc9e6c621739c48">GpgFrontend::GpgKeyManager::SetOwnerTrustLevel()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key()</a>.</p>
 
 </div>
 </div>
@@ -515,6 +517,24 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>gpgme_key_opera
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
+<a id="a4ced7bda206a0d72a2548783198ae4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ced7bda206a0d72a2548783198ae4fe">&#9670;&nbsp;</a></span>GetOwnerTrustLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GpgFrontend::GpgKey::GetOwnerTrustLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
 </div>
 </div>

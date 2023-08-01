@@ -29,7 +29,9 @@ Collaboration diagram for Gpg\+Frontend\+::Global\+Setting\+Station\+:
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}\label{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_af700161900e623a0ea14261d51616451}{$\sim$\+Global\+Setting\+Station}} () noexcept override
 \begin{DoxyCompactList}\small\item\em Destroy the Global Setting Station object. \end{DoxyCompactList}\item 
-libconfig\+::\+Setting \& \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a14433405831283cd95091d741614d03b}{Get\+UISettings}} () noexcept
+libconfig\+::\+Setting \& \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}{Get\+UISettings}} () noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a819b3f4ea553fc1e839ef0ae230f0ea2}{Lookup\+Settings}} (std\+::string path, T default\+\_\+value) noexcept
 \item 
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ae9d1da3d01c4a834120968636596c3c3}{Get\+App\+Dir}} () const
 \begin{DoxyCompactList}\small\item\em Get the App Dir object. \end{DoxyCompactList}\item 
@@ -51,6 +53,18 @@ std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStat
 \begin{DoxyCompactList}\small\item\em Get the Resource Dir object. \end{DoxyCompactList}\item 
 std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a385ae4ab6ad5b17742a5405fa693d789}{Get\+Certs\+Dir}} () const
 \begin{DoxyCompactList}\small\item\em Get the Certs Dir object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a3029ae27bcb2d845f61f7870f43f8c6f}\label{classGpgFrontend_1_1GlobalSettingStation_a3029ae27bcb2d845f61f7870f43f8c6f}} 
+std\+::string {\bfseries Get\+Log\+Files\+Size} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a4da1d828e5bb719025f5b8e279e0bd02}\label{classGpgFrontend_1_1GlobalSettingStation_a4da1d828e5bb719025f5b8e279e0bd02}} 
+std\+::string {\bfseries Get\+Data\+Objects\+Files\+Size} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a43c472c40896308e7bbc14796b5740af}\label{classGpgFrontend_1_1GlobalSettingStation_a43c472c40896308e7bbc14796b5740af}} 
+void {\bfseries Clear\+All\+Log\+Files} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a393186ae479062b007a41485f608636f}\label{classGpgFrontend_1_1GlobalSettingStation_a393186ae479062b007a41485f608636f}} 
+void {\bfseries Clear\+All\+Data\+Objects} () const
+\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}{Sync\+Settings}} () noexcept
 \begin{DoxyCompactList}\small\item\em sync the settings to the file \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
@@ -58,6 +72,15 @@ void \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67e
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a1e1993b72d0ad09d247b643b4447e57c}\label{classGpgFrontend_1_1GlobalSettingStation_a1e1993b72d0ad09d247b643b4447e57c}} 
 void {\bfseries init\+\_\+app\+\_\+secure\+\_\+key} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a4eb35bd5306e8c393ad168e91826aed4}\label{classGpgFrontend_1_1GlobalSettingStation_a4eb35bd5306e8c393ad168e91826aed4}} 
+int64\+\_\+t {\bfseries get\+\_\+files\+\_\+size\+\_\+at\+\_\+path} (std\+::filesystem\+::path path, std\+::string filename\+\_\+pattern) const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a369e57383a99bc673273c2819b8bebbb}\label{classGpgFrontend_1_1GlobalSettingStation_a369e57383a99bc673273c2819b8bebbb}} 
+std\+::string {\bfseries get\+\_\+human\+\_\+readable\+\_\+size} (int64\+\_\+t size) const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a2b40c59a9fce37873dd3564f8e1bd906}\label{classGpgFrontend_1_1GlobalSettingStation_a2b40c59a9fce37873dd3564f8e1bd906}} 
+void {\bfseries delete\+\_\+all\+\_\+files} (std\+::filesystem\+::path path, std\+::string filename\+\_\+pattern) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -190,18 +213,36 @@ Get the Standalone Gpg Bin Dir object.
 \begin{DoxyReturn}{Returns}
 std\+::filesystem\+::path 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a14433405831283cd95091d741614d03b}\label{classGpgFrontend_1_1GlobalSettingStation_a14433405831283cd95091d741614d03b}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}\label{classGpgFrontend_1_1GlobalSettingStation_a1d8b9f91c75ef7a1d008a171f09f2c0e}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!GetUISettings@{GetUISettings}}
 \index{GetUISettings@{GetUISettings}!GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}}
 \doxysubsubsection{\texorpdfstring{GetUISettings()}{GetUISettings()}}
-{\footnotesize\ttfamily libconfig\+::\+Setting\& Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily libconfig\+::\+Setting \& Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \begin{DoxyReturn}{Returns}
 libconfig\+::\+Setting\& 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+General\+Tab(), Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::\+Key\+Mgmt(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), and Gpg\+Frontend\+::\+UI\+::\+Wizard\+::\+Wizard().
+References ui\+\_\+cfg\+\_\+.
+
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::\+Gnu\+PGController\+Dialog\+::\+Gnu\+PGController\+Dialog(), Gpg\+Frontend\+::\+UI\+::init\+\_\+locale(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Set\+Settings(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_a819b3f4ea553fc1e839ef0ae230f0ea2}\label{classGpgFrontend_1_1GlobalSettingStation_a819b3f4ea553fc1e839ef0ae230f0ea2}} 
+\index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!LookupSettings@{LookupSettings}}
+\index{LookupSettings@{LookupSettings}!GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}}
+\doxysubsubsection{\texorpdfstring{LookupSettings()}{LookupSettings()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Lookup\+Settings (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{T}]{default\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+libconfig\+::\+Setting\& 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::drop\+Event(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::\+Key\+Gen\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Key\+Server\+Import\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::\+Subkey\+Generate\+Dialog(), Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::\+Verify\+Key\+Detail\+Box(), and Gpg\+Frontend\+::\+UI\+::\+Wizard\+::\+Wizard().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}\label{classGpgFrontend_1_1GlobalSettingStation_ac061ac8e5308f67ea52b98888bbb2e8d}} 
 \index{GpgFrontend::GlobalSettingStation@{GpgFrontend::GlobalSettingStation}!SyncSettings@{SyncSettings}}
@@ -268,7 +309,7 @@ Referenced by Global\+Setting\+Station().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}objs"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a58fff8a42f98ad7989bffb8322344cd6}{app\_data\_path\_}} / \textcolor{stringliteral}{"{}data\_objs"{}}}
 
 \end{DoxyCode}
 

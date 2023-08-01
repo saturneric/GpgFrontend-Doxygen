@@ -1,12 +1,12 @@
 <map id="GpgFrontend::UI::KeyGenDialog" name="GpgFrontend::UI::KeyGenDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="242,572,469,1133"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,300,223,509"/>
-<area shape="rect" id="node3" title=" " alt="" coords="71,160,146,237"/>
-<area shape="rect" id="node4" title=" " alt="" coords="171,160,257,237"/>
-<area shape="rect" id="node5" title=" " alt="" coords="145,5,283,97"/>
-<area shape="rect" id="node6" title=" " alt="" coords="247,359,464,451"/>
-<area shape="rect" id="node7" title=" " alt="" coords="311,160,469,237"/>
-<area shape="rect" id="node8" title=" " alt="" coords="469,13,508,90"/>
-<area shape="rect" id="node10" title=" " alt="" coords="509,160,639,237"/>
-<area shape="rect" id="node9" title=" " alt="" coords="488,366,695,443"/>
+<area shape="rect" id="node1" title=" " alt="" coords="268,616,495,1119"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,300,248,553"/>
+<area shape="rect" id="node3" title=" " alt="" coords="37,160,112,237"/>
+<area shape="rect" id="node4" title=" " alt="" coords="137,160,223,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="111,5,249,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="273,381,490,473"/>
+<area shape="rect" id="node7" title=" " alt="" coords="336,160,493,237"/>
+<area shape="rect" id="node8" title=" " alt="" coords="497,13,535,90"/>
+<area shape="rect" id="node10" title=" " alt="" coords="535,160,665,237"/>
+<area shape="rect" id="node9" title=" " alt="" coords="514,388,721,465"/>
 </map>

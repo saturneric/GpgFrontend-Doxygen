@@ -6,7 +6,7 @@ var hierarchy =
     [ "GpgFrontend::_result_ref_deletor", "structGpgFrontend_1_1__result__ref__deletor.html", null ],
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveStruct", "structGpgFrontend_1_1ArchiveStruct.html", null ],
-    [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
+    [ "GpgFrontend::GpgKeyManager::AutomatonHandelStruct", "structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct.html", null ],
     [ "GpgFrontend::ChannelObject", "classGpgFrontend_1_1ChannelObject.html", [
       [ "GpgFrontend::SingletonFunctionObject< GpgUIDOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", null ]
@@ -31,6 +31,9 @@ var hierarchy =
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgKeyGetter >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< CacheManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
@@ -93,6 +96,7 @@ var hierarchy =
       [ "GpgFrontend::UI::GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", [
         [ "GpgFrontend::UI::AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", null ],
         [ "GpgFrontend::UI::ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", null ],
+        [ "GpgFrontend::UI::GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html", null ],
         [ "GpgFrontend::UI::KeyDetailsDialog", "classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html", null ],
         [ "GpgFrontend::UI::KeyGenDialog", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html", null ],
         [ "GpgFrontend::UI::KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", null ],
@@ -104,10 +108,10 @@ var hierarchy =
         [ "GpgFrontend::UI::QuitDialog", "classGpgFrontend_1_1UI_1_1QuitDialog.html", null ],
         [ "GpgFrontend::UI::SettingsDialog", "classGpgFrontend_1_1UI_1_1SettingsDialog.html", null ],
         [ "GpgFrontend::UI::SignersPicker", "classGpgFrontend_1_1UI_1_1SignersPicker.html", null ],
-        [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ]
+        [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ],
+        [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ]
       ] ],
       [ "GpgFrontend::UI::VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", null ],
-      [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ],
       [ "SignatureDetailsDialog", "classSignatureDetailsDialog.html", null ]
     ] ],
     [ "QGroupBox", null, [
@@ -120,6 +124,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "QObject", null, [
+      [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ],
       [ "GpgFrontend::CoreCommonUtil", "classGpgFrontend_1_1CoreCommonUtil.html", null ],
       [ "GpgFrontend::CoreSignalStation", "classGpgFrontend_1_1CoreSignalStation.html", null ],
       [ "GpgFrontend::GpgContext", "classGpgFrontend_1_1GpgContext.html", null ],
@@ -129,6 +134,7 @@ var hierarchy =
         [ "GpgFrontend::UI::KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", null ],
         [ "GpgFrontend::UI::KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", null ],
         [ "GpgFrontend::UI::ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", null ],
+        [ "GpgFrontend::UI::ProxyConnectionTestTask", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html", null ],
         [ "GpgFrontend::UI::VersionCheckTask", "classGpgFrontend_1_1UI_1_1VersionCheckTask.html", null ]
       ] ],
       [ "GpgFrontend::UI::SignalStation", "classGpgFrontend_1_1UI_1_1SignalStation.html", null ]
@@ -137,8 +143,7 @@ var hierarchy =
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", null ]
     ] ],
     [ "QThread", null, [
-      [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ],
-      [ "GpgFrontend::UI::ProxyConnectionTestThread", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestThread.html", null ]
+      [ "GpgFrontend::Thread::TaskRunner", "classGpgFrontend_1_1Thread_1_1TaskRunner.html", null ]
     ] ],
     [ "QWidget", null, [
       [ "GpgFrontend::UI::AdvancedTab", "classGpgFrontend_1_1UI_1_1AdvancedTab.html", null ],
@@ -176,5 +181,7 @@ var hierarchy =
     [ "GpgFrontend::SingletonStorage", "classGpgFrontend_1_1SingletonStorage.html", null ],
     [ "GpgFrontend::SingletonStorageCollection", "classGpgFrontend_1_1SingletonStorageCollection.html", null ],
     [ "GpgFrontend::UI::SoftwareVersion", "structGpgFrontend_1_1UI_1_1SoftwareVersion.html", null ],
-    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ]
+    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ],
+    [ "GpgFrontend::ThreadSafeMap< Key, Value >", "classGpgFrontend_1_1ThreadSafeMap.html", null ],
+    [ "GpgFrontend::ThreadSafeMap< std::string, nlohmann::json >", "classGpgFrontend_1_1ThreadSafeMap.html", null ]
 ];

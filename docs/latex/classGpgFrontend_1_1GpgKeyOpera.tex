@@ -31,6 +31,8 @@ void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a151c47b997951e9162f8b036c
 \item 
 Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a12e6b05b23781861065d7e3243c9349e}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const Subkey\+Id \&subkey\+\_\+fpr, std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
 \begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7b906c529e3d9a4}{Generate\+Revoke\+Cert}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::string \&output\+\_\+file\+\_\+name)
+\item 
 Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_ab7e16d1f4cba23ea5b5b9f6009ce5ee2}{Modify\+Password}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
 \item 
 Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a76a7f59701add8a59d8835919dad2000}{Modify\+TOFUPolicy}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, gpgme\+\_\+tofu\+\_\+policy\+\_\+t tofu\+\_\+policy)
@@ -38,11 +40,6 @@ Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a
 Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a4cc3ac91613164d7dc61a016a2b4caea}{Generate\+Key}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params, Gpg\+Gen\+Key\+Result \&result)
 \item 
 Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}{Generate\+Subkey}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params)
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7b906c529e3d9a4}{Generate\+Revoke\+Cert}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::string \&output\+\_\+file\+\_\+name)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -151,7 +148,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateRevokeCert@{GenerateRevokeCert}}
 \index{GenerateRevokeCert@{GenerateRevokeCert}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{GenerateRevokeCert()}{GenerateRevokeCert()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::string \&}]{output\+\_\+file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::string \&}]{output\+\_\+file\+\_\+path }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -167,6 +164,10 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+
 \begin{DoxyReturn}{Returns}
 the process doing this job 
 \end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}\label{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateSubkey@{GenerateSubkey}}
 \index{GenerateSubkey@{GenerateSubkey}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}

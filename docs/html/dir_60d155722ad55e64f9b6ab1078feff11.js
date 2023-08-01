@@ -1,6 +1,7 @@
 var dir_60d155722ad55e64f9b6ab1078feff11 =
 [
     [ "details", "dir_00e48bdfb963d228cbb8d1392ea3be3d.html", "dir_00e48bdfb963d228cbb8d1392ea3be3d" ],
+    [ "gnupg", "dir_074045c6ecbcc6148037e9f97e06715b.html", "dir_074045c6ecbcc6148037e9f97e06715b" ],
     [ "help", "dir_e2aa8803ed3498b184755f32f6c016d5.html", "dir_e2aa8803ed3498b184755f32f6c016d5" ],
     [ "import_export", "dir_0652c688762e27a1001e51709de145a7.html", "dir_0652c688762e27a1001e51709de145a7" ],
     [ "key_generate", "dir_181bea3d8ae4b1f9a028d86ce05f5b90.html", "dir_181bea3d8ae4b1f9a028d86ce05f5b90" ],

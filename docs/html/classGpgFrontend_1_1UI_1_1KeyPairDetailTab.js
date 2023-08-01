@@ -22,6 +22,7 @@ var classGpgFrontend_1_1UI_1_1KeyPairDetailTab =
     [ "last_update_var_label_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a73a47d699a33419a6cc265d55b89be50", null ],
     [ "name_var_label_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a9d57be18c2091827c04ec8809f4154be", null ],
     [ "owner_box_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#ad8c25061351d8e739b70d5466b87410e", null ],
+    [ "owner_trust_var_label_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a9a5f52cf050b3ef7e30f742856b82955", null ],
     [ "primary_key_exist_var_label_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a34ea69e2f2a6d190121c0463cf190a63", null ],
     [ "usage_var_label_", "classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a72717007cd65887f79b6f963568263a3", null ]
 ];

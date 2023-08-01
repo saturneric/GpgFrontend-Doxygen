@@ -15,6 +15,7 @@ var classGpgFrontend_1_1UI_1_1FilePage =
     [ "slot_file_tree_view_item_double_clicked", "classGpgFrontend_1_1UI_1_1FilePage.html#ad3c54320bdafbbb2c06a20d6c7dea9d6", null ],
     [ "slot_mkdir", "classGpgFrontend_1_1UI_1_1FilePage.html#a00cd511308dceeda07d078a9e4ed0164", null ],
     [ "slot_open_item", "classGpgFrontend_1_1UI_1_1FilePage.html#ab42d1dea33d8d33e21418bf805fd66a0", null ],
+    [ "slot_open_item_by_system_application", "classGpgFrontend_1_1UI_1_1FilePage.html#ab2e5bf3d09a3a29bf77693d55975ae0c", null ],
     [ "slot_rename_item", "classGpgFrontend_1_1UI_1_1FilePage.html#a8beae6f942215ba4f191736c7176d8aa", null ],
     [ "slot_up_level", "classGpgFrontend_1_1UI_1_1FilePage.html#a48fde4a93676b1b9810ab88fe265d8a8", null ],
     [ "SlotGoPath", "classGpgFrontend_1_1UI_1_1FilePage.html#a8ed9963c6c37131a17ccec8b61e04879", null ],
