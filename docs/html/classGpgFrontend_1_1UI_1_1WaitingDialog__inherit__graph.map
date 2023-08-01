@@ -1,5 +1,4 @@
 <map id="GpgFrontend::UI::WaitingDialog" name="GpgFrontend::UI::WaitingDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="35,447,219,539"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,131,248,399"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,5,164,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,189,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="60,5,135,83"/>
 </map>

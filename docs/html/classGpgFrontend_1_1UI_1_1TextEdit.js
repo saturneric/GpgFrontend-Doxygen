@@ -19,7 +19,6 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "SlotNewFileTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#ae22ecadf31648f424eb8ab86bd28ef39", null ],
     [ "slotNewHelpTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3c17fdf3abf9c4fb6ce35cfb8f0f8fc4", null ],
     [ "SlotNewTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a57a46ab5595622ae0b7bceef7d56bd7c", null ],
-    [ "SlotNewTabWithContent", "classGpgFrontend_1_1UI_1_1TextEdit.html#a7fc06cc343339ddf9a8ab0b006ba2aec", null ],
     [ "SlotOpen", "classGpgFrontend_1_1UI_1_1TextEdit.html#a15335d38187ddf580b7200d856768cfb", null ],
     [ "SlotOpenFile", "classGpgFrontend_1_1UI_1_1TextEdit.html#a60c73cc66a48a38c13e7890de49e86c3", null ],
     [ "SlotPaste", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa2230418dc8f72c400f5a90082a983c9", null ],

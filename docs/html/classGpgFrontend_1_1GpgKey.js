@@ -17,7 +17,6 @@ var classGpgFrontend_1_1GpgKey =
     [ "GetLastUpdateTime", "classGpgFrontend_1_1GpgKey.html#a3532e20298b642f5d312712fa8a791df", null ],
     [ "GetName", "classGpgFrontend_1_1GpgKey.html#a7bceca68800c3ada9280c29eaeb5affc", null ],
     [ "GetOwnerTrust", "classGpgFrontend_1_1GpgKey.html#a3327ad34ff14feb75f3fbfc2bfb7fc44", null ],
-    [ "GetOwnerTrustLevel", "classGpgFrontend_1_1GpgKey.html#a4ced7bda206a0d72a2548783198ae4fe", null ],
     [ "GetPrimaryKeyLength", "classGpgFrontend_1_1GpgKey.html#a5b276fdeb438fe14ec2850d799401be6", null ],
     [ "GetProtocol", "classGpgFrontend_1_1GpgKey.html#ad2440a2902c81192d5549fe951ddb130", null ],
     [ "GetPublicKeyAlgo", "classGpgFrontend_1_1GpgKey.html#a1c21bc3b1788753f56272ad73052fc5f", null ],

@@ -42,9 +42,6 @@ static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}{Slot\+Execute\+Gpg\+Command}} (const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}{Slot\+Execute\+Command}} (const std\+::string \&cmd, const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a86d3827a2e5df17747c58d00b2f5fe6e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a86d3827a2e5df17747c58d00b2f5fe6e}} 
-void {\bfseries Slot\+Restart\+Application} (int)
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -63,28 +60,13 @@ void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}} 
 void {\bfseries Signal\+User\+Input\+Passphrase\+Done} (QString passphrase)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aa69efbcd684e9a99cc5c47c23de8d38c}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aa69efbcd684e9a99cc5c47c23de8d38c}} 
-void {\bfseries Signal\+Restart\+Application} (int)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}} 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a78f5c2696152e9326e845c76c94be965}{Common\+Utils}} ()
-\begin{DoxyCompactList}\small\item\em Construct a new Common Utils object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_abb25baa60d62d6842028e174f7e341fe}\label{classGpgFrontend_1_1UI_1_1CommonUtils_abb25baa60d62d6842028e174f7e341fe}} 
-bool {\bfseries is\+Application\+Need\+Restart} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a570b6d08ceb683f950e94d648bf334ea}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a570b6d08ceb683f950e94d648bf334ea}} 
-bool {\bfseries Key\+Existsin\+Favourite\+List} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a7a7b01b992c465ded7e25e54e3ebacec}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a7a7b01b992c465ded7e25e54e3ebacec}} 
-void {\bfseries Add\+Key2\+Favourtie} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a0cf35e9d02ff3464cb83435a61d060c2}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a0cf35e9d02ff3464cb83435a61d060c2}} 
-void {\bfseries Remove\+Key\+From\+Favourite} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a new Common Utils object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -98,12 +80,6 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a0775772
 \begin{DoxyCompactList}\small\item\em update the key status when signal is emitted \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}} 
 void {\bfseries slot\+\_\+popup\+\_\+passphrase\+\_\+input\+\_\+dialog} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a99b5dad4b17d1e71120e2c7708ef47a0}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a99b5dad4b17d1e71120e2c7708ef47a0}} 
-bool {\bfseries application\+\_\+need\+\_\+to\+\_\+restart\+\_\+at\+\_\+once\+\_\+} = false
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -129,7 +105,7 @@ Common\+Utils$\ast$
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotExecuteCommand@{SlotExecuteCommand}}

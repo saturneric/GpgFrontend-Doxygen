@@ -1,5 +1,5 @@
 <map id="GpgFrontend::UI::KeyImportDetailDialog" name="GpgFrontend::UI::KeyImportDetailDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="25,447,228,671"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,131,248,399"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,5,164,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="13,403,215,627"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,131,223,355"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,5,151,83"/>
 </map>

@@ -91,22 +91,20 @@ $(document).ready(function(){initNavTree('WaitingDialog_8h_source.html',''); ini
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __UI_WAITING_DIALOG_H__</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">WaitingDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc">WaitingDialog</a>(<span class="keyword">const</span> QString&amp; title, QWidget* parent);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __UI_WAITING_DIALOG_H__</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1WaitingDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">GpgFrontend::UI::WaitingDialog</a></div><div class="ttdef"><b>Definition:</b> WaitingDialog.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1WaitingDialog_html_a809d0ffc8208eb2ff5d8da76c8ee10dc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc">GpgFrontend::UI::WaitingDialog::WaitingDialog</a></div><div class="ttdeci">WaitingDialog(const QString &amp;title, QWidget *parent)</div><div class="ttdoc">Construct a new Waiting Dialog object.</div><div class="ttdef"><b>Definition:</b> WaitingDialog.cpp:35</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">WaitingDialog</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc">WaitingDialog</a>(<span class="keyword">const</span> QString&amp; title, QWidget* parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __UI_WAITING_DIALOG_H__</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1WaitingDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1WaitingDialog.html">GpgFrontend::UI::WaitingDialog</a></div><div class="ttdef"><b>Definition:</b> WaitingDialog.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1WaitingDialog_html_a809d0ffc8208eb2ff5d8da76c8ee10dc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc">GpgFrontend::UI::WaitingDialog::WaitingDialog</a></div><div class="ttdeci">WaitingDialog(const QString &amp;title, QWidget *parent)</div><div class="ttdoc">Construct a new Waiting Dialog object.</div><div class="ttdef"><b>Definition:</b> WaitingDialog.cpp:33</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

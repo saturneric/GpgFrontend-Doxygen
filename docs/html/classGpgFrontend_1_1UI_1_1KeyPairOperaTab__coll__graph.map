@@ -1,9 +1,9 @@
 <map id="GpgFrontend::UI::KeyPairOperaTab" name="GpgFrontend::UI::KeyPairOperaTab">
-<area shape="rect" id="node1" title=" " alt="" coords="5,756,220,1127"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,756,220,1097"/>
 <area shape="rect" id="node2" title=" " alt="" coords="52,543,131,620"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="155,469,334,693"/>
-<area shape="rect" id="node4" title=" " alt="" coords="95,315,187,392"/>
-<area shape="rect" id="node5" title=" " alt="" coords="263,300,434,407"/>
-<area shape="rect" id="node6" title=" " alt="" coords="270,145,427,223"/>
-<area shape="rect" id="node7" title=" " alt="" coords="329,5,368,83"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="155,469,332,693"/>
+<area shape="rect" id="node4" title=" " alt="" coords="93,315,185,392"/>
+<area shape="rect" id="node5" title=" " alt="" coords="262,300,433,407"/>
+<area shape="rect" id="node6" title=" " alt="" coords="269,145,426,223"/>
+<area shape="rect" id="node7" title=" " alt="" coords="328,5,367,83"/>
 </map>

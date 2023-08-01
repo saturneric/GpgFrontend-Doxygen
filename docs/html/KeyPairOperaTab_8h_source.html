@@ -101,44 +101,39 @@ $(document).ready(function(){initNavTree('KeyPairOperaTab_8h_source.html',''); i
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">CreateOperaMenu</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; signals:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> SignalKeyDatabaseRefresh();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">slot_export_private_key</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">slot_export_private_key</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> slot_export_short_private_key();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> slot_export_public_key();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> slot_modify_edit_datetime();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> slot_modify_password();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> slot_upload_key_to_server();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> slot_update_key_from_server();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> slot_gen_revoke_cert();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> slot_modify_tofu_policy();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> slot_export_short_private_key();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> slot_export_public_key();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> slot_modify_edit_datetime();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> slot_modify_password();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> slot_upload_key_to_server();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> slot_update_key_from_server();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> slot_gen_revoke_cert();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> slot_modify_tofu_policy();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                           </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  QMenu* key_server_opera_menu_{};         </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  QMenu* secret_key_export_opera_menu_{};  </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">void</span> slot_set_owner_trust_level();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                           </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  QMenu* key_server_opera_menu_{};         </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  QMenu* secret_key_export_opera_menu_{};  </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_KEYPAIROPERATAB_H</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_KEYPAIROPERATAB_H</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html">GpgFrontend::UI::KeyPairOperaTab</a></div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.h:34</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a384f4250e58110da58c0e6996b42a8ab"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key</a></div><div class="ttdeci">void slot_export_private_key()</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:255</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a4dcec352e412afe5c5491f941495090f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">GpgFrontend::UI::KeyPairOperaTab::CreateOperaMenu</a></div><div class="ttdeci">void CreateOperaMenu()</div><div class="ttdoc">Create a Opera Menu object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:130</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_aad4e209d7b4eb0ac6623b2f12ce5ecc5"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#aad4e209d7b4eb0ac6623b2f12ce5ecc5">GpgFrontend::UI::KeyPairOperaTab::KeyPairOperaTab</a></div><div class="ttdeci">KeyPairOperaTab(const std::string &amp;key_id, QWidget *parent)</div><div class="ttdoc">Construct a new Key Pair Opera Tab object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a384f4250e58110da58c0e6996b42a8ab"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key</a></div><div class="ttdeci">void slot_export_private_key()</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:217</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a4dcec352e412afe5c5491f941495090f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">GpgFrontend::UI::KeyPairOperaTab::CreateOperaMenu</a></div><div class="ttdeci">void CreateOperaMenu()</div><div class="ttdoc">Create a Opera Menu object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:103</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_aad4e209d7b4eb0ac6623b2f12ce5ecc5"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#aad4e209d7b4eb0ac6623b2f12ce5ecc5">GpgFrontend::UI::KeyPairOperaTab::KeyPairOperaTab</a></div><div class="ttdeci">KeyPairOperaTab(const std::string &amp;key_id, QWidget *parent)</div><div class="ttdoc">Construct a new Key Pair Opera Tab object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:38</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

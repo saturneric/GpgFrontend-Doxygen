@@ -2,80 +2,33 @@
 \label{classGpgFrontend_1_1CacheManager}\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
 
 
-Inheritance diagram for Gpg\+Frontend\+::Cache\+Manager\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1CacheManager__inherit__graph}
-\end{center}
-\end{figure}
-
-
 Collaboration diagram for Gpg\+Frontend\+::Cache\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1CacheManager__coll__graph}
+\includegraphics[width=238pt]{classGpgFrontend_1_1CacheManager__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a311ae4d0cc4f4d9425b44789aea6090a}{Cache\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+static void \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a3cbc3238638dcd8b4722bfdf560c73fe}{Save\+Cache}} (std\+::string key, const nlohmann\+::json \&value)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af61eef3700ff6a6790a42269b66e20e4}\label{classGpgFrontend_1_1CacheManager_af61eef3700ff6a6790a42269b66e20e4}} 
-void {\bfseries Save\+Cache} (std\+::string key, const nlohmann\+::json \&value, bool flush=false)
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_aaac1a2b86867831713efa5f092abf985}\label{classGpgFrontend_1_1CacheManager_aaac1a2b86867831713efa5f092abf985}} 
+static nlohmann\+::json {\bfseries Load\+Cache} (std\+::string name)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a1176521fa6f3df1ed760c18af53ebcf5}\label{classGpgFrontend_1_1CacheManager_a1176521fa6f3df1ed760c18af53ebcf5}} 
-nlohmann\+::json {\bfseries Load\+Cache} (std\+::string key)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af1ee53c1ecc4b0835568ef4af34c1595}\label{classGpgFrontend_1_1CacheManager_af1ee53c1ecc4b0835568ef4af34c1595}} 
-nlohmann\+::json {\bfseries Load\+Cache} (std\+::string key, nlohmann\+::json default\+\_\+value)
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_ae5246d24c5dbafb8f9abb561217ea235}\label{classGpgFrontend_1_1CacheManager_ae5246d24c5dbafb8f9abb561217ea235}} 
+static void {\bfseries Clear\+All\+Cache} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a9dd86b465c144340312956366b989cee}\label{classGpgFrontend_1_1CacheManager_a9dd86b465c144340312956366b989cee}} 
-std\+::string {\bfseries get\+\_\+data\+\_\+object\+\_\+key} (std\+::string key)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a6e05751e92f8f0011bfcb755ccbb8003}\label{classGpgFrontend_1_1CacheManager_a6e05751e92f8f0011bfcb755ccbb8003}} 
-nlohmann\+::json {\bfseries load\+\_\+cache\+\_\+storage} (std\+::string key, nlohmann\+::json default\+\_\+value)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a8fdeea326fe6ba46d02ac2b9fbdde58c}\label{classGpgFrontend_1_1CacheManager_a8fdeea326fe6ba46d02ac2b9fbdde58c}} 
-void {\bfseries load\+\_\+all\+\_\+cache\+\_\+storage} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a2cce51cf81b62dfb10b2195a0375f9b2}\label{classGpgFrontend_1_1CacheManager_a2cce51cf81b62dfb10b2195a0375f9b2}} 
-void {\bfseries flush\+\_\+cache\+\_\+storage} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_ab974c30ff13b899ca647d6ff97f7c34d}\label{classGpgFrontend_1_1CacheManager_ab974c30ff13b899ca647d6ff97f7c34d}} 
-void {\bfseries register\+\_\+cache\+\_\+key} (std\+::string key)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_aec8664877393054794453f56373520cc}\label{classGpgFrontend_1_1CacheManager_aec8664877393054794453f56373520cc}} 
-\mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Thread\+Safe\+Map}}$<$ std\+::string, nlohmann\+::json $>$ {\bfseries cache\+\_\+storage\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af961e0b1f041bac37d5c16929da9d515}\label{classGpgFrontend_1_1CacheManager_af961e0b1f041bac37d5c16929da9d515}} 
-nlohmann\+::json {\bfseries key\+\_\+storage\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af4d6094e1c9fc5487e174ab876925a2b}\label{classGpgFrontend_1_1CacheManager_af4d6094e1c9fc5487e174ab876925a2b}} 
-QTimer $\ast$ {\bfseries m\+\_\+timer\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a10682dce9d34272f3b99d1abbb48fb0d}\label{classGpgFrontend_1_1CacheManager_a10682dce9d34272f3b99d1abbb48fb0d}} 
-const std\+::string {\bfseries drk\+\_\+key\+\_\+} = \char`\"{}\+\_\+\+\_\+cache\+\_\+manage\+\_\+data\+\_\+register\+\_\+key\+\_\+list\char`\"{}
-\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a311ae4d0cc4f4d9425b44789aea6090a}\label{classGpgFrontend_1_1CacheManager_a311ae4d0cc4f4d9425b44789aea6090a}} 
-\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!CacheManager@{CacheManager}}
-\index{CacheManager@{CacheManager}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
-\doxysubsubsection{\texorpdfstring{CacheManager()}{CacheManager()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Cache\+Manager\+::\+Cache\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a3cbc3238638dcd8b4722bfdf560c73fe}\label{classGpgFrontend_1_1CacheManager_a3cbc3238638dcd8b4722bfdf560c73fe}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!SaveCache@{SaveCache}}
+\index{SaveCache@{SaveCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{SaveCache()}{SaveCache()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Cache\+Manager\+::\+Save\+Cache (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const nlohmann\+::json \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Copyright (C) 2021 Saturneric
 
@@ -92,6 +45,10 @@ The initial version of the source code is inherited from the gpg4usb project, wh
 All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Data\+Object\+Operator $>$\+::\+Get\+Instance().
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

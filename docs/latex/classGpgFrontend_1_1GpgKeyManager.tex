@@ -20,11 +20,6 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Manager\+:
 \includegraphics[width=350pt]{classGpgFrontend_1_1GpgKeyManager__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct}{Automaton\+Handel\+Struct}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,30 +30,7 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f0
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}{Rev\+Sign}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&key, const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&signature\+\_\+id)
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&subkey, std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
-\begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}{Set\+Owner\+Trust\+Level}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, int trust\+\_\+level)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Types}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a4fea67ab4a5c4e768aa1b55f23f3c8b7}\label{classGpgFrontend_1_1GpgKeyManager_a4fea67ab4a5c4e768aa1b55f23f3c8b7}} 
-using {\bfseries Command} = std\+::string
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a8372d745ded9676dbab290780f7389ae}\label{classGpgFrontend_1_1GpgKeyManager_a8372d745ded9676dbab290780f7389ae}} 
-using {\bfseries Automaton\+State} = enum \{ AS\+\_\+\+START, AS\+\_\+\+COMMAND, AS\+\_\+\+VALUE, AS\+\_\+\+REALLY\+\_\+\+ULTIMATE, AS\+\_\+\+SAVE, AS\+\_\+\+ERROR, AS\+\_\+\+QUIT, \}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_abbd0d9893967a342b0f1062a856d0647}\label{classGpgFrontend_1_1GpgKeyManager_abbd0d9893967a342b0f1062a856d0647}} 
-using {\bfseries Automaton\+Action\+Handler} = std\+::function$<$ Command(\mbox{\hyperlink{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct}{Automaton\+Handel\+Struct}} \&, Automaton\+State)$>$
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a60a8636d3463f0c1a17e6f384fed0985}\label{classGpgFrontend_1_1GpgKeyManager_a60a8636d3463f0c1a17e6f384fed0985}} 
-using {\bfseries Automaton\+Next\+State\+Handler} = std\+::function$<$ Automaton\+State(Automaton\+State, std\+::string, std\+::string)$>$
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_af0709924bd70fee6a9ea4efbf85b689d}\label{classGpgFrontend_1_1GpgKeyManager_af0709924bd70fee6a9ea4efbf85b689d}} 
-static gpgme\+\_\+error\+\_\+t {\bfseries interactor\+\_\+cb\+\_\+fnc} (void $\ast$handle, const char $\ast$status, const char $\ast$args, int fd)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -147,19 +119,6 @@ false
 
 
 References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), and Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}\label{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}} 
-\index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SetOwnerTrustLevel@{SetOwnerTrustLevel}}
-\index{SetOwnerTrustLevel@{SetOwnerTrustLevel}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
-\doxysubsubsection{\texorpdfstring{SetOwnerTrustLevel()}{SetOwnerTrustLevel()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Owner\+Trust\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{int}]{trust\+\_\+level }\end{DoxyParamCaption})}
-
-\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
-
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}\label{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}} 
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SignKey@{SignKey}}

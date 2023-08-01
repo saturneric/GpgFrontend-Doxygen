@@ -89,7 +89,6 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1UI_1_1CommonUtils.
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-slots">Private Slots</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1UI_1_1CommonUtils-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,7 +100,7 @@ Inheritance diagram for GpgFrontend::UI::CommonUtils:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1CommonUtils__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1CommonUtils_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1CommonUtils_inherit__map" id="aGpgFrontend_1_1UI_1_1CommonUtils_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,244,472"/>
+<area shape="rect" title=" " alt="" coords="5,131,244,369"/>
 <area shape="rect" title=" " alt="" coords="85,5,164,83"/>
 </map>
 </div>
@@ -110,7 +109,7 @@ Collaboration diagram for GpgFrontend::UI::CommonUtils:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1CommonUtils__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1CommonUtils_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1CommonUtils_coll__map" id="aGpgFrontend_1_1UI_1_1CommonUtils_coll__map">
-<area shape="rect" title=" " alt="" coords="5,455,244,781"/>
+<area shape="rect" title=" " alt="" coords="5,455,244,693"/>
 <area shape="rect" title=" " alt="" coords="32,307,111,385"/>
 <area shape="rect" title=" " alt="" coords="135,300,352,392"/>
 <area shape="rect" title=" " alt="" coords="165,145,322,223"/>
@@ -140,9 +139,6 @@ Public Slots</h2></td></tr>
 <tr class="separator:afc845c1c37487c99f78d8e66f6874f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95cd625a2e0e74ee4d564843c6d16791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a95cd625a2e0e74ee4d564843c6d16791">SlotExecuteCommand</a> (const std::string &amp;cmd, const QStringList &amp;arguments, const std::function&lt; void(QProcess *)&gt; &amp;interact_func)</td></tr>
 <tr class="separator:a95cd625a2e0e74ee4d564843c6d16791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d3827a2e5df17747c58d00b2f5fe6e"><td class="memItemLeft" align="right" valign="top"><a id="a86d3827a2e5df17747c58d00b2f5fe6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotRestartApplication</b> (int)</td></tr>
-<tr class="separator:a86d3827a2e5df17747c58d00b2f5fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -162,9 +158,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalNeedUserInputPa
 <tr class="memitem:a80350e7fe1cd696004c9aa2a43eab184"><td class="memItemLeft" align="right" valign="top"><a id="a80350e7fe1cd696004c9aa2a43eab184"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalUserInputPassphraseDone</b> (QString passphrase)</td></tr>
 <tr class="separator:a80350e7fe1cd696004c9aa2a43eab184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69efbcd684e9a99cc5c47c23de8d38c"><td class="memItemLeft" align="right" valign="top"><a id="aa69efbcd684e9a99cc5c47c23de8d38c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalRestartApplication</b> (int)</td></tr>
-<tr class="separator:aa69efbcd684e9a99cc5c47c23de8d38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -172,18 +165,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#a78f5c2696152e9326e845c76c94be965">CommonUtils</a> ()</td></tr>
 <tr class="memdesc:a78f5c2696152e9326e845c76c94be965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Common Utils object. <br /></td></tr>
 <tr class="separator:a78f5c2696152e9326e845c76c94be965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb25baa60d62d6842028e174f7e341fe"><td class="memItemLeft" align="right" valign="top"><a id="abb25baa60d62d6842028e174f7e341fe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isApplicationNeedRestart</b> ()</td></tr>
-<tr class="separator:abb25baa60d62d6842028e174f7e341fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a570b6d08ceb683f950e94d648bf334ea"><td class="memItemLeft" align="right" valign="top"><a id="a570b6d08ceb683f950e94d648bf334ea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>KeyExistsinFavouriteList</b> (const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;key)</td></tr>
-<tr class="separator:a570b6d08ceb683f950e94d648bf334ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a7b01b992c465ded7e25e54e3ebacec"><td class="memItemLeft" align="right" valign="top"><a id="a7a7b01b992c465ded7e25e54e3ebacec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddKey2Favourtie</b> (const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;key)</td></tr>
-<tr class="separator:a7a7b01b992c465ded7e25e54e3ebacec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf35e9d02ff3464cb83435a61d060c2"><td class="memItemLeft" align="right" valign="top"><a id="a0cf35e9d02ff3464cb83435a61d060c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveKeyFromFavourite</b> (const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;key)</td></tr>
-<tr class="separator:a0cf35e9d02ff3464cb83435a61d060c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -200,12 +181,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aef14c7eaaf8b73bd1b8f845a5484748e"><td class="memItemLeft" align="right" valign="top"><a id="aef14c7eaaf8b73bd1b8f845a5484748e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_popup_passphrase_input_dialog</b> ()</td></tr>
 <tr class="separator:aef14c7eaaf8b73bd1b8f845a5484748e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a99b5dad4b17d1e71120e2c7708ef47a0"><td class="memItemLeft" align="right" valign="top"><a id="a99b5dad4b17d1e71120e2c7708ef47a0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>application_need_to_restart_at_once_</b> = false</td></tr>
-<tr class="separator:a99b5dad4b17d1e71120e2c7708ef47a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -240,7 +215,7 @@ static std::unique_ptr&lt; <a class="el" href="classGpgFrontend_1_1UI_1_1CommonU
 <p>Get the Instance object. </p>
 <dl class="section return"><dt>Returns</dt><dd>CommonUtils* </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">GpgFrontend::UI::KeyMgmt::create_actions()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a0ab96012df041f2c2e47092db0600355">GpgFrontend::UI::MainWindow::create_actions()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a04668246525874760f47a340b4b7d8de">GpgFrontend::UI::MainWindow::create_dock_windows()</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">GpgFrontend::UI::InitGpgFrontendUI()</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#a9e2d085812ef8fdd6f19ea94a241b4da">GpgFrontend::UI::RunGpgFrontendUI()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a55926649e28a96318b89afba01b966bf">GpgFrontend::UI::MainWindow::slot_import_key_from_edit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8">GpgFrontend::UI::KeyMgmt::create_actions()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a0ab96012df041f2c2e47092db0600355">GpgFrontend::UI::MainWindow::create_actions()</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">GpgFrontend::UI::InitGpgFrontendUI()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a55926649e28a96318b89afba01b966bf">GpgFrontend::UI::MainWindow::slot_import_key_from_edit()</a>.</p>
 
 </div>
 </div>
@@ -452,7 +427,7 @@ static std::unique_ptr&lt; <a class="el" href="classGpgFrontend_1_1UI_1_1CommonU
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#a5ddcc2e0bc6d4c2f88e6e00371d4792e">GpgFrontend::UI::SettingsObject::Check()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgKeyImportExporter &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a1d8b9f91c75ef7a1d008a171f09f2c0e">GpgFrontend::GlobalSettingStation::GetUISettings()</a>, and <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#ab7a9be5283047695cd47562775adf79d">GpgFrontend::GpgKeyImportExporter::ImportKey()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#a5ddcc2e0bc6d4c2f88e6e00371d4792e">GpgFrontend::UI::SettingsObject::Check()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgKeyImportExporter &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1GlobalSettingStation.html#a14433405831283cd95091d741614d03b">GpgFrontend::GlobalSettingStation::GetUISettings()</a>, and <a class="el" href="classGpgFrontend_1_1GpgKeyImportExporter.html#ab7a9be5283047695cd47562775adf79d">GpgFrontend::GpgKeyImportExporter::ImportKey()</a>.</p>
 
 </div>
 </div>

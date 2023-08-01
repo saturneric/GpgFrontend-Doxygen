@@ -1,14 +1,14 @@
 <map id="GpgFrontend::UI::KeySetExpireDateDialog" name="GpgFrontend::UI::KeySetExpireDateDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="253,877,475,1028"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,561,248,815"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,329,164,407"/>
-<area shape="rect" id="node4" title=" " alt="" coords="221,329,307,407"/>
-<area shape="rect" id="node5" title=" " alt="" coords="195,145,333,237"/>
-<area shape="rect" id="node6" title=" " alt="" coords="317,445,547,537"/>
-<area shape="rect" id="node7" title=" " alt="" coords="376,153,533,230"/>
-<area shape="rect" id="node8" title=" " alt="" coords="526,5,565,83"/>
-<area shape="rect" id="node12" title=" " alt="" coords="567,153,724,230"/>
-<area shape="rect" id="node9" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="525,576,704,800"/>
-<area shape="rect" id="node10" title=" " alt="" coords="725,329,817,407"/>
-<area shape="rect" id="node11" title=" " alt="" coords="529,315,700,421"/>
+<area shape="rect" id="node1" title=" " alt="" coords="229,848,450,999"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,569,223,778"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,329,151,407"/>
+<area shape="rect" id="node4" title=" " alt="" coords="201,329,288,407"/>
+<area shape="rect" id="node5" title=" " alt="" coords="175,145,314,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="292,445,523,537"/>
+<area shape="rect" id="node7" title=" " alt="" coords="354,153,511,230"/>
+<area shape="rect" id="node8" title=" " alt="" coords="504,5,543,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="543,153,701,230"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="501,561,679,785"/>
+<area shape="rect" id="node10" title=" " alt="" coords="700,329,792,407"/>
+<area shape="rect" id="node11" title=" " alt="" coords="505,315,675,421"/>
 </map>

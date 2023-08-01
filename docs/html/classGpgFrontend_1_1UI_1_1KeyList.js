@@ -1,7 +1,7 @@
 var classGpgFrontend_1_1UI_1_1KeyList =
 [
     [ "KeyList", "classGpgFrontend_1_1UI_1_1KeyList.html#a7c9d5cacdb42e1fbda5d3cc96e861418", null ],
-    [ "AddListGroupTab", "classGpgFrontend_1_1UI_1_1KeyList.html#ab8663d18901d10c00dbcc0ba852b3bf4", null ],
+    [ "AddListGroupTab", "classGpgFrontend_1_1UI_1_1KeyList.html#a73ddb7feb1f70eac44e038c3dc925fec", null ],
     [ "AddMenuAction", "classGpgFrontend_1_1UI_1_1KeyList.html#aa961e3ba3c48f84dea4bb7ab4f756886", null ],
     [ "AddSeparator", "classGpgFrontend_1_1UI_1_1KeyList.html#a0ea28d6f108bad10aaa8844fa86db033", null ],
     [ "check_all", "classGpgFrontend_1_1UI_1_1KeyList.html#a0c3090591dff7b68bfb83c93d2c168e3", null ],
@@ -9,7 +9,6 @@ var classGpgFrontend_1_1UI_1_1KeyList =
     [ "contextMenuEvent", "classGpgFrontend_1_1UI_1_1KeyList.html#a82da61a76a08023b2ddbe2a6869f4190", null ],
     [ "dragEnterEvent", "classGpgFrontend_1_1UI_1_1KeyList.html#ae3ad87e114432b0d659a0297d520d72f", null ],
     [ "dropEvent", "classGpgFrontend_1_1UI_1_1KeyList.html#a23ebf79be8de637560d41afd0433c35f", null ],
-    [ "filter_by_keyword", "classGpgFrontend_1_1UI_1_1KeyList.html#adc5099f326fdd4da9a82e34a68cb2fd7", null ],
     [ "GetAllPrivateKeys", "classGpgFrontend_1_1UI_1_1KeyList.html#a7ead8845ceb7c9310e3f4742251e1d87", null ],
     [ "GetChecked", "classGpgFrontend_1_1UI_1_1KeyList.html#ac1e5046770c36f67aab34715e50c0a33", null ],
     [ "GetChecked", "classGpgFrontend_1_1UI_1_1KeyList.html#a4e5862299b0aebe07daf8fbc642a4c38", null ],
@@ -29,7 +28,6 @@ var classGpgFrontend_1_1UI_1_1KeyList =
     [ "slot_refresh_ui", "classGpgFrontend_1_1UI_1_1KeyList.html#aad57901bf84aaf7849e7cf7bb9f8fc99", null ],
     [ "slot_sync_with_key_server", "classGpgFrontend_1_1UI_1_1KeyList.html#a6e97d359158f91217b9fe797410c74a6", null ],
     [ "SlotRefresh", "classGpgFrontend_1_1UI_1_1KeyList.html#a152e66db4a0f033366f43b4ec89073f4", null ],
-    [ "SlotRefreshUI", "classGpgFrontend_1_1UI_1_1KeyList.html#a84499e74d082e71e90a8526991c5331a", null ],
     [ "uncheck_all", "classGpgFrontend_1_1UI_1_1KeyList.html#ae9667bbf246913ea22413d46bcda675a", null ],
     [ "buffered_key_list_mutex_", "classGpgFrontend_1_1UI_1_1KeyList.html#ac4629f2ffafe87215acc66f3cefc23d4", null ],
     [ "buffered_keys_list_", "classGpgFrontend_1_1UI_1_1KeyList.html#a19b3f64d41843bb267fcd6c9956fde88", null ],

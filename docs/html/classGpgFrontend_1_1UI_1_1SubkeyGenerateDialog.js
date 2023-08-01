@@ -25,6 +25,5 @@ var classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog =
     [ "key_usage_group_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab11f7f3e24f855d690f6f7d820ed7479", null ],
     [ "max_date_time_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a06ae254026e0be902d28bb005a91fe0c", null ],
     [ "no_pass_phrase_check_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a001803152c0e5bd9de7c7dd04cef8ad4", null ],
-    [ "passphrase_edit_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a9cbb5bcf775a873a0d866a9aa0a5acd0", null ],
-    [ "use_pinentry_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab7a4af76a1d56ad401274ecad80d16c5", null ]
+    [ "passphrase_edit_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a9cbb5bcf775a873a0d866a9aa0a5acd0", null ]
 ];
