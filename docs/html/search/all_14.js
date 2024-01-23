@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['ui_5fcfg_5f_711',['ui_cfg_',['../classGpgFrontend_1_1GlobalSettingStation.html#a1818e08063d6a886975f77354fc5d85c',1,'GpgFrontend::GlobalSettingStation']]],
-  ['ui_5fconfig_5fdir_5fpath_5f_712',['ui_config_dir_path_',['../classGpgFrontend_1_1GlobalSettingStation.html#ab618fef68cfd4ff6e42d4a4aa8ea94bb',1,'GpgFrontend::GlobalSettingStation']]],
-  ['ui_5fconfig_5fpath_5f_713',['ui_config_path_',['../classGpgFrontend_1_1GlobalSettingStation.html#afa99ddc25c0d5fd59a4c5f0e61d13830',1,'GpgFrontend::GlobalSettingStation']]],
-  ['undo_5fact_5f_714',['undo_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#aa498dfecac36590e4b60d50824dff58c',1,'GpgFrontend::UI::MainWindow']]],
-  ['unsaveddocuments_715',['UnsavedDocuments',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a82fe98d45f54909ebea933b540367c39',1,'GpgFrontend::UI::TextEdit']]],
-  ['updatetab_716',['UpdateTab',['../classGpgFrontend_1_1UI_1_1UpdateTab.html',1,'GpgFrontend::UI::UpdateTab'],['../classGpgFrontend_1_1UI_1_1UpdateTab.html#a833c5f709607032bac530aacf389a117',1,'GpgFrontend::UI::UpdateTab::UpdateTab()']]],
-  ['upload_5fkey_5fto_5fserver_717',['upload_key_to_server',['../classGpgFrontend_1_1UI_1_1MainWindow.html#ad27dcf3f534f13d8df71df680c4d177c',1,'GpgFrontend::UI::MainWindow']]]
+  ['verify_803',['Verify',['../classGpgFrontend_1_1GpgBasicOperator.html#ae9a2f9923061efae82fe012ebc7a56ab',1,'GpgFrontend::GpgBasicOperator']]],
+  ['verify_5fact_5f_804',['verify_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a14bb12fa25620e1a93bd23c9f7c84081',1,'GpgFrontend::UI::MainWindow']]],
+  ['verifydetailsdialog_805',['VerifyDetailsDialog',['../classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html',1,'GpgFrontend::UI::VerifyDetailsDialog'],['../classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda',1,'GpgFrontend::UI::VerifyDetailsDialog::VerifyDetailsDialog()']]],
+  ['verifyfile_806',['VerifyFile',['../classGpgFrontend_1_1GpgFileOpera.html#af4a26e42f0a3d49905777d22828fa430',1,'GpgFrontend::GpgFileOpera']]],
+  ['verifyfilesync_807',['VerifyFileSync',['../classGpgFrontend_1_1GpgFileOpera.html#a9511b6a128a6228ebca47ae637c44e55',1,'GpgFrontend::GpgFileOpera']]],
+  ['verifykeydetailbox_808',['VerifyKeyDetailBox',['../classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html',1,'GpgFrontend::UI::VerifyKeyDetailBox'],['../classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0',1,'GpgFrontend::UI::VerifyKeyDetailBox::VerifyKeyDetailBox()']]],
+  ['verifysync_809',['VerifySync',['../classGpgFrontend_1_1GpgBasicOperator.html#a3507dec7f2528c8627d3289cfb638a7a',1,'GpgFrontend::GpgBasicOperator']]],
+  ['versioncheckingmodule_810',['VersionCheckingModule',['../classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html',1,'GpgFrontend::Module::Integrated::VersionCheckingModule']]],
+  ['versionchecktask_811',['VersionCheckTask',['../classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html',1,'GpgFrontend::Module::Integrated::VersionCheckingModule::VersionCheckTask'],['../classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html#a5b1b330c412772ed945158de226a1f1c',1,'GpgFrontend::Module::Integrated::VersionCheckingModule::VersionCheckTask::VersionCheckTask()']]],
+  ['versionwithdrawn_812',['VersionWithdrawn',['../structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a13f5326b54ff1f36dd75e6f9241ec9ee',1,'GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion']]],
+  ['view_5fmenu_5f_813',['view_menu_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a0e9920cf0fc974ac2f70d3f039f009f2',1,'GpgFrontend::UI::MainWindow']]]
 ];

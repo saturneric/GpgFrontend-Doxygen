@@ -20,12 +20,6 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Subkey\+Generate\+Dialog\+:
 \includegraphics[width=350pt]{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Signals}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_acca1d633219d245edba9135c80a90610}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_acca1d633219d245edba9135c80a90610}} 
-void {\bfseries Signal\+Sub\+Key\+Generated} ()
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,7 +60,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a4a5b77fb90
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a10b30ea96e819657053c1d5752024547}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a10b30ea96e819657053c1d5752024547}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} {\bfseries key\+\_\+}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+key\+\_\+info\+\_\+}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+key\+\_\+info\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab11f7f3e24f855d690f6f7d820ed7479}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab11f7f3e24f855d690f6f7d820ed7479}} 
 QGroup\+Box $\ast$ {\bfseries key\+\_\+usage\+\_\+group\+\_\+box\+\_\+} \{\}
@@ -92,17 +86,11 @@ QCheck\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDial
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}} 
 QCheck\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a001803152c0e5bd9de7c7dd04cef8ad4}{no\+\_\+pass\+\_\+phrase\+\_\+check\+\_\+box\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Checkbox, if key should expire. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a9cbb5bcf775a873a0d866a9aa0a5acd0}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a9cbb5bcf775a873a0d866a9aa0a5acd0}} 
-QLine\+Edit $\ast$ {\bfseries passphrase\+\_\+edit\+\_\+} \{\}
-\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}} 
 std\+::vector$<$ QCheck\+Box $\ast$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a5d67b8ed68062ef127ad92986a98e95a}{key\+\_\+usage\+\_\+check\+\_\+boxes\+\_\+}}
 \begin{DoxyCompactList}\small\item\em ENCR, SIGN, CERT, AUTH. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a06ae254026e0be902d28bb005a91fe0c}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a06ae254026e0be902d28bb005a91fe0c}} 
 QDate\+Time {\bfseries max\+\_\+date\+\_\+time\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab7a4af76a1d56ad401274ecad80d16c5}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_ab7a4af76a1d56ad401274ecad80d16c5}} 
-bool {\bfseries use\+\_\+pinentry\+\_\+} = false
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -127,7 +115,7 @@ Construct a new Subkey Generate Dialog object.
 \end{DoxyParams}
 
 
-References button\+\_\+box\+\_\+, create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box(), error\+\_\+label\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Lookup\+Settings(), refresh\+\_\+widgets\+\_\+state(), and set\+\_\+signal\+\_\+slot().
+References button\+\_\+box\+\_\+, create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), create\+\_\+key\+\_\+usage\+\_\+group\+\_\+box(), error\+\_\+label\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), refresh\+\_\+widgets\+\_\+state(), and set\+\_\+signal\+\_\+slot().
 
 
 
@@ -276,7 +264,7 @@ check all line edits for false entries. Show error, when there is one, otherwise
 
 create error message
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Reset\+Temp\+Cache\+Value(), and Gpg\+Frontend\+::\+Core\+Common\+Util\+::\+Set\+Temp\+Cache\+Value().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), date\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+UI\+::\+UISignal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera().
 
 
 
@@ -300,16 +288,16 @@ Referenced by set\+\_\+signal\+\_\+slot().
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a3caed2c7bcce5850c338de956dfaecfa}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a3caed2c7bcce5850c338de956dfaecfa}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a07f308978206feafd3c7fe7e7436b16f}\label{classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog_a07f308978206feafd3c7fe7e7436b16f}} 
 \index{GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}!gen\_key\_info\_@{gen\_key\_info\_}}
 \index{gen\_key\_info\_@{gen\_key\_info\_}!GpgFrontend::UI::SubkeyGenerateDialog@{GpgFrontend::UI::SubkeyGenerateDialog}}
 \doxysubsubsection{\texorpdfstring{gen\_key\_info\_}{gen\_key\_info\_}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      std::make\_unique<GenKeyInfo>(\textcolor{keyword}{true})}
+\DoxyCodeLine{      SecureCreateSharedObject<GenKeyInfo>(\textcolor{keyword}{true})}
 
 \end{DoxyCode}
 

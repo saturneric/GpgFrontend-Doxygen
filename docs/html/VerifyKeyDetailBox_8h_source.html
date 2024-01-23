@@ -87,37 +87,33 @@ $(document).ready(function(){initNavTree('VerifyKeyDetailBox_8h_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef __VERIFYKEYDETAILBOX_H__</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __VERIFYKEYDETAILBOX_H__</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/import_export/KeyServerImportDialog.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/KeyList.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">VerifyKeyDetailBox</a> : <span class="keyword">public</span> QGroupBox {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0">VerifyKeyDetailBox</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&amp; signature, QWidget* parent);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgSignature.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">VerifyKeyDetailBox</a> : <span class="keyword">public</span> QGroupBox {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0">VerifyKeyDetailBox</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&amp; signature, QWidget* parent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> slot_import_form_key_server();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QGridLayout* <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a25b96a986a009d35847f94719ec327c1">create_key_info_grid</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&amp; signature);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a36bf3306b8564b49da04eee1dc653675">   68</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a36bf3306b8564b49da04eee1dc653675">fpr_</a>;  </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __VERIFYKEYDETAILBOX_H__</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgSignature_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgSignature.html">GpgFrontend::GpgSignature</a></div><div class="ttdef"><b>Definition:</b> GpgSignature.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">GpgFrontend::UI::VerifyKeyDetailBox</a></div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.h:40</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_a25b96a986a009d35847f94719ec327c1"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a25b96a986a009d35847f94719ec327c1">GpgFrontend::UI::VerifyKeyDetailBox::create_key_info_grid</a></div><div class="ttdeci">QGridLayout * create_key_info_grid(const GpgSignature &amp;signature)</div><div class="ttdoc">Create a key info grid object.</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.cpp:173</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_a36bf3306b8564b49da04eee1dc653675"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a36bf3306b8564b49da04eee1dc653675">GpgFrontend::UI::VerifyKeyDetailBox::fpr_</a></div><div class="ttdeci">std::string fpr_</div><div class="ttdoc">fingerprint of the key</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.h:68</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_afbbe8e87786cca020c9aa8759eb041a0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0">GpgFrontend::UI::VerifyKeyDetailBox::VerifyKeyDetailBox</a></div><div class="ttdeci">VerifyKeyDetailBox(const GpgSignature &amp;signature, QWidget *parent)</div><div class="ttdoc">Construct a new Verify Key Detail Box object.</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.cpp:36</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> slot_import_form_key_server();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QGridLayout* <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#ae5fee2f307d8f1848a4f687a591f83af">create_key_info_grid</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&amp; signature);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a7d4b0cfcf5af0d4f7b7e121651cdf96d">   66</a></span>&#160;  QString <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a7d4b0cfcf5af0d4f7b7e121651cdf96d">fpr_</a>;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgSignature_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgSignature.html">GpgFrontend::GpgSignature</a></div><div class="ttdef"><b>Definition:</b> GpgSignature.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html">GpgFrontend::UI::VerifyKeyDetailBox</a></div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.h:38</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_a7d4b0cfcf5af0d4f7b7e121651cdf96d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a7d4b0cfcf5af0d4f7b7e121651cdf96d">GpgFrontend::UI::VerifyKeyDetailBox::fpr_</a></div><div class="ttdeci">QString fpr_</div><div class="ttdoc">fingerprint of the key</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.h:66</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_ae5fee2f307d8f1848a4f687a591f83af"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#ae5fee2f307d8f1848a4f687a591f83af">GpgFrontend::UI::VerifyKeyDetailBox::create_key_info_grid</a></div><div class="ttdeci">QGridLayout * create_key_info_grid(const GpgSignature &amp;signature)</div><div class="ttdoc">Create a key info grid object.</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.cpp:170</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_html_afbbe8e87786cca020c9aa8759eb041a0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0">GpgFrontend::UI::VerifyKeyDetailBox::VerifyKeyDetailBox</a></div><div class="ttdeci">VerifyKeyDetailBox(const GpgSignature &amp;signature, QWidget *parent)</div><div class="ttdoc">Construct a new Verify Key Detail Box object.</div><div class="ttdef"><b>Definition:</b> VerifyKeyDetailBox.cpp:39</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

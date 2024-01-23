@@ -87,44 +87,40 @@ $(document).ready(function(){initNavTree('FileReadTask_8h_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_FILEREADTHREAD_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define GPGFRONTEND_FILEREADTHREAD_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/thread/Task.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">   39</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a>(std::string path);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> Run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; signals:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesRead(QByteArray bytes);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesReadEnd();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesReadNext();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::filesystem::path read_file_path_;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QFile target_file_;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> buffer_size_ = 4096;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/thread/Task.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a>(QString path);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classGpgFrontend_1_1UI_1_1FileReadTask.html">FileReadTask</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">int</span> Run() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; signals:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesRead(QByteArray bytes);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesReadEnd();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> SignalFileBytesReadNext();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QString read_file_path_;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QFile target_file_;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QEventLoop looper;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> read_bytes();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> slot_read_bytes();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_FILEREADTHREAD_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:45</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileReadTask_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileReadTask.html">GpgFrontend::UI::FileReadTask</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.h:39</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileReadTask_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileReadTask.html">GpgFrontend::UI::FileReadTask</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.h:40</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

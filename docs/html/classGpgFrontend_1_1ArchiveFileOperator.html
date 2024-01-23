@@ -94,22 +94,163 @@ Collaboration diagram for GpgFrontend::ArchiveFileOperator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1ArchiveFileOperator__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1ArchiveFileOperator_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1ArchiveFileOperator_coll__map" id="aGpgFrontend_1_1ArchiveFileOperator_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,191,127"/>
+<area shape="rect" title=" " alt="" coords="5,5,280,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2ca57d6af2f27560e97430a9eee3505"><td class="memItemLeft" align="right" valign="top"><a id="ae2ca57d6af2f27560e97430a9eee3505"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ListArchive</b> (const std::filesystem::path &amp;archive_path)</td></tr>
-<tr class="separator:ae2ca57d6af2f27560e97430a9eee3505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872fc2bfdd8876d5bf6bc9893ff0d963"><td class="memItemLeft" align="right" valign="top"><a id="a872fc2bfdd8876d5bf6bc9893ff0d963"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateArchive</b> (const std::filesystem::path &amp;base_path, const std::filesystem::path &amp;archive_path, int compress, const std::vector&lt; std::filesystem::path &gt; &amp;files)</td></tr>
-<tr class="separator:a872fc2bfdd8876d5bf6bc9893ff0d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80009defc3c4a94a7180966fb82a0d8"><td class="memItemLeft" align="right" valign="top"><a id="ae80009defc3c4a94a7180966fb82a0d8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractArchive</b> (const std::filesystem::path &amp;archive_path, const std::filesystem::path &amp;base_path)</td></tr>
-<tr class="separator:ae80009defc3c4a94a7180966fb82a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9159da7105707d91ece86e67deead07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ab9159da7105707d91ece86e67deead07">ListArchive</a> (const QString &amp;archive_path)</td></tr>
+<tr class="separator:ab9159da7105707d91ece86e67deead07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c5a68a80b99346ab622f329b4c8f3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">NewArchive2DataExchanger</a> (const QString &amp;target_directory, std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1GFDataExchanger.html">GFDataExchanger</a> &gt;, const OperationCallback &amp;cb)</td></tr>
+<tr class="memdesc:ad8c5a68a80b99346ab622f329b4c8f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Archive object.  <a href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">More...</a><br /></td></tr>
+<tr class="separator:ad8c5a68a80b99346ab622f329b4c8f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0970b9c44e6e0a9bf93af31b8a76575b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#a0970b9c44e6e0a9bf93af31b8a76575b">ExtractArchiveFromDataExchanger</a> (std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1GFDataExchanger.html">GFDataExchanger</a> &gt; fd, const QString &amp;target_path, const OperationCallback &amp;cb)</td></tr>
+<tr class="separator:a0970b9c44e6e0a9bf93af31b8a76575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0970b9c44e6e0a9bf93af31b8a76575b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0970b9c44e6e0a9bf93af31b8a76575b">&#9670;&nbsp;</a></span>ExtractArchiveFromDataExchanger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::ArchiveFileOperator::ExtractArchiveFromDataExchanger </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1GFDataExchanger.html">GFDataExchanger</a> &gt;&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const OperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive_path</td><td></td></tr>
+    <tr><td class="paramname">base_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a6a865c31afb5384811ed69b72c31ad8c">GpgFrontend::RunIOOperaAsync()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14cbffefe515850c3c9453302d7f60a8">GpgFrontend::GpgFileOpera::DecryptArchive()</a>, and <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a0d890d70f943b0f07ab65bb8a907d94d">GpgFrontend::GpgFileOpera::DecryptVerifyArchive()</a>.</p>
+
+</div>
+</div>
+<a id="ab9159da7105707d91ece86e67deead07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9159da7105707d91ece86e67deead07">&#9670;&nbsp;</a></span>ListArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::ArchiveFileOperator::ListArchive </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>archive_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8c5a68a80b99346ab622f329b4c8f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c5a68a80b99346ab622f329b4c8f3c">&#9670;&nbsp;</a></span>NewArchive2DataExchanger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::ArchiveFileOperator::NewArchive2DataExchanger </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target_directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classGpgFrontend_1_1GFDataExchanger.html">GFDataExchanger</a> &gt;&#160;</td>
+          <td class="paramname"><em>exchanger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const OperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a Archive object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base_path</td><td></td></tr>
+    <tr><td class="paramname">archive_path</td><td></td></tr>
+    <tr><td class="paramname">compress</td><td></td></tr>
+    <tr><td class="paramname">files</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a6a865c31afb5384811ed69b72c31ad8c">GpgFrontend::RunIOOperaAsync()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a162aad2008f150356ac60369d5aaeca5">GpgFrontend::GpgFileOpera::EncryptDerectorySymmetric()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#abbb5953b208399cc778faa5dd210a23f">GpgFrontend::GpgFileOpera::EncryptDerectorySymmetricSync()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#ace69ece7bb107e350e1ab5b3ff443657">GpgFrontend::GpgFileOpera::EncryptDirectory()</a>, and <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a28dc2c1570e10a740aeaa80b3755cee3">GpgFrontend::GpgFileOpera::EncryptSignDirectory()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/core/function/<a class="el" href="ArchiveFileOperator_8h_source.html">ArchiveFileOperator.h</a></li>
 <li>src/core/function/ArchiveFileOperator.cpp</li>

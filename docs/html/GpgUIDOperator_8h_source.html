@@ -87,44 +87,41 @@ $(document).ready(function(){initNavTree('GpgUIDOperator_8h_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_UIDOPERATOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_UIDOPERATOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/GpgModel.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgUIDOperator.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgUIDOperator.html">GpgUIDOperator</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgUIDOperator&gt; {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgUIDOperator.html">GpgUIDOperator</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> AddUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> std::string&amp; uid);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> AddUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> std::string&amp; name,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              <span class="keyword">const</span> std::string&amp; comment, <span class="keyword">const</span> std::string&amp; email);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">bool</span> RevUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> std::string&amp; uid);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">bool</span> SetPrimaryUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> std::string&amp; uid);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_ =</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgContext::GetInstance</a>(<a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">SingletonFunctionObject::GetChannel</a>());  </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_UIDOPERATOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgUIDOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgUIDOperator.html">GpgFrontend::GpgUIDOperator</a></div><div class="ttdef"><b>Definition:</b> GpgUIDOperator.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:150</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:251</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static GpgContext &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:172</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_aa99440b9177f5d0c18840f08a40d64b7"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:258</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgContext.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgUIDOperator.html">   39</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgUIDOperator.html">GpgUIDOperator</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgUIDOperator&gt; {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgUIDOperator.html">GpgUIDOperator</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">auto</span> AddUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> QString&amp; uid) -&gt; bool;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">auto</span> AddUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> QString&amp; comment,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              <span class="keyword">const</span> QString&amp; email) -&gt; bool;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">auto</span> RevUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> QString&amp; uid) -&gt; bool;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">auto</span> SetPrimaryUID(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keyword">const</span> QString&amp; uid) -&gt; bool;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_ =</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgContext::GetInstance</a>(<a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">SingletonFunctionObject::GetChannel</a>());  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgUIDOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgUIDOperator.html">GpgFrontend::GpgUIDOperator</a></div><div class="ttdef"><b>Definition:</b> GpgUIDOperator.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a94ee1e1251023610590e675ae3de8bd5"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">auto GetChannel() const -&gt; int</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ac963fee992753970bfb5c81608d4070f"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static auto GetInstance(int channel=GpgFrontend::kGpgFrontendDefaultChannel) -&gt; GpgContext &amp;</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:80</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ad983153cbe3a0c32c123c506e04f31fc"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static auto GetDefaultChannel() -&gt; int</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:131</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,6 +1,6 @@
 var classGpgFrontend_1_1UI_1_1KeyPairOperaTab =
 [
-    [ "KeyPairOperaTab", "classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#aad4e209d7b4eb0ac6623b2f12ce5ecc5", null ],
+    [ "KeyPairOperaTab", "classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#afdfa89db24ac6c3a073e029882a4f2e8", null ],
     [ "CreateOperaMenu", "classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f", null ],
     [ "SignalKeyDatabaseRefresh", "classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#ac6b09219bbf830ce6b2d997aa2bb0c04", null ],
     [ "slot_export_private_key", "classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab", null ],

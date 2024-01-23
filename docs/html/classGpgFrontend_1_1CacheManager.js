@@ -1,16 +1,14 @@
 var classGpgFrontend_1_1CacheManager =
 [
+    [ "Impl", "classGpgFrontend_1_1CacheManager_1_1Impl.html", "classGpgFrontend_1_1CacheManager_1_1Impl" ],
     [ "CacheManager", "classGpgFrontend_1_1CacheManager.html#a311ae4d0cc4f4d9425b44789aea6090a", null ],
-    [ "flush_cache_storage", "classGpgFrontend_1_1CacheManager.html#a2cce51cf81b62dfb10b2195a0375f9b2", null ],
-    [ "get_data_object_key", "classGpgFrontend_1_1CacheManager.html#a9dd86b465c144340312956366b989cee", null ],
-    [ "load_all_cache_storage", "classGpgFrontend_1_1CacheManager.html#a8fdeea326fe6ba46d02ac2b9fbdde58c", null ],
-    [ "load_cache_storage", "classGpgFrontend_1_1CacheManager.html#a6e05751e92f8f0011bfcb755ccbb8003", null ],
-    [ "LoadCache", "classGpgFrontend_1_1CacheManager.html#a1176521fa6f3df1ed760c18af53ebcf5", null ],
-    [ "LoadCache", "classGpgFrontend_1_1CacheManager.html#af1ee53c1ecc4b0835568ef4af34c1595", null ],
-    [ "register_cache_key", "classGpgFrontend_1_1CacheManager.html#ab974c30ff13b899ca647d6ff97f7c34d", null ],
-    [ "SaveCache", "classGpgFrontend_1_1CacheManager.html#af61eef3700ff6a6790a42269b66e20e4", null ],
-    [ "cache_storage_", "classGpgFrontend_1_1CacheManager.html#aec8664877393054794453f56373520cc", null ],
-    [ "drk_key_", "classGpgFrontend_1_1CacheManager.html#a10682dce9d34272f3b99d1abbb48fb0d", null ],
-    [ "key_storage_", "classGpgFrontend_1_1CacheManager.html#af961e0b1f041bac37d5c16929da9d515", null ],
-    [ "m_timer_", "classGpgFrontend_1_1CacheManager.html#af4d6094e1c9fc5487e174ab876925a2b", null ]
+    [ "~CacheManager", "classGpgFrontend_1_1CacheManager.html#a1cb49178670a5f18debac7e59e388610", null ],
+    [ "LoadCache", "classGpgFrontend_1_1CacheManager.html#a8d131df5a66d20a10a8c86c7f7ad0cc4", null ],
+    [ "LoadDurableCache", "classGpgFrontend_1_1CacheManager.html#a3c9be71d8cff25c1b6b103f075ec83f4", null ],
+    [ "LoadDurableCache", "classGpgFrontend_1_1CacheManager.html#a670ccb45bd8c1297f208db133831e742", null ],
+    [ "ResetCache", "classGpgFrontend_1_1CacheManager.html#a5600c892efc29bcf3279fa4d9447d328", null ],
+    [ "ResetDurableCache", "classGpgFrontend_1_1CacheManager.html#a62c3f25d8c897c10acf7dc8faf792906", null ],
+    [ "SaveCache", "classGpgFrontend_1_1CacheManager.html#ac7e6ac02327d98eff60817bde774b872", null ],
+    [ "SaveDurableCache", "classGpgFrontend_1_1CacheManager.html#ac000be202e836c85f505f8d9808e0f89", null ],
+    [ "p_", "classGpgFrontend_1_1CacheManager.html#aa1316b59377eb0fb8c70a13e85e5dec8", null ]
 ];

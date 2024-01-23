@@ -87,37 +87,37 @@ $(document).ready(function(){initNavTree('GpgVerifyResultAnalyse_8h_source.html'
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_GPGVERIFYRESULTANALYSE_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_GPGVERIFYRESULTANALYSE_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;GpgResultAnalyse.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgKeySignature.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgVerifyResultAnalyse</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgResultAnalyse</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;GpgResultAnalyse.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgVerifyResult.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">   39</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgVerifyResultAnalyse</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgResultAnalyse</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgVerifyResultAnalyse</a>(GpgError error, GpgVerifyResult result);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgVerifyResultAnalyse</a>(<a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a> error, <a class="code" href="classGpgFrontend_1_1GpgVerifyResult.html">GpgVerifyResult</a> result);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  gpgme_signature_t GetSignatures() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">auto</span> GetSignatures() <span class="keyword">const</span> -&gt; gpgme_signature_t;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  GpgVerifyResult TakeChargeOfResult();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">auto</span> TakeChargeOfResult() -&gt; <a class="code" href="classGpgFrontend_1_1GpgVerifyResult.html">GpgVerifyResult</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> do_analyse();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> doAnalyse() <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> print_signer(std::stringstream &amp;stream, gpgme_signature_t sign);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">auto</span> print_signer(QTextStream &amp;stream, gpgme_signature_t sign) -&gt; bool;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  GpgError error_;          </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  GpgVerifyResult result_;  </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a> error_;          </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgVerifyResult.html">GpgVerifyResult</a> result_;  </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GPGVERIFYRESULTANALYSE_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgResultAnalyse_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgFrontend::GpgResultAnalyse</a></div><div class="ttdef"><b>Definition:</b> GpgResultAnalyse.h:37</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgVerifyResultAnalyse_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgFrontend::GpgVerifyResultAnalyse</a></div><div class="ttdef"><b>Definition:</b> GpgVerifyResultAnalyse.h:40</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgResultAnalyse_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgResultAnalyse.html">GpgFrontend::GpgResultAnalyse</a></div><div class="ttdef"><b>Definition:</b> GpgResultAnalyse.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgVerifyResultAnalyse_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html">GpgFrontend::GpgVerifyResultAnalyse</a></div><div class="ttdef"><b>Definition:</b> GpgVerifyResultAnalyse.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgVerifyResult_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgVerifyResult.html">GpgFrontend::GpgVerifyResult</a></div><div class="ttdef"><b>Definition:</b> GpgVerifyResult.h:36</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a2470eb154743191c3454203f23d3a2f8"><div class="ttname"><a href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgFrontend::GpgError</a></div><div class="ttdeci">gpgme_error_t GpgError</div><div class="ttdoc">gpgme error</div><div class="ttdef"><b>Definition:</b> GpgTypedef.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,0 +1,70 @@
+\hypertarget{classPinentryConfirm}{}\doxysection{Pinentry\+Confirm Class Reference}
+\label{classPinentryConfirm}\index{PinentryConfirm@{PinentryConfirm}}
+
+
+Inheritance diagram for Pinentry\+Confirm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPinentryConfirm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pinentry\+Confirm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPinentryConfirm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a8a453d73e34231344a300454873c0dae}\label{classPinentryConfirm_a8a453d73e34231344a300454873c0dae}} 
+{\bfseries Pinentry\+Confirm} (Icon icon, const QString \&title, const QString \&text, Standard\+Buttons buttons=No\+Button, QWidget $\ast$parent=nullptr, Qt\+::\+Window\+Flags flags=Qt\+::\+Dialog$\vert$Qt\+::\+MSWindows\+Fixed\+Size\+Dialog\+Hint)
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a68003539c5f5b9cf9a6d8dc97903a899}\label{classPinentryConfirm_a68003539c5f5b9cf9a6d8dc97903a899}} 
+void {\bfseries set\+Timeout} (std\+::chrono\+::seconds timeout)
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a9b3bcfcf554c6dc196f8056208780a58}\label{classPinentryConfirm_a9b3bcfcf554c6dc196f8056208780a58}} 
+std\+::chrono\+::seconds {\bfseries timeout} () const
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a5fbdb755a738ebaaf65dce842a7c6ba9}\label{classPinentryConfirm_a5fbdb755a738ebaaf65dce842a7c6ba9}} 
+bool {\bfseries timed\+Out} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_ac5b3c5a55dc7dc9c54184cd7c074f81c}\label{classPinentryConfirm_ac5b3c5a55dc7dc9c54184cd7c074f81c}} 
+void {\bfseries show\+Event} (QShow\+Event $\ast$event) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_af12822b4d3aac6c2b7a6ca92701afa66}\label{classPinentryConfirm_af12822b4d3aac6c2b7a6ca92701afa66}} 
+void {\bfseries slot\+Timeout} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a749f17aa58fb16bccd5e049886f5aa6f}\label{classPinentryConfirm_a749f17aa58fb16bccd5e049886f5aa6f}} 
+void {\bfseries accessibility\+Active\+Changed} (bool active) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a5755322d4e96f27060a6b8df2c392986}\label{classPinentryConfirm_a5755322d4e96f27060a6b8df2c392986}} 
+QTimer {\bfseries \+\_\+timer}
+\item 
+\mbox{\Hypertarget{classPinentryConfirm_a699d9295a0f943c78c18f9f5cdfae062}\label{classPinentryConfirm_a699d9295a0f943c78c18f9f5cdfae062}} 
+bool {\bfseries \+\_\+timed\+\_\+out} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/pinentry/pinentryconfirm.\+h\item 
+src/pinentry/pinentryconfirm.\+cpp\end{DoxyCompactItemize}

@@ -1,13 +1,9 @@
 <map id="GpgFrontend::UI::ListedKeyServerTestTask" name="GpgFrontend::UI::ListedKeyServerTestTask">
-<area shape="rect" id="node1" title=" " alt="" coords="251,952,458,1132"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="128,517,317,903"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,300,80,377"/>
-<area shape="rect" id="node4" title=" " alt="" coords="104,300,197,377"/>
-<area shape="rect" id="node5" title=" " alt="" coords="222,300,309,377"/>
-<area shape="rect" id="node6" title=" " alt="" coords="196,145,335,237"/>
-<area shape="rect" id="node7" title=" " alt="" coords="333,300,555,377"/>
-<area shape="rect" id="node8" title=" " alt="" coords="365,153,523,230"/>
-<area shape="rect" id="node9" title=" " alt="" coords="509,5,547,83"/>
-<area shape="rect" id="node11" title=" " alt="" coords="547,153,677,230"/>
-<area shape="rect" id="node10" title=" " alt="" coords="513,401,711,493"/>
+<area shape="rect" id="node1" title=" " alt="" coords="114,631,321,811"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="35,285,197,568"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,145,80,223"/>
+<area shape="rect" id="node4" title=" " alt="" coords="104,145,197,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="221,381,419,473"/>
+<area shape="rect" id="node6" title=" " alt="" coords="255,145,385,223"/>
+<area shape="rect" id="node7" title=" " alt="" coords="301,5,339,83"/>
 </map>

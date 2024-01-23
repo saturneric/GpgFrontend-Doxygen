@@ -1,11 +1,6 @@
 <map id="GpgFrontend::UI::KeyServerSearchTask" name="GpgFrontend::UI::KeyServerSearchTask">
-<area shape="rect" id="node1" title=" " alt="" coords="193,904,394,1055"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="109,469,299,855"/>
-<area shape="rect" id="node3" title=" " alt="" coords="123,300,197,377"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,300,99,377"/>
-<area shape="rect" id="node5" title=" " alt="" coords="222,300,309,377"/>
-<area shape="rect" id="node6" title=" " alt="" coords="196,145,335,237"/>
-<area shape="rect" id="node7" title=" " alt="" coords="333,300,555,377"/>
-<area shape="rect" id="node8" title=" " alt="" coords="365,153,523,230"/>
-<area shape="rect" id="node9" title=" " alt="" coords="425,5,463,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,461,207,641"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="25,131,187,413"/>
+<area shape="rect" id="node3" title=" " alt="" coords="15,5,90,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="114,5,207,83"/>
 </map>

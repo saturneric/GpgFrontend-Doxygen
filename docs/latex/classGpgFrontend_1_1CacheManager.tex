@@ -20,52 +20,38 @@ Collaboration diagram for Gpg\+Frontend\+::Cache\+Manager\+:
 \includegraphics[height=550pt]{classGpgFrontend_1_1CacheManager__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_1_1Impl}{Impl}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a311ae4d0cc4f4d9425b44789aea6090a}{Cache\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a311ae4d0cc4f4d9425b44789aea6090a}{Cache\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\begin{DoxyCompactList}\small\item\em Construct a new Cache Manager object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a1cb49178670a5f18debac7e59e388610}\label{classGpgFrontend_1_1CacheManager_a1cb49178670a5f18debac7e59e388610}} 
+\mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a1cb49178670a5f18debac7e59e388610}{$\sim$\+Cache\+Manager}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the Cache Manager object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_ac7e6ac02327d98eff60817bde774b872}{Save\+Cache}} (const QString \&key, QString value)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af61eef3700ff6a6790a42269b66e20e4}\label{classGpgFrontend_1_1CacheManager_af61eef3700ff6a6790a42269b66e20e4}} 
-void {\bfseries Save\+Cache} (std\+::string key, const nlohmann\+::json \&value, bool flush=false)
+void \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_ac000be202e836c85f505f8d9808e0f89}{Save\+Durable\+Cache}} (const QString \&key, const QJson\+Document \&value, bool flush=false)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a1176521fa6f3df1ed760c18af53ebcf5}\label{classGpgFrontend_1_1CacheManager_a1176521fa6f3df1ed760c18af53ebcf5}} 
-nlohmann\+::json {\bfseries Load\+Cache} (std\+::string key)
+auto \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a8d131df5a66d20a10a8c86c7f7ad0cc4}{Load\+Cache}} (const QString \&key) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af1ee53c1ecc4b0835568ef4af34c1595}\label{classGpgFrontend_1_1CacheManager_af1ee53c1ecc4b0835568ef4af34c1595}} 
-nlohmann\+::json {\bfseries Load\+Cache} (std\+::string key, nlohmann\+::json default\+\_\+value)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
+auto \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a3c9be71d8cff25c1b6b103f075ec83f4}{Load\+Durable\+Cache}} (const QString \&key) -\/$>$ QJson\+Document
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a9dd86b465c144340312956366b989cee}\label{classGpgFrontend_1_1CacheManager_a9dd86b465c144340312956366b989cee}} 
-std\+::string {\bfseries get\+\_\+data\+\_\+object\+\_\+key} (std\+::string key)
+auto \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a670ccb45bd8c1297f208db133831e742}{Load\+Durable\+Cache}} (const QString \&key, QJson\+Document default\+\_\+value) -\/$>$ QJson\+Document
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a6e05751e92f8f0011bfcb755ccbb8003}\label{classGpgFrontend_1_1CacheManager_a6e05751e92f8f0011bfcb755ccbb8003}} 
-nlohmann\+::json {\bfseries load\+\_\+cache\+\_\+storage} (std\+::string key, nlohmann\+::json default\+\_\+value)
+void \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a5600c892efc29bcf3279fa4d9447d328}{Reset\+Cache}} (const QString \&key)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a8fdeea326fe6ba46d02ac2b9fbdde58c}\label{classGpgFrontend_1_1CacheManager_a8fdeea326fe6ba46d02ac2b9fbdde58c}} 
-void {\bfseries load\+\_\+all\+\_\+cache\+\_\+storage} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a2cce51cf81b62dfb10b2195a0375f9b2}\label{classGpgFrontend_1_1CacheManager_a2cce51cf81b62dfb10b2195a0375f9b2}} 
-void {\bfseries flush\+\_\+cache\+\_\+storage} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_ab974c30ff13b899ca647d6ff97f7c34d}\label{classGpgFrontend_1_1CacheManager_ab974c30ff13b899ca647d6ff97f7c34d}} 
-void {\bfseries register\+\_\+cache\+\_\+key} (std\+::string key)
+auto \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_a62c3f25d8c897c10acf7dc8faf792906}{Reset\+Durable\+Cache}} (const QString \&key) -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_aec8664877393054794453f56373520cc}\label{classGpgFrontend_1_1CacheManager_aec8664877393054794453f56373520cc}} 
-\mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Thread\+Safe\+Map}}$<$ std\+::string, nlohmann\+::json $>$ {\bfseries cache\+\_\+storage\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af961e0b1f041bac37d5c16929da9d515}\label{classGpgFrontend_1_1CacheManager_af961e0b1f041bac37d5c16929da9d515}} 
-nlohmann\+::json {\bfseries key\+\_\+storage\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_af4d6094e1c9fc5487e174ab876925a2b}\label{classGpgFrontend_1_1CacheManager_af4d6094e1c9fc5487e174ab876925a2b}} 
-QTimer $\ast$ {\bfseries m\+\_\+timer\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a10682dce9d34272f3b99d1abbb48fb0d}\label{classGpgFrontend_1_1CacheManager_a10682dce9d34272f3b99d1abbb48fb0d}} 
-const std\+::string {\bfseries drk\+\_\+key\+\_\+} = \char`\"{}\+\_\+\+\_\+cache\+\_\+manage\+\_\+data\+\_\+register\+\_\+key\+\_\+list\char`\"{}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_aa1316b59377eb0fb8c70a13e85e5dec8}\label{classGpgFrontend_1_1CacheManager_aa1316b59377eb0fb8c70a13e85e5dec8}} 
+Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CacheManager_1_1Impl}{Impl}} $>$ {\bfseries p\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -75,23 +61,122 @@ const std\+::string {\bfseries drk\+\_\+key\+\_\+} = \char`\"{}\+\_\+\+\_\+cache
 \index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!CacheManager@{CacheManager}}
 \index{CacheManager@{CacheManager}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
 \doxysubsubsection{\texorpdfstring{CacheManager()}{CacheManager()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Cache\+Manager\+::\+Cache\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Cache\+Manager\+::\+Cache\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
-Copyright (C) 2021 Saturneric
 
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Construct a new Cache Manager object. 
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
 
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a8d131df5a66d20a10a8c86c7f7ad0cc4}\label{classGpgFrontend_1_1CacheManager_a8d131df5a66d20a10a8c86c7f7ad0cc4}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!LoadCache@{LoadCache}}
+\index{LoadCache@{LoadCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{LoadCache()}{LoadCache()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Cache\+Manager\+::\+Load\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key }\end{DoxyParamCaption}) -\/$>$ QString}
 
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a3c9be71d8cff25c1b6b103f075ec83f4}\label{classGpgFrontend_1_1CacheManager_a3c9be71d8cff25c1b6b103f075ec83f4}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!LoadDurableCache@{LoadDurableCache}}
+\index{LoadDurableCache@{LoadDurableCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{LoadDurableCache()}{LoadDurableCache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Cache\+Manager\+::\+Load\+Durable\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key }\end{DoxyParamCaption}) -\/$>$ QJson\+Document}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QJson\+Document 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a670ccb45bd8c1297f208db133831e742}\label{classGpgFrontend_1_1CacheManager_a670ccb45bd8c1297f208db133831e742}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!LoadDurableCache@{LoadDurableCache}}
+\index{LoadDurableCache@{LoadDurableCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{LoadDurableCache()}{LoadDurableCache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Cache\+Manager\+::\+Load\+Durable\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key,  }\item[{QJson\+Document}]{default\+\_\+value }\end{DoxyParamCaption}) -\/$>$ QJson\+Document}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em default\+\_\+value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QJson\+Document 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a5600c892efc29bcf3279fa4d9447d328}\label{classGpgFrontend_1_1CacheManager_a5600c892efc29bcf3279fa4d9447d328}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!ResetCache@{ResetCache}}
+\index{ResetCache@{ResetCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{ResetCache()}{ResetCache()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Cache\+Manager\+::\+Reset\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_a62c3f25d8c897c10acf7dc8faf792906}\label{classGpgFrontend_1_1CacheManager_a62c3f25d8c897c10acf7dc8faf792906}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!ResetDurableCache@{ResetDurableCache}}
+\index{ResetDurableCache@{ResetDurableCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{ResetDurableCache()}{ResetDurableCache()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Cache\+Manager\+::\+Reset\+Durable\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key }\end{DoxyParamCaption}) -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_ac7e6ac02327d98eff60817bde774b872}\label{classGpgFrontend_1_1CacheManager_ac7e6ac02327d98eff60817bde774b872}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!SaveCache@{SaveCache}}
+\index{SaveCache@{SaveCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{SaveCache()}{SaveCache()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Cache\+Manager\+::\+Save\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key,  }\item[{QString}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1CacheManager_ac000be202e836c85f505f8d9808e0f89}\label{classGpgFrontend_1_1CacheManager_ac000be202e836c85f505f8d9808e0f89}} 
+\index{GpgFrontend::CacheManager@{GpgFrontend::CacheManager}!SaveDurableCache@{SaveDurableCache}}
+\index{SaveDurableCache@{SaveDurableCache}!GpgFrontend::CacheManager@{GpgFrontend::CacheManager}}
+\doxysubsubsection{\texorpdfstring{SaveDurableCache()}{SaveDurableCache()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Cache\+Manager\+::\+Save\+Durable\+Cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key,  }\item[{const QJson\+Document \&}]{value,  }\item[{bool}]{flush = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+{\em flush} & \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

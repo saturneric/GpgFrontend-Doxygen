@@ -22,7 +22,8 @@ var classGpgFrontend_1_1UI_1_1KeyGenDialog =
     [ "error_label_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a8e500e3153558364fe5ba5b8bab6f219", null ],
     [ "error_messages_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a03a8e1c8f2c1887732d36a346185bb40", null ],
     [ "expire_check_box_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a196ef707a7a2cfd717f69c8a5bc3278d", null ],
-    [ "gen_key_info_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a104dcf364452ab5fe019f51c6db7f7d9", null ],
+    [ "gen_key_info_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a5449b095b469dee115263bf25e2d545c", null ],
+    [ "gen_subkey_info_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a3bc7d37fbb93b1c6ce55a5bb3a17ab38", null ],
     [ "key_size_spin_box_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#aaa9b55830c39ce854e4ede26d916a844", null ],
     [ "key_type_combo_box_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a281bfffd99fcb600d07c4604bf2a8841", null ],
     [ "key_usage_check_boxes_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#ab0ccac068670a3e28ce78ff87a40b2fc", null ],
@@ -30,7 +31,5 @@ var classGpgFrontend_1_1UI_1_1KeyGenDialog =
     [ "max_date_time_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#aff131dd6f7178c63ef2e2f85d30828a2", null ],
     [ "name_edit_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a7ed095cce29c658741ae0520049010c0", null ],
     [ "no_pass_phrase_check_box_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a52bf44c05cf1280ba13369ae2c33c60a", null ],
-    [ "passphrase_edit_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a43850a47ceaeb2e693027a0672bf77f7", null ],
-    [ "re_email_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a8ecbb5721d5a2a0f85fd7b362f62bf83", null ],
-    [ "use_pinentry_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a60bff34ff0a5ed5aa60fc280c3420716", null ]
+    [ "re_email_", "classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a8ecbb5721d5a2a0f85fd7b362f62bf83", null ]
 ];

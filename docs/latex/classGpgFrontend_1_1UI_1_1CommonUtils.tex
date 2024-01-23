@@ -23,13 +23,13 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Common\+Utils\+:
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aadd249062c24f9b7fc545c03296bbb83}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aadd249062c24f9b7fc545c03296bbb83}} 
-using {\bfseries Import\+Callback\+Functiopn} = std\+::function$<$ void(const std\+::string \&, const std\+::string \&, size\+\_\+t, size\+\_\+t)$>$
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a90722cc0708fdb2637052151c5141a80}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a90722cc0708fdb2637052151c5141a80}} 
+using {\bfseries Import\+Callback\+Functiopn} = std\+::function$<$ void(const QString \&, const QString \&, size\+\_\+t, size\+\_\+t)$>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}{Slot\+Import\+Keys}} (QWidget $\ast$parent, const std\+::string \&in\+\_\+buffer)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_ae730cf0ee73379186f082f29a90a2f94}{Slot\+Import\+Keys}} (QWidget $\ast$parent, const QString \&in\+\_\+buffer)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}{Slot\+Import\+Key\+From\+File}} (QWidget $\ast$parent)
 \item 
@@ -41,7 +41,7 @@ static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_afc845c1c37487c99f78d8e66f6874f6d}{Slot\+Execute\+Gpg\+Command}} (const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}{Slot\+Execute\+Command}} (const std\+::string \&cmd, const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a39fbfbc9ab39581330a02d9cb54e6e4d}{Slot\+Execute\+Command}} (const QString \&cmd, const QString\+List \&arguments, const std\+::function$<$ void(QProcess $\ast$)$>$ \&interact\+\_\+func)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a86d3827a2e5df17747c58d00b2f5fe6e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a86d3827a2e5df17747c58d00b2f5fe6e}} 
 void {\bfseries Slot\+Restart\+Application} (int)
@@ -52,18 +52,12 @@ void {\bfseries Slot\+Restart\+Application} (int)
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc9e91daa0d3c4ee4141ba4bd8726bb}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc9e91daa0d3c4ee4141ba4bd8726bb}} 
 void {\bfseries Signal\+Key\+Status\+Updated} ()
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a4d2f10c2089c2bfb23be5c1f573af31f}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a4d2f10c2089c2bfb23be5c1f573af31f}} 
-void {\bfseries Signal\+Gnupg\+Not\+Install} ()
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_ac114b2cd508cfbf988e251a36f51762e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_ac114b2cd508cfbf988e251a36f51762e}} 
+void {\bfseries Signal\+Bad\+Gnupg\+Env} (QString)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a1abc83bba95579aa94d0870181991a28}{Signal\+Key\+Database\+Refresh\+Done}} ()
 \begin{DoxyCompactList}\small\item\em emit when the key database is refreshed \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a1e7dff5252d5ec77c8450ad356891ebb}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a1e7dff5252d5ec77c8450ad356891ebb}} 
-void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a80350e7fe1cd696004c9aa2a43eab184}} 
-void {\bfseries Signal\+User\+Input\+Passphrase\+Done} (QString passphrase)
-\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aa69efbcd684e9a99cc5c47c23de8d38c}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aa69efbcd684e9a99cc5c47c23de8d38c}} 
 void {\bfseries Signal\+Restart\+Application} (int)
 \end{DoxyCompactItemize}
@@ -76,7 +70,7 @@ void {\bfseries Signal\+Restart\+Application} (int)
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_abb25baa60d62d6842028e174f7e341fe}\label{classGpgFrontend_1_1UI_1_1CommonUtils_abb25baa60d62d6842028e174f7e341fe}} 
 bool {\bfseries is\+Application\+Need\+Restart} ()
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a570b6d08ceb683f950e94d648bf334ea}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a570b6d08ceb683f950e94d648bf334ea}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_ac2b48eecb23d985b6fe1e2ac70f3be29}\label{classGpgFrontend_1_1UI_1_1CommonUtils_ac2b48eecb23d985b6fe1e2ac70f3be29}} 
 bool {\bfseries Key\+Existsin\+Favourite\+List} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a7a7b01b992c465ded7e25e54e3ebacec}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a7a7b01b992c465ded7e25e54e3ebacec}} 
@@ -84,20 +78,29 @@ void {\bfseries Add\+Key2\+Favourtie} (const \mbox{\hyperlink{classGpgFrontend_1
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a0cf35e9d02ff3464cb83435a61d060c2}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a0cf35e9d02ff3464cb83435a61d060c2}} 
 void {\bfseries Remove\+Key\+From\+Favourite} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a8d91f95f655e3442ea3b04a691255db0}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a8d91f95f655e3442ea3b04a691255db0}} 
+void {\bfseries Import\+Key\+From\+Key\+Server} (const Key\+Id\+Args\+List \&)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}{Get\+Instance}} ()
-\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a530688726ce3a319de8d4bdcc291db87}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_adc42d12a58717dee86d8bd59b1cacf82}{Wait\+For\+Opera}} (QWidget $\ast$parent, const QString \&, const Opera\+Waiting\+Cb \&)
+\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a2eb678ee01d3b6e1c0d8f90345712644}{Raise\+Message\+Box}} (QWidget $\ast$parent, \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err)
+\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc0d817e2083cc262f4fb2c65027442}{Raise\+Failure\+Message\+Box}} (QWidget $\ast$parent, \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err)
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils_ab4ac26378d6a07757720163eb4b1cb0e}{slot\+\_\+update\+\_\+key\+\_\+status}} ()
 \begin{DoxyCompactList}\small\item\em update the key status when signal is emitted \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aef14c7eaaf8b73bd1b8f845a5484748e}} 
-void {\bfseries slot\+\_\+popup\+\_\+passphrase\+\_\+input\+\_\+dialog} ()
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_acd55e73b89ba12b52887b1f8ab41d614}\label{classGpgFrontend_1_1UI_1_1CommonUtils_acd55e73b89ba12b52887b1f8ab41d614}} 
+void {\bfseries slot\+\_\+update\+\_\+key\+\_\+from\+\_\+server\+\_\+finished} (bool, QString, QByte\+Array, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Import\+Information}} $>$)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -114,11 +117,11 @@ static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1Comm
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}\label{classGpgFrontend_1_1UI_1_1CommonUtils_aed529969f54e39e3f9da14ae6dd00d49}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a530688726ce3a319de8d4bdcc291db87}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a530688726ce3a319de8d4bdcc291db87}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!GetInstance@{GetInstance}}
 \index{GetInstance@{GetInstance}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
 \doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}} $\ast$ Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -129,13 +132,51 @@ Common\+Utils$\ast$
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::refresh\+\_\+keys\+\_\+from\+\_\+key\+\_\+server(), Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a95cd625a2e0e74ee4d564843c6d16791}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc0d817e2083cc262f4fb2c65027442}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a4bc0d817e2083cc262f4fb2c65027442}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!RaiseFailureMessageBox@{RaiseFailureMessageBox}}
+\index{RaiseFailureMessageBox@{RaiseFailureMessageBox}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{RaiseFailureMessageBox()}{RaiseFailureMessageBox()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Failure\+Message\+Box (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error2\+Err\+Code(), and Gpg\+Frontend\+::\+Describe\+Gpg\+Err\+Code().
+
+
+
+Referenced by Raise\+Message\+Box().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a2eb678ee01d3b6e1c0d8f90345712644}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a2eb678ee01d3b6e1c0d8f90345712644}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!RaiseMessageBox@{RaiseMessageBox}}
+\index{RaiseMessageBox@{RaiseMessageBox}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{RaiseMessageBox()}{RaiseMessageBox()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error2\+Err\+Code(), Gpg\+Frontend\+::\+Describe\+Gpg\+Err\+Code(), and Raise\+Failure\+Message\+Box().
+
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), and Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a39fbfbc9ab39581330a02d9cb54e6e4d}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a39fbfbc9ab39581330a02d9cb54e6e4d}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotExecuteCommand@{SlotExecuteCommand}}
 \index{SlotExecuteCommand@{SlotExecuteCommand}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
 \doxysubsubsection{\texorpdfstring{SlotExecuteCommand}{SlotExecuteCommand}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmd,  }\item[{const QString\+List \&}]{arguments,  }\item[{const std\+::function$<$ void(QProcess $\ast$)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Execute\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{cmd,  }\item[{const QString\+List \&}]{arguments,  }\item[{const std\+::function$<$ void(QProcess $\ast$)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -157,10 +198,6 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), Gpg
 {\em interact\+\_\+func} & \\
 \hline
 \end{DoxyParams}
-
-
-References Gpg\+Frontend\+::\+Gpg\+Info\+::\+App\+Path, Gpg\+Frontend\+::\+Gpg\+Context\+::\+Get\+Info(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Get\+Instance().
-
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a0c8bf56fc5371cd2c5e9d2a0f67bf72a}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromClipboard@{SlotImportKeyFromClipboard}}
 \index{SlotImportKeyFromClipboard@{SlotImportKeyFromClipboard}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
@@ -178,7 +215,7 @@ References Slot\+Import\+Keys().
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a057526790f6b2f6288c3a35322c34d8d}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromFile@{SlotImportKeyFromFile}}
@@ -193,11 +230,11 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File(), and Slot\+Import\+Keys().
+References Gpg\+Frontend\+::\+Read\+File(), and Slot\+Import\+Keys().
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a35a47fc31b81b6c4f5899e8ab5c4c51a}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}}
@@ -216,7 +253,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings(), and Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}\label{classGpgFrontend_1_1UI_1_1CommonUtils_af1b3538d3119c8564e83c7661f73f6ea}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeyFromKeyServer@{SlotImportKeyFromKeyServer}}
@@ -231,13 +268,13 @@ References Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check(), Gpg\+Fronte
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+actions().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}\label{classGpgFrontend_1_1UI_1_1CommonUtils_a3bc26cc1e0f00f0ce2f95c0b6c8778d8}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_ae730cf0ee73379186f082f29a90a2f94}\label{classGpgFrontend_1_1UI_1_1CommonUtils_ae730cf0ee73379186f082f29a90a2f94}} 
 \index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!SlotImportKeys@{SlotImportKeys}}
 \index{SlotImportKeys@{SlotImportKeys}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
 \doxysubsubsection{\texorpdfstring{SlotImportKeys}{SlotImportKeys}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Keys (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const std\+::string \&}]{in\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Keys (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString \&}]{in\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -248,11 +285,26 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::create\+\_\+actions(), and
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance().
 
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit(), Slot\+Import\+Key\+From\+Clipboard(), and Slot\+Import\+Key\+From\+File().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1CommonUtils_adc42d12a58717dee86d8bd59b1cacf82}\label{classGpgFrontend_1_1UI_1_1CommonUtils_adc42d12a58717dee86d8bd59b1cacf82}} 
+\index{GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}!WaitForOpera@{WaitForOpera}}
+\index{WaitForOpera@{WaitForOpera}!GpgFrontend::UI::CommonUtils@{GpgFrontend::UI::CommonUtils}}
+\doxysubsubsection{\texorpdfstring{WaitForOpera()}{WaitForOpera()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString \&}]{waiting\+\_\+dialog\+\_\+title,  }\item[{const Opera\+Waiting\+Cb \&}]{opera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Directory\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Verify().
 
 
 

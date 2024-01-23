@@ -51,8 +51,6 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyUIDSignDialog}{Key\+UIDSign\
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1QuitDialog}{Quit\+Dialog}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1AdvancedTab}{Advanced\+Tab}}
-\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1AppearanceTab}{Appearance\+Tab}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog}{Settings\+Dialog}}
@@ -77,7 +75,15 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenPage}{Key\+Gen\+Page}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ConclusionPage}{Conclusion\+Page}}
 \item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GenerateRevokeCertification}{Generate\+Revoke\+Certification}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1RaisePinentry}{Raise\+Pinentry}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SetOwnerTrustLevel}{Set\+Owner\+Trust\+Level}}
+\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GpgFrontendApplication}{Gpg\+Frontend\+Application}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralWindowState}{General\+Window\+State}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralMainWindow}{General\+Main\+Window}}
 \item 
@@ -85,12 +91,16 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyMgmt}{Key\+Mgmt}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow}{Main\+Window}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignalStation}{Signal\+Station}}
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CacheObject}{Cache\+Object}}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1AppearanceSO}{Appearance\+SO}}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyServerSO}{Key\+Server\+SO}}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1WindowStateSO}{Window\+State\+SO}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}}
-\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store settings for the application securely. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store data for the application securely. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportTask}{Key\+Server\+Import\+Task}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask}{Key\+Server\+Search\+Task}}
@@ -99,11 +109,13 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask}{Listed
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask}{Proxy\+Connection\+Test\+Task}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VersionCheckTask}{Version\+Check\+Task}}
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UISignalStation}{UISignal\+Station}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1CommonUtils}{Common\+Utils}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FilePage}{File\+Page}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileTreeView}{File\+Tree\+View}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FindWidget}{Find\+Widget}}
 \begin{DoxyCompactList}\small\item\em Class for handling the find widget shown at buttom of a textedit-\/page. \end{DoxyCompactList}\item 
@@ -129,6 +141,15 @@ class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TOFUInfoPage}{TOFUInfo\+Page}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox}{Verify\+Key\+Detail\+Box}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a87d1b5ad9d36cb3c11de8a7797289206}\label{namespaceGpgFrontend_1_1UI_a87d1b5ad9d36cb3c11de8a7797289206}} 
+using {\bfseries Opera\+Waiting\+Hd} = std\+::function$<$ void()$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_aa7a11bdd5c8cacecaad2c6aa40f45b7f}\label{namespaceGpgFrontend_1_1UI_aa7a11bdd5c8cacecaad2c6aa40f45b7f}} 
+using {\bfseries Opera\+Waiting\+Cb} = const std\+::function$<$ void(Opera\+Waiting\+Hd)$>$
+\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -141,52 +162,52 @@ enum \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_acbaebd342a317b1f067942e5144bb0
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a834d05cb1918760d1a9c5a67aa3a7da3}\label{namespaceGpgFrontend_1_1UI_a834d05cb1918760d1a9c5a67aa3a7da3}} 
-void {\bfseries init\+\_\+logging\+\_\+system} ()
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ae9881d62765f780fc58a8397f7382b96}\label{namespaceGpgFrontend_1_1UI_ae9881d62765f780fc58a8397f7382b96}} 
+auto {\bfseries Find\+Top\+Most\+Window} (QWidget $\ast$fallback) -\/$>$ QWidget $\ast$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}\label{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}} 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a157c74e50283da9ed554cf7bf90afbee}{init\+\_\+locale}} ()
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a0d55f868e5aeeddb2fa4b8f7002ca38e}\label{namespaceGpgFrontend_1_1UI_a0d55f868e5aeeddb2fa4b8f7002ca38e}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a0d55f868e5aeeddb2fa4b8f7002ca38e}{Init\+Locale}} ()
 \begin{DoxyCompactList}\small\item\em setup the locale and load the translations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a09b25a9e0be03c914c1d3d480fb6cdf0}\label{namespaceGpgFrontend_1_1UI_a09b25a9e0be03c914c1d3d480fb6cdf0}} 
+void {\bfseries Wait\+Env\+Checking\+Process} ()
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a9a7d9a69168c833186f6a7b1accdd050}\label{namespaceGpgFrontend_1_1UI_a9a7d9a69168c833186f6a7b1accdd050}} 
+void {\bfseries Pre\+Init\+Gpg\+Frontend\+UI} ()
+\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}\label{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}} 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_ab0311557c1d7bde9c56cbca85fefa6ad}{Init\+Gpg\+Frontend\+UI}} (QApplication $\ast$)
 \begin{DoxyCompactList}\small\item\em init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}\label{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}} 
-int \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a9e2d085812ef8fdd6f19ea94a241b4da}{Run\+Gpg\+Frontend\+UI}} (QApplication $\ast$)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ac53b300d580dcb56188aaed68c3de755}\label{namespaceGpgFrontend_1_1UI_ac53b300d580dcb56188aaed68c3de755}} 
+auto \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_ac53b300d580dcb56188aaed68c3de755}{Run\+Gpg\+Frontend\+UI}} (QApplication $\ast$) -\/$>$ int
 \begin{DoxyCompactList}\small\item\em run main window \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a75ce194e83468251e5f443cedebd8e3c}\label{namespaceGpgFrontend_1_1UI_a75ce194e83468251e5f443cedebd8e3c}} 
-void {\bfseries Init\+UILogging\+System} ()
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_afaa12ab40cfca0bc8c9c8e2d24116a9d}\label{namespaceGpgFrontend_1_1UI_afaa12ab40cfca0bc8c9c8e2d24116a9d}} 
-void {\bfseries Shutdown\+UILogging\+System} ()
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}\label{namespaceGpgFrontend_1_1UI_a4dea2a35c4dbc3868317beb26d4508fc}} 
-bool {\bfseries path\+\_\+pre\+\_\+check} (QWidget $\ast$parent, const QString \&path)
-\item 
-bool \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a57d0a4dba23cd3d9b42222d40c710dc1}{process\+\_\+tarball\+\_\+into\+\_\+directory}} (QWidget $\ast$parent, std\+::filesystem\+::path \&path)
-\begin{DoxyCompactList}\small\item\em convert directory into tarball \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}{process\+\_\+directory\+\_\+into\+\_\+tarball}} (QWidget $\ast$parent, QString \&path)
-\begin{DoxyCompactList}\small\item\em convert tarball into directory \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a590a26051105940a6d6e0743b147e281}{show\+\_\+verify\+\_\+details}} (QWidget $\ast$parent, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, Gpg\+Error error, const Gpg\+Verify\+Result \&verify\+\_\+result)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a8c56bcc19761bbc2fc3134878d9bae37}\label{namespaceGpgFrontend_1_1UI_a8c56bcc19761bbc2fc3134878d9bae37}} 
+void GPGFRONTEND\+\_\+\+UI\+\_\+\+EXPORT \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a8c56bcc19761bbc2fc3134878d9bae37}{Destroy\+Gpg\+Frontend\+UI}} ()
+\begin{DoxyCompactList}\small\item\em init the \mbox{\hyperlink{namespaceGpgFrontend_1_1UI}{UI}} library \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a590a26051105940a6d6e0743b147e281}{show\+\_\+verify\+\_\+details}} (QWidget $\ast$parent, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} error, const \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}} \&verify\+\_\+result)
 \item 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a9ab218dde057182cb4911c4792acd925}{import\+\_\+unknown\+\_\+key\+\_\+from\+\_\+keyserver}} (QWidget $\ast$parent, const \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse}{Gpg\+Verify\+Result\+Analyse}} \&verify\+\_\+res)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a204156a333cde4f705f0ace91cd3d333}{refresh\+\_\+info\+\_\+board}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, int status, const std\+::string \&report\+\_\+text)
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_aec857a0eb461ce71c4535f5d71e7aaee}{refresh\+\_\+info\+\_\+board}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, int status, const QString \&report\+\_\+text)
 \item 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}{process\+\_\+result\+\_\+analyse}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit}{Text\+Edit}} $\ast$edit, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse)
 \item 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a60b5887adabc74015700795dc3c07ae9}{process\+\_\+result\+\_\+analyse}} (\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1TextEdit}{Text\+Edit}} $\ast$edit, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$info\+\_\+board, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+a, const \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse}{Gpg\+Result\+Analyse}} \&result\+\_\+analyse\+\_\+b)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}{process\+\_\+operation}} (QWidget $\ast$parent, const std\+::string \&waiting\+\_\+title, const Thread\+::\+Task\+::\+Task\+Runnable func, const Thread\+::\+Task\+::\+Task\+Callback callback, Thread\+::\+Task\+::\+Data\+Object\+Ptr data\+\_\+object)
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_a288897c6062a7820a3a1c5faba7cfeac}{process\+\_\+operation}} (QWidget $\ast$parent, const QString \&waiting\+\_\+title, const Thread\+::\+Task\+::\+Task\+Runnable func, const Thread\+::\+Task\+::\+Task\+Callback callback, Data\+Object\+Ptr data\+\_\+object)
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1UI_aa346bd199cecc61b15ef406728b58770}{import\+\_\+key\+\_\+from\+\_\+keyserver}} (QWidget $\ast$parent, const std\+::string \&key\+\_\+id, const std\+::string \&key\+\_\+server)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ab4cb453500419f2b3e391664d2c67487}\label{namespaceGpgFrontend_1_1UI_ab4cb453500419f2b3e391664d2c67487}} 
+auto {\bfseries Binary\+To\+String} (const QByte\+Array \&source) -\/$>$ QString
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}\label{namespaceGpgFrontend_1_1UI_a4f6c9bfe9ecb5da132f2f6d2ba7eeb80}} 
-std\+::string {\bfseries binary\+\_\+to\+\_\+string} (const std\+::string \&source)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_ab3c7c7a20a7e1d1c560082770ba28882}\label{namespaceGpgFrontend_1_1UI_ab3c7c7a20a7e1d1c560082770ba28882}} 
+constexpr size\+\_\+t {\bfseries k\+Buffer\+Size} = 8192
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Copyright (C) 2021 Saturneric
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
@@ -198,21 +219,7 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
@@ -226,21 +233,6 @@ SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later
 Enumeration for the status of Verify label 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_aa346bd199cecc61b15ef406728b58770}\label{namespaceGpgFrontend_1_1UI_aa346bd199cecc61b15ef406728b58770}} 
-\index{GpgFrontend::UI@{GpgFrontend::UI}!import\_key\_from\_keyserver@{import\_key\_from\_keyserver}}
-\index{import\_key\_from\_keyserver@{import\_key\_from\_keyserver}!GpgFrontend::UI@{GpgFrontend::UI}}
-\doxysubsubsection{\texorpdfstring{import\_key\_from\_keyserver()}{import\_key\_from\_keyserver()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::import\+\_\+key\+\_\+from\+\_\+keyserver (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const std\+::string \&}]{key\+\_\+id,  }\item[{const std\+::string \&}]{key\+\_\+server }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em parent} & \\
-\hline
-{\em key\+\_\+id} & \\
-\hline
-{\em key\+\_\+server} & \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a9ab218dde057182cb4911c4792acd925}\label{namespaceGpgFrontend_1_1UI_a9ab218dde057182cb4911c4792acd925}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!import\_unknown\_key\_from\_keyserver@{import\_unknown\_key\_from\_keyserver}}
 \index{import\_unknown\_key\_from\_keyserver@{import\_unknown\_key\_from\_keyserver}!GpgFrontend::UI@{GpgFrontend::UI}}
@@ -258,40 +250,11 @@ Enumeration for the status of Verify label
 
 References Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Get\+Signatures().
 
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
-
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}\label{namespaceGpgFrontend_1_1UI_a5470872566b41ce628f64039f34b964a}} 
-\index{GpgFrontend::UI@{GpgFrontend::UI}!process\_directory\_into\_tarball@{process\_directory\_into\_tarball}}
-\index{process\_directory\_into\_tarball@{process\_directory\_into\_tarball}!GpgFrontend::UI@{GpgFrontend::UI}}
-\doxysubsubsection{\texorpdfstring{process\_directory\_into\_tarball()}{process\_directory\_into\_tarball()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::process\+\_\+directory\+\_\+into\+\_\+tarball (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{QString \&}]{path }\end{DoxyParamCaption})}
-
-
-
-convert tarball into directory 
-
-
-\begin{DoxyParams}{Parameters}
-{\em parent} & parent widget \\
-\hline
-{\em path} & the tarball to be converted \\
-\hline
-\end{DoxyParams}
-
-
-References process\+\_\+operation().
-
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign().
-
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}\label{namespaceGpgFrontend_1_1UI_a3c971eeb5c620d08d6d92f0752ceaf9f}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a288897c6062a7820a3a1c5faba7cfeac}\label{namespaceGpgFrontend_1_1UI_a288897c6062a7820a3a1c5faba7cfeac}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_operation@{process\_operation}}
 \index{process\_operation@{process\_operation}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{process\_operation()}{process\_operation()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const std\+::string \&}]{waiting\+\_\+title,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Runnable}]{func,  }\item[{Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task\+Callback}]{callback = {\ttfamily nullptr},  }\item[{Thread\+::\+Task\+::\+Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::process\+\_\+operation (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString \&}]{waiting\+\_\+title,  }\item[{Thread\+::\+Task\+::\+Task\+Runnable}]{func,  }\item[{Thread\+::\+Task\+::\+Task\+Callback}]{callback = {\ttfamily nullptr},  }\item[{Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -304,11 +267,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt()
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Signal\+Task\+End().
-
-
-
-Referenced by process\+\_\+directory\+\_\+into\+\_\+tarball(), process\+\_\+tarball\+\_\+into\+\_\+directory(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}\label{namespaceGpgFrontend_1_1UI_abd3c7c636954390d52150b4e6d38e1b3}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_result\_analyse@{process\_result\_analyse}}
@@ -331,7 +290,7 @@ References Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Associate\+Tab\+W
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Directory\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Verify().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a60b5887adabc74015700795dc3c07ae9}\label{namespaceGpgFrontend_1_1UI_a60b5887adabc74015700795dc3c07ae9}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!process\_result\_analyse@{process\_result\_analyse}}
@@ -354,39 +313,11 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gp
 
 References Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Associate\+Tab\+Widget(), Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Result\+Report(), Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Status(), and refresh\+\_\+info\+\_\+board().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a57d0a4dba23cd3d9b42222d40c710dc1}\label{namespaceGpgFrontend_1_1UI_a57d0a4dba23cd3d9b42222d40c710dc1}} 
-\index{GpgFrontend::UI@{GpgFrontend::UI}!process\_tarball\_into\_directory@{process\_tarball\_into\_directory}}
-\index{process\_tarball\_into\_directory@{process\_tarball\_into\_directory}!GpgFrontend::UI@{GpgFrontend::UI}}
-\doxysubsubsection{\texorpdfstring{process\_tarball\_into\_directory()}{process\_tarball\_into\_directory()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+UI\+::process\+\_\+tarball\+\_\+into\+\_\+directory (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption})}
-
-
-
-convert directory into tarball 
-
-
-\begin{DoxyParams}{Parameters}
-{\em parent} & parent widget \\
-\hline
-{\em path} & the directory to be converted \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
-
-References process\+\_\+operation().
-
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify().
-
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_a204156a333cde4f705f0ace91cd3d333}\label{namespaceGpgFrontend_1_1UI_a204156a333cde4f705f0ace91cd3d333}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1UI_aec857a0eb461ce71c4535f5d71e7aaee}\label{namespaceGpgFrontend_1_1UI_aec857a0eb461ce71c4535f5d71e7aaee}} 
 \index{GpgFrontend::UI@{GpgFrontend::UI}!refresh\_info\_board@{refresh\_info\_board}}
 \index{refresh\_info\_board@{refresh\_info\_board}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{refresh\_info\_board()}{refresh\_info\_board()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::refresh\+\_\+info\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$}]{info\+\_\+board,  }\item[{int}]{status,  }\item[{const std\+::string \&}]{report\+\_\+text }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::refresh\+\_\+info\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$}]{info\+\_\+board,  }\item[{int}]{status,  }\item[{const QString \&}]{report\+\_\+text }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -409,7 +340,7 @@ Referenced by process\+\_\+result\+\_\+analyse().
 \index{GpgFrontend::UI@{GpgFrontend::UI}!show\_verify\_details@{show\_verify\_details}}
 \index{show\_verify\_details@{show\_verify\_details}!GpgFrontend::UI@{GpgFrontend::UI}}
 \doxysubsubsection{\texorpdfstring{show\_verify\_details()}{show\_verify\_details()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::show\+\_\+verify\+\_\+details (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$}]{info\+\_\+board,  }\item[{Gpg\+Error}]{error,  }\item[{const Gpg\+Verify\+Result \&}]{verify\+\_\+result }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::show\+\_\+verify\+\_\+details (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1InfoBoardWidget}{Info\+Board\+Widget}} $\ast$}]{info\+\_\+board,  }\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{error,  }\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}} \&}]{verify\+\_\+result }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -425,8 +356,4 @@ Referenced by process\+\_\+result\+\_\+analyse().
 
 
 References Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Add\+Optional\+Action(), and Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Reset\+Option\+Actions\+Menu().
-
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
 

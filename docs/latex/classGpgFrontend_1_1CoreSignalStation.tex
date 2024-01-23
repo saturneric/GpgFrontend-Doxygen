@@ -23,30 +23,36 @@ Collaboration diagram for Gpg\+Frontend\+::Core\+Signal\+Station\+:
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_aac91061a578d4afe738495b5c6b3883f}\label{classGpgFrontend_1_1CoreSignalStation_aac91061a578d4afe738495b5c6b3883f}} 
-void {\bfseries Signal\+User\+Input\+Passphrase\+Done} (QString passparase)
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a476c864c0f7a4954fcd0fb557aa25f3d}\label{classGpgFrontend_1_1CoreSignalStation_a476c864c0f7a4954fcd0fb557aa25f3d}} 
+void {\bfseries Signal\+Need\+User\+Input\+Passphrase} (QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgPassphraseContext}{Gpg\+Passphrase\+Context}} $>$)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_af30315ec5659ca05557b4f21f5297b08}\label{classGpgFrontend_1_1CoreSignalStation_af30315ec5659ca05557b4f21f5297b08}} 
-void {\bfseries Signal\+Need\+User\+Input\+Passphrase} ()
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a6d7959debd4f9f46c0a120e390cdac98}\label{classGpgFrontend_1_1CoreSignalStation_a6d7959debd4f9f46c0a120e390cdac98}} 
+void {\bfseries Signal\+User\+Input\+Passphrase\+Callback} (QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgPassphraseContext}{Gpg\+Passphrase\+Context}} $>$)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a31eaac77745c110193b859ae13b97611}\label{classGpgFrontend_1_1CoreSignalStation_a31eaac77745c110193b859ae13b97611}} 
+void {\bfseries Signal\+Bad\+Gnupg\+Env} (QString)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a971aec2ee52e15c9b59c80f88ab91165}\label{classGpgFrontend_1_1CoreSignalStation_a971aec2ee52e15c9b59c80f88ab91165}} 
+void {\bfseries Signal\+Good\+Gnupg\+Env} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}{Get\+Instance}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a4ab63c97545b007d2b720c9b59ed1c47}{Get\+Instance}} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $\ast$
 \begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}{\+\_\+instance}} = nullptr
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation_a671214ba506895fa5de6f80acf450d12}{instance}} = nullptr
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}\label{classGpgFrontend_1_1CoreSignalStation_a0c5893909726b919ea733de9906cfb36}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a4ab63c97545b007d2b720c9b59ed1c47}\label{classGpgFrontend_1_1CoreSignalStation_a4ab63c97545b007d2b720c9b59ed1c47}} 
 \index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}!GetInstance@{GetInstance}}
 \index{GetInstance@{GetInstance}!GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
 \doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Gpg\+Frontend\+::\+Core\+Signal\+Station}} $\ast$ Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}}$\ast$\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -57,22 +63,18 @@ Signal\+Station$\ast$
 \end{DoxyReturn}
 
 
-References \+\_\+instance.
-
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Common\+Utils(), Gpg\+Frontend\+::\+Gpg\+Context\+::need\+\_\+user\+\_\+input\+\_\+passphrase(), and Gpg\+Frontend\+::\+Gpg\+Context\+::post\+\_\+init\+\_\+ctx().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Common\+Utils(), and Gpg\+Frontend\+::\+UI\+::\+Raise\+Pinentry\+::\+Exec().
 
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}\label{classGpgFrontend_1_1CoreSignalStation_a36c316a2a76fdf7c3e74dfa5f8ed6b15}} 
-\index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}!\_instance@{\_instance}}
-\index{\_instance@{\_instance}!GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
-\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Gpg\+Frontend\+::\+Core\+Signal\+Station}} $>$ Gpg\+Frontend\+::\+Core\+Signal\+Station\+::\+\_\+instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+\mbox{\Hypertarget{classGpgFrontend_1_1CoreSignalStation_a671214ba506895fa5de6f80acf450d12}\label{classGpgFrontend_1_1CoreSignalStation_a671214ba506895fa5de6f80acf450d12}} 
+\index{GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}!instance@{instance}}
+\index{instance@{instance}!GpgFrontend::CoreSignalStation@{GpgFrontend::CoreSignalStation}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Gpg\+Frontend\+::\+Core\+Signal\+Station}} $>$ Gpg\+Frontend\+::\+Core\+Signal\+Station\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-Copyright (C) 2021 Saturneric
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
@@ -84,13 +86,9 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
-
-Referenced by Get\+Instance().
-
-
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

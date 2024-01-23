@@ -87,10 +87,10 @@ $(document).ready(function(){initNavTree('KeyUploadDialog_8h_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_KEYUPLOADWIDGET_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_KEYUPLOADWIDGET_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/model/GFBuffer.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('KeyUploadDialog_8h_source.html',''); i
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; <span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">slot_upload_key_to_server</a>(<span class="keyword">const</span> GpgFrontend::ByteArray&amp; keys_data);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#ae72c3bbd04e1bfbf142d806d50bbe617">slot_upload_key_to_server</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> slot_upload_finished();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -117,13 +117,12 @@ $(document).ready(function(){initNavTree('KeyUploadDialog_8h_source.html',''); i
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_KEYUPLOADWIDGET_H</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GFBuffer_html"><div class="ttname"><a href="classGpgFrontend_1_1GFBuffer.html">GpgFrontend::GFBuffer</a></div><div class="ttdef"><b>Definition:</b> GFBuffer.h:36</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html">GpgFrontend::UI::KeyUploadDialog</a></div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.h:42</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a0f724649ca953b888f07d69c97fe45b6"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a0f724649ca953b888f07d69c97fe45b6">GpgFrontend::UI::KeyUploadDialog::slot_upload_key_to_server</a></div><div class="ttdeci">void slot_upload_key_to_server(const GpgFrontend::ByteArray &amp;keys_data)</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a51f63e30f26f7923def91519d347c0cf"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf">GpgFrontend::UI::KeyUploadDialog::KeyUploadDialog</a></div><div class="ttdeci">KeyUploadDialog(const KeyIdArgsListPtr &amp;keys_ids, QWidget *parent)</div><div class="ttdoc">Construct a new Key Upload Dialog object.</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:40</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_a51f63e30f26f7923def91519d347c0cf"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf">GpgFrontend::UI::KeyUploadDialog::KeyUploadDialog</a></div><div class="ttdeci">KeyUploadDialog(const KeyIdArgsListPtr &amp;keys_ids, QWidget *parent)</div><div class="ttdoc">Construct a new Key Upload Dialog object.</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:43</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyUploadDialog_html_ae72c3bbd04e1bfbf142d806d50bbe617"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#ae72c3bbd04e1bfbf142d806d50bbe617">GpgFrontend::UI::KeyUploadDialog::slot_upload_key_to_server</a></div><div class="ttdeci">void slot_upload_key_to_server(const GFBuffer &amp;)</div><div class="ttdef"><b>Definition:</b> KeyUploadDialog.cpp:94</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

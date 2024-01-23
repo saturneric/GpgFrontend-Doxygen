@@ -1,26 +1,5 @@
 var searchData=
 [
-  ['keydetailsdialog_814',['KeyDetailsDialog',['../classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html',1,'GpgFrontend::UI']]],
-  ['keygendialog_815',['KeyGenDialog',['../classGpgFrontend_1_1UI_1_1KeyGenDialog.html',1,'GpgFrontend::UI']]],
-  ['keygenpage_816',['KeyGenPage',['../classGpgFrontend_1_1UI_1_1KeyGenPage.html',1,'GpgFrontend::UI']]],
-  ['keyimportdetaildialog_817',['KeyImportDetailDialog',['../classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html',1,'GpgFrontend::UI']]],
-  ['keylist_818',['KeyList',['../classGpgFrontend_1_1UI_1_1KeyList.html',1,'GpgFrontend::UI']]],
-  ['keylistcolumn_819',['KeyListColumn',['../structGpgFrontend_1_1UI_1_1KeyListColumn.html',1,'GpgFrontend::UI']]],
-  ['keylistrow_820',['KeyListRow',['../structGpgFrontend_1_1UI_1_1KeyListRow.html',1,'GpgFrontend::UI']]],
-  ['keymenuability_821',['KeyMenuAbility',['../structGpgFrontend_1_1UI_1_1KeyMenuAbility.html',1,'GpgFrontend::UI']]],
-  ['keymgmt_822',['KeyMgmt',['../classGpgFrontend_1_1UI_1_1KeyMgmt.html',1,'GpgFrontend::UI']]],
-  ['keynewuiddialog_823',['KeyNewUIDDialog',['../classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html',1,'GpgFrontend::UI']]],
-  ['keypackageoperator_824',['KeyPackageOperator',['../classGpgFrontend_1_1KeyPackageOperator.html',1,'GpgFrontend']]],
-  ['keypairdetailtab_825',['KeyPairDetailTab',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html',1,'GpgFrontend::UI']]],
-  ['keypairoperatab_826',['KeyPairOperaTab',['../classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html',1,'GpgFrontend::UI']]],
-  ['keypairsubkeytab_827',['KeyPairSubkeyTab',['../classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html',1,'GpgFrontend::UI']]],
-  ['keypairuidtab_828',['KeyPairUIDTab',['../classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html',1,'GpgFrontend::UI']]],
-  ['keyserverimportdialog_829',['KeyServerImportDialog',['../classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html',1,'GpgFrontend::UI']]],
-  ['keyserverimporttask_830',['KeyServerImportTask',['../classGpgFrontend_1_1UI_1_1KeyServerImportTask.html',1,'GpgFrontend::UI']]],
-  ['keyserversearchtask_831',['KeyServerSearchTask',['../classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html',1,'GpgFrontend::UI']]],
-  ['keyservertab_832',['KeyserverTab',['../classGpgFrontend_1_1UI_1_1KeyserverTab.html',1,'GpgFrontend::UI']]],
-  ['keysetexpiredatedialog_833',['KeySetExpireDateDialog',['../classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html',1,'GpgFrontend::UI']]],
-  ['keytable_834',['KeyTable',['../structGpgFrontend_1_1UI_1_1KeyTable.html',1,'GpgFrontend::UI']]],
-  ['keyuidsigndialog_835',['KeyUIDSignDialog',['../classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html',1,'GpgFrontend::UI']]],
-  ['keyuploaddialog_836',['KeyUploadDialog',['../classGpgFrontend_1_1UI_1_1KeyUploadDialog.html',1,'GpgFrontend::UI']]]
+  ['listedkeyservertesttask_953',['ListedKeyServerTestTask',['../classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html',1,'GpgFrontend::UI']]],
+  ['loggermanager_954',['LoggerManager',['../classGpgFrontend_1_1LoggerManager.html',1,'GpgFrontend']]]
 ];

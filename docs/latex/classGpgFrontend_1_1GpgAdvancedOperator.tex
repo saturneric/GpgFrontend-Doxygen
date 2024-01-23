@@ -2,90 +2,72 @@
 \label{classGpgFrontend_1_1GpgAdvancedOperator}\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 
 
-Inheritance diagram for Gpg\+Frontend\+::Gpg\+Advanced\+Operator\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1GpgAdvancedOperator__inherit__graph}
-\end{center}
-\end{figure}
-
-
 Collaboration diagram for Gpg\+Frontend\+::Gpg\+Advanced\+Operator\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1GpgAdvancedOperator__coll__graph}
+\includegraphics[width=236pt]{classGpgFrontend_1_1GpgAdvancedOperator__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}{Gpg\+Advanced\+Operator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
-\begin{DoxyCompactList}\small\item\em Construct a new Basic Operator object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a71eb87ed095754ee1e9fa79125240f3e}{Clear\+Gpg\+Password\+Cache}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_ab1678720e30e957ad56e14b683cdedd1}{Clear\+Gpg\+Password\+Cache}} (Operation\+Callback)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a6876b6ee63ff7147c274e4f9538d29ce}{Reload\+Gpg\+Components}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_acac2e0b60aec9e02b7dd5be6d37f0b31}{Reload\+Gpg\+Components}} (Operation\+Callback)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a5801bf4ea7391cbcc60efd2513d41041}{Restart\+Gpg\+Components}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a224daa8424245db4ea6be831ef791f8d}{Restart\+Gpg\+Components}} ()
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a209f6d1d664ab672437198dc10ed8226}{Reset\+Configures}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a62a1e0d0eeef7ecbd43c261b77c393e1}{Reset\+Configures}} (Operation\+Callback)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a07c32ba25cf6153fbc8ee585c4ba377c}{Start\+Gpg\+Agent}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a4af186d06b01ce998e51a42e39e01c86}{Start\+Gpg\+Agent}} (Operation\+Callback)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a46085a11235894deccd312fc259d5078}{Start\+Dirmngr}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a7687d84063c6c1d9d8bc11c617085530}{Start\+Dirmngr}} (Operation\+Callback)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a9313410359ed9cff9ee66fa9b4b095ee}{Start\+Key\+Boxd}} ()
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_ae2b097912eb2c9d97da859c45e7a5bac}{Start\+Key\+Boxd}} (Operation\+Callback)
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}{ctx\+\_\+}}
-\begin{DoxyCompactList}\small\item\em Corresponding context. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}\label{classGpgFrontend_1_1GpgAdvancedOperator_a9233156767f1d45272b95decd18241e3}} 
-\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!GpgAdvancedOperator@{GpgAdvancedOperator}}
-\index{GpgAdvancedOperator@{GpgAdvancedOperator}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
-\doxysubsubsection{\texorpdfstring{GpgAdvancedOperator()}{GpgAdvancedOperator()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Gpg\+Advanced\+Operator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-
-
-Construct a new Basic Operator object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em channel} & Channel corresponding to the context \\
-\hline
-\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a71eb87ed095754ee1e9fa79125240f3e}\label{classGpgFrontend_1_1GpgAdvancedOperator_a71eb87ed095754ee1e9fa79125240f3e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_ab1678720e30e957ad56e14b683cdedd1}\label{classGpgFrontend_1_1GpgAdvancedOperator_ab1678720e30e957ad56e14b683cdedd1}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!ClearGpgPasswordCache@{ClearGpgPasswordCache}}
 \index{ClearGpgPasswordCache@{ClearGpgPasswordCache}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{ClearGpgPasswordCache()}{ClearGpgPasswordCache()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Clear\+Gpg\+Password\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Clear\+Gpg\+Password\+Cache (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
 
-false 
+false
 \end{DoxyReturn}
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
+
+This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
+
+The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
+
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a6876b6ee63ff7147c274e4f9538d29ce}\label{classGpgFrontend_1_1GpgAdvancedOperator_a6876b6ee63ff7147c274e4f9538d29ce}} 
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_acac2e0b60aec9e02b7dd5be6d37f0b31}\label{classGpgFrontend_1_1GpgAdvancedOperator_acac2e0b60aec9e02b7dd5be6d37f0b31}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!ReloadGpgComponents@{ReloadGpgComponents}}
 \index{ReloadGpgComponents@{ReloadGpgComponents}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{ReloadGpgComponents()}{ReloadGpgComponents()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reload\+Gpg\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reload\+Gpg\+Components (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -94,13 +76,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a209f6d1d664ab672437198dc10ed8226}\label{classGpgFrontend_1_1GpgAdvancedOperator_a209f6d1d664ab672437198dc10ed8226}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a62a1e0d0eeef7ecbd43c261b77c393e1}\label{classGpgFrontend_1_1GpgAdvancedOperator_a62a1e0d0eeef7ecbd43c261b77c393e1}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!ResetConfigures@{ResetConfigures}}
 \index{ResetConfigures@{ResetConfigures}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{ResetConfigures()}{ResetConfigures()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reset\+Configures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reset\+Configures (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -109,13 +91,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a5801bf4ea7391cbcc60efd2513d41041}\label{classGpgFrontend_1_1GpgAdvancedOperator_a5801bf4ea7391cbcc60efd2513d41041}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a224daa8424245db4ea6be831ef791f8d}\label{classGpgFrontend_1_1GpgAdvancedOperator_a224daa8424245db4ea6be831ef791f8d}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!RestartGpgComponents@{RestartGpgComponents}}
 \index{RestartGpgComponents@{RestartGpgComponents}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{RestartGpgComponents()}{RestartGpgComponents()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Restart\+Gpg\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Restart\+Gpg\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -124,13 +106,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync(), and Gpg\+Frontend\+::\+Module\+::\+Upsert\+RTValue().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a46085a11235894deccd312fc259d5078}\label{classGpgFrontend_1_1GpgAdvancedOperator_a46085a11235894deccd312fc259d5078}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a7687d84063c6c1d9d8bc11c617085530}\label{classGpgFrontend_1_1GpgAdvancedOperator_a7687d84063c6c1d9d8bc11c617085530}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!StartDirmngr@{StartDirmngr}}
 \index{StartDirmngr@{StartDirmngr}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{StartDirmngr()}{StartDirmngr()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Dirmngr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Dirmngr (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -139,13 +121,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a07c32ba25cf6153fbc8ee585c4ba377c}\label{classGpgFrontend_1_1GpgAdvancedOperator_a07c32ba25cf6153fbc8ee585c4ba377c}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a4af186d06b01ce998e51a42e39e01c86}\label{classGpgFrontend_1_1GpgAdvancedOperator_a4af186d06b01ce998e51a42e39e01c86}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!StartGpgAgent@{StartGpgAgent}}
 \index{StartGpgAgent@{StartGpgAgent}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{StartGpgAgent()}{StartGpgAgent()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Gpg\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Gpg\+Agent (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -154,13 +136,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a9313410359ed9cff9ee66fa9b4b095ee}\label{classGpgFrontend_1_1GpgAdvancedOperator_a9313410359ed9cff9ee66fa9b4b095ee}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_ae2b097912eb2c9d97da859c45e7a5bac}\label{classGpgFrontend_1_1GpgAdvancedOperator_ae2b097912eb2c9d97da859c45e7a5bac}} 
 \index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!StartKeyBoxd@{StartKeyBoxd}}
 \index{StartKeyBoxd@{StartKeyBoxd}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
 \doxysubsubsection{\texorpdfstring{StartKeyBoxd()}{StartKeyBoxd()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Key\+Boxd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Key\+Boxd (\begin{DoxyParamCaption}\item[{Operation\+Callback}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -169,26 +151,7 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
-
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}\label{classGpgFrontend_1_1GpgAdvancedOperator_a387ad457bb729f340f680d0b743733ad}} 
-\index{GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}!ctx\_@{ctx\_}}
-\index{ctx\_@{ctx\_}!GpgFrontend::GpgAdvancedOperator@{GpgFrontend::GpgAdvancedOperator}}
-\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{= \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
-
-\end{DoxyCode}
-
-
-Corresponding context. 
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync().
 
 
 

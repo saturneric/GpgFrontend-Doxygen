@@ -55,9 +55,6 @@ void {\bfseries Read\+File} ()
 \item 
 bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}{Read\+Done}} () const
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}} 
-bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a1c1c0174ed1ed9c5a90739eafc5c3267}{Will\+Charset\+Change}} () const
-\begin{DoxyCompactList}\small\item\em detect if the charset of the file will change \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba9590e775f42c779c76102e5}{Notify\+File\+Saved}} ()
 \begin{DoxyCompactList}\small\item\em notify the user that the file has been saved. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -67,13 +64,6 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a29b3d63ba95
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a45267bcfc8fc83851894061c0fe2a9c2}{slot\+\_\+format\+\_\+gpg\+\_\+header}} ()
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a184985104f23da8fdf2b9aaf7b27405b}{slot\+\_\+insert\+\_\+text}} (QByte\+Array bytes\+\_\+data)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}{detect\+\_\+encoding}} (const std\+::string \&data)
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eaec76403b12dc6e42df546c}{detect\+\_\+cr\+\_\+lf}} (const std\+::string \&data)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -90,20 +80,8 @@ bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a4f94e9ef788
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a5b8ce290e1b949b56734227e8d42adba}} 
 bool {\bfseries read\+\_\+done\+\_\+} = false
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a43d23c1bcac73b772aa0154151538bbf}} 
-bool {\bfseries binary\+\_\+mode\+\_\+} = false
-\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a010bae8d8d967c8cc81cd42547de5dcb}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a010bae8d8d967c8cc81cd42547de5dcb}} 
 size\+\_\+t {\bfseries read\+\_\+bytes\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aec4ec03dbf1363d1517aa37d160c31e7}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aec4ec03dbf1363d1517aa37d160c31e7}} 
-std\+::string {\bfseries charset\+\_\+name\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ab1108b77925647d1a930e5252fa956b8}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ab1108b77925647d1a930e5252fa956b8}} 
-std\+::string {\bfseries language\+\_\+name\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae756fc49724212d8d9937601a48b436b}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ae756fc49724212d8d9937601a48b436b}} 
-int32\+\_\+t {\bfseries charset\+\_\+confidence\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a0e64bcd36cf90b0eec2f05361c6c6fb3}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a0e64bcd36cf90b0eec2f05361c6c6fb3}} 
 bool {\bfseries is\+\_\+crlf\+\_\+} = false
@@ -131,7 +109,7 @@ Add layout and add plaintextedit
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check(), and full\+\_\+file\+\_\+path\+\_\+.
+References full\+\_\+file\+\_\+path\+\_\+.
 
 
 
@@ -152,40 +130,6 @@ Hide all widgets with the given class\+Name
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+find().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eaec76403b12dc6e42df546c}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_af08be6a1eaec76403b12dc6e42df546c}} 
-\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_cr\_lf@{detect\_cr\_lf}}
-\index{detect\_cr\_lf@{detect\_cr\_lf}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
-\doxysubsubsection{\texorpdfstring{detect\_cr\_lf()}{detect\_cr\_lf()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+cr\+\_\+lf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-\begin{DoxyParams}{Parameters}
-{\em data} & \\
-\hline
-\end{DoxyParams}
-
-
-Referenced by slot\+\_\+insert\+\_\+text().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_a14b7431a786ce59e98576e3680cb9a58}} 
-\index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!detect\_encoding@{detect\_encoding}}
-\index{detect\_encoding@{detect\_encoding}!GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}}
-\doxysubsubsection{\texorpdfstring{detect\_encoding()}{detect\_encoding()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::detect\+\_\+encoding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-\begin{DoxyParams}{Parameters}
-{\em data} & \\
-\hline
-\end{DoxyParams}
-
-
-References Gpg\+Frontend\+::\+Charset\+Operator\+::\+Detect().
-
-
-
-Referenced by slot\+\_\+insert\+\_\+text().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_aff81f0f98a399fa55b6b0ebf2230d4cf}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!GetFilePath@{GetFilePath}}
@@ -209,7 +153,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+curr
 
 Return pointer tp the textedit of the currently activated tab. 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file(), Gpg\+Frontend\+::\+UI\+::\+Find\+Widget\+::set\+\_\+background(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+add\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+clean\+\_\+double\+\_\+line\+\_\+breaks(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+cut\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit(), slot\+\_\+insert\+\_\+text(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::maybe\+\_\+save\+\_\+current\+\_\+tab(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::save\+\_\+file(), Gpg\+Frontend\+::\+UI\+::\+Find\+Widget\+::set\+\_\+background(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+add\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+clean\+\_\+double\+\_\+line\+\_\+breaks(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+cut\+\_\+pgp\+\_\+header(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+import\+\_\+key\+\_\+from\+\_\+edit(), slot\+\_\+insert\+\_\+text(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Verify().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}\label{classGpgFrontend_1_1UI_1_1PlainTextEditorPage_ac1902b063decfeebe7f0908cbfe618ce}} 
 \index{GpgFrontend::UI::PlainTextEditorPage@{GpgFrontend::UI::PlainTextEditorPage}!ReadDone@{ReadDone}}
@@ -289,7 +233,7 @@ References sign\+\_\+marked\+\_\+.
 \end{DoxyParams}
 
 
-References detect\+\_\+cr\+\_\+lf(), detect\+\_\+encoding(), Get\+Text\+Page(), and Signal\+UIBytes\+Displayed().
+References Get\+Text\+Page(), and Signal\+UIBytes\+Displayed().
 
 
 

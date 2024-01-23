@@ -1,4 +1,4 @@
 <map id="GpgFrontend::UI::SettingsObject" name="GpgFrontend::UI::SettingsObject">
-<area shape="rect" id="node1" title="The SettingsObject class This class is used to store settings for the application securely." alt="" coords="5,131,193,281"/>
-<area shape="rect" id="node2" title=" " alt="" coords="38,5,161,83"/>
+<area shape="rect" id="node1" title="The SettingsObject class This class is used to store data for the application securely." alt="" coords="5,131,193,267"/>
+<area shape="rect" id="node2" title=" " alt="" coords="49,5,150,83"/>
 </map>

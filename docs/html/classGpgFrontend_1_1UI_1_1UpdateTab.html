@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1UI_1_1UpdateTab.ht
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1UI_1_1UpdateTab-members.html">List of all members</a>  </div>
@@ -126,15 +127,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a833c5f709607032bac530aacf389a117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a833c5f709607032bac530aacf389a117">UpdateTab</a> (QWidget *parent=nullptr)</td></tr>
 <tr class="memdesc:a833c5f709607032bac530aacf389a117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Update Tab object.  <a href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a833c5f709607032bac530aacf389a117">More...</a><br /></td></tr>
 <tr class="separator:a833c5f709607032bac530aacf389a117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7329657135624fc42ad80d821e11befe"><td class="memItemLeft" align="right" valign="top"><a id="a7329657135624fc42ad80d821e11befe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a7329657135624fc42ad80d821e11befe">getLatestVersion</a> ()</td></tr>
-<tr class="memdesc:a7329657135624fc42ad80d821e11befe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Latest Version object. <br /></td></tr>
-<tr class="separator:a7329657135624fc42ad80d821e11befe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab6dd89d73fe58cb614a4ba951d7858d7"><td class="memItemLeft" align="right" valign="top"><a id="ab6dd89d73fe58cb614a4ba951d7858d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *event) override</td></tr>
+<tr class="separator:ab6dd89d73fe58cb614a4ba951d7858d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
-<tr class="memitem:a1003bd969ecbc5deba940e39436968f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a1003bd969ecbc5deba940e39436968f4">slot_show_version_status</a> (const <a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html">SoftwareVersion</a> &amp;version)</td></tr>
-<tr class="separator:a1003bd969ecbc5deba940e39436968f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a504b9657b0f553b7c5a6997892a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a29a504b9657b0f553b7c5a6997892a24">slot_show_version_status</a> ()</td></tr>
+<tr class="separator:a29a504b9657b0f553b7c5a6997892a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -224,8 +227,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>current_version_</
 
 </div>
 </div>
-<a id="a1003bd969ecbc5deba940e39436968f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1003bd969ecbc5deba940e39436968f4">&#9670;&nbsp;</a></span>slot_show_version_status</h2>
+<a id="a29a504b9657b0f553b7c5a6997892a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a504b9657b0f553b7c5a6997892a24">&#9670;&nbsp;</a></span>slot_show_version_status</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,8 +239,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>current_version_</
         <tr>
           <td class="memname">void GpgFrontend::UI::UpdateTab::slot_show_version_status </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html">SoftwareVersion</a> &amp;&#160;</td>
-          <td class="paramname"><em>version</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -253,10 +255,6 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>current_version_</
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663">GpgFrontend::UI::SoftwareVersion::CurrentVersionReleased()</a>, <a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#abc311fd0e15da1a04b995587ca74e1a6">GpgFrontend::UI::SoftwareVersion::NeedUpgrade()</a>, and <a class="el" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b">GpgFrontend::UI::SoftwareVersion::VersionWithDrawn()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a7329657135624fc42ad80d821e11befe">getLatestVersion()</a>.</p>
 
 </div>
 </div>

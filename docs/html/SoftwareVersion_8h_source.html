@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/struct/SoftwareVersion.h Source File</title>
+<title>GpgFrontend Project: src/module/integrated/version_checking_module/SoftwareVersion.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,51 +87,47 @@ $(document).ready(function(){initNavTree('SoftwareVersion_8h_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_SOFTWAREVERSION_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_SOFTWAREVERSION_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;boost/date_time.hpp&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html">SoftwareVersion</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::string latest_version;          </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::string current_version;         </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> latest_prerelease = <span class="keyword">false</span>;      </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> latest_draft = <span class="keyword">false</span>;           </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> current_prerelease = <span class="keyword">false</span>;     </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">bool</span> current_draft = <span class="keyword">false</span>;          </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> load_info_done = <span class="keyword">false</span>;         </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> current_version_found = <span class="keyword">false</span>;  </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string publish_date;            </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::string release_note;            </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#aec79eefdc19c90e046cb48bca347ff1c">   57</a></span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#aec79eefdc19c90e046cb48bca347ff1c">InfoValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> load_info_done; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#abc311fd0e15da1a04b995587ca74e1a6">NeedUpgrade</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b">VersionWithDrawn</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663">CurrentVersionReleased</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#ae1989b6a34c76103f4bd06f35686d536">version_compare</a>(<span class="keyword">const</span> std::string&amp; a, <span class="keyword">const</span> std::string&amp; b);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_SOFTWAREVERSION_H</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html">GpgFrontend::UI::SoftwareVersion</a></div><div class="ttdef"><b>Definition:</b> SoftwareVersion.h:39</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html_a43663cd2d086299a0f0304f5bde9c663"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a43663cd2d086299a0f0304f5bde9c663">GpgFrontend::UI::SoftwareVersion::CurrentVersionReleased</a></div><div class="ttdeci">bool CurrentVersionReleased() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:99</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html_a587a3fdb047a15c3771c2af5eebdbf4b"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b">GpgFrontend::UI::SoftwareVersion::VersionWithDrawn</a></div><div class="ttdeci">bool VersionWithDrawn() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:94</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html_abc311fd0e15da1a04b995587ca74e1a6"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#abc311fd0e15da1a04b995587ca74e1a6">GpgFrontend::UI::SoftwareVersion::NeedUpgrade</a></div><div class="ttdeci">bool NeedUpgrade() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:83</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html_ae1989b6a34c76103f4bd06f35686d536"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#ae1989b6a34c76103f4bd06f35686d536">GpgFrontend::UI::SoftwareVersion::version_compare</a></div><div class="ttdeci">static int version_compare(const std::string &amp;a, const std::string &amp;b)</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:31</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1UI_1_1SoftwareVersion_html_aec79eefdc19c90e046cb48bca347ff1c"><div class="ttname"><a href="structGpgFrontend_1_1UI_1_1SoftwareVersion.html#aec79eefdc19c90e046cb48bca347ff1c">GpgFrontend::UI::SoftwareVersion::InfoValid</a></div><div class="ttdeci">bool InfoValid() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.h:57</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;module/sdk/GpgFrontendModuleSDK.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule.html">GpgFrontend::Module::Integrated::VersionCheckingModule</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html">SoftwareVersion</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QString latest_version;                              </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  QString current_version;                             </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> latest_prerelease_version_from_remote = <span class="keyword">false</span>;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> latest_draft_from_remote = <span class="keyword">false</span>;               </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> current_version_is_a_prerelease = <span class="keyword">false</span>;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> current_version_is_drafted = <span class="keyword">false</span>;             </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">bool</span> loading_done = <span class="keyword">false</span>;                           </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> current_version_publish_in_remote = <span class="keyword">false</span>;      </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QString publish_date;                                </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QString release_note;                                </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#ade7a3d92e0ba644b9a984d9e3db0f662">   56</a></span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#ade7a3d92e0ba644b9a984d9e3db0f662">InfoValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> loading_done; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a9798cca1278fe49687ff833805a80817">NeedUpgrade</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a13f5326b54ff1f36dd75e6f9241ec9ee">VersionWithdrawn</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a5ae334032a49f4a2ffd1968196544369">CurrentVersionReleased</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> version_compare(<span class="keyword">const</span> QString&amp; a, <span class="keyword">const</span> QString&amp; b);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}  <span class="comment">// namespace GpgFrontend::Module::Integrated::VersionCheckingModule</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule.html">GpgFrontend::Module::Integrated::VersionCheckingModule</a></div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:34</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion_html"><div class="ttname"><a href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html">GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion</a></div><div class="ttdef"><b>Definition:</b> SoftwareVersion.h:38</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion_html_a13f5326b54ff1f36dd75e6f9241ec9ee"><div class="ttname"><a href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a13f5326b54ff1f36dd75e6f9241ec9ee">GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion::VersionWithdrawn</a></div><div class="ttdeci">bool VersionWithdrawn() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:49</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion_html_a5ae334032a49f4a2ffd1968196544369"><div class="ttname"><a href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a5ae334032a49f4a2ffd1968196544369">GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion::CurrentVersionReleased</a></div><div class="ttdeci">bool CurrentVersionReleased() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:54</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion_html_a9798cca1278fe49687ff833805a80817"><div class="ttname"><a href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a9798cca1278fe49687ff833805a80817">GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion::NeedUpgrade</a></div><div class="ttdeci">bool NeedUpgrade() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.cpp:36</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion_html_ade7a3d92e0ba644b9a984d9e3db0f662"><div class="ttname"><a href="structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#ade7a3d92e0ba644b9a984d9e3db0f662">GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion::InfoValid</a></div><div class="ttdeci">bool InfoValid() const</div><div class="ttdef"><b>Definition:</b> SoftwareVersion.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_77b5d71c36a073b86db318490f5560d0.html">struct</a></li><li class="navelem"><b>SoftwareVersion.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_922ff8bb4e557a886cc34b5df365a8cd.html">module</a></li><li class="navelem"><a class="el" href="dir_6134fdad5cf45b4a93a25c3cdc6cf97b.html">integrated</a></li><li class="navelem"><a class="el" href="dir_8b80fd0d33261a07f888ccfa3aa16d46.html">version_checking_module</a></li><li class="navelem"><b>SoftwareVersion.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

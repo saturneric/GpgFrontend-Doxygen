@@ -87,42 +87,39 @@ $(document).ready(function(){initNavTree('QuitDialog_8h_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef __QUITDIALOG_H__</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __QUITDIALOG_H__</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1QuitDialog.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html">QuitDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a60419bf8e817db25128c2f941fc42a3d">QuitDialog</a>(QWidget* parent, <span class="keyword">const</span> QHash&lt;int, QString&gt;&amp; unsavedDocs);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a4c4bc06d1d168f01569ed83dcfd50d55">IsDiscarded</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QList&lt;int&gt; <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#aec364c38056b6d92c172f8cdfb5f8e82">GetTabIdsToSave</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> slot_my_discard();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">bool</span> discarded_;            </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QTableWidget* m_fileList_;  </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __QUITDIALOG_H__</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1QuitDialog.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html">QuitDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a60419bf8e817db25128c2f941fc42a3d">QuitDialog</a>(QWidget* parent, <span class="keyword">const</span> QHash&lt;int, QString&gt;&amp; unsavedDocs);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a20ce6f0be2ccd0509a0e7362e8de7abe">IsDiscarded</a>() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> <a class="code" href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a1c75f69ffa1ca45a3c28af0800871a6e">GetTabIdsToSave</a>() -&gt; QList&lt;int&gt;;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> slot_my_discard();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">bool</span> discarded_;            </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QTableWidget* m_fileList_;  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html">GpgFrontend::UI::QuitDialog</a></div><div class="ttdef"><b>Definition:</b> QuitDialog.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_a4c4bc06d1d168f01569ed83dcfd50d55"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a4c4bc06d1d168f01569ed83dcfd50d55">GpgFrontend::UI::QuitDialog::IsDiscarded</a></div><div class="ttdeci">bool IsDiscarded() const</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:133</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_a60419bf8e817db25128c2f941fc42a3d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a60419bf8e817db25128c2f941fc42a3d">GpgFrontend::UI::QuitDialog::QuitDialog</a></div><div class="ttdeci">QuitDialog(QWidget *parent, const QHash&lt; int, QString &gt; &amp;unsavedDocs)</div><div class="ttdoc">Construct a new Quit Dialog object.</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_aec364c38056b6d92c172f8cdfb5f8e82"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#aec364c38056b6d92c172f8cdfb5f8e82">GpgFrontend::UI::QuitDialog::GetTabIdsToSave</a></div><div class="ttdeci">QList&lt; int &gt; GetTabIdsToSave()</div><div class="ttdoc">Get the Tab Ids To Save object.</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:135</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html">GpgFrontend::UI::QuitDialog</a></div><div class="ttdef"><b>Definition:</b> QuitDialog.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_a1c75f69ffa1ca45a3c28af0800871a6e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a1c75f69ffa1ca45a3c28af0800871a6e">GpgFrontend::UI::QuitDialog::GetTabIdsToSave</a></div><div class="ttdeci">auto GetTabIdsToSave() -&gt; QList&lt; int &gt;</div><div class="ttdoc">Get the Tab Ids To Save object.</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:135</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_a20ce6f0be2ccd0509a0e7362e8de7abe"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a20ce6f0be2ccd0509a0e7362e8de7abe">GpgFrontend::UI::QuitDialog::IsDiscarded</a></div><div class="ttdeci">auto IsDiscarded() const -&gt; bool</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:133</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1QuitDialog_html_a60419bf8e817db25128c2f941fc42a3d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1QuitDialog.html#a60419bf8e817db25128c2f941fc42a3d">GpgFrontend::UI::QuitDialog::QuitDialog</a></div><div class="ttdeci">QuitDialog(QWidget *parent, const QHash&lt; int, QString &gt; &amp;unsavedDocs)</div><div class="ttdoc">Construct a new Quit Dialog object.</div><div class="ttdef"><b>Definition:</b> QuitDialog.cpp:33</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

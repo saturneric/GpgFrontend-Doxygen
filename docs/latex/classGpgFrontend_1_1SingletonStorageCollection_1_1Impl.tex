@@ -1,0 +1,89 @@
+\hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Singleton\+Storage\+Collection\+::Impl Class Reference}
+\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl}\index{GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Singleton\+Storage\+Collection\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ab57bdb5e019e4c1d0b56931b51347507}{Get\+Singleton\+Storage}} (const std\+::type\+\_\+info \&type\+\_\+id) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}} $\ast$
+\begin{DoxyCompactList}\small\item\em Get the Singleton Storage object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a9cdea3d2b2d2776f241d2a871d233dd5}{Get\+Instance}} (bool force\+\_\+refresh) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}} $\ast$
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ac54d39d57fc7e6edd8d3b9d8b715c643}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a10851118e959ef798ae9c534dac74824}\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a10851118e959ef798ae9c534dac74824}} 
+std\+::shared\+\_\+mutex \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a10851118e959ef798ae9c534dac74824}{storages\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em mutex for storages\+\_\+map\+\_\+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a220d0588d590b230b5ca2f641b0076f4}\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a220d0588d590b230b5ca2f641b0076f4}} 
+std\+::map$<$ size\+\_\+t, Singleton\+Storage\+Ptr $>$ {\bfseries storages\+\_\+map\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ac54d39d57fc7e6edd8d3b9d8b715c643}\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ac54d39d57fc7e6edd8d3b9d8b715c643}} 
+\index{GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily static void Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Impl\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Singleton\+Storage\+Collection$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a9cdea3d2b2d2776f241d2a871d233dd5}\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_a9cdea3d2b2d2776f241d2a871d233dd5}} 
+\index{GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static auto Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Impl\+::\+Get\+Instance (\begin{DoxyParamCaption}\item[{bool}]{force\+\_\+refresh }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}}$\ast$ \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Instance object. 
+
+\begin{DoxyReturn}{Returns}
+Singleton\+Storage\+Collection$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ab57bdb5e019e4c1d0b56931b51347507}\label{classGpgFrontend_1_1SingletonStorageCollection_1_1Impl_ab57bdb5e019e4c1d0b56931b51347507}} 
+\index{GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}!GetSingletonStorage@{GetSingletonStorage}}
+\index{GetSingletonStorage@{GetSingletonStorage}!GpgFrontend::SingletonStorageCollection::Impl@{GpgFrontend::SingletonStorageCollection::Impl}}
+\doxysubsubsection{\texorpdfstring{GetSingletonStorage()}{GetSingletonStorage()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Impl\+::\+Get\+Singleton\+Storage (\begin{DoxyParamCaption}\item[{const std\+::type\+\_\+info \&}]{type\+\_\+id }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}}$\ast$ \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Singleton Storage object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em singleton\+\_\+function\+\_\+object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Singleton\+Storage$\ast$ 
+\end{DoxyReturn}
+
+
+References storages\+\_\+mutex\+\_\+.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/basic/Singleton\+Storage\+Collection.\+cpp\end{DoxyCompactItemize}

@@ -3,7 +3,11 @@
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
+ \mbox{\hyperlink{namespaceGpgFrontend_1_1Module}{Module}}
+\item 
  \mbox{\hyperlink{namespaceGpgFrontend_1_1RawAPI}{Raw\+API}}
+\item 
+ \mbox{\hyperlink{namespaceGpgFrontend_1_1Test}{Test}}
 \item 
  \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}}
 \item 
@@ -12,39 +16,41 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1CoreCommonUtil}{Core\+Common\+Util}}
-\item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1ArchiveStruct}{Archive\+Struct}}
+struct \mbox{\hyperlink{structGpgFrontend_1_1ArchiveReadClientData}{Archive\+Read\+Client\+Data}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator}{Archive\+File\+Operator}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}}
+\begin{DoxyCompactList}\small\item\em object which in channel system is called \char`\"{}channel\char`\"{} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Thread\+Safe\+Map}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1CacheManager}{Cache\+Manager}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1CharsetOperator}{Charset\+Operator}}
-\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1CoreSignalStation}{Core\+Signal\+Station}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator}{Data\+Object\+Operator}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1FileOperator}{File\+Operator}}
-\begin{DoxyCompactList}\small\item\em provides file operations \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation}{Global\+Setting\+Station}}
-\item 
+\begin{DoxyCompactList}\small\item\em Singleton class for managing global settings in the application. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgAdvancedOperator}{Gpg\+Advanced\+Operator}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgBasicOperator}{Gpg\+Basic\+Operator}}
 \begin{DoxyCompactList}\small\item\em Basic operation collection. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor}{Gpg\+Command\+Executor}}
 \begin{DoxyCompactList}\small\item\em Extra commands related to GPG. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}
+\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgFileOpera}{Gpg\+File\+Opera}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter}{Gpg\+Key\+Getter}}
-\item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgImportedKey}{Gpg\+Imported\+Key}}
-\item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Import\+Information}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyImportExporter}{Gpg\+Key\+Import\+Exporter}}
 \item 
@@ -56,6 +62,8 @@ class \mbox{\hyperlink{classGpgFrontend_1_1GpgUIDOperator}{Gpg\+UIDOperator}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator}{Key\+Package\+Operator}}
 \begin{DoxyCompactList}\small\item\em give the possibility to import or export a key package \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1LoggerManager}{Logger\+Manager}}
+\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} class. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgDecryptResultAnalyse}{Gpg\+Decrypt\+Result\+Analyse}}
@@ -68,90 +76,127 @@ class \mbox{\hyperlink{classGpgFrontend_1_1GpgSignResultAnalyse}{Gpg\+Sign\+Resu
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse}{Gpg\+Verify\+Result\+Analyse}}
 \item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1__result__ref__deletor}{\+\_\+result\+\_\+ref\+\_\+deletor}}
-\begin{DoxyCompactList}\small\item\em Result Deleter. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgConstants}{Gpg\+Constants}}
+class \mbox{\hyperlink{classGpgFrontend_1_1SecureMemoryAllocator}{Secure\+Memory\+Allocator}}
 \item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}}
+struct \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}
+struct \mbox{\hyperlink{structGpgFrontend_1_1CoreInitArgs}{Core\+Init\+Args}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}}
-\begin{DoxyCompactList}\small\item\em object which in channel system \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}}
+struct \mbox{\hyperlink{structGpgFrontend_1_1RefDeleter}{Ref\+Deleter}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}}
+class \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}
+class \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgData}{Gpg\+Data}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgDecryptResult}{Gpg\+Decrypt\+Result}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgEncryptResult}{Gpg\+Encrypt\+Result}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgGenerateKeyResult}{Gpg\+Generate\+Key\+Result}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgInfo}{Gpg\+Info}}
-\begin{DoxyCompactList}\small\item\em Use to record some info about gnupg. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classGpgFrontend_1_1GpgData}{Gpg\+Data}}
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Import\+Information}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgKeySignature}{Gpg\+Key\+Signature}}
 \item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgPassphraseContext}{Gpg\+Passphrase\+Context}}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1GpgRecipient}{Gpg\+Recipient}}
+\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgSignResult}{Gpg\+Sign\+Result}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgTOFUInfo}{Gpg\+TOFUInfo}}
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1GpgUID}{Gpg\+UID}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1PointerConverter}{Pointer\+Converter}}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1GpgFrontendContext}{Gpg\+Frontend\+Context}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a6df12217c02df87356b3276fa08df3b8}\label{namespaceGpgFrontend_a6df12217c02df87356b3276fa08df3b8}} 
-typedef std\+::list$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgImportedKey}{Gpg\+Imported\+Key}} $>$ {\bfseries Gpg\+Imported\+Key\+List}
+\mbox{\Hypertarget{namespaceGpgFrontend_acddb1542dcc076b53ea2d29b94b4c0aa}\label{namespaceGpgFrontend_acddb1542dcc076b53ea2d29b94b4c0aa}} 
+using {\bfseries Channel\+Object\+Ptr} = Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a734ec65953e9b8fe39b7d76b42c7d9e5}\label{namespaceGpgFrontend_a734ec65953e9b8fe39b7d76b42c7d9e5}} 
-using {\bfseries Byte\+Array} = std\+::string
+\mbox{\Hypertarget{namespaceGpgFrontend_a8289d85d3d0ba11d77b6982c362ca33d}\label{namespaceGpgFrontend_a8289d85d3d0ba11d77b6982c362ca33d}} 
+using {\bfseries Singleton\+Storage\+Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}}, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage}{Singleton\+Storage}} $>$ $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a74d7d03c9b8231bc13f199fb06204fca}\label{namespaceGpgFrontend_a74d7d03c9b8231bc13f199fb06204fca}} 
-using {\bfseries Byte\+Array\+Ptr} = std\+::unique\+\_\+ptr$<$ Byte\+Array $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_a12d733ca5d10191048cbc45126cfab33}\label{namespaceGpgFrontend_a12d733ca5d10191048cbc45126cfab33}} 
+using {\bfseries Gpg\+Command\+Executor\+Callback} = std\+::function$<$ void(int, QString, QString)$>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_ad8f79b76997875f0588a77340a34d2a1}\label{namespaceGpgFrontend_ad8f79b76997875f0588a77340a34d2a1}} 
-using {\bfseries Std\+Bype\+Array\+Ptr} = std\+::unique\+\_\+ptr$<$ Byte\+Array $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_ac194dd440fad5bee3cdfb06404482ded}\label{namespaceGpgFrontend_ac194dd440fad5bee3cdfb06404482ded}} 
+using {\bfseries Gpg\+Command\+Executor\+Interactor} = std\+::function$<$ void(QProcess $\ast$)$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a92c42a4157576fc2386eb2295120fed3}\label{namespaceGpgFrontend_a92c42a4157576fc2386eb2295120fed3}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Secure\+Unique\+Ptr} = std\+::unique\+\_\+ptr$<$ T, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ T $>$ $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a7afb2f49f666ad2ad4c0decd7a30098c}\label{namespaceGpgFrontend_a7afb2f49f666ad2ad4c0decd7a30098c}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Key\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ T, \mbox{\hyperlink{structGpgFrontend_1_1RefDeleter}{Ref\+Deleter}}$<$ T $>$ $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ac7a8e1fcf6807a655ced067406cafc44}\label{namespaceGpgFrontend_ac7a8e1fcf6807a655ced067406cafc44}} 
+using {\bfseries Data\+Object\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_afc78f2bf4f6d0c56c23adec60c29241d}\label{namespaceGpgFrontend_afc78f2bf4f6d0c56c23adec60c29241d}} 
+using {\bfseries GFError} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a24f0cdb48363f99db7cbb7312a9965d4}\label{namespaceGpgFrontend_a24f0cdb48363f99db7cbb7312a9965d4}} 
+using {\bfseries Byte\+Array} = QByte\+Array
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ae64a430cbbc86f7c217f635bfec87ebd}\label{namespaceGpgFrontend_ae64a430cbbc86f7c217f635bfec87ebd}} 
+using {\bfseries Byte\+Array\+Ptr} = std\+::shared\+\_\+ptr$<$ Byte\+Array $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ac6770434e5db32aad4c3f7ab6aecd854}\label{namespaceGpgFrontend_ac6770434e5db32aad4c3f7ab6aecd854}} 
+using {\bfseries Std\+Bype\+Array\+Ptr} = std\+::shared\+\_\+ptr$<$ Byte\+Array $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_ab0a0bf1c3231a455c85f5604f4ff219a}\label{namespaceGpgFrontend_ab0a0bf1c3231a455c85f5604f4ff219a}} 
 using {\bfseries Bype\+Array\+Ref} = Byte\+Array \&
 \item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ae1e137141c75ba9da518547559e093a3}\label{namespaceGpgFrontend_ae1e137141c75ba9da518547559e093a3}} 
+using {\bfseries Const\+Bype\+Array\+Ref} = const Byte\+Array \&
+\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_ada6a044ece8975e35b2a229f65249713}\label{namespaceGpgFrontend_ada6a044ece8975e35b2a229f65249713}} 
 using {\bfseries Bype\+Array\+Const\+Ref} = const Byte\+Array \&
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_aa8f86425050122fc627c1a793c2d1f80}\label{namespaceGpgFrontend_aa8f86425050122fc627c1a793c2d1f80}} 
-using {\bfseries String\+Args\+Ptr} = std\+::unique\+\_\+ptr$<$ std\+::vector$<$ std\+::string $>$ $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_af881e2cfcc45dca20be4435aeb528c4e}\label{namespaceGpgFrontend_af881e2cfcc45dca20be4435aeb528c4e}} 
+using {\bfseries String\+Args\+Ptr} = std\+::unique\+\_\+ptr$<$ std\+::vector$<$ QString $>$ $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a88afb4fc90777c981345a4a702df8672}\label{namespaceGpgFrontend_a88afb4fc90777c981345a4a702df8672}} 
-using {\bfseries String\+Args\+Ref} = std\+::vector$<$ std\+::string $>$ \&
+\mbox{\Hypertarget{namespaceGpgFrontend_ab79dcab305ada8544a740c4ca9c4f9d5}\label{namespaceGpgFrontend_ab79dcab305ada8544a740c4ca9c4f9d5}} 
+using {\bfseries String\+Args\+Ref} = std\+::vector$<$ QString $>$ \&
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a2e06a0e88cef1c101977144ab8c7d324}\label{namespaceGpgFrontend_a2e06a0e88cef1c101977144ab8c7d324}} 
+using {\bfseries Opera\+Runnable} = std\+::function$<$ GFError(Data\+Object\+Ptr)$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_af83643d38350a7eadec60a01ba390bd3}\label{namespaceGpgFrontend_af83643d38350a7eadec60a01ba390bd3}} 
+using {\bfseries Operation\+Callback} = std\+::function$<$ void(GFError, Data\+Object\+Ptr)$>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}\label{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}} 
-using {\bfseries Gpg\+Error} = gpgme\+\_\+error\+\_\+t
+using \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} = gpgme\+\_\+error\+\_\+t
+\begin{DoxyCompactList}\small\item\em gpgme error \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a9a490a519b935a1c55039ae8b0cc3cf0}\label{namespaceGpgFrontend_a9a490a519b935a1c55039ae8b0cc3cf0}} 
+using {\bfseries Gpg\+Error\+Code} = gpg\+\_\+err\+\_\+code\+\_\+t
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_ae060b7e70b7898c1239f372b55bac640}\label{namespaceGpgFrontend_ae060b7e70b7898c1239f372b55bac640}} 
-using {\bfseries Gpg\+Encr\+Result} = std\+::shared\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+op\+\_\+encrypt\+\_\+result $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_af20ea48d77ddbb5fd6fb756d23af3b2c}\label{namespaceGpgFrontend_af20ea48d77ddbb5fd6fb756d23af3b2c}} 
+using {\bfseries Gpg\+Error\+Desc} = std\+::pair$<$ QString, QString $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a78f78409fbd7963376da60f7e5c0dba9}\label{namespaceGpgFrontend_a78f78409fbd7963376da60f7e5c0dba9}} 
-using {\bfseries Gpg\+Decr\+Result} = std\+::shared\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+op\+\_\+decrypt\+\_\+result $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_a78b1b599412775d1c8ef1d6e3a1fc898}\label{namespaceGpgFrontend_a78b1b599412775d1c8ef1d6e3a1fc898}} 
+using {\bfseries Key\+Id} = QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a719a7945f8e6af4aa6446883a8847f48}\label{namespaceGpgFrontend_a719a7945f8e6af4aa6446883a8847f48}} 
-using {\bfseries Gpg\+Sign\+Result} = std\+::shared\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+op\+\_\+sign\+\_\+result $>$
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a3c488625b949d2ac26315996b4b881e9}\label{namespaceGpgFrontend_a3c488625b949d2ac26315996b4b881e9}} 
-using {\bfseries Gpg\+Verify\+Result} = std\+::shared\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+op\+\_\+verify\+\_\+result $>$
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a02576f9b3647baec8e7f6dacf9411b46}\label{namespaceGpgFrontend_a02576f9b3647baec8e7f6dacf9411b46}} 
-using {\bfseries Gpg\+Gen\+Key\+Result} = std\+::shared\+\_\+ptr$<$ struct \+\_\+gpgme\+\_\+op\+\_\+genkey\+\_\+result $>$
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a788cd2c216e4867a676920da22d4f49d}\label{namespaceGpgFrontend_a788cd2c216e4867a676920da22d4f49d}} 
-using {\bfseries Key\+Id} = std\+::string
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a8d00b92300e229303fcf42e99fb77278}\label{namespaceGpgFrontend_a8d00b92300e229303fcf42e99fb77278}} 
-using {\bfseries Subkey\+Id} = std\+::string
+\mbox{\Hypertarget{namespaceGpgFrontend_ac765d356eb5df4d086a41da639928d86}\label{namespaceGpgFrontend_ac765d356eb5df4d086a41da639928d86}} 
+using {\bfseries Subkey\+Id} = QString
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_ab9e8650a71965e35cb6a763dbf61a048}\label{namespaceGpgFrontend_ab9e8650a71965e35cb6a763dbf61a048}} 
 using {\bfseries Key\+Id\+Args\+List} = std\+::vector$<$ Key\+Id $>$
@@ -159,29 +204,29 @@ using {\bfseries Key\+Id\+Args\+List} = std\+::vector$<$ Key\+Id $>$
 \mbox{\Hypertarget{namespaceGpgFrontend_a93c0ac9e329baa602e0bfdee7ea1273f}\label{namespaceGpgFrontend_a93c0ac9e329baa602e0bfdee7ea1273f}} 
 using {\bfseries Key\+Id\+Args\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ Key\+Id\+Args\+List $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a953722e5ef4bbc71b42a4f821f00b737}\label{namespaceGpgFrontend_a953722e5ef4bbc71b42a4f821f00b737}} 
-using {\bfseries UIDArgs\+List} = std\+::vector$<$ std\+::string $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_a37e8fe7369a69aa26dd6f90810ff34cd}\label{namespaceGpgFrontend_a37e8fe7369a69aa26dd6f90810ff34cd}} 
+using {\bfseries UIDArgs\+List} = std\+::vector$<$ QString $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a54baa8d3ea3843c907a7644a85cb9699}\label{namespaceGpgFrontend_a54baa8d3ea3843c907a7644a85cb9699}} 
 using {\bfseries UIDArgs\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ UIDArgs\+List $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a8454f6586944c55018f7745c22d281d2}\label{namespaceGpgFrontend_a8454f6586944c55018f7745c22d281d2}} 
-using {\bfseries Sign\+Id\+Args\+List} = std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_a4829a5cf1cd28ff53c22cc81b8742799}\label{namespaceGpgFrontend_a4829a5cf1cd28ff53c22cc81b8742799}} 
+using {\bfseries Sign\+Id\+Args\+List} = std\+::vector$<$ std\+::pair$<$ QString, QString $>$ $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a3d735ed2f15dbf638cfa508daba16e5b}\label{namespaceGpgFrontend_a3d735ed2f15dbf638cfa508daba16e5b}} 
 using {\bfseries Sign\+Id\+Args\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ Sign\+Id\+Args\+List $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a77d0c0a6b959437c89b069df9a97c194}\label{namespaceGpgFrontend_a77d0c0a6b959437c89b069df9a97c194}} 
-using {\bfseries Key\+Fpr\+Args\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ std\+::vector$<$ std\+::string $>$ $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_a23c07a646573089f3d3fbcd5d8f5183e}\label{namespaceGpgFrontend_a23c07a646573089f3d3fbcd5d8f5183e}} 
+using {\bfseries Key\+Fpr\+Args\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ std\+::vector$<$ QString $>$ $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_ab19bf8acd65218045313b120cf72333e}\label{namespaceGpgFrontend_ab19bf8acd65218045313b120cf72333e}} 
 using {\bfseries Key\+Args\+List} = std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a1872f20a465ea6a482065996abab2c95}\label{namespaceGpgFrontend_a1872f20a465ea6a482065996abab2c95}} 
-using {\bfseries Key\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ Key\+Args\+List $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_ae2d29cfc48268a9b696d21c741a4d7e3}\label{namespaceGpgFrontend_ae2d29cfc48268a9b696d21c741a4d7e3}} 
+using {\bfseries Key\+List\+Ptr} = std\+::shared\+\_\+ptr$<$ Key\+Args\+List $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a99b4f5a3b9f7a379a79c37ba8fff93af}\label{namespaceGpgFrontend_a99b4f5a3b9f7a379a79c37ba8fff93af}} 
-using {\bfseries Gpg\+Key\+Link\+List} = std\+::list$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_af365d0d6db6a3912dcaac37c0ce3141a}\label{namespaceGpgFrontend_af365d0d6db6a3912dcaac37c0ce3141a}} 
+using {\bfseries Gpg\+Key\+Link\+List} = std\+::list$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_ac35a1eb416146226f5c6446ab61dbc82}\label{namespaceGpgFrontend_ac35a1eb416146226f5c6446ab61dbc82}} 
 using {\bfseries Key\+Link\+List\+Ptr} = std\+::unique\+\_\+ptr$<$ Gpg\+Key\+Link\+List $>$
@@ -191,68 +236,311 @@ using {\bfseries Key\+Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpg
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a8fe8112cc97385961a3f6a18129ea789}\label{namespaceGpgFrontend_a8fe8112cc97385961a3f6a18129ea789}} 
 using {\bfseries Key\+Ptr\+Args\+List} = const std\+::initializer\+\_\+list$<$ Key\+Ptr $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ae9d2d995a9f33b55a3cf5c395aa88b84}\label{namespaceGpgFrontend_ae9d2d995a9f33b55a3cf5c395aa88b84}} 
+using {\bfseries Gpg\+Sign\+Mode} = gpgme\+\_\+sig\+\_\+mode\+\_\+t
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0c14f6d43175fadd9180621cffddcba5}\label{namespaceGpgFrontend_a0c14f6d43175fadd9180621cffddcba5}} 
+using {\bfseries Gpg\+Opera\+Runnable} = std\+::function$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}(Data\+Object\+Ptr)$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aa245390caad33b810e2fef4a0e9de7e9}\label{namespaceGpgFrontend_aa245390caad33b810e2fef4a0e9de7e9}} 
+using {\bfseries Gpg\+Operation\+Callback} = std\+::function$<$ void(\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr)$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ada351a434b8c5643e7ff587bbbda3bc1}\label{namespaceGpgFrontend_ada351a434b8c5643e7ff587bbbda3bc1}} 
+using {\bfseries Gpg\+Operation\+Future} = std\+::future$<$ std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$ $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a8de4d38ede9da260d3e9b327a1f366f1}\label{namespaceGpgFrontend_a8de4d38ede9da260d3e9b327a1f366f1}} 
+using {\bfseries GFCxt\+WPtr} = std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{structGpgFrontend_1_1GpgFrontendContext}{Gpg\+Frontend\+Context}} $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a8aa750a6b51fb10e71a4bcbff7777a8a}\label{namespaceGpgFrontend_a8aa750a6b51fb10e71a4bcbff7777a8a}} 
+using {\bfseries GFCxt\+SPtr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structGpgFrontend_1_1GpgFrontendContext}{Gpg\+Frontend\+Context}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_afe1d3dd35d8b9afda0fd95c3791c2ac4}\label{namespaceGpgFrontend_afe1d3dd35d8b9afda0fd95c3791c2ac4}} 
+enum {\bfseries Gpg\+Operation} \{ \newline
+{\bfseries k\+ENCRYPT}
+, {\bfseries k\+DECRYPT}
+, {\bfseries k\+SIGN}
+, {\bfseries k\+VERIFY}
+, \newline
+{\bfseries k\+ENCRYPT\+\_\+\+SIGN}
+, {\bfseries k\+DECRYPT\+\_\+\+VERIFY}
+ \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Encr\+Result \mbox{\hyperlink{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}{\+\_\+new\+\_\+result}} (gpgme\+\_\+encrypt\+\_\+result\+\_\+t \&\&result)
+auto \mbox{\hyperlink{namespaceGpgFrontend_abca29d455373e3278486ed20c4a63b6e}{Start\+Application}} (const GFCxt\+WPtr \&p\+\_\+ctx) -\/$>$ int
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Decr\+Result \mbox{\hyperlink{namespaceGpgFrontend_aaf7ddbd50cd4f16b7d2a997c03b20933}{\+\_\+new\+\_\+result}} (gpgme\+\_\+decrypt\+\_\+result\+\_\+t \&\&result)
+\mbox{\Hypertarget{namespaceGpgFrontend_aa9d15c8dfa6894ce6cd3afcd2692a004}\label{namespaceGpgFrontend_aa9d15c8dfa6894ce6cd3afcd2692a004}} 
+auto {\bfseries Print\+Version} () -\/$>$ int
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Sign\+Result \mbox{\hyperlink{namespaceGpgFrontend_acb5dd82fc7d0428bafe34ed304dc15d1}{\+\_\+new\+\_\+result}} (gpgme\+\_\+sign\+\_\+result\+\_\+t \&\&result)
+\mbox{\Hypertarget{namespaceGpgFrontend_acc004de90a41bcd7dc684b0d267fef41}\label{namespaceGpgFrontend_acc004de90a41bcd7dc684b0d267fef41}} 
+auto {\bfseries Parse\+Log\+Level} (const QString \&log\+\_\+level) -\/$>$ spdlog\+::level\+::level\+\_\+enum
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Verify\+Result \mbox{\hyperlink{namespaceGpgFrontend_ae3f2947210ad3e11269ebac355f47492}{\+\_\+new\+\_\+result}} (gpgme\+\_\+verify\+\_\+result\+\_\+t \&\&result)
+\mbox{\Hypertarget{namespaceGpgFrontend_a80a8da094435f1d6ff7275024f58b0ee}\label{namespaceGpgFrontend_a80a8da094435f1d6ff7275024f58b0ee}} 
+auto {\bfseries Run\+Test} (const GFCxt\+WPtr \&p\+\_\+ctx) -\/$>$ int
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Gen\+Key\+Result \mbox{\hyperlink{namespaceGpgFrontend_af909eb3cf2690d23939e394a461e48e9}{\+\_\+new\+\_\+result}} (gpgme\+\_\+genkey\+\_\+result\+\_\+t \&\&result)
+\mbox{\Hypertarget{namespaceGpgFrontend_a98b32faa9ee5378c6affc9af37a3cb93}\label{namespaceGpgFrontend_a98b32faa9ee5378c6affc9af37a3cb93}} 
+auto {\bfseries Copy\+Data} (struct archive $\ast$ar, struct archive $\ast$aw) -\/$>$ int
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Error \mbox{\hyperlink{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}{check\+\_\+gpg\+\_\+error}} (Gpg\+Error err)
+\mbox{\Hypertarget{namespaceGpgFrontend_a96965d89a0dbe9a2787e8db26fd8df5e}\label{namespaceGpgFrontend_a96965d89a0dbe9a2787e8db26fd8df5e}} 
+auto {\bfseries Archive\+Read\+Callback} (struct archive $\ast$, void $\ast$client\+\_\+data, const void $\ast$$\ast$buffer) -\/$>$ ssize\+\_\+t
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Error \mbox{\hyperlink{namespaceGpgFrontend_adf0fbe100c3ea1bf2f33bc0f55dfff17}{check\+\_\+gpg\+\_\+error}} (Gpg\+Error gpgme\+Error, const std\+::string \&comment)
+\mbox{\Hypertarget{namespaceGpgFrontend_a1ca6897677586deeb81a3fc9140d510f}\label{namespaceGpgFrontend_a1ca6897677586deeb81a3fc9140d510f}} 
+auto {\bfseries Archive\+Write\+Callback} (struct archive $\ast$, void $\ast$client\+\_\+data, const void $\ast$buffer, size\+\_\+t length) -\/$>$ ssize\+\_\+t
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT gpg\+\_\+err\+\_\+code\+\_\+t \mbox{\hyperlink{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}{check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code}} (gpgme\+\_\+error\+\_\+t err, gpgme\+\_\+error\+\_\+t predict=GPG\+\_\+\+ERR\+\_\+\+NO\+\_\+\+ERROR)
+\mbox{\Hypertarget{namespaceGpgFrontend_a513719e9188327e5b773533156afb2cc}\label{namespaceGpgFrontend_a513719e9188327e5b773533156afb2cc}} 
+auto {\bfseries Archive\+Close\+Write\+Callback} (struct archive $\ast$, void $\ast$client\+\_\+data) -\/$>$ int
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT std\+::string \mbox{\hyperlink{namespaceGpgFrontend_ac494a4b0d91e08a70db77a399c9a0f30}{beautify\+\_\+fingerprint}} (Bype\+Array\+Const\+Ref fingerprint)
+\mbox{\Hypertarget{namespaceGpgFrontend_aabdfd3af05b9bd22ac212d17e5824ddb}\label{namespaceGpgFrontend_aabdfd3af05b9bd22ac212d17e5824ddb}} 
+{\footnotesize template$<$typename Derived $>$ }\\auto {\bfseries Convert\+To\+Channel\+Object\+Ptr} (std\+::unique\+\_\+ptr$<$ Derived, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ Derived $>$$>$ derived\+Ptr) -\/$>$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}}, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$$>$
 \item 
-std\+::string \mbox{\hyperlink{namespaceGpgFrontend_a73f3e2217fb1d72dc75f266e11875f6d}{read\+\_\+all\+\_\+data\+\_\+in\+\_\+file}} (const std\+::string \&path)
+\mbox{\Hypertarget{namespaceGpgFrontend_a10702b31104f50862fbbf9f275212817}\label{namespaceGpgFrontend_a10702b31104f50862fbbf9f275212817}} 
+auto {\bfseries Get\+Global\+Function\+Object\+Channel\+Lock} (const std\+::type\+\_\+info \&type, int channel) -\/$>$ std\+::mutex \&
 \item 
-GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT bool \mbox{\hyperlink{namespaceGpgFrontend_a5135069571678eda9c1f07d17ed9ac41}{write\+\_\+buffer\+\_\+to\+\_\+file}} (const std\+::string \&path, const std\+::string \&out\+\_\+buffer)
+\mbox{\Hypertarget{namespaceGpgFrontend_a29569a0fa7a10edd50e2383a6ad3baa8}\label{namespaceGpgFrontend_a29569a0fa7a10edd50e2383a6ad3baa8}} 
+auto {\bfseries Get\+Global\+Function\+Object\+Type\+Lock} (const std\+::type\+\_\+info \&type) -\/$>$ std\+::mutex \&
 \item 
-std\+::string \mbox{\hyperlink{namespaceGpgFrontend_acff2cf5dd5b112b324fa6574ee935f79}{get\+\_\+file\+\_\+extension}} (const std\+::string \&path)
-\begin{DoxyCompactList}\small\item\em Get the file extension object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{namespaceGpgFrontend_a5a2f5fc1ad3de55e41a1b7a388821328}{get\+\_\+only\+\_\+file\+\_\+name\+\_\+with\+\_\+path}} (const std\+::string \&path)
+auto \mbox{\hyperlink{namespaceGpgFrontend_a0f6c508ed7db841c0eaf5907c7612ff6}{Get\+Channel\+Object\+Instance}} (const std\+::type\+\_\+info \&type, int channel) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $\ast$
+\begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a3b5f18fd9cdc048974e357beac4927aa}\label{namespaceGpgFrontend_a3b5f18fd9cdc048974e357beac4927aa}} 
+auto {\bfseries Create\+Channel\+Object\+Instance} (const std\+::type\+\_\+info \&type, int channel, Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$ channel\+\_\+object) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $\ast$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_af5893376e05809fc30ab6e82f25f1525}\label{namespaceGpgFrontend_af5893376e05809fc30ab6e82f25f1525}} 
+auto {\bfseries Build\+Task\+From\+Exec\+Ctx} (const \mbox{\hyperlink{structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext}{Gpg\+Command\+Executor\+::\+Execute\+Context}} \&context) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Thread\+::\+Task}} $\ast$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a298d0e911d189337157b1b23bc94d864}\label{namespaceGpgFrontend_a298d0e911d189337157b1b23bc94d864}} 
+void {\bfseries Destroy\+Gpg\+Frontend\+Core} ()
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a996f730a5f063db494628fbe0bd64f94}\label{namespaceGpgFrontend_a996f730a5f063db494628fbe0bd64f94}} 
+auto {\bfseries Verify\+Gpgconf\+Path} (const QFile\+Info \&gnupg\+\_\+install\+\_\+fs\+\_\+path) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a2d302c8892e6d6505a86db40131d88c8}\label{namespaceGpgFrontend_a2d302c8892e6d6505a86db40131d88c8}} 
+auto {\bfseries Verify\+Key\+Database\+Path} (const QFile\+Info \&key\+\_\+database\+\_\+fs\+\_\+path) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a9a6caca2480e71bb58c178ad1c936d0d}\label{namespaceGpgFrontend_a9a6caca2480e71bb58c178ad1c936d0d}} 
+auto {\bfseries Search\+Gpgconf\+Path} (const QList$<$ QString $>$ \&candidate\+\_\+paths) -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ab40fa300f040973be4d89aff4497cb68}\label{namespaceGpgFrontend_ab40fa300f040973be4d89aff4497cb68}} 
+auto {\bfseries Search\+Key\+Database\+Path} (const QList$<$ QString $>$ \&candidate\+\_\+paths) -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a721e24e02c2fcc79e8e9e39b187e8f48}\label{namespaceGpgFrontend_a721e24e02c2fcc79e8e9e39b187e8f48}} 
+auto {\bfseries Init\+Gpg\+ME} (const QString \&gnupg\+\_\+path) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0781ebc8c308a3bade1174355f9a0ff2}\label{namespaceGpgFrontend_a0781ebc8c308a3bade1174355f9a0ff2}} 
+auto {\bfseries Get\+Gnu\+PGPath\+By\+Gpg\+Conf} (const QString \&gnupg\+\_\+install\+\_\+fs\+\_\+path) -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a72507743c74e569d433d7ac2a0a19099}\label{namespaceGpgFrontend_a72507743c74e569d433d7ac2a0a19099}} 
+auto {\bfseries Detect\+Gnu\+PGPath} () -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}\label{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}} 
+void {\bfseries Init\+Gpg\+Frontend\+Core} (\mbox{\hyperlink{structGpgFrontend_1_1CoreInitArgs}{Core\+Init\+Args}})
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a324ae4dfad2f9cd8a5da9d553798b0c0}\label{namespaceGpgFrontend_a324ae4dfad2f9cd8a5da9d553798b0c0}} 
+void {\bfseries swap} (\mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} \&a, \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} \&b) noexcept
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aa6a99a5c150a1fc4a275443de00bcef1}\label{namespaceGpgFrontend_aa6a99a5c150a1fc4a275443de00bcef1}} 
+{\footnotesize template$<$typename... Args$>$ }\\auto {\bfseries Transfer\+Params} (Args \&\&... args) -\/$>$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aa3019ec3e3454346434ba2235d304dd0}\label{namespaceGpgFrontend_aa3019ec3e3454346434ba2235d304dd0}} 
+{\footnotesize template$<$typename T $>$ }\\auto {\bfseries Extract\+Params} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} $>$ \&d\+\_\+o, int index) -\/$>$ T
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a5873ec4eb8faca93ab83780d9bcfe3a6}\label{namespaceGpgFrontend_a5873ec4eb8faca93ab83780d9bcfe3a6}} 
+auto {\bfseries GFRead\+Ex\+Cb} (void $\ast$handle, void $\ast$buffer, size\+\_\+t size) -\/$>$ ssize\+\_\+t
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0f9d6483641fbea3af87addf155b1d67}\label{namespaceGpgFrontend_a0f9d6483641fbea3af87addf155b1d67}} 
+auto {\bfseries GFWrite\+Ex\+Cb} (void $\ast$handle, const void $\ast$buffer, size\+\_\+t size) -\/$>$ ssize\+\_\+t
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a15ad42419c64d9eacf082239e620bc98}\label{namespaceGpgFrontend_a15ad42419c64d9eacf082239e620bc98}} 
+void {\bfseries GFRelease\+Ex\+Cb} (void $\ast$handle)
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_abeb3c754e9529570abe5fef6a97f3c22}{Run\+Gpg\+Opera\+Async}} (const Gpg\+Opera\+Runnable \&runnable, const Gpg\+Operation\+Callback \&callback, const QString \&operation, const QString \&minial\+\_\+version) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a4c2a4a157e45e169682a99d7f5130dc0}{Run\+Gpg\+Opera\+Sync}} (const Gpg\+Opera\+Runnable \&runnable, const QString \&operation, const QString \&minial\+\_\+version) -\/$>$ std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a6a865c31afb5384811ed69b72c31ad8c}{Run\+IOOpera\+Async}} (const Opera\+Runnable \&runnable, const Operation\+Callback \&callback, const QString \&operation) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a9eb3f1dfac3cab84bb08712c3953eb61}{Run\+Opera\+Async}} (const Opera\+Runnable \&runnable, const Operation\+Callback \&callback, const QString \&operation) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a026a59b2fb217146cfcc4ca2b108d455}\label{namespaceGpgFrontend_a026a59b2fb217146cfcc4ca2b108d455}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_a026a59b2fb217146cfcc4ca2b108d455}{Set\+Cache\+Value}} (const QString \&key, QString value)
+\begin{DoxyCompactList}\small\item\em set a temp cache under a certain key \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a145ff996dfe117c16297483ce7bc053a}{Get\+Cache\+Value}} (const QString \&key) -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em after get the temp cache, its value will be imediately ease in storage \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_a1fad8d31c148bf81a9bea45b2918b9e5}{Reset\+Cache\+Value}} (const QString \&)
+\begin{DoxyCompactList}\small\item\em imediately ease temp cache in storage \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_ad437908d506d86137a0d2fdec4c6c957}{Beautify\+Fingerprint}} (QString fingerprint) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a3eb3e3e38d04e035e3c2d44b5a553d32}{Compare\+Software\+Version}} (const QString \&a, const QString \&b) -\/$>$ int
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a3025370b8e98cbb40c3a0c420162e5a1}{Get\+Only\+File\+Name\+With\+Path}} (const QString \&path) -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the only file name with path object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{namespaceGpgFrontend_a2a0394c8bdd277f5235f9875a1d69a99}{text\+\_\+is\+\_\+signed}} (Bype\+Array\+Ref text)
+auto \mbox{\hyperlink{namespaceGpgFrontend_a603b75f118cc58b6f267df4347acd6e9}{Get\+File\+Extension}} (const QString \&path) -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the file extension object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_ac05bfb7efd56d3012777ed2e8e355a6a}{Get\+File\+Size\+By\+Path}} (const QString \&path, const QString \&filename\+\_\+pattern) -\/$>$ int64\+\_\+t
+\begin{DoxyCompactList}\small\item\em Get the File Size By Path object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a5b86eb3adc57fa5f55e9f55a69031f71}{Get\+Human\+Friendly\+File\+Size}} (int64\+\_\+t size) -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the Human Readable File Size object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_a445c070c37811b064e6e4dbb8979bc95}{Delete\+All\+Files\+By\+Pattern}} (const QString \&path, const QString \&filename\+\_\+pattern)
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_ab4a865228be071282d2a08e66ef6cb68}\label{namespaceGpgFrontend_ab4a865228be071282d2a08e66ef6cb68}} 
-void \mbox{\hyperlink{namespaceGpgFrontend_ab4a865228be071282d2a08e66ef6cb68}{Init\+Core\+Logging\+System}} ()
-\begin{DoxyCompactList}\small\item\em setup logging system and do proper initialization \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_aeeebf38d3337a0772e682bddaff88ff4}\label{namespaceGpgFrontend_aeeebf38d3337a0772e682bddaff88ff4}} 
-void {\bfseries Shutdown\+Core\+Logging\+System} ()
+\mbox{\Hypertarget{namespaceGpgFrontend_a1f5b13d592d0ccd8472d4771660b6d48}\label{namespaceGpgFrontend_a1f5b13d592d0ccd8472d4771660b6d48}} 
+auto {\bfseries Trim} (QString \&s) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a1194ef197102807cf31a6e27fdd47e07}\label{namespaceGpgFrontend_a1194ef197102807cf31a6e27fdd47e07}} 
-void {\bfseries Reset\+Gpg\+Frontend\+Core} ()
+\mbox{\Hypertarget{namespaceGpgFrontend_ab566ecd4ccab47cabb66488ca88314d8}\label{namespaceGpgFrontend_ab566ecd4ccab47cabb66488ca88314d8}} 
+auto {\bfseries Get\+Gpgme\+Error\+String} (size\+\_\+t buffer\+\_\+size, gpgme\+\_\+error\+\_\+t err) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a5c172444c7aacf11b2f8b2ebe72fb053}\label{namespaceGpgFrontend_a5c172444c7aacf11b2f8b2ebe72fb053}} 
-void {\bfseries init\+\_\+gpgfrontend\+\_\+core} ()
+\mbox{\Hypertarget{namespaceGpgFrontend_aa4b8b000832efe97ea79e563023072a3}\label{namespaceGpgFrontend_aa4b8b000832efe97ea79e563023072a3}} 
+auto {\bfseries Get\+Gpgme\+Error\+String} (gpgme\+\_\+error\+\_\+t err) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a3aa61e484a9f2e198119af82662fe68f}\label{namespaceGpgFrontend_a3aa61e484a9f2e198119af82662fe68f}} 
-void {\bfseries reset\+\_\+gpgfrontend\+\_\+core} ()
+auto \mbox{\hyperlink{namespaceGpgFrontend_a864178db4c07b932c2ae6e7a20fe87bf}{Check\+Gpg\+Error}} (\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}
 \item 
-void \mbox{\hyperlink{namespaceGpgFrontend_aafb9aa0ba1d03afa09085b1b8136c55f}{new\+\_\+default\+\_\+settings\+\_\+channel}} (int channel)
+auto \mbox{\hyperlink{namespaceGpgFrontend_ac75881bd0bf993fa53464dbf76342a39}{Check\+Gpg\+Error2\+Err\+Code}} (\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err, \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} predict) -\/$>$ Gpg\+Error\+Code
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_aa22dc541423cb09a1dd250d458eb069c}{Describe\+Gpg\+Err\+Code}} (\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err) -\/$>$ Gpg\+Error\+Desc
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a76dbbc37c483668600134ecb593f6263}{Check\+Gpg\+Error}} (\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} err, const QString \&) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a30710220097d61cff8bc59c3e643d87f}\label{namespaceGpgFrontend_a30710220097d61cff8bc59c3e643d87f}} 
+auto {\bfseries Text\+Is\+Signed} (QString text) -\/$>$ int
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_aacb6d1475346e42afb8e0ea8427bac9a}{Set\+Extension\+Of\+Output\+File}} (const QString \&path, Gpg\+Operation opera, bool ascii) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a4d05b4cdd90b01bb59d887e43df39e69}{Set\+Extension\+Of\+Output\+File\+For\+Archive}} (const QString \&path, Gpg\+Operation opera, bool ascii) -\/$>$ QString
+\item 
+auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT \mbox{\hyperlink{namespaceGpgFrontend_a05c3fa7850da1b7fc2e89a9604beb1db}{Text\+Is\+Signed}} (Bype\+Array\+Ref text) -\/$>$ int
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_abb732c46d16c0e6650a2abccd339b828}\label{namespaceGpgFrontend_abb732c46d16c0e6650a2abccd339b828}} 
+auto {\bfseries Get\+File\+Checksum} (const QString \&file\+\_\+name, QCryptographic\+Hash\+::\+Algorithm hash\+Algorithm) -\/$>$ QByte\+Array
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a253c30d60238c5c0ed1545d0c7bf31de}{Read\+File}} (const QString \&file\+\_\+name, QByte\+Array \&data) -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em read file content \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_acc93a10f79f6479f72940fba39b780e1}{Write\+File}} (const QString \&file\+\_\+name, const QByte\+Array \&data) -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em write file content \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a316a209be1a4c403426c77b029e319fc}{Read\+File\+GFBuffer}} (const QString \&file\+\_\+name) -\/$>$ std\+::tuple$<$ bool, \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} $>$
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a4df3f25e93d16e2dc60c7d680c22dcb9}{Write\+File\+GFBuffer}} (const QString \&file\+\_\+name, \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} data) -\/$>$ bool
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_af395fb120a603d913ac040372ee5c651}{Calculate\+Hash}} (const QString \&file\+\_\+path) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a3d15fda681fcdd6ea07a8eb31f81b249}{Get\+Temp\+File\+Path}} () -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_aa8c5cb4cb2c9421dc8f754d3652c5313}{Create\+Temp\+File\+And\+Write\+Data}} (const QString \&data) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a75f249f0581b7886cad96fb8a47caebe}{Create\+Temp\+File\+And\+Write\+Data}} (const \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} \&data) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a730cce728b43f040f6b0cb2823146a06}{Target\+File\+Pre\+Check}} (const QString \&path, bool read) -\/$>$ std\+::tuple$<$ bool, QString $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aa4edab1fb9eebdd48aee5a9352e5f28f}\label{namespaceGpgFrontend_aa4edab1fb9eebdd48aee5a9352e5f28f}} 
+auto {\bfseries Get\+Full\+Extension} (const QString \&path) -\/$>$ QString
+\item 
+auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT \mbox{\hyperlink{namespaceGpgFrontend_a4e780b0a2bddd1ce8735d3fa36dbfa86}{Write\+Buffer\+To\+File}} (const QString \&path, const QString \&out\+\_\+buffer) -\/$>$ bool
+\item 
+auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT \mbox{\hyperlink{namespaceGpgFrontend_ac855ff975b7f2571f5dab25c857e5a4f}{Get\+Full\+Extension}} (QString path) -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ac03bed87f7ba61809b068330a7587b71}\label{namespaceGpgFrontend_ac03bed87f7ba61809b068330a7587b71}} 
+auto {\bfseries Get\+Formated\+Date\+By\+Timestamp} (time\+\_\+t timestamp) -\/$>$ QString
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_aadeb053cc9436a24f80ab4ec5b27cf51}{Get\+Default\+Logger}} () -\/$>$ std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_addea8a9496b97952a6268f14a392e981}{Get\+Core\+Logger}} () -\/$>$ std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a7a6ec562e4deb109d575f0e6baa66ffe}{Get\+Logger}} (const QString \&id) -\/$>$ std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$
+\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_ad5b2890d3b26624800fa482d23f0e48d}{Set\+Default\+Log\+Level}} (spdlog\+::level\+::level\+\_\+enum)
+\begin{DoxyCompactList}\small\item\em Set the Default Log Level object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_a5b02173b14e6ea7c0eee0e23e6bc879f}{Register\+Async\+Logger}} (const QString \&id, spdlog\+::level\+::level\+\_\+enum level)
+\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_ae910f7b068d7bd832bff6bfabed34859}{Register\+Sync\+Logger}} (const QString \&id, spdlog\+::level\+::level\+\_\+enum level)
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_afd01101bc53f022b7d4790c6855762c4}{Secure\+Malloc}} (std\+::size\+\_\+t size) -\/$>$ void $\ast$
+\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_a5e86f89a31d6514217b74dd1bbc59bfe}{Secure\+Realloc}} (void $\ast$ptr, std\+::size\+\_\+t size) -\/$>$ void $\ast$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a2e3c816e22fd5e2728ca02ca65b4e248}\label{namespaceGpgFrontend_a2e3c816e22fd5e2728ca02ca65b4e248}} 
+void {\bfseries Secure\+Free} (void $\ast$)
+\item 
+{\footnotesize template$<$typename T $>$ }\\auto \mbox{\hyperlink{namespaceGpgFrontend_a398baf5153c1eb3534729d11edb01f9c}{Secure\+Malloc\+As\+Type}} (std\+::size\+\_\+t size) -\/$>$ T $\ast$
+\item 
+{\footnotesize template$<$typename T $>$ }\\auto \mbox{\hyperlink{namespaceGpgFrontend_aa639da20e2329c4471ab5612325aef53}{Secure\+Realloc\+As\+Type}} (T $\ast$ptr, std\+::size\+\_\+t size) -\/$>$ T $\ast$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aab142fb7074042551b27101dd4c66e13}\label{namespaceGpgFrontend_aab142fb7074042551b27101dd4c66e13}} 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\static auto {\bfseries Secure\+Create\+Object} (Args \&\&...args) -\/$>$ T $\ast$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0a45485ea151b17c4eb756f929940a08}\label{namespaceGpgFrontend_a0a45485ea151b17c4eb756f929940a08}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Secure\+Destroy\+Object} (T $\ast$obj)
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a5af37847ea5afc05366af818405aea72}\label{namespaceGpgFrontend_a5af37847ea5afc05366af818405aea72}} 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\static auto {\bfseries Secure\+Create\+Unique\+Object} (Args \&\&...args) -\/$>$ std\+::unique\+\_\+ptr$<$ T, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ T $>$$>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a5c22b88f9b79bb13515bb73d7f44635e}\label{namespaceGpgFrontend_a5c22b88f9b79bb13515bb73d7f44635e}} 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\auto {\bfseries Secure\+Create\+Shared\+Object} (Args \&\&...args) -\/$>$ std\+::shared\+\_\+ptr$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ad6f5f187a7e547c30f899458de0e5714}\label{namespaceGpgFrontend_ad6f5f187a7e547c30f899458de0e5714}} 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\auto {\bfseries Secure\+Create\+QShared\+Object} (Args \&\&...args) -\/$>$ QShared\+Pointer$<$ T $>$
+\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_afb32e3d737c4bf2e6ad112a90fe7f1f5}{Init\+Logging\+System}} (const GFCxt\+SPtr \&ctx)
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a2b70b63c5a2173e62168123f6a2ad3da}\label{namespaceGpgFrontend_a2b70b63c5a2173e62168123f6a2ad3da}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_a2b70b63c5a2173e62168123f6a2ad3da}{Init\+Global\+Path\+Env}} ()
+\begin{DoxyCompactList}\small\item\em init global PATH env \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_acd17bf45c5a18c762d8638fd643eaf41}{Init\+Global\+Basical\+Env}} (const GFCxt\+WPtr \&p\+\_\+ctx, bool gui\+\_\+mode)
+\item 
+void \mbox{\hyperlink{namespaceGpgFrontend_a3ad5659719d261ea3142c2baa60d40ff}{Shutdown\+Global\+Basical\+Env}} (const GFCxt\+WPtr \&p\+\_\+ctx)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a9e0e33d7737ab41ab80422134e659bb3}\label{namespaceGpgFrontend_a9e0e33d7737ab41ab80422134e659bb3}} 
-const int {\bfseries GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL} = 0
+\mbox{\Hypertarget{namespaceGpgFrontend_a7364d5871088cf2788b1b62f8e57cd0b}\label{namespaceGpgFrontend_a7364d5871088cf2788b1b62f8e57cd0b}} 
+constexpr int {\bfseries k\+Crash\+Code} = $\sim$0
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a17ea01393928cb8638564cdd787151e4}\label{namespaceGpgFrontend_a17ea01393928cb8638564cdd787151e4}} 
-const int {\bfseries GPGFRONTEND\+\_\+\+NON\+\_\+\+ASCII\+\_\+\+CHANNEL} = 2
+\mbox{\Hypertarget{namespaceGpgFrontend_aa8b5320fe7408dcaf096afc81ec50ee0}\label{namespaceGpgFrontend_aa8b5320fe7408dcaf096afc81ec50ee0}} 
+Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorageCollection}{Singleton\+Storage\+Collection}} $>$ {\bfseries global\+\_\+instance} = nullptr
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ad8bf6414391c3be3b1ca3bcb1dc31ed8}\label{namespaceGpgFrontend_ad8bf6414391c3be3b1ca3bcb1dc31ed8}} 
+constexpr ssize\+\_\+t {\bfseries k\+Data\+Exchanger\+Size} = 8192
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a2e3fbfe1404b1f9d140d4177fd93e449}\label{namespaceGpgFrontend_a2e3fbfe1404b1f9d140d4177fd93e449}} 
+constexpr int \mbox{\hyperlink{namespaceGpgFrontend_a2e3fbfe1404b1f9d140d4177fd93e449}{k\+Restart\+Code}} = 1000
+\begin{DoxyCompactList}\small\item\em only refresh ui \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a66ab3e2370f5e22389a6f14722203eba}\label{namespaceGpgFrontend_a66ab3e2370f5e22389a6f14722203eba}} 
+constexpr int {\bfseries k\+Deep\+Restart\+Code} = 1001
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_ae8e2c74d50d72bb11d1dc4c87a94c38b}\label{namespaceGpgFrontend_ae8e2c74d50d72bb11d1dc4c87a94c38b}} 
+constexpr int {\bfseries k\+Gpg\+Frontend\+Default\+Channel} = 0
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a361a1d994bb15f5c6b84336523c062ea}\label{namespaceGpgFrontend_a361a1d994bb15f5c6b84336523c062ea}} 
+constexpr int {\bfseries k\+Gpg\+Frontend\+Non\+Ascii\+Channel} = 2
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a51a984685dad4a268877a335cc99df16}\label{namespaceGpgFrontend_a51a984685dad4a268877a335cc99df16}} 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+CRYPT\+\_\+\+BEGIN} = \char`\"{}-\/-\/-\/-\/-\/BEGIN PGP MESSAGE-\/-\/-\/-\/-\/\char`\"{}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0d3c3d137aca0e2168efa3c9c86a428a}\label{namespaceGpgFrontend_a0d3c3d137aca0e2168efa3c9c86a428a}} 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+CRYPT\+\_\+\+END} = \char`\"{}-\/-\/-\/-\/-\/END PGP MESSAGE-\/-\/-\/-\/-\/\char`\"{}
+\item 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+SIGNED\+\_\+\+BEGIN}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a26ae744ec7069879c3c1de36f62ab88c}\label{namespaceGpgFrontend_a26ae744ec7069879c3c1de36f62ab88c}} 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+SIGNED\+\_\+\+END} = \char`\"{}-\/-\/-\/-\/-\/END PGP SIGNATURE-\/-\/-\/-\/-\/\char`\"{}
+\item 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+SIGNATURE\+\_\+\+BEGIN}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a9be39741eaea98c723dacb136d977c1e}\label{namespaceGpgFrontend_a9be39741eaea98c723dacb136d977c1e}} 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+SIGNATURE\+\_\+\+END} = \char`\"{}-\/-\/-\/-\/-\/END PGP SIGNATURE-\/-\/-\/-\/-\/\char`\"{}
+\item 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+PUBLIC\+\_\+\+KEY\+\_\+\+BEGIN}
+\item 
+constexpr const char $\ast$ {\bfseries PGP\+\_\+\+PRIVATE\+\_\+\+KEY\+\_\+\+BEGIN}
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a014b2bbf69113d3856e42455650ae18c}\label{namespaceGpgFrontend_a014b2bbf69113d3856e42455650ae18c}} 
+constexpr size\+\_\+t {\bfseries k\+Buffer\+Size} = 32 $\ast$ 1024
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Copyright (C) 2021 Saturneric
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
@@ -264,104 +552,16 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceGpgFrontend_aaf7ddbd50cd4f16b7d2a997c03b20933}\label{namespaceGpgFrontend_aaf7ddbd50cd4f16b7d2a997c03b20933}} 
-\index{GpgFrontend@{GpgFrontend}!\_new\_result@{\_new\_result}}
-\index{\_new\_result@{\_new\_result}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{\_new\_result()}{\_new\_result()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Decr\+Result Gpg\+Frontend\+::\+\_\+new\+\_\+result (\begin{DoxyParamCaption}\item[{gpgme\+\_\+decrypt\+\_\+result\+\_\+t \&\&}]{result }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em result} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Gpg\+Decr\+Result 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}\label{namespaceGpgFrontend_a2a6566f59b4be29e453a1edd93f6a337}} 
-\index{GpgFrontend@{GpgFrontend}!\_new\_result@{\_new\_result}}
-\index{\_new\_result@{\_new\_result}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{\_new\_result()}{\_new\_result()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Encr\+Result Gpg\+Frontend\+::\+\_\+new\+\_\+result (\begin{DoxyParamCaption}\item[{gpgme\+\_\+encrypt\+\_\+result\+\_\+t \&\&}]{result }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em result} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Gpg\+Encr\+Result 
-\end{DoxyReturn}
-
-
-Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify().
-
-\mbox{\Hypertarget{namespaceGpgFrontend_af909eb3cf2690d23939e394a461e48e9}\label{namespaceGpgFrontend_af909eb3cf2690d23939e394a461e48e9}} 
-\index{GpgFrontend@{GpgFrontend}!\_new\_result@{\_new\_result}}
-\index{\_new\_result@{\_new\_result}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{\_new\_result()}{\_new\_result()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Gen\+Key\+Result Gpg\+Frontend\+::\+\_\+new\+\_\+result (\begin{DoxyParamCaption}\item[{gpgme\+\_\+genkey\+\_\+result\+\_\+t \&\&}]{result }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em result} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Gpg\+Gen\+Key\+Result 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_acb5dd82fc7d0428bafe34ed304dc15d1}\label{namespaceGpgFrontend_acb5dd82fc7d0428bafe34ed304dc15d1}} 
-\index{GpgFrontend@{GpgFrontend}!\_new\_result@{\_new\_result}}
-\index{\_new\_result@{\_new\_result}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{\_new\_result()}{\_new\_result()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Sign\+Result Gpg\+Frontend\+::\+\_\+new\+\_\+result (\begin{DoxyParamCaption}\item[{gpgme\+\_\+sign\+\_\+result\+\_\+t \&\&}]{result }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em result} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Gpg\+Sign\+Result 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_ae3f2947210ad3e11269ebac355f47492}\label{namespaceGpgFrontend_ae3f2947210ad3e11269ebac355f47492}} 
-\index{GpgFrontend@{GpgFrontend}!\_new\_result@{\_new\_result}}
-\index{\_new\_result@{\_new\_result}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{\_new\_result()}{\_new\_result()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Verify\+Result Gpg\+Frontend\+::\+\_\+new\+\_\+result (\begin{DoxyParamCaption}\item[{gpgme\+\_\+verify\+\_\+result\+\_\+t \&\&}]{result }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em result} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Gpg\+Verify\+Result 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_ac494a4b0d91e08a70db77a399c9a0f30}\label{namespaceGpgFrontend_ac494a4b0d91e08a70db77a399c9a0f30}} 
-\index{GpgFrontend@{GpgFrontend}!beautify\_fingerprint@{beautify\_fingerprint}}
-\index{beautify\_fingerprint@{beautify\_fingerprint}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{beautify\_fingerprint()}{beautify\_fingerprint()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::beautify\+\_\+fingerprint (\begin{DoxyParamCaption}\item[{Gpg\+Frontend\+::\+Bype\+Array\+Const\+Ref}]{fingerprint }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_ad437908d506d86137a0d2fdec4c6c957}\label{namespaceGpgFrontend_ad437908d506d86137a0d2fdec4c6c957}} 
+\index{GpgFrontend@{GpgFrontend}!BeautifyFingerprint@{BeautifyFingerprint}}
+\index{BeautifyFingerprint@{BeautifyFingerprint}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{BeautifyFingerprint()}{BeautifyFingerprint()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Beautify\+Fingerprint (\begin{DoxyParamCaption}\item[{QString}]{fingerprint }\end{DoxyParamCaption}) -\/$>$  QString}
 
 
 \begin{DoxyParams}{Parameters}
@@ -369,17 +569,35 @@ Gpg\+Verify\+Result
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}\label{namespaceGpgFrontend_afdad4e5f4c3ac891c09216e245c0f48e}} 
-\index{GpgFrontend@{GpgFrontend}!check\_gpg\_error@{check\_gpg\_error}}
-\index{check\_gpg\_error@{check\_gpg\_error}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{check\_gpg\_error()}{check\_gpg\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error (\begin{DoxyParamCaption}\item[{Gpg\+Error}]{err }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_af395fb120a603d913ac040372ee5c651}\label{namespaceGpgFrontend_af395fb120a603d913ac040372ee5c651}} 
+\index{GpgFrontend@{GpgFrontend}!CalculateHash@{CalculateHash}}
+\index{CalculateHash@{CalculateHash}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CalculateHash()}{CalculateHash()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Calculate\+Hash (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+path }\end{DoxyParamCaption}) -\/$>$  QString}
+
+calculate the hash of a file 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References Get\+Human\+Friendly\+File\+Size().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a864178db4c07b932c2ae6e7a20fe87bf}\label{namespaceGpgFrontend_a864178db4c07b932c2ae6e7a20fe87bf}} 
+\index{GpgFrontend@{GpgFrontend}!CheckGpgError@{CheckGpgError}}
+\index{CheckGpgError@{CheckGpgError}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CheckGpgError()}{CheckGpgError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Check\+Gpg\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{err }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -391,13 +609,13 @@ Gpg\+Error
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Gpg\+Context\+::\+Gpg\+Context(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+Password(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Rev\+UID(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Set\+Primary\+UID(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Set\+Signers(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify().
+Referenced by Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Add\+UID(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Archive(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+Archive(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Directory(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+Directory(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Rev\+UID(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Owner\+Trust\+Level(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Set\+Primary\+UID(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Set\+Signers(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign\+Sync(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+append\+\_\+selected\+\_\+keys(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key(), Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Directory\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Verify(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File\+Sync(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify\+Sync().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_adf0fbe100c3ea1bf2f33bc0f55dfff17}\label{namespaceGpgFrontend_adf0fbe100c3ea1bf2f33bc0f55dfff17}} 
-\index{GpgFrontend@{GpgFrontend}!check\_gpg\_error@{check\_gpg\_error}}
-\index{check\_gpg\_error@{check\_gpg\_error}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{check\_gpg\_error()}{check\_gpg\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily gpgme\+\_\+error\+\_\+t Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error (\begin{DoxyParamCaption}\item[{Gpg\+Error}]{gpgme\+Error,  }\item[{const std\+::string \&}]{comment }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_a76dbbc37c483668600134ecb593f6263}\label{namespaceGpgFrontend_a76dbbc37c483668600134ecb593f6263}} 
+\index{GpgFrontend@{GpgFrontend}!CheckGpgError@{CheckGpgError}}
+\index{CheckGpgError@{CheckGpgError}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CheckGpgError()}{CheckGpgError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Check\+Gpg\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{gpgme\+Error,  }\item[{const QString \&}]{comment }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -409,11 +627,11 @@ Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Front
 \begin{DoxyReturn}{Returns}
 Gpg\+Error 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}\label{namespaceGpgFrontend_a4edac6df92596ba8eea3a8cdc1173684}} 
-\index{GpgFrontend@{GpgFrontend}!check\_gpg\_error\_2\_err\_code@{check\_gpg\_error\_2\_err\_code}}
-\index{check\_gpg\_error\_2\_err\_code@{check\_gpg\_error\_2\_err\_code}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{check\_gpg\_error\_2\_err\_code()}{check\_gpg\_error\_2\_err\_code()}}
-{\footnotesize\ttfamily gpg\+\_\+err\+\_\+code\+\_\+t Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code (\begin{DoxyParamCaption}\item[{gpgme\+\_\+error\+\_\+t}]{err,  }\item[{gpgme\+\_\+error\+\_\+t}]{predict = {\ttfamily GPG\+\_\+ERR\+\_\+NO\+\_\+ERROR} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_ac75881bd0bf993fa53464dbf76342a39}\label{namespaceGpgFrontend_ac75881bd0bf993fa53464dbf76342a39}} 
+\index{GpgFrontend@{GpgFrontend}!CheckGpgError2ErrCode@{CheckGpgError2ErrCode}}
+\index{CheckGpgError2ErrCode@{CheckGpgError2ErrCode}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CheckGpgError2ErrCode()}{CheckGpgError2ErrCode()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Check\+Gpg\+Error2\+Err\+Code (\begin{DoxyParamCaption}\item[{gpgme\+\_\+error\+\_\+t}]{err,  }\item[{gpgme\+\_\+error\+\_\+t}]{predict = {\ttfamily GPG\+\_\+ERR\+\_\+NO\+\_\+ERROR} }\end{DoxyParamCaption}) -\/$>$  gpg\+\_\+err\+\_\+code\+\_\+t}
 
 
 \begin{DoxyParams}{Parameters}
@@ -427,13 +645,165 @@ gpg\+\_\+err\+\_\+code\+\_\+t
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Add\+UID(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+SSH(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Flush\+Key\+Cache(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Context\+::\+Gpg\+Context(), Gpg\+Frontend\+::\+Gpg\+Context\+::post\+\_\+init\+\_\+ctx(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Rev\+UID(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Owner\+Trust\+Level(), Gpg\+Frontend\+::\+Gpg\+UIDOperator\+::\+Set\+Primary\+UID(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+decrypt\+\_\+verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+encrypt\+\_\+sign(), Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+verify().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Failure\+Message\+Box(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_acff2cf5dd5b112b324fa6574ee935f79}\label{namespaceGpgFrontend_acff2cf5dd5b112b324fa6574ee935f79}} 
-\index{GpgFrontend@{GpgFrontend}!get\_file\_extension@{get\_file\_extension}}
-\index{get\_file\_extension@{get\_file\_extension}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{get\_file\_extension()}{get\_file\_extension()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::get\+\_\+file\+\_\+extension (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_a3eb3e3e38d04e035e3c2d44b5a553d32}\label{namespaceGpgFrontend_a3eb3e3e38d04e035e3c2d44b5a553d32}} 
+\index{GpgFrontend@{GpgFrontend}!CompareSoftwareVersion@{CompareSoftwareVersion}}
+\index{CompareSoftwareVersion@{CompareSoftwareVersion}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CompareSoftwareVersion()}{CompareSoftwareVersion()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Compare\+Software\+Version (\begin{DoxyParamCaption}\item[{const QString \&}]{a,  }\item[{const QString \&}]{b }\end{DoxyParamCaption}) -\/$>$  int}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy(), Gpg\+Frontend\+::\+Module\+::\+Integrated\+::\+Version\+Checking\+Module\+::\+Software\+Version\+::\+Need\+Upgrade(), Run\+Gpg\+Opera\+Async(), and Run\+Gpg\+Opera\+Sync().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a75f249f0581b7886cad96fb8a47caebe}\label{namespaceGpgFrontend_a75f249f0581b7886cad96fb8a47caebe}} 
+\index{GpgFrontend@{GpgFrontend}!CreateTempFileAndWriteData@{CreateTempFileAndWriteData}}
+\index{CreateTempFileAndWriteData@{CreateTempFileAndWriteData}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CreateTempFileAndWriteData()}{CreateTempFileAndWriteData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Create\+Temp\+File\+And\+Write\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} \&}]{data }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References Get\+Temp\+File\+Path(), and Write\+File().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_aa8c5cb4cb2c9421dc8f754d3652c5313}\label{namespaceGpgFrontend_aa8c5cb4cb2c9421dc8f754d3652c5313}} 
+\index{GpgFrontend@{GpgFrontend}!CreateTempFileAndWriteData@{CreateTempFileAndWriteData}}
+\index{CreateTempFileAndWriteData@{CreateTempFileAndWriteData}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{CreateTempFileAndWriteData()}{CreateTempFileAndWriteData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Create\+Temp\+File\+And\+Write\+Data (\begin{DoxyParamCaption}\item[{const QString \&}]{data }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References Get\+Temp\+File\+Path(), and Write\+File().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a445c070c37811b064e6e4dbb8979bc95}\label{namespaceGpgFrontend_a445c070c37811b064e6e4dbb8979bc95}} 
+\index{GpgFrontend@{GpgFrontend}!DeleteAllFilesByPattern@{DeleteAllFilesByPattern}}
+\index{DeleteAllFilesByPattern@{DeleteAllFilesByPattern}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{DeleteAllFilesByPattern()}{DeleteAllFilesByPattern()}}
+{\footnotesize\ttfamily void GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Delete\+All\+Files\+By\+Pattern (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{const QString \&}]{filename\+\_\+pattern }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+{\em filename\+\_\+pattern} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceGpgFrontend_aa22dc541423cb09a1dd250d458eb069c}\label{namespaceGpgFrontend_aa22dc541423cb09a1dd250d458eb069c}} 
+\index{GpgFrontend@{GpgFrontend}!DescribeGpgErrCode@{DescribeGpgErrCode}}
+\index{DescribeGpgErrCode@{DescribeGpgErrCode}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{DescribeGpgErrCode()}{DescribeGpgErrCode()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Describe\+Gpg\+Err\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{err }\end{DoxyParamCaption}) -\/$>$  Gpg\+Error\+Desc}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gpg\+Error\+Desc 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Failure\+Message\+Box(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a145ff996dfe117c16297483ce7bc053a}\label{namespaceGpgFrontend_a145ff996dfe117c16297483ce7bc053a}} 
+\index{GpgFrontend@{GpgFrontend}!GetCacheValue@{GetCacheValue}}
+\index{GetCacheValue@{GetCacheValue}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetCacheValue()}{GetCacheValue()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Cache\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{key }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+
+after get the temp cache, its value will be imediately ease in storage 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Cache\+Manager $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a0f6c508ed7db841c0eaf5907c7612ff6}\label{namespaceGpgFrontend_a0f6c508ed7db841c0eaf5907c7612ff6}} 
+\index{GpgFrontend@{GpgFrontend}!GetChannelObjectInstance@{GetChannelObjectInstance}}
+\index{GetChannelObjectInstance@{GetChannelObjectInstance}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetChannelObjectInstance()}{GetChannelObjectInstance()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Channel\+Object\+Instance (\begin{DoxyParamCaption}\item[{const std\+::type\+\_\+info \&}]{type,  }\item[{int}]{channel }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $\ast$}
+
+
+
+Get the Instance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_addea8a9496b97952a6268f14a392e981}\label{namespaceGpgFrontend_addea8a9496b97952a6268f14a392e981}} 
+\index{GpgFrontend@{GpgFrontend}!GetCoreLogger@{GetCoreLogger}}
+\index{GetCoreLogger@{GetCoreLogger}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetCoreLogger()}{GetCoreLogger()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Core\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$  std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$}
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$spdlog\+::logger$>$ 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Logger\+Manager $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_aadeb053cc9436a24f80ab4ec5b27cf51}\label{namespaceGpgFrontend_aadeb053cc9436a24f80ab4ec5b27cf51}} 
+\index{GpgFrontend@{GpgFrontend}!GetDefaultLogger@{GetDefaultLogger}}
+\index{GetDefaultLogger@{GetDefaultLogger}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetDefaultLogger()}{GetDefaultLogger()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Default\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$  std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$}
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$spdlog\+::logger$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_a603b75f118cc58b6f267df4347acd6e9}\label{namespaceGpgFrontend_a603b75f118cc58b6f267df4347acd6e9}} 
+\index{GpgFrontend@{GpgFrontend}!GetFileExtension@{GetFileExtension}}
+\index{GetFileExtension@{GetFileExtension}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetFileExtension()}{GetFileExtension()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+File\+Extension (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption}) -\/$>$  QString}
 
 
 
@@ -445,13 +815,82 @@ Get the file extension object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_a5a2f5fc1ad3de55e41a1b7a388821328}\label{namespaceGpgFrontend_a5a2f5fc1ad3de55e41a1b7a388821328}} 
-\index{GpgFrontend@{GpgFrontend}!get\_only\_file\_name\_with\_path@{get\_only\_file\_name\_with\_path}}
-\index{get\_only\_file\_name\_with\_path@{get\_only\_file\_name\_with\_path}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{get\_only\_file\_name\_with\_path()}{get\_only\_file\_name\_with\_path()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::get\+\_\+only\+\_\+file\+\_\+name\+\_\+with\+\_\+path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_ac05bfb7efd56d3012777ed2e8e355a6a}\label{namespaceGpgFrontend_ac05bfb7efd56d3012777ed2e8e355a6a}} 
+\index{GpgFrontend@{GpgFrontend}!GetFileSizeByPath@{GetFileSizeByPath}}
+\index{GetFileSizeByPath@{GetFileSizeByPath}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetFileSizeByPath()}{GetFileSizeByPath()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+File\+Size\+By\+Path (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{const QString \&}]{filename\+\_\+pattern }\end{DoxyParamCaption}) -\/$>$  int64\+\_\+t}
+
+
+
+Get the File Size By Path object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the file \\
+\hline
+{\em filename\+\_\+pattern} & The pattern of the file name, e.\+g. \char`\"{}$\ast$.\+txt\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int64\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_ac855ff975b7f2571f5dab25c857e5a4f}\label{namespaceGpgFrontend_ac855ff975b7f2571f5dab25c857e5a4f}} 
+\index{GpgFrontend@{GpgFrontend}!GetFullExtension@{GetFullExtension}}
+\index{GetFullExtension@{GetFullExtension}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetFullExtension()}{GetFullExtension()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Full\+Extension (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_a5b86eb3adc57fa5f55e9f55a69031f71}\label{namespaceGpgFrontend_a5b86eb3adc57fa5f55e9f55a69031f71}} 
+\index{GpgFrontend@{GpgFrontend}!GetHumanFriendlyFileSize@{GetHumanFriendlyFileSize}}
+\index{GetHumanFriendlyFileSize@{GetHumanFriendlyFileSize}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetHumanFriendlyFileSize()}{GetHumanFriendlyFileSize()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Human\+Friendly\+File\+Size (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+
+Get the Human Readable File Size object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+Referenced by Calculate\+Hash().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a7a6ec562e4deb109d575f0e6baa66ffe}\label{namespaceGpgFrontend_a7a6ec562e4deb109d575f0e6baa66ffe}} 
+\index{GpgFrontend@{GpgFrontend}!GetLogger@{GetLogger}}
+\index{GetLogger@{GetLogger}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetLogger()}{GetLogger()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Logger (\begin{DoxyParamCaption}\item[{const QString \&}]{ }\end{DoxyParamCaption}) -\/$>$  std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$}
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$spdlog\+::logger$>$ 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Logger\+Manager $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a3025370b8e98cbb40c3a0c420162e5a1}\label{namespaceGpgFrontend_a3025370b8e98cbb40c3a0c420162e5a1}} 
+\index{GpgFrontend@{GpgFrontend}!GetOnlyFileNameWithPath@{GetOnlyFileNameWithPath}}
+\index{GetOnlyFileNameWithPath@{GetOnlyFileNameWithPath}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetOnlyFileNameWithPath()}{GetOnlyFileNameWithPath()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Only\+File\+Name\+With\+Path (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption}) -\/$>$  QString}
 
 
 
@@ -463,42 +902,408 @@ Get the only file name with path object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_aafb9aa0ba1d03afa09085b1b8136c55f}\label{namespaceGpgFrontend_aafb9aa0ba1d03afa09085b1b8136c55f}} 
-\index{GpgFrontend@{GpgFrontend}!new\_default\_settings\_channel@{new\_default\_settings\_channel}}
-\index{new\_default\_settings\_channel@{new\_default\_settings\_channel}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{new\_default\_settings\_channel()}{new\_default\_settings\_channel()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::new\+\_\+default\+\_\+settings\+\_\+channel (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily GpgFrontend\+:\+:GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_a3d15fda681fcdd6ea07a8eb31f81b249}\label{namespaceGpgFrontend_a3d15fda681fcdd6ea07a8eb31f81b249}} 
+\index{GpgFrontend@{GpgFrontend}!GetTempFilePath@{GetTempFilePath}}
+\index{GetTempFilePath@{GetTempFilePath}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{GetTempFilePath()}{GetTempFilePath()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Get\+Temp\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$  QString}
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+Referenced by Create\+Temp\+File\+And\+Write\+Data().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_acd17bf45c5a18c762d8638fd643eaf41}\label{namespaceGpgFrontend_acd17bf45c5a18c762d8638fd643eaf41}} 
+\index{GpgFrontend@{GpgFrontend}!InitGlobalBasicalEnv@{InitGlobalBasicalEnv}}
+\index{InitGlobalBasicalEnv@{InitGlobalBasicalEnv}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{InitGlobalBasicalEnv()}{InitGlobalBasicalEnv()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Init\+Global\+Basical\+Env (\begin{DoxyParamCaption}\item[{const GFCxt\+WPtr \&}]{,  }\item[{bool}]{ }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
-{\em channel} & \\
+{\em args} & \\
 \hline
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Context $>$\+::\+Create\+Instance().
+References Init\+Global\+Path\+Env(), Init\+Logging\+System(), Gpg\+Frontend\+::\+Module\+::\+Load\+Gpg\+Frontend\+Modules(), and Set\+Default\+Log\+Level().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_a73f3e2217fb1d72dc75f266e11875f6d}\label{namespaceGpgFrontend_a73f3e2217fb1d72dc75f266e11875f6d}} 
-\index{GpgFrontend@{GpgFrontend}!read\_all\_data\_in\_file@{read\_all\_data\_in\_file}}
-\index{read\_all\_data\_in\_file@{read\_all\_data\_in\_file}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{read\_all\_data\_in\_file()}{read\_all\_data\_in\_file()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::read\+\_\+all\+\_\+data\+\_\+in\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_afb32e3d737c4bf2e6ad112a90fe7f1f5}\label{namespaceGpgFrontend_afb32e3d737c4bf2e6ad112a90fe7f1f5}} 
+\index{GpgFrontend@{GpgFrontend}!InitLoggingSystem@{InitLoggingSystem}}
+\index{InitLoggingSystem@{InitLoggingSystem}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{InitLoggingSystem()}{InitLoggingSystem()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Init\+Logging\+System (\begin{DoxyParamCaption}\item[{const GFCxt\+SPtr \&}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+
+References Register\+Sync\+Logger().
+
+
+
+Referenced by Init\+Global\+Basical\+Env().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a253c30d60238c5c0ed1545d0c7bf31de}\label{namespaceGpgFrontend_a253c30d60238c5c0ed1545d0c7bf31de}} 
+\index{GpgFrontend@{GpgFrontend}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name,  }\item[{QByte\+Array \&}]{data }\end{DoxyParamCaption}) -\/$>$  bool}
+
+
+
+read file content 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & file name \\
+\hline
+{\em data} & data read from file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+
+false if failed 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+Data\+Object\+Operator\+::\+Data\+Object\+Operator(), Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package(), Read\+File\+GFBuffer(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+File().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a316a209be1a4c403426c77b029e319fc}\label{namespaceGpgFrontend_a316a209be1a4c403426c77b029e319fc}} 
+\index{GpgFrontend@{GpgFrontend}!ReadFileGFBuffer@{ReadFileGFBuffer}}
+\index{ReadFileGFBuffer@{ReadFileGFBuffer}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{ReadFileGFBuffer()}{ReadFileGFBuffer()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Read\+File\+GFBuffer (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name }\end{DoxyParamCaption}) -\/$>$  std\+::tuple$<$ bool, \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} $>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} 
+\end{DoxyReturn}
+
+
+References Read\+File().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a5b02173b14e6ea7c0eee0e23e6bc879f}\label{namespaceGpgFrontend_a5b02173b14e6ea7c0eee0e23e6bc879f}} 
+\index{GpgFrontend@{GpgFrontend}!RegisterAsyncLogger@{RegisterAsyncLogger}}
+\index{RegisterAsyncLogger@{RegisterAsyncLogger}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RegisterAsyncLogger()}{RegisterAsyncLogger()}}
+{\footnotesize\ttfamily void GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Register\+Async\+Logger (\begin{DoxyParamCaption}\item[{const QString \&}]{,  }\item[{spdlog\+::level\+::level\+\_\+enum}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Logger\+Manager $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_ae910f7b068d7bd832bff6bfabed34859}\label{namespaceGpgFrontend_ae910f7b068d7bd832bff6bfabed34859}} 
+\index{GpgFrontend@{GpgFrontend}!RegisterSyncLogger@{RegisterSyncLogger}}
+\index{RegisterSyncLogger@{RegisterSyncLogger}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RegisterSyncLogger()}{RegisterSyncLogger()}}
+{\footnotesize\ttfamily void GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Register\+Sync\+Logger (\begin{DoxyParamCaption}\item[{const QString \&}]{,  }\item[{spdlog\+::level\+::level\+\_\+enum}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Logger\+Manager $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Init\+Logging\+System().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a1fad8d31c148bf81a9bea45b2918b9e5}\label{namespaceGpgFrontend_a1fad8d31c148bf81a9bea45b2918b9e5}} 
+\index{GpgFrontend@{GpgFrontend}!ResetCacheValue@{ResetCacheValue}}
+\index{ResetCacheValue@{ResetCacheValue}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{ResetCacheValue()}{ResetCacheValue()}}
+{\footnotesize\ttfamily void GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Reset\+Cache\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{ }\end{DoxyParamCaption})}
+
+
+
+imediately ease temp cache in storage 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Cache\+Manager $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_abeb3c754e9529570abe5fef6a97f3c22}\label{namespaceGpgFrontend_abeb3c754e9529570abe5fef6a97f3c22}} 
+\index{GpgFrontend@{GpgFrontend}!RunGpgOperaAsync@{RunGpgOperaAsync}}
+\index{RunGpgOperaAsync@{RunGpgOperaAsync}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RunGpgOperaAsync()}{RunGpgOperaAsync()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Async (\begin{DoxyParamCaption}\item[{const Gpg\+Opera\+Runnable \&}]{runnable,  }\item[{const Gpg\+Operation\+Callback \&}]{callback,  }\item[{const QString \&}]{operation,  }\item[{const QString \&}]{minial\+\_\+version }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em runnable} & \\
+\hline
+{\em callback} & \\
+\hline
+{\em operation} & \\
+\hline
+{\em minial\+\_\+version} & \\
+\hline
+\end{DoxyParams}
+
+
+References Compare\+Software\+Version(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Archive(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+Archive(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Directory(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+Directory(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+All\+Keys(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Keys(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+Password(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify(), and Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a4c2a4a157e45e169682a99d7f5130dc0}\label{namespaceGpgFrontend_a4c2a4a157e45e169682a99d7f5130dc0}} 
+\index{GpgFrontend@{GpgFrontend}!RunGpgOperaSync@{RunGpgOperaSync}}
+\index{RunGpgOperaSync@{RunGpgOperaSync}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RunGpgOperaSync()}{RunGpgOperaSync()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Sync (\begin{DoxyParamCaption}\item[{const Gpg\+Opera\+Runnable \&}]{runnable,  }\item[{const QString \&}]{operation,  }\item[{const QString \&}]{minial\+\_\+version }\end{DoxyParamCaption}) -\/$>$  std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em runnable} & \\
+\hline
+{\em operation} & \\
+\hline
+{\em minial\+\_\+version} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$\+Gpg\+Error, Data\+Object\+Ptr$>$ 
+\end{DoxyReturn}
+
+
+References Compare\+Software\+Version().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Sign\+File\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Verify\+File\+Sync(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Verify\+Sync().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a6a865c31afb5384811ed69b72c31ad8c}\label{namespaceGpgFrontend_a6a865c31afb5384811ed69b72c31ad8c}} 
+\index{GpgFrontend@{GpgFrontend}!RunIOOperaAsync@{RunIOOperaAsync}}
+\index{RunIOOperaAsync@{RunIOOperaAsync}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RunIOOperaAsync()}{RunIOOperaAsync()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Run\+IOOpera\+Async (\begin{DoxyParamCaption}\item[{const Opera\+Runnable \&}]{runnable,  }\item[{const Operation\+Callback \&}]{callback,  }\item[{const QString \&}]{operation }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em runnable} & \\
+\hline
+{\em callback} & \\
+\hline
+{\em operation} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Archive\+File\+Operator\+::\+Extract\+Archive\+From\+Data\+Exchanger(), and Gpg\+Frontend\+::\+Archive\+File\+Operator\+::\+New\+Archive2\+Data\+Exchanger().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a9eb3f1dfac3cab84bb08712c3953eb61}\label{namespaceGpgFrontend_a9eb3f1dfac3cab84bb08712c3953eb61}} 
+\index{GpgFrontend@{GpgFrontend}!RunOperaAsync@{RunOperaAsync}}
+\index{RunOperaAsync@{RunOperaAsync}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{RunOperaAsync()}{RunOperaAsync()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Run\+Opera\+Async (\begin{DoxyParamCaption}\item[{const Opera\+Runnable \&}]{runnable,  }\item[{const Operation\+Callback \&}]{callback,  }\item[{const QString \&}]{operation }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em runnable} & \\
+\hline
+{\em callback} & \\
+\hline
+{\em operation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Thread\+::\+Task\+::\+Task\+Handler}} 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_afd01101bc53f022b7d4790c6855762c4}\label{namespaceGpgFrontend_afd01101bc53f022b7d4790c6855762c4}} 
+\index{GpgFrontend@{GpgFrontend}!SecureMalloc@{SecureMalloc}}
+\index{SecureMalloc@{SecureMalloc}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SecureMalloc()}{SecureMalloc()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Secure\+Malloc (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{ }\end{DoxyParamCaption}) -\/$>$  void $\ast$}
+
+\begin{DoxyReturn}{Returns}
+void$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_a398baf5153c1eb3534729d11edb01f9c}\label{namespaceGpgFrontend_a398baf5153c1eb3534729d11edb01f9c}} 
+\index{GpgFrontend@{GpgFrontend}!SecureMallocAsType@{SecureMallocAsType}}
+\index{SecureMallocAsType@{SecureMallocAsType}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SecureMallocAsType()}{SecureMallocAsType()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto Gpg\+Frontend\+::\+Secure\+Malloc\+As\+Type (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption}) -\/$>$ T $\ast$ }
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_a5e86f89a31d6514217b74dd1bbc59bfe}\label{namespaceGpgFrontend_a5e86f89a31d6514217b74dd1bbc59bfe}} 
+\index{GpgFrontend@{GpgFrontend}!SecureRealloc@{SecureRealloc}}
+\index{SecureRealloc@{SecureRealloc}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SecureRealloc()}{SecureRealloc()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Secure\+Realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{,  }\item[{std\+::size\+\_\+t}]{ }\end{DoxyParamCaption}) -\/$>$  void $\ast$}
+
+\begin{DoxyReturn}{Returns}
+void$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_aa639da20e2329c4471ab5612325aef53}\label{namespaceGpgFrontend_aa639da20e2329c4471ab5612325aef53}} 
+\index{GpgFrontend@{GpgFrontend}!SecureReallocAsType@{SecureReallocAsType}}
+\index{SecureReallocAsType@{SecureReallocAsType}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SecureReallocAsType()}{SecureReallocAsType()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto Gpg\+Frontend\+::\+Secure\+Realloc\+As\+Type (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption}) -\/$>$ T $\ast$ }
+
+\begin{DoxyReturn}{Returns}
+void$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_ad5b2890d3b26624800fa482d23f0e48d}\label{namespaceGpgFrontend_ad5b2890d3b26624800fa482d23f0e48d}} 
+\index{GpgFrontend@{GpgFrontend}!SetDefaultLogLevel@{SetDefaultLogLevel}}
+\index{SetDefaultLogLevel@{SetDefaultLogLevel}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SetDefaultLogLevel()}{SetDefaultLogLevel()}}
+{\footnotesize\ttfamily void GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Set\+Default\+Log\+Level (\begin{DoxyParamCaption}\item[{spdlog\+::level\+::level\+\_\+enum}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the Default Log Level object. 
+
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+
+
+Referenced by Init\+Global\+Basical\+Env().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_aacb6d1475346e42afb8e0ea8427bac9a}\label{namespaceGpgFrontend_aacb6d1475346e42afb8e0ea8427bac9a}} 
+\index{GpgFrontend@{GpgFrontend}!SetExtensionOfOutputFile@{SetExtensionOfOutputFile}}
+\index{SetExtensionOfOutputFile@{SetExtensionOfOutputFile}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SetExtensionOfOutputFile()}{SetExtensionOfOutputFile()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Set\+Extension\+Of\+Output\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{Gpg\+Operation}]{opera,  }\item[{bool}]{ascii }\end{DoxyParamCaption}) -\/$>$  QString}
+
+
+\begin{DoxyParams}{Parameters}
+{\em opera} & \\
+\hline
+{\em ascii} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a4d05b4cdd90b01bb59d887e43df39e69}\label{namespaceGpgFrontend_a4d05b4cdd90b01bb59d887e43df39e69}} 
+\index{GpgFrontend@{GpgFrontend}!SetExtensionOfOutputFileForArchive@{SetExtensionOfOutputFileForArchive}}
+\index{SetExtensionOfOutputFileForArchive@{SetExtensionOfOutputFileForArchive}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{SetExtensionOfOutputFileForArchive()}{SetExtensionOfOutputFileForArchive()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Set\+Extension\+Of\+Output\+File\+For\+Archive (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{Gpg\+Operation}]{opera,  }\item[{bool}]{ascii }\end{DoxyParamCaption}) -\/$>$  QString}
 
 
 \begin{DoxyParams}{Parameters}
 {\em path} & \\
 \hline
+{\em opera} & \\
+\hline
+{\em ascii} & \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_a2a0394c8bdd277f5235f9875a1d69a99}\label{namespaceGpgFrontend_a2a0394c8bdd277f5235f9875a1d69a99}} 
-\index{GpgFrontend@{GpgFrontend}!text\_is\_signed@{text\_is\_signed}}
-\index{text\_is\_signed@{text\_is\_signed}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{text\_is\_signed()}{text\_is\_signed()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::text\+\_\+is\+\_\+signed (\begin{DoxyParamCaption}\item[{Gpg\+Frontend\+::\+Bype\+Array\+Ref}]{text }\end{DoxyParamCaption})}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt\+Verify(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Directory\+Encrypt\+Sign().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a3ad5659719d261ea3142c2baa60d40ff}\label{namespaceGpgFrontend_a3ad5659719d261ea3142c2baa60d40ff}} 
+\index{GpgFrontend@{GpgFrontend}!ShutdownGlobalBasicalEnv@{ShutdownGlobalBasicalEnv}}
+\index{ShutdownGlobalBasicalEnv@{ShutdownGlobalBasicalEnv}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{ShutdownGlobalBasicalEnv()}{ShutdownGlobalBasicalEnv()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Shutdown\+Global\+Basical\+Env (\begin{DoxyParamCaption}\item[{const GFCxt\+WPtr \&}]{p\+\_\+ctx }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ctx} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_abca29d455373e3278486ed20c4a63b6e}\label{namespaceGpgFrontend_abca29d455373e3278486ed20c4a63b6e}} 
+\index{GpgFrontend@{GpgFrontend}!StartApplication@{StartApplication}}
+\index{StartApplication@{StartApplication}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{StartApplication()}{StartApplication()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Start\+Application (\begin{DoxyParamCaption}\item[{const GFCxt\+WPtr \&}]{p\+\_\+ctx }\end{DoxyParamCaption}) -\/$>$  int}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+internationalisation. loop to restart main window with changed translation when settings change.
+
+References Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), k\+Restart\+Code, Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+Module\+::\+Shutdown\+Gpg\+Frontend\+Modules().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a730cce728b43f040f6b0cb2823146a06}\label{namespaceGpgFrontend_a730cce728b43f040f6b0cb2823146a06}} 
+\index{GpgFrontend@{GpgFrontend}!TargetFilePreCheck@{TargetFilePreCheck}}
+\index{TargetFilePreCheck@{TargetFilePreCheck}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{TargetFilePreCheck()}{TargetFilePreCheck()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Target\+File\+Pre\+Check (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{bool}]{read }\end{DoxyParamCaption}) -\/$>$  std\+::tuple$<$ bool, QString $>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+{\em read} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$bool, QString$>$ 
+\end{DoxyReturn}
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Directory\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Decrypt\+Verify(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Encrypt\+Sign(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Sign(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+File\+Verify().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a05c3fa7850da1b7fc2e89a9604beb1db}\label{namespaceGpgFrontend_a05c3fa7850da1b7fc2e89a9604beb1db}} 
+\index{GpgFrontend@{GpgFrontend}!TextIsSigned@{TextIsSigned}}
+\index{TextIsSigned@{TextIsSigned}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{TextIsSigned()}{TextIsSigned()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Text\+Is\+Signed (\begin{DoxyParamCaption}\item[{Bype\+Array\+Ref}]{text }\end{DoxyParamCaption}) -\/$>$  int}
 
 
 \begin{DoxyParams}{Parameters}
@@ -508,11 +1313,11 @@ std\+::string
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceGpgFrontend_a5135069571678eda9c1f07d17ed9ac41}\label{namespaceGpgFrontend_a5135069571678eda9c1f07d17ed9ac41}} 
-\index{GpgFrontend@{GpgFrontend}!write\_buffer\_to\_file@{write\_buffer\_to\_file}}
-\index{write\_buffer\_to\_file@{write\_buffer\_to\_file}!GpgFrontend@{GpgFrontend}}
-\doxysubsubsection{\texorpdfstring{write\_buffer\_to\_file()}{write\_buffer\_to\_file()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::write\+\_\+buffer\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const std\+::string \&}]{out\+\_\+buffer }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespaceGpgFrontend_a4e780b0a2bddd1ce8735d3fa36dbfa86}\label{namespaceGpgFrontend_a4e780b0a2bddd1ce8735d3fa36dbfa86}} 
+\index{GpgFrontend@{GpgFrontend}!WriteBufferToFile@{WriteBufferToFile}}
+\index{WriteBufferToFile@{WriteBufferToFile}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{WriteBufferToFile()}{WriteBufferToFile()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Write\+Buffer\+To\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{const QString \&}]{out\+\_\+buffer }\end{DoxyParamCaption}) -\/$>$  bool}
 
 
 \begin{DoxyParams}{Parameters}
@@ -526,7 +1331,106 @@ true
 
 false 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespaceGpgFrontend_acc93a10f79f6479f72940fba39b780e1}\label{namespaceGpgFrontend_acc93a10f79f6479f72940fba39b780e1}} 
+\index{GpgFrontend@{GpgFrontend}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name,  }\item[{const QByte\+Array \&}]{data }\end{DoxyParamCaption}) -\/$>$  bool}
+
+
+
+write file content 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & file name \\
+\hline
+{\em data} & data to write to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+
+false if failed 
+\end{DoxyReturn}
+
+
+Referenced by Create\+Temp\+File\+And\+Write\+Data(), Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package(), Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase(), Gpg\+Frontend\+::\+Data\+Object\+Operator\+::init\+\_\+app\+\_\+secure\+\_\+key(), and Write\+File\+GFBuffer().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_a4df3f25e93d16e2dc60c7d680c22dcb9}\label{namespaceGpgFrontend_a4df3f25e93d16e2dc60c7d680c22dcb9}} 
+\index{GpgFrontend@{GpgFrontend}!WriteFileGFBuffer@{WriteFileGFBuffer}}
+\index{WriteFileGFBuffer@{WriteFileGFBuffer}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{WriteFileGFBuffer()}{WriteFileGFBuffer()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Write\+File\+GFBuffer (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+\_\+name,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}}}]{data }\end{DoxyParamCaption}) -\/$>$  bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References Write\+File().
+
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::slot\+\_\+export\+\_\+private\+\_\+key().
 
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceGpgFrontend_ad7811325535b6bd4c2c6fe0597dac7e1}\label{namespaceGpgFrontend_ad7811325535b6bd4c2c6fe0597dac7e1}} 
+\index{GpgFrontend@{GpgFrontend}!PGP\_PRIVATE\_KEY\_BEGIN@{PGP\_PRIVATE\_KEY\_BEGIN}}
+\index{PGP\_PRIVATE\_KEY\_BEGIN@{PGP\_PRIVATE\_KEY\_BEGIN}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{PGP\_PRIVATE\_KEY\_BEGIN}{PGP\_PRIVATE\_KEY\_BEGIN}}
+{\footnotesize\ttfamily constexpr const char$\ast$ Gpg\+Frontend\+::\+PGP\+\_\+\+PRIVATE\+\_\+\+KEY\+\_\+\+BEGIN\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/BEGIN PGP PRIVATE KEY BLOCK-\/-\/-\/-\/-\/"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceGpgFrontend_abd2d1f26e265695f6bdaf23d42f33ddd}\label{namespaceGpgFrontend_abd2d1f26e265695f6bdaf23d42f33ddd}} 
+\index{GpgFrontend@{GpgFrontend}!PGP\_PUBLIC\_KEY\_BEGIN@{PGP\_PUBLIC\_KEY\_BEGIN}}
+\index{PGP\_PUBLIC\_KEY\_BEGIN@{PGP\_PUBLIC\_KEY\_BEGIN}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{PGP\_PUBLIC\_KEY\_BEGIN}{PGP\_PUBLIC\_KEY\_BEGIN}}
+{\footnotesize\ttfamily constexpr const char$\ast$ Gpg\+Frontend\+::\+PGP\+\_\+\+PUBLIC\+\_\+\+KEY\+\_\+\+BEGIN\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/BEGIN PGP PUBLIC KEY BLOCK-\/-\/-\/-\/-\/"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceGpgFrontend_ac53dc8a86e1175d6d814273963046905}\label{namespaceGpgFrontend_ac53dc8a86e1175d6d814273963046905}} 
+\index{GpgFrontend@{GpgFrontend}!PGP\_SIGNATURE\_BEGIN@{PGP\_SIGNATURE\_BEGIN}}
+\index{PGP\_SIGNATURE\_BEGIN@{PGP\_SIGNATURE\_BEGIN}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{PGP\_SIGNATURE\_BEGIN}{PGP\_SIGNATURE\_BEGIN}}
+{\footnotesize\ttfamily constexpr const char$\ast$ Gpg\+Frontend\+::\+PGP\+\_\+\+SIGNATURE\+\_\+\+BEGIN\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/BEGIN PGP SIGNATURE-\/-\/-\/-\/-\/"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceGpgFrontend_aeecb411d650c7979a5b0fce7c7555658}\label{namespaceGpgFrontend_aeecb411d650c7979a5b0fce7c7555658}} 
+\index{GpgFrontend@{GpgFrontend}!PGP\_SIGNED\_BEGIN@{PGP\_SIGNED\_BEGIN}}
+\index{PGP\_SIGNED\_BEGIN@{PGP\_SIGNED\_BEGIN}!GpgFrontend@{GpgFrontend}}
+\doxysubsubsection{\texorpdfstring{PGP\_SIGNED\_BEGIN}{PGP\_SIGNED\_BEGIN}}
+{\footnotesize\ttfamily constexpr const char$\ast$ Gpg\+Frontend\+::\+PGP\+\_\+\+SIGNED\+\_\+\+BEGIN\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/BEGIN PGP SIGNED MESSAGE-\/-\/-\/-\/-\/"{}}}
+
+\end{DoxyCode}

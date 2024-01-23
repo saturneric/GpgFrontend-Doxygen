@@ -1,9 +1,18 @@
 var searchData=
 [
-  ['waitingdialog_1423',['WaitingDialog',['../classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc',1,'GpgFrontend::UI::WaitingDialog']]],
-  ['willcharsetchange_1424',['WillCharsetChange',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a1c1c0174ed1ed9c5a90739eafc5c3267',1,'GpgFrontend::UI::PlainTextEditorPage']]],
-  ['wizard_1425',['Wizard',['../classGpgFrontend_1_1UI_1_1Wizard.html#a448db8fe5ace96418ffd1f23b0142b10',1,'GpgFrontend::UI::Wizard']]],
-  ['write_5fbuffer_5fto_5ffile_1426',['write_buffer_to_file',['../namespaceGpgFrontend.html#a5135069571678eda9c1f07d17ed9ac41',1,'GpgFrontend']]],
-  ['writefile_1427',['WriteFile',['../classGpgFrontend_1_1FileOperator.html#a2f21ef4a88448b1eddf756302913d338',1,'GpgFrontend::FileOperator']]],
-  ['writefilestd_1428',['WriteFileStd',['../classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b',1,'GpgFrontend::FileOperator']]]
+  ['_7ecachemanager_1631',['~CacheManager',['../classGpgFrontend_1_1CacheManager.html#a1cb49178670a5f18debac7e59e388610',1,'GpgFrontend::CacheManager']]],
+  ['_7ecacheobject_1632',['~CacheObject',['../classGpgFrontend_1_1UI_1_1CacheObject.html#a2806fb997ac37eab299154be2b49ee8b',1,'GpgFrontend::UI::CacheObject']]],
+  ['_7echannelobject_1633',['~ChannelObject',['../classGpgFrontend_1_1ChannelObject.html#a85a29ff6a1233114eb9f159c408cbe35',1,'GpgFrontend::ChannelObject']]],
+  ['_7eglobalsettingstation_1634',['~GlobalSettingStation',['../classGpgFrontend_1_1GlobalSettingStation.html#af700161900e623a0ea14261d51616451',1,'GpgFrontend::GlobalSettingStation']]],
+  ['_7egpgdata_1635',['~GpgData',['../classGpgFrontend_1_1GpgData.html#a96f3c1cb27eb2f3e6f28b9cdb2135bc7',1,'GpgFrontend::GpgData']]],
+  ['_7egpgfrontendapplication_1636',['~GpgFrontendApplication',['../classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html#a32f0e7dda69f7b1e3cc869340736c590',1,'GpgFrontend::UI::GpgFrontendApplication']]],
+  ['_7egpgfrontendcontext_1637',['~GpgFrontendContext',['../structGpgFrontend_1_1GpgFrontendContext.html#a7492d29abfc6292ebf8ea015f8e31d1c',1,'GpgFrontend::GpgFrontendContext']]],
+  ['_7egpgkey_1638',['~GpgKey',['../classGpgFrontend_1_1GpgKey.html#a1e9223bb1ad8fbb4e769680de39b3697',1,'GpgFrontend::GpgKey']]],
+  ['_7egpgkeygetter_1639',['~GpgKeyGetter',['../classGpgFrontend_1_1GpgKeyGetter.html#ac9dbf4a2358f6478cf0ce8c85260878f',1,'GpgFrontend::GpgKeyGetter']]],
+  ['_7egpgkeysignature_1640',['~GpgKeySignature',['../classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3',1,'GpgFrontend::GpgKeySignature']]],
+  ['_7egpgsignature_1641',['~GpgSignature',['../classGpgFrontend_1_1GpgSignature.html#a44f137a457ac109d145a1cdd8e544e3a',1,'GpgFrontend::GpgSignature']]],
+  ['_7esettingsobject_1642',['~SettingsObject',['../classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c',1,'GpgFrontend::UI::SettingsObject']]],
+  ['_7esingletonfunctionobject_1643',['~SingletonFunctionObject',['../classGpgFrontend_1_1SingletonFunctionObject.html#a8296be8c449f88175285186831b995bc',1,'GpgFrontend::SingletonFunctionObject']]],
+  ['_7etask_1644',['~Task',['../classGpgFrontend_1_1Thread_1_1Task.html#a37766a505662b33ad14672c29e209ea8',1,'GpgFrontend::Thread::Task']]],
+  ['_7etaskrunner_1645',['~TaskRunner',['../classGpgFrontend_1_1Thread_1_1TaskRunner.html#ac3e57b59d537e2a75e741d4a5418ae6d',1,'GpgFrontend::Thread::TaskRunner']]]
 ];

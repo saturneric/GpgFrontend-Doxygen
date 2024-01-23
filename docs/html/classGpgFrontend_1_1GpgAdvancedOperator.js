@@ -1,12 +1,10 @@
 var classGpgFrontend_1_1GpgAdvancedOperator =
 [
-    [ "GpgAdvancedOperator", "classGpgFrontend_1_1GpgAdvancedOperator.html#a9233156767f1d45272b95decd18241e3", null ],
-    [ "ClearGpgPasswordCache", "classGpgFrontend_1_1GpgAdvancedOperator.html#a71eb87ed095754ee1e9fa79125240f3e", null ],
-    [ "ReloadGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#a6876b6ee63ff7147c274e4f9538d29ce", null ],
-    [ "ResetConfigures", "classGpgFrontend_1_1GpgAdvancedOperator.html#a209f6d1d664ab672437198dc10ed8226", null ],
-    [ "RestartGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#a5801bf4ea7391cbcc60efd2513d41041", null ],
-    [ "StartDirmngr", "classGpgFrontend_1_1GpgAdvancedOperator.html#a46085a11235894deccd312fc259d5078", null ],
-    [ "StartGpgAgent", "classGpgFrontend_1_1GpgAdvancedOperator.html#a07c32ba25cf6153fbc8ee585c4ba377c", null ],
-    [ "StartKeyBoxd", "classGpgFrontend_1_1GpgAdvancedOperator.html#a9313410359ed9cff9ee66fa9b4b095ee", null ],
-    [ "ctx_", "classGpgFrontend_1_1GpgAdvancedOperator.html#a387ad457bb729f340f680d0b743733ad", null ]
+    [ "ClearGpgPasswordCache", "classGpgFrontend_1_1GpgAdvancedOperator.html#ab1678720e30e957ad56e14b683cdedd1", null ],
+    [ "ReloadGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#acac2e0b60aec9e02b7dd5be6d37f0b31", null ],
+    [ "ResetConfigures", "classGpgFrontend_1_1GpgAdvancedOperator.html#a62a1e0d0eeef7ecbd43c261b77c393e1", null ],
+    [ "RestartGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#a224daa8424245db4ea6be831ef791f8d", null ],
+    [ "StartDirmngr", "classGpgFrontend_1_1GpgAdvancedOperator.html#a7687d84063c6c1d9d8bc11c617085530", null ],
+    [ "StartGpgAgent", "classGpgFrontend_1_1GpgAdvancedOperator.html#a4af186d06b01ce998e51a42e39e01c86", null ],
+    [ "StartKeyBoxd", "classGpgFrontend_1_1GpgAdvancedOperator.html#ae2b097912eb2c9d97da859c45e7a5bac", null ]
 ];

@@ -1,0 +1,62 @@
+\hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Module\+::Module\+Manager\+::Impl Class Reference}
+\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl}\index{GpgFrontend::Module::ModuleManager::Impl@{GpgFrontend::Module::ModuleManager::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Module\+::Module\+Manager\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a701c5a2ac5ecbad2f7748692c913227e}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a701c5a2ac5ecbad2f7748692c913227e}} 
+void {\bfseries Register\+Module} (const Module\+Ptr \&module)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a41f8154e4d1e211cc1dbc9ba5d847e89}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a41f8154e4d1e211cc1dbc9ba5d847e89}} 
+void {\bfseries Trigger\+Event} (const Event\+Refrernce \&event)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a61e2aa9cc72619426fd957b4945c593e}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a61e2aa9cc72619426fd957b4945c593e}} 
+void {\bfseries Active\+Module} (const Module\+Identifier \&identifier)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa7c7248b68c5598b3efe1a544f7f7428}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa7c7248b68c5598b3efe1a544f7f7428}} 
+auto {\bfseries Get\+Task\+Runner} (Module\+Identifier module\+\_\+id) -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac640531756c26386d6353293b420851e}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac640531756c26386d6353293b420851e}} 
+auto {\bfseries Upsert\+RTValue} (Namespace n, Key k, std\+::any v) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a08a6d06da083c96e12c6117eeb1a9d73}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a08a6d06da083c96e12c6117eeb1a9d73}} 
+auto {\bfseries Retrieve\+RTValue} (Namespace n, Key k) -\/$>$ std\+::optional$<$ std\+::any $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a99431f15ee5d514fc7c2dea7beedd1fa}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a99431f15ee5d514fc7c2dea7beedd1fa}} 
+auto {\bfseries Listen\+Publish} (QObject $\ast$o, Namespace n, Key k, LPCallback c) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa96ad5d2bd9364cac07e61e3606d93bc}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa96ad5d2bd9364cac07e61e3606d93bc}} 
+auto {\bfseries List\+RTChild\+Keys} (const QString \&n, const QString \&k) -\/$>$ std\+::vector$<$ Key $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9ef4a8e708bc009941303ead198f94be}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9ef4a8e708bc009941303ead198f94be}} 
+auto {\bfseries Is\+Module\+Activated} (Module\+Identifier id) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac030cab7dc39e07c5a198ba4d2ad8c1a}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac030cab7dc39e07c5a198ba4d2ad8c1a}} 
+Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global\+Module\+Context}} $>$ {\bfseries gmc\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab78b9f24728188dc9e884d0cbc284eb7}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab78b9f24728188dc9e884d0cbc284eb7}} 
+Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $>$ {\bfseries grt\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a3075eef2bb18d65e051d4ccb6c601a69}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a3075eef2bb18d65e051d4ccb6c601a69}} 
+static Module\+Manger\+Ptr {\bfseries global\+\_\+module\+\_\+manager}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/module/Module\+Manager.\+cpp\end{DoxyCompactItemize}

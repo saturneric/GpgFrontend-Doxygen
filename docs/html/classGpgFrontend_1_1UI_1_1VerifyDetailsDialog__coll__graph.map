@@ -1,7 +1,8 @@
 <map id="GpgFrontend::UI::VerifyDetailsDialog" name="GpgFrontend::UI::VerifyDetailsDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="5,455,224,635"/>
-<area shape="rect" id="node2" title=" " alt="" coords="56,307,131,385"/>
-<area shape="rect" id="node3" title=" " alt="" coords="155,300,359,392"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,145,336,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="238,5,277,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,668,224,848"/>
+<area shape="rect" id="node2" title=" " alt="" coords="56,491,131,569"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgVerifyResult.html" title=" " alt="" coords="155,455,373,605"/>
+<area shape="rect" id="node4" title=" " alt="" coords="162,300,366,392"/>
+<area shape="rect" id="node5" title=" " alt="" coords="185,145,343,223"/>
+<area shape="rect" id="node6" title=" " alt="" coords="245,5,283,83"/>
 </map>

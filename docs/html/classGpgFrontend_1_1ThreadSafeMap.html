@@ -96,7 +96,7 @@ Inheritance diagram for GpgFrontend::ThreadSafeMap&lt; Key, Value &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1ThreadSafeMap__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_inherit__map" id="aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,220,200"/>
+<area shape="rect" title=" " alt="" coords="5,5,220,215"/>
 <area shape="rect" href="classGpgFrontend_1_1ThreadSafeMap.html" title=" " alt="" coords="5,277,220,487"/>
 </map>
 </div>
@@ -105,12 +105,11 @@ Collaboration diagram for GpgFrontend::ThreadSafeMap&lt; Key, Value &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1ThreadSafeMap__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_coll__map" id="aGpgFrontend_1_1ThreadSafeMap_3_01Key_00_01Value_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="37,455,252,620"/>
-<area shape="rect" title=" " alt="" coords="5,293,148,370"/>
-<area shape="rect" title=" " alt="" coords="172,285,349,377"/>
-<area shape="rect" title=" " alt="" coords="193,145,328,223"/>
-<area shape="rect" title=" " alt="" coords="204,5,243,83"/>
-<area shape="rect" title=" " alt="" coords="280,5,319,83"/>
+<area shape="rect" title=" " alt="" coords="13,499,228,679"/>
+<area shape="rect" title=" " alt="" coords="5,329,148,407"/>
+<area shape="rect" title=" " alt="" coords="173,315,423,421"/>
+<area shape="rect" title=" " alt="" coords="219,145,377,223"/>
+<area shape="rect" title=" " alt="" coords="279,5,317,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -128,36 +127,90 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8499e210ffb71c52cdeb309269127157"><td class="memItemLeft" align="right" valign="top"><a id="a8499e210ffb71c52cdeb309269127157"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const Key &amp;key, const Value &amp;value)</td></tr>
 <tr class="separator:a8499e210ffb71c52cdeb309269127157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76a53b29aa6246066a28838f1edecbbc"><td class="memItemLeft" align="right" valign="top"><a id="a76a53b29aa6246066a28838f1edecbbc"></a>
-std::optional&lt; Value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const Key &amp;key)</td></tr>
-<tr class="separator:a76a53b29aa6246066a28838f1edecbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6a7f5770e39645bfc97b3f1a5ed93e"><td class="memItemLeft" align="right" valign="top"><a id="adf6a7f5770e39645bfc97b3f1a5ed93e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>exists</b> (const Key &amp;key)</td></tr>
-<tr class="separator:adf6a7f5770e39645bfc97b3f1a5ed93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a894aa615f685990f88faaac4df4c1924"><td class="memItemLeft" align="right" valign="top"><a id="a894aa615f685990f88faaac4df4c1924"></a>
-IteratorType&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a894aa615f685990f88faaac4df4c1924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edfa6ed1e9ab39648df92416de860ef"><td class="memItemLeft" align="right" valign="top"><a id="a7edfa6ed1e9ab39648df92416de860ef"></a>
-IteratorType&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:a7edfa6ed1e9ab39648df92416de860ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ef5fe7417c123d4bb5d0445e36f8c7"><td class="memItemLeft" align="right" valign="top"><a id="a11ef5fe7417c123d4bb5d0445e36f8c7"></a>
-<a class="el" href="classGpgFrontend_1_1ThreadSafeMap.html">ThreadSafeMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mirror</b> ()</td></tr>
-<tr class="separator:a11ef5fe7417c123d4bb5d0445e36f8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a889c8e5f8295f72ee10fb2dd26c121"><td class="memItemLeft" align="right" valign="top"><a id="a4a889c8e5f8295f72ee10fb2dd26c121"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const Key &amp;key) -&gt; std::optional&lt; Value &gt;</td></tr>
+<tr class="separator:a4a889c8e5f8295f72ee10fb2dd26c121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1084530558d58b4947a09b0cfe145e26"><td class="memItemLeft" align="right" valign="top"><a id="a1084530558d58b4947a09b0cfe145e26"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>exists</b> (const Key &amp;key) -&gt; bool</td></tr>
+<tr class="separator:a1084530558d58b4947a09b0cfe145e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb5062f9fc40f1833c0546e01445d1a"><td class="memItemLeft" align="right" valign="top"><a id="a1fb5062f9fc40f1833c0546e01445d1a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () -&gt; IteratorType</td></tr>
+<tr class="separator:a1fb5062f9fc40f1833c0546e01445d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1412d125b18fc136834ca078a82d709"><td class="memItemLeft" align="right" valign="top"><a id="ae1412d125b18fc136834ca078a82d709"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () -&gt; IteratorType</td></tr>
+<tr class="separator:ae1412d125b18fc136834ca078a82d709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcb62a6da0da59a93a530471fe5bd6c"><td class="memItemLeft" align="right" valign="top"><a id="a0dcb62a6da0da59a93a530471fe5bd6c"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>mirror</b> () -&gt; <a class="el" href="classGpgFrontend_1_1ThreadSafeMap.html">ThreadSafeMap</a> &amp;</td></tr>
+<tr class="separator:a0dcb62a6da0da59a93a530471fe5bd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7212f340e024dad64df53ee655e1f0"><td class="memItemLeft" align="right" valign="top"><a id="a4c7212f340e024dad64df53ee655e1f0"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (QString key) -&gt; bool</td></tr>
+<tr class="separator:a4c7212f340e024dad64df53ee655e1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2058ecb5e51a52f0d1721aa7de6943ee"><td class="memItemLeft" align="right" valign="top"><a id="a2058ecb5e51a52f0d1721aa7de6943ee"></a>
-MapType&#160;</td><td class="memItemRight" valign="bottom"><b>map_mirror_</b></td></tr>
-<tr class="separator:a2058ecb5e51a52f0d1721aa7de6943ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86951ca9a069cc520549757437b01332"><td class="memItemLeft" align="right" valign="top"><a id="a86951ca9a069cc520549757437b01332"></a>
-MapType&#160;</td><td class="memItemRight" valign="bottom"><b>map_</b></td></tr>
-<tr class="separator:a86951ca9a069cc520549757437b01332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af086e5653ee8d98e3d4f631a6da85778"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; MapType, <a class="el" href="structGpgFrontend_1_1SecureObjectDeleter.html">SecureObjectDeleter</a>&lt; MapType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map_mirror_</b></td></tr>
+<tr class="separator:af086e5653ee8d98e3d4f631a6da85778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc627352201172bd4578330bc99e672"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; MapType, <a class="el" href="structGpgFrontend_1_1SecureObjectDeleter.html">SecureObjectDeleter</a>&lt; MapType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map_</b></td></tr>
+<tr class="separator:a0bc627352201172bd4578330bc99e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5f153d80e6930caaa16315e938a044"><td class="memItemLeft" align="right" valign="top"><a id="acc5f153d80e6930caaa16315e938a044"></a>
 std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mutex_</b></td></tr>
 <tr class="separator:acc5f153d80e6930caaa16315e938a044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0bc627352201172bd4578330bc99e672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc627352201172bd4578330bc99e672">&#9670;&nbsp;</a></span>map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Key , typename Value &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;MapType, <a class="el" href="structGpgFrontend_1_1SecureObjectDeleter.html">SecureObjectDeleter</a>&lt;MapType&gt; &gt; <a class="el" href="classGpgFrontend_1_1ThreadSafeMap.html">GpgFrontend::ThreadSafeMap</a>&lt; Key, Value &gt;::map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">      std::move(SecureCreateUniqueObject&lt;MapType&gt;())</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af086e5653ee8d98e3d4f631a6da85778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af086e5653ee8d98e3d4f631a6da85778">&#9670;&nbsp;</a></span>map_mirror_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Key , typename Value &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;MapType, <a class="el" href="structGpgFrontend_1_1SecureObjectDeleter.html">SecureObjectDeleter</a>&lt;MapType&gt; &gt; <a class="el" href="classGpgFrontend_1_1ThreadSafeMap.html">GpgFrontend::ThreadSafeMap</a>&lt; Key, Value &gt;::map_mirror_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">      std::move(SecureCreateUniqueObject&lt;MapType&gt;())</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/function/<a class="el" href="CacheManager_8h_source.html">CacheManager.h</a></li>
+<li>src/core/function/CacheManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

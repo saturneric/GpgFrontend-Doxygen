@@ -7,21 +7,82 @@ Collaboration diagram for Gpg\+Frontend\+::Archive\+File\+Operator\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=219pt]{classGpgFrontend_1_1ArchiveFileOperator__coll__graph}
+\includegraphics[width=286pt]{classGpgFrontend_1_1ArchiveFileOperator__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ae2ca57d6af2f27560e97430a9eee3505}\label{classGpgFrontend_1_1ArchiveFileOperator_ae2ca57d6af2f27560e97430a9eee3505}} 
-static void {\bfseries List\+Archive} (const std\+::filesystem\+::path \&archive\+\_\+path)
+static void \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator_ab9159da7105707d91ece86e67deead07}{List\+Archive}} (const QString \&archive\+\_\+path)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_a872fc2bfdd8876d5bf6bc9893ff0d963}\label{classGpgFrontend_1_1ArchiveFileOperator_a872fc2bfdd8876d5bf6bc9893ff0d963}} 
-static void {\bfseries Create\+Archive} (const std\+::filesystem\+::path \&base\+\_\+path, const std\+::filesystem\+::path \&archive\+\_\+path, int compress, const std\+::vector$<$ std\+::filesystem\+::path $>$ \&files)
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ae80009defc3c4a94a7180966fb82a0d8}\label{classGpgFrontend_1_1ArchiveFileOperator_ae80009defc3c4a94a7180966fb82a0d8}} 
-static void {\bfseries Extract\+Archive} (const std\+::filesystem\+::path \&archive\+\_\+path, const std\+::filesystem\+::path \&base\+\_\+path)
+static void \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator_ad8c5a68a80b99346ab622f329b4c8f3c}{New\+Archive2\+Data\+Exchanger}} (const QString \&target\+\_\+directory, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$, const Operation\+Callback \&cb)
+\begin{DoxyCompactList}\small\item\em Create a Archive object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1ArchiveFileOperator_a0970b9c44e6e0a9bf93af31b8a76575b}{Extract\+Archive\+From\+Data\+Exchanger}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$ fd, const QString \&target\+\_\+path, const Operation\+Callback \&cb)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_a0970b9c44e6e0a9bf93af31b8a76575b}\label{classGpgFrontend_1_1ArchiveFileOperator_a0970b9c44e6e0a9bf93af31b8a76575b}} 
+\index{GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}!ExtractArchiveFromDataExchanger@{ExtractArchiveFromDataExchanger}}
+\index{ExtractArchiveFromDataExchanger@{ExtractArchiveFromDataExchanger}!GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}}
+\doxysubsubsection{\texorpdfstring{ExtractArchiveFromDataExchanger()}{ExtractArchiveFromDataExchanger()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Archive\+File\+Operator\+::\+Extract\+Archive\+From\+Data\+Exchanger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$}]{fd,  }\item[{const QString \&}]{target\+\_\+path,  }\item[{const Operation\+Callback \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em archive\+\_\+path} & \\
+\hline
+{\em base\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Run\+IOOpera\+Async().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Archive(), and Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Decrypt\+Verify\+Archive().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ab9159da7105707d91ece86e67deead07}\label{classGpgFrontend_1_1ArchiveFileOperator_ab9159da7105707d91ece86e67deead07}} 
+\index{GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}!ListArchive@{ListArchive}}
+\index{ListArchive@{ListArchive}!GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}}
+\doxysubsubsection{\texorpdfstring{ListArchive()}{ListArchive()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Archive\+File\+Operator\+::\+List\+Archive (\begin{DoxyParamCaption}\item[{const QString \&}]{archive\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em archive\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1ArchiveFileOperator_ad8c5a68a80b99346ab622f329b4c8f3c}\label{classGpgFrontend_1_1ArchiveFileOperator_ad8c5a68a80b99346ab622f329b4c8f3c}} 
+\index{GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}!NewArchive2DataExchanger@{NewArchive2DataExchanger}}
+\index{NewArchive2DataExchanger@{NewArchive2DataExchanger}!GpgFrontend::ArchiveFileOperator@{GpgFrontend::ArchiveFileOperator}}
+\doxysubsubsection{\texorpdfstring{NewArchive2DataExchanger()}{NewArchive2DataExchanger()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Archive\+File\+Operator\+::\+New\+Archive2\+Data\+Exchanger (\begin{DoxyParamCaption}\item[{const QString \&}]{target\+\_\+directory,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$}]{exchanger,  }\item[{const Operation\+Callback \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a Archive object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+path} & \\
+\hline
+{\em archive\+\_\+path} & \\
+\hline
+{\em compress} & \\
+\hline
+{\em files} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Run\+IOOpera\+Async().
+
+
+
+Referenced by Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Derectory\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Directory(), and Gpg\+Frontend\+::\+Gpg\+File\+Opera\+::\+Encrypt\+Sign\+Directory().
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Module\+::Module\+::Impl Class Reference}
+\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl}\index{GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Module\+::Module\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1Module_1_1Module_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af262a7f6c555eb4966bb51175280df5c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af262a7f6c555eb4966bb51175280df5c}} 
+using {\bfseries Exec\+Callback} = std\+::function$<$ void(int)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac1163893225f8c16b5945e6bf1489282}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac1163893225f8c16b5945e6bf1489282}} 
+{\bfseries Impl} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}} m\+\_\+ptr, Module\+Identifier id, Module\+Version version, Module\+Meta\+Data meta\+\_\+data)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a8f874b486d0ce6c7df177df3927f0b19}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a8f874b486d0ce6c7df177df3927f0b19}} 
+auto {\bfseries Get\+Channel} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_afe85061d93568cabc555b05fff0e63e7}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_afe85061d93568cabc555b05fff0e63e7}} 
+auto {\bfseries Get\+Default\+Channel} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a771d5c653bfa656efba12f93b8c4f431}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a771d5c653bfa656efba12f93b8c4f431}} 
+auto {\bfseries Get\+Task\+Runner} () -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa3953f35af371cddae1839a9e65a1ae1}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa3953f35af371cddae1839a9e65a1ae1}} 
+auto {\bfseries Listen\+Event} (Event\+Identifier event) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab3a02391f045a38c04e43f7c9d7d2709}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab3a02391f045a38c04e43f7c9d7d2709}} 
+auto {\bfseries Get\+Module\+Identifier} () const -\/$>$ Module\+Identifier
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a736c419f4d180cf02829dfa507885bd4}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a736c419f4d180cf02829dfa507885bd4}} 
+void {\bfseries Set\+GPC} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global\+Module\+Context}} $\ast$gpc)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a084b0c4e64edd80140b79c576e92af5e}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a084b0c4e64edd80140b79c576e92af5e}} 
+auto {\bfseries get\+\_\+gpc} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global\+Module\+Context}} $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a215e0b3f0b77c1acde6cdd20a3564f21}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a215e0b3f0b77c1acde6cdd20a3564f21}} 
+\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global\+Module\+Context}} $\ast$ {\bfseries gpc\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad58ee3fef7e93f74aadf8ab3227db5ed}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad58ee3fef7e93f74aadf8ab3227db5ed}} 
+\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module}} $\ast$ {\bfseries m\+\_\+ptr\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a6cb0cc28ae232b73525a77c521ad5a27}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a6cb0cc28ae232b73525a77c521ad5a27}} 
+const Module\+Identifier {\bfseries identifier\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a615a7760e1699c103d3575d6d985a3cb}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a615a7760e1699c103d3575d6d985a3cb}} 
+const Module\+Version {\bfseries version\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a709cbba5c2fbbf803fd16e856a20da88}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a709cbba5c2fbbf803fd16e856a20da88}} 
+const Module\+Meta\+Data {\bfseries meta\+\_\+data\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa5c63b4458204e390a244286a5da2856}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa5c63b4458204e390a244286a5da2856}} 
+\mbox{\hyperlink{classclass}{class}} {\bfseries Global\+Module\+Context}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/module/Module.\+cpp\end{DoxyCompactItemize}

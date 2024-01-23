@@ -1,0 +1,121 @@
+\hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Getter\+::Impl Class Reference}
+\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl}\index{GpgFrontend::GpgKeyGetter::Impl@{GpgFrontend::GpgKeyGetter::Impl}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Key\+Getter\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgKeyGetter_1_1Impl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Getter\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgKeyGetter_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a75f042978538c82f0b83308390911b9b}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a75f042978538c82f0b83308390911b9b}} 
+{\bfseries Impl} (int channel)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ad068623a254dfa8ff312f9a9438f8e88}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ad068623a254dfa8ff312f9a9438f8e88}} 
+auto {\bfseries Get\+Key} (const QString \&fpr, bool use\+\_\+cache) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a0713279ab13a3058028653670bd460da}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a0713279ab13a3058028653670bd460da}} 
+auto {\bfseries Get\+Pubkey} (const QString \&fpr, bool use\+\_\+cache) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a51daaa9e9cfd1e3d306337c8e1ab7598}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a51daaa9e9cfd1e3d306337c8e1ab7598}} 
+auto {\bfseries Fetch\+Key} () -\/$>$ Key\+Link\+List\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a8c80f389de68b024e4fd605cb76d77aa}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a8c80f389de68b024e4fd605cb76d77aa}} 
+auto {\bfseries Flush\+Key\+Cache} () -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ab12e09e35050bf3e27829d36515e8c53}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ab12e09e35050bf3e27829d36515e8c53}} 
+auto {\bfseries Get\+Keys} (const Key\+Id\+Args\+List\+Ptr \&ids) -\/$>$ Key\+List\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a026829c74307b41f5a916e28269fe600}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a026829c74307b41f5a916e28269fe600}} 
+auto {\bfseries Get\+Keys\+Copy} (const Key\+Link\+List\+Ptr \&keys) -\/$>$ Key\+Link\+List\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a53d412d56c3de1637c9495c97dc5a394}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a53d412d56c3de1637c9495c97dc5a394}} 
+auto {\bfseries Get\+Keys\+Copy} (const Key\+List\+Ptr \&keys) -\/$>$ Key\+List\+Ptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a440653d7752aec61575b522d9b7bce25}{get\+\_\+key\+\_\+in\+\_\+cache}} (const QString \&key\+\_\+id) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}
+\begin{DoxyCompactList}\small\item\em Get the Key object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a4b6ff4f9484315d6352149b99efcdedd}{ctx\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Get the gpgme context object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ab8b61ca5dc753cc736a6a9062006e339}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ab8b61ca5dc753cc736a6a9062006e339}} 
+std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_ab8b61ca5dc753cc736a6a9062006e339}{ctx\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em shared mutex for the keys cache \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a5eabfecd9ecaba8d940621183ddad308}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a5eabfecd9ecaba8d940621183ddad308}} 
+QMap$<$ QString, \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a5eabfecd9ecaba8d940621183ddad308}{keys\+\_\+search\+\_\+cache\+\_\+}}
+\begin{DoxyCompactList}\small\item\em cache the keys with key id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a2c90791adf11d2b0a06726e9366d034b}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a2c90791adf11d2b0a06726e9366d034b}} 
+QList$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$ {\bfseries keys\+\_\+cache\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_abc3cc405bb9a90ed5cd017bf7b8bc55d}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_abc3cc405bb9a90ed5cd017bf7b8bc55d}} 
+std\+::mutex \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_abc3cc405bb9a90ed5cd017bf7b8bc55d}{keys\+\_\+cache\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em shared mutex for the keys cache \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a440653d7752aec61575b522d9b7bce25}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a440653d7752aec61575b522d9b7bce25}} 
+\index{GpgFrontend::GpgKeyGetter::Impl@{GpgFrontend::GpgKeyGetter::Impl}!get\_key\_in\_cache@{get\_key\_in\_cache}}
+\index{get\_key\_in\_cache@{get\_key\_in\_cache}!GpgFrontend::GpgKeyGetter::Impl@{GpgFrontend::GpgKeyGetter::Impl}}
+\doxysubsubsection{\texorpdfstring{get\_key\_in\_cache()}{get\_key\_in\_cache()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Impl\+::get\+\_\+key\+\_\+in\+\_\+cache (\begin{DoxyParamCaption}\item[{const QString \&}]{key\+\_\+id }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Get the Key object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} 
+\end{DoxyReturn}
+
+
+References ctx\+\_\+mutex\+\_\+, keys\+\_\+cache\+\_\+mutex\+\_\+, and keys\+\_\+search\+\_\+cache\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a4b6ff4f9484315d6352149b99efcdedd}\label{classGpgFrontend_1_1GpgKeyGetter_1_1Impl_a4b6ff4f9484315d6352149b99efcdedd}} 
+\index{GpgFrontend::GpgKeyGetter::Impl@{GpgFrontend::GpgKeyGetter::Impl}!ctx\_@{ctx\_}}
+\index{ctx\_@{ctx\_}!GpgFrontend::GpgKeyGetter::Impl@{GpgFrontend::GpgKeyGetter::Impl}}
+\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Impl\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}{SingletonFunctionObject::GetChannel}}())}
+
+\end{DoxyCode}
+
+
+Get the gpgme context object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Key\+Getter.\+cpp\end{DoxyCompactItemize}

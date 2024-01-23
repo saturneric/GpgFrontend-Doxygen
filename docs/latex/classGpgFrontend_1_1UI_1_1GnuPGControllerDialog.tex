@@ -50,19 +50,17 @@ void {\bfseries slot\+\_\+update\+\_\+custom\+\_\+gnupg\+\_\+install\+\_\+path\+
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_aaf89f54f2124617e836d31df29066529}{get\+\_\+restart\+\_\+needed}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a67c4bc7a4e0d76c610267b86612ba5b6}{get\+\_\+restart\+\_\+needed}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Restart Needed object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a6eeca78f12b49f095610d762d4cf7d7e}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a6eeca78f12b49f095610d762d4cf7d7e}} 
-void {\bfseries set\+\_\+settings} ()
-\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a6eeca78f12b49f095610d762d4cf7d7e}{set\+\_\+settings}} ()
+\begin{DoxyCompactList}\small\item\em Set the settings object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a04611d5160fcc6ef36f6fce8dd94c645}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a04611d5160fcc6ef36f6fce8dd94c645}} 
 void {\bfseries apply\+\_\+settings} ()
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a4d9ba1fc6f869c051854e2ed2841fd71}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a4d9ba1fc6f869c051854e2ed2841fd71}} 
-bool {\bfseries check\+\_\+custom\+\_\+gnupg\+\_\+path} (std\+::string)
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a296dd2fd013f34e7fb389a36bbcaa78e}{check\+\_\+custom\+\_\+gnupg\+\_\+path}} (QString) -\/$>$ bool
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_ada791c1b329841a2c68f18e7a4ddd909}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_ada791c1b329841a2c68f18e7a4ddd909}} 
-bool {\bfseries check\+\_\+custom\+\_\+gnupg\+\_\+key\+\_\+database\+\_\+path} (std\+::string)
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_af677680609f32ed65f78a0641bf05389}{check\+\_\+custom\+\_\+gnupg\+\_\+key\+\_\+database\+\_\+path}} (QString) -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -94,16 +92,42 @@ Construct a new General Tab object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings(), Signal\+Restart\+Needed(), and slot\+\_\+set\+\_\+restart\+\_\+needed().
+References check\+\_\+custom\+\_\+gnupg\+\_\+key\+\_\+database\+\_\+path(), Gpg\+Frontend\+::\+UI\+::\+UISignal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Signal\+Restart\+Needed(), and slot\+\_\+set\+\_\+restart\+\_\+needed().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_aaf89f54f2124617e836d31df29066529}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_aaf89f54f2124617e836d31df29066529}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_af677680609f32ed65f78a0641bf05389}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_af677680609f32ed65f78a0641bf05389}} 
+\index{GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}!check\_custom\_gnupg\_key\_database\_path@{check\_custom\_gnupg\_key\_database\_path}}
+\index{check\_custom\_gnupg\_key\_database\_path@{check\_custom\_gnupg\_key\_database\_path}!GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}}
+\doxysubsubsection{\texorpdfstring{check\_custom\_gnupg\_key\_database\_path()}{check\_custom\_gnupg\_key\_database\_path()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Gnu\+PGController\+Dialog\+::check\+\_\+custom\+\_\+gnupg\+\_\+key\+\_\+database\+\_\+path (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Referenced by Gnu\+PGController\+Dialog().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a296dd2fd013f34e7fb389a36bbcaa78e}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a296dd2fd013f34e7fb389a36bbcaa78e}} 
+\index{GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}!check\_custom\_gnupg\_path@{check\_custom\_gnupg\_path}}
+\index{check\_custom\_gnupg\_path@{check\_custom\_gnupg\_path}!GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}}
+\doxysubsubsection{\texorpdfstring{check\_custom\_gnupg\_path()}{check\_custom\_gnupg\_path()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Gnu\+PGController\+Dialog\+::check\+\_\+custom\+\_\+gnupg\+\_\+path (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a67c4bc7a4e0d76c610267b86612ba5b6}\label{classGpgFrontend_1_1UI_1_1GnuPGControllerDialog_a67c4bc7a4e0d76c610267b86612ba5b6}} 
 \index{GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}!get\_restart\_needed@{get\_restart\_needed}}
 \index{get\_restart\_needed@{get\_restart\_needed}!GpgFrontend::UI::GnuPGControllerDialog@{GpgFrontend::UI::GnuPGControllerDialog}}
 \doxysubsubsection{\texorpdfstring{get\_restart\_needed()}{get\_restart\_needed()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+UI\+::\+Gnu\+PGController\+Dialog\+::get\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily int Gpg\+Frontend\+::\+UI\+::\+Gnu\+PGController\+Dialog\+::get\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

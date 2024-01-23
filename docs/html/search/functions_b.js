@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['listedkeyservertesttask_1183',['ListedKeyServerTestTask',['../classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#ae25b5d59b53facc15648ab80ff19ed77',1,'GpgFrontend::UI::ListedKeyServerTestTask']]],
-  ['listlanguages_1184',['ListLanguages',['../classGpgFrontend_1_1UI_1_1SettingsDialog.html#acd22ac2fd91704551e5317e2c549ae26',1,'GpgFrontend::UI::SettingsDialog']]],
-  ['loadfile_1185',['LoadFile',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a72ed46454c833adb038c36d8d4322d18',1,'GpgFrontend::UI::TextEdit']]],
-  ['localized_5fhelp_1186',['localized_help',['../classGpgFrontend_1_1UI_1_1HelpPage.html#a49fbde87f2ef385b44225acd6ffbc84f',1,'GpgFrontend::UI::HelpPage']]],
-  ['lookupsettings_1187',['LookupSettings',['../classGpgFrontend_1_1GlobalSettingStation.html#a819b3f4ea553fc1e839ef0ae230f0ea2',1,'GpgFrontend::GlobalSettingStation']]]
+  ['maybe_5fsave_5fcurrent_5ftab_1365',['maybe_save_current_tab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a8fad090a19479a9fe89432300cca2b6c',1,'GpgFrontend::UI::TextEdit']]],
+  ['maybesaveanytab_1366',['MaybeSaveAnyTab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a2ef7669b3b92d4a8c2b0782787653555',1,'GpgFrontend::UI::TextEdit']]],
+  ['modifypassword_1367',['ModifyPassword',['../classGpgFrontend_1_1GpgKeyOpera.html#a5e65fa1edd5db89b38cf021975a60465',1,'GpgFrontend::GpgKeyOpera']]],
+  ['modifytofupolicy_1368',['ModifyTOFUPolicy',['../classGpgFrontend_1_1GpgKeyOpera.html#a9e8efd9e57e05059396f0120535eef30',1,'GpgFrontend::GpgKeyOpera']]]
 ];

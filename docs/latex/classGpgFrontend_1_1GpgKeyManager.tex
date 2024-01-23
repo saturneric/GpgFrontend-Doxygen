@@ -17,7 +17,7 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Manager\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1GpgKeyManager__coll__graph}
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgKeyManager__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
@@ -28,21 +28,21 @@ struct \mbox{\hyperlink{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStr
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a210b717fd8ee63b064d77f32b0df4c5d}{Gpg\+Key\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a210b717fd8ee63b064d77f32b0df4c5d}{Gpg\+Key\+Manager}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Manager object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}{Sign\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&target, Key\+Args\+List \&keys, const std\+::string \&uid, const std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_ab5e56b3a2161f3251666c988d7eaa929}{Sign\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&target, Key\+Args\+List \&keys, const QString \&uid, const std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&expires) -\/$>$ bool
 \begin{DoxyCompactList}\small\item\em Sign a key pair(actually a certain uid) \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}{Rev\+Sign}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&key, const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&signature\+\_\+id)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a85c5ca9f31480fe3351c056b92b0aa12}{Rev\+Sign}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&key, const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&signature\+\_\+id) -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&subkey, std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_ab4a61f4a895ddc965a018a851b222dce}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&subkey, std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&expires) -\/$>$ bool
 \begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}{Set\+Owner\+Trust\+Level}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, int trust\+\_\+level)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyManager_a5fa56401416872cd4ed741830b72041b}{Set\+Owner\+Trust\+Level}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, int trust\+\_\+level) -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a4fea67ab4a5c4e768aa1b55f23f3c8b7}\label{classGpgFrontend_1_1GpgKeyManager_a4fea67ab4a5c4e768aa1b55f23f3c8b7}} 
-using {\bfseries Command} = std\+::string
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_ab86c354a43ee32eb1216659bdd697d68}\label{classGpgFrontend_1_1GpgKeyManager_ab86c354a43ee32eb1216659bdd697d68}} 
+using {\bfseries Command} = QString
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a8372d745ded9676dbab290780f7389ae}\label{classGpgFrontend_1_1GpgKeyManager_a8372d745ded9676dbab290780f7389ae}} 
 using {\bfseries Automaton\+State} = enum \{ AS\+\_\+\+START, AS\+\_\+\+COMMAND, AS\+\_\+\+VALUE, AS\+\_\+\+REALLY\+\_\+\+ULTIMATE, AS\+\_\+\+SAVE, AS\+\_\+\+ERROR, AS\+\_\+\+QUIT, \}
@@ -50,14 +50,14 @@ using {\bfseries Automaton\+State} = enum \{ AS\+\_\+\+START, AS\+\_\+\+COMMAND,
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_abbd0d9893967a342b0f1062a856d0647}\label{classGpgFrontend_1_1GpgKeyManager_abbd0d9893967a342b0f1062a856d0647}} 
 using {\bfseries Automaton\+Action\+Handler} = std\+::function$<$ Command(\mbox{\hyperlink{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct}{Automaton\+Handel\+Struct}} \&, Automaton\+State)$>$
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a60a8636d3463f0c1a17e6f384fed0985}\label{classGpgFrontend_1_1GpgKeyManager_a60a8636d3463f0c1a17e6f384fed0985}} 
-using {\bfseries Automaton\+Next\+State\+Handler} = std\+::function$<$ Automaton\+State(Automaton\+State, std\+::string, std\+::string)$>$
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_adbb73cdb2ad6bc7a2a641871b2a17c17}\label{classGpgFrontend_1_1GpgKeyManager_adbb73cdb2ad6bc7a2a641871b2a17c17}} 
+using {\bfseries Automaton\+Next\+State\+Handler} = std\+::function$<$ Automaton\+State(Automaton\+State, QString, QString)$>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_af0709924bd70fee6a9ea4efbf85b689d}\label{classGpgFrontend_1_1GpgKeyManager_af0709924bd70fee6a9ea4efbf85b689d}} 
-static gpgme\+\_\+error\+\_\+t {\bfseries interactor\+\_\+cb\+\_\+fnc} (void $\ast$handle, const char $\ast$status, const char $\ast$args, int fd)
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a9b5cc56fefa0e9ef0dd01aec92c2041d}\label{classGpgFrontend_1_1GpgKeyManager_a9b5cc56fefa0e9ef0dd01aec92c2041d}} 
+static auto {\bfseries interactor\+\_\+cb\+\_\+fnc} (void $\ast$handle, const char $\ast$status, const char $\ast$args, int fd) -\/$>$ gpgme\+\_\+error\+\_\+t
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -72,7 +72,7 @@ static gpgme\+\_\+error\+\_\+t {\bfseries interactor\+\_\+cb\+\_\+fnc} (void $\a
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!GpgKeyManager@{GpgKeyManager}}
 \index{GpgKeyManager@{GpgKeyManager}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
 \doxysubsubsection{\texorpdfstring{GpgKeyManager()}{GpgKeyManager()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Gpg\+Key\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Gpg\+Key\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -80,7 +80,7 @@ Construct a new Gpg Key Manager object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em channel} & Copyright (C) 2021 Saturneric\\
+{\em channel} & Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\\
 \hline
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
@@ -93,16 +93,16 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}\label{classGpgFrontend_1_1GpgKeyManager_aa2c0e804db1c4aaf3b861ee5ab54ebd8}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a85c5ca9f31480fe3351c056b92b0aa12}\label{classGpgFrontend_1_1GpgKeyManager_a85c5ca9f31480fe3351c056b92b0aa12}} 
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!RevSign@{RevSign}}
 \index{RevSign@{RevSign}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
 \doxysubsubsection{\texorpdfstring{RevSign()}{RevSign()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&}]{key,  }\item[{const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&}]{signature\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Rev\+Sign (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Frontend\+::\+Gpg\+Key}} \&}]{key,  }\item[{const Gpg\+Frontend\+::\+Sign\+Id\+Args\+List\+Ptr \&}]{signature\+\_\+id }\end{DoxyParamCaption}) -\/$>$ bool}
 
 
 \begin{DoxyParams}{Parameters}
@@ -118,13 +118,13 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}\label{classGpgFrontend_1_1GpgKeyManager_a1625abfbff168c476e76fa9425a6c37d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_ab4a61f4a895ddc965a018a851b222dce}\label{classGpgFrontend_1_1GpgKeyManager_ab4a61f4a895ddc965a018a851b222dce}} 
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SetExpire@{SetExpire}}
 \index{SetExpire@{SetExpire}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
 \doxysubsubsection{\texorpdfstring{SetExpire()}{SetExpire()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&}]{subkey,  }\item[{std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&}]{expires }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Expire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} $>$ \&}]{subkey,  }\item[{std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&}]{expires }\end{DoxyParamCaption}) -\/$>$ bool}
 
 
 
@@ -146,26 +146,26 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), and Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}\label{classGpgFrontend_1_1GpgKeyManager_a0d4006daeccd574ddcc9e6c621739c48}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a5fa56401416872cd4ed741830b72041b}\label{classGpgFrontend_1_1GpgKeyManager_a5fa56401416872cd4ed741830b72041b}} 
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SetOwnerTrustLevel@{SetOwnerTrustLevel}}
 \index{SetOwnerTrustLevel@{SetOwnerTrustLevel}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
 \doxysubsubsection{\texorpdfstring{SetOwnerTrustLevel()}{SetOwnerTrustLevel()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Owner\+Trust\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{int}]{trust\+\_\+level }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Set\+Owner\+Trust\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{int}]{trust\+\_\+level }\end{DoxyParamCaption}) -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}\label{classGpgFrontend_1_1GpgKeyManager_a12138780c53add7589f78f056019e5e0}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyManager_ab5e56b3a2161f3251666c988d7eaa929}\label{classGpgFrontend_1_1GpgKeyManager_ab5e56b3a2161f3251666c988d7eaa929}} 
 \index{GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}!SignKey@{SignKey}}
 \index{SignKey@{SignKey}!GpgFrontend::GpgKeyManager@{GpgFrontend::GpgKeyManager}}
 \doxysubsubsection{\texorpdfstring{SignKey()}{SignKey()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{target,  }\item[{Gpg\+Frontend\+::\+Key\+Args\+List \&}]{keys,  }\item[{const std\+::string \&}]{uid,  }\item[{const std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&}]{expires }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Manager\+::\+Sign\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{target,  }\item[{Gpg\+Frontend\+::\+Key\+Args\+List \&}]{keys,  }\item[{const QString \&}]{uid,  }\item[{const std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&}]{expires }\end{DoxyParamCaption}) -\/$>$ bool}
 
 
 
@@ -185,7 +185,7 @@ if successful
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Set\+Signers().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance().
 
 
 
@@ -199,7 +199,7 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::check\
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}{SingletonFunctionObject::GetChannel}}())}
 
 \end{DoxyCode}
 

@@ -1,16 +1,14 @@
 var classGpgFrontend_1_1GpgKeyGetter =
 [
-    [ "GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html#a8eeee9f6dd74dc24c24794ce63c62285", null ],
-    [ "FetchKey", "classGpgFrontend_1_1GpgKeyGetter.html#afe78ac470287d70e7df51aae327b9f54", null ],
-    [ "FlushKeyCache", "classGpgFrontend_1_1GpgKeyGetter.html#ad9a902ea54566d4583304b072c4add51", null ],
-    [ "get_key_in_cache", "classGpgFrontend_1_1GpgKeyGetter.html#ab5196ef4ed5323fc2af70abf801ea260", null ],
-    [ "GetKey", "classGpgFrontend_1_1GpgKeyGetter.html#a94243d09c9418c8ebf0c7cdab4a2b7f1", null ],
-    [ "GetKeys", "classGpgFrontend_1_1GpgKeyGetter.html#aa5979c21af58b874b33c203752dcc805", null ],
-    [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#a028fe69516a51c526bbd2ec4235053ad", null ],
-    [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#a7ec8d8431a771c602cbfa946d13d6c74", null ],
-    [ "GetPubkey", "classGpgFrontend_1_1GpgKeyGetter.html#a7a8bc7c0f12a11e108051e4c824fc430", null ],
-    [ "ctx_", "classGpgFrontend_1_1GpgKeyGetter.html#aa4aef315d82123726be879097d3df147", null ],
-    [ "ctx_mutex_", "classGpgFrontend_1_1GpgKeyGetter.html#a81941e1f562dc22977a71d00dd10956a", null ],
-    [ "keys_cache_", "classGpgFrontend_1_1GpgKeyGetter.html#a9567d5e08ae73c5bafcd1dc378fed066", null ],
-    [ "keys_cache_mutex_", "classGpgFrontend_1_1GpgKeyGetter.html#ae1d7846ad2fa17ab90c72b3186ba5335", null ]
+    [ "Impl", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl" ],
+    [ "GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html#aa2ec24750e302b12ab332b2e7481b882", null ],
+    [ "~GpgKeyGetter", "classGpgFrontend_1_1GpgKeyGetter.html#ac9dbf4a2358f6478cf0ce8c85260878f", null ],
+    [ "FetchKey", "classGpgFrontend_1_1GpgKeyGetter.html#ada3e33c92b5f4d24b6f2efe6af446688", null ],
+    [ "FlushKeyCache", "classGpgFrontend_1_1GpgKeyGetter.html#a12c5b7fa117c7434450365f5ed46acf9", null ],
+    [ "GetKey", "classGpgFrontend_1_1GpgKeyGetter.html#a74075299f1dee8cbccbf46939a1871f5", null ],
+    [ "GetKeys", "classGpgFrontend_1_1GpgKeyGetter.html#ac12f4117c5b4b596d9788dc816a6112b", null ],
+    [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#afa73240503bbb2bd0ad2a58584d02551", null ],
+    [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter.html#a94b99caf87636d80988a7b9f5c65d444", null ],
+    [ "GetPubkey", "classGpgFrontend_1_1GpgKeyGetter.html#aadefece15fe73e5c0285b7e9278700e2", null ],
+    [ "p_", "classGpgFrontend_1_1GpgKeyGetter.html#ae9925f3091d6cf31e03be7a501ebb8a4", null ]
 ];

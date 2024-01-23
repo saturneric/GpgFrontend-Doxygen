@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/function/aes/aes_ssl.h Source File</title>
+<title>GpgFrontend Project: src/core/utils/aes/aes_ssl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,27 +87,24 @@ $(document).ready(function(){initNavTree('aes__ssl_8h_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_AES_SSL_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_AES_SSL_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;openssl/aes.h&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;openssl/evp.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;GpgFrontend.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceGpgFrontend_1_1RawAPI.html">   37</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1RawAPI.html">GpgFrontend::RawAPI</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697">aes_256_cbc_init</a>(uint8_t *key_data, <span class="keywordtype">int</span> key_data_len, uint8_t *salt,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                     EVP_CIPHER_CTX *e_ctx, EVP_CIPHER_CTX *d_ctx);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;uint8_t *<a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#aa2bc88cf78b8da893f1b5c7e2e8ccf42">aes_256_cbc_encrypt</a>(EVP_CIPHER_CTX *e, uint8_t *plaintext, <span class="keywordtype">int</span> *len);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;uint8_t *<a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#a2e388ecafc7b859eda84b4e3c4e2576f">aes_256_cbc_decrypt</a>(EVP_CIPHER_CTX *e, uint8_t *ciphertext, <span class="keywordtype">int</span> *len);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace GpgFrontend::RawAPI</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_AES_SSL_H</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1RawAPI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1RawAPI.html">GpgFrontend::RawAPI</a></div><div class="ttdef"><b>Definition:</b> aes_ssl.h:37</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;openssl/aes.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;openssl/evp.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;GpgFrontend.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceGpgFrontend_1_1RawAPI.html">   36</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1RawAPI.html">GpgFrontend::RawAPI</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697">aes_256_cbc_init</a>(uint8_t *key_data, <span class="keywordtype">int</span> key_data_len, uint8_t *salt,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                     EVP_CIPHER_CTX *e_ctx, EVP_CIPHER_CTX *d_ctx);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;uint8_t *<a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#aa2bc88cf78b8da893f1b5c7e2e8ccf42">aes_256_cbc_encrypt</a>(EVP_CIPHER_CTX *e, uint8_t *plaintext, <span class="keywordtype">int</span> *len);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;uint8_t *<a class="code" href="namespaceGpgFrontend_1_1RawAPI.html#a2e388ecafc7b859eda84b4e3c4e2576f">aes_256_cbc_decrypt</a>(EVP_CIPHER_CTX *e, uint8_t *ciphertext, <span class="keywordtype">int</span> *len);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace GpgFrontend::RawAPI</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1RawAPI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1RawAPI.html">GpgFrontend::RawAPI</a></div><div class="ttdef"><b>Definition:</b> aes_ssl.h:36</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1RawAPI_html_a1f2f6c82e9c904c3875a123a65564697"><div class="ttname"><a href="namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697">GpgFrontend::RawAPI::aes_256_cbc_init</a></div><div class="ttdeci">int aes_256_cbc_init(uint8_t *key_data, int key_data_len, uint8_t *salt, EVP_CIPHER_CTX *e_ctx, EVP_CIPHER_CTX *d_ctx)</div><div class="ttdoc">Create a 256 bit key and IV using the supplied key_data. salt can be added for taste....</div><div class="ttdef"><b>Definition:</b> aes_ssl_cbc.cpp:24</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1RawAPI_html_a2e388ecafc7b859eda84b4e3c4e2576f"><div class="ttname"><a href="namespaceGpgFrontend_1_1RawAPI.html#a2e388ecafc7b859eda84b4e3c4e2576f">GpgFrontend::RawAPI::aes_256_cbc_decrypt</a></div><div class="ttdeci">uint8_t * aes_256_cbc_decrypt(EVP_CIPHER_CTX *e, uint8_t *ciphertext, int *len)</div><div class="ttdoc">Decrypt *len bytes of ciphertext.</div><div class="ttdef"><b>Definition:</b> aes_ssl_cbc.cpp:86</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1RawAPI_html_aa2bc88cf78b8da893f1b5c7e2e8ccf42"><div class="ttname"><a href="namespaceGpgFrontend_1_1RawAPI.html#aa2bc88cf78b8da893f1b5c7e2e8ccf42">GpgFrontend::RawAPI::aes_256_cbc_encrypt</a></div><div class="ttdeci">uint8_t * aes_256_cbc_encrypt(EVP_CIPHER_CTX *e, uint8_t *plaintext, int *len)</div><div class="ttdoc">Encrypt *len bytes of data All data going in &amp; out is considered binary (uint8_t[])</div><div class="ttdef"><b>Definition:</b> aes_ssl_cbc.cpp:58</div></div>
@@ -116,7 +113,7 @@ $(document).ready(function(){initNavTree('aes__ssl_8h_source.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_f8a0abd6d3586538a5b71803e0ab7ffa.html">function</a></li><li class="navelem"><a class="el" href="dir_b499e35b7e1b4486be887a41196851ec.html">aes</a></li><li class="navelem"><b>aes_ssl.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_a8053b3d69cfefb2b2e6ec7bf9dd5c1a.html">utils</a></li><li class="navelem"><a class="el" href="dir_1d36cb32a40b4ea986b57e8927c51dff.html">aes</a></li><li class="navelem"><b>aes_ssl.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -7,7 +7,7 @@ Inheritance diagram for Gpg\+Frontend\+::UI\+::File\+Read\+Task\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1FileReadTask__inherit__graph}
+\includegraphics[width=245pt]{classGpgFrontend_1_1UI_1_1FileReadTask__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -17,7 +17,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::File\+Read\+Task\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1FileReadTask__coll__graph}
+\includegraphics[width=245pt]{classGpgFrontend_1_1UI_1_1FileReadTask__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Signals}
@@ -35,34 +35,50 @@ void {\bfseries Signal\+File\+Bytes\+Read\+Next} ()
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_abf21650d2597034d3307f530ebfb7f18}\label{classGpgFrontend_1_1UI_1_1FileReadTask_abf21650d2597034d3307f530ebfb7f18}} 
-{\bfseries File\+Read\+Task} (std\+::string path)
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a9b6e2f4beaabeea20a8b23348a2279a6}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a9b6e2f4beaabeea20a8b23348a2279a6}} 
+{\bfseries File\+Read\+Task} (QString path)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}} 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_a0f8bc1c253380b68c0e65cabc011ac09}{Run}} () override
-\begin{DoxyCompactList}\small\item\em Run -\/ run the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_abd8f62be2b544d0fc8bbb1e5b7b3de9b}{Run}} () override
+\begin{DoxyCompactList}\small\item\em can be overwrite by subclass \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_afe44eab4abfe0b3b950f332d54662159}\label{classGpgFrontend_1_1UI_1_1FileReadTask_afe44eab4abfe0b3b950f332d54662159}} 
-void {\bfseries read\+\_\+bytes} ()
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a56aa425ab85138ac81f840f801c439b9}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a56aa425ab85138ac81f840f801c439b9}} 
+void {\bfseries slot\+\_\+read\+\_\+bytes} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_ac00874dbef395dda534e32c6502c7913}\label{classGpgFrontend_1_1UI_1_1FileReadTask_ac00874dbef395dda534e32c6502c7913}} 
-std\+::filesystem\+::path {\bfseries read\+\_\+file\+\_\+path\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a14f73f0f67f37c03aed74f3416e3722c}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a14f73f0f67f37c03aed74f3416e3722c}} 
+QString {\bfseries read\+\_\+file\+\_\+path\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_af3896c6ef4dc49bd371746aa9fea1120}\label{classGpgFrontend_1_1UI_1_1FileReadTask_af3896c6ef4dc49bd371746aa9fea1120}} 
 QFile {\bfseries target\+\_\+file\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_a2bc7e5bb1c67490ba12c82200634bd97}\label{classGpgFrontend_1_1UI_1_1FileReadTask_a2bc7e5bb1c67490ba12c82200634bd97}} 
-const size\+\_\+t {\bfseries buffer\+\_\+size\+\_\+} = 4096
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_afb248c339ac074f0a7602711ed2f5e39}\label{classGpgFrontend_1_1UI_1_1FileReadTask_afb248c339ac074f0a7602711ed2f5e39}} 
 QEvent\+Loop {\bfseries looper}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileReadTask_abd8f62be2b544d0fc8bbb1e5b7b3de9b}\label{classGpgFrontend_1_1UI_1_1FileReadTask_abd8f62be2b544d0fc8bbb1e5b7b3de9b}} 
+\index{GpgFrontend::UI::FileReadTask@{GpgFrontend::UI::FileReadTask}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::UI::FileReadTask@{GpgFrontend::UI::FileReadTask}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+File\+Read\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+can be overwrite by subclass 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}{Gpg\+Frontend\+::\+Thread\+::\+Task}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

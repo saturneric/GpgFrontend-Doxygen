@@ -95,9 +95,7 @@ Collaboration diagram for GpgFrontend::GpgKeyManager::AutomatonHandelStruct:</di
 <div class="dyncontent">
 <div class="center"><img src="structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_coll__map" id="aGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_coll__map">
-<area shape="rect" title=" " alt="" coords="5,287,225,540"/>
-<area shape="rect" title=" " alt="" coords="72,147,159,224"/>
-<area shape="rect" title=" " alt="" coords="46,5,185,97"/>
+<area shape="rect" title=" " alt="" coords="5,5,225,273"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -106,30 +104,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf2b62099a5db5d878dacf2272d081cc"><td class="memItemLeft" align="right" valign="top"><a id="abf2b62099a5db5d878dacf2272d081cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStatus</b> (AutomatonState next_state)</td></tr>
 <tr class="separator:abf2b62099a5db5d878dacf2272d081cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742df2dfca6697d70fd0366c85a2e9ab"><td class="memItemLeft" align="right" valign="top"><a id="a742df2dfca6697d70fd0366c85a2e9ab"></a>
-AutomatonState&#160;</td><td class="memItemRight" valign="bottom"><b>CuurentStatus</b> ()</td></tr>
-<tr class="separator:a742df2dfca6697d70fd0366c85a2e9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db22b44a53ef445dacf420baed95f82"><td class="memItemLeft" align="right" valign="top"><a id="a0db22b44a53ef445dacf420baed95f82"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>CuurentStatus</b> () -&gt; AutomatonState</td></tr>
+<tr class="separator:a0db22b44a53ef445dacf420baed95f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e858f2cd13d4aa52ab99aa76687f80"><td class="memItemLeft" align="right" valign="top"><a id="ad5e858f2cd13d4aa52ab99aa76687f80"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHandler</b> (AutomatonNextStateHandler next_state_handler, AutomatonActionHandler action_handler)</td></tr>
 <tr class="separator:ad5e858f2cd13d4aa52ab99aa76687f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e09cfc03ac7c3a4a02ba91e2ab324a"><td class="memItemLeft" align="right" valign="top"><a id="a36e09cfc03ac7c3a4a02ba91e2ab324a"></a>
-AutomatonState&#160;</td><td class="memItemRight" valign="bottom"><b>NextState</b> (std::string gpg_status, std::string args)</td></tr>
-<tr class="separator:a36e09cfc03ac7c3a4a02ba91e2ab324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeda3da9e04fc8121946bcaa36fa6a7b"><td class="memItemLeft" align="right" valign="top"><a id="afeda3da9e04fc8121946bcaa36fa6a7b"></a>
-Command&#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> ()</td></tr>
-<tr class="separator:afeda3da9e04fc8121946bcaa36fa6a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047b37b7f3f9d2a6274bfe334724ca8d"><td class="memItemLeft" align="right" valign="top"><a id="a047b37b7f3f9d2a6274bfe334724ca8d"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>NextState</b> (QString gpg_status, QString args) -&gt; AutomatonState</td></tr>
+<tr class="separator:a047b37b7f3f9d2a6274bfe334724ca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae930a0da875ebf6347b18954fa143d56"><td class="memItemLeft" align="right" valign="top"><a id="ae930a0da875ebf6347b18954fa143d56"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> () -&gt; Command</td></tr>
+<tr class="separator:ae930a0da875ebf6347b18954fa143d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95521fc49f2e1d1a7304472dc1897375"><td class="memItemLeft" align="right" valign="top"><a id="a95521fc49f2e1d1a7304472dc1897375"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSuccess</b> (bool success)</td></tr>
 <tr class="separator:a95521fc49f2e1d1a7304472dc1897375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032442a3b9e65411cca885dbc48fc051"><td class="memItemLeft" align="right" valign="top"><a id="a032442a3b9e65411cca885dbc48fc051"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Success</b> ()</td></tr>
-<tr class="separator:a032442a3b9e65411cca885dbc48fc051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345c63f8868e3f674aa7b35977a54f28"><td class="memItemLeft" align="right" valign="top"><a id="a345c63f8868e3f674aa7b35977a54f28"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>KeyFpr</b> ()</td></tr>
-<tr class="separator:a345c63f8868e3f674aa7b35977a54f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c9441aa2583ce99cb94a8b46a1740b"><td class="memItemLeft" align="right" valign="top"><a id="a94c9441aa2583ce99cb94a8b46a1740b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AutomatonHandelStruct</b> (std::string key_fpr)</td></tr>
-<tr class="separator:a94c9441aa2583ce99cb94a8b46a1740b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b6517f56e4e4f20c41066e53eb5b4b"><td class="memItemLeft" align="right" valign="top"><a id="aa1b6517f56e4e4f20c41066e53eb5b4b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>Success</b> () const -&gt; bool</td></tr>
+<tr class="separator:aa1b6517f56e4e4f20c41066e53eb5b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c44ade1827b9b823b7c33cb7f989f3"><td class="memItemLeft" align="right" valign="top"><a id="a21c44ade1827b9b823b7c33cb7f989f3"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>KeyFpr</b> () -&gt; QString</td></tr>
+<tr class="separator:a21c44ade1827b9b823b7c33cb7f989f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed091b5e2cf9f0125e239d2d45ccbf6"><td class="memItemLeft" align="right" valign="top"><a id="a1ed091b5e2cf9f0125e239d2d45ccbf6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AutomatonHandelStruct</b> (QString key_fpr)</td></tr>
+<tr class="separator:a1ed091b5e2cf9f0125e239d2d45ccbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -145,9 +143,9 @@ AutomatonActionHandler&#160;</td><td class="memItemRight" valign="bottom"><b>act
 <tr class="memitem:a93424679542c04dbe0094d93789ec28e"><td class="memItemLeft" align="right" valign="top"><a id="a93424679542c04dbe0094d93789ec28e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>success_</b> = false</td></tr>
 <tr class="separator:a93424679542c04dbe0094d93789ec28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f02df3199da0fe15bf7af74e21002b"><td class="memItemLeft" align="right" valign="top"><a id="ad7f02df3199da0fe15bf7af74e21002b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>key_fpr_</b></td></tr>
-<tr class="separator:ad7f02df3199da0fe15bf7af74e21002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030469ae50dd8e0d66aaeac1cd2d2481"><td class="memItemLeft" align="right" valign="top"><a id="a030469ae50dd8e0d66aaeac1cd2d2481"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>key_fpr_</b></td></tr>
+<tr class="separator:a030469ae50dd8e0d66aaeac1cd2d2481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/core/function/gpg/<a class="el" href="GpgKeyManager_8h_source.html">GpgKeyManager.h</a></li>

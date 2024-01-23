@@ -1,6 +1,6 @@
 <map id="GpgFrontend::GpgBasicOperator" name="GpgFrontend::GpgBasicOperator">
-<area shape="rect" id="node1" title="Basic operation collection." alt="" coords="5,883,236,1092"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="6,551,235,833"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="137,205,366,488"/>
+<area shape="rect" id="node1" title="Basic operation collection." alt="" coords="5,897,236,1121"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="6,565,235,848"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="137,220,366,503"/>
 </map>

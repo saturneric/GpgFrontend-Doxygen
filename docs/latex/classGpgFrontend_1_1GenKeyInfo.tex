@@ -7,107 +7,103 @@ Collaboration diagram for Gpg\+Frontend\+::Gen\+Key\+Info\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1GenKeyInfo__coll__graph}
+\includegraphics[width=239pt]{classGpgFrontend_1_1GenKeyInfo__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abed4a1dc3cdf137fa01435edce2edd9d}\label{classGpgFrontend_1_1GenKeyInfo_abed4a1dc3cdf137fa01435edce2edd9d}} 
+using {\bfseries Key\+Gen\+Algo} = std\+::tuple$<$ QString, QString, QString $>$
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a40a42ad975499566de124296c19e6c55}{Is\+Sub\+Key}} () const
+\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_acfa8401da6425bf3b5fe63d897a33b69}{Gen\+Key\+Info}} (bool m\+\_\+is\+\_\+sub\+\_\+key=false)
+\begin{DoxyCompactList}\small\item\em Construct a new Gen Key Info object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a5018adac1ec215cc17dd7dabea39829d}{Is\+Sub\+Key}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_acd9f7742b739e1db60bd50489690dec1}{Set\+Is\+Sub\+Key}} (bool m\+\_\+sub\+\_\+key)
 \begin{DoxyCompactList}\small\item\em Set the Is Sub Key object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a4ee4a0659e76376d9bfc527c334392e1}{Get\+Userid}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a225c683da9766afd8fd7e733e9f5fdd4}{Get\+Userid}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the Userid object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a65ebc487e0e64c325f65474c812615f7}{Set\+Name}} (const std\+::string \&m\+\_\+name)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a8f80b74f6ed3183063a46f2cd3bb9172}{Set\+Name}} (const QString \&m\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a656c81d56f77350184f9a94db1a3ce05}{Set\+Email}} (const std\+::string \&m\+\_\+email)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6cff6c278089c5e6a646592e87f046b5}{Set\+Email}} (const QString \&m\+\_\+email)
 \begin{DoxyCompactList}\small\item\em Set the Email object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a947886456f5699241b1c1b9332e4b29e}{Set\+Comment}} (const std\+::string \&m\+\_\+comment)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a0d498db9a8249db8b7e1742065a82c42}{Set\+Comment}} (const QString \&m\+\_\+comment)
 \begin{DoxyCompactList}\small\item\em Set the Comment object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_abb3e1366dca0288bdc42123e55d77335}{Get\+Name}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6c1277ad84cd4c2b3c6203c31581e8e4}{Get\+Name}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a76721be08c18907762ba6f6ccc4afc8a}{Get\+Email}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_af87474dd334abdc17f39bf5cc04cc464}{Get\+Email}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the Email object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}{Get\+Comment}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_abbc1d76d54202eb5cf2cc27767ab238d}{Get\+Comment}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the Comment object. \end{DoxyCompactList}\item 
-const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}{Get\+Algo}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aadafd2fa289a5b8e69e03c5b2deeacd6}{Get\+Algo}} () const -\/$>$ const QString \&
 \begin{DoxyCompactList}\small\item\em Get the Algo object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}{Set\+Algo}} (const Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo \&m\+\_\+algo)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a438c9bd77727a93961109a8492673fe5}{Set\+Algo}} (const QString \&)
 \begin{DoxyCompactList}\small\item\em Set the Algo object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a0bda4b4161d805582869ec0e56ade07c}{Get\+Key\+Size\+Str}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aa0d9942210df18e21e5f7feb127a4080}{Get\+Key\+Size\+Str}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the Key Size Str object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a4927a9091fa2b2f68f6b60ce78ab2fe9}{Get\+Key\+Length}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_afd12578dde272902cfbf76368103f95b}{Get\+Key\+Length}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Key Size object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ae744395012e4dcb9734ad5a30aa8ed75}{Set\+Key\+Length}} (int m\+\_\+key\+\_\+size)
 \begin{DoxyCompactList}\small\item\em Set the Key Size object. \end{DoxyCompactList}\item 
-const boost\+::posix\+\_\+time\+::ptime \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}{Get\+Expire\+Time}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_abba96c63d675a9bdd05926eaca64c268}{Get\+Expire\+Time}} () const -\/$>$ const QDate\+Time \&
 \begin{DoxyCompactList}\small\item\em Get the Expired object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aa3bfeda7fc7c83dc8d48ee2b80780c3a}{Set\+Expire\+Time}} (const boost\+::posix\+\_\+time\+::ptime \&m\+\_\+expired)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a8475c1f419a65055dd659d3b60d4e356}{Set\+Expire\+Time}} (const QDate\+Time \&m\+\_\+expired)
 \begin{DoxyCompactList}\small\item\em Set the Expired object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aeef7697c91b5b5998088979e09332380}{Is\+Non\+Expired}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a812adab61edebf96bbba4a18c2b82a72}{Is\+Non\+Expired}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aea247381c21896f5371bb813ca665329}{Set\+Non\+Expired}} (bool m\+\_\+non\+\_\+expired)
 \begin{DoxyCompactList}\small\item\em Set the Non Expired object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a848181796a99bec8d32dc5eac240ee01}{Is\+No\+Pass\+Phrase}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a2dd1d385b95569e60526cbf15bdf03ec}{Is\+No\+Pass\+Phrase}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a864407216cbdbef9e7b35e6be694d3ef}{Set\+Non\+Pass\+Phrase}} (bool m\+\_\+non\+\_\+pass\+\_\+phrase)
 \begin{DoxyCompactList}\small\item\em Set the Non Pass Phrase object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ad972292c408cb83c08e739327795a5f0}{Is\+Allow\+Signing}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_abc16a0f5b11c814a5fd2ec9198c88a99}{Is\+Allow\+Signing}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_af6a79124a4571ff7f37c1c5e6c1a9415}{Is\+Allow\+No\+Pass\+Phrase}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_af3cc933fddc87f2a250b6686ceddf4ac}{Is\+Allow\+No\+Pass\+Phrase}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a1a01518b24d40d95e187ef73f4dcd52a}{Set\+Allow\+Signing}} (bool m\+\_\+allow\+\_\+signing)
 \begin{DoxyCompactList}\small\item\em Set the Allow Signing object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a28ed8a65243e5bc69403305752c2cdc9}{Is\+Allow\+Encryption}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a75b69b9e3f889e9fc5ffe9ee7af2c365}{Is\+Allow\+Encryption}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a965014232f6de22c6d33320231ca4454}{Set\+Allow\+Encryption}} (bool m\+\_\+allow\+\_\+encryption)
 \begin{DoxyCompactList}\small\item\em Set the Allow Encryption object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ad47ceeb1ccfa8862843034e51b4d8be7}{Is\+Allow\+Certification}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ae01bbb4af8da59317797d599b28abb31}{Is\+Allow\+Certification}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac5f52f74566618c71a29bdc5e70fce2e}{Set\+Allow\+Certification}} (bool m\+\_\+allow\+\_\+certification)
 \begin{DoxyCompactList}\small\item\em Set the Allow Certification object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b9b9c87}{Is\+Allow\+Authentication}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aa73b6fe349eb4c2438fd0a0ae61b6c03}{Is\+Allow\+Authentication}} () const -\/$>$ bool
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aac51d251682ed1bc1090416ebfeba4de}{Set\+Allow\+Authentication}} (bool m\+\_\+allow\+\_\+authentication)
 \begin{DoxyCompactList}\small\item\em Set the Allow Authentication object. \end{DoxyCompactList}\item 
-const std\+::string \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}{Get\+Pass\+Phrase}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ab74ae13ad036fbb85405f401275d0566}{Get\+Pass\+Phrase}} () const -\/$>$ const QString \&
 \begin{DoxyCompactList}\small\item\em Get the Pass Phrase object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_afe1760d4ead397f6096925290a38e1a4}{Set\+Pass\+Phrase}} (const std\+::string \&m\+\_\+pass\+\_\+phrase)
+void \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a0499b0e924ff9d63361b744ead83fc40}{Set\+Pass\+Phrase}} (const QString \&m\+\_\+pass\+\_\+phrase)
 \begin{DoxyCompactList}\small\item\em Set the Pass Phrase object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a06f95a8d26da79bcbe7d51e266879a94}{Is\+Allow\+Change\+Signing}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a4aedcb38a9fb4ffe65d16bce61a610c4}{Is\+Allow\+Change\+Signing}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ad04a906300bea028c6fb6b1b2da1d149}{Is\+Allow\+Change\+Encryption}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a81d52ff47ecd7aca34fb4f5a613b922d}{Is\+Allow\+Change\+Encryption}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_adbcddd0fa0a273f9b77fe1297633dabc}{Is\+Allow\+Change\+Certification}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a858ace5de6d4b8cd31fa6c68f33d0f92}{Is\+Allow\+Change\+Certification}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_aaf8ab7c6564a2836837a537111d6f5b4}{Is\+Allow\+Change\+Authentication}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6b6635977ea47b1c2220aed48bc5c57d}{Is\+Allow\+Change\+Authentication}} () const -\/$>$ bool
 \item 
-int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ae461a553176ad1ab0c1121ea6de6c8c2}{Get\+Suggest\+Max\+Key\+Size}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_af72c8592d105d8394bcfa1bc6388d46e}{Get\+Suggest\+Max\+Key\+Size}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Suggest Max Key Size object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a0b1612421148b86919b7130ed148ca51}{Get\+Suggest\+Min\+Key\+Size}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a482933ddc06734993d80a90611a8ad5b}{Get\+Suggest\+Min\+Key\+Size}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Suggest Min Key Size object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac211a7a615805ae97ff284b46abfeab7}{Get\+Size\+Change\+Step}} () const
-\begin{DoxyCompactList}\small\item\em Get the Size Change Step object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a34eca1662ba8d4645751f3ee66582b04}{Gen\+Key\+Info}} (bool m\+\_\+is\+\_\+sub\+\_\+key=false, bool m\+\_\+standalone=false)
-\begin{DoxyCompactList}\small\item\em Construct a new Gen Key Info object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a33c7ea176587bbd317a39938e9ecec59}{Get\+Size\+Change\+Step}} () const -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Get the Size Change Step object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}{Get\+Supported\+Key\+Algo}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a2229d217f44345a99ab3816ec5c0cfe8}{Get\+Supported\+Key\+Algo}} () -\/$>$ const std\+::vector$<$ Key\+Gen\+Algo $>$ \&
 \begin{DoxyCompactList}\small\item\em Get the Supported Key Algo object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}{Get\+Supported\+Subkey\+Algo}} ()
-\begin{DoxyCompactList}\small\item\em Get the Supported Subkey Algo object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}{Get\+Supported\+Key\+Algo\+Standalone}} ()
-\begin{DoxyCompactList}\small\item\em Get the Supported Key Algo Standalone object. \end{DoxyCompactList}\item 
-static const std\+::vector$<$ Key\+Gen\+Algo $>$ \& \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}{Get\+Supported\+Subkey\+Algo\+Standalone}} ()
-\begin{DoxyCompactList}\small\item\em Get the Supported Subkey Algo Standalone object. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Types}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7eda73ff0625a635f041365c21531c60}\label{classGpgFrontend_1_1GenKeyInfo_a7eda73ff0625a635f041365c21531c60}} 
-using {\bfseries Key\+Gen\+Algo} = std\+::pair$<$ std\+::string, std\+::string $>$
-\end{DoxyCompactItemize}
+static auto \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo_a07a68fbe5ef4534df51759cffb144bef}{Get\+Supported\+Subkey\+Algo}} () -\/$>$ const std\+::vector$<$ Key\+Gen\+Algo $>$ \&
+\begin{DoxyCompactList}\small\item\em Get the Supported Subkey Algo object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -117,28 +113,26 @@ void {\bfseries reset\+\_\+options} ()
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a54aa9ef123265ff945af6a4ec091fd90}\label{classGpgFrontend_1_1GenKeyInfo_a54aa9ef123265ff945af6a4ec091fd90}} 
-bool {\bfseries standalone\+\_\+} = false
-\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ab97cbf3c5d6e30a6c85e8ca82b1ccfe3}\label{classGpgFrontend_1_1GenKeyInfo_ab97cbf3c5d6e30a6c85e8ca82b1ccfe3}} 
 bool {\bfseries subkey\+\_\+} = false
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a742e5bcc903e8e01b69e568659fe3e20}\label{classGpgFrontend_1_1GenKeyInfo_a742e5bcc903e8e01b69e568659fe3e20}} 
-std\+::string {\bfseries name\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_af34cdb87a48a6814fab6d2bb9f4edb6f}\label{classGpgFrontend_1_1GenKeyInfo_af34cdb87a48a6814fab6d2bb9f4edb6f}} 
+QString {\bfseries name\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a3e8a1d4943b283a6c6042e4e0bba02a8}\label{classGpgFrontend_1_1GenKeyInfo_a3e8a1d4943b283a6c6042e4e0bba02a8}} 
-std\+::string {\bfseries email\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a97e347c259758b6bdc88822944359295}\label{classGpgFrontend_1_1GenKeyInfo_a97e347c259758b6bdc88822944359295}} 
+QString {\bfseries email\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a3885a3e81bdae51d324d4265403d664c}\label{classGpgFrontend_1_1GenKeyInfo_a3885a3e81bdae51d324d4265403d664c}} 
-std\+::string {\bfseries comment\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ab041224b8a17dfa237f4644f5b3a246e}\label{classGpgFrontend_1_1GenKeyInfo_ab041224b8a17dfa237f4644f5b3a246e}} 
+QString {\bfseries comment\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aa8fdbf7db3cb7e7a013fcf9c18cf069a}\label{classGpgFrontend_1_1GenKeyInfo_aa8fdbf7db3cb7e7a013fcf9c18cf069a}} 
-std\+::string {\bfseries algo\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4495089facdeee0e9335afa1f17e74a7}\label{classGpgFrontend_1_1GenKeyInfo_a4495089facdeee0e9335afa1f17e74a7}} 
+QString {\bfseries algo\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a34392244d8cd477a590d02f02567a665}\label{classGpgFrontend_1_1GenKeyInfo_a34392244d8cd477a590d02f02567a665}} 
 int {\bfseries key\+\_\+size\+\_\+} = 2048
 \item 
-boost\+::posix\+\_\+time\+::ptime {\bfseries expired\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a44ea49dd2fc9032a09eac7e2bd563558}\label{classGpgFrontend_1_1GenKeyInfo_a44ea49dd2fc9032a09eac7e2bd563558}} 
+QDate\+Time {\bfseries expired\+\_\+} = QDate\+Time\+::current\+Date\+Time().add\+Years(2)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a7b8c6d162f1cb8a74e3ff150908270f5}\label{classGpgFrontend_1_1GenKeyInfo_a7b8c6d162f1cb8a74e3ff150908270f5}} 
 bool {\bfseries non\+\_\+expired\+\_\+} = false
@@ -158,8 +152,8 @@ int {\bfseries suggest\+\_\+size\+\_\+addition\+\_\+step\+\_\+} = 1024
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a9e3cec33031de7d3d2728bd6883caece}\label{classGpgFrontend_1_1GenKeyInfo_a9e3cec33031de7d3d2728bd6883caece}} 
 int {\bfseries suggest\+\_\+min\+\_\+key\+\_\+size\+\_\+} = 1024
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a01baca0288fe2c4574a8b3d9ae8552d8}\label{classGpgFrontend_1_1GenKeyInfo_a01baca0288fe2c4574a8b3d9ae8552d8}} 
-std\+::string {\bfseries passphrase\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4c143ddb95e23d132129c8eaa742283b}\label{classGpgFrontend_1_1GenKeyInfo_a4c143ddb95e23d132129c8eaa742283b}} 
+QString {\bfseries passphrase\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aed17aae3218f74cea7273c9dd853a539}\label{classGpgFrontend_1_1GenKeyInfo_aed17aae3218f74cea7273c9dd853a539}} 
 bool {\bfseries allow\+\_\+encryption\+\_\+} = true
@@ -188,11 +182,11 @@ bool {\bfseries allow\+\_\+change\+\_\+signing\+\_\+} = true
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a34eca1662ba8d4645751f3ee66582b04}\label{classGpgFrontend_1_1GenKeyInfo_a34eca1662ba8d4645751f3ee66582b04}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_acfa8401da6425bf3b5fe63d897a33b69}\label{classGpgFrontend_1_1GenKeyInfo_acfa8401da6425bf3b5fe63d897a33b69}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GenKeyInfo@{GenKeyInfo}}
 \index{GenKeyInfo@{GenKeyInfo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GenKeyInfo()}{GenKeyInfo()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Gen\+Key\+Info (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+is\+\_\+sub\+\_\+key = {\ttfamily false},  }\item[{bool}]{m\+\_\+standalone = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Gen\+Key\+Info (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+is\+\_\+sub\+\_\+key = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -212,63 +206,63 @@ References Get\+Supported\+Key\+Algo(), and Set\+Algo().
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}\label{classGpgFrontend_1_1GenKeyInfo_a6a65ba347156373b6cf98eb8e851d28d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aadafd2fa289a5b8e69e03c5b2deeacd6}\label{classGpgFrontend_1_1GenKeyInfo_aadafd2fa289a5b8e69e03c5b2deeacd6}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetAlgo@{GetAlgo}}
 \index{GetAlgo@{GetAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetAlgo()}{GetAlgo()}}
-{\footnotesize\ttfamily const std\+::string\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ const QString \&}
 
 
 
 Get the Algo object. 
 
 \begin{DoxyReturn}{Returns}
-const std\+::string\& 
+const QString\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}\label{classGpgFrontend_1_1GenKeyInfo_ab9f9775fd6363fba372bd0bcc2532892}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abbc1d76d54202eb5cf2cc27767ab238d}\label{classGpgFrontend_1_1GenKeyInfo_abbc1d76d54202eb5cf2cc27767ab238d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetComment@{GetComment}}
 \index{GetComment@{GetComment}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetComment()}{GetComment()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 
 
 Get the Comment object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a76721be08c18907762ba6f6ccc4afc8a}\label{classGpgFrontend_1_1GenKeyInfo_a76721be08c18907762ba6f6ccc4afc8a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_af87474dd334abdc17f39bf5cc04cc464}\label{classGpgFrontend_1_1GenKeyInfo_af87474dd334abdc17f39bf5cc04cc464}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetEmail@{GetEmail}}
 \index{GetEmail@{GetEmail}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetEmail()}{GetEmail()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 
 
 Get the Email object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}\label{classGpgFrontend_1_1GenKeyInfo_ac629312630a78e32ee36ba0ff30bc9ff}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abba96c63d675a9bdd05926eaca64c268}\label{classGpgFrontend_1_1GenKeyInfo_abba96c63d675a9bdd05926eaca64c268}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetExpireTime@{GetExpireTime}}
 \index{GetExpireTime@{GetExpireTime}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetExpireTime()}{GetExpireTime()}}
-{\footnotesize\ttfamily const boost\+::posix\+\_\+time\+::ptime\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ const QDate\+Time \&}
 
 
 
 Get the Expired object. 
 
 \begin{DoxyReturn}{Returns}
-const boost\+::posix\+\_\+time\+::ptime\& 
+const QDate\+Time\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4927a9091fa2b2f68f6b60ce78ab2fe9}\label{classGpgFrontend_1_1GenKeyInfo_a4927a9091fa2b2f68f6b60ce78ab2fe9}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_afd12578dde272902cfbf76368103f95b}\label{classGpgFrontend_1_1GenKeyInfo_afd12578dde272902cfbf76368103f95b}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetKeyLength@{GetKeyLength}}
 \index{GetKeyLength@{GetKeyLength}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetKeyLength()}{GetKeyLength()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Key\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Key\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -277,50 +271,50 @@ Get the Key Size object.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a0bda4b4161d805582869ec0e56ade07c}\label{classGpgFrontend_1_1GenKeyInfo_a0bda4b4161d805582869ec0e56ade07c}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aa0d9942210df18e21e5f7feb127a4080}\label{classGpgFrontend_1_1GenKeyInfo_aa0d9942210df18e21e5f7feb127a4080}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetKeySizeStr@{GetKeySizeStr}}
 \index{GetKeySizeStr@{GetKeySizeStr}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetKeySizeStr()}{GetKeySizeStr()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Key\+Size\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Key\+Size\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 
 
 Get the Key Size Str object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abb3e1366dca0288bdc42123e55d77335}\label{classGpgFrontend_1_1GenKeyInfo_abb3e1366dca0288bdc42123e55d77335}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6c1277ad84cd4c2b3c6203c31581e8e4}\label{classGpgFrontend_1_1GenKeyInfo_a6c1277ad84cd4c2b3c6203c31581e8e4}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetName@{GetName}}
 \index{GetName@{GetName}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 
 
 Get the Name object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}\label{classGpgFrontend_1_1GenKeyInfo_a890ee16ef6088570360a073a6b531c89}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ab74ae13ad036fbb85405f401275d0566}\label{classGpgFrontend_1_1GenKeyInfo_ab74ae13ad036fbb85405f401275d0566}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetPassPhrase@{GetPassPhrase}}
 \index{GetPassPhrase@{GetPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetPassPhrase()}{GetPassPhrase()}}
-{\footnotesize\ttfamily const std\+::string\& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ const QString \&}
 
 
 
 Get the Pass Phrase object. 
 
 \begin{DoxyReturn}{Returns}
-const std\+::string\& 
+const QString\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac211a7a615805ae97ff284b46abfeab7}\label{classGpgFrontend_1_1GenKeyInfo_ac211a7a615805ae97ff284b46abfeab7}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a33c7ea176587bbd317a39938e9ecec59}\label{classGpgFrontend_1_1GenKeyInfo_a33c7ea176587bbd317a39938e9ecec59}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSizeChangeStep@{GetSizeChangeStep}}
 \index{GetSizeChangeStep@{GetSizeChangeStep}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSizeChangeStep()}{GetSizeChangeStep()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Size\+Change\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Size\+Change\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -329,11 +323,11 @@ Get the Size Change Step object.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ae461a553176ad1ab0c1121ea6de6c8c2}\label{classGpgFrontend_1_1GenKeyInfo_ae461a553176ad1ab0c1121ea6de6c8c2}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_af72c8592d105d8394bcfa1bc6388d46e}\label{classGpgFrontend_1_1GenKeyInfo_af72c8592d105d8394bcfa1bc6388d46e}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSuggestMaxKeySize@{GetSuggestMaxKeySize}}
 \index{GetSuggestMaxKeySize@{GetSuggestMaxKeySize}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSuggestMaxKeySize()}{GetSuggestMaxKeySize()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Suggest\+Max\+Key\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Suggest\+Max\+Key\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -342,11 +336,11 @@ Get the Suggest Max Key Size object.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a0b1612421148b86919b7130ed148ca51}\label{classGpgFrontend_1_1GenKeyInfo_a0b1612421148b86919b7130ed148ca51}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a482933ddc06734993d80a90611a8ad5b}\label{classGpgFrontend_1_1GenKeyInfo_a482933ddc06734993d80a90611a8ad5b}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSuggestMinKeySize@{GetSuggestMinKeySize}}
 \index{GetSuggestMinKeySize@{GetSuggestMinKeySize}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSuggestMinKeySize()}{GetSuggestMinKeySize()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Suggest\+Min\+Key\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Suggest\+Min\+Key\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -355,224 +349,194 @@ Get the Suggest Min Key Size object.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}\label{classGpgFrontend_1_1GenKeyInfo_ac0dbb2d89b1e5f9b272679ba3f24314e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a2229d217f44345a99ab3816ec5c0cfe8}\label{classGpgFrontend_1_1GenKeyInfo_a2229d217f44345a99ab3816ec5c0cfe8}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedKeyAlgo@{GetSupportedKeyAlgo}}
 \index{GetSupportedKeyAlgo@{GetSupportedKeyAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedKeyAlgo()}{GetSupportedKeyAlgo()}}
-{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ const std\+::vector$<$Key\+Gen\+Algo$>$ \&\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Get the Supported Key Algo object. 
 
 \begin{DoxyReturn}{Returns}
-const std\+::vector$<$std\+::string$>$\& 
+const std\+::vector$<$\+QString$>$\& 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), Gen\+Key\+Info(), and Set\+Algo().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), and Gen\+Key\+Info().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}\label{classGpgFrontend_1_1GenKeyInfo_afb8315b6612c64b3921b72df98ebcc74}} 
-\index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedKeyAlgoStandalone@{GetSupportedKeyAlgoStandalone}}
-\index{GetSupportedKeyAlgoStandalone@{GetSupportedKeyAlgoStandalone}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
-\doxysubsubsection{\texorpdfstring{GetSupportedKeyAlgoStandalone()}{GetSupportedKeyAlgoStandalone()}}
-{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Get the Supported Key Algo Standalone object. 
-
-\begin{DoxyReturn}{Returns}
-const std\+::vector$<$std\+::string$>$\& 
-\end{DoxyReturn}
-
-
-Referenced by Set\+Algo().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}\label{classGpgFrontend_1_1GenKeyInfo_a168d6fe5252812f5984ba6d8046c7741}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a07a68fbe5ef4534df51759cffb144bef}\label{classGpgFrontend_1_1GenKeyInfo_a07a68fbe5ef4534df51759cffb144bef}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgo@{GetSupportedSubkeyAlgo}}
 \index{GetSupportedSubkeyAlgo@{GetSupportedSubkeyAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetSupportedSubkeyAlgo()}{GetSupportedSubkeyAlgo()}}
-{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ const std\+::vector$<$Key\+Gen\+Algo$>$ \&\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Get the Supported Subkey Algo object. 
 
 \begin{DoxyReturn}{Returns}
-const std\+::vector$<$std\+::string$>$\& 
+const std\+::vector$<$\+QString$>$\& 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box(), and Set\+Algo().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::create\+\_\+basic\+\_\+info\+\_\+group\+\_\+box().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}\label{classGpgFrontend_1_1GenKeyInfo_a6819b0ca3ef7712b85ae320030cde023}} 
-\index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetSupportedSubkeyAlgoStandalone@{GetSupportedSubkeyAlgoStandalone}}
-\index{GetSupportedSubkeyAlgoStandalone@{GetSupportedSubkeyAlgoStandalone}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
-\doxysubsubsection{\texorpdfstring{GetSupportedSubkeyAlgoStandalone()}{GetSupportedSubkeyAlgoStandalone()}}
-{\footnotesize\ttfamily const std\+::vector$<$ Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo $>$ \& Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo\+Standalone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Get the Supported Subkey Algo Standalone object. 
-
-\begin{DoxyReturn}{Returns}
-const std\+::vector$<$std\+::string$>$\& 
-\end{DoxyReturn}
-
-
-Referenced by Set\+Algo().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4ee4a0659e76376d9bfc527c334392e1}\label{classGpgFrontend_1_1GenKeyInfo_a4ee4a0659e76376d9bfc527c334392e1}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a225c683da9766afd8fd7e733e9f5fdd4}\label{classGpgFrontend_1_1GenKeyInfo_a225c683da9766afd8fd7e733e9f5fdd4}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!GetUserid@{GetUserid}}
 \index{GetUserid@{GetUserid}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{GetUserid()}{GetUserid()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Userid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Userid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 
 
 Get the Userid object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b9b9c87}\label{classGpgFrontend_1_1GenKeyInfo_aabdf981c65a0efde1e8905441b9b9c87}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aa73b6fe349eb4c2438fd0a0ae61b6c03}\label{classGpgFrontend_1_1GenKeyInfo_aa73b6fe349eb4c2438fd0a0ae61b6c03}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowAuthentication@{IsAllowAuthentication}}
 \index{IsAllowAuthentication@{IsAllowAuthentication}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowAuthentication()}{IsAllowAuthentication()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ad47ceeb1ccfa8862843034e51b4d8be7}\label{classGpgFrontend_1_1GenKeyInfo_ad47ceeb1ccfa8862843034e51b4d8be7}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ae01bbb4af8da59317797d599b28abb31}\label{classGpgFrontend_1_1GenKeyInfo_ae01bbb4af8da59317797d599b28abb31}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowCertification@{IsAllowCertification}}
 \index{IsAllowCertification@{IsAllowCertification}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowCertification()}{IsAllowCertification()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Certification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Certification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aaf8ab7c6564a2836837a537111d6f5b4}\label{classGpgFrontend_1_1GenKeyInfo_aaf8ab7c6564a2836837a537111d6f5b4}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6b6635977ea47b1c2220aed48bc5c57d}\label{classGpgFrontend_1_1GenKeyInfo_a6b6635977ea47b1c2220aed48bc5c57d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowChangeAuthentication@{IsAllowChangeAuthentication}}
 \index{IsAllowChangeAuthentication@{IsAllowChangeAuthentication}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowChangeAuthentication()}{IsAllowChangeAuthentication()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_adbcddd0fa0a273f9b77fe1297633dabc}\label{classGpgFrontend_1_1GenKeyInfo_adbcddd0fa0a273f9b77fe1297633dabc}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a858ace5de6d4b8cd31fa6c68f33d0f92}\label{classGpgFrontend_1_1GenKeyInfo_a858ace5de6d4b8cd31fa6c68f33d0f92}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowChangeCertification@{IsAllowChangeCertification}}
 \index{IsAllowChangeCertification@{IsAllowChangeCertification}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowChangeCertification()}{IsAllowChangeCertification()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Certification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Certification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ad04a906300bea028c6fb6b1b2da1d149}\label{classGpgFrontend_1_1GenKeyInfo_ad04a906300bea028c6fb6b1b2da1d149}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a81d52ff47ecd7aca34fb4f5a613b922d}\label{classGpgFrontend_1_1GenKeyInfo_a81d52ff47ecd7aca34fb4f5a613b922d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowChangeEncryption@{IsAllowChangeEncryption}}
 \index{IsAllowChangeEncryption@{IsAllowChangeEncryption}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowChangeEncryption()}{IsAllowChangeEncryption()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a06f95a8d26da79bcbe7d51e266879a94}\label{classGpgFrontend_1_1GenKeyInfo_a06f95a8d26da79bcbe7d51e266879a94}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a4aedcb38a9fb4ffe65d16bce61a610c4}\label{classGpgFrontend_1_1GenKeyInfo_a4aedcb38a9fb4ffe65d16bce61a610c4}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowChangeSigning@{IsAllowChangeSigning}}
 \index{IsAllowChangeSigning@{IsAllowChangeSigning}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowChangeSigning()}{IsAllowChangeSigning()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Signing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Change\+Signing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a28ed8a65243e5bc69403305752c2cdc9}\label{classGpgFrontend_1_1GenKeyInfo_a28ed8a65243e5bc69403305752c2cdc9}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a75b69b9e3f889e9fc5ffe9ee7af2c365}\label{classGpgFrontend_1_1GenKeyInfo_a75b69b9e3f889e9fc5ffe9ee7af2c365}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowEncryption@{IsAllowEncryption}}
 \index{IsAllowEncryption@{IsAllowEncryption}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowEncryption()}{IsAllowEncryption()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_af6a79124a4571ff7f37c1c5e6c1a9415}\label{classGpgFrontend_1_1GenKeyInfo_af6a79124a4571ff7f37c1c5e6c1a9415}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_af3cc933fddc87f2a250b6686ceddf4ac}\label{classGpgFrontend_1_1GenKeyInfo_af3cc933fddc87f2a250b6686ceddf4ac}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowNoPassPhrase@{IsAllowNoPassPhrase}}
 \index{IsAllowNoPassPhrase@{IsAllowNoPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowNoPassPhrase()}{IsAllowNoPassPhrase()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+No\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+No\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_ad972292c408cb83c08e739327795a5f0}\label{classGpgFrontend_1_1GenKeyInfo_ad972292c408cb83c08e739327795a5f0}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_abc16a0f5b11c814a5fd2ec9198c88a99}\label{classGpgFrontend_1_1GenKeyInfo_abc16a0f5b11c814a5fd2ec9198c88a99}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsAllowSigning@{IsAllowSigning}}
 \index{IsAllowSigning@{IsAllowSigning}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsAllowSigning()}{IsAllowSigning()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Signing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Allow\+Signing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aeef7697c91b5b5998088979e09332380}\label{classGpgFrontend_1_1GenKeyInfo_aeef7697c91b5b5998088979e09332380}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a812adab61edebf96bbba4a18c2b82a72}\label{classGpgFrontend_1_1GenKeyInfo_a812adab61edebf96bbba4a18c2b82a72}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsNonExpired@{IsNonExpired}}
 \index{IsNonExpired@{IsNonExpired}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsNonExpired()}{IsNonExpired()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Non\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Non\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a848181796a99bec8d32dc5eac240ee01}\label{classGpgFrontend_1_1GenKeyInfo_a848181796a99bec8d32dc5eac240ee01}} 
+
+
+Referenced by Set\+Expire\+Time().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a2dd1d385b95569e60526cbf15bdf03ec}\label{classGpgFrontend_1_1GenKeyInfo_a2dd1d385b95569e60526cbf15bdf03ec}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsNoPassPhrase@{IsNoPassPhrase}}
 \index{IsNoPassPhrase@{IsNoPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsNoPassPhrase()}{IsNoPassPhrase()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+No\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+No\+Pass\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a40a42ad975499566de124296c19e6c55}\label{classGpgFrontend_1_1GenKeyInfo_a40a42ad975499566de124296c19e6c55}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a5018adac1ec215cc17dd7dabea39829d}\label{classGpgFrontend_1_1GenKeyInfo_a5018adac1ec215cc17dd7dabea39829d}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!IsSubKey@{IsSubKey}}
 \index{IsSubKey@{IsSubKey}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{IsSubKey()}{IsSubKey()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Sub\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Is\+Sub\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}\label{classGpgFrontend_1_1GenKeyInfo_adcd9c4f3e75f989810988e0bc81d401f}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a438c9bd77727a93961109a8492673fe5}\label{classGpgFrontend_1_1GenKeyInfo_a438c9bd77727a93961109a8492673fe5}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAlgo@{SetAlgo}}
 \index{SetAlgo@{SetAlgo}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetAlgo()}{SetAlgo()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Algo (\begin{DoxyParamCaption}\item[{const Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Key\+Gen\+Algo \&}]{m\+\_\+algo }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Algo (\begin{DoxyParamCaption}\item[{const QString \&}]{t\+\_\+algo\+\_\+args }\end{DoxyParamCaption})}
 
 
 
@@ -580,28 +544,16 @@ Set the Algo object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em m\+\_\+algo} & Copyright (C) 2021 Saturneric\\
+{\em m\+\_\+algo} & \\
 \hline
 \end{DoxyParams}
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later RSA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. Gnu\+PG supports RSA with key sizes of between 1024 and 4096 bits.
+RSA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. Gnu\+PG supports RSA with key sizes of between 1024 and 4096 bits.
 
 Algorithm (DSA) as a government standard for digital signatures. Originally, it supported key lengths between 512 and 1024 bits. Recently, NIST has declared 512-\/bit keys obsolete\+: now, DSA is available in 1024, 2048 and 3072-\/bit lengths.
 
 Gnu\+PG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.
 
-References Get\+Supported\+Key\+Algo(), Get\+Supported\+Key\+Algo\+Standalone(), Get\+Supported\+Subkey\+Algo(), Get\+Supported\+Subkey\+Algo\+Standalone(), Set\+Allow\+Authentication(), Set\+Allow\+Certification(), Set\+Allow\+Encryption(), Set\+Allow\+Signing(), and Set\+Key\+Length().
+References Set\+Allow\+Authentication(), Set\+Allow\+Certification(), Set\+Allow\+Encryption(), Set\+Allow\+Signing(), and Set\+Key\+Length().
 
 
 
@@ -611,7 +563,7 @@ Referenced by Gen\+Key\+Info().
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowAuthentication@{SetAllowAuthentication}}
 \index{SetAllowAuthentication@{SetAllowAuthentication}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetAllowAuthentication()}{SetAllowAuthentication()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Allow\+Authentication (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+allow\+\_\+authentication }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Allow\+Authentication (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+allow\+\_\+authentication }\end{DoxyParamCaption})}
 
 
 
@@ -668,7 +620,7 @@ Referenced by Set\+Algo().
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetAllowSigning@{SetAllowSigning}}
 \index{SetAllowSigning@{SetAllowSigning}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetAllowSigning()}{SetAllowSigning()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Allow\+Signing (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+allow\+\_\+signing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Allow\+Signing (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+allow\+\_\+signing }\end{DoxyParamCaption})}
 
 
 
@@ -683,11 +635,11 @@ Set the Allow Signing object.
 
 Referenced by Set\+Algo().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a947886456f5699241b1c1b9332e4b29e}\label{classGpgFrontend_1_1GenKeyInfo_a947886456f5699241b1c1b9332e4b29e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a0d498db9a8249db8b7e1742065a82c42}\label{classGpgFrontend_1_1GenKeyInfo_a0d498db9a8249db8b7e1742065a82c42}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetComment@{SetComment}}
 \index{SetComment@{SetComment}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetComment()}{SetComment()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Comment (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m\+\_\+comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Comment (\begin{DoxyParamCaption}\item[{const QString \&}]{m\+\_\+comment }\end{DoxyParamCaption})}
 
 
 
@@ -698,11 +650,11 @@ Set the Comment object.
 {\em m\+\_\+comment} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a656c81d56f77350184f9a94db1a3ce05}\label{classGpgFrontend_1_1GenKeyInfo_a656c81d56f77350184f9a94db1a3ce05}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a6cff6c278089c5e6a646592e87f046b5}\label{classGpgFrontend_1_1GenKeyInfo_a6cff6c278089c5e6a646592e87f046b5}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetEmail@{SetEmail}}
 \index{SetEmail@{SetEmail}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetEmail()}{SetEmail()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m\+\_\+email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Email (\begin{DoxyParamCaption}\item[{const QString \&}]{m\+\_\+email }\end{DoxyParamCaption})}
 
 
 
@@ -713,11 +665,11 @@ Set the Email object.
 {\em m\+\_\+email} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_aa3bfeda7fc7c83dc8d48ee2b80780c3a}\label{classGpgFrontend_1_1GenKeyInfo_aa3bfeda7fc7c83dc8d48ee2b80780c3a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a8475c1f419a65055dd659d3b60d4e356}\label{classGpgFrontend_1_1GenKeyInfo_a8475c1f419a65055dd659d3b60d4e356}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetExpireTime@{SetExpireTime}}
 \index{SetExpireTime@{SetExpireTime}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetExpireTime()}{SetExpireTime()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Expire\+Time (\begin{DoxyParamCaption}\item[{const boost\+::posix\+\_\+time\+::ptime \&}]{m\+\_\+expired }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Expire\+Time (\begin{DoxyParamCaption}\item[{const QDate\+Time \&}]{m\+\_\+expired }\end{DoxyParamCaption})}
 
 
 
@@ -728,11 +680,15 @@ Set the Expired object.
 {\em m\+\_\+expired} & \\
 \hline
 \end{DoxyParams}
+
+
+References Is\+Non\+Expired().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_acd9f7742b739e1db60bd50489690dec1}\label{classGpgFrontend_1_1GenKeyInfo_acd9f7742b739e1db60bd50489690dec1}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetIsSubKey@{SetIsSubKey}}
 \index{SetIsSubKey@{SetIsSubKey}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetIsSubKey()}{SetIsSubKey()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Is\+Sub\+Key (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+sub\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Is\+Sub\+Key (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+sub\+\_\+key }\end{DoxyParamCaption})}
 
 
 
@@ -762,11 +718,11 @@ Set the Key Size object.
 
 Referenced by Set\+Algo().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a65ebc487e0e64c325f65474c812615f7}\label{classGpgFrontend_1_1GenKeyInfo_a65ebc487e0e64c325f65474c812615f7}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a8f80b74f6ed3183063a46f2cd3bb9172}\label{classGpgFrontend_1_1GenKeyInfo_a8f80b74f6ed3183063a46f2cd3bb9172}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetName@{SetName}}
 \index{SetName@{SetName}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{m\+\_\+name }\end{DoxyParamCaption})}
 
 
 
@@ -796,7 +752,7 @@ Set the Non Expired object.
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetNonPassPhrase@{SetNonPassPhrase}}
 \index{SetNonPassPhrase@{SetNonPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetNonPassPhrase()}{SetNonPassPhrase()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Non\+Pass\+Phrase (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+non\+\_\+pass\+\_\+phrase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Non\+Pass\+Phrase (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+non\+\_\+pass\+\_\+phrase }\end{DoxyParamCaption})}
 
 
 
@@ -807,11 +763,11 @@ Set the Non Pass Phrase object.
 {\em m\+\_\+non\+\_\+pass\+\_\+phrase} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_afe1760d4ead397f6096925290a38e1a4}\label{classGpgFrontend_1_1GenKeyInfo_afe1760d4ead397f6096925290a38e1a4}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a0499b0e924ff9d63361b744ead83fc40}\label{classGpgFrontend_1_1GenKeyInfo_a0499b0e924ff9d63361b744ead83fc40}} 
 \index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!SetPassPhrase@{SetPassPhrase}}
 \index{SetPassPhrase@{SetPassPhrase}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
 \doxysubsubsection{\texorpdfstring{SetPassPhrase()}{SetPassPhrase()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Pass\+Phrase (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m\+\_\+pass\+\_\+phrase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Set\+Pass\+Phrase (\begin{DoxyParamCaption}\item[{const QString \&}]{m\+\_\+pass\+\_\+phrase }\end{DoxyParamCaption})}
 
 
 
@@ -824,23 +780,7 @@ Set the Pass Phrase object.
 \end{DoxyParams}
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GenKeyInfo_a48c113454bd67cd0d918da0469924727}\label{classGpgFrontend_1_1GenKeyInfo_a48c113454bd67cd0d918da0469924727}} 
-\index{GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}!expired\_@{expired\_}}
-\index{expired\_@{expired\_}!GpgFrontend::GenKeyInfo@{GpgFrontend::GenKeyInfo}}
-\doxysubsubsection{\texorpdfstring{expired\_}{expired\_}}
-{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Gpg\+Frontend\+::\+Gen\+Key\+Info\+::expired\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{=}
-\DoxyCodeLine{      boost::posix\_time::second\_clock::local\_time() +}
-\DoxyCodeLine{      boost::gregorian::years(2)}
-
-\end{DoxyCode}
-
-
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/Gpg\+Gen\+Key\+Info.\+h\item 
-src/core/Gpg\+Gen\+Key\+Info.\+cpp\end{DoxyCompactItemize}
+src/core/model/Gpg\+Gen\+Key\+Info.\+h\item 
+src/core/model/Gpg\+Gen\+Key\+Info.\+cpp\end{DoxyCompactItemize}

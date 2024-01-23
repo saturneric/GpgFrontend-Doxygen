@@ -1,0 +1,91 @@
+\hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Module\+::Global\+Module\+Context\+::Impl Class Reference}
+\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl}\index{GpgFrontend::Module::GlobalModuleContext::Impl@{GpgFrontend::Module::GlobalModuleContext::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Module\+::Global\+Module\+Context\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_1_1ModuleRegisterInfo}{Module\+Register\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac3262026e43f2891f74da6dd5a7f38a0}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac3262026e43f2891f74da6dd5a7f38a0}} 
+auto {\bfseries Get\+Channel} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}} module) -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a90e5698590ebc999c67e4966a7835c5c}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a90e5698590ebc999c67e4966a7835c5c}} 
+auto {\bfseries Get\+Task\+Runner} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}}) -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab1b61e3fb3bbd9c8f2c209751bd470d2}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab1b61e3fb3bbd9c8f2c209751bd470d2}} 
+auto {\bfseries Get\+Task\+Runner} (Module\+Identifier) -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07a95697a3653f22d5270708ede1f213}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07a95697a3653f22d5270708ede1f213}} 
+auto {\bfseries Get\+Global\+Task\+Runner} () -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a100b8a083176cbc5788d8af1702fb274}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a100b8a083176cbc5788d8af1702fb274}} 
+auto {\bfseries Register\+Module} (const Module\+Ptr \&module) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac66eb6ed5e8d5742a5d271647bf10f85}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac66eb6ed5e8d5742a5d271647bf10f85}} 
+auto {\bfseries Active\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4479bbccc6929a1c096f764d9c13c02f}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4479bbccc6929a1c096f764d9c13c02f}} 
+auto {\bfseries Listen\+Event} (Module\+Identifier module\+\_\+id, Event\+Identifier event) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab84d50a8d389015d29115d28ab8edbde}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab84d50a8d389015d29115d28ab8edbde}} 
+auto {\bfseries Deactivate\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac7991d6d2022915212987b7a2d330446}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac7991d6d2022915212987b7a2d330446}} 
+auto {\bfseries Trigger\+Event} (const Event\+Refrernce \&event) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}} 
+auto {\bfseries Is\+Module\+Activated} (const Module\+Identifier \&m\+\_\+id) const -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a0388268ec4a003a465f76cb9d3a85b13}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a0388268ec4a003a465f76cb9d3a85b13}} 
+static auto {\bfseries Get\+Default\+Channel} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}}) -\/$>$ int
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aad554eb8e681ed9c91fee58a255bbaca}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aad554eb8e681ed9c91fee58a255bbaca}} 
+using {\bfseries Module\+Register\+Info\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_1_1ModuleRegisterInfo}{Module\+Register\+Info}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ae72741f7c324660c852930dbbdc2b031}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ae72741f7c324660c852930dbbdc2b031}} 
+auto {\bfseries acquire\+\_\+new\+\_\+unique\+\_\+channel} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a11dde09190cfa31bd19efad5dcacf214}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a11dde09190cfa31bd19efad5dcacf214}} 
+auto {\bfseries search\+\_\+module\+\_\+register\+\_\+table} (const Module\+Identifier \&identifier) const -\/$>$ std\+::optional$<$ Module\+Register\+Info\+Ptr $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a8e3cd9ab8dc16a2f7431618bfbc09520}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a8e3cd9ab8dc16a2f7431618bfbc09520}} 
+std\+::unordered\+\_\+map$<$ Module\+Identifier, Module\+Register\+Info\+Ptr $>$ {\bfseries module\+\_\+register\+\_\+table\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aaa6ec2fcc2569cd1b22f419feadaa568}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aaa6ec2fcc2569cd1b22f419feadaa568}} 
+std\+::map$<$ Event\+Identifier, std\+::unordered\+\_\+set$<$ Module\+Identifier $>$ $>$ {\bfseries module\+\_\+events\+\_\+table\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_acc10c7acd6244ef93e85ffb6c4ad267e}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_acc10c7acd6244ef93e85ffb6c4ad267e}} 
+std\+::set$<$ int $>$ {\bfseries acquired\+\_\+channel\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad8285c96435bc2431481828ca943ce49}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad8285c96435bc2431481828ca943ce49}} 
+Task\+Runner\+Ptr {\bfseries default\+\_\+task\+\_\+runner\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/module/Global\+Module\+Context.\+cpp\end{DoxyCompactItemize}

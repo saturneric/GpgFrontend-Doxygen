@@ -87,65 +87,83 @@ $(document).ready(function(){initNavTree('GpgBasicOperator_8h_source.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_BASICOPERATOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_BASICOPERATOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgConstants.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/GpgModel.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgBasicOperator.html">   43</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgBasicOperator.html">GpgBasicOperator</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgBasicOperator&gt; {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgBasicOperator.html">GpgBasicOperator</a>(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  gpg_error_t Encrypt(KeyListPtr keys, BypeArrayRef in_buffer,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                      ByteArrayPtr&amp; out_buffer, GpgEncrResult&amp; result);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/basic/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgContext.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/function/result_analyse/GpgResultAnalyse.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/model/GFBuffer.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/typedef/CoreTypedef.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgBasicOperator.html">   44</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgBasicOperator.html">GpgBasicOperator</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgBasicOperator&gt; {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgBasicOperator.html">GpgBasicOperator</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> Encrypt(<span class="keyword">const</span> KeyArgsList&amp;, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;, <span class="keywordtype">bool</span>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               <span class="keyword">const</span> GpgOperationCallback&amp;);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">auto</span> EncryptSync(<span class="keyword">const</span> KeyArgsList&amp;, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;, <span class="keywordtype">bool</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  gpg_error_t EncryptSymmetric(BypeArrayRef in_buffer, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                               GpgEncrResult&amp; result);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> EncryptSymmetric(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  gpgme_error_t EncryptSign(KeyListPtr keys, KeyListPtr signers,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                            BypeArrayRef in_buffer, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            GpgEncrResult&amp; encr_result,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                            GpgSignResult&amp; sign_result);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  gpgme_error_t Decrypt(BypeArrayRef in_buffer, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        GpgDecrResult&amp; result);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  gpgme_error_t DecryptVerify(BypeArrayRef in_buffer, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                              GpgDecrResult&amp; decrypt_result,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                              GpgVerifyResult&amp; verify_result);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  gpgme_error_t Verify(BypeArrayRef in_buffer, ByteArrayPtr&amp; sig_buffer,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                       GpgVerifyResult&amp; result) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  gpg_error_t Sign(KeyListPtr signers, BypeArrayRef in_buffer,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                   ByteArrayPtr&amp; out_buffer, gpgme_sig_mode_t mode,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                   GpgSignResult&amp; result);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">void</span> SetSigners(KeyArgsList&amp; signers);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  std::unique_ptr&lt;KeyArgsList&gt; GetSigners();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgBasicOperator.html#afad990a43ab06a060a93db9948ebb740">  174</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_ = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgContext::GetInstance</a>(</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">SingletonFunctionObject::GetChannel</a>());  </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;};</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">auto</span> EncryptSymmetricSync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> EncryptSign(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keyword">const</span> KeyArgsList&amp; signers,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                   <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                   <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">auto</span> EncryptSignSync(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keyword">const</span> KeyArgsList&amp; signers,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">void</span> Decrypt(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">auto</span> DecryptSync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">void</span> DecryptVerify(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">auto</span> DecryptVerifySync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> Verify(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; sig_buffer,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;              <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keyword">auto</span> VerifySync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; sig_buffer)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_BASICOPERATOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgBasicOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgBasicOperator.html">GpgFrontend::GpgBasicOperator</a></div><div class="ttdoc">Basic operation collection.</div><div class="ttdef"><b>Definition:</b> GpgBasicOperator.h:44</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:150</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:251</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static GpgContext &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:172</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_aa99440b9177f5d0c18840f08a40d64b7"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:258</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">void</span> Sign(<span class="keyword">const</span> KeyArgsList&amp; signers, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            GpgSignMode mode, <span class="keywordtype">bool</span> ascii, <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">auto</span> SignSync(<span class="keyword">const</span> KeyArgsList&amp; signers, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                GpgSignMode mode, <span class="keywordtype">bool</span> ascii)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">void</span> SetSigners(<span class="keyword">const</span> KeyArgsList&amp; signers, <span class="keywordtype">bool</span> ascii);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keyword">auto</span> GetSigners(<span class="keywordtype">bool</span> ascii) -&gt; std::unique_ptr&lt;KeyArgsList&gt;;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgBasicOperator.html#afad990a43ab06a060a93db9948ebb740">  232</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_ = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgContext::GetInstance</a>(</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">SingletonFunctionObject::GetChannel</a>());  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;};</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GFBuffer_html"><div class="ttname"><a href="classGpgFrontend_1_1GFBuffer.html">GpgFrontend::GFBuffer</a></div><div class="ttdef"><b>Definition:</b> GFBuffer.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgBasicOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgBasicOperator.html">GpgFrontend::GpgBasicOperator</a></div><div class="ttdoc">Basic operation collection.</div><div class="ttdef"><b>Definition:</b> GpgBasicOperator.h:45</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a94ee1e1251023610590e675ae3de8bd5"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">auto GetChannel() const -&gt; int</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ac963fee992753970bfb5c81608d4070f"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static auto GetInstance(int channel=GpgFrontend::kGpgFrontendDefaultChannel) -&gt; GpgContext &amp;</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:80</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ad983153cbe3a0c32c123c506e04f31fc"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static auto GetDefaultChannel() -&gt; int</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:131</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

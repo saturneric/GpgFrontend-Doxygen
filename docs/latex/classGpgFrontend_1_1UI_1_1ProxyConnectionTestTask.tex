@@ -29,18 +29,13 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a31cd14d
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a8036aaf9a2adcf033fc9f8e51da59956}{Proxy\+Connection\+Test\+Task}} (QString url, int timeout)
-\begin{DoxyCompactList}\small\item\em Construct a new Proxy Connection Test \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_ad7cf6a9fe63ee3db64a3e302d0c83c94}\label{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_ad7cf6a9fe63ee3db64a3e302d0c83c94}} 
-void {\bfseries run} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a new Proxy Connection \mbox{\hyperlink{namespaceGpgFrontend_1_1Test}{Test}} \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}} object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a0c58343f261ff4304868f314f03ca658}{Run}} () -\/$>$ int override
+\begin{DoxyCompactList}\small\item\em can be overwrite by subclass \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a612eabb08138bed927bdd845d0fdd3e6}\label{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a612eabb08138bed927bdd845d0fdd3e6}} 
-void {\bfseries slot\+\_\+process\+\_\+network\+\_\+reply} (QNetwork\+Reply $\ast$reply)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a612eabb08138bed927bdd845d0fdd3e6}{slot\+\_\+process\+\_\+network\+\_\+reply}} (QNetwork\+Reply $\ast$reply)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -69,7 +64,7 @@ QNetwork\+Access\+Manager $\ast$ {\bfseries network\+\_\+manager\+\_\+}
 
 
 
-Construct a new Proxy Connection Test \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}} object. 
+Construct a new Proxy Connection \mbox{\hyperlink{namespaceGpgFrontend_1_1Test}{Test}} \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}} object. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -77,7 +72,7 @@ Construct a new Proxy Connection Test \mbox{\hyperlink{namespaceGpgFrontend_1_1T
 \hline
 {\em timeout} & \\
 \hline
-{\em parent} & Copyright (C) 2021 Saturneric\\
+{\em parent} & Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\\
 \hline
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
@@ -90,9 +85,32 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Hold\+On\+Life\+Cycle().
+
+
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a0c58343f261ff4304868f314f03ca658}\label{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a0c58343f261ff4304868f314f03ca658}} 
+\index{GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Proxy\+Connection\+Test\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+can be overwrite by subclass 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}{Gpg\+Frontend\+::\+Thread\+::\+Task}}.
+
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a31cd14d72c6c28c811c9183f118f5873}\label{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a31cd14d72c6c28c811c9183f118f5873}} 
 \index{GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}!SignalProxyConnectionTestResult@{SignalProxyConnectionTestResult}}
 \index{SignalProxyConnectionTestResult@{SignalProxyConnectionTestResult}!GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}}
@@ -102,6 +120,17 @@ The source code version of this software was modified and released by Saturneric
 
 \begin{DoxyParams}{Parameters}
 {\em result} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a612eabb08138bed927bdd845d0fdd3e6}\label{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a612eabb08138bed927bdd845d0fdd3e6}} 
+\index{GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}!slot\_process\_network\_reply@{slot\_process\_network\_reply}}
+\index{slot\_process\_network\_reply@{slot\_process\_network\_reply}!GpgFrontend::UI::ProxyConnectionTestTask@{GpgFrontend::UI::ProxyConnectionTestTask}}
+\doxysubsubsection{\texorpdfstring{slot\_process\_network\_reply}{slot\_process\_network\_reply}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Proxy\+Connection\+Test\+Task\+::slot\+\_\+process\+\_\+network\+\_\+reply (\begin{DoxyParamCaption}\item[{QNetwork\+Reply $\ast$}]{reply }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reply} & \\
 \hline
 \end{DoxyParams}
 

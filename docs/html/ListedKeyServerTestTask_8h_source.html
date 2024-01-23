@@ -87,53 +87,55 @@ $(document).ready(function(){initNavTree('ListedKeyServerTestTask_8h_source.html
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_LISTEDKEYSERVERTESTTHREAD_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define GPGFRONTEND_LISTEDKEYSERVERTESTTHREAD_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">ListedKeyServerTestTask</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Thread::Task</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">enum</span> KeyServerTestResultType {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    kTestResultType_Success,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    kTestResultType_Timeout,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    kTestResultType_Error,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#ae25b5d59b53facc15648ab80ff19ed77">ListedKeyServerTestTask</a>(<span class="keyword">const</span> QStringList&amp; urls, <span class="keywordtype">int</span> timeout,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                   QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; signals:</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a20f0147d670be7ab5c9d3051a900f508">   55</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a20f0147d670be7ab5c9d3051a900f508">SignalKeyServerListTestResult</a>(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      std::vector&lt;KeyServerTestResultType&gt; result);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QStringList urls_;                             </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::vector&lt;KeyServerTestResultType&gt; result_;  </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QNetworkAccessManager* network_manager_;       </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> timeout_ = 500;                            </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> result_count_ = 0;                         </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#af9350e0a8d5993e5be0a5478fcb161be">slot_process_network_reply</a>(<span class="keywordtype">int</span> index, QNetworkReply* reply);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classTestListedKeyServerThread.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTestListedKeyServerThread.html">TestListedKeyServerThread</a> {};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_LISTEDKEYSERVERTESTTHREAD_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:45</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">GpgFrontend::UI::ListedKeyServerTestTask</a></div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.h:37</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/thread/ThreadingModel.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>QNetworkAccessManager;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>QNetworkReply;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">ListedKeyServerTestTask</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Thread::Task</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">enum</span> KeyServerTestResultType {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    kTEST_RESULT_TYPE_SUCCESS,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    kTEST_RESULT_TYPE_TIMEOUT,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    kTEST_RESULT_TYPE_ERROR,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a260619046e2b8af8d3396cefa7a05129">ListedKeyServerTestTask</a>(QStringList urls, <span class="keywordtype">int</span> timeout,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                   QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">auto</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a3f0a9f8c46e7495b654f297594de8ea3">Run</a>() -&gt; <span class="keywordtype">int</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; signals:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a20f0147d670be7ab5c9d3051a900f508">   67</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a20f0147d670be7ab5c9d3051a900f508">SignalKeyServerListTestResult</a>(</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      std::vector&lt;KeyServerTestResultType&gt; result);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QStringList urls_;                             </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::vector&lt;KeyServerTestResultType&gt; result_;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QNetworkAccessManager* network_manager_;       </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">int</span> timeout_ = 500;                            </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> result_count_ = 0;                         </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#af9350e0a8d5993e5be0a5478fcb161be">slot_process_network_reply</a>(<span class="keywordtype">int</span> index, QNetworkReply* reply);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classTestListedKeyServerThread.html">   88</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTestListedKeyServerThread.html">TestListedKeyServerThread</a> {};</div>
+<div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html">GpgFrontend::UI::ListedKeyServerTestTask</a></div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_a20f0147d670be7ab5c9d3051a900f508"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a20f0147d670be7ab5c9d3051a900f508">GpgFrontend::UI::ListedKeyServerTestTask::SignalKeyServerListTestResult</a></div><div class="ttdeci">void SignalKeyServerListTestResult(std::vector&lt; KeyServerTestResultType &gt; result)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_ae25b5d59b53facc15648ab80ff19ed77"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#ae25b5d59b53facc15648ab80ff19ed77">GpgFrontend::UI::ListedKeyServerTestTask::ListedKeyServerTestTask</a></div><div class="ttdeci">ListedKeyServerTestTask(const QStringList &amp;urls, int timeout, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_af9350e0a8d5993e5be0a5478fcb161be"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#af9350e0a8d5993e5be0a5478fcb161be">GpgFrontend::UI::ListedKeyServerTestTask::slot_process_network_reply</a></div><div class="ttdeci">void slot_process_network_reply(int index, QNetworkReply *reply)</div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.cpp:74</div></div>
-<div class="ttc" id="aclassTestListedKeyServerThread_html"><div class="ttname"><a href="classTestListedKeyServerThread.html">TestListedKeyServerThread</a></div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.h:83</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:29</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_a260619046e2b8af8d3396cefa7a05129"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a260619046e2b8af8d3396cefa7a05129">GpgFrontend::UI::ListedKeyServerTestTask::ListedKeyServerTestTask</a></div><div class="ttdeci">ListedKeyServerTestTask(QStringList urls, int timeout, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.cpp:34</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_a3f0a9f8c46e7495b654f297594de8ea3"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a3f0a9f8c46e7495b654f297594de8ea3">GpgFrontend::UI::ListedKeyServerTestTask::Run</a></div><div class="ttdeci">auto Run() -&gt; int override</div><div class="ttdoc">can be overwrite by subclass</div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.cpp:46</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_html_af9350e0a8d5993e5be0a5478fcb161be"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#af9350e0a8d5993e5be0a5478fcb161be">GpgFrontend::UI::ListedKeyServerTestTask::slot_process_network_reply</a></div><div class="ttdeci">void slot_process_network_reply(int index, QNetworkReply *reply)</div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.cpp:77</div></div>
+<div class="ttc" id="aclassTestListedKeyServerThread_html"><div class="ttname"><a href="classTestListedKeyServerThread.html">TestListedKeyServerThread</a></div><div class="ttdef"><b>Definition:</b> ListedKeyServerTestTask.h:88</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

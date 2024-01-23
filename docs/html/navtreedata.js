@@ -31,6 +31,8 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
@@ -53,13 +55,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AboutDialog_8h_source.html",
-"classGpgFrontend_1_1GlobalSettingStation.html#a6459653a71cc8285fa554943c7fb3ca7",
-"classGpgFrontend_1_1GpgKeySignature.html#acd5e46397ebea3224761a6af15eea4fb",
-"classGpgFrontend_1_1UI_1_1ChoosePage.html#ae370e789009be3926410cb749c86907b",
-"classGpgFrontend_1_1UI_1_1KeyList.html#a947f4ce45285b58bbde94f4ae879ff7a",
-"classGpgFrontend_1_1UI_1_1KeyserverTab.html#a74f30a1f6314b6156f4df20652129c5d",
-"classGpgFrontend_1_1UI_1_1SignersPicker.html#aba7633983da57c7a7eb2710a1f33f7ac",
-"namespaceGpgFrontend.html#ada6a044ece8975e35b2a229f65249713"
+"classGpgFrontend_1_1GFBuffer.html#a11850e9664ed9e1f6333bca539ecfde5",
+"classGpgFrontend_1_1GpgGenerateKeyResult.html#a7fdc3ba87f30ca6de4c0da382f0f4b7c",
+"classGpgFrontend_1_1GpgTOFUInfo.html#a86f44d98d2109f0fe210604326393eb3",
+"classGpgFrontend_1_1PointerConverter.html#a67c49057ed8b6fe9f960edb674cc8c94",
+"classGpgFrontend_1_1UI_1_1FileTreeView.html#a84f472186484a67e69ae738384db8d6e",
+"classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html#a221d649fb0dfb4048cdf432e05686fe1",
+"classGpgFrontend_1_1UI_1_1MainWindow.html#a2af52ff72325fc4c4d50aefc496100cd",
+"classGpgFrontend_1_1UI_1_1TextEdit.html#ace0b8f4c161db9f4f5db5ecbfd7a91c0",
+"functions_func_q.html",
+"namespaceGpgFrontend_1_1Test.html#a9a447cbf8dc9c577b1cc820e065e4622",
+"structGpgFrontend_1_1UI_1_1WindowStateSO.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

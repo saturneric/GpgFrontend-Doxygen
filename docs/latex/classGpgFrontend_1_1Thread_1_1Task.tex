@@ -17,19 +17,18 @@ Collaboration diagram for Gpg\+Frontend\+::Thread\+::Task\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1Thread_1_1Task__coll__graph}
+\includegraphics[width=224pt]{classGpgFrontend_1_1Thread_1_1Task__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}}
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}} to be passed to the callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1Impl}{Impl}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+Handler}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a58f0de628876e2c064f3867f209ce1c9}\label{classGpgFrontend_1_1Thread_1_1Task_a58f0de628876e2c064f3867f209ce1c9}} 
-using {\bfseries Data\+Object\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}} $>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aa0015912ca0513a10252e01db7b527bb}\label{classGpgFrontend_1_1Thread_1_1Task_aa0015912ca0513a10252e01db7b527bb}} 
 using {\bfseries Task\+Runnable} = std\+::function$<$ int(Data\+Object\+Ptr)$>$
@@ -40,101 +39,66 @@ using {\bfseries Task\+Callback} = std\+::function$<$ void(int, Data\+Object\+Pt
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aff3823caa1d44cb84b4bf2822a4ab125}\label{classGpgFrontend_1_1Thread_1_1Task_aff3823caa1d44cb84b4bf2822a4ab125}} 
-void {\bfseries Slot\+Run} ()
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a3983635b9bcb8d7ec84d97109dddacec}\label{classGpgFrontend_1_1Thread_1_1Task_a3983635b9bcb8d7ec84d97109dddacec}} 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a3983635b9bcb8d7ec84d97109dddacec}{Safely\+Run}} ()
+\begin{DoxyCompactList}\small\item\em shouldn\textquotesingle{}t be overwrite by subclass \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a125b7e71f21dadf10618e30ee0386b12}\label{classGpgFrontend_1_1Thread_1_1Task_a125b7e71f21dadf10618e30ee0386b12}} 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a125b7e71f21dadf10618e30ee0386b12}{Signal\+Task\+Runnable\+End}} (int rtn)
-\begin{DoxyCompactList}\small\item\em announce runnable finished \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_af1045b03816eef60faad2e6a8ee84a5c}\label{classGpgFrontend_1_1Thread_1_1Task_af1045b03816eef60faad2e6a8ee84a5c}} 
+void {\bfseries Signal\+Run} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a3367693d6c28d81f94a46fcd0e29d27c}\label{classGpgFrontend_1_1Thread_1_1Task_a3367693d6c28d81f94a46fcd0e29d27c}} 
+void {\bfseries Signal\+Task\+Should\+End} (int)
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_abbbb68bcac48b6c31d6fe8ee1572f151}\label{classGpgFrontend_1_1Thread_1_1Task_abbbb68bcac48b6c31d6fe8ee1572f151}} 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_abbbb68bcac48b6c31d6fe8ee1572f151}{Signal\+Task\+End}} ()
-\begin{DoxyCompactList}\small\item\em runnable and callabck all finished \end{DoxyCompactList}\end{DoxyCompactItemize}
+void {\bfseries Signal\+Task\+End} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_abdff056f5c96f00ac67bd1edcb5f0a48}\label{classGpgFrontend_1_1Thread_1_1Task_abdff056f5c96f00ac67bd1edcb5f0a48}} 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_abdff056f5c96f00ac67bd1edcb5f0a48}{Task}} (std\+::string name=\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}{DEFAULT\+\_\+\+TASK\+\_\+\+NAME}})
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a3ca97551610b81a476d5594c97fde559}\label{classGpgFrontend_1_1Thread_1_1Task_a3ca97551610b81a476d5594c97fde559}} 
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a3ca97551610b81a476d5594c97fde559}{Task}} (QString name)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a79f935428d2e03585673226228a7ffff}{Task}} (Task\+Runnable runnable, std\+::string name=\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}{DEFAULT\+\_\+\+TASK\+\_\+\+NAME}}, Data\+Object\+Ptr data\+\_\+object=nullptr, bool sequency=true)
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a287d737e66f873850d5eb49d1475a762}{Task}} (Task\+Runnable runnable, QString name, Data\+Object\+Ptr data\+\_\+object=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a59047d6d26fdf78f9b43ddc189d84958}{Task}} (Task\+Runnable runnable, std\+::string name, Data\+Object\+Ptr data, Task\+Callback callback=\mbox{[}$\,$\mbox{]}(int, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}} $>$ \&) \{\}, bool sequency=true)
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_afa69068f1b2f930d6ab1d9f66340c565}{Task}} (Task\+Runnable runnable, QString name, Data\+Object\+Ptr data, Task\+Callback callback)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}\label{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}} 
-virtual \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}{$\sim$\+Task}} () override
+\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a37766a505662b33ad14672c29e209ea8}{$\sim$\+Task}} () override
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_ac60aa71a24f452fd8031597ff4cbbd00}\label{classGpgFrontend_1_1Thread_1_1Task_ac60aa71a24f452fd8031597ff4cbbd00}} 
-virtual void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ac60aa71a24f452fd8031597ff4cbbd00}{Run}} ()
-\begin{DoxyCompactList}\small\item\em Run -\/ run the task. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a50b91d27874af31ef13c493b00824ccf}{Get\+UUID}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_acf42a45a657d8dc8658ed0e322ff161b}{Get\+UUID}} () const -\/$>$ QString
 \item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a3df2340426251e9145e5fe4419937e2a}{Get\+Full\+ID}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_aabda16361fa50a05e72de5f6ac37a53e}{Get\+Full\+ID}} () const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the Full I D object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a5c3cab68d4cf8c9dcf379869132b1896}{Hold\+On\+Life\+Cycle}} (bool hold\+\_\+on)
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a80f47accc0832e3aee686ee2879b431e}{Get\+Sequency}} () const
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-static const std\+::string \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}{DEFAULT\+\_\+\+TASK\+\_\+\+NAME}} = \char`\"{}default-\/task\char`\"{}
+virtual auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}{Run}} () -\/$>$ int
+\begin{DoxyCompactList}\small\item\em can be overwrite by subclass \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a38af36201658a25cc6479598acd455a1}{Get\+RTN}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a689969e7d88ba7ad73a693a1b38aedd7}{Set\+Finish\+After\+Run}} (bool finish\+\_\+after\+\_\+run)
-\begin{DoxyCompactList}\small\item\em Set the Finish After Run object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_aa6d702417bdd6a88c447ed6a457fa098}{Set\+RTN}} (int rtn)
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a406206b3ecb2bdcff9608d762735c5e4}{set\+RTN}} (int rtn)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a57adc09be10715a0e36a4baa3d9437b5}\label{classGpgFrontend_1_1Thread_1_1Task_a57adc09be10715a0e36a4baa3d9437b5}} 
-void {\bfseries slot\+\_\+task\+\_\+run\+\_\+callback} (int rtn)
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a6f8d197950dcf38aeb126bd4007656d3}\label{classGpgFrontend_1_1Thread_1_1Task_a6f8d197950dcf38aeb126bd4007656d3}} 
+void {\bfseries slot\+\_\+exception\+\_\+safe\+\_\+run} () noexcept
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a5ee1ea118ac5d91f005faecef54742b8}\label{classGpgFrontend_1_1Thread_1_1Task_a5ee1ea118ac5d91f005faecef54742b8}} 
-void {\bfseries init} ()
-\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a024a05bb89556c5b93336cb35d4bd10c}\label{classGpgFrontend_1_1Thread_1_1Task_a024a05bb89556c5b93336cb35d4bd10c}} 
-virtual void {\bfseries run} () override
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a96d087abb7cf99d16f778f1a93b4f9e5}{generate\+\_\+uuid}} ()
+void {\bfseries run} () override
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a468f4b05a8eb6b66c3f240bc2a660a08}\label{classGpgFrontend_1_1Thread_1_1Task_a468f4b05a8eb6b66c3f240bc2a660a08}} 
-const std\+::string {\bfseries uuid\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_afd4e9a657a7b0c2afbb701fa2cba8591}\label{classGpgFrontend_1_1Thread_1_1Task_afd4e9a657a7b0c2afbb701fa2cba8591}} 
-const std\+::string {\bfseries name\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a71ed097a2c4b4b735fd385dfe87e6f57}\label{classGpgFrontend_1_1Thread_1_1Task_a71ed097a2c4b4b735fd385dfe87e6f57}} 
-const bool \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a71ed097a2c4b4b735fd385dfe87e6f57}{sequency\+\_\+}} = true
-\begin{DoxyCompactList}\small\item\em must run in the same thread \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a5b47295d027309aee116d219b50de4f8}\label{classGpgFrontend_1_1Thread_1_1Task_a5b47295d027309aee116d219b50de4f8}} 
-Task\+Callback {\bfseries callback\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a0cb0482d29d502870dc8d38b8aaedf68}\label{classGpgFrontend_1_1Thread_1_1Task_a0cb0482d29d502870dc8d38b8aaedf68}} 
-Task\+Runnable {\bfseries runnable\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a86c8c7527e896c7900fdccc1e336b6c8}\label{classGpgFrontend_1_1Thread_1_1Task_a86c8c7527e896c7900fdccc1e336b6c8}} 
-bool {\bfseries run\+\_\+callback\+\_\+after\+\_\+runnable\+\_\+finished\+\_\+} = true
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_ad6388db7b0e4960db5bf8296481481dd}\label{classGpgFrontend_1_1Thread_1_1Task_ad6388db7b0e4960db5bf8296481481dd}} 
-int {\bfseries rtn\+\_\+} = 0
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a1a6a92c92febc94e8abbc1a96d489446}\label{classGpgFrontend_1_1Thread_1_1Task_a1a6a92c92febc94e8abbc1a96d489446}} 
-QThread $\ast$ {\bfseries callback\+\_\+thread\+\_\+} = nullptr
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aa500f907beee47f99fdeb626d2c788bd}\label{classGpgFrontend_1_1Thread_1_1Task_aa500f907beee47f99fdeb626d2c788bd}} 
-Data\+Object\+Ptr {\bfseries data\+\_\+object\+\_\+} = nullptr
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_ab5a4d50b9d0eebad370a514735b6343d}\label{classGpgFrontend_1_1Thread_1_1Task_ab5a4d50b9d0eebad370a514735b6343d}} 
+Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1Impl}{Impl}} $>$ {\bfseries p\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -145,11 +109,11 @@ Data\+Object\+Ptr {\bfseries data\+\_\+object\+\_\+} = nullptr
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a79f935428d2e03585673226228a7ffff}\label{classGpgFrontend_1_1Thread_1_1Task_a79f935428d2e03585673226228a7ffff}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a287d737e66f873850d5eb49d1475a762}\label{classGpgFrontend_1_1Thread_1_1Task_a287d737e66f873850d5eb49d1475a762}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!Task@{Task}}
 \index{Task@{Task}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{std\+::string}]{name = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}{DEFAULT\+\_\+\+TASK\+\_\+\+NAME}}},  }\item[{Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr},  }\item[{bool}]{sequency = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{QString}]{name,  }\item[{Data\+Object\+Ptr}]{data\+\_\+object = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -160,11 +124,11 @@ Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} obje
 {\em callback} & The callback function to be executed. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a59047d6d26fdf78f9b43ddc189d84958}\label{classGpgFrontend_1_1Thread_1_1Task_a59047d6d26fdf78f9b43ddc189d84958}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_afa69068f1b2f930d6ab1d9f66340c565}\label{classGpgFrontend_1_1Thread_1_1Task_afa69068f1b2f930d6ab1d9f66340c565}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!Task@{Task}}
 \index{Task@{Task}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{std\+::string}]{name,  }\item[{Data\+Object\+Ptr}]{data,  }\item[{Task\+Callback}]{callback = {\ttfamily \mbox{[}\mbox{]}(int,~const~std\+:\+:shared\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1DataObject}{Data\+Object}}$>$~\&)~\{\}},  }\item[{bool}]{sequency = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{Task\+Runnable}]{runnable,  }\item[{QString}]{name,  }\item[{Data\+Object\+Ptr}]{data,  }\item[{Task\+Callback}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -177,75 +141,75 @@ Construct a new \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} obje
 \end{DoxyParams}
 
 
-References Get\+Full\+ID().
-
-
-
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a96d087abb7cf99d16f778f1a93b4f9e5}\label{classGpgFrontend_1_1Thread_1_1Task_a96d087abb7cf99d16f778f1a93b4f9e5}} 
-\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!generate\_uuid@{generate\_uuid}}
-\index{generate\_uuid@{generate\_uuid}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
-\doxysubsubsection{\texorpdfstring{generate\_uuid()}{generate\_uuid()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Thread\+::\+Task\+::generate\+\_\+uuid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
-
-\begin{DoxyReturn}{Returns}
-std\+::string 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a3df2340426251e9145e5fe4419937e2a}\label{classGpgFrontend_1_1Thread_1_1Task_a3df2340426251e9145e5fe4419937e2a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aabda16361fa50a05e72de5f6ac37a53e}\label{classGpgFrontend_1_1Thread_1_1Task_aabda16361fa50a05e72de5f6ac37a53e}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!GetFullID@{GetFullID}}
 \index{GetFullID@{GetFullID}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{GetFullID()}{GetFullID()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+Full\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+Full\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
+
+
+
+Get the Full I D object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-
-
-Referenced by Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task(), and Task().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a80f47accc0832e3aee686ee2879b431e}\label{classGpgFrontend_1_1Thread_1_1Task_a80f47accc0832e3aee686ee2879b431e}} 
-\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!GetSequency@{GetSequency}}
-\index{GetSequency@{GetSequency}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
-\doxysubsubsection{\texorpdfstring{GetSequency()}{GetSequency()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+Sequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a38af36201658a25cc6479598acd455a1}\label{classGpgFrontend_1_1Thread_1_1Task_a38af36201658a25cc6479598acd455a1}} 
+\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!GetRTN@{GetRTN}}
+\index{GetRTN@{GetRTN}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
+\doxysubsubsection{\texorpdfstring{GetRTN()}{GetRTN()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+RTN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+auto 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a50b91d27874af31ef13c493b00824ccf}\label{classGpgFrontend_1_1Thread_1_1Task_a50b91d27874af31ef13c493b00824ccf}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_acf42a45a657d8dc8658ed0e322ff161b}\label{classGpgFrontend_1_1Thread_1_1Task_acf42a45a657d8dc8658ed0e322ff161b}} 
 \index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!GetUUID@{GetUUID}}
 \index{GetUUID@{GetUUID}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
 \doxysubsubsection{\texorpdfstring{GetUUID()}{GetUUID()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+UUID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Get\+UUID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a689969e7d88ba7ad73a693a1b38aedd7}\label{classGpgFrontend_1_1Thread_1_1Task_a689969e7d88ba7ad73a693a1b38aedd7}} 
-\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!SetFinishAfterRun@{SetFinishAfterRun}}
-\index{SetFinishAfterRun@{SetFinishAfterRun}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
-\doxysubsubsection{\texorpdfstring{SetFinishAfterRun()}{SetFinishAfterRun()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Set\+Finish\+After\+Run (\begin{DoxyParamCaption}\item[{bool}]{finish\+\_\+after\+\_\+run }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-Set the Finish After Run object. 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a5c3cab68d4cf8c9dcf379869132b1896}\label{classGpgFrontend_1_1Thread_1_1Task_a5c3cab68d4cf8c9dcf379869132b1896}} 
+\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!HoldOnLifeCycle@{HoldOnLifeCycle}}
+\index{HoldOnLifeCycle@{HoldOnLifeCycle}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
+\doxysubsubsection{\texorpdfstring{HoldOnLifeCycle()}{HoldOnLifeCycle()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Hold\+On\+Life\+Cycle (\begin{DoxyParamCaption}\item[{bool}]{hold\+\_\+on }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
-{\em finish\+\_\+after\+\_\+run} & \\
+{\em hold\+\_\+on} & \\
 \hline
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+File\+Read\+Task\+::\+Run(), and Gpg\+Frontend\+::\+UI\+::\+Version\+Check\+Task\+::\+Run().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Task\+::\+Key\+Server\+Import\+Task(), Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Search\+Task\+::\+Key\+Server\+Search\+Task(), Gpg\+Frontend\+::\+UI\+::\+Listed\+Key\+Server\+Test\+Task\+::\+Listed\+Key\+Server\+Test\+Task(), Gpg\+Frontend\+::\+UI\+::\+Proxy\+Connection\+Test\+Task\+::\+Proxy\+Connection\+Test\+Task(), and Gpg\+Frontend\+::\+Module\+::\+Integrated\+::\+Version\+Checking\+Module\+::\+Version\+Check\+Task\+::\+Version\+Check\+Task().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_aa6d702417bdd6a88c447ed6a457fa098}\label{classGpgFrontend_1_1Thread_1_1Task_aa6d702417bdd6a88c447ed6a457fa098}} 
-\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!SetRTN@{SetRTN}}
-\index{SetRTN@{SetRTN}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
-\doxysubsubsection{\texorpdfstring{SetRTN()}{SetRTN()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Set\+RTN (\begin{DoxyParamCaption}\item[{int}]{rtn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}\label{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}} 
+\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+can be overwrite by subclass 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileReadTask_abd8f62be2b544d0fc8bbb1e5b7b3de9b}{Gpg\+Frontend\+::\+UI\+::\+File\+Read\+Task}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask_a0c58343f261ff4304868f314f03ca658}{Gpg\+Frontend\+::\+UI\+::\+Proxy\+Connection\+Test\+Task}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a3f0a9f8c46e7495b654f297594de8ea3}{Gpg\+Frontend\+::\+UI\+::\+Listed\+Key\+Server\+Test\+Task}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a2a1a60dc9e87755ed77a2e6318b23115}{Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Search\+Task}}, \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerImportTask_acc4979fdc2daa3c0805754a725969aa3}{Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Task}}, and \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask_a5bc74b894e86574fb4659dcb7f13fe26}{Gpg\+Frontend\+::\+Module\+::\+Integrated\+::\+Version\+Checking\+Module\+::\+Version\+Check\+Task}}.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a406206b3ecb2bdcff9608d762735c5e4}\label{classGpgFrontend_1_1Thread_1_1Task_a406206b3ecb2bdcff9608d762735c5e4}} 
+\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!setRTN@{setRTN}}
+\index{setRTN@{setRTN}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
+\doxysubsubsection{\texorpdfstring{setRTN()}{setRTN()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+::set\+RTN (\begin{DoxyParamCaption}\item[{int}]{rtn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -253,27 +217,6 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+File\+Read\+Task\+::\+Run(), and Gpg\+F
 \hline
 \end{DoxyParams}
 
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}\label{classGpgFrontend_1_1Thread_1_1Task_a4a2cad8747108322152b41c049f99c72}} 
-\index{GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}!DEFAULT\_TASK\_NAME@{DEFAULT\_TASK\_NAME}}
-\index{DEFAULT\_TASK\_NAME@{DEFAULT\_TASK\_NAME}!GpgFrontend::Thread::Task@{GpgFrontend::Thread::Task}}
-\doxysubsubsection{\texorpdfstring{DEFAULT\_TASK\_NAME}{DEFAULT\_TASK\_NAME}}
-{\footnotesize\ttfamily const std\+::string Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+DEFAULT\+\_\+\+TASK\+\_\+\+NAME = \char`\"{}default-\/task\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

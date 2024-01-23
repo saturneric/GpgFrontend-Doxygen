@@ -87,55 +87,53 @@ $(document).ready(function(){initNavTree('DataObjectOperator_8h_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_DATAOBJECTOPERATOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_DATAOBJECTOPERATOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/function/GlobalSettingStation.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html">   37</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html">DataObjectOperator</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;DataObjectOperator&gt; {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html">DataObjectOperator</a>(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string SaveDataObj(<span class="keyword">const</span> std::string &amp;_key, <span class="keyword">const</span> nlohmann::json &amp;value);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::optional&lt;nlohmann::json&gt; GetDataObject(<span class="keyword">const</span> std::string &amp;_key);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::optional&lt;nlohmann::json&gt; GetDataObjectByRef(<span class="keyword">const</span> std::string &amp;_ref);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> init_app_secure_key();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a3c195f8e4c30d95be14a6d43e9282601">   61</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a> &amp;global_setting_station_ =</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GlobalSettingStation::GetInstance</a>();  </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a6d38d25c91c33c48d083ec4de051108a">   63</a></span>&#160;  std::filesystem::path app_secure_path_ =</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      global_setting_station_.GetAppConfigPath() /</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="stringliteral">&quot;secure&quot;</span>;  </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a56c0c031cd327207260c73d1885dbdca">   66</a></span>&#160;  std::filesystem::path app_secure_key_path_ =</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      app_secure_path_ / <span class="stringliteral">&quot;app.key&quot;</span>;  </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#ae6762d4f0f5ca2e83f7c1508cd25cc21">   68</a></span>&#160;  std::filesystem::path app_data_objs_path_ =</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      global_setting_station_.GetAppDataPath() / <span class="stringliteral">&quot;data_objs&quot;</span>;  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/function/basic/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html">   38</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html">DataObjectOperator</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;DataObjectOperator&gt; {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html">DataObjectOperator</a>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">auto</span> SaveDataObj(<span class="keyword">const</span> QString &amp;_key, <span class="keyword">const</span> QJsonDocument &amp;value) -&gt; QString;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">auto</span> GetDataObject(<span class="keyword">const</span> QString &amp;_key) -&gt; std::optional&lt;QJsonDocument&gt;;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">auto</span> GetDataObjectByRef(<span class="keyword">const</span> QString &amp;_ref) -&gt; std::optional&lt;QJsonDocument&gt;;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> init_app_secure_key();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a3c195f8e4c30d95be14a6d43e9282601">   62</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html">GlobalSettingStation</a> &amp;global_setting_station_ =</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GlobalSettingStation::GetInstance</a>();  </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a4e7673037b5c7eda5c334d50f8155150">   64</a></span>&#160;  QString app_secure_path_ =</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      global_setting_station_.<a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da8fc60ba403d6addd8f671089faeaa">GetAppDataPath</a>() +</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="stringliteral">&quot;/secure&quot;</span>;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a9b13d6d68ebc584cb231e6f349a2a138">   67</a></span>&#160;  QString app_secure_key_path_ =</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      app_secure_path_ +</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="stringliteral">&quot;/app.key&quot;</span>;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QString app_data_objs_path_ =</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      global_setting_station_.<a class="code" href="classGpgFrontend_1_1GlobalSettingStation.html#a7da8fc60ba403d6addd8f671089faeaa">GetAppDataPath</a>() + <span class="stringliteral">&quot;/data_objs&quot;</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a24c9cdbe9256e332ac93d6dc28c76b90">   73</a></span>&#160;  std::random_device <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html#a24c9cdbe9256e332ac93d6dc28c76b90">rd_</a>;                  </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#a9fc92c7d497f2a2057776adfca40e8ca">   74</a></span>&#160;  std::mt19937 mt_ = std::mt19937(rd_());  </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">   75</a></span>&#160;  QByteArray <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">hash_key_</a>;                    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_DATAOBJECTOPERATOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1DataObjectOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1DataObjectOperator.html">GpgFrontend::DataObjectOperator</a></div><div class="ttdef"><b>Definition:</b> DataObjectOperator.h:38</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1DataObjectOperator_html_a24c9cdbe9256e332ac93d6dc28c76b90"><div class="ttname"><a href="classGpgFrontend_1_1DataObjectOperator.html#a24c9cdbe9256e332ac93d6dc28c76b90">GpgFrontend::DataObjectOperator::rd_</a></div><div class="ttdeci">std::random_device rd_</div><div class="ttdoc">Random device.</div><div class="ttdef"><b>Definition:</b> DataObjectOperator.h:73</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1DataObjectOperator_html_ae409c3562c3e08931daa17f5790c508b"><div class="ttname"><a href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">GpgFrontend::DataObjectOperator::hash_key_</a></div><div class="ttdeci">QByteArray hash_key_</div><div class="ttdoc">Hash key.</div><div class="ttdef"><b>Definition:</b> DataObjectOperator.h:75</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html">GpgFrontend::GlobalSettingStation</a></div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:45</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:150</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:251</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance</a></div><div class="ttdeci">static GlobalSettingStation &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:172</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">   73</a></span>&#160;  QByteArray <a class="code" href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">hash_key_</a>;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1DataObjectOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1DataObjectOperator.html">GpgFrontend::DataObjectOperator</a></div><div class="ttdef"><b>Definition:</b> DataObjectOperator.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1DataObjectOperator_html_ae409c3562c3e08931daa17f5790c508b"><div class="ttname"><a href="classGpgFrontend_1_1DataObjectOperator.html#ae409c3562c3e08931daa17f5790c508b">GpgFrontend::DataObjectOperator::hash_key_</a></div><div class="ttdeci">QByteArray hash_key_</div><div class="ttdoc">Hash key.</div><div class="ttdef"><b>Definition:</b> DataObjectOperator.h:73</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html">GpgFrontend::GlobalSettingStation</a></div><div class="ttdoc">Singleton class for managing global settings in the application.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.h:43</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_html_a7da8fc60ba403d6addd8f671089faeaa"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation.html#a7da8fc60ba403d6addd8f671089faeaa">GpgFrontend::GlobalSettingStation::GetAppDataPath</a></div><div class="ttdeci">auto GetAppDataPath() const -&gt; QString</div><div class="ttdoc">Gets the application data directory.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.cpp:153</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ac963fee992753970bfb5c81608d4070f"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance</a></div><div class="ttdeci">static auto GetInstance(int channel=GpgFrontend::kGpgFrontendDefaultChannel) -&gt; GlobalSettingStation &amp;</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:80</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ad983153cbe3a0c32c123c506e04f31fc"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static auto GetDefaultChannel() -&gt; int</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:131</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

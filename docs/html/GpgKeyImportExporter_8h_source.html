@@ -87,93 +87,48 @@ $(document).ready(function(){initNavTree('GpgKeyImportExporter_8h_source.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef _GPGKEYIMPORTEXPORTOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define _GPGKEYIMPORTEXPORTOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/GpgConstants.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;core/GpgModel.h&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgImportedKey.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1GpgImportedKey.html">GpgImportedKey</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/basic/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgContext.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/model/GFBuffer.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>GpgImportInformation;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeyImportExporter.html">   44</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgKeyImportExporter</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgKeyImportExporter&gt; {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string fpr;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">int</span> import_status;  </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> std::list&lt;GpgImportedKey&gt; GpgImportedKeyList;  </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgImportInformation.html">   57</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a>(gpgme_import_result_t result);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> considered = 0;        </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> no_user_id = 0;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> imported = 0;          </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">int</span> imported_rsa = 0;      </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">int</span> unchanged = 0;         </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">int</span> new_user_ids = 0;      </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">int</span> new_sub_keys = 0;      </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> new_signatures = 0;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> new_revocations = 0;   </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> secret_read = 0;       </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">int</span> secret_imported = 0;   </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> secret_unchanged = 0;  </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">int</span> not_imported = 0;      </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  GpgImportedKeyList importedKeys;  </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeyImportExporter.html">   89</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgKeyImportExporter</a></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgKeyImportExporter&gt; {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgKeyImportExporter</a>(</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgImportInformation</a> ImportKey(StdBypeArrayPtr inBuffer);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">bool</span> ExportKeys(KeyIdArgsListPtr&amp; uid_list, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                  <span class="keywordtype">bool</span> secret = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">bool</span> ExportKeys(<span class="keyword">const</span> KeyArgsList&amp; keys, ByteArrayPtr&amp; outBuffer,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                  <span class="keywordtype">bool</span> secret = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">bool</span> ExportAllKeys(KeyIdArgsListPtr&amp; uid_list, ByteArrayPtr&amp; out_buffer,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                     <span class="keywordtype">bool</span> secret) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">bool</span> ExportKey(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, ByteArrayPtr&amp; out_buffer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">bool</span> ExportKeyOpenSSH(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, ByteArrayPtr&amp; out_buffer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">bool</span> ExportSecretKey(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, ByteArrayPtr&amp; outBuffer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">bool</span> ExportSecretKeyShortest(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                               ByteArrayPtr&amp; outBuffer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_ =</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgContext::GetInstance</a>(<a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">SingletonFunctionObject::GetChannel</a>());  </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// _GPGKEYIMPORTEXPORTOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:71</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgImportInformation_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgImportInformation.html">GpgFrontend::GpgImportInformation</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:57</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgImportedKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgImportedKey.html">GpgFrontend::GpgImportedKey</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:45</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKeyImportExporter_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgFrontend::GpgKeyImportExporter</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:90</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:150</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:251</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static GpgContext &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:172</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_aa99440b9177f5d0c18840f08a40d64b7"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:258</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgKeyImportExporter</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> ImportKey(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;) -&gt; std::shared_ptr&lt;GpgImportInformation&gt;;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> ExportKey(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp; key, <span class="keywordtype">bool</span> secret, <span class="keywordtype">bool</span> ascii,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                               <span class="keywordtype">bool</span> shortest, <span class="keywordtype">bool</span> ssh_mode = <span class="keyword">false</span>) <span class="keyword">const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      -&gt; std::tuple&lt;GpgError, GFBuffer&gt;;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> ExportKeys(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keywordtype">bool</span> secret, <span class="keywordtype">bool</span> ascii,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  <span class="keywordtype">bool</span> shortest, <span class="keywordtype">bool</span> ssh_mode,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                  <span class="keyword">const</span> GpgOperationCallback&amp; cb) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> ExportAllKeys(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keywordtype">bool</span> secret, <span class="keywordtype">bool</span> ascii,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                     <span class="keyword">const</span> GpgOperationCallback&amp; cb) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; ctx_;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GFBuffer_html"><div class="ttname"><a href="classGpgFrontend_1_1GFBuffer.html">GpgFrontend::GFBuffer</a></div><div class="ttdef"><b>Definition:</b> GFBuffer.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKeyImportExporter_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyImportExporter.html">GpgFrontend::GpgKeyImportExporter</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:45</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ad983153cbe3a0c32c123c506e04f31fc"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static auto GetDefaultChannel() -&gt; int</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:131</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

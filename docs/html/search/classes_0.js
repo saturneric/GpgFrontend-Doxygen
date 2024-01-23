@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['_5fctx_5fref_5fdeleter_746',['_ctx_ref_deleter',['../structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html',1,'GpgFrontend::GpgContext']]],
-  ['_5fdata_5fref_5fdeleter_747',['_data_ref_deleter',['../structGpgFrontend_1_1GpgData_1_1__data__ref__deleter.html',1,'GpgFrontend::GpgData']]],
-  ['_5fkey_5fref_5fdeleter_748',['_key_ref_deleter',['../structGpgFrontend_1_1GpgKey_1_1__key__ref__deleter.html',1,'GpgFrontend::GpgKey']]],
-  ['_5fresult_5fref_5fdeletor_749',['_result_ref_deletor',['../structGpgFrontend_1_1__result__ref__deletor.html',1,'GpgFrontend']]]
+  ['aboutdialog_838',['AboutDialog',['../classGpgFrontend_1_1UI_1_1AboutDialog.html',1,'GpgFrontend::UI']]],
+  ['alloc_839',['alloc',['../classsecmem_1_1alloc.html',1,'secmem']]],
+  ['appearanceso_840',['AppearanceSO',['../structGpgFrontend_1_1UI_1_1AppearanceSO.html',1,'GpgFrontend::UI']]],
+  ['appearancetab_841',['AppearanceTab',['../classGpgFrontend_1_1UI_1_1AppearanceTab.html',1,'GpgFrontend::UI']]],
+  ['archivefileoperator_842',['ArchiveFileOperator',['../classGpgFrontend_1_1ArchiveFileOperator.html',1,'GpgFrontend']]],
+  ['archivereadclientdata_843',['ArchiveReadClientData',['../structGpgFrontend_1_1ArchiveReadClientData.html',1,'GpgFrontend']]],
+  ['automatonhandelstruct_844',['AutomatonHandelStruct',['../structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct.html',1,'GpgFrontend::GpgKeyManager']]]
 ];

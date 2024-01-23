@@ -23,28 +23,31 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Verify\+Result\+Analyse\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_ab1d67da5dbe5bd2d665f7121e5f5354b}{Gpg\+Verify\+Result\+Analyse}} (Gpg\+Error error, Gpg\+Verify\+Result result)
+\mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_ab1d67da5dbe5bd2d665f7121e5f5354b}{Gpg\+Verify\+Result\+Analyse}} (\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} error, \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}} result)
 \begin{DoxyCompactList}\small\item\em Construct a new Verify Result Analyse object. \end{DoxyCompactList}\item 
-gpgme\+\_\+signature\+\_\+t \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a2063acf8262e2c600b14ed1948486ac3}{Get\+Signatures}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a42cf6a649e485d817fd673b890620d0b}{Get\+Signatures}} () const -\/$>$ gpgme\+\_\+signature\+\_\+t
 \begin{DoxyCompactList}\small\item\em Get the Signatures object. \end{DoxyCompactList}\item 
-Gpg\+Verify\+Result \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_acdb7839a5158f078b38d60f0fefc5155}{Take\+Charge\+Of\+Result}} ()
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a8d0af2a9c0a52ef8bfd88bcb66aaf07e}{Take\+Charge\+Of\+Result}} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_ae072a4684b3d73304794e80125ae8780}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_ae072a4684b3d73304794e80125ae8780}} 
+void {\bfseries do\+Analyse} () final
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a02933c39d5aa5e448ffd36dfc4bead28}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a02933c39d5aa5e448ffd36dfc4bead28}} 
-void {\bfseries do\+\_\+analyse} ()
-\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a57bf4a26466e07f7f0ecc19de3782104}{print\+\_\+signer}} (std\+::stringstream \&stream, gpgme\+\_\+signature\+\_\+t sign)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}{print\+\_\+signer}} (QText\+Stream \&stream, gpgme\+\_\+signature\+\_\+t sign) -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_ad9e53477ca77f8685ca2102bf0fc5d4c}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_ad9e53477ca77f8685ca2102bf0fc5d4c}} 
-Gpg\+Error {\bfseries error\+\_\+}
+\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}} {\bfseries error\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a09e7a3cc3bf3d64e5d2428cd3040d2b2}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a09e7a3cc3bf3d64e5d2428cd3040d2b2}} 
-Gpg\+Verify\+Result {\bfseries result\+\_\+}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}} {\bfseries result\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -54,7 +57,7 @@ Gpg\+Verify\+Result {\bfseries result\+\_\+}
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!GpgVerifyResultAnalyse@{GpgVerifyResultAnalyse}}
 \index{GpgVerifyResultAnalyse@{GpgVerifyResultAnalyse}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{GpgVerifyResultAnalyse()}{GpgVerifyResultAnalyse()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Gpg\+Verify\+Result\+Analyse (\begin{DoxyParamCaption}\item[{Gpg\+Error}]{error,  }\item[{Gpg\+Verify\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Gpg\+Verify\+Result\+Analyse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}]{error,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}}}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -64,7 +67,7 @@ Construct a new Verify Result Analyse object.
 \begin{DoxyParams}{Parameters}
 {\em error} & \\
 \hline
-{\em result} & Copyright (C) 2021 Saturneric\\
+{\em result} & Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\\
 \hline
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
@@ -77,16 +80,16 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a2063acf8262e2c600b14ed1948486ac3}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a2063acf8262e2c600b14ed1948486ac3}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a42cf6a649e485d817fd673b890620d0b}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a42cf6a649e485d817fd673b890620d0b}} 
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!GetSignatures@{GetSignatures}}
 \index{GetSignatures@{GetSignatures}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{GetSignatures()}{GetSignatures()}}
-{\footnotesize\ttfamily gpgme\+\_\+signature\+\_\+t Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Get\+Signatures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Get\+Signatures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ gpgme\+\_\+signature\+\_\+t}
 
 
 
@@ -99,11 +102,11 @@ gpgme\+\_\+signature\+\_\+t
 
 Referenced by Gpg\+Frontend\+::\+UI\+::import\+\_\+unknown\+\_\+key\+\_\+from\+\_\+keyserver().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a57bf4a26466e07f7f0ecc19de3782104}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a57bf4a26466e07f7f0ecc19de3782104}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}} 
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!print\_signer@{print\_signer}}
 \index{print\_signer@{print\_signer}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{print\_signer()}{print\_signer()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::print\+\_\+signer (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{stream,  }\item[{gpgme\+\_\+signature\+\_\+t}]{sign }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::print\+\_\+signer (\begin{DoxyParamCaption}\item[{QText\+Stream \&}]{stream,  }\item[{gpgme\+\_\+signature\+\_\+t}]{sign }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -119,16 +122,16 @@ false
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_acdb7839a5158f078b38d60f0fefc5155}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_acdb7839a5158f078b38d60f0fefc5155}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a8d0af2a9c0a52ef8bfd88bcb66aaf07e}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a8d0af2a9c0a52ef8bfd88bcb66aaf07e}} 
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!TakeChargeOfResult@{TakeChargeOfResult}}
 \index{TakeChargeOfResult@{TakeChargeOfResult}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{TakeChargeOfResult()}{TakeChargeOfResult()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Verify\+Result Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Take\+Charge\+Of\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::\+Take\+Charge\+Of\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}}}
 
 \begin{DoxyReturn}{Returns}
-Gpg\+Verify\+Result 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResult}{Gpg\+Verify\+Result}} 
 \end{DoxyReturn}
 
 

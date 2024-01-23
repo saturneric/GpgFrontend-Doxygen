@@ -1,0 +1,54 @@
+\hypertarget{classGpgFrontend_1_1GFDataExchanger}{}\doxysection{Gpg\+Frontend\+::GFData\+Exchanger Class Reference}
+\label{classGpgFrontend_1_1GFDataExchanger}\index{GpgFrontend::GFDataExchanger@{GpgFrontend::GFDataExchanger}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::GFData\+Exchanger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classGpgFrontend_1_1GFDataExchanger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a4ca98fa80162ac5787cd172b274c54a5}\label{classGpgFrontend_1_1GFDataExchanger_a4ca98fa80162ac5787cd172b274c54a5}} 
+{\bfseries GFData\+Exchanger} (ssize\+\_\+t size)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_aee150d8c56c5c396aad8330eed7ee10c}\label{classGpgFrontend_1_1GFDataExchanger_aee150d8c56c5c396aad8330eed7ee10c}} 
+auto {\bfseries Write} (const std\+::byte $\ast$buffer, size\+\_\+t size) -\/$>$ ssize\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a799133f08d0c94b90af35492c21a3c09}\label{classGpgFrontend_1_1GFDataExchanger_a799133f08d0c94b90af35492c21a3c09}} 
+auto {\bfseries Read} (std\+::byte $\ast$buffer, size\+\_\+t size) -\/$>$ ssize\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a8a076ea23a0dcaaa1e392edc4f4eb6dd}\label{classGpgFrontend_1_1GFDataExchanger_a8a076ea23a0dcaaa1e392edc4f4eb6dd}} 
+void {\bfseries Close\+Write} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a905ea05b8540f6905d5b558313f89ef2}\label{classGpgFrontend_1_1GFDataExchanger_a905ea05b8540f6905d5b558313f89ef2}} 
+std\+::condition\+\_\+variable {\bfseries not\+\_\+full\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_ac25aee64458d8968c21fd989eb2f304a}\label{classGpgFrontend_1_1GFDataExchanger_ac25aee64458d8968c21fd989eb2f304a}} 
+std\+::condition\+\_\+variable {\bfseries not\+\_\+empty\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a6fb739170d39bdab782872d71f016378}\label{classGpgFrontend_1_1GFDataExchanger_a6fb739170d39bdab782872d71f016378}} 
+std\+::queue$<$ std\+::byte $>$ {\bfseries queue\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_aaf2c2b31fb365124e7351182cca4aa7b}\label{classGpgFrontend_1_1GFDataExchanger_aaf2c2b31fb365124e7351182cca4aa7b}} 
+std\+::mutex {\bfseries mutex\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_a63a0146f97dfc173de7ee4fae420238d}\label{classGpgFrontend_1_1GFDataExchanger_a63a0146f97dfc173de7ee4fae420238d}} 
+const ssize\+\_\+t {\bfseries queue\+\_\+max\+\_\+size\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GFDataExchanger_aa31f2c5ce579ff88fe9eae1088021bd3}\label{classGpgFrontend_1_1GFDataExchanger_aa31f2c5ce579ff88fe9eae1088021bd3}} 
+std\+::atomic\+\_\+bool {\bfseries close\+\_\+} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/model/GFData\+Exchanger.\+h\item 
+src/core/model/GFData\+Exchanger.\+cpp\end{DoxyCompactItemize}

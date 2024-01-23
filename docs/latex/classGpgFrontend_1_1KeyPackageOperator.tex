@@ -22,18 +22,18 @@ Collaboration diagram for Gpg\+Frontend\+::Key\+Package\+Operator\+:
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}{Generate\+Passphrase}} (const std\+::filesystem\+::path \&phrase\+\_\+path, std\+::string \&phrase)
+static auto \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a17bd5bca63876fcd201e98c2fca0582c}{Generate\+Passphrase}} (const QString \&phrase\+\_\+path, QString \&phrase) -\/$>$ bool
 \begin{DoxyCompactList}\small\item\em generate passphrase for key package and save it to file \end{DoxyCompactList}\item 
-static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}{Generate\+Key\+Package\+Name}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a6c987efc6e6a137ac3eb11170220e299}{Generate\+Key\+Package\+Name}} () -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em generate the name of the key package \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}{Generate\+Key\+Package}} (const std\+::filesystem\+::path \&key\+\_\+package\+\_\+path, const std\+::string \&key\+\_\+package\+\_\+name, Key\+Id\+Args\+List\+Ptr \&key\+\_\+ids, std\+::string \&phrase, bool secret)
+static void \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ae01e32a99a0008f8b01ad7afb95b93a3}{Generate\+Key\+Package}} (const QString \&key\+\_\+package\+\_\+path, const QString \&key\+\_\+package\+\_\+name, const Key\+Args\+List \&keys, QString \&phrase, bool secret, const Operation\+Callback \&cb)
 \begin{DoxyCompactList}\small\item\em generate key package \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}{Import\+Key\+Package}} (const std\+::filesystem\+::path \&key\+\_\+package\+\_\+path, const std\+::filesystem\+::path \&phrase\+\_\+path, \mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Frontend\+::\+Gpg\+Import\+Information}} \&import\+\_\+info)
+static void \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a3b5e580bfd67cfda094c664e2987e319}{Import\+Key\+Package}} (const QString \&key\+\_\+package\+\_\+path, const QString \&phrase\+\_\+path, const Operation\+Callback \&cb)
 \begin{DoxyCompactList}\small\item\em import key package \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}{generate\+\_\+key\+\_\+package\+\_\+name}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_ab0fc5ef8145005f0851311f73f4e7039}{generate\+\_\+key\+\_\+package\+\_\+name}} () -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em generate key package name \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -41,30 +41,24 @@ static std\+::string \mbox{\hyperlink{classGpgFrontend_1_1KeyPackageOperator_a82
 give the possibility to import or export a key package 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}\label{classGpgFrontend_1_1KeyPackageOperator_a825d987dacd8a99d9d87729e1861a152}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ab0fc5ef8145005f0851311f73f4e7039}\label{classGpgFrontend_1_1KeyPackageOperator_ab0fc5ef8145005f0851311f73f4e7039}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!generate\_key\_package\_name@{generate\_key\_package\_name}}
 \index{generate\_key\_package\_name@{generate\_key\_package\_name}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
 \doxysubsubsection{\texorpdfstring{generate\_key\_package\_name()}{generate\_key\_package\_name()}}
-{\footnotesize\ttfamily static std\+::string Gpg\+Frontend\+::\+Key\+Package\+Operator\+::generate\+\_\+key\+\_\+package\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Key\+Package\+Operator\+::generate\+\_\+key\+\_\+package\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ QString\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 generate key package name 
 
 \begin{DoxyReturn}{Returns}
-std\+::string key package name 
+QString key package name 
 \end{DoxyReturn}
-$<$ Random device
-
-$<$ Mersenne twister
-
-Referenced by Generate\+Key\+Package\+Name().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}\label{classGpgFrontend_1_1KeyPackageOperator_ade02f022e405e98377343c4667c206e9}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ae01e32a99a0008f8b01ad7afb95b93a3}\label{classGpgFrontend_1_1KeyPackageOperator_ae01e32a99a0008f8b01ad7afb95b93a3}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackage@{GenerateKeyPackage}}
 \index{GenerateKeyPackage@{GenerateKeyPackage}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
 \doxysubsubsection{\texorpdfstring{GenerateKeyPackage()}{GenerateKeyPackage()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{key\+\_\+package\+\_\+path,  }\item[{const std\+::string \&}]{key\+\_\+package\+\_\+name,  }\item[{Key\+Id\+Args\+List\+Ptr \&}]{key\+\_\+ids,  }\item[{std\+::string \&}]{phrase,  }\item[{bool}]{secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package (\begin{DoxyParamCaption}\item[{const QString \&}]{key\+\_\+package\+\_\+path,  }\item[{const QString \&}]{key\+\_\+package\+\_\+name,  }\item[{const Key\+Args\+List \&}]{keys,  }\item[{QString \&}]{phrase,  }\item[{bool}]{secret,  }\item[{const Operation\+Callback \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -90,34 +84,30 @@ false if key package was not generated
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+Describe\+Gpg\+Err\+Code(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Write\+File().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}\label{classGpgFrontend_1_1KeyPackageOperator_ae90b362a32b6f6014cda1dc232bd3f0e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a6c987efc6e6a137ac3eb11170220e299}\label{classGpgFrontend_1_1KeyPackageOperator_a6c987efc6e6a137ac3eb11170220e299}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GenerateKeyPackageName@{GenerateKeyPackageName}}
 \index{GenerateKeyPackageName@{GenerateKeyPackageName}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
 \doxysubsubsection{\texorpdfstring{GenerateKeyPackageName()}{GenerateKeyPackageName()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Key\+Package\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ QString\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 generate the name of the key package 
 
 \begin{DoxyReturn}{Returns}
-std\+::string name of the key package 
+QString name of the key package 
 \end{DoxyReturn}
-
-
-References generate\+\_\+key\+\_\+package\+\_\+name().
-
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Export\+Key\+Package\+Dialog\+::\+Export\+Key\+Package\+Dialog().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}\label{classGpgFrontend_1_1KeyPackageOperator_a6d9cf022a1e0cf54c061495f59c1b4b9}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a17bd5bca63876fcd201e98c2fca0582c}\label{classGpgFrontend_1_1KeyPackageOperator_a17bd5bca63876fcd201e98c2fca0582c}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!GeneratePassphrase@{GeneratePassphrase}}
 \index{GeneratePassphrase@{GeneratePassphrase}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
 \doxysubsubsection{\texorpdfstring{GeneratePassphrase()}{GeneratePassphrase()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{phrase\+\_\+path,  }\item[{std\+::string \&}]{phrase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase (\begin{DoxyParamCaption}\item[{const QString \&}]{phrase\+\_\+path,  }\item[{QString \&}]{phrase }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -137,13 +127,13 @@ false if passphrase was not generated and saved
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Write\+File().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}\label{classGpgFrontend_1_1KeyPackageOperator_a89538b180a42eb7d6ae53583fe10ee07}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1KeyPackageOperator_a3b5e580bfd67cfda094c664e2987e319}\label{classGpgFrontend_1_1KeyPackageOperator_a3b5e580bfd67cfda094c664e2987e319}} 
 \index{GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}!ImportKeyPackage@{ImportKeyPackage}}
 \index{ImportKeyPackage@{ImportKeyPackage}!GpgFrontend::KeyPackageOperator@{GpgFrontend::KeyPackageOperator}}
 \doxysubsubsection{\texorpdfstring{ImportKeyPackage()}{ImportKeyPackage()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{key\+\_\+package\+\_\+path,  }\item[{const std\+::filesystem\+::path \&}]{phrase\+\_\+path,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgImportInformation}{Gpg\+Frontend\+::\+Gpg\+Import\+Information}} \&}]{import\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Import\+Key\+Package (\begin{DoxyParamCaption}\item[{const QString \&}]{key\+\_\+package\+\_\+path,  }\item[{const QString \&}]{phrase\+\_\+path,  }\item[{const Operation\+Callback \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -165,7 +155,7 @@ false if key package was not imported
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Import\+Key(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Read\+File(), and Gpg\+Frontend\+::\+Run\+Opera\+Async().
 
 
 

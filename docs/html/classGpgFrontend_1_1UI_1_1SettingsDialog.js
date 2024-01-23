@@ -1,8 +1,8 @@
 var classGpgFrontend_1_1UI_1_1SettingsDialog =
 [
     [ "SettingsDialog", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a1b7ddc7861d1b4b9dc3810ed98023ffc", null ],
-    [ "get_restart_needed", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a0d66e360dfbcf79403351459721c3981", null ],
-    [ "ListLanguages", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#acd22ac2fd91704551e5317e2c549ae26", null ],
+    [ "get_restart_needed", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#a2ca2325a0dd0764cb6b5c2a7e35ba408", null ],
+    [ "ListLanguages", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#ab3c3f59d98afb1f284a7149f4ff971b8", null ],
     [ "SignalRestartNeeded", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#af5ba6646af45d0d1d794bc52ee54b1b9", null ],
     [ "slot_set_restart_needed", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#acc6b4386de554fce6fbb60ac6d201952", null ],
     [ "SlotAccept", "classGpgFrontend_1_1UI_1_1SettingsDialog.html#aa1a54f43f17388a07befb5f15e4906ea", null ],

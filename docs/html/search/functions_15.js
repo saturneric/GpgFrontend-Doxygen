@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['verify_1416',['Verify',['../classGpgFrontend_1_1GpgBasicOperator.html#af0347cb28ff73b2250395ceaa9001509',1,'GpgFrontend::GpgBasicOperator']]],
-  ['verifydetailsdialog_1417',['VerifyDetailsDialog',['../classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda',1,'GpgFrontend::UI::VerifyDetailsDialog']]],
-  ['verifyfile_1418',['VerifyFile',['../classGpgFrontend_1_1GpgFileOpera.html#a14cddfe822c9410cd9c301d08963b7e7',1,'GpgFrontend::GpgFileOpera']]],
-  ['verifykeydetailbox_1419',['VerifyKeyDetailBox',['../classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#afbbe8e87786cca020c9aa8759eb041a0',1,'GpgFrontend::UI::VerifyKeyDetailBox']]],
-  ['version_5fcompare_1420',['version_compare',['../structGpgFrontend_1_1UI_1_1SoftwareVersion.html#ae1989b6a34c76103f4bd06f35686d536',1,'GpgFrontend::UI::SoftwareVersion']]],
-  ['versionchecktask_1421',['VersionCheckTask',['../classGpgFrontend_1_1UI_1_1VersionCheckTask.html#a9f7a810ae1aa78c2a61e86e7757da385',1,'GpgFrontend::UI::VersionCheckTask']]],
-  ['versionwithdrawn_1422',['VersionWithDrawn',['../structGpgFrontend_1_1UI_1_1SoftwareVersion.html#a587a3fdb047a15c3771c2af5eebdbf4b',1,'GpgFrontend::UI::SoftwareVersion']]]
+  ['waitforopera_1625',['WaitForOpera',['../classGpgFrontend_1_1UI_1_1CommonUtils.html#adc42d12a58717dee86d8bd59b1cacf82',1,'GpgFrontend::UI::CommonUtils']]],
+  ['waitingdialog_1626',['WaitingDialog',['../classGpgFrontend_1_1UI_1_1WaitingDialog.html#a809d0ffc8208eb2ff5d8da76c8ee10dc',1,'GpgFrontend::UI::WaitingDialog']]],
+  ['wizard_1627',['Wizard',['../classGpgFrontend_1_1UI_1_1Wizard.html#a448db8fe5ace96418ffd1f23b0142b10',1,'GpgFrontend::UI::Wizard']]],
+  ['writebuffertofile_1628',['WriteBufferToFile',['../namespaceGpgFrontend.html#a4e780b0a2bddd1ce8735d3fa36dbfa86',1,'GpgFrontend']]],
+  ['writefile_1629',['WriteFile',['../namespaceGpgFrontend.html#acc93a10f79f6479f72940fba39b780e1',1,'GpgFrontend']]],
+  ['writefilegfbuffer_1630',['WriteFileGFBuffer',['../namespaceGpgFrontend.html#a4df3f25e93d16e2dc60c7d680c22dcb9',1,'GpgFrontend']]]
 ];

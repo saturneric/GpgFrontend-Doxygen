@@ -87,33 +87,36 @@ $(document).ready(function(){initNavTree('CoreSignalStation_8h_source.html','');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_CORESIGNALSTATION_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_CORESIGNALSTATION_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1CoreSignalStation.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html">CoreSignalStation</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1CoreSignalStation.html#a36c316a2a76fdf7c3e74dfa5f8ed6b15">   42</a></span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;CoreSignalStation&gt; <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html#a36c316a2a76fdf7c3e74dfa5f8ed6b15">_instance</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html">CoreSignalStation</a>* GetInstance();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; signals:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> SignalUserInputPassphraseDone(QString passparase);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> SignalNeedUserInputPassphrase();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>GpgPassphraseContext;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1CoreSignalStation.html">   41</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html">CoreSignalStation</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1CoreSignalStation.html#a671214ba506895fa5de6f80acf450d12">   43</a></span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;CoreSignalStation&gt; <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html#a671214ba506895fa5de6f80acf450d12">instance</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> GetInstance() -&gt; <a class="code" href="classGpgFrontend_1_1CoreSignalStation.html">CoreSignalStation</a>*;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; signals:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> SignalNeedUserInputPassphrase(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> SignalUserInputPassphraseCallback(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_CORESIGNALSTATION_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html">GpgFrontend::CoreSignalStation</a></div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:40</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html_a36c316a2a76fdf7c3e74dfa5f8ed6b15"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html#a36c316a2a76fdf7c3e74dfa5f8ed6b15">GpgFrontend::CoreSignalStation::_instance</a></div><div class="ttdeci">static std::unique_ptr&lt; CoreSignalStation &gt; _instance</div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:42</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:31</div></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> SignalBadGnupgEnv(QString);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> SignalGoodGnupgEnv();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html">GpgFrontend::CoreSignalStation</a></div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:41</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html_a671214ba506895fa5de6f80acf450d12"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html#a671214ba506895fa5de6f80acf450d12">GpgFrontend::CoreSignalStation::instance</a></div><div class="ttdeci">static std::unique_ptr&lt; CoreSignalStation &gt; instance</div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:43</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

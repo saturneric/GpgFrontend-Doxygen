@@ -39,7 +39,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_af5ba6646af45d0d1
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static QHash$<$ QString, QString $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_acd22ac2fd91704551e5317e2c549ae26}{List\+Languages}} ()
+static QHash$<$ QString, QString $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_ab3c3f59d98afb1f284a7149f4ff971b8}{List\+Languages}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -64,7 +64,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_acc6b4386de554fce
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_a0d66e360dfbcf79403351459721c3981}{get\+\_\+restart\+\_\+needed}} () const
+int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}{get\+\_\+restart\+\_\+needed}} () const
 \begin{DoxyCompactList}\small\item\em Get the Restart Needed object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -99,16 +99,16 @@ Construct a new Settings Dialog object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed(), Signal\+Restart\+Needed(), slot\+\_\+set\+\_\+restart\+\_\+needed(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed().
+References Gpg\+Frontend\+::k\+Restart\+Code, Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed(), Signal\+Restart\+Needed(), slot\+\_\+set\+\_\+restart\+\_\+needed(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a0d66e360dfbcf79403351459721c3981}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a0d66e360dfbcf79403351459721c3981}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}} 
 \index{GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}!get\_restart\_needed@{get\_restart\_needed}}
 \index{get\_restart\_needed@{get\_restart\_needed}!GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}}
 \doxysubsubsection{\texorpdfstring{get\_restart\_needed()}{get\_restart\_needed()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::get\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::get\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -119,19 +119,15 @@ true
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_acd22ac2fd91704551e5317e2c549ae26}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_acd22ac2fd91704551e5317e2c549ae26}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_ab3c3f59d98afb1f284a7149f4ff971b8}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_ab3c3f59d98afb1f284a7149f4ff971b8}} 
 \index{GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}!ListLanguages@{ListLanguages}}
 \index{ListLanguages@{ListLanguages}!GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}}
 \doxysubsubsection{\texorpdfstring{ListLanguages()}{ListLanguages()}}
-{\footnotesize\ttfamily QHash$<$ QString, QString $>$ Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyReturn}{Returns}
 QHash$<$\+QString, QString$>$ 
 \end{DoxyReturn}
-
-
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+Locale\+Dir().
-
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+General\+Tab().

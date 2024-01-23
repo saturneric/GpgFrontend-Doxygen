@@ -30,9 +30,9 @@ Collaboration diagram for Gpg\+Frontend\+::Singleton\+Function\+Object$<$ T $>$\
 \mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a194e49b07d46345bdad386505d743a61}\label{classGpgFrontend_1_1SingletonFunctionObject_a194e49b07d46345bdad386505d743a61}} 
 \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a194e49b07d46345bdad386505d743a61}{Singleton\+Function\+Object}} (const \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}$<$ T $>$ \&)=delete
 \begin{DoxyCompactList}\small\item\em prohibit copy \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}} \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aabb190a60f7a5d4ded43cae16ab8f59e}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}$<$ T $>$ \&)=delete
+auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a99eb547639a63e7c2f467ebb611c95b7}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}$<$ T $>$ \&) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}} \&=delete
 \begin{DoxyCompactList}\small\item\em prohibit copy \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{Get\+Channel}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}{Get\+Channel}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Channel object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aabc5fe8e5a372ac276a265286457cb9a}\label{classGpgFrontend_1_1SingletonFunctionObject_aabc5fe8e5a372ac276a265286457cb9a}} 
 \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aabc5fe8e5a372ac276a265286457cb9a}{Singleton\+Function\+Object}} (T \&\&)=delete
@@ -46,15 +46,15 @@ void {\bfseries operator=} (const T \&)=delete
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{Get\+Instance}} (int channel=Gpg\+Frontend\+::\+GPGFRONTEND\+\_\+\+DEFAULT\+\_\+\+CHANNEL)
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}{Get\+Instance}} (int channel=Gpg\+Frontend\+::k\+Gpg\+Frontend\+Default\+Channel) -\/$>$ T \&
 \begin{DoxyCompactList}\small\item\em Get the Instance object. \end{DoxyCompactList}\item 
-static T \& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a083807ff8cec58dc0aa732844edaf518}{Create\+Instance}} (int channel, std\+::function$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$(void)$>$ factory)
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_adff3ff15fc67b7e9cdeeb2577541fbc4}{Create\+Instance}} (int channel, const std\+::function$<$ Channel\+Object\+Ptr(void)$>$ \&factory) -\/$>$ T \&
 \begin{DoxyCompactList}\small\item\em Create a Instance object. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ab49b1d50252e1934691a9483a6df2106}{Release\+Channel}} (int channel)
 \item 
-static int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Get\+Default\+Channel}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Get\+Default\+Channel}} () -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Default Channel object. \end{DoxyCompactList}\item 
-static std\+::vector$<$ int $>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a5f2f0474871971f86ff91fb6a2408621}{Get\+All\+Channel\+Id}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa7b5db19f3a130886f43607a345a0e1d}{Get\+All\+Channel\+Id}} () -\/$>$ std\+::vector$<$ int $>$
 \begin{DoxyCompactList}\small\item\em Get all the channel ids. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -100,12 +100,12 @@ Construct a new Singleton Function Object object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a083807ff8cec58dc0aa732844edaf518}\label{classGpgFrontend_1_1SingletonFunctionObject_a083807ff8cec58dc0aa732844edaf518}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_adff3ff15fc67b7e9cdeeb2577541fbc4}\label{classGpgFrontend_1_1SingletonFunctionObject_adff3ff15fc67b7e9cdeeb2577541fbc4}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!CreateInstance@{CreateInstance}}
 \index{CreateInstance@{CreateInstance}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{CreateInstance()}{CreateInstance()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-static T\& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Create\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{std\+::function$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Channel\+Object}} $>$(void)$>$}]{factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Create\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{const std\+::function$<$ Channel\+Object\+Ptr(void)$>$ \&}]{factory }\end{DoxyParamCaption}) -\/$>$ T\& \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -121,16 +121,12 @@ Create a Instance object.
 \begin{DoxyReturn}{Returns}
 T\& 
 \end{DoxyReturn}
-
-
-References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Singleton\+Storage().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a5f2f0474871971f86ff91fb6a2408621}\label{classGpgFrontend_1_1SingletonFunctionObject_a5f2f0474871971f86ff91fb6a2408621}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aa7b5db19f3a130886f43607a345a0e1d}\label{classGpgFrontend_1_1SingletonFunctionObject_aa7b5db19f3a130886f43607a345a0e1d}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetAllChannelId@{GetAllChannelId}}
 \index{GetAllChannelId@{GetAllChannelId}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetAllChannelId()}{GetAllChannelId()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-static std\+::vector$<$int$>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+All\+Channel\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+All\+Channel\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ std\+::vector$<$int$>$ \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -141,14 +137,14 @@ std\+::vector$<$int$>$
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Get\+All\+Channel\+Id(), Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Singleton\+Storage().
+References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}\label{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}\label{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetChannel@{GetChannel}}
 \index{GetChannel@{GetChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetChannel()}{GetChannel()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int \hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -161,12 +157,12 @@ int
 
 References Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Channel().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}\label{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}\label{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetDefaultChannel@{GetDefaultChannel}}
 \index{GetDefaultChannel@{GetDefaultChannel}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetDefaultChannel()}{GetDefaultChannel()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-static int \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Default\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Default\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -179,12 +175,12 @@ int
 
 References Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Default\+Channel().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}\label{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}\label{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!GetInstance@{GetInstance}}
 \index{GetInstance@{GetInstance}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-static T\& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily GpgFrontend\+:\+:GPGFRONTEND\+\_\+DEFAULT\+\_\+CHANNEL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+static auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::Get\+Instance (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily GpgFrontend\+:\+:kGpgFrontendDefaultChannel} }\end{DoxyParamCaption}) -\/$>$ T\& \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -200,14 +196,14 @@ T\&
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Singleton\+Storage().
+References Gpg\+Frontend\+::\+Get\+Channel\+Object\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_aabb190a60f7a5d4ded43cae16ab8f59e}\label{classGpgFrontend_1_1SingletonFunctionObject_aabb190a60f7a5d4ded43cae16ab8f59e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonFunctionObject_a99eb547639a63e7c2f467ebb611c95b7}\label{classGpgFrontend_1_1SingletonFunctionObject_a99eb547639a63e7c2f467ebb611c95b7}} 
 \index{GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!GpgFrontend::SingletonFunctionObject$<$ T $>$@{GpgFrontend::SingletonFunctionObject$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}\& \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+auto \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Gpg\+Frontend\+::\+Singleton\+Function\+Object}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject}{Singleton\+Function\+Object}} \&=delete\hspace{0.3cm}{\ttfamily [delete]}}
 
 
 
@@ -233,10 +229,10 @@ T\&
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Singleton\+Storage(), and Gpg\+Frontend\+::\+Singleton\+Storage\+::\+Release\+Channel().
+References Gpg\+Frontend\+::\+Singleton\+Storage\+Collection\+::\+Get\+Instance().
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/Gpg\+Function\+Object.\+h\end{DoxyCompactItemize}
+src/core/function/basic/Gpg\+Function\+Object.\+h\end{DoxyCompactItemize}
