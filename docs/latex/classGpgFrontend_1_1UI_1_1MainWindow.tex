@@ -31,6 +31,8 @@ struct \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu}{Cry
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a2518a8a17ebcc217c7cc34c9c3a411f8}\label{classGpgFrontend_1_1UI_1_1MainWindow_a2518a8a17ebcc217c7cc34c9c3a411f8}} 
 void {\bfseries Slot\+Set\+Status\+Bar\+Text} (const QString \&text)
 \item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_abd5408ca5f908c330a15db24d959f3a5}{Slot\+Update\+Crypto\+Menu\+Status}} (unsigned int type)
+\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_ad344606cf3c665fc73a3c0dd10a44310}{Slot\+Open\+File}} (const QString \&path)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a07d02cdb29a8101f988e776ceecc49ad}{Slot\+Encrypt}} ()
@@ -89,8 +91,6 @@ void {\bfseries Signal\+Key\+Database\+Refresh} ()
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a08ba4521f68c488b23b651e201011759}{Init}} () noexcept
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a85a98a1ec5418c110201980fa013d1fd}{Set\+Crypto\+Menu\+Status}} (Crypto\+Menu\+::\+Operation\+Type type)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -494,11 +494,7 @@ Create edit-\/, crypt-\/ and key-\/toolbars. \mbox{\Hypertarget{classGpgFrontend
 \doxysubsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-ONLY Called from main() 
-
-References Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Clear\+Gpg\+Password\+Cache().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_adfa3b3ae1de1fd04c5ea09e3c97c3e98}\label{classGpgFrontend_1_1UI_1_1MainWindow_adfa3b3ae1de1fd04c5ea09e3c97c3e98}} 
+ONLY Called from main() \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_adfa3b3ae1de1fd04c5ea09e3c97c3e98}\label{classGpgFrontend_1_1UI_1_1MainWindow_adfa3b3ae1de1fd04c5ea09e3c97c3e98}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!refresh\_keys\_from\_key\_server@{refresh\_keys\_from\_key\_server}}
 \index{refresh\_keys\_from\_key\_server@{refresh\_keys\_from\_key\_server}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{refresh\_keys\_from\_key\_server}{refresh\_keys\_from\_key\_server}}
@@ -514,17 +510,7 @@ References Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance(), and Gp
 \doxysubsubsection{\texorpdfstring{restore\_settings()}{restore\_settings()}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::restore\+\_\+settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Load settings from ini-\/file. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a85a98a1ec5418c110201980fa013d1fd}\label{classGpgFrontend_1_1UI_1_1MainWindow_a85a98a1ec5418c110201980fa013d1fd}} 
-\index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SetCryptoMenuStatus@{SetCryptoMenuStatus}}
-\index{SetCryptoMenuStatus@{SetCryptoMenuStatus}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
-\doxysubsubsection{\texorpdfstring{SetCryptoMenuStatus()}{SetCryptoMenuStatus()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Set\+Crypto\+Menu\+Status (\begin{DoxyParamCaption}\item[{Crypto\+Menu\+::\+Operation\+Type}]{type }\end{DoxyParamCaption})}
-
-refresh and enable specify crypto-\/menu actions. 
-
-References decrypt\+\_\+act\+\_\+, decrypt\+\_\+verify\+\_\+act\+\_\+, encrypt\+\_\+act\+\_\+, encrypt\+\_\+sign\+\_\+act\+\_\+, sign\+\_\+act\+\_\+, and verify\+\_\+act\+\_\+.
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046162aad6728f9}\label{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046162aad6728f9}} 
+Load settings from ini-\/file. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046162aad6728f9}\label{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046162aad6728f9}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!slot\_add\_pgp\_header@{slot\_add\_pgp\_header}}
 \index{slot\_add\_pgp\_header@{slot\_add\_pgp\_header}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{slot\_add\_pgp\_header}{slot\_add\_pgp\_header}}
@@ -903,6 +889,16 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog(
 Sign the text of currently active tab with the checked private keys 
 
 References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Cur\+Text\+Page(), edit\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Private\+Checked(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page(), Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Cur\+Page\+Text\+Edit(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Fill\+Text\+Edit\+With\+Text(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_abd5408ca5f908c330a15db24d959f3a5}\label{classGpgFrontend_1_1UI_1_1MainWindow_abd5408ca5f908c330a15db24d959f3a5}} 
+\index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotUpdateCryptoMenuStatus@{SlotUpdateCryptoMenuStatus}}
+\index{SlotUpdateCryptoMenuStatus@{SlotUpdateCryptoMenuStatus}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
+\doxysubsubsection{\texorpdfstring{SlotUpdateCryptoMenuStatus}{SlotUpdateCryptoMenuStatus}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Update\+Crypto\+Menu\+Status (\begin{DoxyParamCaption}\item[{unsigned int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+refresh and enable specify crypto-\/menu actions. 
+
+References decrypt\+\_\+act\+\_\+, decrypt\+\_\+verify\+\_\+act\+\_\+, encrypt\+\_\+act\+\_\+, encrypt\+\_\+sign\+\_\+act\+\_\+, sign\+\_\+act\+\_\+, and verify\+\_\+act\+\_\+.
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ac9bf2a20727eb8e727aa2e3ce5c248e5}\label{classGpgFrontend_1_1UI_1_1MainWindow_ac9bf2a20727eb8e727aa2e3ce5c248e5}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotVerify@{SlotVerify}}

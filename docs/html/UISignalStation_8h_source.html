@@ -111,29 +111,35 @@ $(document).ready(function(){initNavTree('UISignalStation_8h_source.html',''); i
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> SignalUIRefresh();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a1952bc7608f4449afd2c0f0e169a0007">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a1952bc7608f4449afd2c0f0e169a0007">SignalRefreshInfoBoard</a>(<span class="keyword">const</span> QString&amp; text,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                              <a class="code" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a> verify_label_status);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a28d70bad814ed795ba47e4daf2917e19">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a28d70bad814ed795ba47e4daf2917e19">SignalRefreshStatusBar</a>(<span class="keyword">const</span> QString&amp; message, <span class="keywordtype">int</span> timeout);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> SignalNeedUserInputPassphrase(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> SignalUserInputPassphraseCallback(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> SignalRestartApplication(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> SignalMainWindowlUpdateBasicalOperaMenu(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> SignalMainWindowOpenFile(QString);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> SignalKeyRevoked(QString);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a1952bc7608f4449afd2c0f0e169a0007">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a1952bc7608f4449afd2c0f0e169a0007">SignalRefreshInfoBoard</a>(<span class="keyword">const</span> QString&amp; text,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                              <a class="code" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a> verify_label_status);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a28d70bad814ed795ba47e4daf2917e19">  107</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a28d70bad814ed795ba47e4daf2917e19">SignalRefreshStatusBar</a>(<span class="keyword">const</span> QString&amp; message, <span class="keywordtype">int</span> timeout);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html">UISignalStation</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">void</span> SignalNeedUserInputPassphrase(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> SignalUserInputPassphraseCallback(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">void</span> SignalRestartApplication(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1UISignalStation.html">UISignalStation</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UISignalStation_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UISignalStation.html">GpgFrontend::UI::UISignalStation</a></div><div class="ttdef"><b>Definition:</b> UISignalStation.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UISignalStation_html_a1952bc7608f4449afd2c0f0e169a0007"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a1952bc7608f4449afd2c0f0e169a0007">GpgFrontend::UI::UISignalStation::SignalRefreshInfoBoard</a></div><div class="ttdeci">void SignalRefreshInfoBoard(const QString &amp;text, InfoBoardStatus verify_label_status)</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UISignalStation_html_a28d70bad814ed795ba47e4daf2917e19"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a28d70bad814ed795ba47e4daf2917e19">GpgFrontend::UI::UISignalStation::SignalRefreshStatusBar</a></div><div class="ttdeci">void SignalRefreshStatusBar(const QString &amp;message, int timeout)</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UISignalStation_html_a6294f44348070707b4b6abcfd1b6509d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a6294f44348070707b4b6abcfd1b6509d">GpgFrontend::UI::UISignalStation::GetInstance</a></div><div class="ttdeci">static auto GetInstance() -&gt; UISignalStation *</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> UISignalStation.cpp:35</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html_acbaebd342a317b1f067942e5144bb00d"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">GpgFrontend::UI::InfoBoardStatus</a></div><div class="ttdeci">InfoBoardStatus</div><div class="ttdef"><b>Definition:</b> InfoBoardWidget.h:42</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@ var classGpgFrontend_1_1UI_1_1CommonUtils =
     [ "AddKey2Favourtie", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a7a7b01b992c465ded7e25e54e3ebacec", null ],
     [ "GetInstance", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a530688726ce3a319de8d4bdcc291db87", null ],
     [ "ImportKeyFromKeyServer", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a8d91f95f655e3442ea3b04a691255db0", null ],
-    [ "isApplicationNeedRestart", "classGpgFrontend_1_1UI_1_1CommonUtils.html#abb25baa60d62d6842028e174f7e341fe", null ],
+    [ "isApplicationNeedRestart", "classGpgFrontend_1_1UI_1_1CommonUtils.html#ae42826374fcdb0fe72af06542ab155dd", null ],
     [ "KeyExistsinFavouriteList", "classGpgFrontend_1_1UI_1_1CommonUtils.html#ac2b48eecb23d985b6fe1e2ac70f3be29", null ],
     [ "RaiseFailureMessageBox", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a4bc0d817e2083cc262f4fb2c65027442", null ],
     [ "RaiseMessageBox", "classGpgFrontend_1_1UI_1_1CommonUtils.html#a2eb678ee01d3b6e1c0d8f90345712644", null ],

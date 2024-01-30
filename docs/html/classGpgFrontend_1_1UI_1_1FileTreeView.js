@@ -6,6 +6,7 @@ var classGpgFrontend_1_1UI_1_1FileTreeView =
     [ "GetPathByClickPoint", "classGpgFrontend_1_1UI_1_1FileTreeView.html#ae65efaff87bd35f7f8f73388c022bdf8", null ],
     [ "GetSelectedPath", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a697e1df6db810119d3d908d9e88a5212", null ],
     [ "keyPressEvent", "classGpgFrontend_1_1UI_1_1FileTreeView.html#aad531bef81bf8264be3a181efd6b473d", null ],
+    [ "mousePressEvent", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a1c0a1f76a713872530980b14baaaec29", null ],
     [ "paintEvent", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a67fa58357348920cbb250df3fe70115c", null ],
     [ "selectionChanged", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a710ca837224c645182f44eea0d6bb0f0", null ],
     [ "SignalOpenFile", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a9f214e986af19db6ea9b950ac96efc74", null ],
@@ -36,6 +37,7 @@ var classGpgFrontend_1_1UI_1_1FileTreeView =
     [ "action_rename_file_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#abd8161c93d2c51daf3aa41133a500dca", null ],
     [ "current_path_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a5238316d0c0de7377302c62b7795fd5e", null ],
     [ "dir_model_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a3c1f1811b9022af5accf5dd6f408a4a5", null ],
+    [ "new_item_action_menu_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a55ab0ccc16e3a1696e3b1ee47e884544", null ],
     [ "popup_menu_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a2060426b238894bae21c46ccc0f0c53e", null ],
     [ "selected_path_", "classGpgFrontend_1_1UI_1_1FileTreeView.html#a6d01507d87dbc9edd4471ef3dd429873", null ]
 ];

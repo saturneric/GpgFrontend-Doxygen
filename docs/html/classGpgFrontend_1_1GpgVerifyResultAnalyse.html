@@ -97,7 +97,7 @@ Inheritance diagram for GpgFrontend::GpgVerifyResultAnalyse:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GpgVerifyResultAnalyse__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgVerifyResultAnalyse_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1GpgVerifyResultAnalyse_inherit__map" id="aGpgFrontend_1_1GpgVerifyResultAnalyse_inherit__map">
-<area shape="rect" title=" " alt="" coords="13,373,230,539"/>
+<area shape="rect" title=" " alt="" coords="13,373,230,568"/>
 <area shape="rect" href="classGpgFrontend_1_1GpgResultAnalyse.html" title=" " alt="" coords="5,131,237,325"/>
 <area shape="rect" title=" " alt="" coords="84,5,159,83"/>
 </map>
@@ -107,7 +107,7 @@ Collaboration diagram for GpgFrontend::GpgVerifyResultAnalyse:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GpgVerifyResultAnalyse__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgVerifyResultAnalyse_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GpgVerifyResultAnalyse_coll__map" id="aGpgFrontend_1_1GpgVerifyResultAnalyse_coll__map">
-<area shape="rect" title=" " alt="" coords="137,712,354,863"/>
+<area shape="rect" title=" " alt="" coords="137,712,354,892"/>
 <area shape="rect" href="classGpgFrontend_1_1GpgResultAnalyse.html" title=" " alt="" coords="5,455,237,649"/>
 <area shape="rect" title=" " alt="" coords="84,307,159,385"/>
 <area shape="rect" href="classGpgFrontend_1_1GpgVerifyResult.html" title=" " alt="" coords="262,477,479,627"/>
@@ -154,8 +154,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>doAnalyse</b> () fina
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4d8231561ad4f92322fab6dc8895b8be"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html#a4d8231561ad4f92322fab6dc8895b8be">print_signer</a> (QTextStream &amp;stream, gpgme_signature_t sign) -&gt; bool</td></tr>
-<tr class="separator:a4d8231561ad4f92322fab6dc8895b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591bc0f998e7c1e85f1838248c58b212"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html#a591bc0f998e7c1e85f1838248c58b212">print_signer</a> (QTextStream &amp;stream, <a class="el" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a> sign) -&gt; bool</td></tr>
+<tr class="separator:a591bc0f998e7c1e85f1838248c58b212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35988f5f806ea1bedbbe2a6d5a900aa"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgVerifyResultAnalyse.html#ac35988f5f806ea1bedbbe2a6d5a900aa">print_signer_without_key</a> (QTextStream &amp;stream, <a class="el" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a> sign) -&gt; bool</td></tr>
+<tr class="separator:ac35988f5f806ea1bedbbe2a6d5a900aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -258,8 +260,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>analysed_</b> = false
 
 </div>
 </div>
-<a id="a4d8231561ad4f92322fab6dc8895b8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d8231561ad4f92322fab6dc8895b8be">&#9670;&nbsp;</a></span>print_signer()</h2>
+<a id="a591bc0f998e7c1e85f1838248c58b212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591bc0f998e7c1e85f1838248c58b212">&#9670;&nbsp;</a></span>print_signer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +278,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>analysed_</b> = false
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gpgme_signature_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&#160;</td>
           <td class="paramname"><em>sign</em>&#160;</td>
         </tr>
         <tr>
@@ -303,6 +305,52 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>analysed_</b> = false
 false </dd></dl>
 
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance()</a>.</p>
+
+</div>
+</div>
+<a id="ac35988f5f806ea1bedbbe2a6d5a900aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35988f5f806ea1bedbbe2a6d5a900aa">&#9670;&nbsp;</a></span>print_signer_without_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgVerifyResultAnalyse::print_signer_without_key </td>
+          <td>(</td>
+          <td class="paramtype">QTextStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGpgFrontend_1_1GpgSignature.html">GpgSignature</a>&#160;</td>
+          <td class="paramname"><em>sign</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td></td></tr>
+    <tr><td class="paramname">sign</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
 
 </div>
 </div>

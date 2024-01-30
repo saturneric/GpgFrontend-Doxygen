@@ -431,15 +431,18 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchGpgconfPath</b>
 <tr class="memitem:ab40fa300f040973be4d89aff4497cb68"><td class="memItemLeft" align="right" valign="top"><a id="ab40fa300f040973be4d89aff4497cb68"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchKeyDatabasePath</b> (const QList&lt; QString &gt; &amp;candidate_paths) -&gt; QString</td></tr>
 <tr class="separator:ab40fa300f040973be4d89aff4497cb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721e24e02c2fcc79e8e9e39b187e8f48"><td class="memItemLeft" align="right" valign="top"><a id="a721e24e02c2fcc79e8e9e39b187e8f48"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>InitGpgME</b> (const QString &amp;gnupg_path) -&gt; bool</td></tr>
-<tr class="separator:a721e24e02c2fcc79e8e9e39b187e8f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc56ca0af26f82a20f044e4acb3fba5"><td class="memItemLeft" align="right" valign="top"><a id="a5bc56ca0af26f82a20f044e4acb3fba5"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>InitGpgME</b> (const QString &amp;gpgconf_path, const QString &amp;gnupg_path) -&gt; bool</td></tr>
+<tr class="separator:a5bc56ca0af26f82a20f044e4acb3fba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0781ebc8c308a3bade1174355f9a0ff2"><td class="memItemLeft" align="right" valign="top"><a id="a0781ebc8c308a3bade1174355f9a0ff2"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetGnuPGPathByGpgConf</b> (const QString &amp;gnupg_install_fs_path) -&gt; QString</td></tr>
 <tr class="separator:a0781ebc8c308a3bade1174355f9a0ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72507743c74e569d433d7ac2a0a19099"><td class="memItemLeft" align="right" valign="top"><a id="a72507743c74e569d433d7ac2a0a19099"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>DetectGnuPGPath</b> () -&gt; QString</td></tr>
-<tr class="separator:a72507743c74e569d433d7ac2a0a19099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820d6ec2f05b8dba4d72b4d73839219f"><td class="memItemLeft" align="right" valign="top"><a id="a820d6ec2f05b8dba4d72b4d73839219f"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>DetectGpgConfPath</b> () -&gt; QString</td></tr>
+<tr class="separator:a820d6ec2f05b8dba4d72b4d73839219f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e45f703a9bd027960936304b35072e"><td class="memItemLeft" align="right" valign="top"><a id="aa2e45f703a9bd027960936304b35072e"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>DetectGnuPGPath</b> (QString gpgconf_path) -&gt; QString</td></tr>
+<tr class="separator:aa2e45f703a9bd027960936304b35072e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a250ad950f8337bf5b7c4e35cd7a12ece"><td class="memItemLeft" align="right" valign="top"><a id="a250ad950f8337bf5b7c4e35cd7a12ece"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InitGpgFrontendCore</b> (<a class="el" href="structGpgFrontend_1_1CoreInitArgs.html">CoreInitArgs</a>)</td></tr>
 <tr class="separator:a250ad950f8337bf5b7c4e35cd7a12ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +615,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="separator:a2b70b63c5a2173e62168123f6a2ad3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd17bf45c5a18c762d8638fd643eaf41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend.html#acd17bf45c5a18c762d8638fd643eaf41">InitGlobalBasicalEnv</a> (const GFCxtWPtr &amp;p_ctx, bool gui_mode)</td></tr>
 <tr class="separator:acd17bf45c5a18c762d8638fd643eaf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffad7330067c9ab03842c656fa199f4"><td class="memItemLeft" align="right" valign="top"><a id="a7ffad7330067c9ab03842c656fa199f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">InitLocale</a> ()</td></tr>
+<tr class="memdesc:a7ffad7330067c9ab03842c656fa199f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup the locale and load the translations <br /></td></tr>
+<tr class="separator:a7ffad7330067c9ab03842c656fa199f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad5659719d261ea3142c2baa60d40ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend.html#a3ad5659719d261ea3142c2baa60d40ff">ShutdownGlobalBasicalEnv</a> (const GFCxtWPtr &amp;p_ctx)</td></tr>
 <tr class="separator:a3ad5659719d261ea3142c2baa60d40ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1303,7 +1310,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kBufferSi
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">InitGlobalPathEnv()</a>, <a class="el" href="namespaceGpgFrontend.html#afb32e3d737c4bf2e6ad112a90fe7f1f5">InitLoggingSystem()</a>, <a class="el" href="namespaceGpgFrontend_1_1Module.html#a81e8539a1a6bfb91731e6b17d9f2aa6a">GpgFrontend::Module::LoadGpgFrontendModules()</a>, and <a class="el" href="namespaceGpgFrontend.html#ad5b2890d3b26624800fa482d23f0e48d">SetDefaultLogLevel()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">InitGlobalPathEnv()</a>, <a class="el" href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">InitLocale()</a>, <a class="el" href="namespaceGpgFrontend.html#afb32e3d737c4bf2e6ad112a90fe7f1f5">InitLoggingSystem()</a>, <a class="el" href="namespaceGpgFrontend_1_1Module.html#a81e8539a1a6bfb91731e6b17d9f2aa6a">GpgFrontend::Module::LoadGpgFrontendModules()</a>, and <a class="el" href="namespaceGpgFrontend.html#ad5b2890d3b26624800fa482d23f0e48d">SetDefaultLogLevel()</a>.</p>
 
 </div>
 </div>
@@ -1329,7 +1336,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kBufferSi
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#ae910f7b068d7bd832bff6bfabed34859">RegisterSyncLogger()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a5b02173b14e6ea7c0eee0e23e6bc879f">RegisterAsyncLogger()</a>, and <a class="el" href="namespaceGpgFrontend.html#ae910f7b068d7bd832bff6bfabed34859">RegisterSyncLogger()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend.html#acd17bf45c5a18c762d8638fd643eaf41">InitGlobalBasicalEnv()</a>.</p>
 
@@ -1432,6 +1439,8 @@ false if failed </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>auto </dd></dl>
 
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; LoggerManager &gt;::GetInstance()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="namespaceGpgFrontend.html#afb32e3d737c4bf2e6ad112a90fe7f1f5">InitLoggingSystem()</a>.</p>
 
 </div>
 </div>
@@ -1924,7 +1933,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; TaskRunnerGetter &gt;::GetInstance()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1GpgAdvancedOperator.html#ab1678720e30e957ad56e14b683cdedd1">GpgFrontend::GpgAdvancedOperator::ClearGpgPasswordCache()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, and <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; TaskRunnerGetter &gt;::GetInstance()</a>.</p>
 
 </div>
 </div>
@@ -1953,7 +1962,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 <p>internationalisation. loop to restart main window with changed translation when settings change.</p>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">GpgFrontend::UI::InitGpgFrontendUI()</a>, <a class="el" href="namespaceGpgFrontend.html#a2e3fbfe1404b1f9d140d4177fd93e449">kRestartCode</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#ac53b300d580dcb56188aaed68c3de755">GpgFrontend::UI::RunGpgFrontendUI()</a>, and <a class="el" href="namespaceGpgFrontend_1_1Module.html#a0bc3154cfe2667afe7bcd95895442d16">GpgFrontend::Module::ShutdownGpgFrontendModules()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad">GpgFrontend::UI::InitGpgFrontendUI()</a>, <a class="el" href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">InitLocale()</a>, <a class="el" href="namespaceGpgFrontend.html#a2e3fbfe1404b1f9d140d4177fd93e449">kRestartCode</a>, <a class="el" href="namespaceGpgFrontend_1_1UI.html#ac53b300d580dcb56188aaed68c3de755">GpgFrontend::UI::RunGpgFrontendUI()</a>, and <a class="el" href="namespaceGpgFrontend_1_1Module.html#a0bc3154cfe2667afe7bcd95895442d16">GpgFrontend::Module::ShutdownGpgFrontendModules()</a>.</p>
 
 </div>
 </div>

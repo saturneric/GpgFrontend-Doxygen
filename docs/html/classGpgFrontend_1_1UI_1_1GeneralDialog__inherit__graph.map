@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="1826,131,2069,399"/>
 <area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1AboutDialog.html" title="Class for handling the about dialog." alt="" coords="5,652,220,744"/>
 <area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html" title=" " alt="" coords="245,637,453,759"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html" title=" " alt="" coords="477,542,719,854"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html" title=" " alt="" coords="477,520,719,876"/>
 <area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html" title=" " alt="" coords="743,652,949,744"/>
 <area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1KeyGenDialog.html" title=" " alt="" coords="973,447,1199,949"/>
 <area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html" title=" " alt="" coords="1223,586,1426,810"/>

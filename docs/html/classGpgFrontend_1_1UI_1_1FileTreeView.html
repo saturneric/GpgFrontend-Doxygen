@@ -99,7 +99,7 @@ Inheritance diagram for GpgFrontend::UI::FileTreeView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FileTreeView__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map" id="aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,253,780"/>
+<area shape="rect" title=" " alt="" coords="5,131,253,809"/>
 <area shape="rect" title=" " alt="" coords="84,5,175,83"/>
 </map>
 </div>
@@ -108,7 +108,7 @@ Collaboration diagram for GpgFrontend::UI::FileTreeView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FileTreeView__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FileTreeView_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FileTreeView_coll__map" id="aGpgFrontend_1_1UI_1_1FileTreeView_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,253,780"/>
+<area shape="rect" title=" " alt="" coords="5,131,253,809"/>
 <area shape="rect" title=" " alt="" coords="84,5,175,83"/>
 </map>
 </div>
@@ -186,6 +186,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a67fa58357348920cbb250df3fe70115c"><td class="memItemLeft" align="right" valign="top"><a id="a67fa58357348920cbb250df3fe70115c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
 <tr class="separator:a67fa58357348920cbb250df3fe70115c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0a1f76a713872530980b14baaaec29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a1c0a1f76a713872530980b14baaaec29">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a1c0a1f76a713872530980b14baaaec29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
@@ -219,6 +221,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>selected_path_</b>
 <tr class="memitem:a2060426b238894bae21c46ccc0f0c53e"><td class="memItemLeft" align="right" valign="top"><a id="a2060426b238894bae21c46ccc0f0c53e"></a>
 QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>popup_menu_</b></td></tr>
 <tr class="separator:a2060426b238894bae21c46ccc0f0c53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ab0ccc16e3a1696e3b1ee47e884544"><td class="memItemLeft" align="right" valign="top"><a id="a55ab0ccc16e3a1696e3b1ee47e884544"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>new_item_action_menu_</b></td></tr>
+<tr class="separator:a55ab0ccc16e3a1696e3b1ee47e884544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46daeb183f5f127c7d7f91e1ae506e38"><td class="memItemLeft" align="right" valign="top"><a id="a46daeb183f5f127c7d7f91e1ae506e38"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_open_file_</b></td></tr>
 <tr class="separator:a46daeb183f5f127c7d7f91e1ae506e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +263,7 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_
 </div><div class="memdoc">
 
 <p>Get the Current Path object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::filesystem::path </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#aed52684347a89faaad2cc7defa9dfc0f">GpgFrontend::UI::FilePage::FilePage()</a>.</p>
 
@@ -314,7 +319,7 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::filesystem::path </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
@@ -334,7 +339,7 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_
 </div><div class="memdoc">
 
 <p>Get the Selected Path object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::filesystem::path </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
@@ -351,6 +356,38 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_
           <td class="memname">void GpgFrontend::UI::FileTreeView::keyPressEvent </td>
           <td>(</td>
           <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c0a1f76a713872530980b14baaaec29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0a1f76a713872530980b14baaaec29">&#9670;&nbsp;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::UI::FileTreeView::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>

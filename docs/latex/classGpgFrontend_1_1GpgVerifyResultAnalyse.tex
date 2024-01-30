@@ -38,7 +38,9 @@ void {\bfseries do\+Analyse} () final
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}{print\+\_\+signer}} (QText\+Stream \&stream, gpgme\+\_\+signature\+\_\+t sign) -\/$>$ bool
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_a591bc0f998e7c1e85f1838248c58b212}{print\+\_\+signer}} (QText\+Stream \&stream, \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} sign) -\/$>$ bool
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgVerifyResultAnalyse_ac35988f5f806ea1bedbbe2a6d5a900aa}{print\+\_\+signer\+\_\+without\+\_\+key}} (QText\+Stream \&stream, \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} sign) -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -102,11 +104,11 @@ gpgme\+\_\+signature\+\_\+t
 
 Referenced by Gpg\+Frontend\+::\+UI\+::import\+\_\+unknown\+\_\+key\+\_\+from\+\_\+keyserver().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a4d8231561ad4f92322fab6dc8895b8be}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a591bc0f998e7c1e85f1838248c58b212}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a591bc0f998e7c1e85f1838248c58b212}} 
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!print\_signer@{print\_signer}}
 \index{print\_signer@{print\_signer}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{print\_signer()}{print\_signer()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::print\+\_\+signer (\begin{DoxyParamCaption}\item[{QText\+Stream \&}]{stream,  }\item[{gpgme\+\_\+signature\+\_\+t}]{sign }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::print\+\_\+signer (\begin{DoxyParamCaption}\item[{QText\+Stream \&}]{stream,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}}}]{sign }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -124,6 +126,24 @@ false
 
 References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_ac35988f5f806ea1bedbbe2a6d5a900aa}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_ac35988f5f806ea1bedbbe2a6d5a900aa}} 
+\index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!print\_signer\_without\_key@{print\_signer\_without\_key}}
+\index{print\_signer\_without\_key@{print\_signer\_without\_key}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}
+\doxysubsubsection{\texorpdfstring{print\_signer\_without\_key()}{print\_signer\_without\_key()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Verify\+Result\+Analyse\+::print\+\_\+signer\+\_\+without\+\_\+key (\begin{DoxyParamCaption}\item[{QText\+Stream \&}]{stream,  }\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}}}]{sign }\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & \\
+\hline
+{\em sign} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgVerifyResultAnalyse_a8d0af2a9c0a52ef8bfd88bcb66aaf07e}\label{classGpgFrontend_1_1GpgVerifyResultAnalyse_a8d0af2a9c0a52ef8bfd88bcb66aaf07e}} 
 \index{GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}!TakeChargeOfResult@{TakeChargeOfResult}}
 \index{TakeChargeOfResult@{TakeChargeOfResult}!GpgFrontend::GpgVerifyResultAnalyse@{GpgFrontend::GpgVerifyResultAnalyse}}

@@ -128,19 +128,22 @@ $(document).ready(function(){initNavTree('KeyPairOperaTab_8h_source.html',''); i
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> slot_set_owner_trust_level();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                           </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  QMenu* key_server_opera_menu_{};         </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  QMenu* secret_key_export_opera_menu_{};  </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">void</span> slot_import_revoke_cert();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                    </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  QMenu* key_server_opera_menu_{};  </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  QMenu* rev_cert_opera_menu_{};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  QMenu* secret_key_export_opera_menu_{};  </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:40</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html">GpgFrontend::UI::KeyPairOperaTab</a></div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.h:38</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a384f4250e58110da58c0e6996b42a8ab"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key</a></div><div class="ttdeci">void slot_export_private_key()</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:254</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a4dcec352e412afe5c5491f941495090f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">GpgFrontend::UI::KeyPairOperaTab::CreateOperaMenu</a></div><div class="ttdeci">void CreateOperaMenu()</div><div class="ttdoc">Create a Opera Menu object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:135</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a384f4250e58110da58c0e6996b42a8ab"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a384f4250e58110da58c0e6996b42a8ab">GpgFrontend::UI::KeyPairOperaTab::slot_export_private_key</a></div><div class="ttdeci">void slot_export_private_key()</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:268</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_a4dcec352e412afe5c5491f941495090f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">GpgFrontend::UI::KeyPairOperaTab::CreateOperaMenu</a></div><div class="ttdeci">void CreateOperaMenu()</div><div class="ttdoc">Create a Opera Menu object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:134</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyPairOperaTab_html_afdfa89db24ac6c3a073e029882a4f2e8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#afdfa89db24ac6c3a073e029882a4f2e8">GpgFrontend::UI::KeyPairOperaTab::KeyPairOperaTab</a></div><div class="ttdeci">KeyPairOperaTab(const QString &amp;key_id, QWidget *parent)</div><div class="ttdoc">Construct a new Key Pair Opera Tab object.</div><div class="ttdef"><b>Definition:</b> KeyPairOperaTab.cpp:47</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

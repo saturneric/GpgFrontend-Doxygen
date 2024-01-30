@@ -82,7 +82,7 @@ var namespaceGpgFrontend_1_1UI =
     [ "FindTopMostWindow", "namespaceGpgFrontend_1_1UI.html#ae9881d62765f780fc58a8397f7382b96", null ],
     [ "import_unknown_key_from_keyserver", "namespaceGpgFrontend_1_1UI.html#a9ab218dde057182cb4911c4792acd925", null ],
     [ "InitGpgFrontendUI", "namespaceGpgFrontend_1_1UI.html#ab0311557c1d7bde9c56cbca85fefa6ad", null ],
-    [ "InitLocale", "namespaceGpgFrontend_1_1UI.html#a0d55f868e5aeeddb2fa4b8f7002ca38e", null ],
+    [ "InitUITranslations", "namespaceGpgFrontend_1_1UI.html#af70783922ff1de1800683874eb3aa3ce", null ],
     [ "PreInitGpgFrontendUI", "namespaceGpgFrontend_1_1UI.html#a9a7d9a69168c833186f6a7b1accdd050", null ],
     [ "process_operation", "namespaceGpgFrontend_1_1UI.html#a288897c6062a7820a3a1c5faba7cfeac", null ],
     [ "process_result_analyse", "namespaceGpgFrontend_1_1UI.html#abd3c7c636954390d52150b4e6d38e1b3", null ],

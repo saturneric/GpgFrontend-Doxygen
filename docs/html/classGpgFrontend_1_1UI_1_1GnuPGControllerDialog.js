@@ -11,6 +11,8 @@ var classGpgFrontend_1_1UI_1_1GnuPGControllerDialog =
     [ "slot_update_custom_gnupg_install_path_label", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a917cf89e7920c1c5d7d8070b53bd49fc", null ],
     [ "slot_update_custom_key_database_path_label", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a626c30712552f1c7fdf69d1d13d7b303", null ],
     [ "SlotAccept", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#af97fbd4ee0b57a20cc9a97c7e877d520", null ],
+    [ "custom_gnupg_path_", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a8950c4389f4bbc4a3e62d769d6d14dc4", null ],
+    [ "custom_key_database_path_", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a6040ef897e3fd82d4cec3c6802a5aa6a", null ],
     [ "restart_needed_", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#acd2918a181aa9c8c59e5d789ce34a92a", null ],
     [ "ui_", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#afda750c1511434cb0d3162d9bd1ab78f", null ]
 ];

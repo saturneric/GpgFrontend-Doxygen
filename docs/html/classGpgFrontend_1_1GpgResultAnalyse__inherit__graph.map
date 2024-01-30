@@ -1,8 +1,8 @@
 <map id="GpgFrontend::GpgResultAnalyse" name="GpgFrontend::GpgResultAnalyse">
 <area shape="rect" id="node1" title=" " alt="" coords="381,131,613,325"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgDecryptResultAnalyse.html" title=" " alt="" coords="5,388,236,524"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1GpgEncryptResultAnalyse.html" title=" " alt="" coords="261,395,490,517"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1GpgSignResultAnalyse.html" title=" " alt="" coords="514,395,722,517"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1GpgVerifyResultAnalyse.html" title=" " alt="" coords="747,373,964,539"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1GpgDecryptResultAnalyse.html" title=" " alt="" coords="5,403,236,539"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1GpgEncryptResultAnalyse.html" title=" " alt="" coords="261,410,490,531"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1GpgSignResultAnalyse.html" title=" " alt="" coords="514,410,722,531"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1GpgVerifyResultAnalyse.html" title=" " alt="" coords="747,373,964,568"/>
 <area shape="rect" id="node2" title=" " alt="" coords="459,5,534,83"/>
 </map>

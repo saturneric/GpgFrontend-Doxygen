@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1UI_1_1FilePage.htm
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1UI_1_1FilePage-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,7 +99,7 @@ Inheritance diagram for GpgFrontend::UI::FilePage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FilePage__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FilePage_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FilePage_inherit__map" id="aGpgFrontend_1_1UI_1_1FilePage_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,195,325"/>
+<area shape="rect" title=" " alt="" coords="5,131,195,355"/>
 <area shape="rect" title=" " alt="" coords="61,5,139,83"/>
 </map>
 </div>
@@ -107,11 +108,11 @@ Collaboration diagram for GpgFrontend::UI::FilePage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FilePage__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FilePage_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FilePage_coll__map" id="aGpgFrontend_1_1UI_1_1FilePage_coll__map">
-<area shape="rect" title=" " alt="" coords="138,997,327,1163"/>
-<area shape="rect" title=" " alt="" coords="5,571,84,649"/>
-<area shape="rect" href="classGpgFrontend_1_1UI_1_1FileTreeView.html" title=" " alt="" coords="109,285,357,935"/>
+<area shape="rect" title=" " alt="" coords="138,1027,327,1221"/>
+<area shape="rect" title=" " alt="" coords="5,586,84,663"/>
+<area shape="rect" href="classGpgFrontend_1_1UI_1_1FileTreeView.html" title=" " alt="" coords="109,285,357,964"/>
 <area shape="rect" title=" " alt="" coords="187,145,278,223"/>
-<area shape="rect" title=" " alt="" coords="380,564,528,656"/>
+<area shape="rect" title=" " alt="" coords="380,579,528,671"/>
 <area shape="rect" title=" " alt="" coords="375,145,533,223"/>
 <area shape="rect" title=" " alt="" coords="435,5,473,83"/>
 </map>
@@ -125,10 +126,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotGoPath</b> ()</td
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:aec462d16a2097024a4ced24012b905a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#aec462d16a2097024a4ced24012b905a7">SignalPathChanged</a> (const QString &amp;path)</td></tr>
-<tr class="separator:aec462d16a2097024a4ced24012b905a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301c5c7747ad251b14c490d58b5d678f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#a301c5c7747ad251b14c490d58b5d678f">SignalRefreshInfoBoard</a> (const QString &amp;text, <a class="el" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a> verify_label_status)</td></tr>
-<tr class="separator:a301c5c7747ad251b14c490d58b5d678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4462f25386ff65594ab0de771cb45c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#af4462f25386ff65594ab0de771cb45c5">SignalPathChanged</a> (const QString &amp;)</td></tr>
+<tr class="separator:af4462f25386ff65594ab0de771cb45c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c24032167f81c86770c216c3831da57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#a8c24032167f81c86770c216c3831da57">SignalRefreshInfoBoard</a> (const QString &amp;, <a class="el" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a>)</td></tr>
+<tr class="separator:a8c24032167f81c86770c216c3831da57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac008703950ffa192755e006638b693f4"><td class="memItemLeft" align="right" valign="top"><a id="ac008703950ffa192755e006638b693f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalCurrentTabChanged</b> ()</td></tr>
+<tr class="separator:ac008703950ffa192755e006638b693f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadebdebea3d4d8ced7aacc17b617627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#adadebdebea3d4d8ced7aacc17b617627">SignalMainWindowlUpdateBasicalOperaMenu</a> (unsigned int)</td></tr>
+<tr class="separator:adadebdebea3d4d8ced7aacc17b617627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -143,6 +149,12 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aea388ad7876e287f71e93085e6715495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495">keyPressEvent</a> (QKeyEvent *event) override</td></tr>
 <tr class="separator:aea388ad7876e287f71e93085e6715495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:ac9d67b61abb9d4d013a73ad271c02c55"><td class="memItemLeft" align="right" valign="top"><a id="ac9d67b61abb9d4d013a73ad271c02c55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_main_basical_opera_menu</b> (const QString &amp;)</td></tr>
+<tr class="separator:ac9d67b61abb9d4d013a73ad271c02c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -265,8 +277,40 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>option_popup_menu_
 
 </div>
 </div>
-<a id="aec462d16a2097024a4ced24012b905a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec462d16a2097024a4ced24012b905a7">&#9670;&nbsp;</a></span>SignalPathChanged</h2>
+<a id="adadebdebea3d4d8ced7aacc17b617627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adadebdebea3d4d8ced7aacc17b617627">&#9670;&nbsp;</a></span>SignalMainWindowlUpdateBasicalOperaMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::UI::FilePage::SignalMainWindowlUpdateBasicalOperaMenu </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4462f25386ff65594ab0de771cb45c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4462f25386ff65594ab0de771cb45c5">&#9670;&nbsp;</a></span>SignalPathChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +322,7 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>option_popup_menu_
           <td class="memname">void GpgFrontend::UI::FilePage::SignalPathChanged </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -297,8 +341,8 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>option_popup_menu_
 
 </div>
 </div>
-<a id="a301c5c7747ad251b14c490d58b5d678f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a301c5c7747ad251b14c490d58b5d678f">&#9670;&nbsp;</a></span>SignalRefreshInfoBoard</h2>
+<a id="a8c24032167f81c86770c216c3831da57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c24032167f81c86770c216c3831da57">&#9670;&nbsp;</a></span>SignalRefreshInfoBoard</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,13 +354,13 @@ QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>option_popup_menu_
           <td class="memname">void GpgFrontend::UI::FilePage::SignalRefreshInfoBoard </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>text</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a>&#160;</td>
-          <td class="paramname"><em>verify_label_status</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>

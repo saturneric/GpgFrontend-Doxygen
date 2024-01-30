@@ -99,7 +99,7 @@ Inheritance diagram for GpgFrontend::UI::GnuPGControllerDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_inherit__map" id="aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,447,248,759"/>
+<area shape="rect" title=" " alt="" coords="5,447,248,803"/>
 <area shape="rect" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,131,248,399"/>
 <area shape="rect" title=" " alt="" coords="89,5,164,83"/>
 </map>
@@ -109,7 +109,7 @@ Collaboration diagram for GpgFrontend::UI::GnuPGControllerDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_coll__map" id="aGpgFrontend_1_1UI_1_1GnuPGControllerDialog_coll__map">
-<area shape="rect" title=" " alt="" coords="125,616,368,913"/>
+<area shape="rect" title=" " alt="" coords="125,616,368,957"/>
 <area shape="rect" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,285,248,553"/>
 <area shape="rect" title=" " alt="" coords="89,145,164,223"/>
 <area shape="rect" title=" " alt="" coords="272,373,467,465"/>
@@ -174,6 +174,12 @@ std::shared_ptr&lt; Ui_GnuPGControllerDialog &gt;&#160;</td><td class="memItemRi
 <tr class="memitem:acd2918a181aa9c8c59e5d789ce34a92a"><td class="memItemLeft" align="right" valign="top"><a id="acd2918a181aa9c8c59e5d789ce34a92a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>restart_needed_</b> {0}</td></tr>
 <tr class="separator:acd2918a181aa9c8c59e5d789ce34a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6040ef897e3fd82d4cec3c6802a5aa6a"><td class="memItemLeft" align="right" valign="top"><a id="a6040ef897e3fd82d4cec3c6802a5aa6a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>custom_key_database_path_</b></td></tr>
+<tr class="separator:a6040ef897e3fd82d4cec3c6802a5aa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8950c4389f4bbc4a3e62d769d6d14dc4"><td class="memItemLeft" align="right" valign="top"><a id="a8950c4389f4bbc4a3e62d769d6d14dc4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>custom_gnupg_path_</b></td></tr>
+<tr class="separator:a8950c4389f4bbc4a3e62d769d6d14dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -224,7 +230,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowE
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#af677680609f32ed65f78a0641bf05389">check_custom_gnupg_key_database_path()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a6294f44348070707b4b6abcfd1b6509d">GpgFrontend::UI::UISignalStation::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">SignalRestartNeeded()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">slot_set_restart_needed()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1UISignalStation.html#a6294f44348070707b4b6abcfd1b6509d">GpgFrontend::UI::UISignalStation::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a35a707865fbcc95b6261e382a6ff171c">SignalRestartNeeded()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a2bb963a14733cf9b99736b6624c09d83">slot_set_restart_needed()</a>.</p>
 
 </div>
 </div>
@@ -255,8 +261,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowE
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
 false </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#add69685b9c83ed03ed24d36f2badd835">GnuPGControllerDialog()</a>.</p>
 
 </div>
 </div>

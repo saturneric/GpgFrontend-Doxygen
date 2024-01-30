@@ -109,32 +109,40 @@ $(document).ready(function(){initNavTree('FilePage_8h_source.html',''); initResi
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; signals:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FilePage.html#aec462d16a2097024a4ced24012b905a7">   74</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#aec462d16a2097024a4ced24012b905a7">SignalPathChanged</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FilePage.html#af4462f25386ff65594ab0de771cb45c5">   74</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#af4462f25386ff65594ab0de771cb45c5">SignalPathChanged</a>(<span class="keyword">const</span> QString&amp;);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FilePage.html#a301c5c7747ad251b14c490d58b5d678f">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#a301c5c7747ad251b14c490d58b5d678f">SignalRefreshInfoBoard</a>(<span class="keyword">const</span> QString&amp; text,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                              <a class="code" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a> verify_label_status);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495">keyPressEvent</a>(QKeyEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::shared_ptr&lt;Ui_FilePage&gt; ui_;  </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QCompleter* path_edit_completer_;        </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  QStringListModel* path_complete_model_;  </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  QMenu* popup_menu_{};         </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  QMenu* option_popup_menu_{};  </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  FileTreeView* file_tree_view_;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FilePage.html#a8c24032167f81c86770c216c3831da57">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#a8c24032167f81c86770c216c3831da57">SignalRefreshInfoBoard</a>(<span class="keyword">const</span> QString&amp;, <a class="code" href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">InfoBoardStatus</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> SignalCurrentTabChanged();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1FilePage.html#adadebdebea3d4d8ced7aacc17b617627">   95</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#adadebdebea3d4d8ced7aacc17b617627">SignalMainWindowlUpdateBasicalOperaMenu</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495">keyPressEvent</a>(QKeyEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::shared_ptr&lt;Ui_FilePage&gt; ui_;  </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  QCompleter* path_edit_completer_;        </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  QStringListModel* path_complete_model_;  </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  QMenu* popup_menu_{};         </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  QMenu* option_popup_menu_{};  </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  FileTreeView* file_tree_view_;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> update_main_basical_opera_menu(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html">GpgFrontend::UI::FilePage</a></div><div class="ttdef"><b>Definition:</b> FilePage.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_a301c5c7747ad251b14c490d58b5d678f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#a301c5c7747ad251b14c490d58b5d678f">GpgFrontend::UI::FilePage::SignalRefreshInfoBoard</a></div><div class="ttdeci">void SignalRefreshInfoBoard(const QString &amp;text, InfoBoardStatus verify_label_status)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_ad1211e2d7911f55ee5d35f685bc00075"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#ad1211e2d7911f55ee5d35f685bc00075">GpgFrontend::UI::FilePage::GetSelected</a></div><div class="ttdeci">auto GetSelected() const -&gt; QString</div><div class="ttdoc">Get the Selected object.</div><div class="ttdef"><b>Definition:</b> FilePage.cpp:151</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_aea388ad7876e287f71e93085e6715495"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495">GpgFrontend::UI::FilePage::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> FilePage.cpp:159</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_aec462d16a2097024a4ced24012b905a7"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#aec462d16a2097024a4ced24012b905a7">GpgFrontend::UI::FilePage::SignalPathChanged</a></div><div class="ttdeci">void SignalPathChanged(const QString &amp;path)</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_a8c24032167f81c86770c216c3831da57"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#a8c24032167f81c86770c216c3831da57">GpgFrontend::UI::FilePage::SignalRefreshInfoBoard</a></div><div class="ttdeci">void SignalRefreshInfoBoard(const QString &amp;, InfoBoardStatus)</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_ad1211e2d7911f55ee5d35f685bc00075"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#ad1211e2d7911f55ee5d35f685bc00075">GpgFrontend::UI::FilePage::GetSelected</a></div><div class="ttdeci">auto GetSelected() const -&gt; QString</div><div class="ttdoc">Get the Selected object.</div><div class="ttdef"><b>Definition:</b> FilePage.cpp:111</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_adadebdebea3d4d8ced7aacc17b617627"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#adadebdebea3d4d8ced7aacc17b617627">GpgFrontend::UI::FilePage::SignalMainWindowlUpdateBasicalOperaMenu</a></div><div class="ttdeci">void SignalMainWindowlUpdateBasicalOperaMenu(unsigned int)</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_aea388ad7876e287f71e93085e6715495"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495">GpgFrontend::UI::FilePage::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> FilePage.cpp:119</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_aed52684347a89faaad2cc7defa9dfc0f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#aed52684347a89faaad2cc7defa9dfc0f">GpgFrontend::UI::FilePage::FilePage</a></div><div class="ttdeci">FilePage(QWidget *parent, const QString &amp;)</div><div class="ttdoc">Construct a new File Page object.</div><div class="ttdef"><b>Definition:</b> FilePage.cpp:38</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FilePage_html_af4462f25386ff65594ab0de771cb45c5"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FilePage.html#af4462f25386ff65594ab0de771cb45c5">GpgFrontend::UI::FilePage::SignalPathChanged</a></div><div class="ttdeci">void SignalPathChanged(const QString &amp;)</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html_acbaebd342a317b1f067942e5144bb00d"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html#acbaebd342a317b1f067942e5144bb00d">GpgFrontend::UI::InfoBoardStatus</a></div><div class="ttdeci">InfoBoardStatus</div><div class="ttdef"><b>Definition:</b> InfoBoardWidget.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->

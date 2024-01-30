@@ -89,6 +89,8 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileTreeView_aad531bef81bf8264be
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a67fa58357348920cbb250df3fe70115c}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a67fa58357348920cbb250df3fe70115c}} 
 void {\bfseries paint\+Event} (QPaint\+Event $\ast$event) override
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1FileTreeView_a1c0a1f76a713872530980b14baaaec29}{mouse\+Press\+Event}} (QMouse\+Event $\ast$event) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
@@ -120,6 +122,9 @@ QString {\bfseries selected\+\_\+path\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a2060426b238894bae21c46ccc0f0c53e}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a2060426b238894bae21c46ccc0f0c53e}} 
 QMenu $\ast$ {\bfseries popup\+\_\+menu\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a55ab0ccc16e3a1696e3b1ee47e884544}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a55ab0ccc16e3a1696e3b1ee47e884544}} 
+QMenu $\ast$ {\bfseries new\+\_\+item\+\_\+action\+\_\+menu\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a46daeb183f5f127c7d7f91e1ae506e38}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a46daeb183f5f127c7d7f91e1ae506e38}} 
 QAction $\ast$ {\bfseries action\+\_\+open\+\_\+file\+\_\+}
@@ -156,7 +161,7 @@ QAction $\ast$ {\bfseries action\+\_\+compress\+\_\+files\+\_\+}
 Get the Current Path object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::filesystem\+::path 
+QString 
 \end{DoxyReturn}
 
 
@@ -196,7 +201,7 @@ Get the Path By Click Point object.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::filesystem\+::path 
+QString 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a697e1df6db810119d3d908d9e88a5212}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a697e1df6db810119d3d908d9e88a5212}} 
 \index{GpgFrontend::UI::FileTreeView@{GpgFrontend::UI::FileTreeView}!GetSelectedPath@{GetSelectedPath}}
@@ -209,13 +214,24 @@ std\+::filesystem\+::path
 Get the Selected Path object. 
 
 \begin{DoxyReturn}{Returns}
-std\+::filesystem\+::path 
+QString 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_aad531bef81bf8264be3a181efd6b473d}\label{classGpgFrontend_1_1UI_1_1FileTreeView_aad531bef81bf8264be3a181efd6b473d}} 
 \index{GpgFrontend::UI::FileTreeView@{GpgFrontend::UI::FileTreeView}!keyPressEvent@{keyPressEvent}}
 \index{keyPressEvent@{keyPressEvent}!GpgFrontend::UI::FileTreeView@{GpgFrontend::UI::FileTreeView}}
 \doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Tree\+View\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1FileTreeView_a1c0a1f76a713872530980b14baaaec29}\label{classGpgFrontend_1_1UI_1_1FileTreeView_a1c0a1f76a713872530980b14baaaec29}} 
+\index{GpgFrontend::UI::FileTreeView@{GpgFrontend::UI::FileTreeView}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!GpgFrontend::UI::FileTreeView@{GpgFrontend::UI::FileTreeView}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+File\+Tree\+View\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 \begin{DoxyParams}{Parameters}

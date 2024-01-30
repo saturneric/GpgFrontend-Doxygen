@@ -327,14 +327,17 @@ auto {\bfseries Search\+Gpgconf\+Path} (const QList$<$ QString $>$ \&candidate\+
 \mbox{\Hypertarget{namespaceGpgFrontend_ab40fa300f040973be4d89aff4497cb68}\label{namespaceGpgFrontend_ab40fa300f040973be4d89aff4497cb68}} 
 auto {\bfseries Search\+Key\+Database\+Path} (const QList$<$ QString $>$ \&candidate\+\_\+paths) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a721e24e02c2fcc79e8e9e39b187e8f48}\label{namespaceGpgFrontend_a721e24e02c2fcc79e8e9e39b187e8f48}} 
-auto {\bfseries Init\+Gpg\+ME} (const QString \&gnupg\+\_\+path) -\/$>$ bool
+\mbox{\Hypertarget{namespaceGpgFrontend_a5bc56ca0af26f82a20f044e4acb3fba5}\label{namespaceGpgFrontend_a5bc56ca0af26f82a20f044e4acb3fba5}} 
+auto {\bfseries Init\+Gpg\+ME} (const QString \&gpgconf\+\_\+path, const QString \&gnupg\+\_\+path) -\/$>$ bool
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a0781ebc8c308a3bade1174355f9a0ff2}\label{namespaceGpgFrontend_a0781ebc8c308a3bade1174355f9a0ff2}} 
 auto {\bfseries Get\+Gnu\+PGPath\+By\+Gpg\+Conf} (const QString \&gnupg\+\_\+install\+\_\+fs\+\_\+path) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_a72507743c74e569d433d7ac2a0a19099}\label{namespaceGpgFrontend_a72507743c74e569d433d7ac2a0a19099}} 
-auto {\bfseries Detect\+Gnu\+PGPath} () -\/$>$ QString
+\mbox{\Hypertarget{namespaceGpgFrontend_a820d6ec2f05b8dba4d72b4d73839219f}\label{namespaceGpgFrontend_a820d6ec2f05b8dba4d72b4d73839219f}} 
+auto {\bfseries Detect\+Gpg\+Conf\+Path} () -\/$>$ QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_aa2e45f703a9bd027960936304b35072e}\label{namespaceGpgFrontend_aa2e45f703a9bd027960936304b35072e}} 
+auto {\bfseries Detect\+Gnu\+PGPath} (QString gpgconf\+\_\+path) -\/$>$ QString
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}\label{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}} 
 void {\bfseries Init\+Gpg\+Frontend\+Core} (\mbox{\hyperlink{structGpgFrontend_1_1CoreInitArgs}{Core\+Init\+Args}})
@@ -488,6 +491,9 @@ void \mbox{\hyperlink{namespaceGpgFrontend_a2b70b63c5a2173e62168123f6a2ad3da}{In
 \begin{DoxyCompactList}\small\item\em init global PATH env \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespaceGpgFrontend_acd17bf45c5a18c762d8638fd643eaf41}{Init\+Global\+Basical\+Env}} (const GFCxt\+WPtr \&p\+\_\+ctx, bool gui\+\_\+mode)
 \item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a7ffad7330067c9ab03842c656fa199f4}\label{namespaceGpgFrontend_a7ffad7330067c9ab03842c656fa199f4}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_a7ffad7330067c9ab03842c656fa199f4}{Init\+Locale}} ()
+\begin{DoxyCompactList}\small\item\em setup the locale and load the translations \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespaceGpgFrontend_a3ad5659719d261ea3142c2baa60d40ff}{Shutdown\+Global\+Basical\+Env}} (const GFCxt\+WPtr \&p\+\_\+ctx)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
@@ -930,7 +936,7 @@ Referenced by Create\+Temp\+File\+And\+Write\+Data().
 \end{DoxyParams}
 
 
-References Init\+Global\+Path\+Env(), Init\+Logging\+System(), Gpg\+Frontend\+::\+Module\+::\+Load\+Gpg\+Frontend\+Modules(), and Set\+Default\+Log\+Level().
+References Init\+Global\+Path\+Env(), Init\+Locale(), Init\+Logging\+System(), Gpg\+Frontend\+::\+Module\+::\+Load\+Gpg\+Frontend\+Modules(), and Set\+Default\+Log\+Level().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_afb32e3d737c4bf2e6ad112a90fe7f1f5}\label{namespaceGpgFrontend_afb32e3d737c4bf2e6ad112a90fe7f1f5}} 
 \index{GpgFrontend@{GpgFrontend}!InitLoggingSystem@{InitLoggingSystem}}
@@ -945,7 +951,7 @@ References Init\+Global\+Path\+Env(), Init\+Logging\+System(), Gpg\+Frontend\+::
 \end{DoxyParams}
 
 
-References Register\+Sync\+Logger().
+References Register\+Async\+Logger(), and Register\+Sync\+Logger().
 
 
 
@@ -1007,6 +1013,10 @@ auto
 
 
 References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Logger\+Manager $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Init\+Logging\+System().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_ae910f7b068d7bd832bff6bfabed34859}\label{namespaceGpgFrontend_ae910f7b068d7bd832bff6bfabed34859}} 
 \index{GpgFrontend@{GpgFrontend}!RegisterSyncLogger@{RegisterSyncLogger}}
@@ -1257,7 +1267,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Archive\+Decryp
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Clear\+Gpg\+Password\+Cache(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_abca29d455373e3278486ed20c4a63b6e}\label{namespaceGpgFrontend_abca29d455373e3278486ed20c4a63b6e}} 
 \index{GpgFrontend@{GpgFrontend}!StartApplication@{StartApplication}}
@@ -1277,7 +1287,7 @@ int
 \end{DoxyReturn}
 internationalisation. loop to restart main window with changed translation when settings change.
 
-References Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), k\+Restart\+Code, Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+Module\+::\+Shutdown\+Gpg\+Frontend\+Modules().
+References Gpg\+Frontend\+::\+UI\+::\+Init\+Gpg\+Frontend\+UI(), Init\+Locale(), k\+Restart\+Code, Gpg\+Frontend\+::\+UI\+::\+Run\+Gpg\+Frontend\+UI(), and Gpg\+Frontend\+::\+Module\+::\+Shutdown\+Gpg\+Frontend\+Modules().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_a730cce728b43f040f6b0cb2823146a06}\label{namespaceGpgFrontend_a730cce728b43f040f6b0cb2823146a06}} 
 \index{GpgFrontend@{GpgFrontend}!TargetFilePreCheck@{TargetFilePreCheck}}
