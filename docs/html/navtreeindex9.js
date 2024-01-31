@@ -1,9 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"files.html":[3,0],
+"functions.html":[2,3,0],
+"functions.html":[2,3,0,0],
+"functions_b.html":[2,3,0,1],
+"functions_c.html":[2,3,0,2],
+"functions_d.html":[2,3,0,3],
 "functions_e.html":[2,3,0,4],
 "functions_f.html":[2,3,0,5],
-"functions_func.html":[2,3,1],
 "functions_func.html":[2,3,1,0],
+"functions_func.html":[2,3,1],
 "functions_func_c.html":[2,3,1,1],
 "functions_func_d.html":[2,3,1,2],
 "functions_func_e.html":[2,3,1,3],
@@ -45,8 +51,8 @@ var NAVTREEINDEX9 =
 "functions_z.html":[2,3,0,22],
 "functions_~.html":[2,3,0,23],
 "hierarchy.html":[2,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "init_8h_source.html":[3,0,0,8],
 "integrated_2gnupg__info__gathering__module_2GpgFrontendModuleExport_8h_source.html":[3,0,0,1,0,0,1],
 "integrated_2version__checking__module_2GpgFrontendModuleExport_8h_source.html":[3,0,0,1,0,1,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "namespaceGpgFrontend_1_1Module_1_1SDK.html#a6a1dff88f1da053117d0614c0f94e52c":[1,0,2,0,1,2],
 "namespaceGpgFrontend_1_1Module_1_1SDK.html#a77f3de0edd4f66611431addcdc69e4c1":[1,0,2,0,1,3],
 "namespaceGpgFrontend_1_1Module_1_1SDK.html#ab16a035830f089a32f873bb4c61b420f":[1,0,2,0,1,4],
-"namespaceGpgFrontend_1_1Module_1_1SDK.html#acee0c8da2a824cc7c5eef423fefa5840":[1,0,2,0,1,1],
-"namespaceGpgFrontend_1_1RawAPI.html":[1,0,2,1],
-"namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697":[1,0,2,1,2],
-"namespaceGpgFrontend_1_1RawAPI.html#a2e388ecafc7b859eda84b4e3c4e2576f":[1,0,2,1,0],
-"namespaceGpgFrontend_1_1RawAPI.html#aa2bc88cf78b8da893f1b5c7e2e8ccf42":[1,0,2,1,1],
-"namespaceGpgFrontend_1_1Test.html":[1,0,2,2],
-"namespaceGpgFrontend_1_1Test.html#a01e5fea23fce814851e959c4256de226":[1,0,2,2,26]
+"namespaceGpgFrontend_1_1Module_1_1SDK.html#acee0c8da2a824cc7c5eef423fefa5840":[1,0,2,0,1,1]
 };

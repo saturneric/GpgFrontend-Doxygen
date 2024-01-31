@@ -1,6 +1,6 @@
 <map id="GpgFrontend::UI::GeneralMainWindow" name="GpgFrontend::UI::GeneralMainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="157,131,351,355"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1KeyMgmt.html" title=" " alt="" coords="5,601,241,1030"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1MainWindow.html" title=" " alt="" coords="265,403,504,1228"/>
+<area shape="rect" id="node1" title=" " alt="" coords="133,131,375,443"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1KeyMgmt.html" title=" " alt="" coords="5,689,241,1118"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1MainWindow.html" title=" " alt="" coords="265,491,504,1316"/>
 <area shape="rect" id="node2" title=" " alt="" coords="196,5,312,83"/>
 </map>

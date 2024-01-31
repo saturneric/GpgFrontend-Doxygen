@@ -102,21 +102,30 @@ $(document).ready(function(){initNavTree('GeneralMainWindow_8h_source.html','');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#acc10569862d1575d9453d1c1aa539242">closeEvent</a>(QCloseEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  QSize icon_size_{};               </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">int</span> font_size_{};                 </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Qt::ToolButtonStyle icon_style_;  </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> slot_restore_settings() noexcept;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> slot_save_settings() noexcept;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> setPosCenterOfScreen();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> movePosition2CenterOfParent();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QSize icon_size_{};               </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> font_size_{};                 </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  Qt::ToolButtonStyle icon_style_;  </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QString name_;  </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QPoint pos_;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QSize size_;    </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> slot_restore_settings() noexcept;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> slot_save_settings() noexcept;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> update_rect_cache();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QString name_;  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QPoint pos_;    </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  QSize size_;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  QRect rect_;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  QRect screen_rect_;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QRect parent_rect_;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralMainWindow_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html">GpgFrontend::UI::GeneralMainWindow</a></div><div class="ttdef"><b>Definition:</b> GeneralMainWindow.h:38</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralMainWindow_html_a4e70182b431aaf983341527d636f5b67"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a4e70182b431aaf983341527d636f5b67">GpgFrontend::UI::GeneralMainWindow::GeneralMainWindow</a></div><div class="ttdeci">GeneralMainWindow(QString name, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GeneralMainWindow.cpp:39</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralMainWindow_html_acc10569862d1575d9453d1c1aa539242"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#acc10569862d1575d9453d1c1aa539242">GpgFrontend::UI::GeneralMainWindow::closeEvent</a></div><div class="ttdeci">void closeEvent(QCloseEvent *event) override</div><div class="ttdef"><b>Definition:</b> GeneralMainWindow.cpp:47</div></div>

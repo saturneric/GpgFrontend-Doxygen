@@ -24,7 +24,7 @@ var searchData=
   ['get_5frestart_5fneeded_205',['get_restart_needed',['../classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a67c4bc7a4e0d76c610267b86612ba5b6',1,'GpgFrontend::UI::GnuPGControllerDialog::get_restart_needed()'],['../classGpgFrontend_1_1UI_1_1SettingsDialog.html#a2ca2325a0dd0764cb6b5c2a7e35ba408',1,'GpgFrontend::UI::SettingsDialog::get_restart_needed()'],['../classGpgFrontend_1_1UI_1_1MainWindow.html#a5e95f62dac9fba1ead6ec69c145923db',1,'GpgFrontend::UI::MainWindow::get_restart_needed()']]],
   ['get_5fselected_5fsubkey_206',['get_selected_subkey',['../classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html#aa757320412a0a904bcbd2d6ee536c744',1,'GpgFrontend::UI::KeyPairSubkeyTab']]],
   ['get_5fsign_5fselected_207',['get_sign_selected',['../classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#ab090e19189ae4f03ab43f9a300b906f0',1,'GpgFrontend::UI::KeyPairUIDTab']]],
-  ['get_5fstatus_5fstring_208',['get_status_string',['../classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#ae682853c7eccfd3a6be43765f162f5a4',1,'GpgFrontend::UI::KeyImportDetailDialog']]],
+  ['get_5fstatus_5fstring_208',['get_status_string',['../classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a168bea15c50aa5c42601026124fb04f0',1,'GpgFrontend::UI::KeyImportDetailDialog']]],
   ['get_5fuid_5fchecked_209',['get_uid_checked',['../classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#ae8830624dd1e06f83cde4a1d9750aa85',1,'GpgFrontend::UI::KeyPairUIDTab']]],
   ['get_5fuid_5fselected_210',['get_uid_selected',['../classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#a88c454f97ba4bd140e23c8ff1054eff5',1,'GpgFrontend::UI::KeyPairUIDTab']]],
   ['getalgo_211',['GetAlgo',['../classGpgFrontend_1_1GenKeyInfo.html#aadafd2fa289a5b8e69e03c5b2deeacd6',1,'GpgFrontend::GenKeyInfo']]],

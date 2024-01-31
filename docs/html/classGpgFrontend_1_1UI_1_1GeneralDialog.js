@@ -2,7 +2,7 @@ var classGpgFrontend_1_1UI_1_1GeneralDialog =
 [
     [ "GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#ab300bc30252244b1b11cc24350147942", null ],
     [ "~GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a42043895f4b33acd1531c428ae4deaa8", null ],
-    [ "isRectRestored", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#ad2d6d4e919b339ee3d7643038d18be7e", null ],
+    [ "isRectRestored", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a488618b02dee0cbec129bfe5d7fe8981", null ],
     [ "movePosition2CenterOfParent", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#ad9d5be542aa422450a96dff00232ebe5", null ],
     [ "setPosCenterOfScreen", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#abad7cff23d2426820e320ecea47b479c", null ],
     [ "showEvent", "classGpgFrontend_1_1UI_1_1GeneralDialog.html#a570c723ba0cb5522f2b0c16ac28d0532", null ],
