@@ -1,9 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[1,0,0],
-"":[1,0,1],
-"":[1,0,3],
-"":[1,0,2,0,0],
 "AboutDialog_8h_source.html":[3,0,0,4,0,2,0],
 "AppearanceSO_8h_source.html":[3,0,0,4,3,0,0],
 "ArchiveFileOperator_8h_source.html":[3,0,0,0,0,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX0 =
 "classGpgFrontend_1_1DataObject_1_1Impl.html":[2,0,1,38,0],
 "classGpgFrontend_1_1DataObject_1_1Impl.html#a37b2d9e563d6b89a3cff2c07151f3f3b":[2,0,1,38,0,0],
 "classGpgFrontend_1_1DataObject_1_1Impl.html#a495a9d81102b1700e127d30c17fd1399":[2,0,1,38,0,1],
-"classGpgFrontend_1_1DataObject_1_1Impl.html#a4deafdee492ea0607f445cf6bbfb8264":[2,0,1,38,0,3]
+"classGpgFrontend_1_1DataObject_1_1Impl.html#a4deafdee492ea0607f445cf6bbfb8264":[2,0,1,38,0,3],
+"classGpgFrontend_1_1DataObject_1_1Impl.html#a52d00fb15bee9947a8a3062254f3ad15":[2,0,1,38,0,5],
+"classGpgFrontend_1_1DataObject_1_1Impl.html#a86ac3dcb4c1b90e606ac49505dc9e672":[2,0,1,38,0,4],
+"classGpgFrontend_1_1DataObject_1_1Impl.html#afddd49f6e41546d08fa7b01605e8e6b9":[2,0,1,38,0,2],
+"classGpgFrontend_1_1GFBuffer.html":[2,0,1,39]
 };

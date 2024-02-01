@@ -51,11 +51,15 @@ QString {\bfseries working\+\_\+path\+\_\+} = QDir\+::current\+Path()
 \item 
 QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}{app\+\_\+data\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Program Data Location. \end{DoxyCompactList}\item 
+QString {\bfseries app\+\_\+config\+\_\+path\+\_\+}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}} 
 QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}{app\+\_\+log\+\_\+path\+\_\+}} = \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}{app\+\_\+data\+\_\+path\+\_\+}} + \char`\"{}/logs\char`\"{}
 \begin{DoxyCompactList}\small\item\em Program Data Location. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}{app\+\_\+data\+\_\+objs\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Object storage path. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}{app\+\_\+config\+\_\+target\+\_\+path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em take effect only in portable mode \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ac640f8f0efdce03715ade7fd25fc9837}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ac640f8f0efdce03715ade7fd25fc9837}} 
 bool {\bfseries portable\+\_\+mode\+\_\+} = false
 \item 
@@ -118,6 +122,34 @@ References app\+\_\+log\+\_\+path\+\_\+.
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9d047076c437a46c09f1e683d4e99312}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9d047076c437a46c09f1e683d4e99312}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_config\_path\_@{app\_config\_path\_}}
+\index{app\_config\_path\_@{app\_config\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_config\_path\_}{app\_config\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+config\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= QString\{}
+\DoxyCodeLine{      QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_config\_target\_path\_@{app\_config\_target\_path\_}}
+\index{app\_config\_target\_path\_@{app\_config\_target\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_config\_target\_path\_}{app\_config\_target\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+config\+\_\+target\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      app\_config\_path\_ + \textcolor{stringliteral}{"{}/config.ini"{}}}
+
+\end{DoxyCode}
+
+
+take effect only in portable mode 
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}} 
 \index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_data\_objs\_path\_@{app\_data\_objs\_path\_}}
 \index{app\_data\_objs\_path\_@{app\_data\_objs\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}

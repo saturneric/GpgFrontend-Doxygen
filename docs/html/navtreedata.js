@@ -54,18 +54,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"classGpgFrontend_1_1DataObject_1_1Impl.html#a52d00fb15bee9947a8a3062254f3ad15",
-"classGpgFrontend_1_1GpgGenerateKeyResult.html",
-"classGpgFrontend_1_1GpgTOFUInfo.html#a55e9388dce5d0d695844cbbb03db0437",
-"classGpgFrontend_1_1PassphraseGenerator.html#a19ac4999bbd5fb7e6c42a4aef9606892",
-"classGpgFrontend_1_1UI_1_1FileTreeView.html#a4a02715e876d9a36b4bbdf505d8ad8a2",
-"classGpgFrontend_1_1UI_1_1KeyMgmt.html#aa10636ab18ccf63bcd3dfa60bdd9cbc7",
-"classGpgFrontend_1_1UI_1_1MainWindow.html#a14bb12fa25620e1a93bd23c9f7c84081",
-"classGpgFrontend_1_1UI_1_1TextEdit.html#a4a81e69f6dc74ea649ca9a2358342fd5",
-"files.html",
-"namespaceGpgFrontend_1_1RawAPI.html",
-"structGpgFrontend_1_1UI_1_1KeyTable.html#a0719f023069e0f6e29db20b6cd0cf5ea"
+"AboutDialog_8h_source.html",
+"classGpgFrontend_1_1GFBuffer.html#a11850e9664ed9e1f6333bca539ecfde5",
+"classGpgFrontend_1_1GpgGenerateKeyResult.html#a7b59cc89f2c9441783c3b87ddc2986d7",
+"classGpgFrontend_1_1GpgTOFUInfo.html#a7659c5c7483a7629be347d6a8f05fe37",
+"classGpgFrontend_1_1PassphraseGenerator.html#ae53436e5b7dc44e96afe014ccd544998",
+"classGpgFrontend_1_1UI_1_1FileTreeView.html#a5238316d0c0de7377302c62b7795fd5e",
+"classGpgFrontend_1_1UI_1_1KeyMgmt.html#ab06b65fbb2581eb1245d45273ed3885a",
+"classGpgFrontend_1_1UI_1_1MainWindow.html#a16ddebec90a4bd0d13baa9d972c3445f",
+"classGpgFrontend_1_1UI_1_1TextEdit.html#a57a46ab5595622ae0b7bceef7d56bd7c",
+"functions.html",
+"namespaceGpgFrontend_1_1RawAPI.html#a2e388ecafc7b859eda84b4e3c4e2576f",
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a5bce4bf0dc41ac05390a4f93da8b8985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
