@@ -17,7 +17,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Verify\+Key\+Detail\+Box\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=277pt]{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox__coll__graph}
+\includegraphics[width=227pt]{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -34,13 +34,13 @@ void {\bfseries slot\+\_\+import\+\_\+form\+\_\+key\+\_\+server} ()
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-QGrid\+Layout $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}{create\+\_\+key\+\_\+info\+\_\+grid}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&signature)
+QGrid\+Layout $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_ae5fee2f307d8f1848a4f687a591f83af}{create\+\_\+key\+\_\+info\+\_\+grid}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&signature)
 \begin{DoxyCompactList}\small\item\em Create a key info grid object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a36bf3306b8564b49da04eee1dc653675}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a36bf3306b8564b49da04eee1dc653675}} 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a36bf3306b8564b49da04eee1dc653675}{fpr\+\_\+}}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a7d4b0cfcf5af0d4f7b7e121651cdf96d}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a7d4b0cfcf5af0d4f7b7e121651cdf96d}} 
+QString \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a7d4b0cfcf5af0d4f7b7e121651cdf96d}{fpr\+\_\+}}
 \begin{DoxyCompactList}\small\item\em fingerprint of the key \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -64,16 +64,16 @@ Construct a new Verify Key Detail Box object.
 \end{DoxyParams}
 
 
-References create\+\_\+key\+\_\+info\+\_\+grid(), fpr\+\_\+, Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Fingerprint(), and Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Status().
+References create\+\_\+key\+\_\+info\+\_\+grid(), fpr\+\_\+, Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Fingerprint(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Status().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_a25b96a986a009d35847f94719ec327c1}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_ae5fee2f307d8f1848a4f687a591f83af}\label{classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox_ae5fee2f307d8f1848a4f687a591f83af}} 
 \index{GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}!create\_key\_info\_grid@{create\_key\_info\_grid}}
 \index{create\_key\_info\_grid@{create\_key\_info\_grid}!GpgFrontend::UI::VerifyKeyDetailBox@{GpgFrontend::UI::VerifyKeyDetailBox}}
 \doxysubsubsection{\texorpdfstring{create\_key\_info\_grid()}{create\_key\_info\_grid()}}
-{\footnotesize\ttfamily QGrid\+Layout $\ast$ Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Verify\+Key\+Detail\+Box\+::create\+\_\+key\+\_\+info\+\_\+grid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSignature}{Gpg\+Signature}} \&}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -89,7 +89,7 @@ QGrid\+Layout$\ast$
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::beautify\+\_\+fingerprint(), fpr\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Email(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Name(), Gpg\+Frontend\+::\+Gpg\+Signature\+::\+Get\+Summary(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Good().
+References Gpg\+Frontend\+::\+Beautify\+Fingerprint(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
 
 
 

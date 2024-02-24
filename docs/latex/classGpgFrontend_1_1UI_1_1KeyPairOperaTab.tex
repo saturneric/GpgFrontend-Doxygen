@@ -20,10 +20,16 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Pair\+Opera\+Tab\+:
 \includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1KeyPairOperaTab__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ac6b09219bbf830ce6b2d997aa2bb0c04}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ac6b09219bbf830ce6b2d997aa2bb0c04}} 
+void {\bfseries Signal\+Key\+Database\+Refresh} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_aad4e209d7b4eb0ac6623b2f12ce5ecc5}{Key\+Pair\+Opera\+Tab}} (const std\+::string \&key\+\_\+id, QWidget $\ast$parent)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_afdfa89db24ac6c3a073e029882a4f2e8}{Key\+Pair\+Opera\+Tab}} (const QString \&key\+\_\+id, QWidget $\ast$parent)
 \begin{DoxyCompactList}\small\item\em Construct a new Key Pair Opera Tab object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a4dcec352e412afe5c5491f941495090f}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a4dcec352e412afe5c5491f941495090f}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a4dcec352e412afe5c5491f941495090f}{Create\+Opera\+Menu}} ()
@@ -56,6 +62,12 @@ void {\bfseries slot\+\_\+gen\+\_\+revoke\+\_\+cert} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ab23cb5c7d25aabc0bed9ba530f3866ba}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ab23cb5c7d25aabc0bed9ba530f3866ba}} 
 void {\bfseries slot\+\_\+modify\+\_\+tofu\+\_\+policy} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ad83ec0e2803737488d368fd796a56ceb}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ad83ec0e2803737488d368fd796a56ceb}} 
+void {\bfseries slot\+\_\+set\+\_\+owner\+\_\+trust\+\_\+level} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a9a9b90abf767e3bb91ece29dcd4a7b0a}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a9a9b90abf767e3bb91ece29dcd4a7b0a}} 
+void {\bfseries slot\+\_\+import\+\_\+revoke\+\_\+cert} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -66,17 +78,20 @@ void {\bfseries slot\+\_\+modify\+\_\+tofu\+\_\+policy} ()
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ab5304882e1883244ff798ec06ff1c888}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ab5304882e1883244ff798ec06ff1c888}} 
 QMenu $\ast$ {\bfseries key\+\_\+server\+\_\+opera\+\_\+menu\+\_\+} \{\}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ae7a339d6db5e4e817ef76fdb58e05415}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_ae7a339d6db5e4e817ef76fdb58e05415}} 
+QMenu $\ast$ {\bfseries rev\+\_\+cert\+\_\+opera\+\_\+menu\+\_\+} \{\}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a9a28a055e8e549288e7dce49050493f5}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_a9a28a055e8e549288e7dce49050493f5}} 
 QMenu $\ast$ {\bfseries secret\+\_\+key\+\_\+export\+\_\+opera\+\_\+menu\+\_\+} \{\}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_aad4e209d7b4eb0ac6623b2f12ce5ecc5}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_aad4e209d7b4eb0ac6623b2f12ce5ecc5}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_afdfa89db24ac6c3a073e029882a4f2e8}\label{classGpgFrontend_1_1UI_1_1KeyPairOperaTab_afdfa89db24ac6c3a073e029882a4f2e8}} 
 \index{GpgFrontend::UI::KeyPairOperaTab@{GpgFrontend::UI::KeyPairOperaTab}!KeyPairOperaTab@{KeyPairOperaTab}}
 \index{KeyPairOperaTab@{KeyPairOperaTab}!GpgFrontend::UI::KeyPairOperaTab@{GpgFrontend::UI::KeyPairOperaTab}}
 \doxysubsubsection{\texorpdfstring{KeyPairOperaTab()}{KeyPairOperaTab()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key\+\_\+id,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab (\begin{DoxyParamCaption}\item[{const QString \&}]{key\+\_\+id,  }\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})}
 
 
 
@@ -91,7 +106,7 @@ Construct a new Key Pair Opera Tab object.
 \end{DoxyParams}
 
 
-References Create\+Opera\+Menu(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key().
+References Create\+Opera\+Menu(), Gpg\+Frontend\+::\+UI\+::\+UISignal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key().
 
 
 
@@ -104,7 +119,7 @@ References Create\+Opera\+Menu(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Mast
 
 Export the key to a file, which is chosen in a file dialog 
 
-References Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Email(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Name(), and Gpg\+Frontend\+::write\+\_\+buffer\+\_\+to\+\_\+file().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Email(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Import\+Exporter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Name(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box(), and Gpg\+Frontend\+::\+Write\+File\+GFBuffer().
 
 
 

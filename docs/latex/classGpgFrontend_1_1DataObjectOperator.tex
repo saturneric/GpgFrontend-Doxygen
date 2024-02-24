@@ -23,20 +23,21 @@ Collaboration diagram for Gpg\+Frontend\+::Data\+Object\+Operator\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3a8ae5c36fec01d0d5c3e5f9aed457a6}{Data\+Object\+Operator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3a8ae5c36fec01d0d5c3e5f9aed457a6}{Data\+Object\+Operator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator}{Data\+Object\+Operator}} constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a4bc3dbecd688c2ac1e01624a4d7b65b9}\label{classGpgFrontend_1_1DataObjectOperator_a4bc3dbecd688c2ac1e01624a4d7b65b9}} 
-std\+::string {\bfseries Save\+Data\+Obj} (const std\+::string \&\+\_\+key, const nlohmann\+::json \&value)
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a8adf6fd4aebbb9d59ea94ec65e83169d}\label{classGpgFrontend_1_1DataObjectOperator_a8adf6fd4aebbb9d59ea94ec65e83169d}} 
+auto {\bfseries Save\+Data\+Obj} (const QString \&\+\_\+key, const QJson\+Document \&value) -\/$>$ QString
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a6190acb6a4b9dc4350cb346fb4a03a74}\label{classGpgFrontend_1_1DataObjectOperator_a6190acb6a4b9dc4350cb346fb4a03a74}} 
-std\+::optional$<$ nlohmann\+::json $>$ {\bfseries Get\+Data\+Object} (const std\+::string \&\+\_\+key)
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a2b6294ca734934dd9ec17ba56b2c8d6f}\label{classGpgFrontend_1_1DataObjectOperator_a2b6294ca734934dd9ec17ba56b2c8d6f}} 
+auto {\bfseries Get\+Data\+Object} (const QString \&\+\_\+key) -\/$>$ std\+::optional$<$ QJson\+Document $>$
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a1f5c8469197b382a8c0974d64114dfcd}\label{classGpgFrontend_1_1DataObjectOperator_a1f5c8469197b382a8c0974d64114dfcd}} 
-std\+::optional$<$ nlohmann\+::json $>$ {\bfseries Get\+Data\+Object\+By\+Ref} (const std\+::string \&\+\_\+ref)
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a245833643dff6da7aef6a80a0a5207b8}\label{classGpgFrontend_1_1DataObjectOperator_a245833643dff6da7aef6a80a0a5207b8}} 
+auto {\bfseries Get\+Data\+Object\+By\+Ref} (const QString \&\+\_\+ref) -\/$>$ std\+::optional$<$ QJson\+Document $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c021ad55a81eb37cf}\label{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c021ad55a81eb37cf}} 
 void \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c021ad55a81eb37cf}{init\+\_\+app\+\_\+secure\+\_\+key}} ()
 \begin{DoxyCompactList}\small\item\em init the secure key of application data object \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
@@ -44,18 +45,12 @@ void \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c02
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation}{Global\+Setting\+Station}} \& \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3c195f8e4c30d95be14a6d43e9282601}{global\+\_\+setting\+\_\+station\+\_\+}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation}{Global\+Setting\+Station}}. \end{DoxyCompactList}\item 
-std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a6d38d25c91c33c48d083ec4de051108a}{app\+\_\+secure\+\_\+path\+\_\+}}
+QString \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a4e7673037b5c7eda5c334d50f8155150}{app\+\_\+secure\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Where sensitive information is stored. \end{DoxyCompactList}\item 
-std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a56c0c031cd327207260c73d1885dbdca}{app\+\_\+secure\+\_\+key\+\_\+path\+\_\+}}
+QString \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a9b13d6d68ebc584cb231e6f349a2a138}{app\+\_\+secure\+\_\+key\+\_\+path\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Where the key of data object is stored. \end{DoxyCompactList}\item 
-std\+::filesystem\+::path \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_ae6762d4f0f5ca2e83f7c1508cd25cc21}{app\+\_\+data\+\_\+objs\+\_\+path\+\_\+}}
+QString {\bfseries app\+\_\+data\+\_\+objs\+\_\+path\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a24c9cdbe9256e332ac93d6dc28c76b90}\label{classGpgFrontend_1_1DataObjectOperator_a24c9cdbe9256e332ac93d6dc28c76b90}} 
-std\+::random\+\_\+device \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a24c9cdbe9256e332ac93d6dc28c76b90}{rd\+\_\+}}
-\begin{DoxyCompactList}\small\item\em Random device. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a9fc92c7d497f2a2057776adfca40e8ca}\label{classGpgFrontend_1_1DataObjectOperator_a9fc92c7d497f2a2057776adfca40e8ca}} 
-std\+::mt19937 \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a9fc92c7d497f2a2057776adfca40e8ca}{mt\+\_\+}} = std\+::mt19937(\mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a24c9cdbe9256e332ac93d6dc28c76b90}{rd\+\_\+}}())
-\begin{DoxyCompactList}\small\item\em Mersenne twister. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_ae409c3562c3e08931daa17f5790c508b}\label{classGpgFrontend_1_1DataObjectOperator_ae409c3562c3e08931daa17f5790c508b}} 
 QByte\+Array \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_ae409c3562c3e08931daa17f5790c508b}{hash\+\_\+key\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Hash key. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -67,7 +62,7 @@ QByte\+Array \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_ae409c3562c
 \index{GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}!DataObjectOperator@{DataObjectOperator}}
 \index{DataObjectOperator@{DataObjectOperator}!GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}}
 \doxysubsubsection{\texorpdfstring{DataObjectOperator()}{DataObjectOperator()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Data\+Object\+Operator\+::\+Data\+Object\+Operator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Data\+Object\+Operator\+::\+Data\+Object\+Operator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -80,72 +75,34 @@ QByte\+Array \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_ae409c3562c
 \end{DoxyParams}
 
 
-References app\+\_\+data\+\_\+objs\+\_\+path\+\_\+, app\+\_\+secure\+\_\+key\+\_\+path\+\_\+, app\+\_\+secure\+\_\+path\+\_\+, hash\+\_\+key\+\_\+, init\+\_\+app\+\_\+secure\+\_\+key(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Read\+File\+Std().
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c021ad55a81eb37cf}\label{classGpgFrontend_1_1DataObjectOperator_a6b357780482f0e0c021ad55a81eb37cf}} 
-\index{GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}!init\_app\_secure\_key@{init\_app\_secure\_key}}
-\index{init\_app\_secure\_key@{init\_app\_secure\_key}!GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}}
-\doxysubsubsection{\texorpdfstring{init\_app\_secure\_key()}{init\_app\_secure\_key()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Data\+Object\+Operator\+::init\+\_\+app\+\_\+secure\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-init the secure key of application data object 
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
-
-References app\+\_\+secure\+\_\+key\+\_\+path\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Passphrase\+Generator $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+File\+Operator\+::\+Write\+File\+Std().
-
-
-
-Referenced by Data\+Object\+Operator().
+References app\+\_\+secure\+\_\+key\+\_\+path\+\_\+, app\+\_\+secure\+\_\+path\+\_\+, hash\+\_\+key\+\_\+, init\+\_\+app\+\_\+secure\+\_\+key(), and Gpg\+Frontend\+::\+Read\+File().
 
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_ae6762d4f0f5ca2e83f7c1508cd25cc21}\label{classGpgFrontend_1_1DataObjectOperator_ae6762d4f0f5ca2e83f7c1508cd25cc21}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a77a9a1e98c7d9c90d76a23e0fb3eefc4}\label{classGpgFrontend_1_1DataObjectOperator_a77a9a1e98c7d9c90d76a23e0fb3eefc4}} 
 \index{GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}!app\_data\_objs\_path\_@{app\_data\_objs\_path\_}}
 \index{app\_data\_objs\_path\_@{app\_data\_objs\_path\_}!GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}}
 \doxysubsubsection{\texorpdfstring{app\_data\_objs\_path\_}{app\_data\_objs\_path\_}}
-{\footnotesize\ttfamily std\+::filesystem\+::path Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+data\+\_\+objs\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+data\+\_\+objs\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3c195f8e4c30d95be14a6d43e9282601}{global\_setting\_station\_}}.GetAppDataPath() / \textcolor{stringliteral}{"{}data\_objs"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3c195f8e4c30d95be14a6d43e9282601}{global\_setting\_station\_}}.\mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a7da8fc60ba403d6addd8f671089faeaa}{GetAppDataPath}}() + \textcolor{stringliteral}{"{}/data\_objs"{}}}
 
 \end{DoxyCode}
-Where data object is stored 
-
-Referenced by Data\+Object\+Operator().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a56c0c031cd327207260c73d1885dbdca}\label{classGpgFrontend_1_1DataObjectOperator_a56c0c031cd327207260c73d1885dbdca}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a9b13d6d68ebc584cb231e6f349a2a138}\label{classGpgFrontend_1_1DataObjectOperator_a9b13d6d68ebc584cb231e6f349a2a138}} 
 \index{GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}!app\_secure\_key\_path\_@{app\_secure\_key\_path\_}}
 \index{app\_secure\_key\_path\_@{app\_secure\_key\_path\_}!GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}}
 \doxysubsubsection{\texorpdfstring{app\_secure\_key\_path\_}{app\_secure\_key\_path\_}}
-{\footnotesize\ttfamily std\+::filesystem\+::path Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+secure\+\_\+key\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+secure\+\_\+key\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a6d38d25c91c33c48d083ec4de051108a}{app\_secure\_path\_}} / \textcolor{stringliteral}{"{}app.key"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a4e7673037b5c7eda5c334d50f8155150}{app\_secure\_path\_}} +}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}/app.key"{}}}
 
 \end{DoxyCode}
 
@@ -156,17 +113,17 @@ Where the key of data object is stored.
 
 Referenced by Data\+Object\+Operator(), and init\+\_\+app\+\_\+secure\+\_\+key().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a6d38d25c91c33c48d083ec4de051108a}\label{classGpgFrontend_1_1DataObjectOperator_a6d38d25c91c33c48d083ec4de051108a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1DataObjectOperator_a4e7673037b5c7eda5c334d50f8155150}\label{classGpgFrontend_1_1DataObjectOperator_a4e7673037b5c7eda5c334d50f8155150}} 
 \index{GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}!app\_secure\_path\_@{app\_secure\_path\_}}
 \index{app\_secure\_path\_@{app\_secure\_path\_}!GpgFrontend::DataObjectOperator@{GpgFrontend::DataObjectOperator}}
 \doxysubsubsection{\texorpdfstring{app\_secure\_path\_}{app\_secure\_path\_}}
-{\footnotesize\ttfamily std\+::filesystem\+::path Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+secure\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Data\+Object\+Operator\+::app\+\_\+secure\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3c195f8e4c30d95be14a6d43e9282601}{global\_setting\_station\_}}.GetAppConfigPath() /}
-\DoxyCodeLine{      \textcolor{stringliteral}{"{}secure"{}}}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1DataObjectOperator_a3c195f8e4c30d95be14a6d43e9282601}{global\_setting\_station\_}}.\mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_a7da8fc60ba403d6addd8f671089faeaa}{GetAppDataPath}}() +}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}/secure"{}}}
 
 \end{DoxyCode}
 
@@ -186,7 +143,7 @@ Referenced by Data\+Object\+Operator().
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GlobalSettingStation::GetInstance}}()}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}{GlobalSettingStation::GetInstance}}()}
 
 \end{DoxyCode}
 

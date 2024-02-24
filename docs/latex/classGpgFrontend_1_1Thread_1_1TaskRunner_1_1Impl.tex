@@ -1,0 +1,51 @@
+\hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Thread\+::Task\+Runner\+::Impl Class Reference}
+\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl}\index{GpgFrontend::Thread::TaskRunner::Impl@{GpgFrontend::Thread::TaskRunner::Impl}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a4c6a6c9fa3ef73f118612d02d6e0fe48}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a4c6a6c9fa3ef73f118612d02d6e0fe48}} 
+void {\bfseries Post\+Task} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_abedf4c816cca2feb796cc4dba357404f}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_abedf4c816cca2feb796cc4dba357404f}} 
+auto {\bfseries Register\+Task} (const QString \&name, const Task\+::\+Task\+Runnable \&runnerable, const Task\+::\+Task\+Callback \&cb, Data\+Object\+Ptr params) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+::\+Task\+Handler}}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_afccfe7a5bba20b8dc0bce93669bc4c21}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_afccfe7a5bba20b8dc0bce93669bc4c21}} 
+void {\bfseries Post\+Task} (const QString \&name, const Task\+::\+Task\+Runnable \&runnerable, const Task\+::\+Task\+Callback \&cb, Data\+Object\+Ptr params)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a3a6eefb8cc6d7dbc8cdb3773a5beaf2c}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a3a6eefb8cc6d7dbc8cdb3773a5beaf2c}} 
+void {\bfseries Post\+Concurrent\+Task} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a9e3f002dbb246494c2efc1b48162af86}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a9e3f002dbb246494c2efc1b48162af86}} 
+void {\bfseries Post\+Schedule\+Task} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task, size\+\_\+t seconds)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a9122e9275eba66d0598cb21576e1b772}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_a9122e9275eba66d0598cb21576e1b772}} 
+QMap$<$ QString, \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$ $>$ {\bfseries pending\+\_\+tasks\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/thread/Task\+Runner.\+cpp\end{DoxyCompactItemize}

@@ -83,9 +83,9 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1GenKeyInfo.html','
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1GenKeyInfo-members.html">List of all members</a>  </div>
@@ -98,140 +98,132 @@ Collaboration diagram for GpgFrontend::GenKeyInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GenKeyInfo__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GenKeyInfo_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GenKeyInfo_coll__map" id="aGpgFrontend_1_1GenKeyInfo_coll__map">
-<area shape="rect" title=" " alt="" coords="5,345,291,804"/>
-<area shape="rect" title=" " alt="" coords="105,147,191,224"/>
-<area shape="rect" title=" " alt="" coords="79,5,217,97"/>
+<area shape="rect" title=" " alt="" coords="5,5,217,420"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abed4a1dc3cdf137fa01435edce2edd9d"><td class="memItemLeft" align="right" valign="top"><a id="abed4a1dc3cdf137fa01435edce2edd9d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyGenAlgo</b> = std::tuple&lt; QString, QString, QString &gt;</td></tr>
+<tr class="separator:abed4a1dc3cdf137fa01435edce2edd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40a42ad975499566de124296c19e6c55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a40a42ad975499566de124296c19e6c55">IsSubKey</a> () const</td></tr>
-<tr class="separator:a40a42ad975499566de124296c19e6c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa8401da6425bf3b5fe63d897a33b69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#acfa8401da6425bf3b5fe63d897a33b69">GenKeyInfo</a> (bool m_is_sub_key=false)</td></tr>
+<tr class="memdesc:acfa8401da6425bf3b5fe63d897a33b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Gen Key Info object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#acfa8401da6425bf3b5fe63d897a33b69">More...</a><br /></td></tr>
+<tr class="separator:acfa8401da6425bf3b5fe63d897a33b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5018adac1ec215cc17dd7dabea39829d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a5018adac1ec215cc17dd7dabea39829d">IsSubKey</a> () const -&gt; bool</td></tr>
+<tr class="separator:a5018adac1ec215cc17dd7dabea39829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9f7742b739e1db60bd50489690dec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#acd9f7742b739e1db60bd50489690dec1">SetIsSubKey</a> (bool m_sub_key)</td></tr>
 <tr class="memdesc:acd9f7742b739e1db60bd50489690dec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Is Sub Key object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#acd9f7742b739e1db60bd50489690dec1">More...</a><br /></td></tr>
 <tr class="separator:acd9f7742b739e1db60bd50489690dec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee4a0659e76376d9bfc527c334392e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a4ee4a0659e76376d9bfc527c334392e1">GetUserid</a> () const</td></tr>
-<tr class="memdesc:a4ee4a0659e76376d9bfc527c334392e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Userid object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a4ee4a0659e76376d9bfc527c334392e1">More...</a><br /></td></tr>
-<tr class="separator:a4ee4a0659e76376d9bfc527c334392e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ebc487e0e64c325f65474c812615f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a65ebc487e0e64c325f65474c812615f7">SetName</a> (const std::string &amp;m_name)</td></tr>
-<tr class="memdesc:a65ebc487e0e64c325f65474c812615f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Name object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a65ebc487e0e64c325f65474c812615f7">More...</a><br /></td></tr>
-<tr class="separator:a65ebc487e0e64c325f65474c812615f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656c81d56f77350184f9a94db1a3ce05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a656c81d56f77350184f9a94db1a3ce05">SetEmail</a> (const std::string &amp;m_email)</td></tr>
-<tr class="memdesc:a656c81d56f77350184f9a94db1a3ce05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Email object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a656c81d56f77350184f9a94db1a3ce05">More...</a><br /></td></tr>
-<tr class="separator:a656c81d56f77350184f9a94db1a3ce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947886456f5699241b1c1b9332e4b29e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a947886456f5699241b1c1b9332e4b29e">SetComment</a> (const std::string &amp;m_comment)</td></tr>
-<tr class="memdesc:a947886456f5699241b1c1b9332e4b29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Comment object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a947886456f5699241b1c1b9332e4b29e">More...</a><br /></td></tr>
-<tr class="separator:a947886456f5699241b1c1b9332e4b29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb3e1366dca0288bdc42123e55d77335"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#abb3e1366dca0288bdc42123e55d77335">GetName</a> () const</td></tr>
-<tr class="memdesc:abb3e1366dca0288bdc42123e55d77335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Name object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#abb3e1366dca0288bdc42123e55d77335">More...</a><br /></td></tr>
-<tr class="separator:abb3e1366dca0288bdc42123e55d77335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76721be08c18907762ba6f6ccc4afc8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a76721be08c18907762ba6f6ccc4afc8a">GetEmail</a> () const</td></tr>
-<tr class="memdesc:a76721be08c18907762ba6f6ccc4afc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Email object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a76721be08c18907762ba6f6ccc4afc8a">More...</a><br /></td></tr>
-<tr class="separator:a76721be08c18907762ba6f6ccc4afc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9f9775fd6363fba372bd0bcc2532892"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ab9f9775fd6363fba372bd0bcc2532892">GetComment</a> () const</td></tr>
-<tr class="memdesc:ab9f9775fd6363fba372bd0bcc2532892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Comment object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ab9f9775fd6363fba372bd0bcc2532892">More...</a><br /></td></tr>
-<tr class="separator:ab9f9775fd6363fba372bd0bcc2532892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a65ba347156373b6cf98eb8e851d28d"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6a65ba347156373b6cf98eb8e851d28d">GetAlgo</a> () const</td></tr>
-<tr class="memdesc:a6a65ba347156373b6cf98eb8e851d28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a6a65ba347156373b6cf98eb8e851d28d">More...</a><br /></td></tr>
-<tr class="separator:a6a65ba347156373b6cf98eb8e851d28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd9c4f3e75f989810988e0bc81d401f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo</a> (const GpgFrontend::GenKeyInfo::KeyGenAlgo &amp;m_algo)</td></tr>
-<tr class="memdesc:adcd9c4f3e75f989810988e0bc81d401f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">More...</a><br /></td></tr>
-<tr class="separator:adcd9c4f3e75f989810988e0bc81d401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bda4b4161d805582869ec0e56ade07c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a0bda4b4161d805582869ec0e56ade07c">GetKeySizeStr</a> () const</td></tr>
-<tr class="memdesc:a0bda4b4161d805582869ec0e56ade07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Key Size Str object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a0bda4b4161d805582869ec0e56ade07c">More...</a><br /></td></tr>
-<tr class="separator:a0bda4b4161d805582869ec0e56ade07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4927a9091fa2b2f68f6b60ce78ab2fe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a4927a9091fa2b2f68f6b60ce78ab2fe9">GetKeyLength</a> () const</td></tr>
-<tr class="memdesc:a4927a9091fa2b2f68f6b60ce78ab2fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a4927a9091fa2b2f68f6b60ce78ab2fe9">More...</a><br /></td></tr>
-<tr class="separator:a4927a9091fa2b2f68f6b60ce78ab2fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225c683da9766afd8fd7e733e9f5fdd4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a225c683da9766afd8fd7e733e9f5fdd4">GetUserid</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:a225c683da9766afd8fd7e733e9f5fdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Userid object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a225c683da9766afd8fd7e733e9f5fdd4">More...</a><br /></td></tr>
+<tr class="separator:a225c683da9766afd8fd7e733e9f5fdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f80b74f6ed3183063a46f2cd3bb9172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a8f80b74f6ed3183063a46f2cd3bb9172">SetName</a> (const QString &amp;m_name)</td></tr>
+<tr class="memdesc:a8f80b74f6ed3183063a46f2cd3bb9172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Name object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a8f80b74f6ed3183063a46f2cd3bb9172">More...</a><br /></td></tr>
+<tr class="separator:a8f80b74f6ed3183063a46f2cd3bb9172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cff6c278089c5e6a646592e87f046b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6cff6c278089c5e6a646592e87f046b5">SetEmail</a> (const QString &amp;m_email)</td></tr>
+<tr class="memdesc:a6cff6c278089c5e6a646592e87f046b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Email object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a6cff6c278089c5e6a646592e87f046b5">More...</a><br /></td></tr>
+<tr class="separator:a6cff6c278089c5e6a646592e87f046b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d498db9a8249db8b7e1742065a82c42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a0d498db9a8249db8b7e1742065a82c42">SetComment</a> (const QString &amp;m_comment)</td></tr>
+<tr class="memdesc:a0d498db9a8249db8b7e1742065a82c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Comment object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a0d498db9a8249db8b7e1742065a82c42">More...</a><br /></td></tr>
+<tr class="separator:a0d498db9a8249db8b7e1742065a82c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1277ad84cd4c2b3c6203c31581e8e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6c1277ad84cd4c2b3c6203c31581e8e4">GetName</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:a6c1277ad84cd4c2b3c6203c31581e8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Name object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a6c1277ad84cd4c2b3c6203c31581e8e4">More...</a><br /></td></tr>
+<tr class="separator:a6c1277ad84cd4c2b3c6203c31581e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87474dd334abdc17f39bf5cc04cc464"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#af87474dd334abdc17f39bf5cc04cc464">GetEmail</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:af87474dd334abdc17f39bf5cc04cc464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Email object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#af87474dd334abdc17f39bf5cc04cc464">More...</a><br /></td></tr>
+<tr class="separator:af87474dd334abdc17f39bf5cc04cc464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc1d76d54202eb5cf2cc27767ab238d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#abbc1d76d54202eb5cf2cc27767ab238d">GetComment</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:abbc1d76d54202eb5cf2cc27767ab238d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Comment object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#abbc1d76d54202eb5cf2cc27767ab238d">More...</a><br /></td></tr>
+<tr class="separator:abbc1d76d54202eb5cf2cc27767ab238d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadafd2fa289a5b8e69e03c5b2deeacd6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aadafd2fa289a5b8e69e03c5b2deeacd6">GetAlgo</a> () const -&gt; const QString &amp;</td></tr>
+<tr class="memdesc:aadafd2fa289a5b8e69e03c5b2deeacd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#aadafd2fa289a5b8e69e03c5b2deeacd6">More...</a><br /></td></tr>
+<tr class="separator:aadafd2fa289a5b8e69e03c5b2deeacd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438c9bd77727a93961109a8492673fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo</a> (const QString &amp;)</td></tr>
+<tr class="memdesc:a438c9bd77727a93961109a8492673fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">More...</a><br /></td></tr>
+<tr class="separator:a438c9bd77727a93961109a8492673fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d9942210df18e21e5f7feb127a4080"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aa0d9942210df18e21e5f7feb127a4080">GetKeySizeStr</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:aa0d9942210df18e21e5f7feb127a4080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Key Size Str object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#aa0d9942210df18e21e5f7feb127a4080">More...</a><br /></td></tr>
+<tr class="separator:aa0d9942210df18e21e5f7feb127a4080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd12578dde272902cfbf76368103f95b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afd12578dde272902cfbf76368103f95b">GetKeyLength</a> () const -&gt; int</td></tr>
+<tr class="memdesc:afd12578dde272902cfbf76368103f95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#afd12578dde272902cfbf76368103f95b">More...</a><br /></td></tr>
+<tr class="separator:afd12578dde272902cfbf76368103f95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae744395012e4dcb9734ad5a30aa8ed75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ae744395012e4dcb9734ad5a30aa8ed75">SetKeyLength</a> (int m_key_size)</td></tr>
 <tr class="memdesc:ae744395012e4dcb9734ad5a30aa8ed75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ae744395012e4dcb9734ad5a30aa8ed75">More...</a><br /></td></tr>
 <tr class="separator:ae744395012e4dcb9734ad5a30aa8ed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac629312630a78e32ee36ba0ff30bc9ff"><td class="memItemLeft" align="right" valign="top">const boost::posix_time::ptime &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac629312630a78e32ee36ba0ff30bc9ff">GetExpireTime</a> () const</td></tr>
-<tr class="memdesc:ac629312630a78e32ee36ba0ff30bc9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Expired object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ac629312630a78e32ee36ba0ff30bc9ff">More...</a><br /></td></tr>
-<tr class="separator:ac629312630a78e32ee36ba0ff30bc9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3bfeda7fc7c83dc8d48ee2b80780c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aa3bfeda7fc7c83dc8d48ee2b80780c3a">SetExpireTime</a> (const boost::posix_time::ptime &amp;m_expired)</td></tr>
-<tr class="memdesc:aa3bfeda7fc7c83dc8d48ee2b80780c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Expired object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#aa3bfeda7fc7c83dc8d48ee2b80780c3a">More...</a><br /></td></tr>
-<tr class="separator:aa3bfeda7fc7c83dc8d48ee2b80780c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef7697c91b5b5998088979e09332380"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aeef7697c91b5b5998088979e09332380">IsNonExpired</a> () const</td></tr>
-<tr class="separator:aeef7697c91b5b5998088979e09332380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba96c63d675a9bdd05926eaca64c268"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#abba96c63d675a9bdd05926eaca64c268">GetExpireTime</a> () const -&gt; const QDateTime &amp;</td></tr>
+<tr class="memdesc:abba96c63d675a9bdd05926eaca64c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Expired object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#abba96c63d675a9bdd05926eaca64c268">More...</a><br /></td></tr>
+<tr class="separator:abba96c63d675a9bdd05926eaca64c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8475c1f419a65055dd659d3b60d4e356"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a8475c1f419a65055dd659d3b60d4e356">SetExpireTime</a> (const QDateTime &amp;m_expired)</td></tr>
+<tr class="memdesc:a8475c1f419a65055dd659d3b60d4e356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Expired object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a8475c1f419a65055dd659d3b60d4e356">More...</a><br /></td></tr>
+<tr class="separator:a8475c1f419a65055dd659d3b60d4e356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812adab61edebf96bbba4a18c2b82a72"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a812adab61edebf96bbba4a18c2b82a72">IsNonExpired</a> () const -&gt; bool</td></tr>
+<tr class="separator:a812adab61edebf96bbba4a18c2b82a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea247381c21896f5371bb813ca665329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aea247381c21896f5371bb813ca665329">SetNonExpired</a> (bool m_non_expired)</td></tr>
 <tr class="memdesc:aea247381c21896f5371bb813ca665329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Non Expired object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#aea247381c21896f5371bb813ca665329">More...</a><br /></td></tr>
 <tr class="separator:aea247381c21896f5371bb813ca665329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848181796a99bec8d32dc5eac240ee01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a848181796a99bec8d32dc5eac240ee01">IsNoPassPhrase</a> () const</td></tr>
-<tr class="separator:a848181796a99bec8d32dc5eac240ee01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd1d385b95569e60526cbf15bdf03ec"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a2dd1d385b95569e60526cbf15bdf03ec">IsNoPassPhrase</a> () const -&gt; bool</td></tr>
+<tr class="separator:a2dd1d385b95569e60526cbf15bdf03ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864407216cbdbef9e7b35e6be694d3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a864407216cbdbef9e7b35e6be694d3ef">SetNonPassPhrase</a> (bool m_non_pass_phrase)</td></tr>
 <tr class="memdesc:a864407216cbdbef9e7b35e6be694d3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Non Pass Phrase object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a864407216cbdbef9e7b35e6be694d3ef">More...</a><br /></td></tr>
 <tr class="separator:a864407216cbdbef9e7b35e6be694d3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad972292c408cb83c08e739327795a5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ad972292c408cb83c08e739327795a5f0">IsAllowSigning</a> () const</td></tr>
-<tr class="separator:ad972292c408cb83c08e739327795a5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a79124a4571ff7f37c1c5e6c1a9415"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#af6a79124a4571ff7f37c1c5e6c1a9415">IsAllowNoPassPhrase</a> () const</td></tr>
-<tr class="separator:af6a79124a4571ff7f37c1c5e6c1a9415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc16a0f5b11c814a5fd2ec9198c88a99"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#abc16a0f5b11c814a5fd2ec9198c88a99">IsAllowSigning</a> () const -&gt; bool</td></tr>
+<tr class="separator:abc16a0f5b11c814a5fd2ec9198c88a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cc933fddc87f2a250b6686ceddf4ac"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#af3cc933fddc87f2a250b6686ceddf4ac">IsAllowNoPassPhrase</a> () const -&gt; bool</td></tr>
+<tr class="separator:af3cc933fddc87f2a250b6686ceddf4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a01518b24d40d95e187ef73f4dcd52a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a1a01518b24d40d95e187ef73f4dcd52a">SetAllowSigning</a> (bool m_allow_signing)</td></tr>
 <tr class="memdesc:a1a01518b24d40d95e187ef73f4dcd52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Allow Signing object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a1a01518b24d40d95e187ef73f4dcd52a">More...</a><br /></td></tr>
 <tr class="separator:a1a01518b24d40d95e187ef73f4dcd52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ed8a65243e5bc69403305752c2cdc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a28ed8a65243e5bc69403305752c2cdc9">IsAllowEncryption</a> () const</td></tr>
-<tr class="separator:a28ed8a65243e5bc69403305752c2cdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b69b9e3f889e9fc5ffe9ee7af2c365"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a75b69b9e3f889e9fc5ffe9ee7af2c365">IsAllowEncryption</a> () const -&gt; bool</td></tr>
+<tr class="separator:a75b69b9e3f889e9fc5ffe9ee7af2c365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965014232f6de22c6d33320231ca4454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a965014232f6de22c6d33320231ca4454">SetAllowEncryption</a> (bool m_allow_encryption)</td></tr>
 <tr class="memdesc:a965014232f6de22c6d33320231ca4454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Allow Encryption object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a965014232f6de22c6d33320231ca4454">More...</a><br /></td></tr>
 <tr class="separator:a965014232f6de22c6d33320231ca4454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47ceeb1ccfa8862843034e51b4d8be7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ad47ceeb1ccfa8862843034e51b4d8be7">IsAllowCertification</a> () const</td></tr>
-<tr class="separator:ad47ceeb1ccfa8862843034e51b4d8be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01bbb4af8da59317797d599b28abb31"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ae01bbb4af8da59317797d599b28abb31">IsAllowCertification</a> () const -&gt; bool</td></tr>
+<tr class="separator:ae01bbb4af8da59317797d599b28abb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f52f74566618c71a29bdc5e70fce2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac5f52f74566618c71a29bdc5e70fce2e">SetAllowCertification</a> (bool m_allow_certification)</td></tr>
 <tr class="memdesc:ac5f52f74566618c71a29bdc5e70fce2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Allow Certification object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ac5f52f74566618c71a29bdc5e70fce2e">More...</a><br /></td></tr>
 <tr class="separator:ac5f52f74566618c71a29bdc5e70fce2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabdf981c65a0efde1e8905441b9b9c87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aabdf981c65a0efde1e8905441b9b9c87">IsAllowAuthentication</a> () const</td></tr>
-<tr class="separator:aabdf981c65a0efde1e8905441b9b9c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73b6fe349eb4c2438fd0a0ae61b6c03"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aa73b6fe349eb4c2438fd0a0ae61b6c03">IsAllowAuthentication</a> () const -&gt; bool</td></tr>
+<tr class="separator:aa73b6fe349eb4c2438fd0a0ae61b6c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac51d251682ed1bc1090416ebfeba4de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aac51d251682ed1bc1090416ebfeba4de">SetAllowAuthentication</a> (bool m_allow_authentication)</td></tr>
 <tr class="memdesc:aac51d251682ed1bc1090416ebfeba4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Allow Authentication object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#aac51d251682ed1bc1090416ebfeba4de">More...</a><br /></td></tr>
 <tr class="separator:aac51d251682ed1bc1090416ebfeba4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890ee16ef6088570360a073a6b531c89"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a890ee16ef6088570360a073a6b531c89">GetPassPhrase</a> () const</td></tr>
-<tr class="memdesc:a890ee16ef6088570360a073a6b531c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Pass Phrase object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a890ee16ef6088570360a073a6b531c89">More...</a><br /></td></tr>
-<tr class="separator:a890ee16ef6088570360a073a6b531c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1760d4ead397f6096925290a38e1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afe1760d4ead397f6096925290a38e1a4">SetPassPhrase</a> (const std::string &amp;m_pass_phrase)</td></tr>
-<tr class="memdesc:afe1760d4ead397f6096925290a38e1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pass Phrase object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#afe1760d4ead397f6096925290a38e1a4">More...</a><br /></td></tr>
-<tr class="separator:afe1760d4ead397f6096925290a38e1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f95a8d26da79bcbe7d51e266879a94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a06f95a8d26da79bcbe7d51e266879a94">IsAllowChangeSigning</a> () const</td></tr>
-<tr class="separator:a06f95a8d26da79bcbe7d51e266879a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04a906300bea028c6fb6b1b2da1d149"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ad04a906300bea028c6fb6b1b2da1d149">IsAllowChangeEncryption</a> () const</td></tr>
-<tr class="separator:ad04a906300bea028c6fb6b1b2da1d149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbcddd0fa0a273f9b77fe1297633dabc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adbcddd0fa0a273f9b77fe1297633dabc">IsAllowChangeCertification</a> () const</td></tr>
-<tr class="separator:adbcddd0fa0a273f9b77fe1297633dabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf8ab7c6564a2836837a537111d6f5b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aaf8ab7c6564a2836837a537111d6f5b4">IsAllowChangeAuthentication</a> () const</td></tr>
-<tr class="separator:aaf8ab7c6564a2836837a537111d6f5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae461a553176ad1ab0c1121ea6de6c8c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ae461a553176ad1ab0c1121ea6de6c8c2">GetSuggestMaxKeySize</a> () const</td></tr>
-<tr class="memdesc:ae461a553176ad1ab0c1121ea6de6c8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Suggest Max Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ae461a553176ad1ab0c1121ea6de6c8c2">More...</a><br /></td></tr>
-<tr class="separator:ae461a553176ad1ab0c1121ea6de6c8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1612421148b86919b7130ed148ca51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a0b1612421148b86919b7130ed148ca51">GetSuggestMinKeySize</a> () const</td></tr>
-<tr class="memdesc:a0b1612421148b86919b7130ed148ca51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Suggest Min Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a0b1612421148b86919b7130ed148ca51">More...</a><br /></td></tr>
-<tr class="separator:a0b1612421148b86919b7130ed148ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac211a7a615805ae97ff284b46abfeab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac211a7a615805ae97ff284b46abfeab7">GetSizeChangeStep</a> () const</td></tr>
-<tr class="memdesc:ac211a7a615805ae97ff284b46abfeab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Size Change Step object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ac211a7a615805ae97ff284b46abfeab7">More...</a><br /></td></tr>
-<tr class="separator:ac211a7a615805ae97ff284b46abfeab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34eca1662ba8d4645751f3ee66582b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a34eca1662ba8d4645751f3ee66582b04">GenKeyInfo</a> (bool m_is_sub_key=false, bool m_standalone=false)</td></tr>
-<tr class="memdesc:a34eca1662ba8d4645751f3ee66582b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Gen Key Info object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a34eca1662ba8d4645751f3ee66582b04">More...</a><br /></td></tr>
-<tr class="separator:a34eca1662ba8d4645751f3ee66582b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74ae13ad036fbb85405f401275d0566"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ab74ae13ad036fbb85405f401275d0566">GetPassPhrase</a> () const -&gt; const QString &amp;</td></tr>
+<tr class="memdesc:ab74ae13ad036fbb85405f401275d0566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Pass Phrase object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ab74ae13ad036fbb85405f401275d0566">More...</a><br /></td></tr>
+<tr class="separator:ab74ae13ad036fbb85405f401275d0566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0499b0e924ff9d63361b744ead83fc40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a0499b0e924ff9d63361b744ead83fc40">SetPassPhrase</a> (const QString &amp;m_pass_phrase)</td></tr>
+<tr class="memdesc:a0499b0e924ff9d63361b744ead83fc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pass Phrase object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a0499b0e924ff9d63361b744ead83fc40">More...</a><br /></td></tr>
+<tr class="separator:a0499b0e924ff9d63361b744ead83fc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aedcb38a9fb4ffe65d16bce61a610c4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a4aedcb38a9fb4ffe65d16bce61a610c4">IsAllowChangeSigning</a> () const -&gt; bool</td></tr>
+<tr class="separator:a4aedcb38a9fb4ffe65d16bce61a610c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d52ff47ecd7aca34fb4f5a613b922d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a81d52ff47ecd7aca34fb4f5a613b922d">IsAllowChangeEncryption</a> () const -&gt; bool</td></tr>
+<tr class="separator:a81d52ff47ecd7aca34fb4f5a613b922d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858ace5de6d4b8cd31fa6c68f33d0f92"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a858ace5de6d4b8cd31fa6c68f33d0f92">IsAllowChangeCertification</a> () const -&gt; bool</td></tr>
+<tr class="separator:a858ace5de6d4b8cd31fa6c68f33d0f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6635977ea47b1c2220aed48bc5c57d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6b6635977ea47b1c2220aed48bc5c57d">IsAllowChangeAuthentication</a> () const -&gt; bool</td></tr>
+<tr class="separator:a6b6635977ea47b1c2220aed48bc5c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72c8592d105d8394bcfa1bc6388d46e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#af72c8592d105d8394bcfa1bc6388d46e">GetSuggestMaxKeySize</a> () const -&gt; int</td></tr>
+<tr class="memdesc:af72c8592d105d8394bcfa1bc6388d46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Suggest Max Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#af72c8592d105d8394bcfa1bc6388d46e">More...</a><br /></td></tr>
+<tr class="separator:af72c8592d105d8394bcfa1bc6388d46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482933ddc06734993d80a90611a8ad5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a482933ddc06734993d80a90611a8ad5b">GetSuggestMinKeySize</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a482933ddc06734993d80a90611a8ad5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Suggest Min Key Size object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a482933ddc06734993d80a90611a8ad5b">More...</a><br /></td></tr>
+<tr class="separator:a482933ddc06734993d80a90611a8ad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c7ea176587bbd317a39938e9ecec59"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a33c7ea176587bbd317a39938e9ecec59">GetSizeChangeStep</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a33c7ea176587bbd317a39938e9ecec59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Size Change Step object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a33c7ea176587bbd317a39938e9ecec59">More...</a><br /></td></tr>
+<tr class="separator:a33c7ea176587bbd317a39938e9ecec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0dbb2d89b1e5f9b272679ba3f24314e"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; KeyGenAlgo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac0dbb2d89b1e5f9b272679ba3f24314e">GetSupportedKeyAlgo</a> ()</td></tr>
-<tr class="memdesc:ac0dbb2d89b1e5f9b272679ba3f24314e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Key Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#ac0dbb2d89b1e5f9b272679ba3f24314e">More...</a><br /></td></tr>
-<tr class="separator:ac0dbb2d89b1e5f9b272679ba3f24314e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168d6fe5252812f5984ba6d8046c7741"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; KeyGenAlgo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a168d6fe5252812f5984ba6d8046c7741">GetSupportedSubkeyAlgo</a> ()</td></tr>
-<tr class="memdesc:a168d6fe5252812f5984ba6d8046c7741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Subkey Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a168d6fe5252812f5984ba6d8046c7741">More...</a><br /></td></tr>
-<tr class="separator:a168d6fe5252812f5984ba6d8046c7741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8315b6612c64b3921b72df98ebcc74"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; KeyGenAlgo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afb8315b6612c64b3921b72df98ebcc74">GetSupportedKeyAlgoStandalone</a> ()</td></tr>
-<tr class="memdesc:afb8315b6612c64b3921b72df98ebcc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Key Algo Standalone object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#afb8315b6612c64b3921b72df98ebcc74">More...</a><br /></td></tr>
-<tr class="separator:afb8315b6612c64b3921b72df98ebcc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6819b0ca3ef7712b85ae320030cde023"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; KeyGenAlgo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6819b0ca3ef7712b85ae320030cde023">GetSupportedSubkeyAlgoStandalone</a> ()</td></tr>
-<tr class="memdesc:a6819b0ca3ef7712b85ae320030cde023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Subkey Algo Standalone object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a6819b0ca3ef7712b85ae320030cde023">More...</a><br /></td></tr>
-<tr class="separator:a6819b0ca3ef7712b85ae320030cde023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a7eda73ff0625a635f041365c21531c60"><td class="memItemLeft" align="right" valign="top"><a id="a7eda73ff0625a635f041365c21531c60"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyGenAlgo</b> = std::pair&lt; std::string, std::string &gt;</td></tr>
-<tr class="separator:a7eda73ff0625a635f041365c21531c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2229d217f44345a99ab3816ec5c0cfe8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a2229d217f44345a99ab3816ec5c0cfe8">GetSupportedKeyAlgo</a> () -&gt; const std::vector&lt; KeyGenAlgo &gt; &amp;</td></tr>
+<tr class="memdesc:a2229d217f44345a99ab3816ec5c0cfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Key Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a2229d217f44345a99ab3816ec5c0cfe8">More...</a><br /></td></tr>
+<tr class="separator:a2229d217f44345a99ab3816ec5c0cfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a68fbe5ef4534df51759cffb144bef"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a07a68fbe5ef4534df51759cffb144bef">GetSupportedSubkeyAlgo</a> () -&gt; const std::vector&lt; KeyGenAlgo &gt; &amp;</td></tr>
+<tr class="memdesc:a07a68fbe5ef4534df51759cffb144bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Supported Subkey Algo object.  <a href="classGpgFrontend_1_1GenKeyInfo.html#a07a68fbe5ef4534df51759cffb144bef">More...</a><br /></td></tr>
+<tr class="separator:a07a68fbe5ef4534df51759cffb144bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -241,29 +233,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_options</b> ()<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a54aa9ef123265ff945af6a4ec091fd90"><td class="memItemLeft" align="right" valign="top"><a id="a54aa9ef123265ff945af6a4ec091fd90"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>standalone_</b> = false</td></tr>
-<tr class="separator:a54aa9ef123265ff945af6a4ec091fd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97cbf3c5d6e30a6c85e8ca82b1ccfe3"><td class="memItemLeft" align="right" valign="top"><a id="ab97cbf3c5d6e30a6c85e8ca82b1ccfe3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>subkey_</b> = false</td></tr>
 <tr class="separator:ab97cbf3c5d6e30a6c85e8ca82b1ccfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742e5bcc903e8e01b69e568659fe3e20"><td class="memItemLeft" align="right" valign="top"><a id="a742e5bcc903e8e01b69e568659fe3e20"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
-<tr class="separator:a742e5bcc903e8e01b69e568659fe3e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8a1d4943b283a6c6042e4e0bba02a8"><td class="memItemLeft" align="right" valign="top"><a id="a3e8a1d4943b283a6c6042e4e0bba02a8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>email_</b></td></tr>
-<tr class="separator:a3e8a1d4943b283a6c6042e4e0bba02a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3885a3e81bdae51d324d4265403d664c"><td class="memItemLeft" align="right" valign="top"><a id="a3885a3e81bdae51d324d4265403d664c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>comment_</b></td></tr>
-<tr class="separator:a3885a3e81bdae51d324d4265403d664c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8fdbf7db3cb7e7a013fcf9c18cf069a"><td class="memItemLeft" align="right" valign="top"><a id="aa8fdbf7db3cb7e7a013fcf9c18cf069a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>algo_</b></td></tr>
-<tr class="separator:aa8fdbf7db3cb7e7a013fcf9c18cf069a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34cdb87a48a6814fab6d2bb9f4edb6f"><td class="memItemLeft" align="right" valign="top"><a id="af34cdb87a48a6814fab6d2bb9f4edb6f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
+<tr class="separator:af34cdb87a48a6814fab6d2bb9f4edb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e347c259758b6bdc88822944359295"><td class="memItemLeft" align="right" valign="top"><a id="a97e347c259758b6bdc88822944359295"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>email_</b></td></tr>
+<tr class="separator:a97e347c259758b6bdc88822944359295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab041224b8a17dfa237f4644f5b3a246e"><td class="memItemLeft" align="right" valign="top"><a id="ab041224b8a17dfa237f4644f5b3a246e"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>comment_</b></td></tr>
+<tr class="separator:ab041224b8a17dfa237f4644f5b3a246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4495089facdeee0e9335afa1f17e74a7"><td class="memItemLeft" align="right" valign="top"><a id="a4495089facdeee0e9335afa1f17e74a7"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>algo_</b></td></tr>
+<tr class="separator:a4495089facdeee0e9335afa1f17e74a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34392244d8cd477a590d02f02567a665"><td class="memItemLeft" align="right" valign="top"><a id="a34392244d8cd477a590d02f02567a665"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>key_size_</b> = 2048</td></tr>
 <tr class="separator:a34392244d8cd477a590d02f02567a665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c113454bd67cd0d918da0469924727"><td class="memItemLeft" align="right" valign="top">boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bottom"><b>expired_</b></td></tr>
-<tr class="separator:a48c113454bd67cd0d918da0469924727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ea49dd2fc9032a09eac7e2bd563558"><td class="memItemLeft" align="right" valign="top"><a id="a44ea49dd2fc9032a09eac7e2bd563558"></a>
+QDateTime&#160;</td><td class="memItemRight" valign="bottom"><b>expired_</b> = QDateTime::currentDateTime().addYears(2)</td></tr>
+<tr class="separator:a44ea49dd2fc9032a09eac7e2bd563558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b8c6d162f1cb8a74e3ff150908270f5"><td class="memItemLeft" align="right" valign="top"><a id="a7b8c6d162f1cb8a74e3ff150908270f5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>non_expired_</b> = false</td></tr>
 <tr class="separator:a7b8c6d162f1cb8a74e3ff150908270f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,9 +272,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>suggest_size_addition_
 <tr class="memitem:a9e3cec33031de7d3d2728bd6883caece"><td class="memItemLeft" align="right" valign="top"><a id="a9e3cec33031de7d3d2728bd6883caece"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>suggest_min_key_size_</b> = 1024</td></tr>
 <tr class="separator:a9e3cec33031de7d3d2728bd6883caece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01baca0288fe2c4574a8b3d9ae8552d8"><td class="memItemLeft" align="right" valign="top"><a id="a01baca0288fe2c4574a8b3d9ae8552d8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>passphrase_</b></td></tr>
-<tr class="separator:a01baca0288fe2c4574a8b3d9ae8552d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c143ddb95e23d132129c8eaa742283b"><td class="memItemLeft" align="right" valign="top"><a id="a4c143ddb95e23d132129c8eaa742283b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>passphrase_</b></td></tr>
+<tr class="separator:a4c143ddb95e23d132129c8eaa742283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed17aae3218f74cea7273c9dd853a539"><td class="memItemLeft" align="right" valign="top"><a id="aed17aae3218f74cea7273c9dd853a539"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_encryption_</b> = true</td></tr>
 <tr class="separator:aed17aae3218f74cea7273c9dd853a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,8 +301,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 <tr class="separator:a2f156598d0f080ddf219f28f47c5addf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a34eca1662ba8d4645751f3ee66582b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34eca1662ba8d4645751f3ee66582b04">&#9670;&nbsp;</a></span>GenKeyInfo()</h2>
+<a id="acfa8401da6425bf3b5fe63d897a33b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa8401da6425bf3b5fe63d897a33b69">&#9670;&nbsp;</a></span>GenKeyInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,18 +314,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
           <td class="memname">GpgFrontend::GenKeyInfo::GenKeyInfo </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>m_is_sub_key</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>m_is_sub_key</em> = <code>false</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>m_standalone</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -354,144 +334,104 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac0dbb2d89b1e5f9b272679ba3f24314e">GetSupportedKeyAlgo()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a2229d217f44345a99ab3816ec5c0cfe8">GetSupportedKeyAlgo()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6a65ba347156373b6cf98eb8e851d28d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a65ba347156373b6cf98eb8e851d28d">&#9670;&nbsp;</a></span>GetAlgo()</h2>
+<a id="aadafd2fa289a5b8e69e03c5b2deeacd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadafd2fa289a5b8e69e03c5b2deeacd6">&#9670;&nbsp;</a></span>GetAlgo()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; GpgFrontend::GenKeyInfo::GetAlgo </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetAlgo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; const QString &amp;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Algo object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::string&amp; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const QString&amp; </dd></dl>
 
 </div>
 </div>
-<a id="ab9f9775fd6363fba372bd0bcc2532892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9f9775fd6363fba372bd0bcc2532892">&#9670;&nbsp;</a></span>GetComment()</h2>
+<a id="abbc1d76d54202eb5cf2cc27767ab238d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc1d76d54202eb5cf2cc27767ab238d">&#9670;&nbsp;</a></span>GetComment()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string GpgFrontend::GenKeyInfo::GetComment </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetComment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; QString</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Comment object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
-<a id="a76721be08c18907762ba6f6ccc4afc8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76721be08c18907762ba6f6ccc4afc8a">&#9670;&nbsp;</a></span>GetEmail()</h2>
+<a id="af87474dd334abdc17f39bf5cc04cc464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87474dd334abdc17f39bf5cc04cc464">&#9670;&nbsp;</a></span>GetEmail()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string GpgFrontend::GenKeyInfo::GetEmail </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetEmail </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; QString</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Email object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
-<a id="ac629312630a78e32ee36ba0ff30bc9ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac629312630a78e32ee36ba0ff30bc9ff">&#9670;&nbsp;</a></span>GetExpireTime()</h2>
+<a id="abba96c63d675a9bdd05926eaca64c268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba96c63d675a9bdd05926eaca64c268">&#9670;&nbsp;</a></span>GetExpireTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const boost::posix_time::ptime&amp; GpgFrontend::GenKeyInfo::GetExpireTime </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetExpireTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; const QDateTime &amp;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Expired object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const boost::posix_time::ptime&amp; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const QDateTime&amp; </dd></dl>
 
 </div>
 </div>
-<a id="a4927a9091fa2b2f68f6b60ce78ab2fe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4927a9091fa2b2f68f6b60ce78ab2fe9">&#9670;&nbsp;</a></span>GetKeyLength()</h2>
+<a id="afd12578dde272902cfbf76368103f95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd12578dde272902cfbf76368103f95b">&#9670;&nbsp;</a></span>GetKeyLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GpgFrontend::GenKeyInfo::GetKeyLength </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetKeyLength </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Key Size object. </p>
@@ -499,103 +439,79 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 
 </div>
 </div>
-<a id="a0bda4b4161d805582869ec0e56ade07c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bda4b4161d805582869ec0e56ade07c">&#9670;&nbsp;</a></span>GetKeySizeStr()</h2>
+<a id="aa0d9942210df18e21e5f7feb127a4080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d9942210df18e21e5f7feb127a4080">&#9670;&nbsp;</a></span>GetKeySizeStr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string GpgFrontend::GenKeyInfo::GetKeySizeStr </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetKeySizeStr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; QString</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the Key Size Str object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
-<a id="abb3e1366dca0288bdc42123e55d77335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb3e1366dca0288bdc42123e55d77335">&#9670;&nbsp;</a></span>GetName()</h2>
+<a id="a6c1277ad84cd4c2b3c6203c31581e8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1277ad84cd4c2b3c6203c31581e8e4">&#9670;&nbsp;</a></span>GetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string GpgFrontend::GenKeyInfo::GetName </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; QString</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Name object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
-<a id="a890ee16ef6088570360a073a6b531c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890ee16ef6088570360a073a6b531c89">&#9670;&nbsp;</a></span>GetPassPhrase()</h2>
+<a id="ab74ae13ad036fbb85405f401275d0566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74ae13ad036fbb85405f401275d0566">&#9670;&nbsp;</a></span>GetPassPhrase()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; GpgFrontend::GenKeyInfo::GetPassPhrase </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetPassPhrase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; const QString &amp;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Pass Phrase object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::string&amp; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const QString&amp; </dd></dl>
 
 </div>
 </div>
-<a id="ac211a7a615805ae97ff284b46abfeab7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac211a7a615805ae97ff284b46abfeab7">&#9670;&nbsp;</a></span>GetSizeChangeStep()</h2>
+<a id="a33c7ea176587bbd317a39938e9ecec59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c7ea176587bbd317a39938e9ecec59">&#9670;&nbsp;</a></span>GetSizeChangeStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GpgFrontend::GenKeyInfo::GetSizeChangeStep </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetSizeChangeStep </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Size Change Step object. </p>
@@ -603,27 +519,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 
 </div>
 </div>
-<a id="ae461a553176ad1ab0c1121ea6de6c8c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae461a553176ad1ab0c1121ea6de6c8c2">&#9670;&nbsp;</a></span>GetSuggestMaxKeySize()</h2>
+<a id="af72c8592d105d8394bcfa1bc6388d46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72c8592d105d8394bcfa1bc6388d46e">&#9670;&nbsp;</a></span>GetSuggestMaxKeySize()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GpgFrontend::GenKeyInfo::GetSuggestMaxKeySize </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetSuggestMaxKeySize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Suggest Max Key Size object. </p>
@@ -631,27 +539,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 
 </div>
 </div>
-<a id="a0b1612421148b86919b7130ed148ca51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b1612421148b86919b7130ed148ca51">&#9670;&nbsp;</a></span>GetSuggestMinKeySize()</h2>
+<a id="a482933ddc06734993d80a90611a8ad5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482933ddc06734993d80a90611a8ad5b">&#9670;&nbsp;</a></span>GetSuggestMinKeySize()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GpgFrontend::GenKeyInfo::GetSuggestMinKeySize </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetSuggestMinKeySize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Suggest Min Key Size object. </p>
@@ -659,8 +559,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 
 </div>
 </div>
-<a id="ac0dbb2d89b1e5f9b272679ba3f24314e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0dbb2d89b1e5f9b272679ba3f24314e">&#9670;&nbsp;</a></span>GetSupportedKeyAlgo()</h2>
+<a id="a2229d217f44345a99ab3816ec5c0cfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2229d217f44345a99ab3816ec5c0cfe8">&#9670;&nbsp;</a></span>GetSupportedKeyAlgo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -669,10 +569,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; GpgFrontend::GenKeyInfo::KeyGenAlgo &gt; &amp; GpgFrontend::GenKeyInfo::GetSupportedKeyAlgo </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetSupportedKeyAlgo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; const std::vector&lt;KeyGenAlgo&gt; &amp;</td>
         </tr>
       </table>
   </td>
@@ -683,14 +583,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 </div><div class="memdoc">
 
 <p>Get the Supported Key Algo object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;QString&gt;&amp; </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a010acccfd5fb5475769658f9cf68da7b">GpgFrontend::UI::KeyGenDialog::create_basic_info_group_box()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a34eca1662ba8d4645751f3ee66582b04">GenKeyInfo()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a010acccfd5fb5475769658f9cf68da7b">GpgFrontend::UI::KeyGenDialog::create_basic_info_group_box()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#acfa8401da6425bf3b5fe63d897a33b69">GenKeyInfo()</a>.</p>
 
 </div>
 </div>
-<a id="afb8315b6612c64b3921b72df98ebcc74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8315b6612c64b3921b72df98ebcc74">&#9670;&nbsp;</a></span>GetSupportedKeyAlgoStandalone()</h2>
+<a id="a07a68fbe5ef4534df51759cffb144bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a68fbe5ef4534df51759cffb144bef">&#9670;&nbsp;</a></span>GetSupportedSubkeyAlgo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -699,40 +599,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; GpgFrontend::GenKeyInfo::KeyGenAlgo &gt; &amp; GpgFrontend::GenKeyInfo::GetSupportedKeyAlgoStandalone </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetSupportedSubkeyAlgo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the Supported Key Algo Standalone object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
-
-</div>
-</div>
-<a id="a168d6fe5252812f5984ba6d8046c7741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a168d6fe5252812f5984ba6d8046c7741">&#9670;&nbsp;</a></span>GetSupportedSubkeyAlgo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; GpgFrontend::GenKeyInfo::KeyGenAlgo &gt; &amp; GpgFrontend::GenKeyInfo::GetSupportedSubkeyAlgo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; const std::vector&lt;KeyGenAlgo&gt; &amp;</td>
         </tr>
       </table>
   </td>
@@ -743,91 +613,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_change_signing_
 </div><div class="memdoc">
 
 <p>Get the Supported Subkey Algo object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;QString&gt;&amp; </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a029017ad2e025a43d21144f1b7427593">GpgFrontend::UI::SubkeyGenerateDialog::create_basic_info_group_box()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a029017ad2e025a43d21144f1b7427593">GpgFrontend::UI::SubkeyGenerateDialog::create_basic_info_group_box()</a>.</p>
 
 </div>
 </div>
-<a id="a6819b0ca3ef7712b85ae320030cde023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6819b0ca3ef7712b85ae320030cde023">&#9670;&nbsp;</a></span>GetSupportedSubkeyAlgoStandalone()</h2>
+<a id="a225c683da9766afd8fd7e733e9f5fdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225c683da9766afd8fd7e733e9f5fdd4">&#9670;&nbsp;</a></span>GetUserid()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; GpgFrontend::GenKeyInfo::KeyGenAlgo &gt; &amp; GpgFrontend::GenKeyInfo::GetSupportedSubkeyAlgoStandalone </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::GetUserid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const -&gt; QString</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the Supported Subkey Algo Standalone object. </p>
-<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
-
-</div>
-</div>
-<a id="a4ee4a0659e76376d9bfc527c334392e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee4a0659e76376d9bfc527c334392e1">&#9670;&nbsp;</a></span>GetUserid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string GpgFrontend::GenKeyInfo::GetUserid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the Userid object. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 </div>
 </div>
-<a id="aabdf981c65a0efde1e8905441b9b9c87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabdf981c65a0efde1e8905441b9b9c87">&#9670;&nbsp;</a></span>IsAllowAuthentication()</h2>
+<a id="aa73b6fe349eb4c2438fd0a0ae61b6c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73b6fe349eb4c2438fd0a0ae61b6c03">&#9670;&nbsp;</a></span>IsAllowAuthentication()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowAuthentication </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowAuthentication </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -835,27 +659,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ad47ceeb1ccfa8862843034e51b4d8be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad47ceeb1ccfa8862843034e51b4d8be7">&#9670;&nbsp;</a></span>IsAllowCertification()</h2>
+<a id="ae01bbb4af8da59317797d599b28abb31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01bbb4af8da59317797d599b28abb31">&#9670;&nbsp;</a></span>IsAllowCertification()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowCertification </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowCertification </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -863,27 +679,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="aaf8ab7c6564a2836837a537111d6f5b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf8ab7c6564a2836837a537111d6f5b4">&#9670;&nbsp;</a></span>IsAllowChangeAuthentication()</h2>
+<a id="a6b6635977ea47b1c2220aed48bc5c57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6635977ea47b1c2220aed48bc5c57d">&#9670;&nbsp;</a></span>IsAllowChangeAuthentication()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowChangeAuthentication </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowChangeAuthentication </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -891,27 +699,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="adbcddd0fa0a273f9b77fe1297633dabc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbcddd0fa0a273f9b77fe1297633dabc">&#9670;&nbsp;</a></span>IsAllowChangeCertification()</h2>
+<a id="a858ace5de6d4b8cd31fa6c68f33d0f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858ace5de6d4b8cd31fa6c68f33d0f92">&#9670;&nbsp;</a></span>IsAllowChangeCertification()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowChangeCertification </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowChangeCertification </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -919,27 +719,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ad04a906300bea028c6fb6b1b2da1d149"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad04a906300bea028c6fb6b1b2da1d149">&#9670;&nbsp;</a></span>IsAllowChangeEncryption()</h2>
+<a id="a81d52ff47ecd7aca34fb4f5a613b922d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d52ff47ecd7aca34fb4f5a613b922d">&#9670;&nbsp;</a></span>IsAllowChangeEncryption()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowChangeEncryption </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowChangeEncryption </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -947,27 +739,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a06f95a8d26da79bcbe7d51e266879a94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f95a8d26da79bcbe7d51e266879a94">&#9670;&nbsp;</a></span>IsAllowChangeSigning()</h2>
+<a id="a4aedcb38a9fb4ffe65d16bce61a610c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aedcb38a9fb4ffe65d16bce61a610c4">&#9670;&nbsp;</a></span>IsAllowChangeSigning()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowChangeSigning </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowChangeSigning </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -975,27 +759,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a28ed8a65243e5bc69403305752c2cdc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ed8a65243e5bc69403305752c2cdc9">&#9670;&nbsp;</a></span>IsAllowEncryption()</h2>
+<a id="a75b69b9e3f889e9fc5ffe9ee7af2c365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b69b9e3f889e9fc5ffe9ee7af2c365">&#9670;&nbsp;</a></span>IsAllowEncryption()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowEncryption </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowEncryption </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -1003,27 +779,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="af6a79124a4571ff7f37c1c5e6c1a9415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6a79124a4571ff7f37c1c5e6c1a9415">&#9670;&nbsp;</a></span>IsAllowNoPassPhrase()</h2>
+<a id="af3cc933fddc87f2a250b6686ceddf4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cc933fddc87f2a250b6686ceddf4ac">&#9670;&nbsp;</a></span>IsAllowNoPassPhrase()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowNoPassPhrase </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowNoPassPhrase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -1031,27 +799,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ad972292c408cb83c08e739327795a5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad972292c408cb83c08e739327795a5f0">&#9670;&nbsp;</a></span>IsAllowSigning()</h2>
+<a id="abc16a0f5b11c814a5fd2ec9198c88a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc16a0f5b11c814a5fd2ec9198c88a99">&#9670;&nbsp;</a></span>IsAllowSigning()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsAllowSigning </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsAllowSigning </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -1059,27 +819,41 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="aeef7697c91b5b5998088979e09332380"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeef7697c91b5b5998088979e09332380">&#9670;&nbsp;</a></span>IsNonExpired()</h2>
+<a id="a812adab61edebf96bbba4a18c2b82a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812adab61edebf96bbba4a18c2b82a72">&#9670;&nbsp;</a></span>IsNonExpired()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsNonExpired </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsNonExpired </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a8475c1f419a65055dd659d3b60d4e356">SetExpireTime()</a>.</p>
+
+</div>
+</div>
+<a id="a2dd1d385b95569e60526cbf15bdf03ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd1d385b95569e60526cbf15bdf03ec">&#9670;&nbsp;</a></span>IsNoPassPhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsNoPassPhrase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -1087,27 +861,19 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a848181796a99bec8d32dc5eac240ee01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a848181796a99bec8d32dc5eac240ee01">&#9670;&nbsp;</a></span>IsNoPassPhrase()</h2>
+<a id="a5018adac1ec215cc17dd7dabea39829d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5018adac1ec215cc17dd7dabea39829d">&#9670;&nbsp;</a></span>IsSubKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsNoPassPhrase </td>
+          <td class="memname">auto GpgFrontend::GenKeyInfo::IsSubKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
@@ -1115,36 +881,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a40a42ad975499566de124296c19e6c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40a42ad975499566de124296c19e6c55">&#9670;&nbsp;</a></span>IsSubKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool GpgFrontend::GenKeyInfo::IsSubKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-
-</div>
-</div>
-<a id="adcd9c4f3e75f989810988e0bc81d401f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcd9c4f3e75f989810988e0bc81d401f">&#9670;&nbsp;</a></span>SetAlgo()</h2>
+<a id="a438c9bd77727a93961109a8492673fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438c9bd77727a93961109a8492673fe5">&#9670;&nbsp;</a></span>SetAlgo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1152,8 +890,8 @@ false </dd></dl>
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetAlgo </td>
           <td>(</td>
-          <td class="paramtype">const GpgFrontend::GenKeyInfo::KeyGenAlgo &amp;&#160;</td>
-          <td class="paramname"><em>m_algo</em></td><td>)</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>t_algo_args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1162,24 +900,17 @@ false </dd></dl>
 <p>Set the Algo object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m_algo</td><td>Copyright (C) 2021 Saturneric</td></tr>
+    <tr><td class="paramname">m_algo</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
-<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
-<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
-<p>SPDX-License-Identifier: GPL-3.0-or-later </p>
 <p>RSA is the world’s premier asymmetric cryptographic algorithm, and is built on the difficulty of factoring extremely large composites. GnuPG supports RSA with key sizes of between 1024 and 4096 bits.</p>
 <p>Algorithm (DSA) as a government standard for digital signatures. Originally, it supported key lengths between 512 and 1024 bits. Recently, NIST has declared 512-bit keys obsolete: now, DSA is available in 1024, 2048 and 3072-bit lengths.</p>
 <p>GnuPG supports the Elgamal asymmetric encryption algorithm in key lengths ranging from 1024 to 4096 bits.</p>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac0dbb2d89b1e5f9b272679ba3f24314e">GetSupportedKeyAlgo()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#afb8315b6612c64b3921b72df98ebcc74">GetSupportedKeyAlgoStandalone()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a168d6fe5252812f5984ba6d8046c7741">GetSupportedSubkeyAlgo()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a6819b0ca3ef7712b85ae320030cde023">GetSupportedSubkeyAlgoStandalone()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aac51d251682ed1bc1090416ebfeba4de">SetAllowAuthentication()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac5f52f74566618c71a29bdc5e70fce2e">SetAllowCertification()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a965014232f6de22c6d33320231ca4454">SetAllowEncryption()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a1a01518b24d40d95e187ef73f4dcd52a">SetAllowSigning()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ae744395012e4dcb9734ad5a30aa8ed75">SetKeyLength()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#aac51d251682ed1bc1090416ebfeba4de">SetAllowAuthentication()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ac5f52f74566618c71a29bdc5e70fce2e">SetAllowCertification()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a965014232f6de22c6d33320231ca4454">SetAllowEncryption()</a>, <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a1a01518b24d40d95e187ef73f4dcd52a">SetAllowSigning()</a>, and <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#ae744395012e4dcb9734ad5a30aa8ed75">SetKeyLength()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a34eca1662ba8d4645751f3ee66582b04">GenKeyInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#acfa8401da6425bf3b5fe63d897a33b69">GenKeyInfo()</a>.</p>
 
 </div>
 </div>
@@ -1188,9 +919,6 @@ false </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetAllowAuthentication </td>
@@ -1200,11 +928,6 @@ false </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Allow Authentication object. </p>
@@ -1215,7 +938,7 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +966,7 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +994,7 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
@@ -1280,9 +1003,6 @@ false </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetAllowSigning </td>
@@ -1292,11 +1012,6 @@ false </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Allow Signing object. </p>
@@ -1307,32 +1022,24 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
-<a id="a947886456f5699241b1c1b9332e4b29e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a947886456f5699241b1c1b9332e4b29e">&#9670;&nbsp;</a></span>SetComment()</h2>
+<a id="a0d498db9a8249db8b7e1742065a82c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d498db9a8249db8b7e1742065a82c42">&#9670;&nbsp;</a></span>SetComment()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetComment </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>m_comment</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Comment object. </p>
@@ -1345,28 +1052,20 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a656c81d56f77350184f9a94db1a3ce05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656c81d56f77350184f9a94db1a3ce05">&#9670;&nbsp;</a></span>SetEmail()</h2>
+<a id="a6cff6c278089c5e6a646592e87f046b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cff6c278089c5e6a646592e87f046b5">&#9670;&nbsp;</a></span>SetEmail()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetEmail </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>m_email</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Email object. </p>
@@ -1379,8 +1078,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="aa3bfeda7fc7c83dc8d48ee2b80780c3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3bfeda7fc7c83dc8d48ee2b80780c3a">&#9670;&nbsp;</a></span>SetExpireTime()</h2>
+<a id="a8475c1f419a65055dd659d3b60d4e356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8475c1f419a65055dd659d3b60d4e356">&#9670;&nbsp;</a></span>SetExpireTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1388,7 +1087,7 @@ false </dd></dl>
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetExpireTime </td>
           <td>(</td>
-          <td class="paramtype">const boost::posix_time::ptime &amp;&#160;</td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
           <td class="paramname"><em>m_expired</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1403,6 +1102,8 @@ false </dd></dl>
   </dd>
 </dl>
 
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a812adab61edebf96bbba4a18c2b82a72">IsNonExpired()</a>.</p>
+
 </div>
 </div>
 <a id="acd9f7742b739e1db60bd50489690dec1"></a>
@@ -1410,9 +1111,6 @@ false </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetIsSubKey </td>
@@ -1422,11 +1120,6 @@ false </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Is Sub Key object. </p>
@@ -1463,32 +1156,24 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#adcd9c4f3e75f989810988e0bc81d401f">SetAlgo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GenKeyInfo.html#a438c9bd77727a93961109a8492673fe5">SetAlgo()</a>.</p>
 
 </div>
 </div>
-<a id="a65ebc487e0e64c325f65474c812615f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65ebc487e0e64c325f65474c812615f7">&#9670;&nbsp;</a></span>SetName()</h2>
+<a id="a8f80b74f6ed3183063a46f2cd3bb9172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f80b74f6ed3183063a46f2cd3bb9172">&#9670;&nbsp;</a></span>SetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetName </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>m_name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Name object. </p>
@@ -1532,9 +1217,6 @@ false </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetNonPassPhrase </td>
@@ -1544,11 +1226,6 @@ false </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Non Pass Phrase object. </p>
@@ -1561,28 +1238,20 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="afe1760d4ead397f6096925290a38e1a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe1760d4ead397f6096925290a38e1a4">&#9670;&nbsp;</a></span>SetPassPhrase()</h2>
+<a id="a0499b0e924ff9d63361b744ead83fc40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0499b0e924ff9d63361b744ead83fc40">&#9670;&nbsp;</a></span>SetPassPhrase()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GpgFrontend::GenKeyInfo::SetPassPhrase </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>m_pass_phrase</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the Pass Phrase object. </p>
@@ -1595,35 +1264,9 @@ false </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a48c113454bd67cd0d918da0469924727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48c113454bd67cd0d918da0469924727">&#9670;&nbsp;</a></span>expired_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::posix_time::ptime GpgFrontend::GenKeyInfo::expired_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      boost::posix_time::second_clock::local_time() +</div>
-<div class="line">      boost::gregorian::years(2)</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/core/<a class="el" href="GpgGenKeyInfo_8h_source.html">GpgGenKeyInfo.h</a></li>
-<li>src/core/GpgGenKeyInfo.cpp</li>
+<li>src/core/model/<a class="el" href="GpgGenKeyInfo_8h_source.html">GpgGenKeyInfo.h</a></li>
+<li>src/core/model/GpgGenKeyInfo.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

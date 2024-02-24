@@ -1,11 +1,25 @@
 var classGpgFrontend_1_1GpgFileOpera =
 [
     [ "GpgFileOpera", "classGpgFrontend_1_1GpgFileOpera.html#aa81da3d72c4fbc57e7138bfec7731152", null ],
-    [ "DecryptFile", "classGpgFrontend_1_1GpgFileOpera.html#a74eb3ba532a236d8ad284b41265b0ccd", null ],
-    [ "DecryptVerifyFile", "classGpgFrontend_1_1GpgFileOpera.html#a90949b4e9e6116784260cd0e416551db", null ],
-    [ "EncryptFile", "classGpgFrontend_1_1GpgFileOpera.html#a234d939ae0b2c3f799dd01130fad9379", null ],
-    [ "EncryptFileSymmetric", "classGpgFrontend_1_1GpgFileOpera.html#a826efca057afb07157453b3b9e267b0f", null ],
-    [ "EncryptSignFile", "classGpgFrontend_1_1GpgFileOpera.html#a6353e1688b113e5746aced6aa7f3876e", null ],
-    [ "SignFile", "classGpgFrontend_1_1GpgFileOpera.html#a350df1c07c054625c4755a78e6ca5ca8", null ],
-    [ "VerifyFile", "classGpgFrontend_1_1GpgFileOpera.html#a14cddfe822c9410cd9c301d08963b7e7", null ]
+    [ "DecryptArchive", "classGpgFrontend_1_1GpgFileOpera.html#a14cbffefe515850c3c9453302d7f60a8", null ],
+    [ "DecryptFile", "classGpgFrontend_1_1GpgFileOpera.html#a5534131c79647b29c92ba282c3af7978", null ],
+    [ "DecryptFileSync", "classGpgFrontend_1_1GpgFileOpera.html#aae616b77cdeaebdcf89ff75b7642c9dc", null ],
+    [ "DecryptVerifyArchive", "classGpgFrontend_1_1GpgFileOpera.html#a0d890d70f943b0f07ab65bb8a907d94d", null ],
+    [ "DecryptVerifyFile", "classGpgFrontend_1_1GpgFileOpera.html#a795be34a8849de70e90b501bd9e952f2", null ],
+    [ "DecryptVerifyFileSync", "classGpgFrontend_1_1GpgFileOpera.html#af10bf1aa98a6717adbef57c11750094c", null ],
+    [ "EncryptDerectorySymmetric", "classGpgFrontend_1_1GpgFileOpera.html#a162aad2008f150356ac60369d5aaeca5", null ],
+    [ "EncryptDerectorySymmetricSync", "classGpgFrontend_1_1GpgFileOpera.html#abbb5953b208399cc778faa5dd210a23f", null ],
+    [ "EncryptDirectory", "classGpgFrontend_1_1GpgFileOpera.html#ace69ece7bb107e350e1ab5b3ff443657", null ],
+    [ "EncryptFile", "classGpgFrontend_1_1GpgFileOpera.html#a53f13bf1b79f155f5196ce5d7dfeaf5e", null ],
+    [ "EncryptFileSymmetric", "classGpgFrontend_1_1GpgFileOpera.html#a14dc846ae25a2fe82ab94ee32a0d5b3e", null ],
+    [ "EncryptFileSymmetricSync", "classGpgFrontend_1_1GpgFileOpera.html#a891024cb4fdd7e9163421d7893c43ef3", null ],
+    [ "EncryptFileSync", "classGpgFrontend_1_1GpgFileOpera.html#a55656f50fca690aec87afe349460b1c7", null ],
+    [ "EncryptSignDirectory", "classGpgFrontend_1_1GpgFileOpera.html#a28dc2c1570e10a740aeaa80b3755cee3", null ],
+    [ "EncryptSignFile", "classGpgFrontend_1_1GpgFileOpera.html#acd125de9f5d6c49b2e5cf796f27a3398", null ],
+    [ "EncryptSignFileSync", "classGpgFrontend_1_1GpgFileOpera.html#a9915c91131e4935679b25ef51c2544b1", null ],
+    [ "SignFile", "classGpgFrontend_1_1GpgFileOpera.html#acbbc57156fd7aa984489a2397b942fef", null ],
+    [ "SignFileSync", "classGpgFrontend_1_1GpgFileOpera.html#a247db95aa42991f6772f2404e81e822d", null ],
+    [ "VerifyFile", "classGpgFrontend_1_1GpgFileOpera.html#af4a26e42f0a3d49905777d22828fa430", null ],
+    [ "VerifyFileSync", "classGpgFrontend_1_1GpgFileOpera.html#a9511b6a128a6228ebca47ae637c44e55", null ],
+    [ "ctx_", "classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4", null ]
 ];

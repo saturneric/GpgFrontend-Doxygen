@@ -1,13 +1,9 @@
 <map id="GpgFrontend::UI::KeyServerImportTask" name="GpgFrontend::UI::KeyServerImportTask">
-<area shape="rect" id="node1" title=" " alt="" coords="294,877,495,1043"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="124,503,287,815"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,363,80,440"/>
-<area shape="rect" id="node4" title=" " alt="" coords="104,363,197,440"/>
-<area shape="rect" id="node5" title=" " alt="" coords="469,363,555,440"/>
-<area shape="rect" id="node10" title=" " alt="" coords="524,620,711,697"/>
-<area shape="rect" id="node6" title=" " alt="" coords="441,145,580,237"/>
-<area shape="rect" id="node7" title=" " alt="" coords="222,363,445,440"/>
-<area shape="rect" id="node8" title=" " alt="" coords="259,153,416,230"/>
-<area shape="rect" id="node9" title=" " alt="" coords="459,5,498,83"/>
-<area shape="rect" id="node11" title=" " alt="" coords="553,261,682,339"/>
+<area shape="rect" id="node1" title=" " alt="" coords="117,631,318,811"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1Thread_1_1Task.html" title=" " alt="" coords="43,285,205,568"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,145,80,223"/>
+<area shape="rect" id="node4" title=" " alt="" coords="104,145,197,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="229,388,398,465"/>
+<area shape="rect" id="node6" title=" " alt="" coords="249,145,378,223"/>
+<area shape="rect" id="node7" title=" " alt="" coords="294,5,333,83"/>
 </map>

@@ -38,14 +38,17 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a5e752e01539ccfdc6bbe4
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a833c5f709607032bac530aacf389a117}{Update\+Tab}} (QWidget $\ast$parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Construct a new Update Tab object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}} 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a7329657135624fc42ad80d821e11befe}{get\+Latest\+Version}} ()
-\begin{DoxyCompactList}\small\item\em Get the Latest Version object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a new Update Tab object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_ab6dd89d73fe58cb614a4ba951d7858d7}\label{classGpgFrontend_1_1UI_1_1UpdateTab_ab6dd89d73fe58cb614a4ba951d7858d7}} 
+void {\bfseries show\+Event} (QShow\+Event $\ast$event) override
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}{slot\+\_\+show\+\_\+version\+\_\+status}} (const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} \&version)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UpdateTab_a29a504b9657b0f553b7c5a6997892a24}{slot\+\_\+show\+\_\+version\+\_\+status}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -64,9 +67,6 @@ QProgress\+Bar $\ast$ {\bfseries pb\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_ad180d1f434e8052f3e0974522c92ae61}\label{classGpgFrontend_1_1UI_1_1UpdateTab_ad180d1f434e8052f3e0974522c92ae61}} 
 QString {\bfseries current\+\_\+version\+\_\+}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a67358193095af7b39184f16706bf1bff}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a67358193095af7b39184f16706bf1bff}} 
-QPush\+Button $\ast$ {\bfseries download\+\_\+button\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -103,25 +103,17 @@ Construct a new Update Tab object.
 {\em data} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a1003bd969ecbc5deba940e39436968f4}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UpdateTab_a29a504b9657b0f553b7c5a6997892a24}\label{classGpgFrontend_1_1UI_1_1UpdateTab_a29a504b9657b0f553b7c5a6997892a24}} 
 \index{GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}!slot\_show\_version\_status@{slot\_show\_version\_status}}
 \index{slot\_show\_version\_status@{slot\_show\_version\_status}!GpgFrontend::UI::UpdateTab@{GpgFrontend::UI::UpdateTab}}
 \doxysubsubsection{\texorpdfstring{slot\_show\_version\_status}{slot\_show\_version\_status}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+version\+\_\+status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1SoftwareVersion}{Software\+Version}} \&}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Update\+Tab\+::slot\+\_\+show\+\_\+version\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 \begin{DoxyParams}{Parameters}
 {\em version} & \\
 \hline
 \end{DoxyParams}
-
-
-References Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Current\+Version\+Released(), Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Need\+Upgrade(), and Gpg\+Frontend\+::\+UI\+::\+Software\+Version\+::\+Version\+With\+Drawn().
-
-
-
-Referenced by get\+Latest\+Version().
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

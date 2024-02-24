@@ -32,11 +32,11 @@ Collaboration diagram for Gpg\+Frontend\+::Passphrase\+Generator\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}{Passphrase\+Generator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_ac82ef545a54468ad02253a61cc62e3cf}{Passphrase\+Generator}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator}{Passphrase\+Generator}} constructor. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}{Generate}} (int len)
+auto \mbox{\hyperlink{classGpgFrontend_1_1PassphraseGenerator_ae53436e5b7dc44e96afe014ccd544998}{Generate}} (int len) -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em generate passphrase \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}\label{classGpgFrontend_1_1PassphraseGenerator_a12ee6f9b7fff4883074321c7e0de3dfa}} 
@@ -58,7 +58,7 @@ This class is used to generate a passphrase.
 \index{GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}!PassphraseGenerator@{PassphraseGenerator}}
 \index{PassphraseGenerator@{PassphraseGenerator}!GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}}
 \doxysubsubsection{\texorpdfstring{PassphraseGenerator()}{PassphraseGenerator()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Passphrase\+Generator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Passphrase\+Generator (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 
 
@@ -72,11 +72,11 @@ This class is used to generate a passphrase.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}\label{classGpgFrontend_1_1PassphraseGenerator_a8b4ee1083343fba6d947b85cd66079b8}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1PassphraseGenerator_ae53436e5b7dc44e96afe014ccd544998}\label{classGpgFrontend_1_1PassphraseGenerator_ae53436e5b7dc44e96afe014ccd544998}} 
 \index{GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}!Generate@{Generate}}
 \index{Generate@{Generate}!GpgFrontend::PassphraseGenerator@{GpgFrontend::PassphraseGenerator}}
 \doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate (\begin{DoxyParamCaption}\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Passphrase\+Generator\+::\+Generate (\begin{DoxyParamCaption}\item[{int}]{len }\end{DoxyParamCaption}) -\/$>$ QString}
 
 
 
@@ -88,14 +88,11 @@ generate passphrase
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string passphrase 
+QString passphrase 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Key\+Package\+Operator\+::\+Generate\+Passphrase().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/function/Passphrase\+Generator.\+h\end{DoxyCompactItemize}
+src/core/function/Passphrase\+Generator.\+h\item 
+src/core/function/Passphrase\+Generator.\+cpp\end{DoxyCompactItemize}

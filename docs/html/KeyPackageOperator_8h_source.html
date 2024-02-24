@@ -87,47 +87,35 @@ $(document).ready(function(){initNavTree('KeyPackageOperator_8h_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_KEYPACKAGEOPERATOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_KEYPACKAGEOPERATOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgKeyImportExporter.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1KeyPackageOperator.html">   41</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1KeyPackageOperator.html">KeyPackageOperator</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> GeneratePassphrase(<span class="keyword">const</span> std::filesystem::path &amp;phrase_path,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 std::string &amp;phrase);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> std::string GenerateKeyPackageName();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> GenerateKeyPackage(<span class="keyword">const</span> std::filesystem::path &amp;key_package_path,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                 <span class="keyword">const</span> std::string &amp;key_package_name,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                 KeyIdArgsListPtr &amp;key_ids, std::string &amp;phrase,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                 <span class="keywordtype">bool</span> secret);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> ImportKeyPackage(<span class="keyword">const</span> std::filesystem::path &amp;key_package_path,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                               <span class="keyword">const</span> std::filesystem::path &amp;phrase_path,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                               <a class="code" href="classGpgFrontend_1_1GpgImportInformation.html">GpgFrontend::GpgImportInformation</a> &amp;import_info);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1KeyPackageOperator.html#a825d987dacd8a99d9d87729e1861a152">   96</a></span>&#160;  <span class="keyword">static</span> std::string <a class="code" href="classGpgFrontend_1_1KeyPackageOperator.html#a825d987dacd8a99d9d87729e1861a152">generate_key_package_name</a>() {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::random_device rd_;          </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> mt_ = std::mt19937(rd_());  </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::uniform_int_distribution&lt;int&gt; dist(999, 99999);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">auto</span> file_string = boost::format(<span class="stringliteral">&quot;KeyPackage_%1%&quot;</span>) % dist(mt_);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> file_string.str();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_KEYPACKAGEOPERATOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgImportInformation_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgImportInformation.html">GpgFrontend::GpgImportInformation</a></div><div class="ttdef"><b>Definition:</b> GpgKeyImportExporter.h:57</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1KeyPackageOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1KeyPackageOperator.html">GpgFrontend::KeyPackageOperator</a></div><div class="ttdoc">give the possibility to import or export a key package</div><div class="ttdef"><b>Definition:</b> KeyPackageOperator.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1KeyPackageOperator_html_a825d987dacd8a99d9d87729e1861a152"><div class="ttname"><a href="classGpgFrontend_1_1KeyPackageOperator.html#a825d987dacd8a99d9d87729e1861a152">GpgFrontend::KeyPackageOperator::generate_key_package_name</a></div><div class="ttdeci">static std::string generate_key_package_name()</div><div class="ttdoc">generate key package name</div><div class="ttdef"><b>Definition:</b> KeyPackageOperator.h:96</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgKeyImportExporter.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/typedef/CoreTypedef.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1KeyPackageOperator.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1KeyPackageOperator.html">KeyPackageOperator</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> GeneratePassphrase(<span class="keyword">const</span> QString &amp;phrase_path, QString &amp;phrase)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      -&gt; bool;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> GenerateKeyPackageName() -&gt; QString;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> GenerateKeyPackage(<span class="keyword">const</span> QString &amp;key_package_path,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                 <span class="keyword">const</span> QString &amp;key_package_name,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                 <span class="keyword">const</span> KeyArgsList &amp;keys, QString &amp;phrase,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                 <span class="keywordtype">bool</span> secret, <span class="keyword">const</span> OperationCallback &amp;cb);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ImportKeyPackage(<span class="keyword">const</span> QString &amp;key_package_path,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                               <span class="keyword">const</span> QString &amp;phrase_path,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                               <span class="keyword">const</span> OperationCallback &amp;cb);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> generate_key_package_name() -&gt; QString;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1KeyPackageOperator_html"><div class="ttname"><a href="classGpgFrontend_1_1KeyPackageOperator.html">GpgFrontend::KeyPackageOperator</a></div><div class="ttdoc">give the possibility to import or export a key package</div><div class="ttdef"><b>Definition:</b> KeyPackageOperator.h:40</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

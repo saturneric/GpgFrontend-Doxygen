@@ -4,7 +4,7 @@ var classGpgFrontend_1_1UI_1_1KeyMgmt =
     [ "create_actions", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a23cf6665537f2a96708e9d5423ce3bb8", null ],
     [ "create_menus", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6ee90b63414038e9f840933a5b2c5e46", null ],
     [ "create_tool_bars", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6791486fd94567d504d48050c23476b5", null ],
-    [ "delete_keys_with_warning", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0b139ae0d4baa234932cf228e94abd6b", null ],
+    [ "delete_keys_with_warning", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6c62f6142fd4bfe0554223189a31d9a8", null ],
     [ "SignalKeyStatusUpdated", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a137117a6c303eaf7bdca7a11edcc178c", null ],
     [ "SignalStatusBarChanged", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a2166d56c56ad66fd415d6628cfffd9b7", null ],
     [ "SlotDeleteCheckedKeys", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#af089757a71f5f27922c45eb52c924f88", null ],
@@ -20,6 +20,7 @@ var classGpgFrontend_1_1UI_1_1KeyMgmt =
     [ "delete_checked_keys_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#ac06a816b6898b4d3e0c7a74bc7b4f4be", null ],
     [ "delete_selected_keys_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0380d65d9d12fb2b9d66c212287b8b92", null ],
     [ "export_key_as_open_ssh_format_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#afa24ed000e0833c2cb8f7fea1111299c", null ],
+    [ "export_key_menu_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a9ec2dc6b623617496aa934a45256d695", null ],
     [ "export_key_to_clipboard_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a2bcdba46a4ace5bb9dd742759a00f4e3", null ],
     [ "export_key_to_file_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#abf0f05743185c40b3cd0936ddccf8f9d", null ],
     [ "file_menu_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a75e6e38da08275188c7a78fb57fa6641", null ],
@@ -27,7 +28,6 @@ var classGpgFrontend_1_1UI_1_1KeyMgmt =
     [ "generate_key_menu_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a1d5091c7be671b5c0446b52bef3eeb48", null ],
     [ "generate_key_pair_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a0eae43c328a32aedfa4a5a55cf328966", null ],
     [ "generate_subkey_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a33e88ef94386833575afede7a7ff144a", null ],
-    [ "import_dialog_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a08ce0587e28ac312273fdb0988f63bbe", null ],
     [ "import_key_from_clipboard_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a00fdf40c55943c8542eaebab041f02b8", null ],
     [ "import_key_from_file_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#acadb7692e422ca8efac192604d875457", null ],
     [ "import_key_from_key_server_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#acd9298492830efcbf7c77dfb6bd829e7", null ],
@@ -36,5 +36,6 @@ var classGpgFrontend_1_1UI_1_1KeyMgmt =
     [ "key_list_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a7623fa63b3c24ee86d923b434dee9c7f", null ],
     [ "key_menu_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#adff3b71d088f4a13ef3d032b3c0ecebc", null ],
     [ "open_key_file_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a876e257c8d8bb7e47ceb70e1da4f9da7", null ],
+    [ "set_owner_trust_of_key_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a1e9be0a9ceec42d61dd757ed496f38f4", null ],
     [ "show_key_details_act_", "classGpgFrontend_1_1UI_1_1KeyMgmt.html#a6266d640cb37c14fbe2c96bdb9c15935", null ]
 ];

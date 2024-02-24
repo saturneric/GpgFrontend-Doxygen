@@ -87,26 +87,23 @@ $(document).ready(function(){initNavTree('TOFUInfoPage_8h_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_TOFUINFOPAGE_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define GPGFRONTEND_TOFUINFOPAGE_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;core/GpgModel.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">TOFUInfoPage</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395">TOFUInfoPage</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgTOFUInfo.html">GpgTOFUInfo</a> &amp;tofu_info,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_TOFUINFOPAGE_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgTOFUInfo_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgTOFUInfo.html">GpgFrontend::GpgTOFUInfo</a></div><div class="ttdef"><b>Definition:</b> GpgTOFUInfo.h:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TOFUInfoPage_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">GpgFrontend::UI::TOFUInfoPage</a></div><div class="ttdef"><b>Definition:</b> TOFUInfoPage.h:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TOFUInfoPage_html_a9adc1666e3f57536594876520019e395"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395">GpgFrontend::UI::TOFUInfoPage::TOFUInfoPage</a></div><div class="ttdeci">TOFUInfoPage(const GpgTOFUInfo &amp;tofu_info, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new TOFUInfoPage object.</div><div class="ttdef"><b>Definition:</b> TOFUInfoPage.cpp:29</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">TOFUInfoPage</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395">TOFUInfoPage</a>(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgTOFUInfo.html">GpgTOFUInfo</a> &amp;tofu_info,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgTOFUInfo_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgTOFUInfo.html">GpgFrontend::GpgTOFUInfo</a></div><div class="ttdef"><b>Definition:</b> GpgTOFUInfo.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TOFUInfoPage_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html">GpgFrontend::UI::TOFUInfoPage</a></div><div class="ttdef"><b>Definition:</b> TOFUInfoPage.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TOFUInfoPage_html_a9adc1666e3f57536594876520019e395"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TOFUInfoPage.html#a9adc1666e3f57536594876520019e395">GpgFrontend::UI::TOFUInfoPage::TOFUInfoPage</a></div><div class="ttdeci">TOFUInfoPage(const GpgTOFUInfo &amp;tofu_info, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new TOFUInfoPage object.</div><div class="ttdef"><b>Definition:</b> TOFUInfoPage.cpp:31</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

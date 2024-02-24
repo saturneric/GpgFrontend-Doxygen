@@ -1,0 +1,58 @@
+\hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Module\+::Global\+Register\+Table\+::Impl Class Reference}
+\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl}\index{GpgFrontend::Module::GlobalRegisterTable::Impl@{GpgFrontend::Module::GlobalRegisterTable::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Module\+::Global\+Register\+Table\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode}{RTNode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_acc2da12edac2035db8a914965d594297}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_acc2da12edac2035db8a914965d594297}} 
+{\bfseries Impl} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a33457fefbdb4ab68988d29d088b29e94}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a33457fefbdb4ab68988d29d088b29e94}} 
+auto {\bfseries Publish\+KV} (const Namespace \&n, const Key \&k, std\+::any v) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_ab1d8bc96d705f7b48f12378a9357e634}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_ab1d8bc96d705f7b48f12378a9357e634}} 
+auto {\bfseries Lookup\+KV} (const Namespace \&n, const Key \&k) -\/$>$ std\+::optional$<$ std\+::any $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_acff7b1584969b316f26ef06586b4845f}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_acff7b1584969b316f26ef06586b4845f}} 
+auto {\bfseries List\+Child\+Keys} (const Namespace \&n, const Key \&k) -\/$>$ std\+::vector$<$ Key $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aa94d7751659ef73980aa639e42e18ffc}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aa94d7751659ef73980aa639e42e18ffc}} 
+auto {\bfseries Listen\+Publish} (QObject $\ast$o, const Namespace \&n, const Key \&k, LPCallback c) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_abfbd8bee0540b612b6e9b0c8a7cb8328}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_abfbd8bee0540b612b6e9b0c8a7cb8328}} 
+using {\bfseries Table} = std\+::map$<$ Namespace, Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode}{RTNode}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_ac4eff697e18d90f17fa11c765e27f619}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_ac4eff697e18d90f17fa11c765e27f619}} 
+std\+::shared\+\_\+mutex {\bfseries lock\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_add44935c0a17ebae8e8e4148943c2e00}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_add44935c0a17ebae8e8e4148943c2e00}} 
+\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $\ast$ {\bfseries parent\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a05eb044011170bfff7661dca8777e9a2}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a05eb044011170bfff7661dca8777e9a2}} 
+Table {\bfseries global\+\_\+register\+\_\+table\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/module/Global\+Register\+Table.\+cpp\end{DoxyCompactItemize}

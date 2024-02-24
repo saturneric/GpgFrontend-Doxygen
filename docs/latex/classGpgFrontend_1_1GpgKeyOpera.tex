@@ -17,32 +17,37 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Opera\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1GpgKeyOpera__coll__graph}
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgKeyOpera__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a01d6a920156a38a34c57d9c49c361079}{Gpg\+Key\+Opera}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a01d6a920156a38a34c57d9c49c361079}{Gpg\+Key\+Opera}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Key Opera object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a8a06d0f7a600d4428359b653a68f717e}{Delete\+Keys}} (Key\+Id\+Args\+List\+Ptr key\+\_\+ids)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a151c47b997951e9162f8b036c3cb15e0}{Delete\+Key}} (const Key\+Id \&key\+\_\+id)
 \item 
-Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a12e6b05b23781861065d7e3243c9349e}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const Subkey\+Id \&subkey\+\_\+fpr, std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&expires)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a46fcc0675c7015a70a7b2b2517a2b99e}{Set\+Expire}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const Subkey\+Id \&subkey\+\_\+fpr, std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&expires) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}
 \begin{DoxyCompactList}\small\item\em Set the Expire object. \end{DoxyCompactList}\item 
-Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_ab7e16d1f4cba23ea5b5b9f6009ce5ee2}{Modify\+Password}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key)
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_ad97b418381a346162684045d8471de2d}{Generate\+Revoke\+Cert}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const QString \&output\+\_\+path)
 \item 
-Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a76a7f59701add8a59d8835919dad2000}{Modify\+TOFUPolicy}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, gpgme\+\_\+tofu\+\_\+policy\+\_\+t tofu\+\_\+policy)
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a5e65fa1edd5db89b38cf021975a60465}{Modify\+Password}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const Gpg\+Operation\+Callback \&)
 \item 
-Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a4cc3ac91613164d7dc61a016a2b4caea}{Generate\+Key}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params, Gpg\+Gen\+Key\+Result \&result)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a9e8efd9e57e05059396f0120535eef30}{Modify\+TOFUPolicy}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, gpgme\+\_\+tofu\+\_\+policy\+\_\+t tofu\+\_\+policy) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}}
 \item 
-Gpg\+Frontend\+::\+Gpg\+Error \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}{Generate\+Subkey}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params)
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_af20beaf00ea43b399ab39bdb8e358427}{Generate\+Key}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&, const Gpg\+Operation\+Callback \&)
 \item 
-static void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7b906c529e3d9a4}{Generate\+Revoke\+Cert}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::string \&output\+\_\+file\+\_\+name)
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_ab3e567066b22fa9b146324dcdbd34d30}{Generate\+Key\+Sync}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params) -\/$>$ std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a54d339513039e008e821e64d0991206e}{Generate\+Subkey}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params, const Gpg\+Operation\+Callback \&)
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a2ef5deb5bb7a50b5488228a72f6776bd}{Generate\+Subkey\+Sync}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&key, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params) -\/$>$ std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_adf89f46010856486d25af3ea1e94b25d}{Generate\+Key\+With\+Subkey}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&subkey\+\_\+params, const Gpg\+Operation\+Callback \&callback)
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a92708358f594869ff9cba1ea4d0a4ec6}{Generate\+Key\+With\+Subkey\+Sync}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&params, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&subkey\+\_\+params) -\/$>$ std\+::tuple$<$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -57,7 +62,7 @@ static void \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GpgKeyOpera@{GpgKeyOpera}}
 \index{GpgKeyOpera@{GpgKeyOpera}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{GpgKeyOpera()}{GpgKeyOpera()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Gpg\+Key\+Opera (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Gpg\+Key\+Opera (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -65,22 +70,10 @@ Construct a new Gpg Key Opera object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em channel} & Copyright (C) 2021 Saturneric\\
+{\em channel} & \\
 \hline
 \end{DoxyParams}
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a151c47b997951e9162f8b036c3cb15e0}\label{classGpgFrontend_1_1GpgKeyOpera_a151c47b997951e9162f8b036c3cb15e0}} 
@@ -94,11 +87,15 @@ SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later
 {\em key\+\_\+id} & \\
 \hline
 \end{DoxyParams}
+
+
+References Delete\+Keys().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a8a06d0f7a600d4428359b653a68f717e}\label{classGpgFrontend_1_1GpgKeyOpera_a8a06d0f7a600d4428359b653a68f717e}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!DeleteKeys@{DeleteKeys}}
 \index{DeleteKeys@{DeleteKeys}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{DeleteKeys()}{DeleteKeys()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys (\begin{DoxyParamCaption}\item[{Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr}]{key\+\_\+ids }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Delete\+Keys (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr}]{key\+\_\+ids }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -109,17 +106,17 @@ SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Key().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
 
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::delete\+\_\+keys\+\_\+with\+\_\+warning().
+Referenced by Delete\+Key().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a4cc3ac91613164d7dc61a016a2b4caea}\label{classGpgFrontend_1_1GpgKeyOpera_a4cc3ac91613164d7dc61a016a2b4caea}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_af20beaf00ea43b399ab39bdb8e358427}\label{classGpgFrontend_1_1GpgKeyOpera_af20beaf00ea43b399ab39bdb8e358427}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateKey@{GenerateKey}}
 \index{GenerateKey@{GenerateKey}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{GenerateKey()}{GenerateKey()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params,  }\item[{Gpg\+Gen\+Key\+Result \&}]{result }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params,  }\item[{const Gpg\+Operation\+Callback \&}]{callback }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -129,7 +126,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Mgmt\+::delete\+\_\+keys\+\_\+with
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Gpg\+Frontend\+::\+Gpg\+Error
+\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}}
 \end{DoxyReturn}
 Generate a new key pair 
 \begin{DoxyParams}{Parameters}
@@ -141,17 +138,66 @@ error information
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+\_\+new\+\_\+result(), Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), and Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error\+\_\+2\+\_\+err\+\_\+code().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Async().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_ab3e567066b22fa9b146324dcdbd34d30}\label{classGpgFrontend_1_1GpgKeyOpera_ab3e567066b22fa9b146324dcdbd34d30}} 
+\index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateKeySync@{GenerateKeySync}}
+\index{GenerateKeySync@{GenerateKeySync}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
+\doxysubsubsection{\texorpdfstring{GenerateKeySync()}{GenerateKeySync()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+Sync (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params }\end{DoxyParamCaption}) -\/$>$ std\+::tuple$<$\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr$>$}
 
 
+\begin{DoxyParams}{Parameters}
+{\em params} & \\
+\hline
+\end{DoxyParams}
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7b906c529e3d9a4}\label{classGpgFrontend_1_1GpgKeyOpera_a91a9a9f24f6b620ea7b906c529e3d9a4}} 
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Sync().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_adf89f46010856486d25af3ea1e94b25d}\label{classGpgFrontend_1_1GpgKeyOpera_adf89f46010856486d25af3ea1e94b25d}} 
+\index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateKeyWithSubkey@{GenerateKeyWithSubkey}}
+\index{GenerateKeyWithSubkey@{GenerateKeyWithSubkey}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
+\doxysubsubsection{\texorpdfstring{GenerateKeyWithSubkey()}{GenerateKeyWithSubkey()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{subkey\+\_\+params,  }\item[{const Gpg\+Operation\+Callback \&}]{callback }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & \\
+\hline
+{\em subkey\+\_\+params} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Async().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a92708358f594869ff9cba1ea4d0a4ec6}\label{classGpgFrontend_1_1GpgKeyOpera_a92708358f594869ff9cba1ea4d0a4ec6}} 
+\index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateKeyWithSubkeySync@{GenerateKeyWithSubkeySync}}
+\index{GenerateKeyWithSubkeySync@{GenerateKeyWithSubkeySync}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
+\doxysubsubsection{\texorpdfstring{GenerateKeyWithSubkeySync()}{GenerateKeyWithSubkeySync()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key\+With\+Subkey\+Sync (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{subkey\+\_\+params }\end{DoxyParamCaption}) -\/$>$ std\+::tuple$<$\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr$>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & \\
+\hline
+{\em subkey\+\_\+params} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Sync().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_ad97b418381a346162684045d8471de2d}\label{classGpgFrontend_1_1GpgKeyOpera_ad97b418381a346162684045d8471de2d}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateRevokeCert@{GenerateRevokeCert}}
 \index{GenerateRevokeCert@{GenerateRevokeCert}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{GenerateRevokeCert()}{GenerateRevokeCert()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::string \&}]{output\+\_\+file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const QString \&}]{output\+\_\+path }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -169,13 +215,13 @@ the process doing this job
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Command\+Executor $>$\+::\+Get\+Instance().
+References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}\label{classGpgFrontend_1_1GpgKeyOpera_a882d99e8407cc22fb8b6e61c531fbe85}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a54d339513039e008e821e64d0991206e}\label{classGpgFrontend_1_1GpgKeyOpera_a54d339513039e008e821e64d0991206e}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateSubkey@{GenerateSubkey}}
 \index{GenerateSubkey@{GenerateSubkey}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{GenerateSubkey()}{GenerateSubkey()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params,  }\item[{const Gpg\+Operation\+Callback \&}]{callback }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -185,31 +231,34 @@ References Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute(), Gpg\+Fronte
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Gpg\+Frontend\+::\+Gpg\+Error
+\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}} 
 \end{DoxyReturn}
-Generate a new subkey of a certain key pair 
+
+
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Async().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a2ef5deb5bb7a50b5488228a72f6776bd}\label{classGpgFrontend_1_1GpgKeyOpera_a2ef5deb5bb7a50b5488228a72f6776bd}} 
+\index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!GenerateSubkeySync@{GenerateSubkeySync}}
+\index{GenerateSubkeySync@{GenerateSubkeySync}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
+\doxysubsubsection{\texorpdfstring{GenerateSubkeySync()}{GenerateSubkeySync()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Subkey\+Sync (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ \&}]{params }\end{DoxyParamCaption}) -\/$>$ std\+::tuple$<$\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}, Data\+Object\+Ptr$>$}
+
+
 \begin{DoxyParams}{Parameters}
-{\em key} & target key pair \\
+{\em key} & \\
 \hline
-{\em params} & opera args \\
+{\em params} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-error info 
-\end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Sync().
 
-
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+key\+\_\+gen\+\_\+accept().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_ab7e16d1f4cba23ea5b5b9f6009ce5ee2}\label{classGpgFrontend_1_1GpgKeyOpera_ab7e16d1f4cba23ea5b5b9f6009ce5ee2}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a5e65fa1edd5db89b38cf021975a60465}\label{classGpgFrontend_1_1GpgKeyOpera_a5e65fa1edd5db89b38cf021975a60465}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!ModifyPassword@{ModifyPassword}}
 \index{ModifyPassword@{ModifyPassword}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{ModifyPassword()}{ModifyPassword()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+Password (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+Password (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const Gpg\+Operation\+Callback \&}]{callback }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -217,17 +266,17 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Subkey\+Generate\+Dialog\+::slot\+\_\+k
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Gpg\+Frontend\+::\+Gpg\+Error 
+\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}} 
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error().
+References Gpg\+Frontend\+::\+Run\+Gpg\+Opera\+Async().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a76a7f59701add8a59d8835919dad2000}\label{classGpgFrontend_1_1GpgKeyOpera_a76a7f59701add8a59d8835919dad2000}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a9e8efd9e57e05059396f0120535eef30}\label{classGpgFrontend_1_1GpgKeyOpera_a9e8efd9e57e05059396f0120535eef30}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!ModifyTOFUPolicy@{ModifyTOFUPolicy}}
 \index{ModifyTOFUPolicy@{ModifyTOFUPolicy}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{ModifyTOFUPolicy()}{ModifyTOFUPolicy()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{gpgme\+\_\+tofu\+\_\+policy\+\_\+t}]{tofu\+\_\+policy }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{gpgme\+\_\+tofu\+\_\+policy\+\_\+t}]{tofu\+\_\+policy }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -237,17 +286,17 @@ References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error().
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Gpg\+Frontend\+::\+Gpg\+Error 
+\mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Frontend\+::\+Gpg\+Error}} 
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::check\+\_\+gpg\+\_\+error().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), and Gpg\+Frontend\+::\+Compare\+Software\+Version().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a12e6b05b23781861065d7e3243c9349e}\label{classGpgFrontend_1_1GpgKeyOpera_a12e6b05b23781861065d7e3243c9349e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_a46fcc0675c7015a70a7b2b2517a2b99e}\label{classGpgFrontend_1_1GpgKeyOpera_a46fcc0675c7015a70a7b2b2517a2b99e}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!SetExpire@{SetExpire}}
 \index{SetExpire@{SetExpire}!GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}}
 \doxysubsubsection{\texorpdfstring{SetExpire()}{SetExpire()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Error Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Set\+Expire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const Subkey\+Id \&}]{subkey\+\_\+fpr,  }\item[{std\+::unique\+\_\+ptr$<$ boost\+::posix\+\_\+time\+::ptime $>$ \&}]{expires }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Set\+Expire (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&}]{key,  }\item[{const Subkey\+Id \&}]{subkey\+\_\+fpr,  }\item[{std\+::unique\+\_\+ptr$<$ QDate\+Time $>$ \&}]{expires }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceGpgFrontend_a2470eb154743191c3454203f23d3a2f8}{Gpg\+Error}}}
 
 
 
@@ -279,10 +328,6 @@ if successful
 \end{DoxyReturn}
 
 
-References Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Id().
-
-
-
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyOpera_ab4086c8ccd6f1f926993e96b687dea69}\label{classGpgFrontend_1_1GpgKeyOpera_ab4086c8ccd6f1f926993e96b687dea69}} 
 \index{GpgFrontend::GpgKeyOpera@{GpgFrontend::GpgKeyOpera}!ctx\_@{ctx\_}}
@@ -293,7 +338,7 @@ References Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Fingerprint(), and Gpg\+Fronten
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ac963fee992753970bfb5c81608d4070f}{GpgContext::GetInstance}}(\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a94ee1e1251023610590e675ae3de8bd5}{SingletonFunctionObject::GetChannel}}())}
 
 \end{DoxyCode}
 

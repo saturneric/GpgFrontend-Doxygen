@@ -1,6 +1,6 @@
 var classGpgFrontend_1_1ArchiveFileOperator =
 [
-    [ "CreateArchive", "classGpgFrontend_1_1ArchiveFileOperator.html#a872fc2bfdd8876d5bf6bc9893ff0d963", null ],
-    [ "ExtractArchive", "classGpgFrontend_1_1ArchiveFileOperator.html#ae80009defc3c4a94a7180966fb82a0d8", null ],
-    [ "ListArchive", "classGpgFrontend_1_1ArchiveFileOperator.html#ae2ca57d6af2f27560e97430a9eee3505", null ]
+    [ "ExtractArchiveFromDataExchanger", "classGpgFrontend_1_1ArchiveFileOperator.html#a0970b9c44e6e0a9bf93af31b8a76575b", null ],
+    [ "ListArchive", "classGpgFrontend_1_1ArchiveFileOperator.html#ab9159da7105707d91ece86e67deead07", null ],
+    [ "NewArchive2DataExchanger", "classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c", null ]
 ];

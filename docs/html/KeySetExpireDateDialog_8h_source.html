@@ -87,52 +87,49 @@ $(document).ready(function(){initNavTree('KeySetExpireDateDialog_8h_source.html'
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_KEYSETEXPIREDATEDIALOG_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_KEYSETEXPIREDATEDIALOG_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgKey.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgSubKey.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Ui_ModifiedExpirationDateTime;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">KeySetExpireDateDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">KeySetExpireDateDialog</a>(<span class="keyword">const</span> KeyId&amp; key_id,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                  QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">KeySetExpireDateDialog</a>(<span class="keyword">const</span> KeyId&amp; key_id, std::string subkey_fpr,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; signals:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> SignalKeyExpireDateUpdated();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::shared_ptr&lt;Ui_ModifiedExpirationDateTime&gt; ui_;  </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                                 </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> SubkeyId m_subkey_;                            </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> slot_confirm();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#adde2b33bd17f521f0630702987b1d274">slot_non_expired_checked</a>(<span class="keywordtype">int</span> state);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_KEYSETEXPIREDATEDIALOG_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:43</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/gpg/GpgContext.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgKey.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui/dialog/GeneralDialog.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>Ui_ModifiedExpirationDateTime;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">KeySetExpireDateDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">KeySetExpireDateDialog</a>(<span class="keyword">const</span> KeyId&amp; key_id,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                  QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">KeySetExpireDateDialog</a>(<span class="keyword">const</span> KeyId&amp; key_id, QString subkey_fpr,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; signals:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> SignalKeyExpireDateUpdated();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::shared_ptr&lt;Ui_ModifiedExpirationDateTime&gt; ui_;  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> m_key_;                                 </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> SubkeyId m_subkey_;                            </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> slot_confirm();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#adde2b33bd17f521f0630702987b1d274">slot_non_expired_checked</a>(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:40</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">GpgFrontend::UI::KeySetExpireDateDialog</a></div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.h:42</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html_a67da7721959b585db21f7e893793564b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">GpgFrontend::UI::KeySetExpireDateDialog::KeySetExpireDateDialog</a></div><div class="ttdeci">KeySetExpireDateDialog(const KeyId &amp;key_id, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Key Set Expire Date Dialog object.</div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.cpp:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html_adde2b33bd17f521f0630702987b1d274"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#adde2b33bd17f521f0630702987b1d274">GpgFrontend::UI::KeySetExpireDateDialog::slot_non_expired_checked</a></div><div class="ttdeci">void slot_non_expired_checked(int state)</div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.cpp:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html">GpgFrontend::UI::KeySetExpireDateDialog</a></div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.h:41</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html_a67da7721959b585db21f7e893793564b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b">GpgFrontend::UI::KeySetExpireDateDialog::KeySetExpireDateDialog</a></div><div class="ttdeci">KeySetExpireDateDialog(const KeyId &amp;key_id, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Key Set Expire Date Dialog object.</div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.cpp:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeySetExpireDateDialog_html_adde2b33bd17f521f0630702987b1d274"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#adde2b33bd17f521f0630702987b1d274">GpgFrontend::UI::KeySetExpireDateDialog::slot_non_expired_checked</a></div><div class="ttdeci">void slot_non_expired_checked(int state)</div><div class="ttdef"><b>Definition:</b> KeySetExpireDateDialog.cpp:147</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

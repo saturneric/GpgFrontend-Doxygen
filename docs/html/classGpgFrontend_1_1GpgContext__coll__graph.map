@@ -1,13 +1,6 @@
 <map id="GpgFrontend::GpgContext" name="GpgFrontend::GpgContext">
-<area shape="rect" id="node1" title=" " alt="" coords="461,997,651,1207"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="92,652,321,935"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="5,5,213,156"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="100,219,329,501"/>
-<area shape="rect" id="node5" title=" " alt="" coords="345,740,532,847"/>
-<area shape="rect" id="node6" title=" " alt="" coords="360,321,517,399"/>
-<area shape="rect" id="node7" title=" " alt="" coords="419,42,458,119"/>
-<area shape="rect" id="node8" href="$structGpgFrontend_1_1GpgContextInitArgs.html" title=" " alt="" coords="556,733,796,854"/>
-<area shape="rect" id="node9" title=" " alt="" coords="714,321,801,399"/>
-<area shape="rect" id="node11" href="$classGpgFrontend_1_1GpgInfo.html" title="Use to record some info about gnupg." alt="" coords="821,755,985,832"/>
-<area shape="rect" id="node10" title=" " alt="" coords="688,35,827,127"/>
+<area shape="rect" id="node1" title=" " alt="" coords="25,897,215,1048"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,220,365,503"/>
 </map>

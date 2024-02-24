@@ -1,0 +1,47 @@
+var namespaceGpgFrontend_1_1Module =
+[
+    [ "Integrated", null, [
+      [ "GnuPGInfoGatheringModule", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule.html", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule" ],
+      [ "VersionCheckingModule", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule.html", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule" ]
+    ] ],
+    [ "SDK", "namespaceGpgFrontend_1_1Module_1_1SDK.html", [
+      [ "ModuleLogDebug", "namespaceGpgFrontend_1_1Module_1_1SDK.html#a62422a87a5202b5e1d86482c88a06958", null ],
+      [ "ModuleLogError", "namespaceGpgFrontend_1_1Module_1_1SDK.html#acee0c8da2a824cc7c5eef423fefa5840", null ],
+      [ "ModuleLogInfo", "namespaceGpgFrontend_1_1Module_1_1SDK.html#a6a1dff88f1da053117d0614c0f94e52c", null ],
+      [ "ModuleLogTrace", "namespaceGpgFrontend_1_1Module_1_1SDK.html#a77f3de0edd4f66611431addcdc69e4c1", null ],
+      [ "ModuleLogWarn", "namespaceGpgFrontend_1_1Module_1_1SDK.html#ab16a035830f089a32f873bb4c61b420f", null ]
+    ] ],
+    [ "Event", "classGpgFrontend_1_1Module_1_1Event.html", "classGpgFrontend_1_1Module_1_1Event" ],
+    [ "GlobalModuleContext", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html", "classGpgFrontend_1_1Module_1_1GlobalModuleContext" ],
+    [ "GlobalRegisterTable", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable" ],
+    [ "Module", "classGpgFrontend_1_1Module_1_1Module.html", "classGpgFrontend_1_1Module_1_1Module" ],
+    [ "ModuleManager", "classGpgFrontend_1_1Module_1_1ModuleManager.html", "classGpgFrontend_1_1Module_1_1ModuleManager" ],
+    [ "ModuleInitArgs", "structGpgFrontend_1_1Module_1_1ModuleInitArgs.html", "structGpgFrontend_1_1Module_1_1ModuleInitArgs" ],
+    [ "EventIdentifier", "namespaceGpgFrontend_1_1Module.html#a0c3d65fe66a8f7e0fc93d0a45a899723", null ],
+    [ "EventRefrernce", "namespaceGpgFrontend_1_1Module.html#a340abcd73c766e5691e90e504b3cd975", null ],
+    [ "Evnets", "namespaceGpgFrontend_1_1Module.html#a6abb965a4aab039e321111ac39045a56", null ],
+    [ "GMCPtr", "namespaceGpgFrontend_1_1Module.html#ab93c267b476f6d61f9d4063e3242520a", null ],
+    [ "GRTPtr", "namespaceGpgFrontend_1_1Module.html#a1effc155d212189da35a2d00d385a2e5", null ],
+    [ "Key", "namespaceGpgFrontend_1_1Module.html#a4d85e8bfe4d6ab0193e59535b0d2ed32", null ],
+    [ "LPCallback", "namespaceGpgFrontend_1_1Module.html#a326305250e96756a0eb3b8683bc836db", null ],
+    [ "ModuleIdentifier", "namespaceGpgFrontend_1_1Module.html#a77e47a91519df4f0df6aaa47ba7e04b5", null ],
+    [ "ModuleMangerPtr", "namespaceGpgFrontend_1_1Module.html#aa21d42624d1f3dc14ada7b1f609a132a", null ],
+    [ "ModuleMetaData", "namespaceGpgFrontend_1_1Module.html#abe94f3b69b5f8f65e90c8b7132ff91a9", null ],
+    [ "ModulePtr", "namespaceGpgFrontend_1_1Module.html#aca4d4541b62bdd408e60d25ac9d77831", null ],
+    [ "ModuleRawPtr", "namespaceGpgFrontend_1_1Module.html#a82533db0a36b076ebe095b76636b6df8", null ],
+    [ "ModuleVersion", "namespaceGpgFrontend_1_1Module.html#a939c65185b5cabe42e5cd187b3238e2c", null ],
+    [ "Namespace", "namespaceGpgFrontend_1_1Module.html#a32bd9a427f0726a36222753a10395059", null ],
+    [ "TaskRunnerPtr", "namespaceGpgFrontend_1_1Module.html#a23749acffc7c9b092530eda133175247", null ],
+    [ "IsModuleAcivate", "namespaceGpgFrontend_1_1Module.html#a9758d9f7ac0d94193aec29be101cee16", null ],
+    [ "ListenRTPublishEvent", "namespaceGpgFrontend_1_1Module.html#af88df9c72a7e6ec8dede9afc7234aca7", null ],
+    [ "ListRTChildKeys", "namespaceGpgFrontend_1_1Module.html#a92a4ccb9246f778143ad3e88d2068d7c", null ],
+    [ "LoadGpgFrontendModules", "namespaceGpgFrontend_1_1Module.html#a81e8539a1a6bfb91731e6b17d9f2aa6a", null ],
+    [ "MakeEvent", "namespaceGpgFrontend_1_1Module.html#aaafda413ba6ccb2e0e5e866f11cf8dc5", null ],
+    [ "RegisterAndActivateModule", "namespaceGpgFrontend_1_1Module.html#a548ad04674384cf77aad447bc7eeaac0", null ],
+    [ "RegisterModule", "namespaceGpgFrontend_1_1Module.html#a0dd02118df9de6c1a538d8a4a9910129", null ],
+    [ "RetrieveRTValueTyped", "namespaceGpgFrontend_1_1Module.html#a23a586d557162b22ef92dc316deb1edc", null ],
+    [ "RetrieveRTValueTypedOrDefault", "namespaceGpgFrontend_1_1Module.html#a9e9ac88fcd1c94018139dbe11ce21e90", null ],
+    [ "ShutdownGpgFrontendModules", "namespaceGpgFrontend_1_1Module.html#a0bc3154cfe2667afe7bcd95895442d16", null ],
+    [ "TriggerEvent", "namespaceGpgFrontend_1_1Module.html#accf5a43c8a79876c005b9d287e8ff245", null ],
+    [ "UpsertRTValue", "namespaceGpgFrontend_1_1Module.html#a5e4614222306688d8c2f36fd4ae23de3", null ]
+];

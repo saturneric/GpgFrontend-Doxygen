@@ -31,6 +31,8 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
@@ -52,13 +54,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AboutDialog_8h_source.html",
-"classGpgFrontend_1_1GpgConstants.html#a36861cbbc85a53f4a42fa07153aa0150",
-"classGpgFrontend_1_1GpgTOFUInfo.html#a681046a3916d0d0cdcf0852bfa76fdb0",
-"classGpgFrontend_1_1UI_1_1GeneralMainWindow.html#a5c0bb4c6847846d57ca7524d5f5e4d53",
-"classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html#a72b94f3e8d11c44d1b4e3653ab885927",
-"classGpgFrontend_1_1UI_1_1MainWindow.html#aea9274389c3b049793fe5aa5a6adf63c",
-"functions_func_c.html"
+"",
+"classGpgFrontend_1_1DataObject_1_1Impl.html#a52d00fb15bee9947a8a3062254f3ad15",
+"classGpgFrontend_1_1GpgFileOpera.html#af10bf1aa98a6717adbef57c11750094c",
+"classGpgFrontend_1_1GpgTOFUInfo.html#a4f46d32bc9bf1a1a3bbc32461538a422",
+"classGpgFrontend_1_1PassphraseGenerator.html",
+"classGpgFrontend_1_1UI_1_1FileTreeView.html#a41fdc92e83892a89404913232a89e5a4",
+"classGpgFrontend_1_1UI_1_1KeyMgmt.html#a905d55ac2c7de8579db9f5a7b91a0abf",
+"classGpgFrontend_1_1UI_1_1MainWindow.html#a0cded37ef6e07856bbe439b0e90db839",
+"classGpgFrontend_1_1UI_1_1TextEdit.html#a3c17fdf3abf9c4fb6ce35cfb8f0f8fc4",
+"dir_fc6c58bf49530122ab17df13a9869378.html",
+"namespaceGpgFrontend_1_1Module_1_1SDK.html#ab16a035830f089a32f873bb4c61b420f",
+"structGpgFrontend_1_1UI_1_1KeyServerSO.html#afec2c455b7b57c66a2f034f49ba21105"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

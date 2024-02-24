@@ -13,38 +13,41 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Sub\+Key\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a48d3dfbd3aae9523ffbdb916aad8ad53}{Get\+ID}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a28be04ec888468dbd7341aa4cb28785d}{Get\+ID}} () const -\/$>$ QString
 \item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a09b00ac6a3b934b816f9522f78e77d59}{Get\+Fingerprint}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a99a39cfbe53b79c1b56b854ce8e7088e}{Get\+Fingerprint}} () const -\/$>$ QString
 \item 
-std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a629f904a81c7c09ac9769b3fcf3b48f5}{Get\+Pubkey\+Algo}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a00962f82450971c4e31a3ad302458a12}{Get\+Pubkey\+Algo}} () const -\/$>$ QString
 \item 
-unsigned int \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a18d7a2f0a3cee32a123b780f2b8b8708}{Get\+Key\+Length}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a6274ea63d3bc49d7a1222a415f04a371}{Get\+Key\+Algo}} () const -\/$>$ QString
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ab67395a986184cb9b20f3dc178fc52be}{Is\+Has\+Encryption\+Capability}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a05dc0b70902e5ce13c1e83c36f31fabe}{Get\+Key\+Length}} () const -\/$>$ unsigned int
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ab9208165c74b93fa8c5b7a06cd808f56}{Is\+Has\+Signing\+Capability}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a36919446a988986a04dc91264e31d8dd}{Is\+Has\+Encryption\+Capability}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a56938360f873949aa9ba3dbdaab519d1}{Is\+Has\+Certification\+Capability}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a8b3c6780ca6e94aa6b7fa22ee0e4a2c0}{Is\+Has\+Signing\+Capability}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a04d9df643cd08200cd742dc243be6cd6}{Is\+Has\+Authentication\+Capability}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a8afd699012e6367d5fb71655dc37e22c}{Is\+Has\+Certification\+Capability}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_accb86b50755698b3e1e7fdfe06f44e84}{Is\+Private\+Key}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_af305996f419fef0dde7aa2a1b58ecd5f}{Is\+Has\+Authentication\+Capability}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ac686352b5ede5aa4dd74b3488c53891e}{Is\+Expired}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ac3e89f13273f8a7743f47e2ddd1e479e}{Is\+Private\+Key}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a9cc81c515b6a197757b48dd334cc3344}{Is\+Revoked}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a55f5aa99dd86cc5cb3ae175de41e925c}{Is\+Expired}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a75abb60a2130efc7fad8ab8fb3157042}{Is\+Disabled}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a6e7401fb58bfb3dcc719c06898504bfa}{Is\+Revoked}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a8fcbeae2ef3ad73a5aedee19f6de3e60}{Is\+Secret\+Key}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_adb9d23a5ba193a553ef83203cf763f25}{Is\+Disabled}} () const -\/$>$ bool
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ad818aa66e47d6686eb8ff253b3c21814}{Is\+Card\+Key}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a8e0cfcf0ea8c4c6478926f7254233756}{Is\+Secret\+Key}} () const -\/$>$ bool
 \item 
-boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a5e897d439606a35103a0b260be28c6a4}{Get\+Create\+Time}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a37a00de8cdf77d9af9db794246a13a4a}{Is\+Card\+Key}} () const -\/$>$ bool
 \item 
-boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a6696d67af322fa2125d99b50cae50417}{Get\+Expire\+Time}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_acb69f7d19dd2e9278c59ed68033c95f6}{Get\+Create\+Time}} () const -\/$>$ QDate\+Time
 \item 
+QDate\+Time \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a70e3268330b354ff99a1ec753ee71601}{Get\+Expire\+Time}} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a59eba8a9d23429140e9a68126c9c7c5e}\label{classGpgFrontend_1_1GpgSubKey_a59eba8a9d23429140e9a68126c9c7c5e}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a59eba8a9d23429140e9a68126c9c7c5e}{Gpg\+Sub\+Key}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Sub Key object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a3c9605e6ccb7fa53d9c9013453d561fe}{Gpg\+Sub\+Key}} (gpgme\+\_\+subkey\+\_\+t subkey)
@@ -54,11 +57,11 @@ boost\+::posix\+\_\+time\+::ptime \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a6e8df85f8c1dea7705b761e68bb949ab}\label{classGpgFrontend_1_1GpgSubKey_a6e8df85f8c1dea7705b761e68bb949ab}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a6e8df85f8c1dea7705b761e68bb949ab}{Gpg\+Sub\+Key}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&)=delete
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Sub Key object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_acc9bb0f214c44802ad45d2557afebbae}{operator=}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&\&o) noexcept
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_aca8af7e3c71de89b753ff72504dfc5c9}{operator=}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&\&o) noexcept -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_ac4187d50f525188c6aaea29a86f83bba}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&)=delete
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a8b7fa22d50d6bade01af1e347c0539e1}{operator=}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&=delete
 \item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_a1c88420ec4756f2e5bda1b76ff2f7c2d}{operator==}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&o) const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey_af62212a90e58a861f540e050f549d426}{operator==}} (const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&o) const -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -69,40 +72,16 @@ using {\bfseries Subkey\+Ref\+Handler} = std\+::unique\+\_\+ptr$<$ struct \+\_\+
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a443f8ac5f47e5ac0ea3ac91edefe8c3c}\label{classGpgFrontend_1_1GpgSubKey_a443f8ac5f47e5ac0ea3ac91edefe8c3c}} 
-Subkey\+Ref\+Handler {\bfseries \+\_\+subkey\+\_\+ref} = nullptr
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_abb52ea637dffabfa2755497dc0892e84}\label{classGpgFrontend_1_1GpgSubKey_abb52ea637dffabfa2755497dc0892e84}} 
+Subkey\+Ref\+Handler {\bfseries subkey\+\_\+ref\+\_\+} = nullptr
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a59eba8a9d23429140e9a68126c9c7c5e}\label{classGpgFrontend_1_1GpgSubKey_a59eba8a9d23429140e9a68126c9c7c5e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a3c9605e6ccb7fa53d9c9013453d561fe}\label{classGpgFrontend_1_1GpgSubKey_a3c9605e6ccb7fa53d9c9013453d561fe}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GpgSubKey@{GpgSubKey}}
 \index{GpgSubKey@{GpgSubKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
-\doxysubsubsection{\texorpdfstring{GpgSubKey()}{GpgSubKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Gpg\+Sub\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
-
-
-
-Construct a new Gpg Sub Key object. 
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a3c9605e6ccb7fa53d9c9013453d561fe}\label{classGpgFrontend_1_1GpgSubKey_a3c9605e6ccb7fa53d9c9013453d561fe}} 
-\index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GpgSubKey@{GpgSubKey}}
-\index{GpgSubKey@{GpgSubKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
-\doxysubsubsection{\texorpdfstring{GpgSubKey()}{GpgSubKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{GpgSubKey()}{GpgSubKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Gpg\+Sub\+Key (\begin{DoxyParamCaption}\item[{gpgme\+\_\+subkey\+\_\+t}]{subkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -117,7 +96,7 @@ Construct a new Gpg Sub Key object.
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ad12e160dbb394a849d6cf31e614a76f5}\label{classGpgFrontend_1_1GpgSubKey_ad12e160dbb394a849d6cf31e614a76f5}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GpgSubKey@{GpgSubKey}}
 \index{GpgSubKey@{GpgSubKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
-\doxysubsubsection{\texorpdfstring{GpgSubKey()}{GpgSubKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{GpgSubKey()}{GpgSubKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Gpg\+Sub\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&\&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 
@@ -132,188 +111,193 @@ Construct a new Gpg Sub Key object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a5e897d439606a35103a0b260be28c6a4}\label{classGpgFrontend_1_1GpgSubKey_a5e897d439606a35103a0b260be28c6a4}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_acb69f7d19dd2e9278c59ed68033c95f6}\label{classGpgFrontend_1_1GpgSubKey_acb69f7d19dd2e9278c59ed68033c95f6}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetCreateTime@{GetCreateTime}}
 \index{GetCreateTime@{GetCreateTime}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetCreateTime()}{GetCreateTime()}}
-{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Create\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Create\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QDate\+Time}
 
 \begin{DoxyReturn}{Returns}
-boost\+::posix\+\_\+time\+::ptime 
+QDate\+Time 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a6696d67af322fa2125d99b50cae50417}\label{classGpgFrontend_1_1GpgSubKey_a6696d67af322fa2125d99b50cae50417}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a70e3268330b354ff99a1ec753ee71601}\label{classGpgFrontend_1_1GpgSubKey_a70e3268330b354ff99a1ec753ee71601}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetExpireTime@{GetExpireTime}}
 \index{GetExpireTime@{GetExpireTime}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetExpireTime()}{GetExpireTime()}}
-{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Expire\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
-boost\+::posix\+\_\+time\+::ptime 
+QDate\+Time 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a09b00ac6a3b934b816f9522f78e77d59}\label{classGpgFrontend_1_1GpgSubKey_a09b00ac6a3b934b816f9522f78e77d59}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a99a39cfbe53b79c1b56b854ce8e7088e}\label{classGpgFrontend_1_1GpgSubKey_a99a39cfbe53b79c1b56b854ce8e7088e}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetFingerprint@{GetFingerprint}}
 \index{GetFingerprint@{GetFingerprint}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetFingerprint()}{GetFingerprint()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Fingerprint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Fingerprint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-
-
-Referenced by operator==().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a48d3dfbd3aae9523ffbdb916aad8ad53}\label{classGpgFrontend_1_1GpgSubKey_a48d3dfbd3aae9523ffbdb916aad8ad53}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a28be04ec888468dbd7341aa4cb28785d}\label{classGpgFrontend_1_1GpgSubKey_a28be04ec888468dbd7341aa4cb28785d}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetID@{GetID}}
 \index{GetID@{GetID}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a18d7a2f0a3cee32a123b780f2b8b8708}\label{classGpgFrontend_1_1GpgSubKey_a18d7a2f0a3cee32a123b780f2b8b8708}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a6274ea63d3bc49d7a1222a415f04a371}\label{classGpgFrontend_1_1GpgSubKey_a6274ea63d3bc49d7a1222a415f04a371}} 
+\index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetKeyAlgo@{GetKeyAlgo}}
+\index{GetKeyAlgo@{GetKeyAlgo}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
+\doxysubsubsection{\texorpdfstring{GetKeyAlgo()}{GetKeyAlgo()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Key\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a05dc0b70902e5ce13c1e83c36f31fabe}\label{classGpgFrontend_1_1GpgSubKey_a05dc0b70902e5ce13c1e83c36f31fabe}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetKeyLength@{GetKeyLength}}
 \index{GetKeyLength@{GetKeyLength}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetKeyLength()}{GetKeyLength()}}
-{\footnotesize\ttfamily unsigned int Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Key\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Key\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ unsigned int}
 
 \begin{DoxyReturn}{Returns}
 unsigned int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a629f904a81c7c09ac9769b3fcf3b48f5}\label{classGpgFrontend_1_1GpgSubKey_a629f904a81c7c09ac9769b3fcf3b48f5}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a00962f82450971c4e31a3ad302458a12}\label{classGpgFrontend_1_1GpgSubKey_a00962f82450971c4e31a3ad302458a12}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!GetPubkeyAlgo@{GetPubkeyAlgo}}
 \index{GetPubkeyAlgo@{GetPubkeyAlgo}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{GetPubkeyAlgo()}{GetPubkeyAlgo()}}
-{\footnotesize\ttfamily std\+::string Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Pubkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Get\+Pubkey\+Algo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString}
 
 \begin{DoxyReturn}{Returns}
-std\+::string 
+QString 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ad818aa66e47d6686eb8ff253b3c21814}\label{classGpgFrontend_1_1GpgSubKey_ad818aa66e47d6686eb8ff253b3c21814}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a37a00de8cdf77d9af9db794246a13a4a}\label{classGpgFrontend_1_1GpgSubKey_a37a00de8cdf77d9af9db794246a13a4a}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsCardKey@{IsCardKey}}
 \index{IsCardKey@{IsCardKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsCardKey()}{IsCardKey()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Card\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Card\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a75abb60a2130efc7fad8ab8fb3157042}\label{classGpgFrontend_1_1GpgSubKey_a75abb60a2130efc7fad8ab8fb3157042}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_adb9d23a5ba193a553ef83203cf763f25}\label{classGpgFrontend_1_1GpgSubKey_adb9d23a5ba193a553ef83203cf763f25}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsDisabled@{IsDisabled}}
 \index{IsDisabled@{IsDisabled}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsDisabled()}{IsDisabled()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Disabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Disabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ac686352b5ede5aa4dd74b3488c53891e}\label{classGpgFrontend_1_1GpgSubKey_ac686352b5ede5aa4dd74b3488c53891e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a55f5aa99dd86cc5cb3ae175de41e925c}\label{classGpgFrontend_1_1GpgSubKey_a55f5aa99dd86cc5cb3ae175de41e925c}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsExpired@{IsExpired}}
 \index{IsExpired@{IsExpired}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsExpired()}{IsExpired()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a04d9df643cd08200cd742dc243be6cd6}\label{classGpgFrontend_1_1GpgSubKey_a04d9df643cd08200cd742dc243be6cd6}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_af305996f419fef0dde7aa2a1b58ecd5f}\label{classGpgFrontend_1_1GpgSubKey_af305996f419fef0dde7aa2a1b58ecd5f}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsHasAuthenticationCapability@{IsHasAuthenticationCapability}}
 \index{IsHasAuthenticationCapability@{IsHasAuthenticationCapability}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsHasAuthenticationCapability()}{IsHasAuthenticationCapability()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Authentication\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Authentication\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a56938360f873949aa9ba3dbdaab519d1}\label{classGpgFrontend_1_1GpgSubKey_a56938360f873949aa9ba3dbdaab519d1}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a8afd699012e6367d5fb71655dc37e22c}\label{classGpgFrontend_1_1GpgSubKey_a8afd699012e6367d5fb71655dc37e22c}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsHasCertificationCapability@{IsHasCertificationCapability}}
 \index{IsHasCertificationCapability@{IsHasCertificationCapability}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsHasCertificationCapability()}{IsHasCertificationCapability()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Certification\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Certification\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ab67395a986184cb9b20f3dc178fc52be}\label{classGpgFrontend_1_1GpgSubKey_ab67395a986184cb9b20f3dc178fc52be}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a36919446a988986a04dc91264e31d8dd}\label{classGpgFrontend_1_1GpgSubKey_a36919446a988986a04dc91264e31d8dd}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsHasEncryptionCapability@{IsHasEncryptionCapability}}
 \index{IsHasEncryptionCapability@{IsHasEncryptionCapability}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsHasEncryptionCapability()}{IsHasEncryptionCapability()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Encryption\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Encryption\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ab9208165c74b93fa8c5b7a06cd808f56}\label{classGpgFrontend_1_1GpgSubKey_ab9208165c74b93fa8c5b7a06cd808f56}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a8b3c6780ca6e94aa6b7fa22ee0e4a2c0}\label{classGpgFrontend_1_1GpgSubKey_a8b3c6780ca6e94aa6b7fa22ee0e4a2c0}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsHasSigningCapability@{IsHasSigningCapability}}
 \index{IsHasSigningCapability@{IsHasSigningCapability}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsHasSigningCapability()}{IsHasSigningCapability()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Signing\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Has\+Signing\+Capability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_accb86b50755698b3e1e7fdfe06f44e84}\label{classGpgFrontend_1_1GpgSubKey_accb86b50755698b3e1e7fdfe06f44e84}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ac3e89f13273f8a7743f47e2ddd1e479e}\label{classGpgFrontend_1_1GpgSubKey_ac3e89f13273f8a7743f47e2ddd1e479e}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsPrivateKey@{IsPrivateKey}}
 \index{IsPrivateKey@{IsPrivateKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsPrivateKey()}{IsPrivateKey()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Private\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Private\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a9cc81c515b6a197757b48dd334cc3344}\label{classGpgFrontend_1_1GpgSubKey_a9cc81c515b6a197757b48dd334cc3344}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a6e7401fb58bfb3dcc719c06898504bfa}\label{classGpgFrontend_1_1GpgSubKey_a6e7401fb58bfb3dcc719c06898504bfa}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsRevoked@{IsRevoked}}
 \index{IsRevoked@{IsRevoked}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsRevoked()}{IsRevoked()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Revoked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Revoked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a8fcbeae2ef3ad73a5aedee19f6de3e60}\label{classGpgFrontend_1_1GpgSubKey_a8fcbeae2ef3ad73a5aedee19f6de3e60}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a8e0cfcf0ea8c4c6478926f7254233756}\label{classGpgFrontend_1_1GpgSubKey_a8e0cfcf0ea8c4c6478926f7254233756}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!IsSecretKey@{IsSecretKey}}
 \index{IsSecretKey@{IsSecretKey}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{IsSecretKey()}{IsSecretKey()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Secret\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::\+Is\+Secret\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 true 
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_ac4187d50f525188c6aaea29a86f83bba}\label{classGpgFrontend_1_1GpgSubKey_ac4187d50f525188c6aaea29a86f83bba}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a8b7fa22d50d6bade01af1e347c0539e1}\label{classGpgFrontend_1_1GpgSubKey_a8b7fa22d50d6bade01af1e347c0539e1}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!operator=@{operator=}}
 \index{operator=@{operator=}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}}\& Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&}]{ }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&=delete\hspace{0.3cm}{\ttfamily [delete]}}
 
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}}\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_acc9bb0f214c44802ad45d2557afebbae}\label{classGpgFrontend_1_1GpgSubKey_acc9bb0f214c44802ad45d2557afebbae}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_aca8af7e3c71de89b753ff72504dfc5c9}\label{classGpgFrontend_1_1GpgSubKey_aca8af7e3c71de89b753ff72504dfc5c9}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!operator=@{operator=}}
 \index{operator=@{operator=}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Frontend\+::\+Gpg\+Sub\+Key}} \& Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&\&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&\&}]{o }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}}\&\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -323,11 +307,11 @@ false
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}}\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_a1c88420ec4756f2e5bda1b76ff2f7c2d}\label{classGpgFrontend_1_1GpgSubKey_a1c88420ec4756f2e5bda1b76ff2f7c2d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgSubKey_af62212a90e58a861f540e050f549d426}\label{classGpgFrontend_1_1GpgSubKey_af62212a90e58a861f540e050f549d426}} 
 \index{GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}!operator==@{operator==}}
 \index{operator==@{operator==}!GpgFrontend::GpgSubKey@{GpgFrontend::GpgSubKey}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&}]{o }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Sub\+Key\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGpgFrontend_1_1GpgSubKey}{Gpg\+Sub\+Key}} \&}]{o }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 
 \begin{DoxyParams}{Parameters}
@@ -339,10 +323,6 @@ true
 
 false 
 \end{DoxyReturn}
-
-
-References Get\+Fingerprint().
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

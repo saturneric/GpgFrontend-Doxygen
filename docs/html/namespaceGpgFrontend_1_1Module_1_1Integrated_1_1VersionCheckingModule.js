@@ -1,0 +1,6 @@
+var namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule =
+[
+    [ "SoftwareVersion", "structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html", "structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion" ],
+    [ "VersionCheckingModule", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule" ],
+    [ "VersionCheckTask", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask" ]
+];

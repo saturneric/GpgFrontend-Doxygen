@@ -87,74 +87,69 @@ $(document).ready(function(){initNavTree('GpgKeySignature_8h_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_GPGKEYSIGNATURE_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_GPGKEYSIGNATURE_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;boost/date_time.hpp&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;core/GpgConstants.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html">   47</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> IsRevoked() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> IsExpired() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> IsInvalid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> IsExportable() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  [[nodiscard]] gpgme_error_t GetStatus() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  [[nodiscard]] std::string GetKeyID() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  [[nodiscard]] std::string GetPubkeyAlgo() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  [[nodiscard]] boost::posix_time::ptime GetCreateTime() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  [[nodiscard]] boost::posix_time::ptime GetExpireTime() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  [[nodiscard]] std::string GetUID() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  [[nodiscard]] std::string GetName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  [[nodiscard]] std::string GetEmail() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  [[nodiscard]] std::string GetComment() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b">  148</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b">GpgKeySignature</a>();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3">  154</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3">~GpgKeySignature</a>();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a>(gpgme_key_sig_t sig);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a9ba501d98265c9677d00e3dca3e8d903">  167</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#a9ba501d98265c9677d00e3dca3e8d903">GpgKeySignature</a>(<a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;&amp;) noexcept;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a4a501aa3a549a6a6914e2aeed4ff302e">  173</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a>(const <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;) = delete;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a4ae987707a6579cec3dfe540b3410bc6">  180</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;operator=(<a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;&amp;) noexcept;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a927602d294d02adde57193f5094ce689">  187</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;operator=(const <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;) = delete;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; private:</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  using KeySignatrueRefHandler =</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      std::unique_ptr&lt;struct _gpgme_key_sig,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                      std::function&lt;<span class="keywordtype">void</span>(gpgme_key_sig_t)&gt;&gt;;  </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  KeySignatrueRefHandler signature_ref_ = <span class="keywordtype">nullptr</span>;  </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_GPGKEYSIGNATURE_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgKeySignature_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeySignature.html">GpgFrontend::GpgKeySignature</a></div><div class="ttdef"><b>Definition:</b> GpgKeySignature.h:47</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/typedef/GpgTypedef.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html">   43</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> IsRevoked() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> IsExpired() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> IsInvalid() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> IsExportable() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetStatus() <span class="keyword">const</span> -&gt; <a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetKeyID() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetPubkeyAlgo() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetCreateTime() <span class="keyword">const</span> -&gt; QDateTime;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetExpireTime() <span class="keyword">const</span> -&gt; QDateTime;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetUID() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetName() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetEmail() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> GetComment() <span class="keyword">const</span> -&gt; QString;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b">  144</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b">GpgKeySignature</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3">  150</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3">~GpgKeySignature</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a>(gpgme_key_sig_t sig);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a9ba501d98265c9677d00e3dca3e8d903">  163</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html#a9ba501d98265c9677d00e3dca3e8d903">GpgKeySignature</a>(<a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;&amp;) noexcept;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a4a501aa3a549a6a6914e2aeed4ff302e">  169</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a>(const <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;) = delete;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a56f7e2df71d4277105f0b7cef31ca83b">  176</a></span>&#160;  auto operator=(<a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;&amp;) noexcept -&gt; <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgKeySignature.html#a2f6e7ba797cc59b26729a8f63038f7dd">  183</a></span>&#160;  auto operator=(const <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp;) -&gt; <a class="code" href="classGpgFrontend_1_1GpgKeySignature.html">GpgKeySignature</a> &amp; = delete;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; private:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  using KeySignatrueRefHandler =</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      std::unique_ptr&lt;struct _gpgme_key_sig,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                      std::function&lt;<span class="keywordtype">void</span>(gpgme_key_sig_t)&gt;&gt;;  </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  KeySignatrueRefHandler signature_ref_ = <span class="keywordtype">nullptr</span>;  </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;};</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgKeySignature_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeySignature.html">GpgFrontend::GpgKeySignature</a></div><div class="ttdef"><b>Definition:</b> GpgKeySignature.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeySignature_html_a8a9c792c963ef610e511b7deb6829c0b"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeySignature.html#a8a9c792c963ef610e511b7deb6829c0b">GpgFrontend::GpgKeySignature::GpgKeySignature</a></div><div class="ttdeci">GpgKeySignature()</div><div class="ttdoc">Construct a new Gpg Key Signature object.</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeySignature_html_a9ba501d98265c9677d00e3dca3e8d903"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeySignature.html#a9ba501d98265c9677d00e3dca3e8d903">GpgFrontend::GpgKeySignature::GpgKeySignature</a></div><div class="ttdeci">GpgKeySignature(GpgKeySignature &amp;&amp;) noexcept</div><div class="ttdoc">Construct a new Gpg Key Signature object.</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeySignature_html_ab4d7044f4e1ddcf0ae0d28be43f0fcb3"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeySignature.html#ab4d7044f4e1ddcf0ae0d28be43f0fcb3">GpgFrontend::GpgKeySignature::~GpgKeySignature</a></div><div class="ttdeci">~GpgKeySignature()</div><div class="ttdoc">Destroy the Gpg Key Signature object.</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a2470eb154743191c3454203f23d3a2f8"><div class="ttname"><a href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgFrontend::GpgError</a></div><div class="ttdeci">gpgme_error_t GpgError</div><div class="ttdoc">gpgme error</div><div class="ttdef"><b>Definition:</b> GpgTypedef.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

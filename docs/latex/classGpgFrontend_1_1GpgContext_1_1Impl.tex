@@ -1,0 +1,100 @@
+\hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Gpg\+Context\+::Impl Class Reference}
+\label{classGpgFrontend_1_1GpgContext_1_1Impl}\index{GpgFrontend::GpgContext::Impl@{GpgFrontend::GpgContext::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Context\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1GpgContext_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext_1_1Impl_af1cf48d1f5f5a16193c0e575fdec2f95}{Impl}} (\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} $\ast$parent, const \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} \&args)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_aa83adb97f6c554a5f78cb58c5bcabf75}\label{classGpgFrontend_1_1GpgContext_1_1Impl_aa83adb97f6c554a5f78cb58c5bcabf75}} 
+auto {\bfseries Binary\+Context} () const -\/$>$ gpgme\+\_\+ctx\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_aaf07931e12ccc1334a4ee4775747e031}\label{classGpgFrontend_1_1GpgContext_1_1Impl_aaf07931e12ccc1334a4ee4775747e031}} 
+auto {\bfseries Default\+Context} () const -\/$>$ gpgme\+\_\+ctx\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_aeff757402e816579b245663004ee223f}\label{classGpgFrontend_1_1GpgContext_1_1Impl_aeff757402e816579b245663004ee223f}} 
+auto {\bfseries Good} () const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_ad48acf9c87da750c12cb39fb12dbf21c}\label{classGpgFrontend_1_1GpgContext_1_1Impl_ad48acf9c87da750c12cb39fb12dbf21c}} 
+auto {\bfseries Set\+Passphrase\+Cb} (const gpgme\+\_\+ctx\+\_\+t \&ctx, gpgme\+\_\+passphrase\+\_\+cb\+\_\+t cb) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a730122e16659d4dae757b517c63c060b}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a730122e16659d4dae757b517c63c060b}} 
+static auto {\bfseries Test\+Passphrase\+Cb} (void $\ast$opaque, const char $\ast$uid\+\_\+hint, const char $\ast$passphrase\+\_\+info, int last\+\_\+was\+\_\+bad, int fd) -\/$>$ gpgme\+\_\+error\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a74b2a478438801e57d606ac3e037bd48}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a74b2a478438801e57d606ac3e037bd48}} 
+static auto {\bfseries Custom\+Passphrase\+Cb} (void $\ast$hook, const char $\ast$uid\+\_\+hint, const char $\ast$passphrase\+\_\+info, int prev\+\_\+was\+\_\+bad, int fd) -\/$>$ gpgme\+\_\+error\+\_\+t
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_aec2edb332803afff03e02acdbc0b1ad4}\label{classGpgFrontend_1_1GpgContext_1_1Impl_aec2edb332803afff03e02acdbc0b1ad4}} 
+static auto {\bfseries Test\+Status\+Cb} (void $\ast$hook, const char $\ast$keyword, const char $\ast$args) -\/$>$ gpgme\+\_\+error\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a10db480f37e3b31cece0312b2a7f5699}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a10db480f37e3b31cece0312b2a7f5699}} 
+auto {\bfseries common\+\_\+ctx\+\_\+initialize} (const gpgme\+\_\+ctx\+\_\+t \&ctx, const \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} \&args) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a3a78904e9b2453a524face5276210bfb}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a3a78904e9b2453a524face5276210bfb}} 
+auto {\bfseries binary\+\_\+ctx\+\_\+initialize} (const \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} \&args) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a4c976fcea479a491a19970866fba84e4}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a4c976fcea479a491a19970866fba84e4}} 
+auto {\bfseries default\+\_\+ctx\+\_\+initialize} (const \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} \&args) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_acfcf7fbbc51e16aa6ca1fe3e6a61514d}\label{classGpgFrontend_1_1GpgContext_1_1Impl_acfcf7fbbc51e16aa6ca1fe3e6a61514d}} 
+static auto {\bfseries set\+\_\+ctx\+\_\+key\+\_\+list\+\_\+mode} (const gpgme\+\_\+ctx\+\_\+t \&ctx) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a3834765ad4d5e65ef71ab7d37d4b181c}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a3834765ad4d5e65ef71ab7d37d4b181c}} 
+static auto {\bfseries set\+\_\+ctx\+\_\+openpgp\+\_\+engine\+\_\+info} (gpgme\+\_\+ctx\+\_\+t ctx) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a722be40df9fe2be11b6fe5a942f5ef9f}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a722be40df9fe2be11b6fe5a942f5ef9f}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} $\ast$ {\bfseries parent\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a40f4c66a307485273f1b892bdb08e980}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a40f4c66a307485273f1b892bdb08e980}} 
+\mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} {\bfseries args\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a6f6f341e1d9718069207aaef12157279}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a6f6f341e1d9718069207aaef12157279}} 
+gpgme\+\_\+ctx\+\_\+t {\bfseries ctx\+\_\+ref\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a6e8a2c1ae213178e0e3ca23fd13a07d2}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a6e8a2c1ae213178e0e3ca23fd13a07d2}} 
+gpgme\+\_\+ctx\+\_\+t {\bfseries binary\+\_\+ctx\+\_\+ref\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a90bdcaec75667c38893241d235d44378}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a90bdcaec75667c38893241d235d44378}} 
+bool {\bfseries good\+\_\+} = true
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_ae6d445d8271e044474535ea7b8a89569}\label{classGpgFrontend_1_1GpgContext_1_1Impl_ae6d445d8271e044474535ea7b8a89569}} 
+std\+::mutex {\bfseries ctx\+\_\+ref\+\_\+lock\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_a0ab4a7f9df7d1bf7d70281ff6188d64d}\label{classGpgFrontend_1_1GpgContext_1_1Impl_a0ab4a7f9df7d1bf7d70281ff6188d64d}} 
+std\+::mutex {\bfseries binary\+\_\+ctx\+\_\+ref\+\_\+lock\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgContext_1_1Impl_af1cf48d1f5f5a16193c0e575fdec2f95}\label{classGpgFrontend_1_1GpgContext_1_1Impl_af1cf48d1f5f5a16193c0e575fdec2f95}} 
+\index{GpgFrontend::GpgContext::Impl@{GpgFrontend::GpgContext::Impl}!Impl@{Impl}}
+\index{Impl@{Impl}!GpgFrontend::GpgContext::Impl@{GpgFrontend::GpgContext::Impl}}
+\doxysubsubsection{\texorpdfstring{Impl()}{Impl()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Context\+::\+Impl\+::\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} $\ast$}]{parent,  }\item[{const \mbox{\hyperlink{structGpgFrontend_1_1GpgContextInitArgs}{Gpg\+Context\+Init\+Args}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor Set up gpgme-\/context, set paths to app-\/run path 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Context.\+cpp\end{DoxyCompactItemize}

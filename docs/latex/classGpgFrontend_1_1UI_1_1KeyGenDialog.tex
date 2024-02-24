@@ -72,7 +72,10 @@ QRegular\+Expression {\bfseries re\+\_\+email\+\_\+}
 \item 
 QString\+List \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_a03a8e1c8f2c1887732d36a346185bb40}{error\+\_\+messages\+\_\+}}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+key\+\_\+info\+\_\+}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+key\+\_\+info\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3bc7d37fbb93b1c6ce55a5bb3a17ab38}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a3bc7d37fbb93b1c6ce55a5bb3a17ab38}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}} $>$ {\bfseries gen\+\_\+subkey\+\_\+info\+\_\+} = nullptr
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}} 
 QDialog\+Button\+Box $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyGenDialog_aa765259f9aa65b81d59b982ee0595e52}{button\+\_\+box\+\_\+}}
@@ -135,7 +138,7 @@ Constructor of this class
 \end{DoxyParams}
 
 
-References button\+\_\+box\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Get\+UISettings().
+References button\+\_\+box\+\_\+, Gpg\+Frontend\+::\+UI\+::\+UISignal\+Station\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance().
 
 
 
@@ -278,15 +281,7 @@ Referenced by set\+\_\+signal\+\_\+slot().
 \doxysubsubsection{\texorpdfstring{slot\_expire\_box\_changed}{slot\_expire\_box\_changed}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::slot\+\_\+expire\+\_\+box\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
-when expirebox was checked/unchecked, enable/disable the expiration date box 
-
-References date\+\_\+edit\+\_\+, and expire\+\_\+check\+\_\+box\+\_\+.
-
-
-
-Referenced by set\+\_\+signal\+\_\+slot().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}} 
+when expirebox was checked/unchecked, enable/disable the expiration date box \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_af1f7a62dcb024513453766ee8816d514}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!slot\_key\_gen\_accept@{slot\_key\_gen\_accept}}
 \index{slot\_key\_gen\_accept@{slot\_key\_gen\_accept}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{slot\_key\_gen\_accept}{slot\_key\_gen\_accept}}
@@ -300,7 +295,7 @@ create the string for key generation
 
 create error message
 
-References check\+\_\+email\+\_\+address(), comment\+\_\+edit\+\_\+, date\+\_\+edit\+\_\+, email\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Key(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, and name\+\_\+edit\+\_\+.
+References check\+\_\+email\+\_\+address(), Gpg\+Frontend\+::\+Check\+Gpg\+Error(), comment\+\_\+edit\+\_\+, date\+\_\+edit\+\_\+, email\+\_\+edit\+\_\+, error\+\_\+label\+\_\+, expire\+\_\+check\+\_\+box\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Opera $>$\+::\+Get\+Instance(), key\+\_\+size\+\_\+spin\+\_\+box\+\_\+, name\+\_\+edit\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Raise\+Message\+Box(), Gpg\+Frontend\+::\+Set\+Cache\+Value(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera().
 
 
 
@@ -330,16 +325,16 @@ Referenced by set\+\_\+signal\+\_\+slot().
 \doxysubsubsection{\texorpdfstring{error\_messages\_}{error\_messages\_}}
 {\footnotesize\ttfamily QString\+List Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::error\+\_\+messages\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-List of errors occurring when checking entries of line edits \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a104dcf364452ab5fe019f51c6db7f7d9}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a104dcf364452ab5fe019f51c6db7f7d9}} 
+List of errors occurring when checking entries of line edits \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a5449b095b469dee115263bf25e2d545c}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a5449b095b469dee115263bf25e2d545c}} 
 \index{GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}!gen\_key\_info\_@{gen\_key\_info\_}}
 \index{gen\_key\_info\_@{gen\_key\_info\_}!GpgFrontend::UI::KeyGenDialog@{GpgFrontend::UI::KeyGenDialog}}
 \doxysubsubsection{\texorpdfstring{gen\_key\_info\_}{gen\_key\_info\_}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGpgFrontend_1_1GenKeyInfo}{Gen\+Key\+Info}}$>$ Gpg\+Frontend\+::\+UI\+::\+Key\+Gen\+Dialog\+::gen\+\_\+key\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=}
-\DoxyCodeLine{      std::make\_unique<GenKeyInfo>()}
+\DoxyCodeLine{      SecureCreateSharedObject<GenKeyInfo>()}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7b1b9cb46c0547c1e561e56d55616cf1}\label{classGpgFrontend_1_1UI_1_1KeyGenDialog_a7b1b9cb46c0547c1e561e56d55616cf1}} 

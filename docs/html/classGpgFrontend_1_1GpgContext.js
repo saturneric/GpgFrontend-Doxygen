@@ -1,19 +1,11 @@
 var classGpgFrontend_1_1GpgContext =
 [
-    [ "_ctx_ref_deleter", "structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter.html", "structGpgFrontend_1_1GpgContext_1_1__ctx__ref__deleter" ],
-    [ "CtxRefHandler", "classGpgFrontend_1_1GpgContext.html#aeafe3f6d1d97d63aeefa428cce23bc59", null ],
-    [ "GpgContext", "classGpgFrontend_1_1GpgContext.html#a39882b323569987592231f722a2ef147", null ],
+    [ "Impl", "classGpgFrontend_1_1GpgContext_1_1Impl.html", "classGpgFrontend_1_1GpgContext_1_1Impl" ],
     [ "GpgContext", "classGpgFrontend_1_1GpgContext.html#a2429d3f9daa189b4d5d8624c9f4d528b", null ],
-    [ "~GpgContext", "classGpgFrontend_1_1GpgContext.html#ae89dee551354c1541337881898832725", null ],
-    [ "GetInfo", "classGpgFrontend_1_1GpgContext.html#ad9af3461de36f74ee85be2523f6038e2", null ],
-    [ "good", "classGpgFrontend_1_1GpgContext.html#a73c505a2f3d39d1638dc4d9a3e13a913", null ],
-    [ "init_ctx", "classGpgFrontend_1_1GpgContext.html#a3377fd6a325aafc18c119431f602db9b", null ],
-    [ "operator gpgme_ctx_t", "classGpgFrontend_1_1GpgContext.html#a5b419175bd9927f3d449637db8ba6524", null ],
-    [ "SetPassphraseCb", "classGpgFrontend_1_1GpgContext.html#a3399fc60086ff5010a089bff48bbc63c", null ],
-    [ "test_passphrase_cb", "classGpgFrontend_1_1GpgContext.html#acc4234054002065dfbc5d5261a4950d4", null ],
-    [ "test_status_cb", "classGpgFrontend_1_1GpgContext.html#a3844cd0966134939e5c4be9a725e5271", null ],
-    [ "_ctx_ref", "classGpgFrontend_1_1GpgContext.html#aaf3f5b4528b35bf0dc7a50163224a9a3", null ],
-    [ "args_", "classGpgFrontend_1_1GpgContext.html#a4765cccf9f994a9c7b3d962a24bed77e", null ],
-    [ "good_", "classGpgFrontend_1_1GpgContext.html#a01e46d0718b61a224a52028b9da90468", null ],
-    [ "info_", "classGpgFrontend_1_1GpgContext.html#a838e2ec5571dc810af7c075c28d630db", null ]
+    [ "GpgContext", "classGpgFrontend_1_1GpgContext.html#ad6fa7ec2d667f58ca8e91c6624c2ad57", null ],
+    [ "~GpgContext", "classGpgFrontend_1_1GpgContext.html#a0345177a7b45330ed0d8dc592c4c5334", null ],
+    [ "BinaryContext", "classGpgFrontend_1_1GpgContext.html#a535832c71b14f62c5a7e468ad9486442", null ],
+    [ "DefaultContext", "classGpgFrontend_1_1GpgContext.html#aa5b7495993ea4d7ed9eec541262791ed", null ],
+    [ "Good", "classGpgFrontend_1_1GpgContext.html#ab3a811e8b7e27ed93211543b9f497e94", null ],
+    [ "p_", "classGpgFrontend_1_1GpgContext.html#ae25efc40cafa7b8f22983174d7e4bd72", null ]
 ];

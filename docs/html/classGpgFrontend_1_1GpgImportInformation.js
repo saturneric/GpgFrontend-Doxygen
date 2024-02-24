@@ -1,11 +1,13 @@
 var classGpgFrontend_1_1GpgImportInformation =
 [
+    [ "GpgImportedKey", "classGpgFrontend_1_1GpgImportInformation_1_1GpgImportedKey.html", "classGpgFrontend_1_1GpgImportInformation_1_1GpgImportedKey" ],
+    [ "GpgImportedKeyList", "classGpgFrontend_1_1GpgImportInformation.html#a9d255b5cdb5d163c0517cf27f3490c73", null ],
     [ "GpgImportInformation", "classGpgFrontend_1_1GpgImportInformation.html#a19e37d28f4462caf2b3522d50ceaf897", null ],
     [ "GpgImportInformation", "classGpgFrontend_1_1GpgImportInformation.html#ab282d4f701403cd68eb02d1aad30be56", null ],
     [ "considered", "classGpgFrontend_1_1GpgImportInformation.html#a55756b7a0ba05f1086369e680a532021", null ],
     [ "imported", "classGpgFrontend_1_1GpgImportInformation.html#add4b1898e674e14b8f649e60b585db89", null ],
+    [ "imported_keys", "classGpgFrontend_1_1GpgImportInformation.html#a817188eff468dc71e340e02c986b44e1", null ],
     [ "imported_rsa", "classGpgFrontend_1_1GpgImportInformation.html#a0e946c24f6045b2454ac3296df2e299e", null ],
-    [ "importedKeys", "classGpgFrontend_1_1GpgImportInformation.html#a226f8d47609d1fd562d84c1f02fed02a", null ],
     [ "new_revocations", "classGpgFrontend_1_1GpgImportInformation.html#a8b98cf24d9fdddc7678b755b2f472a83", null ],
     [ "new_signatures", "classGpgFrontend_1_1GpgImportInformation.html#a4e8d490de713686b043ee899969965a6", null ],
     [ "new_sub_keys", "classGpgFrontend_1_1GpgImportInformation.html#a8db7f3b11fa2825dc9939f029742c933", null ],

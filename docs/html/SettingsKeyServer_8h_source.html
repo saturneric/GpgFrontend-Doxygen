@@ -87,55 +87,52 @@ $(document).ready(function(){initNavTree('SettingsKeyServer_8h_source.html','');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_SETTINGSKEYSERVER_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_SETTINGSKEYSERVER_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>Ui_KeyServerSettings;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">KeyserverTab</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#aa3d3561d3bdf95de6486b2caa752616c">KeyserverTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a221117b56dda48956e44d96a08f6823b">SetSettings</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> ApplySettings();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::shared_ptr&lt;Ui_KeyServerSettings&gt; ui_;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QString default_key_server_;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QStringList key_server_str_list_;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QMenu* popup_menu_{};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QRegularExpression url_reg_{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      R<span class="stringliteral">&quot;(^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&amp;//=]*)$)&quot;};</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral"> </span><span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> slot_add_key_server();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> slot_refresh_table();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> slot_test_listed_key_server();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; signals:</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">   99</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">SignalRestartNeeded</a>(<span class="keywordtype">bool</span> needed);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8cbd6e448e187260730ab8301ad4892e">contextMenuEvent</a>(QContextMenuEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_SETTINGSKEYSERVER_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">GpgFrontend::UI::KeyserverTab</a></div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_a221117b56dda48956e44d96a08f6823b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a221117b56dda48956e44d96a08f6823b">GpgFrontend::UI::KeyserverTab::SetSettings</a></div><div class="ttdeci">void SetSettings()</div><div class="ttdoc">Set the Settings object.</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:117</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>Ui_KeyServerSettings;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">KeyserverTab</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#aa3d3561d3bdf95de6486b2caa752616c">KeyserverTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a221117b56dda48956e44d96a08f6823b">SetSettings</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> ApplySettings();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::shared_ptr&lt;Ui_KeyServerSettings&gt; ui_;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QString default_key_server_;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QStringList key_server_str_list_;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QMenu* popup_menu_{};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QRegularExpression url_reg_{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      R<span class="stringliteral">&quot;(^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&amp;//=]*)$)&quot;};</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral"> </span><span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> slot_add_key_server();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> slot_refresh_table();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> slot_test_listed_key_server();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; signals:</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">SignalRestartNeeded</a>(<span class="keywordtype">bool</span> needed);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8cbd6e448e187260730ab8301ad4892e">contextMenuEvent</a>(QContextMenuEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">GpgFrontend::UI::KeyserverTab</a></div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.h:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_a221117b56dda48956e44d96a08f6823b"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a221117b56dda48956e44d96a08f6823b">GpgFrontend::UI::KeyserverTab::SetSettings</a></div><div class="ttdeci">void SetSettings()</div><div class="ttdoc">Set the Settings object.</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:121</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_a26449a77844d9db69a543ff88f10e347"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a26449a77844d9db69a543ff88f10e347">GpgFrontend::UI::KeyserverTab::SignalRestartNeeded</a></div><div class="ttdeci">void SignalRestartNeeded(bool needed)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_a8cbd6e448e187260730ab8301ad4892e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8cbd6e448e187260730ab8301ad4892e">GpgFrontend::UI::KeyserverTab::contextMenuEvent</a></div><div class="ttdeci">void contextMenuEvent(QContextMenuEvent *event) override</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:289</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_aa3d3561d3bdf95de6486b2caa752616c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#aa3d3561d3bdf95de6486b2caa752616c">GpgFrontend::UI::KeyserverTab::KeyserverTab</a></div><div class="ttdeci">KeyserverTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Keyserver Tab object.</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:40</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_a8cbd6e448e187260730ab8301ad4892e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#a8cbd6e448e187260730ab8301ad4892e">GpgFrontend::UI::KeyserverTab::contextMenuEvent</a></div><div class="ttdeci">void contextMenuEvent(QContextMenuEvent *event) override</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:286</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html_aa3d3561d3bdf95de6486b2caa752616c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html#aa3d3561d3bdf95de6486b2caa752616c">GpgFrontend::UI::KeyserverTab::KeyserverTab</a></div><div class="ttdeci">KeyserverTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Keyserver Tab object.</div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.cpp:43</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

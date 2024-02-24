@@ -87,38 +87,35 @@ $(document).ready(function(){initNavTree('HelpPage_8h_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef HELPPAGE_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define HELPPAGE_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1HelpPage.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html">HelpPage</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a1be8f5b79fef3d1d62ff4620b8535006">HelpPage</a>(<span class="keyword">const</span> QString&amp; path, QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QTextBrowser* <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a92c31eea47b42be28c86431384b27846">GetBrowser</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a51ff99077a75507365307f5dd783df99">slot_open_url</a>(<span class="keyword">const</span> QUrl&amp; url);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">   68</a></span>&#160;  QTextBrowser* <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">browser_</a>;  </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QUrl <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a49fbde87f2ef385b44225acd6ffbc84f">localized_help</a>(<span class="keyword">const</span> QUrl&amp; path);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// HELPPAGE_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html">GpgFrontend::UI::HelpPage</a></div><div class="ttdef"><b>Definition:</b> HelpPage.h:40</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a1be8f5b79fef3d1d62ff4620b8535006"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a1be8f5b79fef3d1d62ff4620b8535006">GpgFrontend::UI::HelpPage::HelpPage</a></div><div class="ttdeci">HelpPage(const QString &amp;path, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Help Page object.</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a49fbde87f2ef385b44225acd6ffbc84f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a49fbde87f2ef385b44225acd6ffbc84f">GpgFrontend::UI::HelpPage::localized_help</a></div><div class="ttdeci">QUrl localized_help(const QUrl &amp;path)</div><div class="ttdoc">HelpPage::localized_help check if the requested file is also available with the locale,...</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:62</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a51ff99077a75507365307f5dd783df99"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a51ff99077a75507365307f5dd783df99">GpgFrontend::UI::HelpPage::slot_open_url</a></div><div class="ttdeci">void slot_open_url(const QUrl &amp;url)</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:50</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a92c31eea47b42be28c86431384b27846"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a92c31eea47b42be28c86431384b27846">GpgFrontend::UI::HelpPage::GetBrowser</a></div><div class="ttdeci">QTextBrowser * GetBrowser()</div><div class="ttdoc">Get the Browser object.</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:85</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_af4f61342fae06a49c95d8d20ca51ca2c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">GpgFrontend::UI::HelpPage::browser_</a></div><div class="ttdeci">QTextBrowser * browser_</div><div class="ttdoc">The textbrowser of the tab.</div><div class="ttdef"><b>Definition:</b> HelpPage.h:68</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1HelpPage.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html">HelpPage</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a1be8f5b79fef3d1d62ff4620b8535006">HelpPage</a>(<span class="keyword">const</span> QString&amp; path, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QTextBrowser* <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a92c31eea47b42be28c86431384b27846">GetBrowser</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#a51ff99077a75507365307f5dd783df99">slot_open_url</a>(<span class="keyword">const</span> QUrl&amp; url);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">   67</a></span>&#160;  QTextBrowser* <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">browser_</a>;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QUrl <a class="code" href="classGpgFrontend_1_1UI_1_1HelpPage.html#af839ba3ff0decc82aadb922593acf53f">localized_help</a>(<span class="keyword">const</span> QUrl&amp; path);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html">GpgFrontend::UI::HelpPage</a></div><div class="ttdef"><b>Definition:</b> HelpPage.h:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a1be8f5b79fef3d1d62ff4620b8535006"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a1be8f5b79fef3d1d62ff4620b8535006">GpgFrontend::UI::HelpPage::HelpPage</a></div><div class="ttdeci">HelpPage(const QString &amp;path, QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Help Page object.</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:33</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a51ff99077a75507365307f5dd783df99"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a51ff99077a75507365307f5dd783df99">GpgFrontend::UI::HelpPage::slot_open_url</a></div><div class="ttdeci">void slot_open_url(const QUrl &amp;url)</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:48</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_a92c31eea47b42be28c86431384b27846"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#a92c31eea47b42be28c86431384b27846">GpgFrontend::UI::HelpPage::GetBrowser</a></div><div class="ttdeci">QTextBrowser * GetBrowser()</div><div class="ttdoc">Get the Browser object.</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:81</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_af4f61342fae06a49c95d8d20ca51ca2c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#af4f61342fae06a49c95d8d20ca51ca2c">GpgFrontend::UI::HelpPage::browser_</a></div><div class="ttdeci">QTextBrowser * browser_</div><div class="ttdoc">The textbrowser of the tab.</div><div class="ttdef"><b>Definition:</b> HelpPage.h:67</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1HelpPage_html_af839ba3ff0decc82aadb922593acf53f"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1HelpPage.html#af839ba3ff0decc82aadb922593acf53f">GpgFrontend::UI::HelpPage::localized_help</a></div><div class="ttdeci">QUrl localized_help(const QUrl &amp;path)</div><div class="ttdoc">HelpPage::localized_help check if the requested file is also available with the locale,...</div><div class="ttdef"><b>Definition:</b> HelpPage.cpp:60</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

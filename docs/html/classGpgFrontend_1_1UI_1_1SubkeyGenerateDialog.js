@@ -5,7 +5,6 @@ var classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog =
     [ "create_key_usage_group_box", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aa24064a5f585b23d71e1036958f31d7d", null ],
     [ "refresh_widgets_state", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a4a5b77fb909e9a6a0e4da780c75f7535", null ],
     [ "set_signal_slot", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a90900b67eceb2d16af5de27f9f038f7f", null ],
-    [ "SignalSubKeyGenerated", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#acca1d633219d245edba9135c80a90610", null ],
     [ "slot_activated_key_type", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a52a0aadc9b1e80bdcaaf1ad9d8997957", null ],
     [ "slot_authentication_box_changed", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a13229f07ef0ed594357df1918af50d3d", null ],
     [ "slot_certification_box_changed", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a8ab50d8f47489c57e382b3fe231ba9a7", null ],
@@ -17,11 +16,12 @@ var classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog =
     [ "date_edit_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aa8bf228ba2a773c0d38f9e5c2f20539d", null ],
     [ "error_label_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a75f325b4a5aa8bcfcc411bdaf9279683", null ],
     [ "expire_check_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#afa21ac4d45a6474afc1bc594486ed8e2", null ],
-    [ "gen_key_info_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a3caed2c7bcce5850c338de956dfaecfa", null ],
+    [ "gen_key_info_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a07f308978206feafd3c7fe7e7436b16f", null ],
     [ "key_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a10b30ea96e819657053c1d5752024547", null ],
     [ "key_size_spin_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#aa91db742b41d352ba9f88620d649afb3", null ],
     [ "key_type_combo_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ac515dabcf6c094c5eeb2bf88aa3aa9d3", null ],
     [ "key_usage_check_boxes_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a5d67b8ed68062ef127ad92986a98e95a", null ],
     [ "key_usage_group_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#ab11f7f3e24f855d690f6f7d820ed7479", null ],
-    [ "max_date_time_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a06ae254026e0be902d28bb005a91fe0c", null ]
+    [ "max_date_time_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a06ae254026e0be902d28bb005a91fe0c", null ],
+    [ "no_pass_phrase_check_box_", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a001803152c0e5bd9de7c7dd04cef8ad4", null ]
 ];

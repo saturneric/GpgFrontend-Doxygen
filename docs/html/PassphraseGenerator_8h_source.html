@@ -87,52 +87,33 @@ $(document).ready(function(){initNavTree('PassphraseGenerator_8h_source.html',''
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_PASSPHRASEGENERATOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_PASSPHRASEGENERATOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/function/basic/GpgFunctionObject.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html">   42</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html">PassphraseGenerator</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;PassphraseGenerator&gt; {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">   50</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">PassphraseGenerator</a>(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>())</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      : <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;<a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html">PassphraseGenerator</a>&gt;(channel) {}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#a8b4ee1083343fba6d947b85cd66079b8">   60</a></span>&#160;  std::string <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html#a8b4ee1083343fba6d947b85cd66079b8">Generate</a>(<span class="keywordtype">int</span> len) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::uniform_int_distribution&lt;int&gt; dist(999, 99999);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">auto</span> file_string = boost::format(<span class="stringliteral">&quot;KeyPackage_%1%&quot;</span>) % dist(mt_);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> alphanum[] =</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="stringliteral">&quot;0123456789&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string tmp_str;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    tmp_str.reserve(len);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; ++i) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      tmp_str += alphanum[dist(mt_) % (<span class="keyword">sizeof</span>(alphanum) - 1)];</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> tmp_str;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">   77</a></span>&#160;  std::random_device <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">rd_</a>;                  </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#a19ac4999bbd5fb7e6c42a4aef9606892">   78</a></span>&#160;  std::mt19937 mt_ = std::mt19937(rd_());  </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_PASSPHRASEGENERATOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html">GpgFrontend::PassphraseGenerator</a></div><div class="ttdoc">The PassphraseGenerator class.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html_a12ee6f9b7fff4883074321c7e0de3dfa"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">GpgFrontend::PassphraseGenerator::rd_</a></div><div class="ttdeci">std::random_device rd_</div><div class="ttdoc">Random device.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:77</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html_a8b4ee1083343fba6d947b85cd66079b8"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html#a8b4ee1083343fba6d947b85cd66079b8">GpgFrontend::PassphraseGenerator::Generate</a></div><div class="ttdeci">std::string Generate(int len)</div><div class="ttdoc">generate passphrase</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:60</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html_ac82ef545a54468ad02253a61cc62e3cf"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">GpgFrontend::PassphraseGenerator::PassphraseGenerator</a></div><div class="ttdeci">PassphraseGenerator(int channel=SingletonFunctionObject::GetDefaultChannel())</div><div class="ttdoc">PassphraseGenerator constructor.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:50</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:148</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:232</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html">   40</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html">PassphraseGenerator</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;PassphraseGenerator&gt; {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">   48</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">PassphraseGenerator</a>(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>())</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      : <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;<a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html">PassphraseGenerator</a>&gt;(channel) {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">auto</span> Generate(<span class="keywordtype">int</span> len) -&gt; QString;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">   61</a></span>&#160;  std::random_device <a class="code" href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">rd_</a>;                  </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1PassphraseGenerator.html#a19ac4999bbd5fb7e6c42a4aef9606892">   62</a></span>&#160;  std::mt19937 mt_ = std::mt19937(rd_());  </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html">GpgFrontend::PassphraseGenerator</a></div><div class="ttdoc">The PassphraseGenerator class.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:41</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html_a12ee6f9b7fff4883074321c7e0de3dfa"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html#a12ee6f9b7fff4883074321c7e0de3dfa">GpgFrontend::PassphraseGenerator::rd_</a></div><div class="ttdeci">std::random_device rd_</div><div class="ttdoc">Random device.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:61</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1PassphraseGenerator_html_ac82ef545a54468ad02253a61cc62e3cf"><div class="ttname"><a href="classGpgFrontend_1_1PassphraseGenerator.html#ac82ef545a54468ad02253a61cc62e3cf">GpgFrontend::PassphraseGenerator::PassphraseGenerator</a></div><div class="ttdeci">PassphraseGenerator(int channel=SingletonFunctionObject::GetDefaultChannel())</div><div class="ttdoc">PassphraseGenerator constructor.</div><div class="ttdef"><b>Definition:</b> PassphraseGenerator.h:48</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:58</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ad983153cbe3a0c32c123c506e04f31fc"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static auto GetDefaultChannel() -&gt; int</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:131</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

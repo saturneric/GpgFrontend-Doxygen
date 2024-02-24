@@ -87,47 +87,45 @@ $(document).ready(function(){initNavTree('GpgCommandExecutor_8h_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_ZH_CN_TS_GPGCOMMANDEXECUTOR_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_ZH_CN_TS_GPGCOMMANDEXECUTOR_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef WINDOWS</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;boost/process.hpp&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;core/GpgContext.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;core/GpgFunctionObject.h&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgCommandExecutor.html">   45</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgCommandExecutor.html">GpgCommandExecutor</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgCommandExecutor&gt; {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgCommandExecutor.html">GpgCommandExecutor</a>(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordtype">int</span> channel = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>());</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifndef WINDOWS</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> Execute(StringArgsRef arguments,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;               <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(boost::process::async_pipe &amp;in,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                        boost::process::async_pipe &amp;out)&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                   &amp;interact_func);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgCommandExecutor.html#aefc4f18ec852b98c539d97da1c712a02">   71</a></span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a> &amp;ctx_ = <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgContext::GetInstance</a>(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">SingletonFunctionObject::GetChannel</a>());  </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_ZH_CN_TS_GPGCOMMANDEXECUTOR_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgCommandExecutor_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgCommandExecutor.html">GpgFrontend::GpgCommandExecutor</a></div><div class="ttdoc">Extra commands related to GPG.</div><div class="ttdef"><b>Definition:</b> GpgCommandExecutor.h:46</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:60</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:148</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a50e2b3794d6553f4231eaec72d9d0a50"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GpgFrontend::SingletonFunctionObject::GetDefaultChannel</a></div><div class="ttdeci">static int GetDefaultChannel()</div><div class="ttdoc">Get the Default Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:232</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a70484d7cfe9f9dcbcd5f8bb749250f36"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static GpgContext &amp; GetInstance(int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:170</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_aa99440b9177f5d0c18840f08a40d64b7"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:239</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> CoreCommonUtil.cpp:29</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/module/Module.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> GpgCommandExecutorCallback = std::function&lt;void(<span class="keywordtype">int</span>, QString, QString)&gt;;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> GpgCommandExecutorInteractor = std::function&lt;void(QProcess *)&gt;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgCommandExecutor.html">   42</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgCommandExecutor.html">GpgCommandExecutor</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html">   44</a></span>&#160;  <span class="keyword">struct </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html">ExecuteContext</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString cmd;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QStringList arguments;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    GpgCommandExecutorCallback cb_func;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    GpgCommandExecutorInteractor int_func;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Module::TaskRunnerPtr task_runner = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html">ExecuteContext</a>(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        QString cmd, QStringList arguments,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        GpgCommandExecutorCallback callback = [](<span class="keywordtype">int</span>, <span class="keyword">const</span> QString &amp;,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                 <span class="keyword">const</span> QString &amp;) {},</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Module::TaskRunnerPtr task_runner = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        GpgCommandExecutorInteractor int_func = [](QProcess *) {});</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">using</span> ExecuteContexts = QList&lt;ExecuteContext&gt;;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ExecuteSync(<a class="code" href="structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html">ExecuteContext</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ExecuteConcurrentlyAsync(ExecuteContexts);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ExecuteConcurrentlySync(ExecuteContexts);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgCommandExecutor_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgCommandExecutor.html">GpgFrontend::GpgCommandExecutor</a></div><div class="ttdoc">Extra commands related to GPG.</div><div class="ttdef"><b>Definition:</b> GpgCommandExecutor.h:42</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext_html"><div class="ttname"><a href="structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html">GpgFrontend::GpgCommandExecutor::ExecuteContext</a></div><div class="ttdef"><b>Definition:</b> GpgCommandExecutor.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

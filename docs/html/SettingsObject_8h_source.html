@@ -87,38 +87,27 @@ $(document).ready(function(){initNavTree('SettingsObject_8h_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef GPGFRONTEND_SETTINGSOBJECT_H</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GPGFRONTEND_SETTINGSOBJECT_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;core/function/DataObjectOperator.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1SettingsObject.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html">SettingsObject</a> : <span class="keyword">public</span> nlohmann::json {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aad706a2c2b68d280b5d3ababff0ff302">SettingsObject</a>(std::string settings_name);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aad706a2c2b68d280b5d3ababff0ff302">SettingsObject</a>(nlohmann::json _sub_json, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c">~SettingsObject</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  nlohmann::json&amp; <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#a5ddcc2e0bc6d4c2f88e6e00371d4792e">Check</a>(<span class="keyword">const</span> std::string&amp; key,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        <span class="keyword">const</span> nlohmann::json&amp; default_value);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html">SettingsObject</a> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#a5ddcc2e0bc6d4c2f88e6e00371d4792e">Check</a>(<span class="keyword">const</span> std::string&amp; key);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::string settings_name_;  </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GPGFRONTEND_SETTINGSOBJECT_H</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html">GpgFrontend::UI::SettingsObject</a></div><div class="ttdoc">The SettingsObject class This class is used to store settings for the application securely.</div><div class="ttdef"><b>Definition:</b> SettingsObject.h:43</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html_a5ddcc2e0bc6d4c2f88e6e00371d4792e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html#a5ddcc2e0bc6d4c2f88e6e00371d4792e">GpgFrontend::UI::SettingsObject::Check</a></div><div class="ttdeci">nlohmann::json &amp; Check(const std::string &amp;key, const nlohmann::json &amp;default_value)</div><div class="ttdef"><b>Definition:</b> SettingsObject.cpp:31</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html_aad706a2c2b68d280b5d3ababff0ff302"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aad706a2c2b68d280b5d3ababff0ff302">GpgFrontend::UI::SettingsObject::SettingsObject</a></div><div class="ttdeci">SettingsObject(std::string settings_name)</div><div class="ttdoc">Construct a new Settings Object object.</div><div class="ttdef"><b>Definition:</b> SettingsObject.cpp:76</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html_ae71336d240ace35756d1852a46271f6c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c">GpgFrontend::UI::SettingsObject::~SettingsObject</a></div><div class="ttdeci">~SettingsObject()</div><div class="ttdoc">Destroy the Settings Object object.</div><div class="ttdef"><b>Definition:</b> SettingsObject.cpp:100</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1SettingsObject.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html">SettingsObject</a> : <span class="keyword">public</span> QJsonObject {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aa4e047f7498658c88dc26245e12095e4">SettingsObject</a>(QString settings_name);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aa4e047f7498658c88dc26245e12095e4">SettingsObject</a>(QJsonObject sub_json);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c">~SettingsObject</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> Store(<span class="keyword">const</span> QJsonObject&amp;);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QString settings_name_;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html">GpgFrontend::UI::SettingsObject</a></div><div class="ttdoc">The SettingsObject class This class is used to store data for the application securely.</div><div class="ttdef"><b>Definition:</b> SettingsObject.h:38</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html_aa4e047f7498658c88dc26245e12095e4"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html#aa4e047f7498658c88dc26245e12095e4">GpgFrontend::UI::SettingsObject::SettingsObject</a></div><div class="ttdeci">SettingsObject(QString settings_name)</div><div class="ttdoc">Construct a new Settings Object object.</div><div class="ttdef"><b>Definition:</b> SettingsObject.cpp:35</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsObject_html_ae71336d240ace35756d1852a46271f6c"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsObject.html#ae71336d240ace35756d1852a46271f6c">GpgFrontend::UI::SettingsObject::~SettingsObject</a></div><div class="ttdeci">~SettingsObject()</div><div class="ttdoc">Destroy the Settings Object object.</div><div class="ttdef"><b>Definition:</b> SettingsObject.cpp:58</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

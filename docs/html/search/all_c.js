@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['m_5ftext_5fpage_5f_400',['m_text_page_',['../classGpgFrontend_1_1UI_1_1FindWidget.html#a11f9d0f07b704539ad1df15a5c15dca9',1,'GpgFrontend::UI::FindWidget::m_text_page_()'],['../classGpgFrontend_1_1UI_1_1InfoBoardWidget.html#a6380776ea1bf9a020370589e1e20efd3',1,'GpgFrontend::UI::InfoBoardWidget::m_text_page_()']]],
-  ['mainwindow_401',['MainWindow',['../classGpgFrontend_1_1UI_1_1MainWindow.html',1,'GpgFrontend::UI']]],
-  ['markkeys_402',['MarkKeys',['../classGpgFrontend_1_1UI_1_1KeyList.html#a31a4c067eed90830203862cb4adf951e',1,'GpgFrontend::UI::KeyList']]],
-  ['maybe_5fsave_5fcurrent_5ftab_403',['maybe_save_current_tab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a8fad090a19479a9fe89432300cca2b6c',1,'GpgFrontend::UI::TextEdit']]],
-  ['maybesaveanytab_404',['MaybeSaveAnyTab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a3c976a5494d06c2186d94e7cc8ebe457',1,'GpgFrontend::UI::TextEdit']]],
-  ['modifypassword_405',['ModifyPassword',['../classGpgFrontend_1_1GpgKeyOpera.html#ab7e16d1f4cba23ea5b5b9f6009ce5ee2',1,'GpgFrontend::GpgKeyOpera']]],
-  ['modifytofupolicy_406',['ModifyTOFUPolicy',['../classGpgFrontend_1_1GpgKeyOpera.html#a76a7f59701add8a59d8835919dad2000',1,'GpgFrontend::GpgKeyOpera']]],
-  ['mt_5f_407',['mt_',['../classGpgFrontend_1_1DataObjectOperator.html#a9fc92c7d497f2a2057776adfca40e8ca',1,'GpgFrontend::DataObjectOperator::mt_()'],['../classGpgFrontend_1_1PassphraseGenerator.html#a19ac4999bbd5fb7e6c42a4aef9606892',1,'GpgFrontend::PassphraseGenerator::mt_()']]]
+  ['name_5fedit_5f_490',['name_edit_',['../classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a7ed095cce29c658741ae0520049010c0',1,'GpgFrontend::UI::KeyGenDialog']]],
+  ['name_5fvar_5flabel_5f_491',['name_var_label_',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a9d57be18c2091827c04ec8809f4154be',1,'GpgFrontend::UI::KeyPairDetailTab']]],
+  ['needupgrade_492',['NeedUpgrade',['../structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a9798cca1278fe49687ff833805a80817',1,'GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion']]],
+  ['networktab_493',['NetworkTab',['../classGpgFrontend_1_1UI_1_1NetworkTab.html',1,'GpgFrontend::UI::NetworkTab'],['../classGpgFrontend_1_1UI_1_1NetworkTab.html#a444d3630919c1f9c4db495a58acbb9a8',1,'GpgFrontend::UI::NetworkTab::NetworkTab()']]],
+  ['new_5ftab_5fact_5f_494',['new_tab_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a472500fec64442b114e9ce9faf4b6a73',1,'GpgFrontend::UI::MainWindow']]],
+  ['newarchive2dataexchanger_495',['NewArchive2DataExchanger',['../classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c',1,'GpgFrontend::ArchiveFileOperator']]],
+  ['nextid_496',['nextId',['../classGpgFrontend_1_1UI_1_1IntroPage.html#a812fd63d87955f9131a98ad8b679f8a4',1,'GpgFrontend::UI::IntroPage::nextId()'],['../classGpgFrontend_1_1UI_1_1ChoosePage.html#a243a82d13267b7252844fd7691c703f0',1,'GpgFrontend::UI::ChoosePage::nextId()'],['../classGpgFrontend_1_1UI_1_1KeyGenPage.html#a28958f6627f01db7c6f75fc0dec3eead',1,'GpgFrontend::UI::KeyGenPage::nextId()'],['../classGpgFrontend_1_1UI_1_1ConclusionPage.html#a0f3f3118456ccce7c2a6965cf68d2cf7',1,'GpgFrontend::UI::ConclusionPage::nextId()']]],
+  ['no_5fpass_5fphrase_5fcheck_5fbox_5f_497',['no_pass_phrase_check_box_',['../classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html#a001803152c0e5bd9de7c7dd04cef8ad4',1,'GpgFrontend::UI::SubkeyGenerateDialog']]],
+  ['notify_498',['notify',['../classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html#a6f8ab335d89948c48cd634ab20ff9aa0',1,'GpgFrontend::UI::GpgFrontendApplication']]],
+  ['notifyfilesaved_499',['NotifyFileSaved',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a29b3d63ba9590e775f42c779c76102e5',1,'GpgFrontend::UI::PlainTextEditorPage']]]
 ];

@@ -11,84 +11,51 @@ Extra commands related to GPG.
 
 
 
-Inheritance diagram for Gpg\+Frontend\+::Gpg\+Command\+Executor\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1GpgCommandExecutor__inherit__graph}
-\end{center}
-\end{figure}
-
-
 Collaboration diagram for Gpg\+Frontend\+::Gpg\+Command\+Executor\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1GpgCommandExecutor__coll__graph}
+\includegraphics[width=277pt]{classGpgFrontend_1_1GpgCommandExecutor__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_a94240f423464600938bfcafa2b186c38}{Gpg\+Command\+Executor}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
-\begin{DoxyCompactList}\small\item\em Construct a new Gpg Command Executor object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}{Execute}} (String\+Args\+Ref arguments, const std\+::function$<$ void(boost\+::process\+::async\+\_\+pipe \&in, boost\+::process\+::async\+\_\+pipe \&out)$>$ \&interact\+\_\+func)
-\begin{DoxyCompactList}\small\item\em Excuting an order. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+struct \mbox{\hyperlink{structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext}{Execute\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}} \& \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_aefc4f18ec852b98c539d97da1c712a02}{ctx\+\_\+}}
-\begin{DoxyCompactList}\small\item\em Corresponding context. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_a42cbe93981d496b6dc61e28e3dcfb6e6}\label{classGpgFrontend_1_1GpgCommandExecutor_a42cbe93981d496b6dc61e28e3dcfb6e6}} 
+using {\bfseries Execute\+Contexts} = QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext}{Execute\+Context}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classGpgFrontend_1_1GpgCommandExecutor_ac3f979fcd910206e2d9cb30930e9eecb}{Execute\+Sync}} (\mbox{\hyperlink{structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext}{Execute\+Context}})
+\begin{DoxyCompactList}\small\item\em Excuting a command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_a1412fef6649e8fa7d7376f233841b60d}\label{classGpgFrontend_1_1GpgCommandExecutor_a1412fef6649e8fa7d7376f233841b60d}} 
+static void {\bfseries Execute\+Concurrently\+Async} (Execute\+Contexts)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_ae749d88c09b467b800a9f5682c142bb6}\label{classGpgFrontend_1_1GpgCommandExecutor_ae749d88c09b467b800a9f5682c142bb6}} 
+static void {\bfseries Execute\+Concurrently\+Sync} (Execute\+Contexts)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Extra commands related to GPG. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_a94240f423464600938bfcafa2b186c38}\label{classGpgFrontend_1_1GpgCommandExecutor_a94240f423464600938bfcafa2b186c38}} 
-\index{GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}!GpgCommandExecutor@{GpgCommandExecutor}}
-\index{GpgCommandExecutor@{GpgCommandExecutor}!GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}}
-\doxysubsubsection{\texorpdfstring{GpgCommandExecutor()}{GpgCommandExecutor()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Gpg\+Command\+Executor (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-
-
-Construct a new Gpg Command Executor object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em channel} & Corresponding context\\
-\hline
-\end{DoxyParams}
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
-
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}\label{classGpgFrontend_1_1GpgCommandExecutor_afca1c4b6a6c3758a834832768f52bbca}} 
-\index{GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}!Execute@{Execute}}
-\index{Execute@{Execute}!GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}}
-\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute (\begin{DoxyParamCaption}\item[{String\+Args\+Ref}]{arguments,  }\item[{const std\+::function$<$ void(boost\+::process\+::async\+\_\+pipe \&in, boost\+::process\+::async\+\_\+pipe \&out)$>$ \&}]{interact\+\_\+func }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_ac3f979fcd910206e2d9cb30930e9eecb}\label{classGpgFrontend_1_1GpgCommandExecutor_ac3f979fcd910206e2d9cb30930e9eecb}} 
+\index{GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}!ExecuteSync@{ExecuteSync}}
+\index{ExecuteSync@{ExecuteSync}!GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}}
+\doxysubsubsection{\texorpdfstring{ExecuteSync()}{ExecuteSync()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::\+Execute\+Sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext}{Execute\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Excuting an order. 
+Excuting a command. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -99,26 +66,11 @@ Excuting an order.
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Task\+Runner\+Getter $>$\+::\+Get\+Instance().
 
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgCommandExecutor_aefc4f18ec852b98c539d97da1c712a02}\label{classGpgFrontend_1_1GpgCommandExecutor_aefc4f18ec852b98c539d97da1c712a02}} 
-\index{GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}!ctx\_@{ctx\_}}
-\index{ctx\_@{ctx\_}!GpgFrontend::GpgCommandExecutor@{GpgFrontend::GpgCommandExecutor}}
-\doxysubsubsection{\texorpdfstring{ctx\_}{ctx\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1GpgContext}{Gpg\+Context}}\& Gpg\+Frontend\+::\+Gpg\+Command\+Executor\+::ctx\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{= \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a70484d7cfe9f9dcbcd5f8bb749250f36}{GpgContext::GetInstance}}(}
-\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_aa99440b9177f5d0c18840f08a40d64b7}{SingletonFunctionObject::GetChannel}}())}
-
-\end{DoxyCode}
-
-
-Corresponding context. 
+Referenced by Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Clear\+Gpg\+Password\+Cache(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Generate\+Revoke\+Cert(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reload\+Gpg\+Components(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Reset\+Configures(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Restart\+Gpg\+Components(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Dirmngr(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Gpg\+Agent(), and Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Key\+Boxd().
 
 
 

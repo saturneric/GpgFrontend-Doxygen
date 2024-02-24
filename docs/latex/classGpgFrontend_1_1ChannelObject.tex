@@ -2,12 +2,12 @@
 \label{classGpgFrontend_1_1ChannelObject}\index{GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}}
 
 
-object which in channel system  
+object which in channel system is called \char`\"{}channel\char`\"{}  
 
 
 
 
-{\ttfamily \#include $<$Gpg\+Function\+Object.\+h$>$}
+{\ttfamily \#include $<$Channel\+Object.\+h$>$}
 
 
 
@@ -35,40 +35,40 @@ Collaboration diagram for Gpg\+Frontend\+::Channel\+Object\+:
 \mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_aedbf32eddc701e521bd8e790ef208da0}\label{classGpgFrontend_1_1ChannelObject_aedbf32eddc701e521bd8e790ef208da0}} 
 \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_aedbf32eddc701e521bd8e790ef208da0}{Channel\+Object}} () noexcept
 \begin{DoxyCompactList}\small\item\em Construct a new Default Channel Object object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a68ad2a19339e3cd50626fe0eaad17ccd}{Channel\+Object}} (int channel)
+\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a85a29ff6a1233114eb9f159c408cbe35}\label{classGpgFrontend_1_1ChannelObject_a85a29ff6a1233114eb9f159c408cbe35}} 
+virtual \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a85a29ff6a1233114eb9f159c408cbe35}{$\sim$\+Channel\+Object}} () noexcept
+\begin{DoxyCompactList}\small\item\em Destroy the Channel Object object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a3d55a57ee60bdb5a747125da9586a0e5}{Channel\+Object}} (int channel, QString type)
 \begin{DoxyCompactList}\small\item\em Construct a new Channel Object object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a0e13a4bff1cfb679f68a3a2590a3b1b8}{Get\+Channel}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a085b36517fcc46916279b9d633da2d26}{Get\+Channel}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Channel object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_aa3b19cad6d873b314bba32a3dae85f09}{Set\+Channel}} (int channel)
 \begin{DoxyCompactList}\small\item\em Set the Channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_aece9c525c49900734bc1bebf85b644ef}{Get\+Default\+Channel}} ()
+static auto \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a6a3672c8ff3d4fb5ef6bc1bda202bbb8}{Get\+Default\+Channel}} () -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Default Channel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_aee5f8a5575adbdf522da4dd195c091ee}\label{classGpgFrontend_1_1ChannelObject_aee5f8a5575adbdf522da4dd195c091ee}} 
-int \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_aee5f8a5575adbdf522da4dd195c091ee}{channel\+\_\+}} = \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a66295bb572e98fc2fad3afce763ac311}{\+\_\+default\+\_\+channel}}
-\begin{DoxyCompactList}\small\item\em The channel id. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a66295bb572e98fc2fad3afce763ac311}\label{classGpgFrontend_1_1ChannelObject_a66295bb572e98fc2fad3afce763ac311}} 
-static constexpr int \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_a66295bb572e98fc2fad3afce763ac311}{\+\_\+default\+\_\+channel}} = 0
-\begin{DoxyCompactList}\small\item\em The default channel id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject_aee5f8a5575adbdf522da4dd195c091ee}{channel\+\_\+}} = k\+Gpg\+Frontend\+Default\+Channel
+\begin{DoxyCompactList}\small\item\em The channel id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a2864add31ca45349ac40e7fc275c34ad}\label{classGpgFrontend_1_1ChannelObject_a2864add31ca45349ac40e7fc275c34ad}} 
+QString {\bfseries type\+\_\+}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-object which in channel system 
+object which in channel system is called \char`\"{}channel\char`\"{} 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a68ad2a19339e3cd50626fe0eaad17ccd}\label{classGpgFrontend_1_1ChannelObject_a68ad2a19339e3cd50626fe0eaad17ccd}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a3d55a57ee60bdb5a747125da9586a0e5}\label{classGpgFrontend_1_1ChannelObject_a3d55a57ee60bdb5a747125da9586a0e5}} 
 \index{GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}!ChannelObject@{ChannelObject}}
 \index{ChannelObject@{ChannelObject}!GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}}
 \doxysubsubsection{\texorpdfstring{ChannelObject()}{ChannelObject()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Channel\+Object\+::\+Channel\+Object (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Channel\+Object\+::\+Channel\+Object (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{QString}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -82,11 +82,11 @@ Construct a new Channel Object object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a0e13a4bff1cfb679f68a3a2590a3b1b8}\label{classGpgFrontend_1_1ChannelObject_a0e13a4bff1cfb679f68a3a2590a3b1b8}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a085b36517fcc46916279b9d633da2d26}\label{classGpgFrontend_1_1ChannelObject_a085b36517fcc46916279b9d633da2d26}} 
 \index{GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}!GetChannel@{GetChannel}}
 \index{GetChannel@{GetChannel}!GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}}
 \doxysubsubsection{\texorpdfstring{GetChannel()}{GetChannel()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -97,13 +97,17 @@ int
 \end{DoxyReturn}
 
 
+References channel\+\_\+.
+
+
+
 Referenced by Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ T $>$\+::\+Get\+Channel().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_aece9c525c49900734bc1bebf85b644ef}\label{classGpgFrontend_1_1ChannelObject_aece9c525c49900734bc1bebf85b644ef}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1ChannelObject_a6a3672c8ff3d4fb5ef6bc1bda202bbb8}\label{classGpgFrontend_1_1ChannelObject_a6a3672c8ff3d4fb5ef6bc1bda202bbb8}} 
 \index{GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}!GetDefaultChannel@{GetDefaultChannel}}
 \index{GetDefaultChannel@{GetDefaultChannel}!GpgFrontend::ChannelObject@{GpgFrontend::ChannelObject}}
 \doxysubsubsection{\texorpdfstring{GetDefaultChannel()}{GetDefaultChannel()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Default\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Channel\+Object\+::\+Get\+Default\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -128,22 +132,10 @@ Set the Channel object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em channel} & Copyright (C) 2021 Saturneric\\
+{\em channel} & \\
 \hline
 \end{DoxyParams}
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 References channel\+\_\+.
 
@@ -151,5 +143,5 @@ References channel\+\_\+.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/Gpg\+Function\+Object.\+h\item 
-src/core/Gpg\+Function\+Object.\+cpp\end{DoxyCompactItemize}
+src/core/function/basic/Channel\+Object.\+h\item 
+src/core/function/basic/Channel\+Object.\+cpp\end{DoxyCompactItemize}

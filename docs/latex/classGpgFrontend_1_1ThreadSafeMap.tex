@@ -1,0 +1,99 @@
+\hypertarget{classGpgFrontend_1_1ThreadSafeMap}{}\doxysection{Gpg\+Frontend\+::Thread\+Safe\+Map$<$ Key, Value $>$ Class Template Reference}
+\label{classGpgFrontend_1_1ThreadSafeMap}\index{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$@{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Thread\+Safe\+Map$<$ Key, Value $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classGpgFrontend_1_1ThreadSafeMap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Thread\+Safe\+Map$<$ Key, Value $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1ThreadSafeMap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_ae47d44e31883547e285e5366db23a0fe}\label{classGpgFrontend_1_1ThreadSafeMap_ae47d44e31883547e285e5366db23a0fe}} 
+using {\bfseries Map\+Type} = std\+::map$<$ Key, Value $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_af1a2463215950aab4068f0ac7aaf4be2}\label{classGpgFrontend_1_1ThreadSafeMap_af1a2463215950aab4068f0ac7aaf4be2}} 
+using {\bfseries Iterator\+Type} = typename Map\+Type\+::iterator
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a8499e210ffb71c52cdeb309269127157}\label{classGpgFrontend_1_1ThreadSafeMap_a8499e210ffb71c52cdeb309269127157}} 
+void {\bfseries insert} (const Key \&key, const Value \&value)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a4a889c8e5f8295f72ee10fb2dd26c121}\label{classGpgFrontend_1_1ThreadSafeMap_a4a889c8e5f8295f72ee10fb2dd26c121}} 
+auto {\bfseries get} (const Key \&key) -\/$>$ std\+::optional$<$ Value $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a1084530558d58b4947a09b0cfe145e26}\label{classGpgFrontend_1_1ThreadSafeMap_a1084530558d58b4947a09b0cfe145e26}} 
+auto {\bfseries exists} (const Key \&key) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a1fb5062f9fc40f1833c0546e01445d1a}\label{classGpgFrontend_1_1ThreadSafeMap_a1fb5062f9fc40f1833c0546e01445d1a}} 
+auto {\bfseries begin} () -\/$>$ Iterator\+Type
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_ae1412d125b18fc136834ca078a82d709}\label{classGpgFrontend_1_1ThreadSafeMap_ae1412d125b18fc136834ca078a82d709}} 
+auto {\bfseries end} () -\/$>$ Iterator\+Type
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a0dcb62a6da0da59a93a530471fe5bd6c}\label{classGpgFrontend_1_1ThreadSafeMap_a0dcb62a6da0da59a93a530471fe5bd6c}} 
+auto {\bfseries mirror} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Thread\+Safe\+Map}} \&
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a4c7212f340e024dad64df53ee655e1f0}\label{classGpgFrontend_1_1ThreadSafeMap_a4c7212f340e024dad64df53ee655e1f0}} 
+auto {\bfseries remove} (QString key) -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ Map\+Type, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ Map\+Type $>$ $>$ {\bfseries map\+\_\+mirror\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ Map\+Type, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$ Map\+Type $>$ $>$ {\bfseries map\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_acc5f153d80e6930caaa16315e938a044}\label{classGpgFrontend_1_1ThreadSafeMap_acc5f153d80e6930caaa16315e938a044}} 
+std\+::shared\+\_\+mutex {\bfseries mutex\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_a0bc627352201172bd4578330bc99e672}\label{classGpgFrontend_1_1ThreadSafeMap_a0bc627352201172bd4578330bc99e672}} 
+\index{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$@{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$}!map\_@{map\_}}
+\index{map\_@{map\_}!GpgFrontend::ThreadSafeMap$<$ Key, Value $>$@{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$}}
+\doxysubsubsection{\texorpdfstring{map\_}{map\_}}
+{\footnotesize\ttfamily template$<$typename Key , typename Value $>$ \\
+std\+::unique\+\_\+ptr$<$Map\+Type, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$Map\+Type$>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Gpg\+Frontend\+::\+Thread\+Safe\+Map}}$<$ Key, Value $>$\+::map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      std::move(SecureCreateUniqueObject<MapType>())}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGpgFrontend_1_1ThreadSafeMap_af086e5653ee8d98e3d4f631a6da85778}\label{classGpgFrontend_1_1ThreadSafeMap_af086e5653ee8d98e3d4f631a6da85778}} 
+\index{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$@{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$}!map\_mirror\_@{map\_mirror\_}}
+\index{map\_mirror\_@{map\_mirror\_}!GpgFrontend::ThreadSafeMap$<$ Key, Value $>$@{GpgFrontend::ThreadSafeMap$<$ Key, Value $>$}}
+\doxysubsubsection{\texorpdfstring{map\_mirror\_}{map\_mirror\_}}
+{\footnotesize\ttfamily template$<$typename Key , typename Value $>$ \\
+std\+::unique\+\_\+ptr$<$Map\+Type, \mbox{\hyperlink{structGpgFrontend_1_1SecureObjectDeleter}{Secure\+Object\+Deleter}}$<$Map\+Type$>$ $>$ \mbox{\hyperlink{classGpgFrontend_1_1ThreadSafeMap}{Gpg\+Frontend\+::\+Thread\+Safe\+Map}}$<$ Key, Value $>$\+::map\+\_\+mirror\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      std::move(SecureCreateUniqueObject<MapType>())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Cache\+Manager.\+cpp\end{DoxyCompactItemize}

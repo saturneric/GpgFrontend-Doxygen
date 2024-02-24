@@ -2,7 +2,7 @@
 \label{classGpgFrontend_1_1UI_1_1SettingsObject}\index{GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}}
 
 
-The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store settings for the application securely.  
+The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store data for the application securely.  
 
 
 
@@ -26,40 +26,39 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Settings\+Object\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=286pt]{classGpgFrontend_1_1UI_1_1SettingsObject__coll__graph}
+\includegraphics[width=221pt]{classGpgFrontend_1_1UI_1_1SettingsObject__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_aad706a2c2b68d280b5d3ababff0ff302}{Settings\+Object}} (std\+::string settings\+\_\+name)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_aa4e047f7498658c88dc26245e12095e4}{Settings\+Object}} (QString settings\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Construct a new Settings Object object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_ac11d19096b4e88cb288a208a4953af4d}{Settings\+Object}} (nlohmann\+::json \+\_\+sub\+\_\+json, bool)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_a4cc703c4ee125d44d5f7b48ae01432ff}{Settings\+Object}} (QJson\+Object sub\+\_\+json)
 \begin{DoxyCompactList}\small\item\em Construct a new Settings Object object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_ae71336d240ace35756d1852a46271f6c}\label{classGpgFrontend_1_1UI_1_1SettingsObject_ae71336d240ace35756d1852a46271f6c}} 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_ae71336d240ace35756d1852a46271f6c}{$\sim$\+Settings\+Object}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the Settings Object object. \end{DoxyCompactList}\item 
-nlohmann\+::json \& \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_a5ddcc2e0bc6d4c2f88e6e00371d4792e}{Check}} (const std\+::string \&key, const nlohmann\+::json \&default\+\_\+value)
-\item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject_a80801f6912991ba625b5ead29a4558f0}{Check}} (const std\+::string \&key)
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_adf45a5005ae39d9b8a6c834d764e84af}\label{classGpgFrontend_1_1UI_1_1SettingsObject_adf45a5005ae39d9b8a6c834d764e84af}} 
+void {\bfseries Store} (const QJson\+Object \&)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_a69e9027002113bf9ecc16d7836e42c63}\label{classGpgFrontend_1_1UI_1_1SettingsObject_a69e9027002113bf9ecc16d7836e42c63}} 
-std\+::string {\bfseries settings\+\_\+name\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_ae52edcd642daabf9acb385af824b0d72}\label{classGpgFrontend_1_1UI_1_1SettingsObject_ae52edcd642daabf9acb385af824b0d72}} 
+QString {\bfseries settings\+\_\+name\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store settings for the application securely. 
+The \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} class This class is used to store data for the application securely. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_aad706a2c2b68d280b5d3ababff0ff302}\label{classGpgFrontend_1_1UI_1_1SettingsObject_aad706a2c2b68d280b5d3ababff0ff302}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_aa4e047f7498658c88dc26245e12095e4}\label{classGpgFrontend_1_1UI_1_1SettingsObject_aa4e047f7498658c88dc26245e12095e4}} 
 \index{GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}!SettingsObject@{SettingsObject}}
 \index{SettingsObject@{SettingsObject}!GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}}
 \doxysubsubsection{\texorpdfstring{SettingsObject()}{SettingsObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Settings\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{settings\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Settings\+Object (\begin{DoxyParamCaption}\item[{QString}]{settings\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -74,11 +73,11 @@ Construct a new Settings Object object.
 
 References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Data\+Object\+Operator $>$\+::\+Get\+Instance().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_ac11d19096b4e88cb288a208a4953af4d}\label{classGpgFrontend_1_1UI_1_1SettingsObject_ac11d19096b4e88cb288a208a4953af4d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_a4cc703c4ee125d44d5f7b48ae01432ff}\label{classGpgFrontend_1_1UI_1_1SettingsObject_a4cc703c4ee125d44d5f7b48ae01432ff}} 
 \index{GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}!SettingsObject@{SettingsObject}}
 \index{SettingsObject@{SettingsObject}!GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}}
 \doxysubsubsection{\texorpdfstring{SettingsObject()}{SettingsObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Settings\+Object (\begin{DoxyParamCaption}\item[{nlohmann\+::json}]{\+\_\+sub\+\_\+json,  }\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Settings\+Object (\begin{DoxyParamCaption}\item[{QJson\+Object}]{sub\+\_\+json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -89,57 +88,6 @@ Construct a new Settings Object object.
 {\em \+\_\+sub\+\_\+json} & \\
 \hline
 \end{DoxyParams}
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_a80801f6912991ba625b5ead29a4558f0}\label{classGpgFrontend_1_1UI_1_1SettingsObject_a80801f6912991ba625b5ead29a4558f0}} 
-\index{GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}!Check@{Check}}
-\index{Check@{Check}!GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}}
-\doxysubsubsection{\texorpdfstring{Check()}{Check()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Gpg\+Frontend\+::\+UI\+::\+Settings\+Object}} Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em key} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsObject}{Settings\+Object}} 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsObject_a5ddcc2e0bc6d4c2f88e6e00371d4792e}\label{classGpgFrontend_1_1UI_1_1SettingsObject_a5ddcc2e0bc6d4c2f88e6e00371d4792e}} 
-\index{GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}!Check@{Check}}
-\index{Check@{Check}!GpgFrontend::UI::SettingsObject@{GpgFrontend::UI::SettingsObject}}
-\doxysubsubsection{\texorpdfstring{Check()}{Check()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily nlohmann\+::json \& Gpg\+Frontend\+::\+UI\+::\+Settings\+Object\+::\+Check (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const nlohmann\+::json \&}]{default\+\_\+value }\end{DoxyParamCaption})}
-
-
-\begin{DoxyParams}{Parameters}
-{\em key} & \\
-\hline
-{\em default\+\_\+value} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-nlohmann\+::json\&
-\end{DoxyReturn}
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
-
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::create\+\_\+combo\+Box(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Plain\+Text\+Editor\+Page(), Gpg\+Frontend\+::\+UI\+::\+Info\+Board\+Widget\+::\+Set\+Info\+Board(), Gpg\+Frontend\+::\+UI\+::\+Appearance\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Keyserver\+Tab\+::\+Set\+Settings(), Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+open\+\_\+settings\+\_\+dialog(), Gpg\+Frontend\+::\+UI\+::\+Key\+Upload\+Dialog\+::slot\+\_\+upload\+\_\+key\+\_\+to\+\_\+server(), Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Import\+Dialog\+::\+Slot\+Import(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Key\+From\+Key\+Server().
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,10 +1,5 @@
 <map id="GpgFrontend::Thread::Task" name="GpgFrontend::Thread::Task">
-<area shape="rect" id="node1" title=" " alt="" coords="108,440,271,752"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,300,80,377"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,300,197,377"/>
-<area shape="rect" id="node4" title=" " alt="" coords="222,300,309,377"/>
-<area shape="rect" id="node5" title=" " alt="" coords="196,145,335,237"/>
-<area shape="rect" id="node6" title=" " alt="" coords="333,300,555,377"/>
-<area shape="rect" id="node7" title=" " alt="" coords="365,153,523,230"/>
-<area shape="rect" id="node8" title=" " alt="" coords="425,5,463,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="15,131,177,413"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,80,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="104,5,197,83"/>
 </map>

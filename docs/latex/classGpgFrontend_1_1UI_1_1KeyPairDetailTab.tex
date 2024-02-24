@@ -23,7 +23,7 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Pair\+Detail\+Tab\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a76efd8f8d623813be1a329ad01972444}{Key\+Pair\+Detail\+Tab}} (const std\+::string \&key\+\_\+id, QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a90263d565b9343cf03de5542e9dee9a7}{Key\+Pair\+Detail\+Tab}} (const QString \&key\+\_\+id, QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Key Pair Detail Tab object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
@@ -77,8 +77,11 @@ QLabel $\ast$ {\bfseries last\+\_\+update\+\_\+var\+\_\+label\+\_\+}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aadcb3bbb4233fdc2deca5b509c46b2e1}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aadcb3bbb4233fdc2deca5b509c46b2e1}} 
 QLabel $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_aadcb3bbb4233fdc2deca5b509c46b2e1}{algorithm\+\_\+var\+\_\+label\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Label containing the keys algorithm. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a65176245d280ae0734ef7b5b3f1c4cc4}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a65176245d280ae0734ef7b5b3f1c4cc4}} 
-QLabel $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a65176245d280ae0734ef7b5b3f1c4cc4}{key\+\_\+id\+\_\+var\+\_\+label}}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_abbfe5c15ea09478f52f25ce0a91bbbf8}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_abbfe5c15ea09478f52f25ce0a91bbbf8}} 
+QLabel $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_abbfe5c15ea09478f52f25ce0a91bbbf8}{algorithm\+\_\+detail\+\_\+var\+\_\+label\+\_\+}}
+\begin{DoxyCompactList}\small\item\em containing the keys algorithm detail \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a10bc48799137d4c104975ca21c684985}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a10bc48799137d4c104975ca21c684985}} 
+QLabel $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a10bc48799137d4c104975ca21c684985}{key\+\_\+id\+\_\+var\+\_\+label\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Label containing the keys keyid. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a1bb1519e5cce51ad5796065232f66ad6}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a1bb1519e5cce51ad5796065232f66ad6}} 
 QLabel $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a1bb1519e5cce51ad5796065232f66ad6}{fingerprint\+\_\+var\+\_\+label\+\_\+}}
@@ -92,6 +95,9 @@ QLabel $\ast$ {\bfseries actual\+\_\+usage\+\_\+var\+\_\+label\+\_\+}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a34ea69e2f2a6d190121c0463cf190a63}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a34ea69e2f2a6d190121c0463cf190a63}} 
 QLabel $\ast$ {\bfseries primary\+\_\+key\+\_\+exist\+\_\+var\+\_\+label\+\_\+}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a9a5f52cf050b3ef7e30f742856b82955}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a9a5f52cf050b3ef7e30f742856b82955}} 
+QLabel $\ast$ {\bfseries owner\+\_\+trust\+\_\+var\+\_\+label\+\_\+}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_ab14f5ac30ce3cca1c42155bae030c62e}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_ab14f5ac30ce3cca1c42155bae030c62e}} 
 QLabel $\ast$ {\bfseries icon\+\_\+label\+\_\+}
 \item 
@@ -101,11 +107,11 @@ QLabel $\ast$ {\bfseries exp\+\_\+label\+\_\+}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a76efd8f8d623813be1a329ad01972444}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a76efd8f8d623813be1a329ad01972444}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a90263d565b9343cf03de5542e9dee9a7}\label{classGpgFrontend_1_1UI_1_1KeyPairDetailTab_a90263d565b9343cf03de5542e9dee9a7}} 
 \index{GpgFrontend::UI::KeyPairDetailTab@{GpgFrontend::UI::KeyPairDetailTab}!KeyPairDetailTab@{KeyPairDetailTab}}
 \index{KeyPairDetailTab@{KeyPairDetailTab}!GpgFrontend::UI::KeyPairDetailTab@{GpgFrontend::UI::KeyPairDetailTab}}
 \doxysubsubsection{\texorpdfstring{KeyPairDetailTab()}{KeyPairDetailTab()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key\+\_\+id,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Detail\+Tab\+::\+Key\+Pair\+Detail\+Tab (\begin{DoxyParamCaption}\item[{const QString \&}]{key\+\_\+id,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -120,7 +126,7 @@ Construct a new Key Pair Detail Tab object.
 \end{DoxyParams}
 
 
-References additional\+\_\+uid\+\_\+box\+\_\+, algorithm\+\_\+var\+\_\+label\+\_\+, comment\+\_\+var\+\_\+label\+\_\+, created\+\_\+var\+\_\+label\+\_\+, email\+\_\+var\+\_\+label\+\_\+, expire\+\_\+var\+\_\+label\+\_\+, fingerprint\+\_\+box\+\_\+, fingerprint\+\_\+var\+\_\+label\+\_\+, Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Email(), Gpg\+Frontend\+::\+UI\+::\+Signal\+Station\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Get\+Sub\+Keys(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Master\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), key\+\_\+box\+\_\+, key\+\_\+id\+\_\+var\+\_\+label, key\+\_\+size\+\_\+var\+\_\+label\+\_\+, name\+\_\+var\+\_\+label\+\_\+, owner\+\_\+box\+\_\+, and slot\+\_\+copy\+\_\+fingerprint().
+References additional\+\_\+uid\+\_\+box\+\_\+, algorithm\+\_\+detail\+\_\+var\+\_\+label\+\_\+, algorithm\+\_\+var\+\_\+label\+\_\+, comment\+\_\+var\+\_\+label\+\_\+, created\+\_\+var\+\_\+label\+\_\+, email\+\_\+var\+\_\+label\+\_\+, expire\+\_\+var\+\_\+label\+\_\+, fingerprint\+\_\+box\+\_\+, fingerprint\+\_\+var\+\_\+label\+\_\+, Gpg\+Frontend\+::\+UI\+::\+UISignal\+Station\+::\+Get\+Instance(), key\+\_\+box\+\_\+, key\+\_\+id\+\_\+var\+\_\+label\+\_\+, key\+\_\+size\+\_\+var\+\_\+label\+\_\+, name\+\_\+var\+\_\+label\+\_\+, owner\+\_\+box\+\_\+, and slot\+\_\+copy\+\_\+fingerprint().
 
 
 

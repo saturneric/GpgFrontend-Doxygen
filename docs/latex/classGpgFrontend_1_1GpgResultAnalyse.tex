@@ -17,7 +17,7 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Result\+Analyse\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1GpgResultAnalyse__coll__graph}
+\includegraphics[width=254pt]{classGpgFrontend_1_1GpgResultAnalyse__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -26,9 +26,9 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Result\+Analyse\+:
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_aa3c9bdf1ea4c87476010ef32fd2fb426}\label{classGpgFrontend_1_1GpgResultAnalyse_aa3c9bdf1ea4c87476010ef32fd2fb426}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_aa3c9bdf1ea4c87476010ef32fd2fb426}{Gpg\+Result\+Analyse}} ()=default
 \begin{DoxyCompactList}\small\item\em Construct a new Result Analyse object. \end{DoxyCompactList}\item 
-const std\+::string \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}{Get\+Result\+Report}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_af271ad9aa3bc37e8445abf56f5fb0274}{Get\+Result\+Report}} () const -\/$>$ const QString
 \begin{DoxyCompactList}\small\item\em Get the Result Report object. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}{Get\+Status}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_ad1bd7527f7481ca4f2d6e84add30bbf2}{Get\+Status}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Get the Status object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a80c80d597391d2d531345d3dd507b038}\label{classGpgFrontend_1_1GpgResultAnalyse_a80c80d597391d2d531345d3dd507b038}} 
 void {\bfseries Analyse} ()
@@ -36,16 +36,19 @@ void {\bfseries Analyse} ()
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a3664c37fe30b7006f50e18792957bf58}\label{classGpgFrontend_1_1GpgResultAnalyse_a3664c37fe30b7006f50e18792957bf58}} 
-virtual void {\bfseries do\+\_\+analyse} ()=0
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a2144983b5795e79dc176a438c80fb9c6}\label{classGpgFrontend_1_1GpgResultAnalyse_a2144983b5795e79dc176a438c80fb9c6}} 
+virtual void {\bfseries do\+Analyse} ()=0
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}{set\+\_\+status}} (int m\+\_\+status)
+void \mbox{\hyperlink{classGpgFrontend_1_1GpgResultAnalyse_a034b7e5ccf50f9d89ac9597cd5c84efc}{set\+Status}} (int m\+\_\+status)
 \begin{DoxyCompactList}\small\item\em Set the status object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_abb323cb23d9be5aa0d842d686bbad962}\label{classGpgFrontend_1_1GpgResultAnalyse_abb323cb23d9be5aa0d842d686bbad962}} 
-std\+::stringstream {\bfseries stream\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a85c18b46f0bf7e536e171c3309b839ee}\label{classGpgFrontend_1_1GpgResultAnalyse_a85c18b46f0bf7e536e171c3309b839ee}} 
+QString {\bfseries buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a477cc6cf2375de828e0abc329d1575d3}\label{classGpgFrontend_1_1GpgResultAnalyse_a477cc6cf2375de828e0abc329d1575d3}} 
+QText\+Stream {\bfseries stream\+\_\+} = QText\+Stream(\&buffer\+\_\+)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_ad5160473724e6af2c21a4851c635cbc6}\label{classGpgFrontend_1_1GpgResultAnalyse_ad5160473724e6af2c21a4851c635cbc6}} 
 int {\bfseries status\+\_\+} = 1
@@ -56,20 +59,20 @@ bool {\bfseries analysed\+\_\+} = false
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}\label{classGpgFrontend_1_1GpgResultAnalyse_aa9e35e573ea4c0ebdbb014d1afbaab9d}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_af271ad9aa3bc37e8445abf56f5fb0274}\label{classGpgFrontend_1_1GpgResultAnalyse_af271ad9aa3bc37e8445abf56f5fb0274}} 
 \index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!GetResultReport@{GetResultReport}}
 \index{GetResultReport@{GetResultReport}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{GetResultReport()}{GetResultReport()}}
-{\footnotesize\ttfamily const std\+::string Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Result\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Result\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ const QString}
 
 
 
 Get the Result Report object. 
 
 \begin{DoxyReturn}{Returns}
-const std\+::string
+const QString
 \end{DoxyReturn}
-Copyright (C) 2021 Saturneric
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
@@ -81,17 +84,17 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
 
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}\label{classGpgFrontend_1_1GpgResultAnalyse_a8fc5d4f83e5c0aa0ac19f46c3ec1619e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_ad1bd7527f7481ca4f2d6e84add30bbf2}\label{classGpgFrontend_1_1GpgResultAnalyse_ad1bd7527f7481ca4f2d6e84add30bbf2}} 
 \index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!GetStatus@{GetStatus}}
 \index{GetStatus@{GetStatus}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
 \doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
-{\footnotesize\ttfamily int Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
 
 
 
@@ -104,11 +107,11 @@ int
 
 Referenced by Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}\label{classGpgFrontend_1_1GpgResultAnalyse_a7f13592b421c7b0d3853f15cece8d195}} 
-\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!set\_status@{set\_status}}
-\index{set\_status@{set\_status}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
-\doxysubsubsection{\texorpdfstring{set\_status()}{set\_status()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::set\+\_\+status (\begin{DoxyParamCaption}\item[{int}]{m\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgResultAnalyse_a034b7e5ccf50f9d89ac9597cd5c84efc}\label{classGpgFrontend_1_1GpgResultAnalyse_a034b7e5ccf50f9d89ac9597cd5c84efc}} 
+\index{GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!GpgFrontend::GpgResultAnalyse@{GpgFrontend::GpgResultAnalyse}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Gpg\+Result\+Analyse\+::set\+Status (\begin{DoxyParamCaption}\item[{int}]{m\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 

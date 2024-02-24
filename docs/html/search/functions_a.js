@@ -1,22 +1,14 @@
 var searchData=
 [
-  ['keygendialog_1093',['KeyGenDialog',['../classGpgFrontend_1_1UI_1_1KeyGenDialog.html#a3aef8d2bb8e0d36842532726a6796ab9',1,'GpgFrontend::UI::KeyGenDialog']]],
-  ['keygenpage_1094',['KeyGenPage',['../classGpgFrontend_1_1UI_1_1KeyGenPage.html#a0eb5dad522c597dcd101c02f496e7e70',1,'GpgFrontend::UI::KeyGenPage']]],
-  ['keyimportdetaildialog_1095',['KeyImportDetailDialog',['../classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html#a0177cdaa19d1f83c9e519039aa7a8ce1',1,'GpgFrontend::UI::KeyImportDetailDialog']]],
-  ['keylist_1096',['KeyList',['../classGpgFrontend_1_1UI_1_1KeyList.html#a7c9d5cacdb42e1fbda5d3cc96e861418',1,'GpgFrontend::UI::KeyList']]],
-  ['keymgmt_1097',['KeyMgmt',['../classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64',1,'GpgFrontend::UI::KeyMgmt']]],
-  ['keynewuiddialog_1098',['KeyNewUIDDialog',['../classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html#a7226b139dc7a491e8ba780135654be27',1,'GpgFrontend::UI::KeyNewUIDDialog']]],
-  ['keypairdetailtab_1099',['KeyPairDetailTab',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a76efd8f8d623813be1a329ad01972444',1,'GpgFrontend::UI::KeyPairDetailTab']]],
-  ['keypairoperatab_1100',['KeyPairOperaTab',['../classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#aad4e209d7b4eb0ac6623b2f12ce5ecc5',1,'GpgFrontend::UI::KeyPairOperaTab']]],
-  ['keypairsubkeytab_1101',['KeyPairSubkeyTab',['../classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html#a93abe5c0467c7c4a29e0c45437a10732',1,'GpgFrontend::UI::KeyPairSubkeyTab']]],
-  ['keypairuidtab_1102',['KeyPairUIDTab',['../classGpgFrontend_1_1UI_1_1KeyPairUIDTab.html#af18c4f08a127d919a316c7e27ba338d3',1,'GpgFrontend::UI::KeyPairUIDTab']]],
-  ['keypressevent_1103',['keyPressEvent',['../classGpgFrontend_1_1UI_1_1FindWidget.html#a6e2264a989c2bb2db6bc8980b43e65f0',1,'GpgFrontend::UI::FindWidget::keyPressEvent()'],['../classGpgFrontend_1_1UI_1_1FilePage.html#aea388ad7876e287f71e93085e6715495',1,'GpgFrontend::UI::FilePage::keyPressEvent()']]],
-  ['keyserverimportdialog_1104',['KeyServerImportDialog',['../classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a96b40e94b5c5a3216f513b9699820063',1,'GpgFrontend::UI::KeyServerImportDialog::KeyServerImportDialog(bool automatic, QWidget *parent)'],['../classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a4c4e44963dcd4f656b10788a7fafbb4e',1,'GpgFrontend::UI::KeyServerImportDialog::KeyServerImportDialog(QWidget *parent)']]],
-  ['keyserverimporttask_1105',['KeyServerImportTask',['../classGpgFrontend_1_1UI_1_1KeyServerImportTask.html#a1640363b4b27cb3d256181ddc6cdc857',1,'GpgFrontend::UI::KeyServerImportTask']]],
-  ['keyserversearchtask_1106',['KeyServerSearchTask',['../classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html#a168e21bdfa72f43f91187ab29ece5efa',1,'GpgFrontend::UI::KeyServerSearchTask']]],
-  ['keyservertab_1107',['KeyserverTab',['../classGpgFrontend_1_1UI_1_1KeyserverTab.html#aa3d3561d3bdf95de6486b2caa752616c',1,'GpgFrontend::UI::KeyserverTab']]],
-  ['keysetexpiredatedialog_1108',['KeySetExpireDateDialog',['../classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a67da7721959b585db21f7e893793564b',1,'GpgFrontend::UI::KeySetExpireDateDialog::KeySetExpireDateDialog(const KeyId &amp;key_id, QWidget *parent=nullptr)'],['../classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html#a0efa9fd74abf305b2e20536f208c8beb',1,'GpgFrontend::UI::KeySetExpireDateDialog::KeySetExpireDateDialog(const KeyId &amp;key_id, std::string subkey_fpr, QWidget *parent=nullptr)']]],
-  ['keytable_1109',['KeyTable',['../structGpgFrontend_1_1UI_1_1KeyTable.html#a88606ba6954d60244faf38de419bfc47',1,'GpgFrontend::UI::KeyTable']]],
-  ['keyuidsigndialog_1110',['KeyUIDSignDialog',['../classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55',1,'GpgFrontend::UI::KeyUIDSignDialog']]],
-  ['keyuploaddialog_1111',['KeyUploadDialog',['../classGpgFrontend_1_1UI_1_1KeyUploadDialog.html#a51f63e30f26f7923def91519d347c0cf',1,'GpgFrontend::UI::KeyUploadDialog']]]
+  ['listarchive_1360',['ListArchive',['../classGpgFrontend_1_1ArchiveFileOperator.html#ab9159da7105707d91ece86e67deead07',1,'GpgFrontend::ArchiveFileOperator']]],
+  ['listedkeyservertesttask_1361',['ListedKeyServerTestTask',['../classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html#a260619046e2b8af8d3396cefa7a05129',1,'GpgFrontend::UI::ListedKeyServerTestTask']]],
+  ['listenrtpublishevent_1362',['ListenRTPublishEvent',['../namespaceGpgFrontend_1_1Module.html#af88df9c72a7e6ec8dede9afc7234aca7',1,'GpgFrontend::Module']]],
+  ['listlanguages_1363',['ListLanguages',['../classGpgFrontend_1_1UI_1_1SettingsDialog.html#ab3c3f59d98afb1f284a7149f4ff971b8',1,'GpgFrontend::UI::SettingsDialog']]],
+  ['listrtchildkeys_1364',['ListRTChildKeys',['../namespaceGpgFrontend_1_1Module.html#a92a4ccb9246f778143ad3e88d2068d7c',1,'GpgFrontend::Module']]],
+  ['load_5fcache_5fstorage_1365',['load_cache_storage',['../classGpgFrontend_1_1CacheManager_1_1Impl.html#abf1dd239b38bc2eceb4de984b4f7d13a',1,'GpgFrontend::CacheManager::Impl']]],
+  ['loadcache_1366',['LoadCache',['../classGpgFrontend_1_1CacheManager.html#a8d131df5a66d20a10a8c86c7f7ad0cc4',1,'GpgFrontend::CacheManager']]],
+  ['loaddurablecache_1367',['LoadDurableCache',['../classGpgFrontend_1_1CacheManager.html#a3c9be71d8cff25c1b6b103f075ec83f4',1,'GpgFrontend::CacheManager::LoadDurableCache(const QString &amp;key) -&gt; QJsonDocument'],['../classGpgFrontend_1_1CacheManager.html#a670ccb45bd8c1297f208db133831e742',1,'GpgFrontend::CacheManager::LoadDurableCache(const QString &amp;key, QJsonDocument default_value) -&gt; QJsonDocument']]],
+  ['loadfile_1368',['LoadFile',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a72ed46454c833adb038c36d8d4322d18',1,'GpgFrontend::UI::TextEdit']]],
+  ['loadgpgfrontendmodules_1369',['LoadGpgFrontendModules',['../namespaceGpgFrontend_1_1Module.html#a81e8539a1a6bfb91731e6b17d9f2aa6a',1,'GpgFrontend::Module']]],
+  ['localized_5fhelp_1370',['localized_help',['../classGpgFrontend_1_1UI_1_1HelpPage.html#af839ba3ff0decc82aadb922593acf53f',1,'GpgFrontend::UI::HelpPage']]]
 ];

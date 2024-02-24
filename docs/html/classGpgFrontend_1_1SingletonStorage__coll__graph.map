@@ -1,10 +1,3 @@
 <map id="GpgFrontend::SingletonStorage" name="GpgFrontend::SingletonStorage">
-<area shape="rect" id="node1" title=" " alt="" coords="43,609,267,731"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,455,148,532"/>
-<area shape="rect" id="node3" title=" " alt="" coords="173,440,370,547"/>
-<area shape="rect" id="node4" title=" " alt="" coords="28,285,245,377"/>
-<area shape="rect" id="node5" title=" " alt="" coords="33,145,190,223"/>
-<area shape="rect" id="node6" title=" " alt="" coords="167,5,205,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="263,145,397,223"/>
-<area shape="rect" id="node8" title=" " alt="" coords="311,5,349,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,229,156"/>
 </map>

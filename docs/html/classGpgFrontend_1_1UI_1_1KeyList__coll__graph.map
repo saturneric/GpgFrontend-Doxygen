@@ -1,17 +1,17 @@
 <map id="GpgFrontend::UI::KeyList" name="GpgFrontend::UI::KeyList">
-<area shape="rect" id="node1" title=" " alt="" coords="229,1555,431,2072"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,1407,84,1485"/>
-<area shape="rect" id="node3" title=" " alt="" coords="729,431,939,523"/>
-<area shape="rect" id="node4" title=" " alt="" coords="607,145,765,223"/>
-<area shape="rect" id="node8" title=" " alt="" coords="605,795,804,887"/>
-<area shape="rect" id="node12" title=" " alt="" coords="434,300,605,407"/>
-<area shape="rect" id="node5" title=" " alt="" coords="667,5,705,83"/>
-<area shape="rect" id="node13" title=" " alt="" coords="249,620,379,697"/>
-<area shape="rect" id="node15" title=" " alt="" coords="865,145,1022,223"/>
-<area shape="rect" id="node6" title=" " alt="" coords="235,1400,425,1492"/>
-<area shape="rect" id="node7" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="360,1143,553,1337"/>
-<area shape="rect" id="node9" title=" " alt="" coords="362,911,551,1003"/>
-<area shape="rect" id="node10" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="431,547,608,771"/>
-<area shape="rect" id="node11" title=" " alt="" coords="103,315,195,392"/>
-<area shape="rect" id="node14" title=" " alt="" coords="965,1027,1113,1119"/>
+<area shape="rect" id="node1" title=" " alt="" coords="482,1613,685,2145"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,1451,84,1529"/>
+<area shape="rect" id="node3" title=" " alt="" coords="17,416,227,508"/>
+<area shape="rect" id="node4" title=" " alt="" coords="270,145,427,223"/>
+<area shape="rect" id="node8" title=" " alt="" coords="177,780,376,872"/>
+<area shape="rect" id="node11" title=" " alt="" coords="424,300,649,392"/>
+<area shape="rect" id="node5" title=" " alt="" coords="679,5,717,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="633,605,763,683"/>
+<area shape="rect" id="node15" title=" " alt="" coords="758,145,915,223"/>
+<area shape="rect" id="node6" title=" " alt="" coords="489,1444,678,1536"/>
+<area shape="rect" id="node7" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="431,1128,624,1381"/>
+<area shape="rect" id="node9" title=" " alt="" coords="433,896,622,988"/>
+<area shape="rect" id="node10" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="379,532,558,756"/>
+<area shape="rect" id="node13" title=" " alt="" coords="779,1451,871,1529"/>
+<area shape="rect" id="node14" title=" " alt="" coords="831,1012,979,1104"/>
 </map>

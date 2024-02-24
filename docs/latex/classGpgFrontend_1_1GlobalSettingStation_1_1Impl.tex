@@ -1,0 +1,213 @@
+\hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Global\+Setting\+Station\+::Impl Class Reference}
+\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl}\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Global\+Setting\+Station\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classGpgFrontend_1_1GlobalSettingStation_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9572b3082d5b9f6e08fc7992114b19ce}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9572b3082d5b9f6e08fc7992114b19ce}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9572b3082d5b9f6e08fc7992114b19ce}{Impl}} () noexcept
+\begin{DoxyCompactList}\small\item\em Construct a new Global Setting Station object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae4bf91a8b0bc4367f611206439b26130}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae4bf91a8b0bc4367f611206439b26130}} 
+auto {\bfseries Get\+Settings} () -\/$>$ QSettings
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc95158e89167da21c2de6070952c6ad}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc95158e89167da21c2de6070952c6ad}} 
+auto {\bfseries Get\+Log\+Files\+Size} () const -\/$>$ QString
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a09a4ced555c4c4c79c8c408c6d31f1ea}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a09a4ced555c4c4c79c8c408c6d31f1ea}} 
+auto {\bfseries Get\+Data\+Objects\+Files\+Size} () const -\/$>$ QString
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af14663f21fe65a57fcb557f435a5c561}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af14663f21fe65a57fcb557f435a5c561}} 
+void {\bfseries Clear\+All\+Log\+Files} () const
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ad603faf6a2095121cad7ec887ca78bac}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ad603faf6a2095121cad7ec887ca78bac}} 
+void {\bfseries Clear\+All\+Data\+Objects} () const
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c7a4cf9c3c7d9a9462027abd0}{Get\+App\+Dir}} () const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the App Dir object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae051656e52a286cd9b3a891d82099ce0}{Get\+App\+Data\+Path}} () const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the App Data Path object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af067b39bc0926f1189980d26c027a729}{Get\+Log\+Dir}} () const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the Log Dir object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a19d61d462efea0147ea5e10ed49c106d}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a19d61d462efea0147ea5e10ed49c106d}} 
+void {\bfseries init\+\_\+app\+\_\+secure\+\_\+key} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_aee8c6bc32e4af0a6f7ef19035d810525}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_aee8c6bc32e4af0a6f7ef19035d810525}} 
+QString {\bfseries working\+\_\+path\+\_\+} = QDir\+::current\+Path()
+\item 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}{app\+\_\+data\+\_\+path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Program Data Location. \end{DoxyCompactList}\item 
+QString {\bfseries app\+\_\+config\+\_\+path\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}} 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a92ca0d1c51d36d8984528ec089280da7}{app\+\_\+log\+\_\+path\+\_\+}} = \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}{app\+\_\+data\+\_\+path\+\_\+}} + \char`\"{}/logs\char`\"{}
+\begin{DoxyCompactList}\small\item\em Program Data Location. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}{app\+\_\+data\+\_\+objs\+\_\+path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Object storage path. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}{app\+\_\+config\+\_\+target\+\_\+path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em take effect only in portable mode \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ac640f8f0efdce03715ade7fd25fc9837}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ac640f8f0efdce03715ade7fd25fc9837}} 
+bool {\bfseries portable\+\_\+mode\+\_\+} = false
+\item 
+QString \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4f164aa1707e6afdef29387b4a644a59}{app\+\_\+portable\+\_\+config\+\_\+path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em take effect only in portable mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae051656e52a286cd9b3a891d82099ce0}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae051656e52a286cd9b3a891d82099ce0}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!GetAppDataPath@{GetAppDataPath}}
+\index{GetAppDataPath@{GetAppDataPath}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{GetAppDataPath()}{GetAppDataPath()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Get\+App\+Data\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the App Data Path object. 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References app\+\_\+data\+\_\+path\+\_\+.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c7a4cf9c3c7d9a9462027abd0}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c7a4cf9c3c7d9a9462027abd0}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!GetAppDir@{GetAppDir}}
+\index{GetAppDir@{GetAppDir}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{GetAppDir()}{GetAppDir()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Get\+App\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the App Dir object. 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+Referenced by Impl().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af067b39bc0926f1189980d26c027a729}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af067b39bc0926f1189980d26c027a729}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!GetLogDir@{GetLogDir}}
+\index{GetLogDir@{GetLogDir}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{GetLogDir()}{GetLogDir()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Get\+Log\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Log Dir object. 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References app\+\_\+log\+\_\+path\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9d047076c437a46c09f1e683d4e99312}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a9d047076c437a46c09f1e683d4e99312}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_config\_path\_@{app\_config\_path\_}}
+\index{app\_config\_path\_@{app\_config\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_config\_path\_}{app\_config\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+config\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= QString\{}
+\DoxyCodeLine{      QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4612f0a224cf38c9f4439b4750476b10}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_config\_target\_path\_@{app\_config\_target\_path\_}}
+\index{app\_config\_target\_path\_@{app\_config\_target\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_config\_target\_path\_}{app\_config\_target\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+config\+\_\+target\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      app\_config\_path\_ + \textcolor{stringliteral}{"{}/config.ini"{}}}
+
+\end{DoxyCode}
+
+
+take effect only in portable mode 
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a7eae19f7ada6914cc566912e74c73221}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_data\_objs\_path\_@{app\_data\_objs\_path\_}}
+\index{app\_data\_objs\_path\_@{app\_data\_objs\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_data\_objs\_path\_}{app\_data\_objs\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+data\+\_\+objs\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}{app\_data\_path\_}} + \textcolor{stringliteral}{"{}/data\_objs"{}}}
+
+\end{DoxyCode}
+
+
+Object storage path. 
+
+
+
+Referenced by Impl().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a67f2e4e8a62d3b34d9f86c9235a35f05}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_data\_path\_@{app\_data\_path\_}}
+\index{app\_data\_path\_@{app\_data\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_data\_path\_}{app\_data\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+data\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= QString\{QStandardPaths::writableLocation(}
+\DoxyCodeLine{      QStandardPaths::AppLocalDataLocation)\}}
+
+\end{DoxyCode}
+
+
+Program Data Location. 
+
+
+
+Referenced by Get\+App\+Data\+Path(), and Impl().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4f164aa1707e6afdef29387b4a644a59}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_a4f164aa1707e6afdef29387b4a644a59}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!app\_portable\_config\_path\_@{app\_portable\_config\_path\_}}
+\index{app\_portable\_config\_path\_@{app\_portable\_config\_path\_}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{app\_portable\_config\_path\_}{app\_portable\_config\_path\_}}
+{\footnotesize\ttfamily QString Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::app\+\_\+portable\+\_\+config\+\_\+path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      working\_path\_ + \textcolor{stringliteral}{"{}/config.ini"{}}}
+
+\end{DoxyCode}
+
+
+take effect only in portable mode 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/Global\+Setting\+Station.\+cpp\end{DoxyCompactItemize}

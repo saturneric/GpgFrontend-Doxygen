@@ -1,0 +1,41 @@
+\hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl}{}\doxysection{Gpg\+Frontend\+::Singleton\+Storage\+::Impl Class Reference}
+\label{classGpgFrontend_1_1SingletonStorage_1_1Impl}\index{GpgFrontend::SingletonStorage::Impl@{GpgFrontend::SingletonStorage::Impl}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Singleton\+Storage\+::Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGpgFrontend_1_1SingletonStorage_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_ade865bcd7947293409158e50195e44ff}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_ade865bcd7947293409158e50195e44ff}} 
+void {\bfseries Release\+Channel} (int channel)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_a3d69ec7b0d6dbd7045e144b3218121f0}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_a3d69ec7b0d6dbd7045e144b3218121f0}} 
+auto {\bfseries Find\+Object\+In\+Channel} (int channel) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Gpg\+Frontend\+::\+Channel\+Object}} $\ast$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_a0ca711b7e84f1ce28d387a6383de751c}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_a0ca711b7e84f1ce28d387a6383de751c}} 
+auto {\bfseries Get\+All\+Channel\+Id} () -\/$>$ std\+::vector$<$ int $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_a2955cc86eecbb9fedaa9855f098b7824}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_a2955cc86eecbb9fedaa9855f098b7824}} 
+auto {\bfseries Set\+Object\+In\+Channel} (int channel, Channel\+Object\+Ptr p\+\_\+obj) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1ChannelObject}{Gpg\+Frontend\+::\+Channel\+Object}} $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_ad9c24c40dbad720eaf8a6a86156bca86}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_ad9c24c40dbad720eaf8a6a86156bca86}} 
+std\+::shared\+\_\+mutex \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_1_1Impl_ad9c24c40dbad720eaf8a6a86156bca86}{instances\+\_\+mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em mutex for \+\_\+instances\+\_\+map \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1SingletonStorage_1_1Impl_ae9347224f7094fd77236823d69bc3a4c}\label{classGpgFrontend_1_1SingletonStorage_1_1Impl_ae9347224f7094fd77236823d69bc3a4c}} 
+std\+::map$<$ int, Channel\+Object\+Ptr $>$ \mbox{\hyperlink{classGpgFrontend_1_1SingletonStorage_1_1Impl_ae9347224f7094fd77236823d69bc3a4c}{instances\+\_\+map\+\_\+}}
+\begin{DoxyCompactList}\small\item\em map of singleton instances \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/basic/Singleton\+Storage.\+cpp\end{DoxyCompactItemize}

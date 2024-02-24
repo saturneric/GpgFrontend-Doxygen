@@ -1,0 +1,65 @@
+\hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Manager\+::Automaton\+Handel\+Struct Struct Reference}
+\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct}\index{GpgFrontend::GpgKeyManager::AutomatonHandelStruct@{GpgFrontend::GpgKeyManager::AutomatonHandelStruct}}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Manager\+::Automaton\+Handel\+Struct\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_abf2b62099a5db5d878dacf2272d081cc}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_abf2b62099a5db5d878dacf2272d081cc}} 
+void {\bfseries Set\+Status} (Automaton\+State next\+\_\+state)
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a0db22b44a53ef445dacf420baed95f82}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a0db22b44a53ef445dacf420baed95f82}} 
+auto {\bfseries Cuurent\+Status} () -\/$>$ Automaton\+State
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_ad5e858f2cd13d4aa52ab99aa76687f80}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_ad5e858f2cd13d4aa52ab99aa76687f80}} 
+void {\bfseries Set\+Handler} (Automaton\+Next\+State\+Handler next\+\_\+state\+\_\+handler, Automaton\+Action\+Handler action\+\_\+handler)
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a047b37b7f3f9d2a6274bfe334724ca8d}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a047b37b7f3f9d2a6274bfe334724ca8d}} 
+auto {\bfseries Next\+State} (QString gpg\+\_\+status, QString args) -\/$>$ Automaton\+State
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_ae930a0da875ebf6347b18954fa143d56}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_ae930a0da875ebf6347b18954fa143d56}} 
+auto {\bfseries Action} () -\/$>$ Command
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a95521fc49f2e1d1a7304472dc1897375}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a95521fc49f2e1d1a7304472dc1897375}} 
+void {\bfseries Set\+Success} (bool success)
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_aa1b6517f56e4e4f20c41066e53eb5b4b}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_aa1b6517f56e4e4f20c41066e53eb5b4b}} 
+auto {\bfseries Success} () const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a21c44ade1827b9b823b7c33cb7f989f3}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a21c44ade1827b9b823b7c33cb7f989f3}} 
+auto {\bfseries Key\+Fpr} () -\/$>$ QString
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a1ed091b5e2cf9f0125e239d2d45ccbf6}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a1ed091b5e2cf9f0125e239d2d45ccbf6}} 
+{\bfseries Automaton\+Handel\+Struct} (QString key\+\_\+fpr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_aeb932ebd78e9c004e8539a0f403c6410}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_aeb932ebd78e9c004e8539a0f403c6410}} 
+Automaton\+State {\bfseries current\+\_\+state\+\_\+} = AS\+\_\+\+START
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a51b6a0532770053d82898d51e8c6564f}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a51b6a0532770053d82898d51e8c6564f}} 
+Automaton\+Next\+State\+Handler {\bfseries next\+\_\+state\+\_\+handler\+\_\+}
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a190bdac3d0b71d25a1b7c933d54d803f}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a190bdac3d0b71d25a1b7c933d54d803f}} 
+Automaton\+Action\+Handler {\bfseries action\+\_\+handler\+\_\+}
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a93424679542c04dbe0094d93789ec28e}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a93424679542c04dbe0094d93789ec28e}} 
+bool {\bfseries success\+\_\+} = false
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a030469ae50dd8e0d66aaeac1cd2d2481}\label{structGpgFrontend_1_1GpgKeyManager_1_1AutomatonHandelStruct_a030469ae50dd8e0d66aaeac1cd2d2481}} 
+QString {\bfseries key\+\_\+fpr\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/function/gpg/Gpg\+Key\+Manager.\+h\end{DoxyCompactItemize}

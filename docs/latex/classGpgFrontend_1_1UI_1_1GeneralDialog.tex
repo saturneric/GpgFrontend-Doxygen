@@ -17,13 +17,13 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::General\+Dialog\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=286pt]{classGpgFrontend_1_1UI_1_1GeneralDialog__coll__graph}
+\includegraphics[width=262pt]{classGpgFrontend_1_1UI_1_1GeneralDialog__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralDialog_ac9de4c49668ffaeb6916c64f878a202c}{General\+Dialog}} (std\+::string name, QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralDialog_ab300bc30252244b1b11cc24350147942}{General\+Dialog}} (QString name, QWidget $\ast$parent=nullptr)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -33,6 +33,12 @@ void {\bfseries set\+Pos\+Center\+Of\+Screen} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ad9d5be542aa422450a96dff00232ebe5}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ad9d5be542aa422450a96dff00232ebe5}} 
 void {\bfseries move\+Position2\+Center\+Of\+Parent} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a488618b02dee0cbec129bfe5d7fe8981}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a488618b02dee0cbec129bfe5d7fe8981}} 
+auto {\bfseries is\+Rect\+Restored} () -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a570c723ba0cb5522f2b0c16ac28d0532}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a570c723ba0cb5522f2b0c16ac28d0532}} 
+void {\bfseries show\+Event} (QShow\+Event $\ast$event) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
@@ -43,32 +49,38 @@ void {\bfseries slot\+\_\+restore\+\_\+settings} () noexcept
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a940a6ea31dff4db83f9f08d38e843a2b}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a940a6ea31dff4db83f9f08d38e843a2b}} 
 void {\bfseries slot\+\_\+save\+\_\+settings} () noexcept
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ad1f20151e9556a3c481fda89cf88e585}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ad1f20151e9556a3c481fda89cf88e585}} 
+void {\bfseries update\+\_\+rect\+\_\+cache} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ae91392293866dc302132a9fc19209d8c}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ae91392293866dc302132a9fc19209d8c}} 
-std\+::string {\bfseries name\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a702e62aaf5eb38c7cc56cf5fb7f29383}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a702e62aaf5eb38c7cc56cf5fb7f29383}} 
+QString {\bfseries name\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ad9b847aa128dfeb4ecf0064ef948e6ea}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ad9b847aa128dfeb4ecf0064ef948e6ea}} 
-QPoint {\bfseries pos\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a22f39850fae58b9f6c59c372b9fbb582}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a22f39850fae58b9f6c59c372b9fbb582}} 
+QRect {\bfseries rect\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_aeda520454fd38920a027c1a4195a2e6f}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_aeda520454fd38920a027c1a4195a2e6f}} 
-QSize {\bfseries size\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ab92573b0e63d9c792f2e1697d858cea7}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ab92573b0e63d9c792f2e1697d858cea7}} 
+QRect {\bfseries parent\+\_\+rect\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a871f204f01f10815e3475c103f1157af}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a871f204f01f10815e3475c103f1157af}} 
-QPoint {\bfseries parent\+\_\+pos\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_aa3af9313c4284df01685ce512d18d323}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_aa3af9313c4284df01685ce512d18d323}} 
+QRect {\bfseries screen\+\_\+rect\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a234a0a4d8c0b1b49a54f65b1aa3f9490}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a234a0a4d8c0b1b49a54f65b1aa3f9490}} 
-QSize {\bfseries parent\+\_\+size\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_a4e4eb414ac80ba7dd1e853ed62e1ee68}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_a4e4eb414ac80ba7dd1e853ed62e1ee68}} 
+bool {\bfseries rect\+\_\+restored\+\_\+} = false
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ac9de4c49668ffaeb6916c64f878a202c}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ac9de4c49668ffaeb6916c64f878a202c}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralDialog_ab300bc30252244b1b11cc24350147942}\label{classGpgFrontend_1_1UI_1_1GeneralDialog_ab300bc30252244b1b11cc24350147942}} 
 \index{GpgFrontend::UI::GeneralDialog@{GpgFrontend::UI::GeneralDialog}!GeneralDialog@{GeneralDialog}}
 \index{GeneralDialog@{GeneralDialog}!GpgFrontend::UI::GeneralDialog@{GpgFrontend::UI::GeneralDialog}}
 \doxysubsubsection{\texorpdfstring{GeneralDialog()}{GeneralDialog()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+General\+Dialog\+::\+General\+Dialog (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+General\+Dialog\+::\+General\+Dialog (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 \begin{DoxyParams}{Parameters}

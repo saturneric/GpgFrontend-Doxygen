@@ -17,56 +17,46 @@ Collaboration diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+Getter\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter__coll__graph}
+\includegraphics[width=350pt]{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_aa2f427dd9cb0d68187504a7363e2d746}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_aa2f427dd9cb0d68187504a7363e2d746}} 
-enum {\bfseries Task\+Runner\+Type} \{ {\bfseries k\+Task\+Runner\+Type\+\_\+\+Default}
+enum {\bfseries Task\+Runner\+Type} \{ \newline
+{\bfseries k\+Task\+Runner\+Type\+\_\+\+Default}
 , {\bfseries k\+Task\+Runner\+Type\+\_\+\+GPG}
 , {\bfseries k\+Task\+Runner\+Type\+\_\+\+IO}
 , {\bfseries k\+Task\+Runner\+Type\+\_\+\+Network}
+, \newline
+{\bfseries k\+Task\+Runner\+Type\+\_\+\+Module}
+, {\bfseries k\+Task\+Runner\+Type\+\_\+\+External\+\_\+\+Process}
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a80794d81179f66f4b4ed3122a64f27cf}{Task\+Runner\+Getter}} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a80794d81179f66f4b4ed3122a64f27cf}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a80794d81179f66f4b4ed3122a64f27cf}} 
+{\bfseries Task\+Runner\+Getter} (int channel=\mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_ad983153cbe3a0c32c123c506e04f31fc}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}())
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a99e5ce5e8dd25c49755356f4ff8f6d30}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a99e5ce5e8dd25c49755356f4ff8f6d30}} 
-\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner}{Task\+Runner}} $\ast$ {\bfseries Get\+Task\+Runner} (Task\+Runner\+Type runner\+\_\+type=k\+Task\+Runner\+Type\+\_\+\+Default)
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_aa43273bc86b1f82ea0de0e0b9020fa9a}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_aa43273bc86b1f82ea0de0e0b9020fa9a}} 
+auto {\bfseries Get\+Task\+Runner} (Task\+Runner\+Type runner\+\_\+type=k\+Task\+Runner\+Type\+\_\+\+Default) -\/$>$ Task\+Runner\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_ae40d4d769bd6a7f3c849cec6746ee530}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_ae40d4d769bd6a7f3c849cec6746ee530}} 
+void {\bfseries Stop\+All\+Teak\+Runner} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a802df7f9d3ddd1424f0c386388eae128}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a802df7f9d3ddd1424f0c386388eae128}} 
-std\+::map$<$ Task\+Runner\+Type, \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner}{Task\+Runner}} $\ast$ $>$ {\bfseries task\+\_\+runners\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_ac68977bae7fed4d6aeed84774fdd80e6}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_ac68977bae7fed4d6aeed84774fdd80e6}} 
+std\+::map$<$ Task\+Runner\+Type, Task\+Runner\+Ptr $>$ {\bfseries task\+\_\+runners\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a11c25c91a8093d41449bb5d7fe57ba71}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a11c25c91a8093d41449bb5d7fe57ba71}} 
+std\+::mutex {\bfseries task\+\_\+runners\+\_\+map\+\_\+lock\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a80794d81179f66f4b4ed3122a64f27cf}\label{classGpgFrontend_1_1Thread_1_1TaskRunnerGetter_a80794d81179f66f4b4ed3122a64f27cf}} 
-\index{GpgFrontend::Thread::TaskRunnerGetter@{GpgFrontend::Thread::TaskRunnerGetter}!TaskRunnerGetter@{TaskRunnerGetter}}
-\index{TaskRunnerGetter@{TaskRunnerGetter}!GpgFrontend::Thread::TaskRunnerGetter@{GpgFrontend::Thread::TaskRunnerGetter}}
-\doxysubsubsection{\texorpdfstring{TaskRunnerGetter()}{TaskRunnerGetter()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+Getter\+::\+Task\+Runner\+Getter (\begin{DoxyParamCaption}\item[{int}]{channel = {\ttfamily \mbox{\hyperlink{classGpgFrontend_1_1SingletonFunctionObject_a50e2b3794d6553f4231eaec72d9d0a50}{Singleton\+Function\+Object\+::\+Get\+Default\+Channel}}()} }\end{DoxyParamCaption})}
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

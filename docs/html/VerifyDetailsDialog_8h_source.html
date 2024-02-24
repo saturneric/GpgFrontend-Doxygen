@@ -87,42 +87,37 @@ $(document).ready(function(){initNavTree('VerifyDetailsDialog_8h_source.html',''
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef __VERIFYDETAILSDIALOG_H__</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __VERIFYDETAILSDIALOG_H__</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;ui/GpgFrontendUI.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/PlainTextEditorPage.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ui/widgets/VerifyKeyDetailBox.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">VerifyDetailsDialog</a> : <span class="keyword">public</span> QDialog {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda">VerifyDetailsDialog</a>(QWidget* parent, GpgError error,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                               GpgVerifyResult result);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> slot_refresh();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;               </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QHBoxLayout* main_layout_;        </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QWidget* m_vbox_{};               </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QByteArray* input_data_{};        </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QByteArray* input_signature_{};   </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QDialogButtonBox* button_box_{};  </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  GpgVerifyResult m_result_;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  gpgme_error_t error_;             </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __VERIFYDETAILSDIALOG_H__</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:152</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyDetailsDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">GpgFrontend::UI::VerifyDetailsDialog</a></div><div class="ttdef"><b>Definition:</b> VerifyDetailsDialog.h:41</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyDetailsDialog_html_ac73f0405e249f623ddd0de22b5130fda"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda">GpgFrontend::UI::VerifyDetailsDialog::VerifyDetailsDialog</a></div><div class="ttdeci">VerifyDetailsDialog(QWidget *parent, GpgError error, GpgVerifyResult result)</div><div class="ttdoc">Construct a new Verify Details Dialog object.</div><div class="ttdef"><b>Definition:</b> VerifyDetailsDialog.cpp:35</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/model/GpgVerifyResult.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">VerifyDetailsDialog</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda">VerifyDetailsDialog</a>(QWidget* parent, <a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a> error,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                               <a class="code" href="classGpgFrontend_1_1GpgVerifyResult.html">GpgVerifyResult</a> result);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> slot_refresh();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  QHBoxLayout* main_layout_;        </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QWidget* m_vbox_{};               </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QByteArray* input_data_{};        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QByteArray* input_signature_{};   </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QDialogButtonBox* button_box_{};  </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classGpgFrontend_1_1GpgVerifyResult.html">GpgVerifyResult</a> m_result_;        </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  gpgme_error_t error_;             </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgVerifyResult_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgVerifyResult.html">GpgFrontend::GpgVerifyResult</a></div><div class="ttdef"><b>Definition:</b> GpgVerifyResult.h:36</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyDetailsDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html">GpgFrontend::UI::VerifyDetailsDialog</a></div><div class="ttdef"><b>Definition:</b> VerifyDetailsDialog.h:38</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1VerifyDetailsDialog_html_ac73f0405e249f623ddd0de22b5130fda"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html#ac73f0405e249f623ddd0de22b5130fda">GpgFrontend::UI::VerifyDetailsDialog::VerifyDetailsDialog</a></div><div class="ttdeci">VerifyDetailsDialog(QWidget *parent, GpgError error, GpgVerifyResult result)</div><div class="ttdoc">Construct a new Verify Details Dialog object.</div><div class="ttdef"><b>Definition:</b> VerifyDetailsDialog.cpp:36</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a2470eb154743191c3454203f23d3a2f8"><div class="ttname"><a href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgFrontend::GpgError</a></div><div class="ttdeci">gpgme_error_t GpgError</div><div class="ttdoc">gpgme error</div><div class="ttdef"><b>Definition:</b> GpgTypedef.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

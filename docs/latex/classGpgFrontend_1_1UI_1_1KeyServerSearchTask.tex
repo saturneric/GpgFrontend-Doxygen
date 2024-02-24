@@ -28,14 +28,10 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ae478130476c
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a168e21bdfa72f43f91187ab29ece5efa}{Key\+Server\+Search\+Task}} (std\+::string keyserver\+\_\+url, std\+::string search\+\_\+string)
-\begin{DoxyCompactList}\small\item\em Construct a new Key Server Search Task object. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a99a5df78f8b78551dba4a14e144099cf}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a99a5df78f8b78551dba4a14e144099cf}} 
-void {\bfseries run} () override
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ab0bdaf21a52b44090a935ae8d36651b7}{Key\+Server\+Search\+Task}} (QString keyserver\+\_\+url, QString search\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Construct a new Key Server Search Task object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a2a1a60dc9e87755ed77a2e6318b23115}{Run}} () -\/$>$ int override
+\begin{DoxyCompactList}\small\item\em can be overwrite by subclass \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,11 +41,11 @@ void {\bfseries dealing\+\_\+reply\+\_\+from\+\_\+server} ()
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_af0f20b03e64115f475d05a6517ab5bcf}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_af0f20b03e64115f475d05a6517ab5bcf}} 
-std\+::string {\bfseries keyserver\+\_\+url\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a3a612374b3dc48dbf8bf8e31c55ff214}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a3a612374b3dc48dbf8bf8e31c55ff214}} 
+QString {\bfseries keyserver\+\_\+url\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a05fdcb7bd52dced3c9e15e9ca313c2b4}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a05fdcb7bd52dced3c9e15e9ca313c2b4}} 
-std\+::string {\bfseries search\+\_\+string\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a22340898553dc2818e9a0a5e8d1f0154}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a22340898553dc2818e9a0a5e8d1f0154}} 
+QString {\bfseries search\+\_\+string\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a1d03d44bd99bbaf7908a7a8ea8080212}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a1d03d44bd99bbaf7908a7a8ea8080212}} 
 QNetwork\+Access\+Manager $\ast$ {\bfseries manager\+\_\+}
@@ -61,11 +57,11 @@ QNetwork\+Reply $\ast$ {\bfseries reply\+\_\+}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a168e21bdfa72f43f91187ab29ece5efa}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a168e21bdfa72f43f91187ab29ece5efa}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ab0bdaf21a52b44090a935ae8d36651b7}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ab0bdaf21a52b44090a935ae8d36651b7}} 
 \index{GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}!KeyServerSearchTask@{KeyServerSearchTask}}
 \index{KeyServerSearchTask@{KeyServerSearchTask}!GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}}
 \doxysubsubsection{\texorpdfstring{KeyServerSearchTask()}{KeyServerSearchTask()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Search\+Task\+::\+Key\+Server\+Search\+Task (\begin{DoxyParamCaption}\item[{std\+::string}]{keyserver\+\_\+url,  }\item[{std\+::string}]{search\+\_\+string }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Search\+Task\+::\+Key\+Server\+Search\+Task (\begin{DoxyParamCaption}\item[{QString}]{keyserver\+\_\+url,  }\item[{QString}]{search\+\_\+string }\end{DoxyParamCaption})}
 
 
 
@@ -75,7 +71,7 @@ Construct a new Key Server Search Task object.
 \begin{DoxyParams}{Parameters}
 {\em keyserver\+\_\+url} & \\
 \hline
-{\em search\+\_\+string} & Copyright (C) 2021 Saturneric\\
+{\em search\+\_\+string} & Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\\
 \hline
 \end{DoxyParams}
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
@@ -88,9 +84,32 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Hold\+On\+Life\+Cycle().
+
+
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a2a1a60dc9e87755ed77a2e6318b23115}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_a2a1a60dc9e87755ed77a2e6318b23115}} 
+\index{GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Server\+Search\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+can be overwrite by subclass 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}{Gpg\+Frontend\+::\+Thread\+::\+Task}}.
+
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ae478130476c95a8b220c3b0e6a7b88b4}\label{classGpgFrontend_1_1UI_1_1KeyServerSearchTask_ae478130476c95a8b220c3b0e6a7b88b4}} 
 \index{GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}!SignalKeyServerSearchResult@{SignalKeyServerSearchResult}}
 \index{SignalKeyServerSearchResult@{SignalKeyServerSearchResult}!GpgFrontend::UI::KeyServerSearchTask@{GpgFrontend::UI::KeyServerSearchTask}}

@@ -24,9 +24,9 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Listed\+Key\+Server\+Test\+Task
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a4e4e873d8d75a215f574f8211b5896d8}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a4e4e873d8d75a215f574f8211b5896d8}} 
-enum {\bfseries Key\+Server\+Test\+Result\+Type} \{ {\bfseries k\+Test\+Result\+Type\+\_\+\+Success}
-, {\bfseries k\+Test\+Result\+Type\+\_\+\+Timeout}
-, {\bfseries k\+Test\+Result\+Type\+\_\+\+Error}
+enum {\bfseries Key\+Server\+Test\+Result\+Type} \{ {\bfseries k\+TEST\+\_\+\+RESULT\+\_\+\+TYPE\+\_\+\+SUCCESS}
+, {\bfseries k\+TEST\+\_\+\+RESULT\+\_\+\+TYPE\+\_\+\+TIMEOUT}
+, {\bfseries k\+TEST\+\_\+\+RESULT\+\_\+\+TYPE\+\_\+\+ERROR}
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
@@ -37,14 +37,10 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a20f0147
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_ae25b5d59b53facc15648ab80ff19ed77}{Listed\+Key\+Server\+Test\+Task}} (const QString\+List \&urls, int timeout, QWidget $\ast$parent=nullptr)
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a260619046e2b8af8d3396cefa7a05129}{Listed\+Key\+Server\+Test\+Task}} (QString\+List urls, int timeout, QWidget $\ast$parent=nullptr)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a2a34a0b2c9f99597cc9ac52ffbcf151a}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a2a34a0b2c9f99597cc9ac52ffbcf151a}} 
-void {\bfseries run} () override
-\end{DoxyCompactItemize}
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a3f0a9f8c46e7495b654f297594de8ea3}{Run}} () -\/$>$ int override
+\begin{DoxyCompactList}\small\item\em can be overwrite by subclass \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -68,16 +64,17 @@ int {\bfseries timeout\+\_\+} = 500
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a257a806258d2e82961dd1227151d8269}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a257a806258d2e82961dd1227151d8269}} 
 int {\bfseries result\+\_\+count\+\_\+} = 0
 \end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_ae25b5d59b53facc15648ab80ff19ed77}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_ae25b5d59b53facc15648ab80ff19ed77}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a260619046e2b8af8d3396cefa7a05129}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a260619046e2b8af8d3396cefa7a05129}} 
 \index{GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}!ListedKeyServerTestTask@{ListedKeyServerTestTask}}
 \index{ListedKeyServerTestTask@{ListedKeyServerTestTask}!GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}}
 \doxysubsubsection{\texorpdfstring{ListedKeyServerTestTask()}{ListedKeyServerTestTask()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Listed\+Key\+Server\+Test\+Task\+::\+Listed\+Key\+Server\+Test\+Task (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{urls,  }\item[{int}]{timeout,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Listed\+Key\+Server\+Test\+Task\+::\+Listed\+Key\+Server\+Test\+Task (\begin{DoxyParamCaption}\item[{QString\+List}]{urls,  }\item[{int}]{timeout,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
-Copyright (C) 2021 Saturneric
+Copyright (C) 2021 Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}
 
 This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
 
@@ -89,9 +86,32 @@ You should have received a copy of the GNU General Public License along with \mb
 
 The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
 
-The source code version of this software was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}}\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021. 
+All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric \href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
+
+SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
+
+References Gpg\+Frontend\+::\+Thread\+::\+Task\+::\+Hold\+On\+Life\+Cycle().
+
+
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a3f0a9f8c46e7495b654f297594de8ea3}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a3f0a9f8c46e7495b654f297594de8ea3}} 
+\index{GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}!Run@{Run}}
+\index{Run@{Run}!GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Listed\+Key\+Server\+Test\+Task\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ int\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+can be overwrite by subclass 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_ab3e3d4206efeeff5d3d6f1b5f0c60ab2}{Gpg\+Frontend\+::\+Thread\+::\+Task}}.
+
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a20f0147d670be7ab5c9d3051a900f508}\label{classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask_a20f0147d670be7ab5c9d3051a900f508}} 
 \index{GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}!SignalKeyServerListTestResult@{SignalKeyServerListTestResult}}
 \index{SignalKeyServerListTestResult@{SignalKeyServerListTestResult}!GpgFrontend::UI::ListedKeyServerTestTask@{GpgFrontend::UI::ListedKeyServerTestTask}}

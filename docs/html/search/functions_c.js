@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['markkeys_1116',['MarkKeys',['../classGpgFrontend_1_1UI_1_1KeyList.html#a31a4c067eed90830203862cb4adf951e',1,'GpgFrontend::UI::KeyList']]],
-  ['maybe_5fsave_5fcurrent_5ftab_1117',['maybe_save_current_tab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a8fad090a19479a9fe89432300cca2b6c',1,'GpgFrontend::UI::TextEdit']]],
-  ['maybesaveanytab_1118',['MaybeSaveAnyTab',['../classGpgFrontend_1_1UI_1_1TextEdit.html#a3c976a5494d06c2186d94e7cc8ebe457',1,'GpgFrontend::UI::TextEdit']]],
-  ['modifypassword_1119',['ModifyPassword',['../classGpgFrontend_1_1GpgKeyOpera.html#ab7e16d1f4cba23ea5b5b9f6009ce5ee2',1,'GpgFrontend::GpgKeyOpera']]],
-  ['modifytofupolicy_1120',['ModifyTOFUPolicy',['../classGpgFrontend_1_1GpgKeyOpera.html#a76a7f59701add8a59d8835919dad2000',1,'GpgFrontend::GpgKeyOpera']]]
+  ['needupgrade_1376',['NeedUpgrade',['../structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html#a9798cca1278fe49687ff833805a80817',1,'GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion']]],
+  ['networktab_1377',['NetworkTab',['../classGpgFrontend_1_1UI_1_1NetworkTab.html#a444d3630919c1f9c4db495a58acbb9a8',1,'GpgFrontend::UI::NetworkTab']]],
+  ['newarchive2dataexchanger_1378',['NewArchive2DataExchanger',['../classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c',1,'GpgFrontend::ArchiveFileOperator']]],
+  ['nextid_1379',['nextId',['../classGpgFrontend_1_1UI_1_1IntroPage.html#a812fd63d87955f9131a98ad8b679f8a4',1,'GpgFrontend::UI::IntroPage::nextId()'],['../classGpgFrontend_1_1UI_1_1ChoosePage.html#a243a82d13267b7252844fd7691c703f0',1,'GpgFrontend::UI::ChoosePage::nextId()'],['../classGpgFrontend_1_1UI_1_1KeyGenPage.html#a28958f6627f01db7c6f75fc0dec3eead',1,'GpgFrontend::UI::KeyGenPage::nextId()'],['../classGpgFrontend_1_1UI_1_1ConclusionPage.html#a0f3f3118456ccce7c2a6965cf68d2cf7',1,'GpgFrontend::UI::ConclusionPage::nextId()']]],
+  ['notify_1380',['notify',['../classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html#a6f8ab335d89948c48cd634ab20ff9aa0',1,'GpgFrontend::UI::GpgFrontendApplication']]],
+  ['notifyfilesaved_1381',['NotifyFileSaved',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#a29b3d63ba9590e775f42c779c76102e5',1,'GpgFrontend::UI::PlainTextEditorPage']]]
 ];

@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1GpgFileOpera.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1GpgFileOpera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GpgFrontend::GpgFileOpera Class Reference</div>  </div>
@@ -95,10 +95,10 @@ Inheritance diagram for GpgFrontend::GpgFileOpera:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GpgFileOpera__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgFileOpera_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1GpgFileOpera_inherit__map" id="aGpgFrontend_1_1GpgFileOpera_inherit__map">
-<area shape="rect" title=" " alt="" coords="19,883,221,1063"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,551,235,833"/>
-<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,205,365,488"/>
+<area shape="rect" title=" " alt="" coords="5,897,236,1136"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="6,565,235,848"/>
+<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="137,220,366,503"/>
 </map>
 </div>
 <div class="dynheader">
@@ -106,17 +106,64 @@ Collaboration diagram for GpgFrontend::GpgFileOpera:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GpgFileOpera__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GpgFileOpera_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GpgFileOpera_coll__map" id="aGpgFrontend_1_1GpgFileOpera_coll__map">
-<area shape="rect" title=" " alt="" coords="19,883,221,1063"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,551,235,833"/>
-<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system" alt="" coords="11,5,219,156"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,205,365,488"/>
+<area shape="rect" title=" " alt="" coords="86,1111,317,1349"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
+<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="159,5,367,171"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="148,220,377,503"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="259,565,488,848"/>
+<area shape="rect" href="classGpgFrontend_1_1GpgContext.html" title=" " alt="" coords="247,897,438,1048"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa81da3d72c4fbc57e7138bfec7731152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#aa81da3d72c4fbc57e7138bfec7731152">GpgFileOpera</a> (int channel=<a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>())</td></tr>
+<tr class="memitem:aa81da3d72c4fbc57e7138bfec7731152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#aa81da3d72c4fbc57e7138bfec7731152">GpgFileOpera</a> (int channel=<a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>())</td></tr>
+<tr class="memdesc:aa81da3d72c4fbc57e7138bfec7731152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Gpg File Opera object.  <a href="classGpgFrontend_1_1GpgFileOpera.html#aa81da3d72c4fbc57e7138bfec7731152">More...</a><br /></td></tr>
 <tr class="separator:aa81da3d72c4fbc57e7138bfec7731152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f13bf1b79f155f5196ce5d7dfeaf5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a53f13bf1b79f155f5196ce5d7dfeaf5e">EncryptFile</a> (const KeyArgsList &amp;keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="memdesc:a53f13bf1b79f155f5196ce5d7dfeaf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypted file with public key.  <a href="classGpgFrontend_1_1GpgFileOpera.html#a53f13bf1b79f155f5196ce5d7dfeaf5e">More...</a><br /></td></tr>
+<tr class="separator:a53f13bf1b79f155f5196ce5d7dfeaf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55656f50fca690aec87afe349460b1c7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a55656f50fca690aec87afe349460b1c7">EncryptFileSync</a> (const KeyArgsList &amp;keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:a55656f50fca690aec87afe349460b1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace69ece7bb107e350e1ab5b3ff443657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#ace69ece7bb107e350e1ab5b3ff443657">EncryptDirectory</a> (const KeyArgsList &amp;keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:ace69ece7bb107e350e1ab5b3ff443657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14dc846ae25a2fe82ab94ee32a0d5b3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14dc846ae25a2fe82ab94ee32a0d5b3e">EncryptFileSymmetric</a> (const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="memdesc:a14dc846ae25a2fe82ab94ee32a0d5b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypted file symmetrically (with password)  <a href="classGpgFrontend_1_1GpgFileOpera.html#a14dc846ae25a2fe82ab94ee32a0d5b3e">More...</a><br /></td></tr>
+<tr class="separator:a14dc846ae25a2fe82ab94ee32a0d5b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891024cb4fdd7e9163421d7893c43ef3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a891024cb4fdd7e9163421d7893c43ef3">EncryptFileSymmetricSync</a> (const QString &amp;in_path, bool ascii, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:a891024cb4fdd7e9163421d7893c43ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162aad2008f150356ac60369d5aaeca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a162aad2008f150356ac60369d5aaeca5">EncryptDerectorySymmetric</a> (const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a162aad2008f150356ac60369d5aaeca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb5953b208399cc778faa5dd210a23f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#abbb5953b208399cc778faa5dd210a23f">EncryptDerectorySymmetricSync</a> (const QString &amp;in_path, bool ascii, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:abbb5953b208399cc778faa5dd210a23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5534131c79647b29c92ba282c3af7978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a5534131c79647b29c92ba282c3af7978">DecryptFile</a> (const QString &amp;in_path, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a5534131c79647b29c92ba282c3af7978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae616b77cdeaebdcf89ff75b7642c9dc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#aae616b77cdeaebdcf89ff75b7642c9dc">DecryptFileSync</a> (const QString &amp;in_path, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:aae616b77cdeaebdcf89ff75b7642c9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cbffefe515850c3c9453302d7f60a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14cbffefe515850c3c9453302d7f60a8">DecryptArchive</a> (const QString &amp;in_path, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a14cbffefe515850c3c9453302d7f60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbc57156fd7aa984489a2397b942fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#acbbc57156fd7aa984489a2397b942fef">SignFile</a> (const KeyArgsList &amp;keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="memdesc:acbbc57156fd7aa984489a2397b942fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign file with private key.  <a href="classGpgFrontend_1_1GpgFileOpera.html#acbbc57156fd7aa984489a2397b942fef">More...</a><br /></td></tr>
+<tr class="separator:acbbc57156fd7aa984489a2397b942fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247db95aa42991f6772f2404e81e822d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a247db95aa42991f6772f2404e81e822d">SignFileSync</a> (const KeyArgsList &amp;keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:a247db95aa42991f6772f2404e81e822d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a26e42f0a3d49905777d22828fa430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#af4a26e42f0a3d49905777d22828fa430">VerifyFile</a> (const QString &amp;data_path, const QString &amp;sign_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="memdesc:af4a26e42f0a3d49905777d22828fa430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify file with public key.  <a href="classGpgFrontend_1_1GpgFileOpera.html#af4a26e42f0a3d49905777d22828fa430">More...</a><br /></td></tr>
+<tr class="separator:af4a26e42f0a3d49905777d22828fa430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9511b6a128a6228ebca47ae637c44e55"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a9511b6a128a6228ebca47ae637c44e55">VerifyFileSync</a> (const QString &amp;data_path, const QString &amp;sign_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:a9511b6a128a6228ebca47ae637c44e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd125de9f5d6c49b2e5cf796f27a3398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#acd125de9f5d6c49b2e5cf796f27a3398">EncryptSignFile</a> (const KeyArgsList &amp;keys, const KeyArgsList &amp;signer_keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:acd125de9f5d6c49b2e5cf796f27a3398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9915c91131e4935679b25ef51c2544b1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a9915c91131e4935679b25ef51c2544b1">EncryptSignFileSync</a> (const KeyArgsList &amp;keys, const KeyArgsList &amp;signer_keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:a9915c91131e4935679b25ef51c2544b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28dc2c1570e10a740aeaa80b3755cee3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a28dc2c1570e10a740aeaa80b3755cee3">EncryptSignDirectory</a> (const KeyArgsList &amp;keys, const KeyArgsList &amp;signer_keys, const QString &amp;in_path, bool ascii, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a28dc2c1570e10a740aeaa80b3755cee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795be34a8849de70e90b501bd9e952f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a795be34a8849de70e90b501bd9e952f2">DecryptVerifyFile</a> (const QString &amp;in_path, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a795be34a8849de70e90b501bd9e952f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10bf1aa98a6717adbef57c11750094c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#af10bf1aa98a6717adbef57c11750094c">DecryptVerifyFileSync</a> (const QString &amp;in_path, const QString &amp;out_path) -&gt; std::tuple&lt; <a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr &gt;</td></tr>
+<tr class="separator:af10bf1aa98a6717adbef57c11750094c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d890d70f943b0f07ab65bb8a907d94d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a0d890d70f943b0f07ab65bb8a907d94d">DecryptVerifyArchive</a> (const QString &amp;in_path, const QString &amp;out_path, const GpgOperationCallback &amp;cb)</td></tr>
+<tr class="separator:a0d890d70f943b0f07ab65bb8a907d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGpgFrontend_1_1SingletonFunctionObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject&lt; GpgFileOpera &gt;</a></td></tr>
 <tr class="memitem:a194e49b07d46345bdad386505d743a61 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top"><a id="a194e49b07d46345bdad386505d743a61"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a194e49b07d46345bdad386505d743a61">SingletonFunctionObject</a> (const <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt; <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &gt; &amp;)=delete</td></tr>
@@ -130,70 +177,61 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a7090636bed6f4bad5b99f28f6872c645">SingletonFunctionObject</a> (const <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a7090636bed6f4bad5b99f28f6872c645 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Singleton Function Object object. <br /></td></tr>
 <tr class="separator:a7090636bed6f4bad5b99f28f6872c645 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb190a60f7a5d4ded43cae16ab8f59e inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aabb190a60f7a5d4ded43cae16ab8f59e">operator=</a> (const <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt; <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &gt; &amp;)=delete</td></tr>
-<tr class="memdesc:aabb190a60f7a5d4ded43cae16ab8f59e inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">prohibit copy  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#aabb190a60f7a5d4ded43cae16ab8f59e">More...</a><br /></td></tr>
-<tr class="separator:aabb190a60f7a5d4ded43cae16ab8f59e inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99eb547639a63e7c2f467ebb611c95b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a99eb547639a63e7c2f467ebb611c95b7">operator=</a> (const <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt; <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &gt; &amp;) -&gt; <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a> &amp;=delete</td></tr>
+<tr class="memdesc:a99eb547639a63e7c2f467ebb611c95b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">prohibit copy  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a99eb547639a63e7c2f467ebb611c95b7">More...</a><br /></td></tr>
+<tr class="separator:a99eb547639a63e7c2f467ebb611c95b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ce3095a745ecbf5e6a032e7da4bc97 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top"><a id="a03ce3095a745ecbf5e6a032e7da4bc97"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;)=delete</td></tr>
 <tr class="separator:a03ce3095a745ecbf5e6a032e7da4bc97 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99440b9177f5d0c18840f08a40d64b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">GetChannel</a> () const</td></tr>
-<tr class="memdesc:aa99440b9177f5d0c18840f08a40d64b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Channel object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa99440b9177f5d0c18840f08a40d64b7">More...</a><br /></td></tr>
-<tr class="separator:aa99440b9177f5d0c18840f08a40d64b7 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ee1e1251023610590e675ae3de8bd5 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">GetChannel</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a94ee1e1251023610590e675ae3de8bd5 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Channel object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">More...</a><br /></td></tr>
+<tr class="separator:a94ee1e1251023610590e675ae3de8bd5 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classGpgFrontend_1_1ChannelObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGpgFrontend_1_1ChannelObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1ChannelObject.html">GpgFrontend::ChannelObject</a></td></tr>
 <tr class="memitem:aedbf32eddc701e521bd8e790ef208da0 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top"><a id="aedbf32eddc701e521bd8e790ef208da0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#aedbf32eddc701e521bd8e790ef208da0">ChannelObject</a> () noexcept</td></tr>
 <tr class="memdesc:aedbf32eddc701e521bd8e790ef208da0 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Default Channel Object object. <br /></td></tr>
 <tr class="separator:aedbf32eddc701e521bd8e790ef208da0 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ad2a19339e3cd50626fe0eaad17ccd inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a68ad2a19339e3cd50626fe0eaad17ccd">ChannelObject</a> (int channel)</td></tr>
-<tr class="memdesc:a68ad2a19339e3cd50626fe0eaad17ccd inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Channel Object object.  <a href="classGpgFrontend_1_1ChannelObject.html#a68ad2a19339e3cd50626fe0eaad17ccd">More...</a><br /></td></tr>
-<tr class="separator:a68ad2a19339e3cd50626fe0eaad17ccd inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e13a4bff1cfb679f68a3a2590a3b1b8 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a0e13a4bff1cfb679f68a3a2590a3b1b8">GetChannel</a> () const</td></tr>
-<tr class="memdesc:a0e13a4bff1cfb679f68a3a2590a3b1b8 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Channel object.  <a href="classGpgFrontend_1_1ChannelObject.html#a0e13a4bff1cfb679f68a3a2590a3b1b8">More...</a><br /></td></tr>
-<tr class="separator:a0e13a4bff1cfb679f68a3a2590a3b1b8 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a29ff6a1233114eb9f159c408cbe35 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top"><a id="a85a29ff6a1233114eb9f159c408cbe35"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a85a29ff6a1233114eb9f159c408cbe35">~ChannelObject</a> () noexcept</td></tr>
+<tr class="memdesc:a85a29ff6a1233114eb9f159c408cbe35 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Channel Object object. <br /></td></tr>
+<tr class="separator:a85a29ff6a1233114eb9f159c408cbe35 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d55a57ee60bdb5a747125da9586a0e5 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a3d55a57ee60bdb5a747125da9586a0e5">ChannelObject</a> (int channel, QString type)</td></tr>
+<tr class="memdesc:a3d55a57ee60bdb5a747125da9586a0e5 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Channel Object object.  <a href="classGpgFrontend_1_1ChannelObject.html#a3d55a57ee60bdb5a747125da9586a0e5">More...</a><br /></td></tr>
+<tr class="separator:a3d55a57ee60bdb5a747125da9586a0e5 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085b36517fcc46916279b9d633da2d26 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a085b36517fcc46916279b9d633da2d26">GetChannel</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a085b36517fcc46916279b9d633da2d26 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Channel object.  <a href="classGpgFrontend_1_1ChannelObject.html#a085b36517fcc46916279b9d633da2d26">More...</a><br /></td></tr>
+<tr class="separator:a085b36517fcc46916279b9d633da2d26 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b19cad6d873b314bba32a3dae85f09 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#aa3b19cad6d873b314bba32a3dae85f09">SetChannel</a> (int channel)</td></tr>
 <tr class="memdesc:aa3b19cad6d873b314bba32a3dae85f09 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Channel object.  <a href="classGpgFrontend_1_1ChannelObject.html#aa3b19cad6d873b314bba32a3dae85f09">More...</a><br /></td></tr>
 <tr class="separator:aa3b19cad6d873b314bba32a3dae85f09 inherit pub_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a234d939ae0b2c3f799dd01130fad9379"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a234d939ae0b2c3f799dd01130fad9379">EncryptFile</a> (KeyListPtr keys, const std::string &amp;in_path, const std::string &amp;out_path, GpgEncrResult &amp;result, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="memdesc:a234d939ae0b2c3f799dd01130fad9379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypted file.  <a href="classGpgFrontend_1_1GpgFileOpera.html#a234d939ae0b2c3f799dd01130fad9379">More...</a><br /></td></tr>
-<tr class="separator:a234d939ae0b2c3f799dd01130fad9379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826efca057afb07157453b3b9e267b0f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a826efca057afb07157453b3b9e267b0f">EncryptFileSymmetric</a> (const std::string &amp;in_path, const std::string &amp;out_path, GpgEncrResult &amp;result, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="memdesc:a826efca057afb07157453b3b9e267b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">运用对称加密算法加密文件  <a href="classGpgFrontend_1_1GpgFileOpera.html#a826efca057afb07157453b3b9e267b0f">More...</a><br /></td></tr>
-<tr class="separator:a826efca057afb07157453b3b9e267b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74eb3ba532a236d8ad284b41265b0ccd"><td class="memItemLeft" align="right" valign="top">static GpgError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a74eb3ba532a236d8ad284b41265b0ccd">DecryptFile</a> (const std::string &amp;in_path, const std::string &amp;out_path, GpgDecrResult &amp;result)</td></tr>
-<tr class="separator:a74eb3ba532a236d8ad284b41265b0ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350df1c07c054625c4755a78e6ca5ca8"><td class="memItemLeft" align="right" valign="top">static GpgError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a350df1c07c054625c4755a78e6ca5ca8">SignFile</a> (KeyListPtr keys, const std::string &amp;in_path, const std::string &amp;out_path, GpgSignResult &amp;result, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="separator:a350df1c07c054625c4755a78e6ca5ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cddfe822c9410cd9c301d08963b7e7"><td class="memItemLeft" align="right" valign="top">static GpgError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14cddfe822c9410cd9c301d08963b7e7">VerifyFile</a> (const std::string &amp;data_path, const std::string &amp;sign_path, GpgVerifyResult &amp;result, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="separator:a14cddfe822c9410cd9c301d08963b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6353e1688b113e5746aced6aa7f3876e"><td class="memItemLeft" align="right" valign="top">static GpgError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a6353e1688b113e5746aced6aa7f3876e">EncryptSignFile</a> (KeyListPtr keys, KeyListPtr signer_keys, const std::string &amp;in_path, const std::string &amp;out_path, GpgEncrResult &amp;encr_res, GpgSignResult &amp;sign_res, int _channel=GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="separator:a6353e1688b113e5746aced6aa7f3876e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90949b4e9e6116784260cd0e416551db"><td class="memItemLeft" align="right" valign="top">static GpgError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a90949b4e9e6116784260cd0e416551db">DecryptVerifyFile</a> (const std::string &amp;in_path, const std::string &amp;out_path, GpgDecrResult &amp;decr_res, GpgVerifyResult &amp;verify_res)</td></tr>
-<tr class="separator:a90949b4e9e6116784260cd0e416551db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject&lt; GpgFileOpera &gt;</a></td></tr>
-<tr class="memitem:a70484d7cfe9f9dcbcd5f8bb749250f36 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GetInstance</a> (int channel=GpgFrontend::GPGFRONTEND_DEFAULT_CHANNEL)</td></tr>
-<tr class="memdesc:a70484d7cfe9f9dcbcd5f8bb749250f36 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Instance object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">More...</a><br /></td></tr>
-<tr class="separator:a70484d7cfe9f9dcbcd5f8bb749250f36 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a083807ff8cec58dc0aa732844edaf518 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a083807ff8cec58dc0aa732844edaf518">CreateInstance</a> (int channel, std::function&lt; std::unique_ptr&lt; <a class="el" href="classGpgFrontend_1_1ChannelObject.html">ChannelObject</a> &gt;(void)&gt; factory)</td></tr>
-<tr class="memdesc:a083807ff8cec58dc0aa732844edaf518 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Instance object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a083807ff8cec58dc0aa732844edaf518">More...</a><br /></td></tr>
-<tr class="separator:a083807ff8cec58dc0aa732844edaf518 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49b1d50252e1934691a9483a6df2106 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ab49b1d50252e1934691a9483a6df2106">ReleaseChannel</a> (int channel)</td></tr>
-<tr class="separator:ab49b1d50252e1934691a9483a6df2106 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e2b3794d6553f4231eaec72d9d0a50 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">GetDefaultChannel</a> ()</td></tr>
-<tr class="memdesc:a50e2b3794d6553f4231eaec72d9d0a50 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Default Channel object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">More...</a><br /></td></tr>
-<tr class="separator:a50e2b3794d6553f4231eaec72d9d0a50 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f2f0474871971f86ff91fb6a2408621 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a5f2f0474871971f86ff91fb6a2408621">GetAllChannelId</a> ()</td></tr>
-<tr class="memdesc:a5f2f0474871971f86ff91fb6a2408621 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the channel ids.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#a5f2f0474871971f86ff91fb6a2408621">More...</a><br /></td></tr>
-<tr class="separator:a5f2f0474871971f86ff91fb6a2408621 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classGpgFrontend_1_1ChannelObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGpgFrontend_1_1ChannelObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1ChannelObject.html">GpgFrontend::ChannelObject</a></td></tr>
-<tr class="memitem:aece9c525c49900734bc1bebf85b644ef inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#aece9c525c49900734bc1bebf85b644ef">GetDefaultChannel</a> ()</td></tr>
-<tr class="memdesc:aece9c525c49900734bc1bebf85b644ef inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Default Channel object.  <a href="classGpgFrontend_1_1ChannelObject.html#aece9c525c49900734bc1bebf85b644ef">More...</a><br /></td></tr>
-<tr class="separator:aece9c525c49900734bc1bebf85b644ef inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1b78c6554dc6f6e2055664e825a0d1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a></td></tr>
+<tr class="memdesc:a1b78c6554dc6f6e2055664e825a0d1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corresponding context.  <a href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">More...</a><br /></td></tr>
+<tr class="separator:a1b78c6554dc6f6e2055664e825a0d1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject&lt; GpgFileOpera &gt;</a></td></tr>
+<tr class="memitem:ac963fee992753970bfb5c81608d4070f inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GetInstance</a> (int channel=GpgFrontend::kGpgFrontendDefaultChannel) -&gt; <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;</td></tr>
+<tr class="memdesc:ac963fee992753970bfb5c81608d4070f inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Instance object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">More...</a><br /></td></tr>
+<tr class="separator:ac963fee992753970bfb5c81608d4070f inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff3ff15fc67b7e9cdeeb2577541fbc4 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#adff3ff15fc67b7e9cdeeb2577541fbc4">CreateInstance</a> (int channel, const std::function&lt; ChannelObjectPtr(void)&gt; &amp;factory) -&gt; <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html">GpgFileOpera</a> &amp;</td></tr>
+<tr class="memdesc:adff3ff15fc67b7e9cdeeb2577541fbc4 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Instance object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#adff3ff15fc67b7e9cdeeb2577541fbc4">More...</a><br /></td></tr>
+<tr class="separator:adff3ff15fc67b7e9cdeeb2577541fbc4 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49b1d50252e1934691a9483a6df2106 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ab49b1d50252e1934691a9483a6df2106">ReleaseChannel</a> (int channel)</td></tr>
+<tr class="separator:ab49b1d50252e1934691a9483a6df2106 inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad983153cbe3a0c32c123c506e04f31fc inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">GetDefaultChannel</a> () -&gt; int</td></tr>
+<tr class="memdesc:ad983153cbe3a0c32c123c506e04f31fc inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Default Channel object.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">More...</a><br /></td></tr>
+<tr class="separator:ad983153cbe3a0c32c123c506e04f31fc inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b5db19f3a130886f43607a345a0e1d inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#aa7b5db19f3a130886f43607a345a0e1d">GetAllChannelId</a> () -&gt; std::vector&lt; int &gt;</td></tr>
+<tr class="memdesc:aa7b5db19f3a130886f43607a345a0e1d inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the channel ids.  <a href="classGpgFrontend_1_1SingletonFunctionObject.html#aa7b5db19f3a130886f43607a345a0e1d">More...</a><br /></td></tr>
+<tr class="separator:aa7b5db19f3a130886f43607a345a0e1d inherit pub_static_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classGpgFrontend_1_1ChannelObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGpgFrontend_1_1ChannelObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1ChannelObject.html">GpgFrontend::ChannelObject</a></td></tr>
+<tr class="memitem:a6a3672c8ff3d4fb5ef6bc1bda202bbb8 inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1ChannelObject.html#a6a3672c8ff3d4fb5ef6bc1bda202bbb8">GetDefaultChannel</a> () -&gt; int</td></tr>
+<tr class="memdesc:a6a3672c8ff3d4fb5ef6bc1bda202bbb8 inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Default Channel object.  <a href="classGpgFrontend_1_1ChannelObject.html#a6a3672c8ff3d4fb5ef6bc1bda202bbb8">More...</a><br /></td></tr>
+<tr class="separator:a6a3672c8ff3d4fb5ef6bc1bda202bbb8 inherit pub_static_methods_classGpgFrontend_1_1ChannelObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classGpgFrontend_1_1SingletonFunctionObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGpgFrontend_1_1SingletonFunctionObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject&lt; GpgFileOpera &gt;</a></td></tr>
 <tr class="memitem:a02e76b42ab51d77588b01c7508bed258 inherit pro_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top"><a id="a02e76b42ab51d77588b01c7508bed258"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a02e76b42ab51d77588b01c7508bed258">SingletonFunctionObject</a> ()=default</td></tr>
@@ -221,7 +259,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td class="memname">GpgFrontend::GpgFileOpera::GpgFileOpera </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>channel</em> = <code><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a50e2b3794d6553f4231eaec72d9d0a50">SingletonFunctionObject::GetDefaultChannel</a>()</code></td><td>)</td>
+          <td class="paramname"><em>channel</em> = <code><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ad983153cbe3a0c32c123c506e04f31fc">SingletonFunctionObject::GetDefaultChannel</a>()</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -231,44 +269,41 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copyright (C) 2021 Saturneric</p>
-<p>This file is part of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p><a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a>. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
-<p>The initial version of the source code is inherited from the gpg4usb project, which is under GPL-3.0-or-later.</p>
-<p>All the source code of <a class="el" href="namespaceGpgFrontend.html">GpgFrontend</a> was modified and released by Saturneric<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'c@'+'bkt'+'us'+'.co'+'m'; return false;">eric@<span style="display: none;">.nosp@m.</span>bktu<span style="display: none;">.nosp@m.</span>s.com</a> starting on May 12, 2021.</p>
-<p>SPDX-License-Identifier: GPL-3.0-or-later </p>
+
+<p>Construct a new Gpg File Opera object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a74eb3ba532a236d8ad284b41265b0ccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74eb3ba532a236d8ad284b41265b0ccd">&#9670;&nbsp;</a></span>DecryptFile()</h2>
+<a id="a14cbffefe515850c3c9453302d7f60a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cbffefe515850c3c9453302d7f60a8">&#9670;&nbsp;</a></span>DecryptArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GpgFrontend::GpgError GpgFrontend::GpgFileOpera::DecryptFile </td>
+          <td class="memname">void GpgFrontend::GpgFileOpera::DecryptArchive </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgDecrResult &amp;&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -276,11 +311,50 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#a0970b9c44e6e0a9bf93af31b8a76575b">GpgFrontend::ArchiveFileOperator::ExtractArchiveFromDataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="a5534131c79647b29c92ba282c3af7978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5534131c79647b29c92ba282c3af7978">&#9670;&nbsp;</a></span>DecryptFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::DecryptFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -292,44 +366,72 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a9ea9e81194917e08f46eb657281b7953">GpgFrontend::GpgBasicOperator::Decrypt()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a0a6d0618f2835a6dcae707a4ca770a48">GpgFrontend::UI::MainWindow::SlotFileDecrypt()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a90949b4e9e6116784260cd0e416551db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90949b4e9e6116784260cd0e416551db">&#9670;&nbsp;</a></span>DecryptVerifyFile()</h2>
+<a id="aae616b77cdeaebdcf89ff75b7642c9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae616b77cdeaebdcf89ff75b7642c9dc">&#9670;&nbsp;</a></span>DecryptFileSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">gpg_error_t GpgFrontend::GpgFileOpera::DecryptVerifyFile </td>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::DecryptFileSync </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;GpgError, DataObjectPtr&gt; </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="a0d890d70f943b0f07ab65bb8a907d94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d890d70f943b0f07ab65bb8a907d94d">&#9670;&nbsp;</a></span>DecryptVerifyArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::DecryptVerifyArchive </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgDecrResult &amp;&#160;</td>
-          <td class="paramname"><em>decr_res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GpgVerifyResult &amp;&#160;</td>
-          <td class="paramname"><em>verify_res</em>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -337,11 +439,50 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#a0970b9c44e6e0a9bf93af31b8a76575b">GpgFrontend::ArchiveFileOperator::ExtractArchiveFromDataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="a795be34a8849de70e90b501bd9e952f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795be34a8849de70e90b501bd9e952f2">&#9670;&nbsp;</a></span>DecryptVerifyFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::DecryptVerifyFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -354,50 +495,76 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a11845a9a3ea2941e14faa9130f0ac9ef">GpgFrontend::GpgBasicOperator::DecryptVerify()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#ab23c7e67dd1f5295b3c49ad79dfd5919">GpgFrontend::UI::MainWindow::SlotFileDecryptVerify()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a234d939ae0b2c3f799dd01130fad9379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234d939ae0b2c3f799dd01130fad9379">&#9670;&nbsp;</a></span>EncryptFile()</h2>
+<a id="af10bf1aa98a6717adbef57c11750094c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10bf1aa98a6717adbef57c11750094c">&#9670;&nbsp;</a></span>DecryptVerifyFileSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GpgFrontend::GpgError GpgFrontend::GpgFileOpera::EncryptFile </td>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::DecryptVerifyFileSync </td>
           <td>(</td>
-          <td class="paramtype">KeyListPtr&#160;</td>
-          <td class="paramname"><em>keys</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="a162aad2008f150356ac60369d5aaeca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162aad2008f150356ac60369d5aaeca5">&#9670;&nbsp;</a></span>EncryptDerectorySymmetric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptDerectorySymmetric </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgEncrResult &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_channel</em> = <code>GPGFRONTEND_DEFAULT_CHANNEL</code>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -405,64 +572,213 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">GpgFrontend::ArchiveFileOperator::NewArchive2DataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="abbb5953b208399cc778faa5dd210a23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb5953b208399cc778faa5dd210a23f">&#9670;&nbsp;</a></span>EncryptDerectorySymmetricSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::EncryptDerectorySymmetricSync </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">GpgFrontend::ArchiveFileOperator::NewArchive2DataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="ace69ece7bb107e350e1ab5b3ff443657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace69ece7bb107e350e1ab5b3ff443657">&#9670;&nbsp;</a></span>EncryptDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td></td></tr>
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">GpgFrontend::ArchiveFileOperator::NewArchive2DataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="a53f13bf1b79f155f5196ce5d7dfeaf5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f13bf1b79f155f5196ce5d7dfeaf5e">&#9670;&nbsp;</a></span>EncryptFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptFile </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
-<p>Encrypted file. </p>
+<p>Encrypted file with public key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keys</td><td>Used public key </td></tr>
     <tr><td class="paramname">in_path</td><td>The path where the enter file is located </td></tr>
     <tr><td class="paramname">out_path</td><td>The path where the output file is located </td></tr>
     <tr><td class="paramname">result</td><td>Encrypted results </td></tr>
-    <tr><td class="paramname">_channel</td><td>Channel in context </td></tr>
+    <tr><td class="paramname">channel</td><td>Channel in context </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int error code </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a32e1eac6bb0f322588ae75ae36a9884a">GpgFrontend::GpgBasicOperator::Encrypt()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9ec699536a35a37961a8c6da1e231ae3">GpgFrontend::UI::MainWindow::SlotFileEncrypt()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a826efca057afb07157453b3b9e267b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826efca057afb07157453b3b9e267b0f">&#9670;&nbsp;</a></span>EncryptFileSymmetric()</h2>
+<a id="a14dc846ae25a2fe82ab94ee32a0d5b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dc846ae25a2fe82ab94ee32a0d5b3e">&#9670;&nbsp;</a></span>EncryptFileSymmetric()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int GpgFrontend::GpgFileOpera::EncryptFileSymmetric </td>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptFileSymmetric </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgFrontend::GpgEncrResult &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_channel</em> = <code>GPGFRONTEND_DEFAULT_CHANNEL</code>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -470,81 +786,162 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>运用对称加密算法加密文件 </p>
+<p>Encrypted file symmetrically (with password) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in_path</td><td></td></tr>
     <tr><td class="paramname">out_path</td><td></td></tr>
     <tr><td class="paramname">result</td><td></td></tr>
-    <tr><td class="paramname">_channel</td><td></td></tr>
+    <tr><td class="paramname">channel</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a8f4ef57e941a066ad9d070eee51e2073">GpgFrontend::GpgBasicOperator::EncryptSymmetric()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9ec699536a35a37961a8c6da1e231ae3">GpgFrontend::UI::MainWindow::SlotFileEncrypt()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a6353e1688b113e5746aced6aa7f3876e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6353e1688b113e5746aced6aa7f3876e">&#9670;&nbsp;</a></span>EncryptSignFile()</h2>
+<a id="a891024cb4fdd7e9163421d7893c43ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891024cb4fdd7e9163421d7893c43ef3">&#9670;&nbsp;</a></span>EncryptFileSymmetricSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">gpg_error_t GpgFrontend::GpgFileOpera::EncryptSignFile </td>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::EncryptFileSymmetricSync </td>
           <td>(</td>
-          <td class="paramtype">KeyListPtr&#160;</td>
-          <td class="paramname"><em>keys</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">KeyListPtr&#160;</td>
-          <td class="paramname"><em>signer_keys</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="a55656f50fca690aec87afe349460b1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55656f50fca690aec87afe349460b1c7">&#9670;&nbsp;</a></span>EncryptFileSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::EncryptFileSync </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td></td></tr>
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;GpgError, DataObjectPtr&gt; </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="a28dc2c1570e10a740aeaa80b3755cee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28dc2c1570e10a740aeaa80b3755cee3">&#9670;&nbsp;</a></span>EncryptSignDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptSignDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>signer_keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgEncrResult &amp;&#160;</td>
-          <td class="paramname"><em>encr_res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GpgSignResult &amp;&#160;</td>
-          <td class="paramname"><em>sign_res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_channel</em> = <code>GPGFRONTEND_DEFAULT_CHANNEL</code>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -552,70 +949,64 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keys</td><td></td></tr>
     <tr><td class="paramname">signer_keys</td><td></td></tr>
     <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
     <tr><td class="paramname">out_path</td><td></td></tr>
-    <tr><td class="paramname">encr_res</td><td></td></tr>
-    <tr><td class="paramname">sign_res</td><td></td></tr>
-    <tr><td class="paramname">_channel</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a08906cf2bc2ddad8489438610f388f8a">GpgFrontend::GpgBasicOperator::EncryptSign()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a25a2e4017d77cffc8362bde9606fad30">GpgFrontend::UI::MainWindow::SlotFileEncryptSign()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1ArchiveFileOperator.html#ad8c5a68a80b99346ab622f329b4c8f3c">GpgFrontend::ArchiveFileOperator::NewArchive2DataExchanger()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a350df1c07c054625c4755a78e6ca5ca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a350df1c07c054625c4755a78e6ca5ca8">&#9670;&nbsp;</a></span>SignFile()</h2>
+<a id="acd125de9f5d6c49b2e5cf796f27a3398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd125de9f5d6c49b2e5cf796f27a3398">&#9670;&nbsp;</a></span>EncryptSignFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">gpgme_error_t GpgFrontend::GpgFileOpera::SignFile </td>
+          <td class="memname">void GpgFrontend::GpgFileOpera::EncryptSignFile </td>
           <td>(</td>
-          <td class="paramtype">KeyListPtr&#160;</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
           <td class="paramname"><em>keys</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>signer_keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>in_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>out_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GpgSignResult &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_channel</em> = <code>GPGFRONTEND_DEFAULT_CHANNEL</code>&#160;</td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -623,32 +1014,283 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td></td></tr>
+    <tr><td class="paramname">signer_keys</td><td></td></tr>
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="a9915c91131e4935679b25ef51c2544b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9915c91131e4935679b25ef51c2544b1">&#9670;&nbsp;</a></span>EncryptSignFileSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::EncryptSignFileSync </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>signer_keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td></td></tr>
+    <tr><td class="paramname">signer_keys</td><td></td></tr>
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="acbbc57156fd7aa984489a2397b942fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbc57156fd7aa984489a2397b942fef">&#9670;&nbsp;</a></span>SignFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::SignFile </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sign file with private key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keys</td><td></td></tr>
     <tr><td class="paramname">in_path</td><td></td></tr>
     <tr><td class="paramname">out_path</td><td></td></tr>
     <tr><td class="paramname">result</td><td></td></tr>
-    <tr><td class="paramname">_channel</td><td></td></tr>
+    <tr><td class="paramname">channel</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a4edac6df92596ba8eea3a8cdc1173684">GpgFrontend::check_gpg_error_2_err_code()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#a988d7e65e85fc7a578f26300332a65d3">GpgFrontend::GpgBasicOperator::Sign()</a>, and <a class="el" href="classGpgFrontend_1_1FileOperator.html#a51121c94dc32a83d7073fbe7138b603b">GpgFrontend::FileOperator::WriteFileStd()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a8bcdcbe678b8dc0837fffda2ebfe79bf">GpgFrontend::UI::MainWindow::SlotFileSign()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
 
 </div>
 </div>
-<a id="a14cddfe822c9410cd9c301d08963b7e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14cddfe822c9410cd9c301d08963b7e7">&#9670;&nbsp;</a></span>VerifyFile()</h2>
+<a id="a247db95aa42991f6772f2404e81e822d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247db95aa42991f6772f2404e81e822d">&#9670;&nbsp;</a></span>SignFileSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::SignFileSync </td>
+          <td>(</td>
+          <td class="paramtype">const KeyArgsList &amp;&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ascii</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>out_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td></td></tr>
+    <tr><td class="paramname">in_path</td><td></td></tr>
+    <tr><td class="paramname">ascii</td><td></td></tr>
+    <tr><td class="paramname">out_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;GpgError, DataObjectPtr&gt; </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<a id="af4a26e42f0a3d49905777d22828fa430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a26e42f0a3d49905777d22828fa430">&#9670;&nbsp;</a></span>VerifyFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::GpgFileOpera::VerifyFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>data_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sign_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GpgOperationCallback &amp;&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify file with public key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_path</td><td>The path where the enter file is located </td></tr>
+    <tr><td class="paramname">sign_path</td><td>The path where the signature file is located </td></tr>
+    <tr><td class="paramname">result</td><td>Verify results </td></tr>
+    <tr><td class="paramname">channel</td><td>Channel in context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a1b78c6554dc6f6e2055664e825a0d1c4">ctx_</a>, and <a class="el" href="namespaceGpgFrontend.html#abeb3c754e9529570abe5fef6a97f3c22">GpgFrontend::RunGpgOperaAsync()</a>.</p>
+
+</div>
+</div>
+<a id="a9511b6a128a6228ebca47ae637c44e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9511b6a128a6228ebca47ae637c44e55">&#9670;&nbsp;</a></span>VerifyFileSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GpgFileOpera::VerifyFileSync </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>data_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sign_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_path</td><td></td></tr>
+    <tr><td class="paramname">sign_path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;GpgError, DataObjectPtr&gt; </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceGpgFrontend.html#a864178db4c07b932c2ae6e7a20fe87bf">GpgFrontend::CheckGpgError()</a>, and <a class="el" href="namespaceGpgFrontend.html#a4c2a4a157e45e169682a99d7f5130dc0">GpgFrontend::RunGpgOperaSync()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1b78c6554dc6f6e2055664e825a0d1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b78c6554dc6f6e2055664e825a0d1c4">&#9670;&nbsp;</a></span>ctx_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,55 +1299,23 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">gpgme_error_t GpgFrontend::GpgFileOpera::VerifyFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>data_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>sign_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GpgVerifyResult &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_channel</em> = <code>GPGFRONTEND_DEFAULT_CHANNEL</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>&amp; GpgFrontend::GpgFileOpera::ctx_</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data_path</td><td></td></tr>
-    <tr><td class="paramname">sign_path</td><td></td></tr>
-    <tr><td class="paramname">result</td><td></td></tr>
-    <tr><td class="paramname">_channel</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GpgError </dd></dl>
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgContext::GetInstance</a>(</div>
+<div class="line">      <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">SingletonFunctionObject::GetChannel</a>())</div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_a94ee1e1251023610590e675ae3de8bd5"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#a94ee1e1251023610590e675ae3de8bd5">GpgFrontend::SingletonFunctionObject::GetChannel</a></div><div class="ttdeci">auto GetChannel() const -&gt; int</div><div class="ttdoc">Get the Channel object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html_ac963fee992753970bfb5c81608d4070f"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgContext &gt;::GetInstance</a></div><div class="ttdeci">static auto GetInstance(int channel=GpgFrontend::kGpgFrontendDefaultChannel) -&gt; GpgContext &amp;</div><div class="ttdoc">Get the Instance object.</div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:80</div></div>
+</div><!-- fragment -->
+<p>Corresponding context. </p>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a70484d7cfe9f9dcbcd5f8bb749250f36">GpgFrontend::SingletonFunctionObject&lt; GpgBasicOperator &gt;::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1FileOperator.html#ad4424bce4f22ae75a16c542dfb4ddf0a">GpgFrontend::FileOperator::ReadFileStd()</a>, and <a class="el" href="classGpgFrontend_1_1GpgBasicOperator.html#af0347cb28ff73b2250395ceaa9001509">GpgFrontend::GpgBasicOperator::Verify()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9879061cfd321c6757c77f75d46dc7d8">GpgFrontend::UI::MainWindow::SlotFileVerify()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14cbffefe515850c3c9453302d7f60a8">DecryptArchive()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a5534131c79647b29c92ba282c3af7978">DecryptFile()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a0d890d70f943b0f07ab65bb8a907d94d">DecryptVerifyArchive()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a795be34a8849de70e90b501bd9e952f2">DecryptVerifyFile()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a162aad2008f150356ac60369d5aaeca5">EncryptDerectorySymmetric()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#ace69ece7bb107e350e1ab5b3ff443657">EncryptDirectory()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a53f13bf1b79f155f5196ce5d7dfeaf5e">EncryptFile()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a14dc846ae25a2fe82ab94ee32a0d5b3e">EncryptFileSymmetric()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#a28dc2c1570e10a740aeaa80b3755cee3">EncryptSignDirectory()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#acd125de9f5d6c49b2e5cf796f27a3398">EncryptSignFile()</a>, <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#acbbc57156fd7aa984489a2397b942fef">SignFile()</a>, and <a class="el" href="classGpgFrontend_1_1GpgFileOpera.html#af4a26e42f0a3d49905777d22828fa430">VerifyFile()</a>.</p>
 
 </div>
 </div>

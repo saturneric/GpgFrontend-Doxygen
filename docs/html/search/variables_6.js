@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['file_5fmenu_5f_1401',['file_menu_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#af08c62c38a750382ee218191c8e13f4f',1,'GpgFrontend::UI::MainWindow']]],
-  ['file_5ftool_5fbar_5f_1402',['file_tool_bar_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a1e0d23d361b8e339ca85410db2bdfb64',1,'GpgFrontend::UI::MainWindow']]],
-  ['find_5fact_5f_1403',['find_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a6154f5dbdc9cebc0644e5d1e25895df8',1,'GpgFrontend::UI::MainWindow']]],
-  ['find_5fedit_5f_1404',['find_edit_',['../classGpgFrontend_1_1UI_1_1FindWidget.html#af420832720942dd1e7cb3f3841c7cbfe',1,'GpgFrontend::UI::FindWidget']]],
-  ['fingerprint_5fbox_5f_1405',['fingerprint_box_',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#ada1c21cf59f1f19dfd4ffe0391bc1594',1,'GpgFrontend::UI::KeyPairDetailTab']]],
-  ['fingerprint_5fvar_5flabel_5f_1406',['fingerprint_var_label_',['../classGpgFrontend_1_1UI_1_1KeyPairDetailTab.html#a1bb1519e5cce51ad5796065232f66ad6',1,'GpgFrontend::UI::KeyPairDetailTab::fingerprint_var_label_()'],['../classGpgFrontend_1_1UI_1_1KeyPairSubkeyTab.html#a11a6e8aca1754d513ea91192ee0315bf',1,'GpgFrontend::UI::KeyPairSubkeyTab::fingerprint_var_label_()']]],
-  ['fpr_5f_1407',['fpr_',['../classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html#a36bf3306b8564b49da04eee1dc653675',1,'GpgFrontend::UI::VerifyKeyDetailBox']]],
-  ['full_5ffile_5fpath_5f_1408',['full_file_path_',['../classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html#ae867b6329fcb1978479a9d70f7b017db',1,'GpgFrontend::UI::PlainTextEditorPage']]]
+  ['global_5fsetting_5fstation_5f_1710',['global_setting_station_',['../classGpgFrontend_1_1DataObjectOperator.html#a3c195f8e4c30d95be14a6d43e9282601',1,'GpgFrontend::DataObjectOperator']]],
+  ['gnupg_5fact_5f_1711',['gnupg_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a79b83f536a7c4299eaa3d22e4e875227',1,'GpgFrontend::UI::MainWindow']]],
+  ['gnupghomepath_1712',['GnuPGHomePath',['../classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgInfo.html#a2ddf7d8e63e7b8eb180599129b2d4a05',1,'GpgFrontend::Module::Integrated::GnuPGInfoGatheringModule::GpgInfo']]],
+  ['gpg_5fmenu_5f_1713',['gpg_menu_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#a2bed0c3b032269c9eb82bc7c068852cb',1,'GpgFrontend::UI::MainWindow']]]
 ];

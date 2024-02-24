@@ -7,62 +7,67 @@ Collaboration diagram for Gpg\+Frontend\+::Gpg\+Data\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{classGpgFrontend_1_1GpgData__coll__graph}
+\includegraphics[width=350pt]{classGpgFrontend_1_1GpgData__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structGpgFrontend_1_1GpgData_1_1__data__ref__deleter}{\+\_\+data\+\_\+ref\+\_\+deleter}}
+struct \mbox{\hyperlink{structGpgFrontend_1_1GpgData_1_1DataRefDeleter}{Data\+Ref\+Deleter}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_ac3661a9365ad72b0883a2f62ef4647da}\label{classGpgFrontend_1_1GpgData_ac3661a9365ad72b0883a2f62ef4647da}} 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ac3661a9365ad72b0883a2f62ef4647da}{Gpg\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a5e607c3bb69f998aaac761f400dd6440}{Gpg\+Data}} (void $\ast$buffer, size\+\_\+t size, bool copy=true)
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a573fc435361509241e29226329041f6e}{Gpg\+Data}} (const void $\ast$buffer, size\+\_\+t size, bool copy=true)
 \begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a7a93937f4896ee4cf44184ee4426e438}{Gpg\+Data}} (int fd)
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a4aad21247e609da9ae989ef71b717e35}{Gpg\+Data}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a6236cfffb24d822054626265ed5c2270}{Gpg\+Data}} (const QString \&path, bool read)
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a179ff5f215f928a9b0650ed97df1f256}\label{classGpgFrontend_1_1GpgData_a179ff5f215f928a9b0650ed97df1f256}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a179ff5f215f928a9b0650ed97df1f256}{Gpg\+Data}} (\mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}})
+\begin{DoxyCompactList}\small\item\em Construct a new Gpg Data object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a96f3c1cb27eb2f3e6f28b9cdb2135bc7}\label{classGpgFrontend_1_1GpgData_a96f3c1cb27eb2f3e6f28b9cdb2135bc7}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgData_a96f3c1cb27eb2f3e6f28b9cdb2135bc7}{$\sim$\+Gpg\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Gpg Data object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classGpgFrontend_1_1GpgData_afca7a03bd71436c8b3c4f6e8c2acd700}{operator gpgme\+\_\+data\+\_\+t}} ()
 \item 
-Byte\+Array\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}{Read2\+Buffer}} ()
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgData_a7e59c37c350caa54424ec8a4e2a2e7a2}{Read2\+GFBuffer}} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ struct gpgme\+\_\+data, \mbox{\hyperlink{structGpgFrontend_1_1GpgData_1_1__data__ref__deleter}{\+\_\+data\+\_\+ref\+\_\+deleter}} $>$ {\bfseries data\+\_\+ref\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a80ad71b6a429a590505ccbb17dbfd2f3}\label{classGpgFrontend_1_1GpgData_a80ad71b6a429a590505ccbb17dbfd2f3}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}} {\bfseries cached\+\_\+buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a6411cf6d02e02c2483c761af4e4b0ee8}\label{classGpgFrontend_1_1GpgData_a6411cf6d02e02c2483c761af4e4b0ee8}} 
+std\+::unique\+\_\+ptr$<$ struct gpgme\+\_\+data, \mbox{\hyperlink{structGpgFrontend_1_1GpgData_1_1DataRefDeleter}{Data\+Ref\+Deleter}} $>$ {\bfseries data\+\_\+ref\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a0f5509603ca2a98667fce20421abb8a9}\label{classGpgFrontend_1_1GpgData_a0f5509603ca2a98667fce20421abb8a9}} 
+FILE $\ast$ {\bfseries fp\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_aa31c2e588bc16a337cafac9053829927}\label{classGpgFrontend_1_1GpgData_aa31c2e588bc16a337cafac9053829927}} 
+int {\bfseries fd\+\_\+} = -\/1
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a0622999842ad37e16051694c029defc4}\label{classGpgFrontend_1_1GpgData_a0622999842ad37e16051694c029defc4}} 
+struct gpgme\+\_\+data\+\_\+cbs {\bfseries data\+\_\+cbs\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_ac032719d06e59e87e474ec853a0be296}\label{classGpgFrontend_1_1GpgData_ac032719d06e59e87e474ec853a0be296}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$ {\bfseries data\+\_\+ex\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_ac3661a9365ad72b0883a2f62ef4647da}\label{classGpgFrontend_1_1GpgData_ac3661a9365ad72b0883a2f62ef4647da}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a573fc435361509241e29226329041f6e}\label{classGpgFrontend_1_1GpgData_a573fc435361509241e29226329041f6e}} 
 \index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!GpgData@{GpgData}}
 \index{GpgData@{GpgData}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
-\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Construct a new Gpg Data object. 
-
-Copyright (C) 2021 Saturneric
-
-This file is part of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-\mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}}. If not, see \href{https://www.gnu.org/licenses/}{\texttt{ https\+://www.\+gnu.\+org/licenses/}}.
-
-The initial version of the source code is inherited from the gpg4usb project, which is under GPL-\/3.\+0-\/or-\/later.
-
-All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} was modified and released by Saturneric\href{mailto:eric@bktus.com}{\texttt{ eric@bktus.\+com}} starting on May 12, 2021.
-
-SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later \mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a5e607c3bb69f998aaac761f400dd6440}\label{classGpgFrontend_1_1GpgData_a5e607c3bb69f998aaac761f400dd6440}} 
-\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!GpgData@{GpgData}}
-\index{GpgData@{GpgData}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
-\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{size,  }\item[{bool}]{copy = {\ttfamily true} }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{size,  }\item[{bool}]{copy = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 
@@ -77,6 +82,51 @@ Construct a new Gpg Data object.
 {\em copy} & \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a7a93937f4896ee4cf44184ee4426e438}\label{classGpgFrontend_1_1GpgData_a7a93937f4896ee4cf44184ee4426e438}} 
+\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!GpgData@{GpgData}}
+\index{GpgData@{GpgData}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
+\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a4aad21247e609da9ae989ef71b717e35}\label{classGpgFrontend_1_1GpgData_a4aad21247e609da9ae989ef71b717e35}} 
+\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!GpgData@{GpgData}}
+\index{GpgData@{GpgData}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
+\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1GFDataExchanger}{GFData\+Exchanger}} $>$}]{ex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a6236cfffb24d822054626265ed5c2270}\label{classGpgFrontend_1_1GpgData_a6236cfffb24d822054626265ed5c2270}} 
+\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!GpgData@{GpgData}}
+\index{GpgData@{GpgData}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
+\doxysubsubsection{\texorpdfstring{GpgData()}{GpgData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+Gpg\+Data\+::\+Gpg\+Data (\begin{DoxyParamCaption}\item[{const QString \&}]{path,  }\item[{bool}]{read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Gpg Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -89,34 +139,19 @@ Construct a new Gpg Data object.
 \begin{DoxyReturn}{Returns}
 gpgme\+\_\+data\+\_\+t 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}\label{classGpgFrontend_1_1GpgData_ae382a34ec551561315deca84c71c19c1}} 
-\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!Read2Buffer@{Read2Buffer}}
-\index{Read2Buffer@{Read2Buffer}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
-\doxysubsubsection{\texorpdfstring{Read2Buffer()}{Read2Buffer()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+Byte\+Array\+Ptr Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a7e59c37c350caa54424ec8a4e2a2e7a2}\label{classGpgFrontend_1_1GpgData_a7e59c37c350caa54424ec8a4e2a2e7a2}} 
+\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!Read2GFBuffer@{Read2GFBuffer}}
+\index{Read2GFBuffer@{Read2GFBuffer}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
+\doxysubsubsection{\texorpdfstring{Read2GFBuffer()}{Read2GFBuffer()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Data\+::\+Read2\+GFBuffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1GFBuffer}{GFBuffer}}}
 
 \begin{DoxyReturn}{Returns}
 Byte\+Array\+Ptr 
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key\+Open\+SSH(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Keys(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Secret\+Key\+Shortest(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign().
+Referenced by Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Decrypt\+Verify\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Sign\+Sync(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Encrypt\+Symmetric\+Sync(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+All\+Keys(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Key(), Gpg\+Frontend\+::\+Gpg\+Key\+Import\+Exporter\+::\+Export\+Keys(), Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign(), and Gpg\+Frontend\+::\+Gpg\+Basic\+Operator\+::\+Sign\+Sync().
 
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1GpgData_a20e2c42db476247b544012ebe677a8e2}\label{classGpgFrontend_1_1GpgData_a20e2c42db476247b544012ebe677a8e2}} 
-\index{GpgFrontend::GpgData@{GpgFrontend::GpgData}!data\_ref\_@{data\_ref\_}}
-\index{data\_ref\_@{data\_ref\_}!GpgFrontend::GpgData@{GpgFrontend::GpgData}}
-\doxysubsubsection{\texorpdfstring{data\_ref\_}{data\_ref\_}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$struct gpgme\+\_\+data, \mbox{\hyperlink{structGpgFrontend_1_1GpgData_1_1__data__ref__deleter}{\+\_\+data\+\_\+ref\+\_\+deleter}}$>$ Gpg\+Frontend\+::\+Gpg\+Data\+::data\+\_\+ref\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{=}
-\DoxyCodeLine{      \textcolor{keyword}{nullptr}}
-
-\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
