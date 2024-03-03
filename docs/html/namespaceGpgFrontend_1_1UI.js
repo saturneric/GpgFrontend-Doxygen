@@ -91,5 +91,6 @@ var namespaceGpgFrontend_1_1UI =
     [ "RunGpgFrontendUI", "namespaceGpgFrontend_1_1UI.html#ac53b300d580dcb56188aaed68c3de755", null ],
     [ "show_verify_details", "namespaceGpgFrontend_1_1UI.html#a590a26051105940a6d6e0743b147e281", null ],
     [ "WaitEnvCheckingProcess", "namespaceGpgFrontend_1_1UI.html#a09b25a9e0be03c914c1d3d480fb6cdf0", null ],
-    [ "kBufferSize", "namespaceGpgFrontend_1_1UI.html#ab3c7c7a20a7e1d1c560082770ba28882", null ]
+    [ "kBufferSize", "namespaceGpgFrontend_1_1UI.html#ab3c7c7a20a7e1d1c560082770ba28882", null ],
+    [ "registered_translators", "namespaceGpgFrontend_1_1UI.html#a8bc715a231f14deadd8d85dd66a92d92", null ]
 ];

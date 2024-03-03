@@ -65,7 +65,7 @@ var NAVTREEINDEX =
 "classGpgFrontend_1_1UI_1_1TextEdit.html#a57a46ab5595622ae0b7bceef7d56bd7c",
 "functions.html",
 "namespaceGpgFrontend_1_1RawAPI.html#a1f2f6c82e9c904c3875a123a65564697",
-"structGpgFrontend_1_1UI_1_1KeyTable.html#a1560962e3a6eac5f042ba4963f439f15"
+"structGpgFrontend_1_1UI_1_1KeyTable.html#a0719f023069e0f6e29db20b6cd0cf5ea"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
