@@ -107,36 +107,34 @@ $(document).ready(function(){initNavTree('GpgKeyTableProxyModel_8h_source.html',
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> SetSearchKeywords(<span class="keyword">const</span> QString &amp;keywords);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> filterAcceptsRow(<span class="keywordtype">int</span> sourceRow,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                      <span class="keyword">const</span> QModelIndex &amp;sourceParent) <span class="keyword">const</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> filterAcceptsColumn(<span class="keywordtype">int</span> sourceColumn,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                         <span class="keyword">const</span> QModelIndex &amp;sourceParent) <span class="keyword">const</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> filterAcceptsRow(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordtype">int</span> sourceRow, <span class="keyword">const</span> QModelIndex &amp;sourceParent) <span class="keyword">const</span> -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> filterAcceptsColumn(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">int</span> sourceColumn, <span class="keyword">const</span> QModelIndex &amp;sourceParent) <span class="keyword">const</span> -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; signals:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; signals:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> SignalFavoritesChanged();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> SignalColumnTypeChange(GpgKeyTableColumn);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> SignalFavoritesChanged();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> SignalColumnTypeChange(GpgKeyTableColumn);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; <span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> slot_update_favorites();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> slot_update_column_type(GpgKeyTableColumn);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QSharedPointer&lt;GpgKeyTableModel&gt; model_;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  GpgKeyTableDisplayMode display_mode_;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  GpgKeyTableColumn filter_columns_;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QString filter_keywords_;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QList&lt;QString&gt; favorite_fingerprints_;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  KeyFilter custom_filter_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> slot_update_favorites();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> slot_update_column_type(GpgKeyTableColumn);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QSharedPointer&lt;GpgKeyTableModel&gt; model_;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  GpgKeyTableDisplayMode display_mode_;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  GpgKeyTableColumn filter_columns_;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QString filter_keywords_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  QList&lt;QString&gt; favorite_fingerprints_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  KeyFilter custom_filter_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKeyTableProxyModel_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKeyTableProxyModel.html">GpgFrontend::GpgKeyTableProxyModel</a></div><div class="ttdef"><b>Definition:</b> GpgKeyTableProxyModel.h:36</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgKey_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgKey.html">GpgFrontend::GpgKey</a></div><div class="ttdef"><b>Definition:</b> GpgKey.h:40</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>

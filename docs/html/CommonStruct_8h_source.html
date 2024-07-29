@@ -93,14 +93,12 @@ $(document).ready(function(){initNavTree('CommonStruct_8h_source.html',''); init
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1RefDeleter.html">   38</a></span>&#160;<span class="keyword">struct </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="structGpgFrontend_1_1RefDeleter.html">RefDeleter</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> operator()(T* _key) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    gpgme_unre</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using</span> KeyRefHandler = std::unique_ptr&lt;T, RefDeleter&lt;T&gt;&gt;;  </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> operator()(T* _key) { gpgme_unre }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using</span> KeyRefHandler = std::unique_ptr&lt;T, RefDeleter&lt;T&gt;&gt;;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 <div class="ttc" id="astructGpgFrontend_1_1RefDeleter_html"><div class="ttname"><a href="structGpgFrontend_1_1RefDeleter.html">GpgFrontend::RefDeleter</a></div><div class="ttdef"><b>Definition:</b> CommonStruct.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->

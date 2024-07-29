@@ -107,22 +107,22 @@ $(document).ready(function(){initNavTree('GpgBasicOperator_8h_source.html',''); 
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> Encrypt(<span class="keyword">const</span> KeyArgsList&amp;, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;, <span class="keywordtype">bool</span>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               <span class="keyword">const</span> GpgOperationCallback&amp;);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">auto</span> EncryptSync(<span class="keyword">const</span> KeyArgsList&amp;, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;, <span class="keywordtype">bool</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">auto</span> EncryptSync(<span class="keyword">const</span> KeyArgsList&amp;, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp;,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                   <span class="keywordtype">bool</span>) -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> EncryptSymmetric(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">auto</span> EncryptSymmetricSync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">auto</span> EncryptSymmetricSync(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                            <span class="keywordtype">bool</span> ascii) -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> EncryptSign(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keyword">const</span> KeyArgsList&amp; signers,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                   <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                   <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">auto</span> EncryptSignSync(<span class="keyword">const</span> KeyArgsList&amp; keys, <span class="keyword">const</span> KeyArgsList&amp; signers,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keywordtype">bool</span> ascii)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                       <span class="keywordtype">bool</span> ascii) -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">void</span> Decrypt(<span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer, <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('GpgBasicOperator_8h_source.html',''); 
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            GpgSignMode mode, <span class="keywordtype">bool</span> ascii, <span class="keyword">const</span> GpgOperationCallback&amp; cb);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">auto</span> SignSync(<span class="keyword">const</span> KeyArgsList&amp; signers, <span class="keyword">const</span> <a class="code" href="classGpgFrontend_1_1GFBuffer.html">GFBuffer</a>&amp; in_buffer,</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                GpgSignMode mode, <span class="keywordtype">bool</span> ascii)</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                GpgSignMode mode,</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <span class="keywordtype">bool</span> ascii) -&gt; std::tuple&lt;GpgError, DataObjectPtr&gt;;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">void</span> SetSigners(<span class="keyword">const</span> KeyArgsList&amp; signers, <span class="keywordtype">bool</span> ascii);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>

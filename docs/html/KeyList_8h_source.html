@@ -107,14 +107,14 @@ $(document).ready(function(){initNavTree('KeyList_8h_source.html',''); initResiz
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  kALL = ~0U</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> operator|(KeyMenuAbility lhs, KeyMenuAbility rhs)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    -&gt; KeyMenuAbility {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> operator|(KeyMenuAbility lhs,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                      KeyMenuAbility rhs) -&gt; KeyMenuAbility {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">using</span> T = std::underlying_type_t&lt;KeyMenuAbility&gt;;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>KeyMenuAbility<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(lhs) | <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(rhs));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> operator|=(KeyMenuAbility&amp; lhs, KeyMenuAbility rhs)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    -&gt; KeyMenuAbility&amp; {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> operator|=(KeyMenuAbility&amp; lhs,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                       KeyMenuAbility rhs) -&gt; KeyMenuAbility&amp; {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  lhs = lhs | rhs;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> lhs;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
