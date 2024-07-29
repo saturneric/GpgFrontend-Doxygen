@@ -1,9 +1,9 @@
 <map id="GpgFrontend::UI::FilePage" name="GpgFrontend::UI::FilePage">
-<area shape="rect" id="node1" title=" " alt="" coords="138,1027,327,1221"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,586,84,663"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1FileTreeView.html" title=" " alt="" coords="109,285,357,964"/>
+<area shape="rect" id="node1" title=" " alt="" coords="138,1071,327,1265"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,608,84,685"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1FileTreeView.html" title=" " alt="" coords="109,285,357,1008"/>
 <area shape="rect" id="node4" title=" " alt="" coords="187,145,278,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="380,579,528,671"/>
+<area shape="rect" id="node5" title=" " alt="" coords="380,601,528,693"/>
 <area shape="rect" id="node6" title=" " alt="" coords="375,145,533,223"/>
 <area shape="rect" id="node7" title=" " alt="" coords="435,5,473,83"/>
 </map>

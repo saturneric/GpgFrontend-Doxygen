@@ -1,6 +1,4 @@
 <map id="GpgFrontend::Module::Module" name="GpgFrontend::Module::Module">
-<area shape="rect" id="node1" title=" " alt="" coords="181,131,357,384"/>
-<area shape="rect" id="node3" href="$classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GnuPGInfoGatheringModule.html" title="Use to record some info about gnupg." alt="" coords="5,439,264,619"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html" title=" " alt="" coords="288,432,523,627"/>
-<area shape="rect" id="node2" title=" " alt="" coords="232,5,307,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,181,428"/>
+<area shape="rect" id="node2" title=" " alt="" coords="56,5,131,83"/>
 </map>

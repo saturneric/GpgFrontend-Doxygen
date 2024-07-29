@@ -23,9 +23,9 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::General\+Tab\+:
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}{Signal\+Restart\+Needed}} (bool needed)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_a801f851aada5ac2e9b11f969b7e0483e}{Signal\+Restart\+Needed}} ()
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}{Signal\+Deep\+Restart\+Needed}} (bool needed)
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_ad5e1b6106ce724bfc7e3c76aeb6aa4e2}{Signal\+Deep\+Restart\+Needed}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -37,12 +37,6 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1GeneralTab_a7b26d8a088ce8f50b1fd
 \begin{DoxyCompactList}\small\item\em Set the Settings object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_a4523f55e98cee600b2fd47b1750b4d24}\label{classGpgFrontend_1_1UI_1_1GeneralTab_a4523f55e98cee600b2fd47b1750b4d24}} 
 void {\bfseries Apply\+Settings} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Slots}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_ac461da3987d5304caf7fda22b00d7563}\label{classGpgFrontend_1_1UI_1_1GeneralTab_ac461da3987d5304caf7fda22b00d7563}} 
-void {\bfseries slot\+\_\+language\+\_\+changed} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -79,16 +73,16 @@ Construct a new General Tab object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), and Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages().
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+Station $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+List\+Languages(), and Signal\+Restart\+Needed().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}\label{classGpgFrontend_1_1UI_1_1GeneralTab_afc107d56f13000aa28436a5e26a0876b}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_ad5e1b6106ce724bfc7e3c76aeb6aa4e2}\label{classGpgFrontend_1_1UI_1_1GeneralTab_ad5e1b6106ce724bfc7e3c76aeb6aa4e2}} 
 \index{GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}!SignalDeepRestartNeeded@{SignalDeepRestartNeeded}}
 \index{SignalDeepRestartNeeded@{SignalDeepRestartNeeded}!GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}}
 \doxysubsubsection{\texorpdfstring{SignalDeepRestartNeeded}{SignalDeepRestartNeeded}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed (\begin{DoxyParamCaption}\item[{bool}]{needed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -99,11 +93,11 @@ References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Global\+Setting\+St
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}\label{classGpgFrontend_1_1UI_1_1GeneralTab_aa88ccbda61728be6de0aa2d9b92e0b69}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1GeneralTab_a801f851aada5ac2e9b11f969b7e0483e}\label{classGpgFrontend_1_1UI_1_1GeneralTab_a801f851aada5ac2e9b11f969b7e0483e}} 
 \index{GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}!SignalRestartNeeded@{SignalRestartNeeded}}
 \index{SignalRestartNeeded@{SignalRestartNeeded}!GpgFrontend::UI::GeneralTab@{GpgFrontend::UI::GeneralTab}}
 \doxysubsubsection{\texorpdfstring{SignalRestartNeeded}{SignalRestartNeeded}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed (\begin{DoxyParamCaption}\item[{bool}]{needed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -112,11 +106,11 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog(
 \end{DoxyParams}
 
 
-Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog().
+Referenced by General\+Tab(), and Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog().
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/dialog/settings/Settings\+General.\+h\item 
-src/ui/dialog/settings/Settings\+General.\+cpp\end{DoxyCompactItemize}
+ui/dialog/settings/Settings\+General.\+h\item 
+ui/dialog/settings/Settings\+General.\+cpp\end{DoxyCompactItemize}

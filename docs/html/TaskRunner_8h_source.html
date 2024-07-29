@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/thread/TaskRunner.h Source File</title>
+<title>GpgFrontend Project: core/thread/TaskRunner.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,37 +110,35 @@ $(document).ready(function(){initNavTree('TaskRunner_8h_source.html',''); initRe
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">auto</span> IsRunning() -&gt; bool;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> PostTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> PostTask(<span class="keyword">const</span> QString&amp;, <span class="keyword">const</span> Task::TaskRunnable&amp;,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keyword">const</span> Task::TaskCallback&amp;, DataObjectPtr);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">auto</span> RegisterTask(<span class="keyword">const</span> QString&amp;, <span class="keyword">const</span> Task::TaskRunnable&amp;,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    <span class="keyword">const</span> Task::TaskCallback&amp;, DataObjectPtr)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      -&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler.html">Task::TaskHandler</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> PostConcurrentTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> PostScheduleTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task, <span class="keywordtype">size_t</span> seconds);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl.html">Impl</a>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> PostTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> PostTask(<span class="keyword">const</span> QString&amp;, <span class="keyword">const</span> Task::TaskRunnable&amp;,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keyword">const</span> Task::TaskCallback&amp;, DataObjectPtr);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">auto</span> RegisterTask(<span class="keyword">const</span> QString&amp;, <span class="keyword">const</span> Task::TaskRunnable&amp;,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keyword">const</span> Task::TaskCallback&amp;, DataObjectPtr)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      -&gt; <a class="code" href="classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler.html">Task::TaskHandler</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">void</span> PostConcurrentTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">void</span> PostScheduleTask(<a class="code" href="classGpgFrontend_1_1Thread_1_1Task.html">Task</a>* task, <span class="keywordtype">size_t</span> seconds);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl.html">Impl</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}  <span class="comment">// namespace GpgFrontend::Thread</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl.html">GpgFrontend::Thread::TaskRunner::Impl</a></div><div class="ttdef"><b>Definition:</b> TaskRunner.cpp:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1TaskRunner_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1TaskRunner.html">GpgFrontend::Thread::TaskRunner</a></div><div class="ttdef"><b>Definition:</b> TaskRunner.h:37</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler.html">GpgFrontend::Thread::Task::TaskHandler</a></div><div class="ttdef"><b>Definition:</b> Task.h:47</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Thread_1_1Task_html"><div class="ttname"><a href="classGpgFrontend_1_1Thread_1_1Task.html">GpgFrontend::Thread::Task</a></div><div class="ttdef"><b>Definition:</b> Task.h:39</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1Thread_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Thread.html">GpgFrontend::Thread</a></div><div class="ttdef"><b>Definition:</b> ModuleManager.h:39</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1Thread_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Thread.html">GpgFrontend::Thread</a></div><div class="ttdef"><b>Definition:</b> ModuleManager.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_fd71accbf528c1576ca21e7ec5716833.html">thread</a></li><li class="navelem"><b>TaskRunner.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_38091d0cff1e521a472be9c14470b440.html">thread</a></li><li class="navelem"><b>TaskRunner.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

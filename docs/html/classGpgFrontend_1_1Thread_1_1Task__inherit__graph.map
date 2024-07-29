@@ -1,11 +1,10 @@
 <map id="GpgFrontend::Thread::Task" name="GpgFrontend::Thread::Task">
-<area shape="rect" id="node1" title=" " alt="" coords="619,131,781,413"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html" title=" " alt="" coords="5,461,219,729"/>
-<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="243,520,463,671"/>
-<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="487,498,689,693"/>
-<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="713,505,914,685"/>
-<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="938,498,1145,693"/>
-<area shape="rect" id="node9" href="$classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html" title=" " alt="" coords="1169,505,1415,685"/>
-<area shape="rect" id="node2" title=" " alt="" coords="609,5,684,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="708,5,801,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="495,131,656,413"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1FileReadTask.html" title=" " alt="" coords="5,483,225,634"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1KeyServerImportTask.html" title=" " alt="" coords="249,461,451,656"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html" title=" " alt="" coords="475,469,676,649"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html" title=" " alt="" coords="700,461,907,656"/>
+<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html" title=" " alt="" coords="931,469,1177,649"/>
+<area shape="rect" id="node2" title=" " alt="" coords="485,5,559,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="583,5,677,83"/>
 </map>

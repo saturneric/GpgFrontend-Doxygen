@@ -28,6 +28,9 @@ class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_ac488a3f4e3cbd668fd9ce84b39078cbb}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_ac488a3f4e3cbd668fd9ce84b39078cbb}} 
+auto {\bfseries Search\+Module} (Module\+Identifier) -\/$>$ Module\+Ptr
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aadce2e61acda3c4191423f28628c56bf}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aadce2e61acda3c4191423f28628c56bf}} 
 auto {\bfseries Get\+Channel} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}}) -\/$>$ int
 \item 
@@ -40,8 +43,8 @@ auto {\bfseries Get\+Task\+Runner} (Module\+Identifier) -\/$>$ std\+::optional$<
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a446db76f3518eb46133e14366ff13a05}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a446db76f3518eb46133e14366ff13a05}} 
 auto {\bfseries Get\+Global\+Task\+Runner} () -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aaf7c18deea8185834ad9f53f2a5a8579}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aaf7c18deea8185834ad9f53f2a5a8579}} 
-auto {\bfseries Register\+Module} (Module\+Ptr) -\/$>$ bool
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a3834836325dab26902e9d66770ce895f}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a3834836325dab26902e9d66770ce895f}} 
+auto {\bfseries Register\+Module} (Module\+Ptr, bool) -\/$>$ bool
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a4de89b6132d184cf94444a94634a38d8}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a4de89b6132d184cf94444a94634a38d8}} 
 auto {\bfseries Active\+Module} (Module\+Identifier) -\/$>$ bool
@@ -52,11 +55,23 @@ auto {\bfseries Deactivate\+Module} (Module\+Identifier) -\/$>$ bool
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a1f4335cab295542f49b78a8e15b6f456}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a1f4335cab295542f49b78a8e15b6f456}} 
 auto {\bfseries Listen\+Event} (Module\+Identifier, Event\+Identifier) -\/$>$ bool
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aa656d6d835b2ccb20494ff580a7cafac}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aa656d6d835b2ccb20494ff580a7cafac}} 
-auto {\bfseries Trigger\+Event} (Event\+Refrernce) -\/$>$ bool
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_ad9c9b7ffc770046ff1e6486ef1fc4415}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_ad9c9b7ffc770046ff1e6486ef1fc4415}} 
+auto {\bfseries Trigger\+Event} (Event\+Reference) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a4c1d56338f4b4a8d594c4ecc8aac420d}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a4c1d56338f4b4a8d594c4ecc8aac420d}} 
+auto {\bfseries Search\+Event} (Event\+Trigger\+Identifier) -\/$>$ std\+::optional$<$ Event\+Reference $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aec9f17c91c5cb6da83b3d1a5af800895}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_aec9f17c91c5cb6da83b3d1a5af800895}} 
+auto {\bfseries Get\+Module\+Listening} (Module\+Identifier) -\/$>$ QList$<$ Event\+Identifier $>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a99414d575c55ac1f61a44f077db06028}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a99414d575c55ac1f61a44f077db06028}} 
 auto {\bfseries Is\+Module\+Activated} (Module\+Identifier) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a683639b9af7cf521bc9ffe4a5fc46cea}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a683639b9af7cf521bc9ffe4a5fc46cea}} 
+auto {\bfseries Is\+Integrated\+Module} (Module\+Identifier) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a3d26d680dfb5036832852ccab2e31cd2}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_a3d26d680dfb5036832852ccab2e31cd2}} 
+auto {\bfseries List\+All\+Registered\+Module\+ID} () -\/$>$ QList$<$ Module\+Identifier $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -74,5 +89,5 @@ Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModu
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Global\+Module\+Context.\+h\item 
-src/core/module/Global\+Module\+Context.\+cpp\end{DoxyCompactItemize}
+core/module/Global\+Module\+Context.\+h\item 
+core/module/Global\+Module\+Context.\+cpp\end{DoxyCompactItemize}

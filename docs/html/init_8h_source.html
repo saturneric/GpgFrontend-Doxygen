@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/init.h Source File</title>
+<title>GpgFrontend Project: init.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,29 +93,26 @@ $(document).ready(function(){initNavTree('init_8h_source.html',''); initResizabl
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#afb32e3d737c4bf2e6ad112a90fe7f1f5">InitLoggingSystem</a>(<span class="keyword">const</span> GFCxtSPtr &amp;);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">InitGlobalPathEnv</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">InitLocale</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">InitGlobalPathEnv</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">InitLocale</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a0b2b812dbc7f8752ed0dfe03eaa8a5a5">InitGlobalBasicEnv</a>(<span class="keyword">const</span> GFCxtWPtr &amp;, <span class="keywordtype">bool</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#acd17bf45c5a18c762d8638fd643eaf41">InitGlobalBasicalEnv</a>(<span class="keyword">const</span> GFCxtWPtr &amp;, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a89c5fed8586b3f380fecc2040b42e344">ShutdownGlobalBasicEnv</a>(<span class="keyword">const</span> GFCxtWPtr &amp;p_ctx);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceGpgFrontend.html#a3ad5659719d261ea3142c2baa60d40ff">ShutdownGlobalBasicalEnv</a>(<span class="keyword">const</span> GFCxtWPtr &amp;p_ctx);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html_a2b70b63c5a2173e62168123f6a2ad3da"><div class="ttname"><a href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">GpgFrontend::InitGlobalPathEnv</a></div><div class="ttdeci">void InitGlobalPathEnv()</div><div class="ttdoc">init global PATH env</div><div class="ttdef"><b>Definition:</b> init.cpp:73</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html_a3ad5659719d261ea3142c2baa60d40ff"><div class="ttname"><a href="namespaceGpgFrontend.html#a3ad5659719d261ea3142c2baa60d40ff">GpgFrontend::ShutdownGlobalBasicalEnv</a></div><div class="ttdeci">void ShutdownGlobalBasicalEnv(const GFCxtWPtr &amp;p_ctx)</div><div class="ttdef"><b>Definition:</b> init.cpp:164</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html_a7ffad7330067c9ab03842c656fa199f4"><div class="ttname"><a href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">GpgFrontend::InitLocale</a></div><div class="ttdeci">void InitLocale()</div><div class="ttdoc">setup the locale and load the translations</div><div class="ttdef"><b>Definition:</b> init.cpp:148</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html_acd17bf45c5a18c762d8638fd643eaf41"><div class="ttname"><a href="namespaceGpgFrontend.html#acd17bf45c5a18c762d8638fd643eaf41">GpgFrontend::InitGlobalBasicalEnv</a></div><div class="ttdeci">void InitGlobalBasicalEnv(const GFCxtWPtr &amp;p_ctx, bool gui_mode)</div><div class="ttdef"><b>Definition:</b> init.cpp:109</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html_afb32e3d737c4bf2e6ad112a90fe7f1f5"><div class="ttname"><a href="namespaceGpgFrontend.html#afb32e3d737c4bf2e6ad112a90fe7f1f5">GpgFrontend::InitLoggingSystem</a></div><div class="ttdeci">void InitLoggingSystem(const GFCxtSPtr &amp;ctx)</div><div class="ttdef"><b>Definition:</b> init.cpp:57</div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a0b2b812dbc7f8752ed0dfe03eaa8a5a5"><div class="ttname"><a href="namespaceGpgFrontend.html#a0b2b812dbc7f8752ed0dfe03eaa8a5a5">GpgFrontend::InitGlobalBasicEnv</a></div><div class="ttdeci">void InitGlobalBasicEnv(const GFCxtWPtr &amp;p_ctx, bool gui_mode)</div><div class="ttdef"><b>Definition:</b> init.cpp:89</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a2b70b63c5a2173e62168123f6a2ad3da"><div class="ttname"><a href="namespaceGpgFrontend.html#a2b70b63c5a2173e62168123f6a2ad3da">GpgFrontend::InitGlobalPathEnv</a></div><div class="ttdeci">void InitGlobalPathEnv()</div><div class="ttdoc">init global PATH env</div><div class="ttdef"><b>Definition:</b> init.cpp:55</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a7ffad7330067c9ab03842c656fa199f4"><div class="ttname"><a href="namespaceGpgFrontend.html#a7ffad7330067c9ab03842c656fa199f4">GpgFrontend::InitLocale</a></div><div class="ttdeci">void InitLocale()</div><div class="ttdoc">setup the locale and load the translations</div><div class="ttdef"><b>Definition:</b> init.cpp:117</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html_a89c5fed8586b3f380fecc2040b42e344"><div class="ttname"><a href="namespaceGpgFrontend.html#a89c5fed8586b3f380fecc2040b42e344">GpgFrontend::ShutdownGlobalBasicEnv</a></div><div class="ttdeci">void ShutdownGlobalBasicEnv(const GFCxtWPtr &amp;p_ctx)</div><div class="ttdef"><b>Definition:</b> init.cpp:137</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>init.h</b></li>
+    <li class="navelem"><b>init.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

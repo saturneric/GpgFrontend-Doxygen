@@ -1,30 +1,14 @@
 var annotated_dup =
 [
-    [ "fmt", null, [
-      [ "formatter< QString >", "structfmt_1_1formatter_3_01QString_01_4.html", "structfmt_1_1formatter_3_01QString_01_4" ],
-      [ "formatter< QByteArray >", "structfmt_1_1formatter_3_01QByteArray_01_4.html", "structfmt_1_1formatter_3_01QByteArray_01_4" ]
-    ] ],
     [ "GpgFrontend", "namespaceGpgFrontend.html", [
       [ "Module", "namespaceGpgFrontend_1_1Module.html", [
-        [ "Integrated", null, [
-          [ "GnuPGInfoGatheringModule", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule.html", [
-            [ "GnuPGInfoGatheringModule", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GnuPGInfoGatheringModule.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GnuPGInfoGatheringModule" ],
-            [ "GpgInfo", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgInfo.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgInfo" ],
-            [ "GpgComponentInfo", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgComponentInfo.html", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgComponentInfo" ],
-            [ "GpgOptionsInfo", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgOptionsInfo.html", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgOptionsInfo" ]
-          ] ],
-          [ "VersionCheckingModule", "namespaceGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule.html", [
-            [ "SoftwareVersion", "structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html", "structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion" ],
-            [ "VersionCheckingModule", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule" ],
-            [ "VersionCheckTask", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask" ]
-          ] ]
-        ] ],
         [ "Event", "classGpgFrontend_1_1Module_1_1Event.html", "classGpgFrontend_1_1Module_1_1Event" ],
         [ "GlobalModuleContext", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html", "classGpgFrontend_1_1Module_1_1GlobalModuleContext" ],
         [ "GlobalRegisterTable", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable" ],
+        [ "GlobalRegisterTableTreeModel", "classGpgFrontend_1_1Module_1_1GlobalRegisterTableTreeModel.html", "classGpgFrontend_1_1Module_1_1GlobalRegisterTableTreeModel" ],
         [ "Module", "classGpgFrontend_1_1Module_1_1Module.html", "classGpgFrontend_1_1Module_1_1Module" ],
-        [ "ModuleManager", "classGpgFrontend_1_1Module_1_1ModuleManager.html", "classGpgFrontend_1_1Module_1_1ModuleManager" ],
-        [ "ModuleInitArgs", "structGpgFrontend_1_1Module_1_1ModuleInitArgs.html", "structGpgFrontend_1_1Module_1_1ModuleInitArgs" ]
+        [ "ModuleInitArgs", "structGpgFrontend_1_1Module_1_1ModuleInitArgs.html", null ],
+        [ "ModuleManager", "classGpgFrontend_1_1Module_1_1ModuleManager.html", "classGpgFrontend_1_1Module_1_1ModuleManager" ]
       ] ],
       [ "Test", "namespaceGpgFrontend_1_1Test.html", [
         [ "GpgCoreTest", "classGpgFrontend_1_1Test_1_1GpgCoreTest.html", "classGpgFrontend_1_1Test_1_1GpgCoreTest" ],
@@ -37,14 +21,13 @@ var annotated_dup =
       ] ],
       [ "UI", "namespaceGpgFrontend_1_1UI.html", [
         [ "FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", "classGpgFrontend_1_1UI_1_1FileReadTask" ],
+        [ "GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog" ],
+        [ "ModuleControllerDialog", "classGpgFrontend_1_1UI_1_1ModuleControllerDialog.html", "classGpgFrontend_1_1UI_1_1ModuleControllerDialog" ],
         [ "VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog" ],
         [ "GeneralDialog", "classGpgFrontend_1_1UI_1_1GeneralDialog.html", "classGpgFrontend_1_1UI_1_1GeneralDialog" ],
-        [ "GnuPGControllerDialog", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html", "classGpgFrontend_1_1UI_1_1GnuPGControllerDialog" ],
         [ "InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", "classGpgFrontend_1_1UI_1_1InfoTab" ],
         [ "TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", "classGpgFrontend_1_1UI_1_1TranslatorsTab" ],
-        [ "UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", "classGpgFrontend_1_1UI_1_1UpdateTab" ],
         [ "AboutDialog", "classGpgFrontend_1_1UI_1_1AboutDialog.html", "classGpgFrontend_1_1UI_1_1AboutDialog" ],
-        [ "GnupgTab", "classGpgFrontend_1_1UI_1_1GnupgTab.html", "classGpgFrontend_1_1UI_1_1GnupgTab" ],
         [ "ExportKeyPackageDialog", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html", "classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog" ],
         [ "KeyImportDetailDialog", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html", "classGpgFrontend_1_1UI_1_1KeyImportDetailDialog" ],
         [ "KeyServerImportDialog", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog" ],
@@ -73,34 +56,32 @@ var annotated_dup =
         [ "KeyGenPage", "classGpgFrontend_1_1UI_1_1KeyGenPage.html", "classGpgFrontend_1_1UI_1_1KeyGenPage" ],
         [ "ConclusionPage", "classGpgFrontend_1_1UI_1_1ConclusionPage.html", "classGpgFrontend_1_1UI_1_1ConclusionPage" ],
         [ "GenerateRevokeCertification", "classGpgFrontend_1_1UI_1_1GenerateRevokeCertification.html", "classGpgFrontend_1_1UI_1_1GenerateRevokeCertification" ],
-        [ "RaisePinentry", "classGpgFrontend_1_1UI_1_1RaisePinentry.html", "classGpgFrontend_1_1UI_1_1RaisePinentry" ],
         [ "SetOwnerTrustLevel", "classGpgFrontend_1_1UI_1_1SetOwnerTrustLevel.html", "classGpgFrontend_1_1UI_1_1SetOwnerTrustLevel" ],
         [ "GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication" ],
         [ "GeneralWindowState", "classGpgFrontend_1_1UI_1_1GeneralWindowState.html", null ],
         [ "GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html", "classGpgFrontend_1_1UI_1_1GeneralMainWindow" ],
         [ "KeyMgmt", "classGpgFrontend_1_1UI_1_1KeyMgmt.html", "classGpgFrontend_1_1UI_1_1KeyMgmt" ],
         [ "MainWindow", "classGpgFrontend_1_1UI_1_1MainWindow.html", "classGpgFrontend_1_1UI_1_1MainWindow" ],
-        [ "CacheObject", "classGpgFrontend_1_1UI_1_1CacheObject.html", "classGpgFrontend_1_1UI_1_1CacheObject" ],
         [ "AppearanceSO", "structGpgFrontend_1_1UI_1_1AppearanceSO.html", "structGpgFrontend_1_1UI_1_1AppearanceSO" ],
         [ "KeyServerSO", "structGpgFrontend_1_1UI_1_1KeyServerSO.html", "structGpgFrontend_1_1UI_1_1KeyServerSO" ],
         [ "WindowStateSO", "structGpgFrontend_1_1UI_1_1WindowStateSO.html", "structGpgFrontend_1_1UI_1_1WindowStateSO" ],
-        [ "SettingsObject", "classGpgFrontend_1_1UI_1_1SettingsObject.html", "classGpgFrontend_1_1UI_1_1SettingsObject" ],
         [ "KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", "classGpgFrontend_1_1UI_1_1KeyServerImportTask" ],
         [ "KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask" ],
         [ "ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask" ],
         [ "ProxyConnectionTestTask", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask" ],
+        [ "MountedUIEntry", "structGpgFrontend_1_1UI_1_1MountedUIEntry.html", "structGpgFrontend_1_1UI_1_1MountedUIEntry" ],
+        [ "UIModuleManager", "classGpgFrontend_1_1UI_1_1UIModuleManager.html", "classGpgFrontend_1_1UI_1_1UIModuleManager" ],
         [ "UISignalStation", "classGpgFrontend_1_1UI_1_1UISignalStation.html", "classGpgFrontend_1_1UI_1_1UISignalStation" ],
         [ "CommonUtils", "classGpgFrontend_1_1UI_1_1CommonUtils.html", "classGpgFrontend_1_1UI_1_1CommonUtils" ],
         [ "FilePage", "classGpgFrontend_1_1UI_1_1FilePage.html", "classGpgFrontend_1_1UI_1_1FilePage" ],
         [ "FileTreeView", "classGpgFrontend_1_1UI_1_1FileTreeView.html", "classGpgFrontend_1_1UI_1_1FileTreeView" ],
         [ "FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", "classGpgFrontend_1_1UI_1_1FindWidget" ],
+        [ "GRTTreeView", "classGpgFrontend_1_1UI_1_1GRTTreeView.html", "classGpgFrontend_1_1UI_1_1GRTTreeView" ],
         [ "HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", "classGpgFrontend_1_1UI_1_1HelpPage" ],
         [ "InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", "classGpgFrontend_1_1UI_1_1InfoBoardWidget" ],
-        [ "KeyListRow", "structGpgFrontend_1_1UI_1_1KeyListRow.html", "structGpgFrontend_1_1UI_1_1KeyListRow" ],
-        [ "KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", "structGpgFrontend_1_1UI_1_1KeyListColumn" ],
-        [ "KeyMenuAbility", "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html", "structGpgFrontend_1_1UI_1_1KeyMenuAbility" ],
-        [ "KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", "structGpgFrontend_1_1UI_1_1KeyTable" ],
         [ "KeyList", "classGpgFrontend_1_1UI_1_1KeyList.html", "classGpgFrontend_1_1UI_1_1KeyList" ],
+        [ "KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", "structGpgFrontend_1_1UI_1_1KeyTable" ],
+        [ "ModuleListView", "classGpgFrontend_1_1UI_1_1ModuleListView.html", "classGpgFrontend_1_1UI_1_1ModuleListView" ],
         [ "PlainTextEditorPage", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage" ],
         [ "TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html", "classGpgFrontend_1_1UI_1_1TextEdit" ],
         [ "TOFUInfoPage", "classGpgFrontend_1_1UI_1_1TOFUInfoPage.html", "classGpgFrontend_1_1UI_1_1TOFUInfoPage" ],
@@ -129,7 +110,6 @@ var annotated_dup =
       [ "GpgKeyOpera", "classGpgFrontend_1_1GpgKeyOpera.html", "classGpgFrontend_1_1GpgKeyOpera" ],
       [ "GpgUIDOperator", "classGpgFrontend_1_1GpgUIDOperator.html", "classGpgFrontend_1_1GpgUIDOperator" ],
       [ "KeyPackageOperator", "classGpgFrontend_1_1KeyPackageOperator.html", "classGpgFrontend_1_1KeyPackageOperator" ],
-      [ "LoggerManager", "classGpgFrontend_1_1LoggerManager.html", "classGpgFrontend_1_1LoggerManager" ],
       [ "PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", "classGpgFrontend_1_1PassphraseGenerator" ],
       [ "GpgDecryptResultAnalyse", "classGpgFrontend_1_1GpgDecryptResultAnalyse.html", "classGpgFrontend_1_1GpgDecryptResultAnalyse" ],
       [ "GpgEncryptResultAnalyse", "classGpgFrontend_1_1GpgEncryptResultAnalyse.html", "classGpgFrontend_1_1GpgEncryptResultAnalyse" ],
@@ -139,6 +119,7 @@ var annotated_dup =
       [ "SecureMemoryAllocator", "classGpgFrontend_1_1SecureMemoryAllocator.html", "classGpgFrontend_1_1SecureMemoryAllocator" ],
       [ "SecureObjectDeleter", "structGpgFrontend_1_1SecureObjectDeleter.html", "structGpgFrontend_1_1SecureObjectDeleter" ],
       [ "CoreInitArgs", "structGpgFrontend_1_1CoreInitArgs.html", "structGpgFrontend_1_1CoreInitArgs" ],
+      [ "CacheObject", "classGpgFrontend_1_1CacheObject.html", "classGpgFrontend_1_1CacheObject" ],
       [ "RefDeleter", "structGpgFrontend_1_1RefDeleter.html", "structGpgFrontend_1_1RefDeleter" ],
       [ "DataObject", "classGpgFrontend_1_1DataObject.html", "classGpgFrontend_1_1DataObject" ],
       [ "GFBuffer", "classGpgFrontend_1_1GFBuffer.html", "classGpgFrontend_1_1GFBuffer" ],
@@ -151,6 +132,8 @@ var annotated_dup =
       [ "GpgImportInformation", "classGpgFrontend_1_1GpgImportInformation.html", "classGpgFrontend_1_1GpgImportInformation" ],
       [ "GpgKey", "classGpgFrontend_1_1GpgKey.html", "classGpgFrontend_1_1GpgKey" ],
       [ "GpgKeySignature", "classGpgFrontend_1_1GpgKeySignature.html", "classGpgFrontend_1_1GpgKeySignature" ],
+      [ "GpgKeyTableModel", "classGpgFrontend_1_1GpgKeyTableModel.html", "classGpgFrontend_1_1GpgKeyTableModel" ],
+      [ "GpgKeyTableProxyModel", "classGpgFrontend_1_1GpgKeyTableProxyModel.html", "classGpgFrontend_1_1GpgKeyTableProxyModel" ],
       [ "GpgPassphraseContext", "classGpgFrontend_1_1GpgPassphraseContext.html", "classGpgFrontend_1_1GpgPassphraseContext" ],
       [ "GpgRecipient", "structGpgFrontend_1_1GpgRecipient.html", "structGpgFrontend_1_1GpgRecipient" ],
       [ "GpgSignature", "classGpgFrontend_1_1GpgSignature.html", "classGpgFrontend_1_1GpgSignature" ],
@@ -159,19 +142,18 @@ var annotated_dup =
       [ "GpgTOFUInfo", "classGpgFrontend_1_1GpgTOFUInfo.html", "classGpgFrontend_1_1GpgTOFUInfo" ],
       [ "GpgUID", "classGpgFrontend_1_1GpgUID.html", "classGpgFrontend_1_1GpgUID" ],
       [ "GpgVerifyResult", "classGpgFrontend_1_1GpgVerifyResult.html", "classGpgFrontend_1_1GpgVerifyResult" ],
+      [ "SettingsObject", "classGpgFrontend_1_1SettingsObject.html", "classGpgFrontend_1_1SettingsObject" ],
+      [ "ModuleSO", "structGpgFrontend_1_1ModuleSO.html", "structGpgFrontend_1_1ModuleSO" ],
       [ "PointerConverter", "classGpgFrontend_1_1PointerConverter.html", "classGpgFrontend_1_1PointerConverter" ],
       [ "GpgFrontendContext", "structGpgFrontend_1_1GpgFrontendContext.html", "structGpgFrontend_1_1GpgFrontendContext" ]
     ] ],
-    [ "secmem", null, [
-      [ "alloc", "classsecmem_1_1alloc.html", "classsecmem_1_1alloc" ]
-    ] ],
-    [ "CapsLockWatcher", "classCapsLockWatcher.html", "classCapsLockWatcher" ],
     [ "class", "classclass.html", null ],
     [ "FunctionObjectTypeLockInfo", "structFunctionObjectTypeLockInfo.html", "structFunctionObjectTypeLockInfo" ],
-    [ "pinentry", "structpinentry.html", "structpinentry" ],
-    [ "PinentryConfirm", "classPinentryConfirm.html", "classPinentryConfirm" ],
-    [ "PinEntryDialog", "classPinEntryDialog.html", "classPinEntryDialog" ],
-    [ "PinLineEdit", "classPinLineEdit.html", "classPinLineEdit" ],
+    [ "GFModuleEvent", "structGFModuleEvent.html", "structGFModuleEvent" ],
+    [ "GFModuleEventParam", "structGFModuleEventParam.html", "structGFModuleEventParam" ],
+    [ "GFModuleMetaData", "structGFModuleMetaData.html", "structGFModuleMetaData" ],
+    [ "MetaData", "structMetaData.html", "structMetaData" ],
     [ "SignatureDetailsDialog", "classSignatureDetailsDialog.html", null ],
-    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ]
+    [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ],
+    [ "UIMountPoint", "structUIMountPoint.html", "structUIMountPoint" ]
 ];

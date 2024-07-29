@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/GpgFrontendContext.h Source File</title>
+<title>GpgFrontend Project: GpgFrontendContext.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,36 +89,39 @@ $(document).ready(function(){initNavTree('GpgFrontendContext_8h_source.html','')
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;qapplication.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span>GpgFrontendContext;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> GFCxtWPtr = std::weak_ptr&lt;GpgFrontendContext&gt;;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> GFCxtSPtr = std::shared_ptr&lt;GpgFrontendContext&gt;;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1GpgFrontendContext.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html">GpgFrontendContext</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">int</span> argc;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">char</span>** argv;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  spdlog::level::level_enum log_level;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> gather_external_gnupg_info;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> load_default_gpg_context;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span>GpgFrontendContext;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> GFCxtWPtr = std::weak_ptr&lt;GpgFrontendContext&gt;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using</span> GFCxtSPtr = std::shared_ptr&lt;GpgFrontendContext&gt;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1GpgFrontendContext.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html">GpgFrontendContext</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">int</span> argc;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">char</span>** argv;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#ad1d8efa1faadf74ac674484b15d13588">GpgFrontendContext</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#a7492d29abfc6292ebf8ea015f8e31d1c">~GpgFrontendContext</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> InitApplication();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">auto</span> <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#a56dd389a17c5f74482ade13635140bbb">GetApp</a>() -&gt; QApplication*;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QApplication* app_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1GpgFrontendContext_html"><div class="ttname"><a href="structGpgFrontend_1_1GpgFrontendContext.html">GpgFrontend::GpgFrontendContext</a></div><div class="ttdef"><b>Definition:</b> GpgFrontendContext.h:38</div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> gather_external_gnupg_info;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> load_default_gpg_context;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#ad1d8efa1faadf74ac674484b15d13588">GpgFrontendContext</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#a7492d29abfc6292ebf8ea015f8e31d1c">~GpgFrontendContext</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> InitApplication();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">auto</span> <a class="code" href="structGpgFrontend_1_1GpgFrontendContext.html#a56dd389a17c5f74482ade13635140bbb">GetApp</a>() -&gt; QApplication*;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QApplication* app_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1GpgFrontendContext_html"><div class="ttname"><a href="structGpgFrontend_1_1GpgFrontendContext.html">GpgFrontend::GpgFrontendContext</a></div><div class="ttdef"><b>Definition:</b> GpgFrontendContext.h:42</div></div>
 <div class="ttc" id="astructGpgFrontend_1_1GpgFrontendContext_html_a56dd389a17c5f74482ade13635140bbb"><div class="ttname"><a href="structGpgFrontend_1_1GpgFrontendContext.html#a56dd389a17c5f74482ade13635140bbb">GpgFrontend::GpgFrontendContext::GetApp</a></div><div class="ttdeci">auto GetApp() -&gt; QApplication *</div><div class="ttdoc">Get the App object.</div><div class="ttdef"><b>Definition:</b> GpgFrontendContext.cpp:44</div></div>
 <div class="ttc" id="astructGpgFrontend_1_1GpgFrontendContext_html_a7492d29abfc6292ebf8ea015f8e31d1c"><div class="ttname"><a href="structGpgFrontend_1_1GpgFrontendContext.html#a7492d29abfc6292ebf8ea015f8e31d1c">GpgFrontend::GpgFrontendContext::~GpgFrontendContext</a></div><div class="ttdeci">~GpgFrontendContext()</div><div class="ttdoc">Destroy the Gpg Frontend Context object.</div><div class="ttdef"><b>Definition:</b> GpgFrontendContext.cpp:49</div></div>
 <div class="ttc" id="astructGpgFrontend_1_1GpgFrontendContext_html_ad1d8efa1faadf74ac674484b15d13588"><div class="ttname"><a href="structGpgFrontend_1_1GpgFrontendContext.html#ad1d8efa1faadf74ac674484b15d13588">GpgFrontend::GpgFrontendContext::GpgFrontendContext</a></div><div class="ttdeci">GpgFrontendContext(int argc, char **argv)</div><div class="ttdoc">Construct a new Gpg Frontend Context object.</div><div class="ttdef"><b>Definition:</b> GpgFrontendContext.cpp:46</div></div>
@@ -127,7 +130,7 @@ $(document).ready(function(){initNavTree('GpgFrontendContext_8h_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>GpgFrontendContext.h</b></li>
+    <li class="navelem"><b>GpgFrontendContext.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

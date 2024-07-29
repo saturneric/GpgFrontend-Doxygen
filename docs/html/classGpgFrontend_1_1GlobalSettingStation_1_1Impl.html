@@ -96,7 +96,7 @@ Collaboration diagram for GpgFrontend::GlobalSettingStation::Impl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1GlobalSettingStation_1_1Impl__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1GlobalSettingStation_1_1Impl_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1GlobalSettingStation_1_1Impl_coll__map" id="aGpgFrontend_1_1GlobalSettingStation_1_1Impl_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,212,347"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,361"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -130,6 +130,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAllDataObjects</
 <tr class="memitem:af067b39bc0926f1189980d26c027a729"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#af067b39bc0926f1189980d26c027a729">GetLogDir</a> () const -&gt; QString</td></tr>
 <tr class="memdesc:af067b39bc0926f1189980d26c027a729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Log Dir object.  <a href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#af067b39bc0926f1189980d26c027a729">More...</a><br /></td></tr>
 <tr class="separator:af067b39bc0926f1189980d26c027a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb93836c33829dd5d6e04179848a0e8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#adb93836c33829dd5d6e04179848a0e8e">GetModulesDir</a> () const -&gt; QString</td></tr>
+<tr class="memdesc:adb93836c33829dd5d6e04179848a0e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Modules Dir object.  <a href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#adb93836c33829dd5d6e04179848a0e8e">More...</a><br /></td></tr>
+<tr class="separator:adb93836c33829dd5d6e04179848a0e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -193,6 +196,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>portable_mode_</b> = 
 
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a67f2e4e8a62d3b34d9f86c9235a35f05">app_data_path_</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#adb93836c33829dd5d6e04179848a0e8e">GetModulesDir()</a>.</p>
+
 </div>
 </div>
 <a id="abc4ed01c7a4cf9c3c7d9a9462027abd0"></a>
@@ -252,6 +257,38 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>portable_mode_</b> = 
 <dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
 
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a92ca0d1c51d36d8984528ec089280da7">app_log_path_</a>.</p>
+
+</div>
+</div>
+<a id="adb93836c33829dd5d6e04179848a0e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb93836c33829dd5d6e04179848a0e8e">&#9670;&nbsp;</a></span>GetModulesDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::GlobalSettingStation::Impl::GetModulesDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; QString </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Modules Dir object. </p>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#ae051656e52a286cd9b3a891d82099ce0">GetAppDataPath()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a9572b3082d5b9f6e08fc7992114b19ce">Impl()</a>.</p>
 
 </div>
 </div>
@@ -327,7 +364,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>portable_mode_</b> = 
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code" href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a67f2e4e8a62d3b34d9f86c9235a35f05">app_data_path_</a> + <span class="stringliteral">&quot;/data_objs&quot;</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_1_1Impl_html_a67f2e4e8a62d3b34d9f86c9235a35f05"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a67f2e4e8a62d3b34d9f86c9235a35f05">GpgFrontend::GlobalSettingStation::Impl::app_data_path_</a></div><div class="ttdeci">QString app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.cpp:130</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GlobalSettingStation_1_1Impl_html_a67f2e4e8a62d3b34d9f86c9235a35f05"><div class="ttname"><a href="classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a67f2e4e8a62d3b34d9f86c9235a35f05">GpgFrontend::GlobalSettingStation::Impl::app_data_path_</a></div><div class="ttdeci">QString app_data_path_</div><div class="ttdoc">Program Data Location.</div><div class="ttdef"><b>Definition:</b> GlobalSettingStation.cpp:138</div></div>
 </div><!-- fragment -->
 <p>Object storage path. </p>
 
@@ -390,7 +427,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>portable_mode_</b> = 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/function/GlobalSettingStation.cpp</li>
+<li>core/function/GlobalSettingStation.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

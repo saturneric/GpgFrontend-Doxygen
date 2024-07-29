@@ -96,7 +96,7 @@ Inheritance diagram for GpgFrontend::Module::ModuleManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1ModuleManager__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map" id="aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map">
-<area shape="rect" title=" " alt="" coords="36,897,204,1151"/>
+<area shape="rect" title=" " alt="" coords="11,897,229,1136"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
 <area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,220,365,503"/>
@@ -107,7 +107,7 @@ Collaboration diagram for GpgFrontend::Module::ModuleManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1ModuleManager__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1ModuleManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1ModuleManager_coll__map" id="aGpgFrontend_1_1Module_1_1ModuleManager_coll__map">
-<area shape="rect" title=" " alt="" coords="36,897,204,1151"/>
+<area shape="rect" title=" " alt="" coords="11,897,229,1136"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
 <area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
 <area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,220,365,503"/>
@@ -124,21 +124,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad699694b74ada1edd1fcf9d094c92a7d"><td class="memItemLeft" align="right" valign="top"><a id="ad699694b74ada1edd1fcf9d094c92a7d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ModuleManager</b> (int channel)</td></tr>
 <tr class="separator:ad699694b74ada1edd1fcf9d094c92a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8675386da0e23a37f6475ae0b52196"><td class="memItemLeft" align="right" valign="top"><a id="aaa8675386da0e23a37f6475ae0b52196"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadModule</b> (QString, bool) -&gt; void</td></tr>
+<tr class="separator:aaa8675386da0e23a37f6475ae0b52196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708ed5ee3ab6684ddfa3d7ec00703693"><td class="memItemLeft" align="right" valign="top"><a id="a708ed5ee3ab6684ddfa3d7ec00703693"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModule</b> (ModuleIdentifier) -&gt; ModulePtr</td></tr>
+<tr class="separator:a708ed5ee3ab6684ddfa3d7ec00703693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04a5eac55ad8c96eca86e59eb0ef88d"><td class="memItemLeft" align="right" valign="top"><a id="ae04a5eac55ad8c96eca86e59eb0ef88d"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllRegisteredModuleID</b> () -&gt; QList&lt; ModuleIdentifier &gt;</td></tr>
+<tr class="separator:ae04a5eac55ad8c96eca86e59eb0ef88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654aceac22bb8f153617181658705771"><td class="memItemLeft" align="right" valign="top"><a id="a654aceac22bb8f153617181658705771"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (ModulePtr)</td></tr>
 <tr class="separator:a654aceac22bb8f153617181658705771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1d20608829a48688c53ecb24e6a97b"><td class="memItemLeft" align="right" valign="top"><a id="a3b1d20608829a48688c53ecb24e6a97b"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b> (ModuleIdentifier) -&gt; bool</td></tr>
 <tr class="separator:a3b1d20608829a48688c53ecb24e6a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad802fe563954717b33ab85f5a781c06f"><td class="memItemLeft" align="right" valign="top"><a id="ad802fe563954717b33ab85f5a781c06f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (EventRefrernce)</td></tr>
-<tr class="separator:ad802fe563954717b33ab85f5a781c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac041f5f94e2f258dd0220d8e6f245219"><td class="memItemLeft" align="right" valign="top"><a id="ac041f5f94e2f258dd0220d8e6f245219"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsIntegratedModule</b> (ModuleIdentifier) -&gt; bool</td></tr>
+<tr class="separator:ac041f5f94e2f258dd0220d8e6f245219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28535b400738a4601ee836603aa13480"><td class="memItemLeft" align="right" valign="top"><a id="a28535b400738a4601ee836603aa13480"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ListenEvent</b> (ModuleIdentifier, EventIdentifier)</td></tr>
+<tr class="separator:a28535b400738a4601ee836603aa13480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e4a6c3cd06de7da34b59822d893ecc"><td class="memItemLeft" align="right" valign="top"><a id="ae4e4a6c3cd06de7da34b59822d893ecc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (EventReference)</td></tr>
+<tr class="separator:ae4e4a6c3cd06de7da34b59822d893ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0844590ddfdc6e44cbea4303f34382"><td class="memItemLeft" align="right" valign="top"><a id="afa0844590ddfdc6e44cbea4303f34382"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchEvent</b> (EventTriggerIdentifier) -&gt; std::optional&lt; EventReference &gt;</td></tr>
+<tr class="separator:afa0844590ddfdc6e44cbea4303f34382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fecabfd53b324b53242959a87d1492"><td class="memItemLeft" align="right" valign="top"><a id="a89fecabfd53b324b53242959a87d1492"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleListening</b> (ModuleIdentifier) -&gt; QList&lt; EventIdentifier &gt;</td></tr>
+<tr class="separator:a89fecabfd53b324b53242959a87d1492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3abb90991be2e924a8ab0d4d7b6953d"><td class="memItemLeft" align="right" valign="top"><a id="ac3abb90991be2e924a8ab0d4d7b6953d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveModule</b> (ModuleIdentifier)</td></tr>
 <tr class="separator:ac3abb90991be2e924a8ab0d4d7b6953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f2570fbed76fb484e9ec5d3e8b703b"><td class="memItemLeft" align="right" valign="top"><a id="af4f2570fbed76fb484e9ec5d3e8b703b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DeactiveModule</b> (ModuleIdentifier)</td></tr>
-<tr class="separator:af4f2570fbed76fb484e9ec5d3e8b703b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88abb0d18202f406e8b94c370d4ffb16"><td class="memItemLeft" align="right" valign="top"><a id="a88abb0d18202f406e8b94c370d4ffb16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeactivateModule</b> (ModuleIdentifier)</td></tr>
+<tr class="separator:a88abb0d18202f406e8b94c370d4ffb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1aa0b421a961c17b0a29f8e6a2102b8"><td class="memItemLeft" align="right" valign="top"><a id="aa1aa0b421a961c17b0a29f8e6a2102b8"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetTaskRunner</b> (ModuleIdentifier) -&gt; std::optional&lt; TaskRunnerPtr &gt;</td></tr>
 <tr class="separator:aa1aa0b421a961c17b0a29f8e6a2102b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +175,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListenRTPublish</b> (
 <tr class="memitem:abaca5b14a84e9d4d6b56dec82e88cf5d"><td class="memItemLeft" align="right" valign="top"><a id="abaca5b14a84e9d4d6b56dec82e88cf5d"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListRTChildKeys</b> (const QString &amp;, const QString &amp;) -&gt; std::vector&lt; Key &gt;</td></tr>
 <tr class="separator:abaca5b14a84e9d4d6b56dec82e88cf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe32ff3b5a730d9b36a4012680402b7e"><td class="memItemLeft" align="right" valign="top"><a id="abe32ff3b5a730d9b36a4012680402b7e"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GRT</b> () -&gt; <a class="el" href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html">GlobalRegisterTable</a> *</td></tr>
+<tr class="separator:abe32ff3b5a730d9b36a4012680402b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGpgFrontend_1_1SingletonFunctionObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject&lt; ModuleManager &gt;</a></td></tr>
 <tr class="memitem:a194e49b07d46345bdad386505d743a61 inherit pub_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memItemLeft" align="right" valign="top"><a id="a194e49b07d46345bdad386505d743a61"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#a194e49b07d46345bdad386505d743a61">SingletonFunctionObject</a> (const <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt; ModuleManager &gt; &amp;)=delete</td></tr>
@@ -236,8 +260,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a8296be8c449f88175285186831b995bc inherit pro_methods_classGpgFrontend_1_1SingletonFunctionObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/core/module/<a class="el" href="ModuleManager_8h_source.html">ModuleManager.h</a></li>
-<li>src/core/module/ModuleManager.cpp</li>
+<li>core/module/<a class="el" href="ModuleManager_8h_source.html">ModuleManager.h</a></li>
+<li>core/module/ModuleManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/settings/SettingsDialog.h Source File</title>
+<title>GpgFrontend Project: ui/dialog/settings/SettingsDialog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -120,28 +120,26 @@ $(document).ready(function(){initNavTree('SettingsDialog_8h_source.html',''); in
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#af5ba6646af45d0d1d794bc52ee54b1b9">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#af5ba6646af45d0d1d794bc52ee54b1b9">SignalRestartNeeded</a>(<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QTabWidget* tab_widget_;        </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QDialogButtonBox* button_box_;  </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">int</span> restart_needed_{0};         </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QTabWidget* tab_widget_;             </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QDialogButtonBox* button_box_;       </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">int</span> restart_mode_{kNonRestartCode};  </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a2ca2325a0dd0764cb6b5c2a7e35ba408">get_restart_needed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> slot_declare_a_restart();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#acc6b4386de554fce6fbb60ac6d201952">slot_set_restart_needed</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> slot_declare_a_deep_restart();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AppearanceTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AppearanceTab.html">GpgFrontend::UI::AppearanceTab</a></div><div class="ttdef"><b>Definition:</b> SettingsAppearance.h:37</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralTab.html">GpgFrontend::UI::GeneralTab</a></div><div class="ttdef"><b>Definition:</b> SettingsGeneral.h:42</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyserverTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyserverTab.html">GpgFrontend::UI::KeyserverTab</a></div><div class="ttdef"><b>Definition:</b> SettingsKeyServer.h:40</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1NetworkTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1NetworkTab.html">GpgFrontend::UI::NetworkTab</a></div><div class="ttdef"><b>Definition:</b> SettingsNetwork.h:38</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html">GpgFrontend::UI::SettingsDialog</a></div><div class="ttdef"><b>Definition:</b> SettingsDialog.h:44</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_a1b7ddc7861d1b4b9dc3810ed98023ffc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a1b7ddc7861d1b4b9dc3810ed98023ffc">GpgFrontend::UI::SettingsDialog::SettingsDialog</a></div><div class="ttdeci">SettingsDialog(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Settings Dialog object.</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:42</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_a2ca2325a0dd0764cb6b5c2a7e35ba408"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a2ca2325a0dd0764cb6b5c2a7e35ba408">GpgFrontend::UI::SettingsDialog::get_restart_needed</a></div><div class="ttdeci">int get_restart_needed() const</div><div class="ttdoc">Get the Restart Needed object.</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:105</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_ab3c3f59d98afb1f284a7149f4ff971b8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#ab3c3f59d98afb1f284a7149f4ff971b8">GpgFrontend::UI::SettingsDialog::ListLanguages</a></div><div class="ttdeci">static QHash&lt; QString, QString &gt; ListLanguages()</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:126</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_acc6b4386de554fce6fbb60ac6d201952"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#acc6b4386de554fce6fbb60ac6d201952">GpgFrontend::UI::SettingsDialog::slot_set_restart_needed</a></div><div class="ttdeci">void slot_set_restart_needed(int)</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:109</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_a1b7ddc7861d1b4b9dc3810ed98023ffc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#a1b7ddc7861d1b4b9dc3810ed98023ffc">GpgFrontend::UI::SettingsDialog::SettingsDialog</a></div><div class="ttdeci">SettingsDialog(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Settings Dialog object.</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:41</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_ab3c3f59d98afb1f284a7149f4ff971b8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#ab3c3f59d98afb1f284a7149f4ff971b8">GpgFrontend::UI::SettingsDialog::ListLanguages</a></div><div class="ttdeci">static QHash&lt; QString, QString &gt; ListLanguages()</div><div class="ttdef"><b>Definition:</b> SettingsDialog.cpp:121</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SettingsDialog_html_af5ba6646af45d0d1d794bc52ee54b1b9"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SettingsDialog.html#af5ba6646af45d0d1d794bc52ee54b1b9">GpgFrontend::UI::SettingsDialog::SignalRestartNeeded</a></div><div class="ttdeci">void SignalRestartNeeded(int)</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -149,7 +147,7 @@ $(document).ready(function(){initNavTree('SettingsDialog_8h_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><a class="el" href="dir_c94381238fe21d1ba8abf1f36aa07fe5.html">settings</a></li><li class="navelem"><b>SettingsDialog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_b5486df7df4186e58e3d093d14497fc0.html">dialog</a></li><li class="navelem"><a class="el" href="dir_36b24f90a02a9301cc6c304f87e8b591.html">settings</a></li><li class="navelem"><b>SettingsDialog.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

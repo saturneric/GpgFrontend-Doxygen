@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/SignersPicker.h Source File</title>
+<title>GpgFrontend Project: ui/dialog/SignersPicker.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('SignersPicker_8h_source.html',''); ini
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">SignersPicker</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  KeyIdArgsListPtr <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#aaed74d4a809b2570d9853d122a7e6c1e">GetCheckedSigners</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">auto</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a293d71b597bd052836675a4cff8ad28d">GetCheckedSigners</a>() -&gt; KeyIdArgsListPtr;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a474c64a891c33ed1bc06fbd8b3347d6a">GetStatus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#ae435075cf072e2f42924a1c3915e40b2">GetStatus</a>() <span class="keyword">const</span> -&gt; bool;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1KeyList.html">KeyList</a>* key_list_;  </div>
@@ -114,18 +114,18 @@ $(document).ready(function(){initNavTree('SignersPicker_8h_source.html',''); ini
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:166</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1KeyList_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1KeyList.html">GpgFrontend::UI::KeyList</a></div><div class="ttdef"><b>Definition:</b> KeyList.h:79</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html">GpgFrontend::UI::SignersPicker</a></div><div class="ttdef"><b>Definition:</b> SignersPicker.h:43</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a02c3ba737702894fc6d4ac1a1c543ccb"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">GpgFrontend::UI::SignersPicker::SignersPicker</a></div><div class="ttdeci">SignersPicker(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Signers Picker object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:36</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a474c64a891c33ed1bc06fbd8b3347d6a"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a474c64a891c33ed1bc06fbd8b3347d6a">GpgFrontend::UI::SignersPicker::GetStatus</a></div><div class="ttdeci">bool GetStatus() const</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:84</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_aaed74d4a809b2570d9853d122a7e6c1e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#aaed74d4a809b2570d9853d122a7e6c1e">GpgFrontend::UI::SignersPicker::GetCheckedSigners</a></div><div class="ttdeci">KeyIdArgsListPtr GetCheckedSigners()</div><div class="ttdoc">Get the Checked Signers object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:80</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_a293d71b597bd052836675a4cff8ad28d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a293d71b597bd052836675a4cff8ad28d">GpgFrontend::UI::SignersPicker::GetCheckedSigners</a></div><div class="ttdeci">auto GetCheckedSigners() -&gt; KeyIdArgsListPtr</div><div class="ttdoc">Get the Checked Signers object.</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:81</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1SignersPicker_html_ae435075cf072e2f42924a1c3915e40b2"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1SignersPicker.html#ae435075cf072e2f42924a1c3915e40b2">GpgFrontend::UI::SignersPicker::GetStatus</a></div><div class="ttdeci">auto GetStatus() const -&gt; bool</div><div class="ttdef"><b>Definition:</b> SignersPicker.cpp:85</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><b>SignersPicker.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_b5486df7df4186e58e3d093d14497fc0.html">dialog</a></li><li class="navelem"><b>SignersPicker.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

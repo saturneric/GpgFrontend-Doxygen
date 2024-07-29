@@ -1,6 +1,7 @@
 var classGpgFrontend_1_1GpgAdvancedOperator =
 [
     [ "ClearGpgPasswordCache", "classGpgFrontend_1_1GpgAdvancedOperator.html#ab1678720e30e957ad56e14b683cdedd1", null ],
+    [ "KillAllGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#ada5eee51686caee7334089b0ae58d585", null ],
     [ "ReloadGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#acac2e0b60aec9e02b7dd5be6d37f0b31", null ],
     [ "ResetConfigures", "classGpgFrontend_1_1GpgAdvancedOperator.html#a62a1e0d0eeef7ecbd43c261b77c393e1", null ],
     [ "RestartGpgComponents", "classGpgFrontend_1_1GpgAdvancedOperator.html#a224daa8424245db4ea6be831ef791f8d", null ],

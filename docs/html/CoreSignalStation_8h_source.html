@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/function/CoreSignalStation.h Source File</title>
+<title>GpgFrontend Project: core/function/CoreSignalStation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('CoreSignalStation_8h_source.html','');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCore.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCoreExport.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -106,23 +106,21 @@ $(document).ready(function(){initNavTree('CoreSignalStation_8h_source.html','');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> SignalNeedUserInputPassphrase(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> SignalUserInputPassphraseCallback(QSharedPointer&lt;GpgPassphraseContext&gt;);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> SignalBadGnupgEnv(QString);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> SignalBadGnupgEnv(QString);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> SignalGoodGnupgEnv();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> SignalGoodGnupgEnv();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html">GpgFrontend::CoreSignalStation</a></div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:41</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1CoreSignalStation_html_a671214ba506895fa5de6f80acf450d12"><div class="ttname"><a href="classGpgFrontend_1_1CoreSignalStation.html#a671214ba506895fa5de6f80acf450d12">GpgFrontend::CoreSignalStation::instance</a></div><div class="ttdeci">static std::unique_ptr&lt; CoreSignalStation &gt; instance</div><div class="ttdef"><b>Definition:</b> CoreSignalStation.h:43</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_f8a0abd6d3586538a5b71803e0ab7ffa.html">function</a></li><li class="navelem"><b>CoreSignalStation.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_17d67903e27967e2b42f863ba407b844.html">function</a></li><li class="navelem"><b>CoreSignalStation.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

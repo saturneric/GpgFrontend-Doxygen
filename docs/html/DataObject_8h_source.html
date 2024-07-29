@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/model/DataObject.h Source File</title>
+<title>GpgFrontend Project: core/model/DataObject.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -131,47 +131,43 @@ $(document).ready(function(){initNavTree('DataObject_8h_source.html',''); initRe
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; type_list.size(); ++i) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span> (std::type_index(*type_list[i]) !=</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          std::type_index((*<span class="keyword">this</span>)[i].type())) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        GF_CORE_LOG_ERROR(</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="stringliteral">&quot;value of index {} in data object is type: {}, &quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="stringliteral">&quot;not expected type: {}&quot;</span>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            i, ((*<span class="keyword">this</span>)[i]).type().name(), type_list[i]-&gt;name());</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1DataObject_1_1Impl.html">Impl</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">auto</span> TransferParams(Args&amp;&amp;... args) -&gt; std::shared_ptr&lt;DataObject&gt; {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> GpgFrontend::SecureCreateSharedObject&lt;DataObject&gt;(</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="classGpgFrontend_1_1DataObject.html">DataObject</a>{std::forward&lt;Args&gt;(args)...});</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">auto</span> ExtractParams(<span class="keyword">const</span> std::shared_ptr&lt;DataObject&gt;&amp; d_o, <span class="keywordtype">int</span> index) -&gt; T {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">if</span> (!d_o) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;nullptr provided for DataObjectPtr&quot;</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">return</span> std::any_cast&lt;T&gt;(d_o-&gt;GetParameter(index));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> swap(DataObject&amp; a, DataObject&amp; b) noexcept;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1DataObject_1_1Impl.html">Impl</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">auto</span> TransferParams(Args&amp;&amp;... args) -&gt; std::shared_ptr&lt;DataObject&gt; {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">return</span> GpgFrontend::SecureCreateSharedObject&lt;DataObject&gt;(</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classGpgFrontend_1_1DataObject.html">DataObject</a>{std::forward&lt;Args&gt;(args)...});</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">auto</span> ExtractParams(<span class="keyword">const</span> std::shared_ptr&lt;DataObject&gt;&amp; d_o, <span class="keywordtype">int</span> index) -&gt; T {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (!d_o) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;nullptr provided for DataObjectPtr&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> std::any_cast&lt;T&gt;(d_o-&gt;GetParameter(index));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> swap(DataObject&amp; a, DataObject&amp; b) noexcept;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1DataObject_1_1Impl_html"><div class="ttname"><a href="classGpgFrontend_1_1DataObject_1_1Impl.html">GpgFrontend::DataObject::Impl</a></div><div class="ttdef"><b>Definition:</b> DataObject.cpp:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1DataObject_html"><div class="ttname"><a href="classGpgFrontend_1_1DataObject.html">GpgFrontend::DataObject</a></div><div class="ttdef"><b>Definition:</b> DataObject.h:43</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_db6209eff64d15a114e6ff7aefbf1abd.html">model</a></li><li class="navelem"><b>DataObject.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_a797ef3ac3fe5df4a266e168500cce79.html">model</a></li><li class="navelem"><b>DataObject.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

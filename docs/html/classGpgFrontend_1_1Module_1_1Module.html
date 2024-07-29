@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1Module_1_1Module.h
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1Module_1_1Module-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GpgFrontend::Module::Module Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">GpgFrontend::Module::Module Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -97,10 +97,8 @@ Inheritance diagram for GpgFrontend::Module::Module:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1Module__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1Module_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1Module_inherit__map" id="aGpgFrontend_1_1Module_1_1Module_inherit__map">
-<area shape="rect" title=" " alt="" coords="181,131,357,384"/>
-<area shape="rect" href="classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GnuPGInfoGatheringModule.html" title="Use to record some info about gnupg." alt="" coords="5,439,264,619"/>
-<area shape="rect" href="classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html" title=" " alt="" coords="288,432,523,627"/>
-<area shape="rect" title=" " alt="" coords="232,5,307,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,181,428"/>
+<area shape="rect" title=" " alt="" coords="56,5,131,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -108,7 +106,7 @@ Collaboration diagram for GpgFrontend::Module::Module:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1Module__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1Module_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1Module_coll__map" id="aGpgFrontend_1_1Module_1_1Module_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,181,384"/>
+<area shape="rect" title=" " alt="" coords="5,131,181,428"/>
 <area shape="rect" title=" " alt="" coords="56,5,131,83"/>
 </map>
 </div>
@@ -123,21 +121,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca010db52c44b025a03e76de4e1f9088"><td class="memItemLeft" align="right" valign="top"><a id="aca010db52c44b025a03e76de4e1f9088"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Module</b> (ModuleIdentifier, ModuleVersion, const ModuleMetaData &amp;)</td></tr>
 <tr class="separator:aca010db52c44b025a03e76de4e1f9088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb243413314418ae4ae50f0e8aa44eb1"><td class="memItemLeft" align="right" valign="top"><a id="acb243413314418ae4ae50f0e8aa44eb1"></a>
-virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> () -&gt; bool=0</td></tr>
-<tr class="separator:acb243413314418ae4ae50f0e8aa44eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99a8330a469f34ab9278b5d4cce03b10"><td class="memItemLeft" align="right" valign="top"><a id="a99a8330a469f34ab9278b5d4cce03b10"></a>
-virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Active</b> () -&gt; bool=0</td></tr>
-<tr class="separator:a99a8330a469f34ab9278b5d4cce03b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130e7bdd740c72f0f1b6c8b4d54b1363"><td class="memItemLeft" align="right" valign="top"><a id="a130e7bdd740c72f0f1b6c8b4d54b1363"></a>
-virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Exec</b> (EventRefrernce) -&gt; int=0</td></tr>
-<tr class="separator:a130e7bdd740c72f0f1b6c8b4d54b1363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ea58fa0783d659ee7ed4ad17944379"><td class="memItemLeft" align="right" valign="top"><a id="a83ea58fa0783d659ee7ed4ad17944379"></a>
-virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Deactive</b> () -&gt; bool=0</td></tr>
-<tr class="separator:a83ea58fa0783d659ee7ed4ad17944379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e98e61f0da330680d90e9b8ec266ad3"><td class="memItemLeft" align="right" valign="top"><a id="a4e98e61f0da330680d90e9b8ec266ad3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Module</b> (QLibrary &amp;module_library)</td></tr>
+<tr class="separator:a4e98e61f0da330680d90e9b8ec266ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569992489ac971ce76cab5d8b99372c5"><td class="memItemLeft" align="right" valign="top"><a id="a569992489ac971ce76cab5d8b99372c5"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsGood</b> () -&gt; bool</td></tr>
+<tr class="separator:a569992489ac971ce76cab5d8b99372c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d6e961b19129767c69be023853c13c"><td class="memItemLeft" align="right" valign="top"><a id="ac4d6e961b19129767c69be023853c13c"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> () -&gt; int</td></tr>
+<tr class="separator:ac4d6e961b19129767c69be023853c13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8d8690179721ddcbcabac04a72a157"><td class="memItemLeft" align="right" valign="top"><a id="aba8d8690179721ddcbcabac04a72a157"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Active</b> () -&gt; int</td></tr>
+<tr class="separator:aba8d8690179721ddcbcabac04a72a157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b52299d613acc0c1df7d542b00dccd"><td class="memItemLeft" align="right" valign="top"><a id="af0b52299d613acc0c1df7d542b00dccd"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Exec</b> (EventReference) -&gt; int</td></tr>
+<tr class="separator:af0b52299d613acc0c1df7d542b00dccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c963e8802de746e6e1863084fd562b4"><td class="memItemLeft" align="right" valign="top"><a id="a2c963e8802de746e6e1863084fd562b4"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () -&gt; int</td></tr>
+<tr class="separator:a2c963e8802de746e6e1863084fd562b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766b2fd582708cde3b531910d3bdacfe"><td class="memItemLeft" align="right" valign="top"><a id="a766b2fd582708cde3b531910d3bdacfe"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>UnRegister</b> () -&gt; int</td></tr>
+<tr class="separator:a766b2fd582708cde3b531910d3bdacfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82105c87c45f3d58736e106be271910f"><td class="memItemLeft" align="right" valign="top"><a id="a82105c87c45f3d58736e106be271910f"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleIdentifier</b> () const -&gt; ModuleIdentifier</td></tr>
 <tr class="separator:a82105c87c45f3d58736e106be271910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706315ef4cf3a42846efeb39f0bbfb5b"><td class="memItemLeft" align="right" valign="top"><a id="a706315ef4cf3a42846efeb39f0bbfb5b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleVersion</b> () const -&gt; ModuleVersion</td></tr>
+<tr class="separator:a706315ef4cf3a42846efeb39f0bbfb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa10a9e656697124c3dcb0b8ab59a3f"><td class="memItemLeft" align="right" valign="top"><a id="a5aa10a9e656697124c3dcb0b8ab59a3f"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleMetaData</b> () const -&gt; ModuleMetaData</td></tr>
+<tr class="separator:a5aa10a9e656697124c3dcb0b8ab59a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab721af24599d02f2f62bfbc139b213fa"><td class="memItemLeft" align="right" valign="top"><a id="ab721af24599d02f2f62bfbc139b213fa"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModulePath</b> () const -&gt; QString</td></tr>
+<tr class="separator:ab721af24599d02f2f62bfbc139b213fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bdf54d462ccf6eaef72211eb38fe7b"><td class="memItemLeft" align="right" valign="top"><a id="a63bdf54d462ccf6eaef72211eb38fe7b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleHash</b> () const -&gt; QString</td></tr>
+<tr class="separator:a63bdf54d462ccf6eaef72211eb38fe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ce0288ecb4afab3cac0703f5e8074a"><td class="memItemLeft" align="right" valign="top"><a id="a19ce0288ecb4afab3cac0703f5e8074a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleSDKVersion</b> () const -&gt; QString</td></tr>
+<tr class="separator:a19ce0288ecb4afab3cac0703f5e8074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caee308c69420d08422a3ee4f768cbe"><td class="memItemLeft" align="right" valign="top"><a id="a4caee308c69420d08422a3ee4f768cbe"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleQtEnvVersion</b> () const -&gt; QString</td></tr>
+<tr class="separator:a4caee308c69420d08422a3ee4f768cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ff5afa799ff2e5d41fa35dd39694aa"><td class="memItemLeft" align="right" valign="top"><a id="ac0ff5afa799ff2e5d41fa35dd39694aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGPC</b> (<a class="el" href="classGpgFrontend_1_1Module_1_1GlobalModuleContext.html">GlobalModuleContext</a> *)</td></tr>
 <tr class="separator:ac0ff5afa799ff2e5d41fa35dd39694aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +189,8 @@ SecureUniquePtr&lt; <a class="el" href="classGpgFrontend_1_1Module_1_1Module_1_1
 <tr class="separator:a4040e73a9e85ec739dbd48e27bd0c21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/core/module/<a class="el" href="Module_8h_source.html">Module.h</a></li>
-<li>src/core/module/Module.cpp</li>
+<li>core/module/<a class="el" href="Module_8h_source.html">Module.h</a></li>
+<li>core/module/Module.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

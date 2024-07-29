@@ -1,20 +1,10 @@
 <map id="GpgFrontend::UI::SignersPicker" name="GpgFrontend::UI::SignersPicker">
-<area shape="rect" id="node1" title=" " alt="" coords="158,2208,341,2329"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,1745,248,2013"/>
-<area shape="rect" id="node3" title=" " alt="" coords="29,1451,104,1529"/>
-<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1KeyList.html" title=" " alt="" coords="293,1613,496,2145"/>
-<area shape="rect" id="node5" title=" " alt="" coords="129,1451,207,1529"/>
-<area shape="rect" id="node6" title=" " alt="" coords="140,416,351,508"/>
-<area shape="rect" id="node7" title=" " alt="" coords="393,145,551,223"/>
-<area shape="rect" id="node11" title=" " alt="" coords="301,780,499,872"/>
-<area shape="rect" id="node14" title=" " alt="" coords="547,300,773,392"/>
-<area shape="rect" id="node8" title=" " alt="" coords="802,5,841,83"/>
-<area shape="rect" id="node15" title=" " alt="" coords="757,605,886,683"/>
-<area shape="rect" id="node18" title=" " alt="" coords="880,145,1037,223"/>
-<area shape="rect" id="node9" title=" " alt="" coords="401,1444,591,1536"/>
-<area shape="rect" id="node10" href="$structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="399,1128,593,1381"/>
-<area shape="rect" id="node12" title=" " alt="" coords="556,896,745,988"/>
-<area shape="rect" id="node13" href="$classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="503,532,681,756"/>
-<area shape="rect" id="node16" title=" " alt="" coords="886,1451,978,1529"/>
-<area shape="rect" id="node17" title=" " alt="" coords="938,1012,1086,1104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="165,1196,347,1317"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="5,653,248,921"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,293,164,370"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1KeyList.html" title=" " alt="" coords="272,440,504,1133"/>
+<area shape="rect" id="node5" title=" " alt="" coords="303,293,382,370"/>
+<area shape="rect" id="node6" title=" " alt="" coords="406,285,554,377"/>
+<area shape="rect" id="node7" title=" " alt="" coords="401,145,559,223"/>
+<area shape="rect" id="node8" title=" " alt="" coords="461,5,499,83"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/module/GlobalModuleContext.h Source File</title>
+<title>GpgFrontend Project: core/module/GlobalModuleContext.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -119,44 +119,54 @@ $(document).ready(function(){initNavTree('GlobalModuleContext_8h_source.html',''
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ~<a class="code" href="classGpgFrontend_1_1Module_1_1GlobalModuleContext.html">GlobalModuleContext</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> GetChannel(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; int;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> SearchModule(ModuleIdentifier) -&gt; ModulePtr;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> GetDefaultChannel(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; int;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">auto</span> GetChannel(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; int;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> GetTaskRunner(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> GetDefaultChannel(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; int;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">auto</span> GetTaskRunner(ModuleIdentifier) -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">auto</span> GetTaskRunner(<a class="code" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">auto</span> GetGlobalTaskRunner() -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">auto</span> GetTaskRunner(ModuleIdentifier) -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">auto</span> RegisterModule(ModulePtr) -&gt; bool;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">auto</span> GetGlobalTaskRunner() -&gt; std::optional&lt;TaskRunnerPtr&gt;;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">auto</span> ActiveModule(ModuleIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">auto</span> RegisterModule(ModulePtr, <span class="keywordtype">bool</span>) -&gt; bool;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">auto</span> DeactivateModule(ModuleIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">auto</span> ActiveModule(ModuleIdentifier) -&gt; bool;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">auto</span> ListenEvent(ModuleIdentifier, EventIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">auto</span> DeactivateModule(ModuleIdentifier) -&gt; bool;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">auto</span> TriggerEvent(EventRefrernce) -&gt; bool;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">auto</span> ListenEvent(ModuleIdentifier, EventIdentifier) -&gt; bool;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">auto</span> IsModuleActivated(ModuleIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">auto</span> TriggerEvent(EventReference) -&gt; bool;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html">Impl</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}  <span class="comment">// namespace GpgFrontend::Module</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_html"><div class="ttname"><a href="classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html">GpgFrontend::Module::GlobalModuleContext::Impl</a></div><div class="ttdef"><b>Definition:</b> GlobalModuleContext.cpp:44</div></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">auto</span> SearchEvent(EventTriggerIdentifier) -&gt; std::optional&lt;EventReference&gt;;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">auto</span> GetModuleListening(ModuleIdentifier) -&gt; QList&lt;EventIdentifier&gt;;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">auto</span> IsModuleActivated(ModuleIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">auto</span> IsIntegratedModule(ModuleIdentifier) -&gt; bool;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">auto</span> ListAllRegisteredModuleID() -&gt; QList&lt;ModuleIdentifier&gt;;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html">Impl</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}  <span class="comment">// namespace GpgFrontend::Module</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_html"><div class="ttname"><a href="classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html">GpgFrontend::Module::GlobalModuleContext::Impl</a></div><div class="ttdef"><b>Definition:</b> GlobalModuleContext.cpp:45</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Module_1_1GlobalModuleContext_html"><div class="ttname"><a href="classGpgFrontend_1_1Module_1_1GlobalModuleContext.html">GpgFrontend::Module::GlobalModuleContext</a></div><div class="ttdef"><b>Definition:</b> GlobalModuleContext.h:54</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1Module_1_1Module_html"><div class="ttname"><a href="classGpgFrontend_1_1Module_1_1Module.html">GpgFrontend::Module::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:47</div></div>
-<div class="ttc" id="anamespaceGpgFrontend_1_1Module_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Module.html">GpgFrontend::Module</a></div><div class="ttdef"><b>Definition:</b> Event.cpp:31</div></div>
+<div class="ttc" id="anamespaceGpgFrontend_1_1Module_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Module.html">GpgFrontend::Module</a></div><div class="ttdef"><b>Definition:</b> Event.cpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_c716e90dc5842b86ea85e72f843b3f55.html">module</a></li><li class="navelem"><b>GlobalModuleContext.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_8d5f48fedae41e3453bb59a0513d4057.html">module</a></li><li class="navelem"><b>GlobalModuleContext.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

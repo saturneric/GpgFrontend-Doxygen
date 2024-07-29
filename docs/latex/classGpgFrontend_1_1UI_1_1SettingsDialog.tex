@@ -59,13 +59,12 @@ static QHash$<$ QString, QString $>$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1
 \doxysubsection*{Private Slots}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_acc6b4386de554fce6fbb60ac6d201952}{slot\+\_\+set\+\_\+restart\+\_\+needed}} (int)
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a77d24d981a6b0e60fd0afd9f3ba2ad3e}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a77d24d981a6b0e60fd0afd9f3ba2ad3e}} 
+void {\bfseries slot\+\_\+declare\+\_\+a\+\_\+restart} ()
 \item 
-int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}{get\+\_\+restart\+\_\+needed}} () const
-\begin{DoxyCompactList}\small\item\em Get the Restart Needed object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a22e50d779f84ac7b3d83b1bccedf8e24}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a22e50d779f84ac7b3d83b1bccedf8e24}} 
+void {\bfseries slot\+\_\+declare\+\_\+a\+\_\+deep\+\_\+restart} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,8 +74,8 @@ QTab\+Widget $\ast$ {\bfseries tab\+\_\+widget\+\_\+}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a4e2ce62b4f14bb77d577efe208655bcb}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a4e2ce62b4f14bb77d577efe208655bcb}} 
 QDialog\+Button\+Box $\ast$ {\bfseries button\+\_\+box\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a557219d1b82dd00e8d9f027a7cd561fa}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a557219d1b82dd00e8d9f027a7cd561fa}} 
-int {\bfseries restart\+\_\+needed\+\_\+} \{0\}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a1895b321f4189c138272c0d27f8827ee}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a1895b321f4189c138272c0d27f8827ee}} 
+int {\bfseries restart\+\_\+mode\+\_\+} \{k\+Non\+Restart\+Code\}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -99,26 +98,11 @@ Construct a new Settings Dialog object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::k\+Restart\+Code, Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed(), Signal\+Restart\+Needed(), slot\+\_\+set\+\_\+restart\+\_\+needed(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed().
+References Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Deep\+Restart\+Needed(), Gpg\+Frontend\+::\+UI\+::\+Appearance\+Tab\+::\+Signal\+Restart\+Needed(), Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+Signal\+Restart\+Needed(), Signal\+Restart\+Needed(), and Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Set\+Restart\+Needed().
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_a2ca2325a0dd0764cb6b5c2a7e35ba408}} 
-\index{GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}!get\_restart\_needed@{get\_restart\_needed}}
-\index{get\_restart\_needed@{get\_restart\_needed}!GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}}
-\doxysubsubsection{\texorpdfstring{get\_restart\_needed()}{get\_restart\_needed()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::get\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Get the Restart Needed object. 
-
-\begin{DoxyReturn}{Returns}
-true 
-
-false 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_ab3c3f59d98afb1f284a7149f4ff971b8}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_ab3c3f59d98afb1f284a7149f4ff971b8}} 
 \index{GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}!ListLanguages@{ListLanguages}}
 \index{ListLanguages@{ListLanguages}!GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}}
@@ -147,24 +131,9 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+General\+Tab\+::\+General\+Tab().
 
 Referenced by Settings\+Dialog().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SettingsDialog_acc6b4386de554fce6fbb60ac6d201952}\label{classGpgFrontend_1_1UI_1_1SettingsDialog_acc6b4386de554fce6fbb60ac6d201952}} 
-\index{GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}!slot\_set\_restart\_needed@{slot\_set\_restart\_needed}}
-\index{slot\_set\_restart\_needed@{slot\_set\_restart\_needed}!GpgFrontend::UI::SettingsDialog@{GpgFrontend::UI::SettingsDialog}}
-\doxysubsubsection{\texorpdfstring{slot\_set\_restart\_needed}{slot\_set\_restart\_needed}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::slot\+\_\+set\+\_\+restart\+\_\+needed (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
-
-
-\begin{DoxyParams}{Parameters}
-{\em needed} & \\
-\hline
-\end{DoxyParams}
-
-
-Referenced by Settings\+Dialog().
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/dialog/settings/Settings\+Dialog.\+h\item 
-src/ui/dialog/settings/Settings\+Dialog.\+cpp\end{DoxyCompactItemize}
+ui/dialog/settings/Settings\+Dialog.\+h\item 
+ui/dialog/settings/Settings\+Dialog.\+cpp\end{DoxyCompactItemize}

@@ -7,13 +7,19 @@ Collaboration diagram for Gpg\+Frontend\+::Module\+::Global\+Register\+Table\+::
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl__coll__graph}
+\includegraphics[width=346pt]{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode}{RTNode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aac40f7e9839d8785382ce325855ddfdd}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aac40f7e9839d8785382ce325855ddfdd}} 
+using {\bfseries RTNode\+Ptr} = QShared\+Pointer$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode}{RTNode}} $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,12 +38,9 @@ auto {\bfseries List\+Child\+Keys} (const Namespace \&n, const Key \&k) -\/$>$ s
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aa94d7751659ef73980aa639e42e18ffc}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_aa94d7751659ef73980aa639e42e18ffc}} 
 auto {\bfseries Listen\+Publish} (QObject $\ast$o, const Namespace \&n, const Key \&k, LPCallback c) -\/$>$ bool
-\end{DoxyCompactItemize}
-\doxysubsection*{Private Types}
-\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_abfbd8bee0540b612b6e9b0c8a7cb8328}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_abfbd8bee0540b612b6e9b0c8a7cb8328}} 
-using {\bfseries Table} = std\+::map$<$ Namespace, Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode}{RTNode}} $>$ $>$
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_af540756bcfbc232c35554c3e6bce857b}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_af540756bcfbc232c35554c3e6bce857b}} 
+auto {\bfseries Root\+RTNode} () -\/$>$ RTNode\+Ptr
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -48,11 +51,11 @@ std\+::shared\+\_\+mutex {\bfseries lock\+\_\+}
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_add44935c0a17ebae8e8e4148943c2e00}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_add44935c0a17ebae8e8e4148943c2e00}} 
 \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $\ast$ {\bfseries parent\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a05eb044011170bfff7661dca8777e9a2}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a05eb044011170bfff7661dca8777e9a2}} 
-Table {\bfseries global\+\_\+register\+\_\+table\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a3923a19c5fe1bc18b8a2635dd4ebf0e0}\label{classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_a3923a19c5fe1bc18b8a2635dd4ebf0e0}} 
+RTNode\+Ptr {\bfseries root\+\_\+node\+\_\+}
 \end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Global\+Register\+Table.\+cpp\end{DoxyCompactItemize}
+core/module/Global\+Register\+Table.\+cpp\end{DoxyCompactItemize}

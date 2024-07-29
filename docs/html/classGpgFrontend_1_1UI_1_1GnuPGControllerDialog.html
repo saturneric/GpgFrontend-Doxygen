@@ -151,9 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_update_custom_gn
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a67c4bc7a4e0d76c610267b86612ba5b6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a67c4bc7a4e0d76c610267b86612ba5b6">get_restart_needed</a> () const -&gt; int</td></tr>
-<tr class="memdesc:a67c4bc7a4e0d76c610267b86612ba5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Restart Needed object.  <a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a67c4bc7a4e0d76c610267b86612ba5b6">More...</a><br /></td></tr>
-<tr class="separator:a67c4bc7a4e0d76c610267b86612ba5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c7a1887d6dddae4f5d78c35394fa3b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a20c7a1887d6dddae4f5d78c35394fa3b">get_restart_needed</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a20c7a1887d6dddae4f5d78c35394fa3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Restart Needed object.  <a href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a20c7a1887d6dddae4f5d78c35394fa3b">More...</a><br /></td></tr>
+<tr class="separator:a20c7a1887d6dddae4f5d78c35394fa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eeca78f12b49f095610d762d4cf7d7e"><td class="memItemLeft" align="right" valign="top"><a id="a6eeca78f12b49f095610d762d4cf7d7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html#a6eeca78f12b49f095610d762d4cf7d7e">set_settings</a> ()</td></tr>
 <tr class="memdesc:a6eeca78f12b49f095610d762d4cf7d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the settings object. <br /></td></tr>
@@ -171,9 +171,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:afda750c1511434cb0d3162d9bd1ab78f"><td class="memItemLeft" align="right" valign="top"><a id="afda750c1511434cb0d3162d9bd1ab78f"></a>
 std::shared_ptr&lt; Ui_GnuPGControllerDialog &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ui_</b></td></tr>
 <tr class="separator:afda750c1511434cb0d3162d9bd1ab78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd2918a181aa9c8c59e5d789ce34a92a"><td class="memItemLeft" align="right" valign="top"><a id="acd2918a181aa9c8c59e5d789ce34a92a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>restart_needed_</b> {0}</td></tr>
-<tr class="separator:acd2918a181aa9c8c59e5d789ce34a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad806c1d46b2a431ed2ba8cdc3ef9ae6b"><td class="memItemLeft" align="right" valign="top"><a id="ad806c1d46b2a431ed2ba8cdc3ef9ae6b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>restart_mode_</b> {0}</td></tr>
+<tr class="separator:ad806c1d46b2a431ed2ba8cdc3ef9ae6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6040ef897e3fd82d4cec3c6802a5aa6a"><td class="memItemLeft" align="right" valign="top"><a id="a6040ef897e3fd82d4cec3c6802a5aa6a"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>custom_key_database_path_</b></td></tr>
 <tr class="separator:a6040ef897e3fd82d4cec3c6802a5aa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,8 +293,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a67c4bc7a4e0d76c610267b86612ba5b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67c4bc7a4e0d76c610267b86612ba5b6">&#9670;&nbsp;</a></span>get_restart_needed()</h2>
+<a id="a20c7a1887d6dddae4f5d78c35394fa3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c7a1887d6dddae4f5d78c35394fa3b">&#9670;&nbsp;</a></span>get_restart_needed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ false </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GpgFrontend::UI::GnuPGControllerDialog::get_restart_needed </td>
+          <td class="memname">auto GpgFrontend::UI::GnuPGControllerDialog::get_restart_needed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const -&gt; int</td>
@@ -392,8 +392,8 @@ false </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/ui/dialog/gnupg/<a class="el" href="GnuPGControllerDialog_8h_source.html">GnuPGControllerDialog.h</a></li>
-<li>src/ui/dialog/gnupg/GnuPGControllerDialog.cpp</li>
+<li>ui/dialog/controller/<a class="el" href="GnuPGControllerDialog_8h_source.html">GnuPGControllerDialog.h</a></li>
+<li>ui/dialog/controller/GnuPGControllerDialog.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('classGpgFrontend_1_1Module_1_1GlobalRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -97,14 +97,10 @@ Collaboration diagram for GpgFrontend::Module::GlobalRegisterTable::Impl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_coll__map" id="aGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_coll__map">
-<area shape="rect" title=" " alt="" coords="190,528,387,679"/>
-<area shape="rect" href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html" title=" " alt="" coords="5,300,193,465"/>
-<area shape="rect" title=" " alt="" coords="62,145,137,223"/>
-<area shape="rect" title=" " alt="" coords="217,344,360,421"/>
-<area shape="rect" title=" " alt="" coords="385,329,614,436"/>
-<area shape="rect" title=" " alt="" coords="432,145,567,223"/>
-<area shape="rect" title=" " alt="" coords="443,5,481,83"/>
-<area shape="rect" title=" " alt="" coords="519,5,557,83"/>
+<area shape="rect" title=" " alt="" coords="142,360,339,525"/>
+<area shape="rect" href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html" title=" " alt="" coords="5,132,193,297"/>
+<area shape="rect" title=" " alt="" coords="62,5,137,83"/>
+<area shape="rect" title=" " alt="" coords="217,176,360,253"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -112,6 +108,12 @@ Collaboration diagram for GpgFrontend::Module::GlobalRegisterTable::Impl:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode.html">RTNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aac40f7e9839d8785382ce325855ddfdd"><td class="memItemLeft" align="right" valign="top"><a id="aac40f7e9839d8785382ce325855ddfdd"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RTNodePtr</b> = QSharedPointer&lt; <a class="el" href="structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode.html">RTNode</a> &gt;</td></tr>
+<tr class="separator:aac40f7e9839d8785382ce325855ddfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -130,12 +132,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListChildKeys</b> (co
 <tr class="memitem:aa94d7751659ef73980aa639e42e18ffc"><td class="memItemLeft" align="right" valign="top"><a id="aa94d7751659ef73980aa639e42e18ffc"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListenPublish</b> (QObject *o, const Namespace &amp;n, const Key &amp;k, LPCallback c) -&gt; bool</td></tr>
 <tr class="separator:aa94d7751659ef73980aa639e42e18ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:abfbd8bee0540b612b6e9b0c8a7cb8328"><td class="memItemLeft" align="right" valign="top"><a id="abfbd8bee0540b612b6e9b0c8a7cb8328"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Table</b> = std::map&lt; Namespace, SecureUniquePtr&lt; <a class="el" href="structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode.html">RTNode</a> &gt; &gt;</td></tr>
-<tr class="separator:abfbd8bee0540b612b6e9b0c8a7cb8328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af540756bcfbc232c35554c3e6bce857b"><td class="memItemLeft" align="right" valign="top"><a id="af540756bcfbc232c35554c3e6bce857b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>RootRTNode</b> () -&gt; RTNodePtr</td></tr>
+<tr class="separator:af540756bcfbc232c35554c3e6bce857b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -145,12 +144,12 @@ std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>lock_</b
 <tr class="memitem:add44935c0a17ebae8e8e4148943c2e00"><td class="memItemLeft" align="right" valign="top"><a id="add44935c0a17ebae8e8e4148943c2e00"></a>
 <a class="el" href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html">GlobalRegisterTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent_</b></td></tr>
 <tr class="separator:add44935c0a17ebae8e8e4148943c2e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05eb044011170bfff7661dca8777e9a2"><td class="memItemLeft" align="right" valign="top"><a id="a05eb044011170bfff7661dca8777e9a2"></a>
-Table&#160;</td><td class="memItemRight" valign="bottom"><b>global_register_table_</b></td></tr>
-<tr class="separator:a05eb044011170bfff7661dca8777e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3923a19c5fe1bc18b8a2635dd4ebf0e0"><td class="memItemLeft" align="right" valign="top"><a id="a3923a19c5fe1bc18b8a2635dd4ebf0e0"></a>
+RTNodePtr&#160;</td><td class="memItemRight" valign="bottom"><b>root_node_</b></td></tr>
+<tr class="separator:a3923a19c5fe1bc18b8a2635dd4ebf0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/module/GlobalRegisterTable.cpp</li>
+<li>core/module/GlobalRegisterTable.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

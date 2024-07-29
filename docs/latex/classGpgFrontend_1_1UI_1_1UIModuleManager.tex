@@ -1,0 +1,131 @@
+\hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager}{}\doxysection{Gpg\+Frontend\+::UI\+::UIModule\+Manager Class Reference}
+\label{classGpgFrontend_1_1UI_1_1UIModuleManager}\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::UI\+::UIModule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1UIModuleManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::UI\+::UIModule\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGpgFrontend_1_1UI_1_1UIModuleManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a87f2d20c60220f875da71dd172185cde}{UIModule\+Manager}} (int channel)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager}{UIModule\+Manager}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a8fb7e794b04d628372ca0f71d353d024}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a8fb7e794b04d628372ca0f71d353d024}} 
+virtual \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a8fb7e794b04d628372ca0f71d353d024}{$\sim$\+UIModule\+Manager}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager}{UIModule\+Manager}} object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a16d34dfbdc8bbbb8aae8a9971aeb14c0}{Declare\+Mount\+Point}} (const QString \&id, const QString \&entry\+\_\+type, QMap$<$ QString, QVariant $>$ meta\+\_\+data\+\_\+desc) -\/$>$ bool
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a825549a5ba68394485144137df0edecb}{Mount\+Entry}} (const QString \&id, QMap$<$ QString, QString $>$ meta\+\_\+data, Entry\+Factory factory) -\/$>$ bool
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_af5e400044fd95c96b713c7a6d31e0308}{Query\+Mounted\+Entries}} (QString id) -\/$>$ QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MountedUIEntry}{Mounted\+UIEntry}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a83c0089f47db103f481aa106f4e4b952}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a83c0089f47db103f481aa106f4e4b952}} 
+QMap$<$ QString, \mbox{\hyperlink{structUIMountPoint}{UIMount\+Point}} $>$ {\bfseries mount\+\_\+points\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_affdd2f1e977f94b0c42749f851fae2d7}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_affdd2f1e977f94b0c42749f851fae2d7}} 
+QMap$<$ QString, QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MountedUIEntry}{Mounted\+UIEntry}} $>$ $>$ {\bfseries mounted\+\_\+entries\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a87f2d20c60220f875da71dd172185cde}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a87f2d20c60220f875da71dd172185cde}} 
+\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}!UIModuleManager@{UIModuleManager}}
+\index{UIModuleManager@{UIModuleManager}!GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+\doxysubsubsection{\texorpdfstring{UIModuleManager()}{UIModuleManager()}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+UIModule\+Manager (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager}{UIModule\+Manager}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a16d34dfbdc8bbbb8aae8a9971aeb14c0}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a16d34dfbdc8bbbb8aae8a9971aeb14c0}} 
+\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}!DeclareMountPoint@{DeclareMountPoint}}
+\index{DeclareMountPoint@{DeclareMountPoint}!GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+\doxysubsubsection{\texorpdfstring{DeclareMountPoint()}{DeclareMountPoint()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Declare\+Mount\+Point (\begin{DoxyParamCaption}\item[{const QString \&}]{id,  }\item[{const QString \&}]{entry\+\_\+type,  }\item[{QMap$<$ QString, QVariant $>$}]{meta\+\_\+data\+\_\+desc }\end{DoxyParamCaption}) -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em entry\+\_\+type} & \\
+\hline
+{\em metadata\+\_\+desc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Module\+::\+Upsert\+RTValue().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a825549a5ba68394485144137df0edecb}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a825549a5ba68394485144137df0edecb}} 
+\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}!MountEntry@{MountEntry}}
+\index{MountEntry@{MountEntry}!GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+\doxysubsubsection{\texorpdfstring{MountEntry()}{MountEntry()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Mount\+Entry (\begin{DoxyParamCaption}\item[{const QString \&}]{id,  }\item[{QMap$<$ QString, QString $>$}]{meta\+\_\+data,  }\item[{Entry\+Factory}]{factory }\end{DoxyParamCaption}) -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em meta\+\_\+data} & \\
+\hline
+{\em entry} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_af5e400044fd95c96b713c7a6d31e0308}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_af5e400044fd95c96b713c7a6d31e0308}} 
+\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}!QueryMountedEntries@{QueryMountedEntries}}
+\index{QueryMountedEntries@{QueryMountedEntries}!GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+\doxysubsubsection{\texorpdfstring{QueryMountedEntries()}{QueryMountedEntries()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Query\+Mounted\+Entries (\begin{DoxyParamCaption}\item[{QString}]{id }\end{DoxyParamCaption}) -\/$>$ QList$<$\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MountedUIEntry}{Mounted\+UIEntry}}$>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QList$<$\+Mounted\+UIEntry$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ui/UIModule\+Manager.\+h\item 
+ui/UIModule\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,9 +1,5 @@
 var hierarchy =
 [
-    [ "QAccessible::ActivationObserver", null, [
-      [ "PinentryConfirm", "classPinentryConfirm.html", null ]
-    ] ],
-    [ "secmem::alloc< T >", "classsecmem_1_1alloc.html", null ],
     [ "GpgFrontend::UI::AppearanceSO", "structGpgFrontend_1_1UI_1_1AppearanceSO.html", null ],
     [ "GpgFrontend::ArchiveFileOperator", "classGpgFrontend_1_1ArchiveFileOperator.html", null ],
     [ "GpgFrontend::ArchiveReadClientData", "structGpgFrontend_1_1ArchiveReadClientData.html", null ],
@@ -39,9 +35,6 @@ var hierarchy =
       [ "GpgFrontend::SingletonFunctionObject< CacheManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::CacheManager", "classGpgFrontend_1_1CacheManager.html", null ]
       ] ],
-      [ "GpgFrontend::SingletonFunctionObject< LoggerManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
-        [ "GpgFrontend::LoggerManager", "classGpgFrontend_1_1LoggerManager.html", null ]
-      ] ],
       [ "GpgFrontend::SingletonFunctionObject< GpgBasicOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::GpgBasicOperator", "classGpgFrontend_1_1GpgBasicOperator.html", null ]
       ] ],
@@ -50,6 +43,9 @@ var hierarchy =
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< DataObjectOperator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::DataObjectOperator", "classGpgFrontend_1_1DataObjectOperator.html", null ]
+      ] ],
+      [ "GpgFrontend::SingletonFunctionObject< UIModuleManager >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
+        [ "GpgFrontend::UI::UIModuleManager", "classGpgFrontend_1_1UI_1_1UIModuleManager.html", null ]
       ] ],
       [ "GpgFrontend::SingletonFunctionObject< PassphraseGenerator >", "classGpgFrontend_1_1SingletonFunctionObject.html", [
         [ "GpgFrontend::PassphraseGenerator", "classGpgFrontend_1_1PassphraseGenerator.html", null ]
@@ -60,24 +56,22 @@ var hierarchy =
       [ "GpgFrontend::SingletonFunctionObject< T >", "classGpgFrontend_1_1SingletonFunctionObject.html", null ]
     ] ],
     [ "class", "classclass.html", null ],
-    [ "PinEntryDialog::ConstraintsOptions", "structPinEntryDialog_1_1ConstraintsOptions.html", null ],
     [ "GpgFrontend::CoreInitArgs", "structGpgFrontend_1_1CoreInitArgs.html", null ],
     [ "GpgFrontend::UI::MainWindow::CryptoMenu", "structGpgFrontend_1_1UI_1_1MainWindow_1_1CryptoMenu.html", null ],
     [ "GpgFrontend::DataObject", "classGpgFrontend_1_1DataObject.html", null ],
     [ "GpgFrontend::GpgData::DataRefDeleter", "structGpgFrontend_1_1GpgData_1_1DataRefDeleter.html", null ],
     [ "GpgFrontend::Module::Event", "classGpgFrontend_1_1Module_1_1Event.html", null ],
     [ "GpgFrontend::GpgCommandExecutor::ExecuteContext", "structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html", null ],
-    [ "PinEntryDialog::FormattedPassphraseOptions", "structPinEntryDialog_1_1FormattedPassphraseOptions.html", null ],
-    [ "fmt::formatter< QByteArray >", "structfmt_1_1formatter_3_01QByteArray_01_4.html", null ],
-    [ "fmt::formatter< QString >", "structfmt_1_1formatter_3_01QString_01_4.html", null ],
     [ "FunctionObjectTypeLockInfo", "structFunctionObjectTypeLockInfo.html", null ],
     [ "GpgFrontend::UI::GeneralWindowState", "classGpgFrontend_1_1UI_1_1GeneralWindowState.html", null ],
     [ "GpgFrontend::GenKeyInfo", "classGpgFrontend_1_1GenKeyInfo.html", null ],
     [ "GpgFrontend::GFBuffer", "classGpgFrontend_1_1GFBuffer.html", null ],
     [ "GpgFrontend::GFDataExchanger", "classGpgFrontend_1_1GFDataExchanger.html", null ],
+    [ "GFModuleEvent", "structGFModuleEvent.html", null ],
+    [ "GFModuleEventParam", "structGFModuleEventParam.html", null ],
+    [ "GFModuleMetaData", "structGFModuleMetaData.html", null ],
     [ "GpgFrontend::GpgAdvancedOperator", "classGpgFrontend_1_1GpgAdvancedOperator.html", null ],
     [ "GpgFrontend::GpgCommandExecutor", "classGpgFrontend_1_1GpgCommandExecutor.html", null ],
-    [ "GpgFrontend::Module::Integrated::GnuPGInfoGatheringModule::GpgComponentInfo", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgComponentInfo.html", null ],
     [ "GpgFrontend::GpgContextInitArgs", "structGpgFrontend_1_1GpgContextInitArgs.html", null ],
     [ "GpgFrontend::GpgData", "classGpgFrontend_1_1GpgData.html", null ],
     [ "GpgFrontend::GpgDecryptResult", "classGpgFrontend_1_1GpgDecryptResult.html", null ],
@@ -87,10 +81,8 @@ var hierarchy =
     [ "GpgFrontend::GpgGenerateKeyResult", "classGpgFrontend_1_1GpgGenerateKeyResult.html", null ],
     [ "GpgFrontend::GpgImportInformation::GpgImportedKey", "classGpgFrontend_1_1GpgImportInformation_1_1GpgImportedKey.html", null ],
     [ "GpgFrontend::GpgImportInformation", "classGpgFrontend_1_1GpgImportInformation.html", null ],
-    [ "GpgFrontend::Module::Integrated::GnuPGInfoGatheringModule::GpgInfo", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgInfo.html", null ],
     [ "GpgFrontend::GpgKey", "classGpgFrontend_1_1GpgKey.html", null ],
     [ "GpgFrontend::GpgKeySignature", "classGpgFrontend_1_1GpgKeySignature.html", null ],
-    [ "GpgFrontend::Module::Integrated::GnuPGInfoGatheringModule::GpgOptionsInfo", "structGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GpgOptionsInfo.html", null ],
     [ "GpgFrontend::GpgRecipient", "structGpgFrontend_1_1GpgRecipient.html", null ],
     [ "GpgFrontend::GpgSignature", "classGpgFrontend_1_1GpgSignature.html", null ],
     [ "GpgFrontend::GpgSignResult", "classGpgFrontend_1_1GpgSignResult.html", null ],
@@ -104,25 +96,28 @@ var hierarchy =
     [ "GpgFrontend::Module::Event::Impl", "classGpgFrontend_1_1Module_1_1Event_1_1Impl.html", null ],
     [ "GpgFrontend::Module::GlobalModuleContext::Impl", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html", null ],
     [ "GpgFrontend::Module::GlobalRegisterTable::Impl", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl.html", null ],
+    [ "GpgFrontend::Module::GlobalRegisterTableTreeModel::Impl", "classGpgFrontend_1_1Module_1_1GlobalRegisterTableTreeModel_1_1Impl.html", null ],
     [ "GpgFrontend::Module::Module::Impl", "classGpgFrontend_1_1Module_1_1Module_1_1Impl.html", null ],
     [ "GpgFrontend::Module::ModuleManager::Impl", "classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl.html", null ],
     [ "GpgFrontend::SingletonStorage::Impl", "classGpgFrontend_1_1SingletonStorage_1_1Impl.html", null ],
     [ "GpgFrontend::SingletonStorageCollection::Impl", "classGpgFrontend_1_1SingletonStorageCollection_1_1Impl.html", null ],
     [ "GpgFrontend::Thread::Task::Impl", "classGpgFrontend_1_1Thread_1_1Task_1_1Impl.html", null ],
-    [ "GpgFrontend::UI::KeyListColumn", "structGpgFrontend_1_1UI_1_1KeyListColumn.html", null ],
-    [ "GpgFrontend::UI::KeyListRow", "structGpgFrontend_1_1UI_1_1KeyListRow.html", null ],
-    [ "GpgFrontend::UI::KeyMenuAbility", "structGpgFrontend_1_1UI_1_1KeyMenuAbility.html", null ],
     [ "GpgFrontend::KeyPackageOperator", "classGpgFrontend_1_1KeyPackageOperator.html", null ],
     [ "GpgFrontend::GpgKey::KeyRefDeleter", "structGpgFrontend_1_1GpgKey_1_1KeyRefDeleter.html", null ],
     [ "GpgFrontend::UI::KeyServerSO", "structGpgFrontend_1_1UI_1_1KeyServerSO.html", null ],
-    [ "GpgFrontend::UI::KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", null ],
+    [ "MetaData", "structMetaData.html", null ],
     [ "GpgFrontend::Module::ModuleInitArgs", "structGpgFrontend_1_1Module_1_1ModuleInitArgs.html", null ],
     [ "GpgFrontend::Module::GlobalModuleContext::Impl::ModuleRegisterInfo", "structGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_1_1ModuleRegisterInfo.html", null ],
+    [ "GpgFrontend::ModuleSO", "structGpgFrontend_1_1ModuleSO.html", null ],
+    [ "GpgFrontend::UI::MountedUIEntry", "structGpgFrontend_1_1UI_1_1MountedUIEntry.html", null ],
     [ "GpgFrontend::Module::Event::ParameterInitializer", "structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer.html", null ],
-    [ "pinentry", "structpinentry.html", null ],
     [ "GpgFrontend::PointerConverter< T >", "classGpgFrontend_1_1PointerConverter.html", null ],
-    [ "CapsLockWatcher::Private", "classCapsLockWatcher_1_1Private.html", null ],
-    [ "PinLineEdit::Private", "classPinLineEdit_1_1Private.html", null ],
+    [ "QAbstractItemModel", null, [
+      [ "GpgFrontend::Module::GlobalRegisterTableTreeModel", "classGpgFrontend_1_1Module_1_1GlobalRegisterTableTreeModel.html", null ]
+    ] ],
+    [ "QAbstractTableModel", null, [
+      [ "GpgFrontend::GpgKeyTableModel", "classGpgFrontend_1_1GpgKeyTableModel.html", null ]
+    ] ],
     [ "QApplication", null, [
       [ "GpgFrontend::UI::GpgFrontendApplication", "classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html", null ]
     ] ],
@@ -145,21 +140,21 @@ var hierarchy =
         [ "GpgFrontend::UI::SubkeyGenerateDialog", "classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html", null ],
         [ "GpgFrontend::UI::WaitingDialog", "classGpgFrontend_1_1UI_1_1WaitingDialog.html", null ]
       ] ],
+      [ "GpgFrontend::UI::ModuleControllerDialog", "classGpgFrontend_1_1UI_1_1ModuleControllerDialog.html", null ],
       [ "GpgFrontend::UI::VerifyDetailsDialog", "classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html", null ],
-      [ "PinEntryDialog", "classPinEntryDialog.html", null ],
       [ "SignatureDetailsDialog", "classSignatureDetailsDialog.html", null ]
     ] ],
     [ "QGroupBox", null, [
       [ "GpgFrontend::UI::VerifyKeyDetailBox", "classGpgFrontend_1_1UI_1_1VerifyKeyDetailBox.html", null ]
     ] ],
     [ "QJsonDocument", null, [
-      [ "GpgFrontend::UI::CacheObject", "classGpgFrontend_1_1UI_1_1CacheObject.html", null ]
+      [ "GpgFrontend::CacheObject", "classGpgFrontend_1_1CacheObject.html", null ]
     ] ],
     [ "QJsonObject", null, [
-      [ "GpgFrontend::UI::SettingsObject", "classGpgFrontend_1_1UI_1_1SettingsObject.html", null ]
+      [ "GpgFrontend::SettingsObject", "classGpgFrontend_1_1SettingsObject.html", null ]
     ] ],
-    [ "QLineEdit", null, [
-      [ "PinLineEdit", "classPinLineEdit.html", null ]
+    [ "QListView", null, [
+      [ "GpgFrontend::UI::ModuleListView", "classGpgFrontend_1_1UI_1_1ModuleListView.html", null ]
     ] ],
     [ "QMainWindow", null, [
       [ "GpgFrontend::UI::GeneralMainWindow", "classGpgFrontend_1_1UI_1_1GeneralMainWindow.html", [
@@ -167,11 +162,7 @@ var hierarchy =
         [ "GpgFrontend::UI::MainWindow", "classGpgFrontend_1_1UI_1_1MainWindow.html", null ]
       ] ]
     ] ],
-    [ "QMessageBox", null, [
-      [ "PinentryConfirm", "classPinentryConfirm.html", null ]
-    ] ],
     [ "QObject", null, [
-      [ "CapsLockWatcher", "classCapsLockWatcher.html", null ],
       [ "GpgFrontend::CacheManager::Impl", "classGpgFrontend_1_1CacheManager_1_1Impl.html", null ],
       [ "GpgFrontend::CoreSignalStation", "classGpgFrontend_1_1CoreSignalStation.html", null ],
       [ "GpgFrontend::GpgPassphraseContext", "classGpgFrontend_1_1GpgPassphraseContext.html", null ],
@@ -183,12 +174,8 @@ var hierarchy =
       ] ],
       [ "GpgFrontend::Module::GlobalModuleContext", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html", null ],
       [ "GpgFrontend::Module::GlobalRegisterTable", "classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html", null ],
-      [ "GpgFrontend::Module::Module", "classGpgFrontend_1_1Module_1_1Module.html", [
-        [ "GpgFrontend::Module::Integrated::GnuPGInfoGatheringModule::GnuPGInfoGatheringModule", "classGpgFrontend_1_1Module_1_1Integrated_1_1GnuPGInfoGatheringModule_1_1GnuPGInfoGatheringModule.html", null ],
-        [ "GpgFrontend::Module::Integrated::VersionCheckingModule::VersionCheckingModule", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckingModule.html", null ]
-      ] ],
+      [ "GpgFrontend::Module::Module", "classGpgFrontend_1_1Module_1_1Module.html", null ],
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", [
-        [ "GpgFrontend::Module::Integrated::VersionCheckingModule::VersionCheckTask", "classGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1VersionCheckTask.html", null ],
         [ "GpgFrontend::UI::FileReadTask", "classGpgFrontend_1_1UI_1_1FileReadTask.html", null ],
         [ "GpgFrontend::UI::KeyServerImportTask", "classGpgFrontend_1_1UI_1_1KeyServerImportTask.html", null ],
         [ "GpgFrontend::UI::KeyServerSearchTask", "classGpgFrontend_1_1UI_1_1KeyServerSearchTask.html", null ],
@@ -201,11 +188,18 @@ var hierarchy =
     [ "QRunnable", null, [
       [ "GpgFrontend::Thread::Task", "classGpgFrontend_1_1Thread_1_1Task.html", null ]
     ] ],
+    [ "QSortFilterProxyModel", null, [
+      [ "GpgFrontend::GpgKeyTableProxyModel", "classGpgFrontend_1_1GpgKeyTableProxyModel.html", null ]
+    ] ],
+    [ "QTableView", null, [
+      [ "GpgFrontend::UI::KeyTable", "structGpgFrontend_1_1UI_1_1KeyTable.html", null ]
+    ] ],
     [ "QThread", null, [
       [ "GpgFrontend::Thread::TaskRunner::Impl", "classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl.html", null ]
     ] ],
     [ "QTreeView", null, [
-      [ "GpgFrontend::UI::FileTreeView", "classGpgFrontend_1_1UI_1_1FileTreeView.html", null ]
+      [ "GpgFrontend::UI::FileTreeView", "classGpgFrontend_1_1UI_1_1FileTreeView.html", null ],
+      [ "GpgFrontend::UI::GRTTreeView", "classGpgFrontend_1_1UI_1_1GRTTreeView.html", null ]
     ] ],
     [ "QWidget", null, [
       [ "GpgFrontend::UI::AppearanceTab", "classGpgFrontend_1_1UI_1_1AppearanceTab.html", null ],
@@ -214,7 +208,6 @@ var hierarchy =
       [ "GpgFrontend::UI::FindWidget", "classGpgFrontend_1_1UI_1_1FindWidget.html", null ],
       [ "GpgFrontend::UI::GeneralTab", "classGpgFrontend_1_1UI_1_1GeneralTab.html", null ],
       [ "GpgFrontend::UI::GenerateRevokeCertification", "classGpgFrontend_1_1UI_1_1GenerateRevokeCertification.html", null ],
-      [ "GpgFrontend::UI::GnupgTab", "classGpgFrontend_1_1UI_1_1GnupgTab.html", null ],
       [ "GpgFrontend::UI::HelpPage", "classGpgFrontend_1_1UI_1_1HelpPage.html", null ],
       [ "GpgFrontend::UI::InfoBoardWidget", "classGpgFrontend_1_1UI_1_1InfoBoardWidget.html", null ],
       [ "GpgFrontend::UI::InfoTab", "classGpgFrontend_1_1UI_1_1InfoTab.html", null ],
@@ -226,12 +219,10 @@ var hierarchy =
       [ "GpgFrontend::UI::KeyserverTab", "classGpgFrontend_1_1UI_1_1KeyserverTab.html", null ],
       [ "GpgFrontend::UI::NetworkTab", "classGpgFrontend_1_1UI_1_1NetworkTab.html", null ],
       [ "GpgFrontend::UI::PlainTextEditorPage", "classGpgFrontend_1_1UI_1_1PlainTextEditorPage.html", null ],
-      [ "GpgFrontend::UI::RaisePinentry", "classGpgFrontend_1_1UI_1_1RaisePinentry.html", null ],
       [ "GpgFrontend::UI::SetOwnerTrustLevel", "classGpgFrontend_1_1UI_1_1SetOwnerTrustLevel.html", null ],
       [ "GpgFrontend::UI::TOFUInfoPage", "classGpgFrontend_1_1UI_1_1TOFUInfoPage.html", null ],
       [ "GpgFrontend::UI::TextEdit", "classGpgFrontend_1_1UI_1_1TextEdit.html", null ],
-      [ "GpgFrontend::UI::TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", null ],
-      [ "GpgFrontend::UI::UpdateTab", "classGpgFrontend_1_1UI_1_1UpdateTab.html", null ]
+      [ "GpgFrontend::UI::TranslatorsTab", "classGpgFrontend_1_1UI_1_1TranslatorsTab.html", null ]
     ] ],
     [ "QWizard", null, [
       [ "GpgFrontend::UI::Wizard", "classGpgFrontend_1_1UI_1_1Wizard.html", null ]
@@ -242,14 +233,13 @@ var hierarchy =
       [ "GpgFrontend::UI::IntroPage", "classGpgFrontend_1_1UI_1_1IntroPage.html", null ],
       [ "GpgFrontend::UI::KeyGenPage", "classGpgFrontend_1_1UI_1_1KeyGenPage.html", null ]
     ] ],
-    [ "secmem::alloc< T >::rebind< U >", "structsecmem_1_1alloc_1_1rebind.html", null ],
     [ "GpgFrontend::RefDeleter< T >", "structGpgFrontend_1_1RefDeleter.html", null ],
     [ "GpgFrontend::Module::GlobalRegisterTable::Impl::RTNode", "structGpgFrontend_1_1Module_1_1GlobalRegisterTable_1_1Impl_1_1RTNode.html", null ],
     [ "GpgFrontend::SecureMemoryAllocator", "classGpgFrontend_1_1SecureMemoryAllocator.html", null ],
     [ "GpgFrontend::SecureObjectDeleter< T >", "structGpgFrontend_1_1SecureObjectDeleter.html", null ],
     [ "GpgFrontend::SingletonStorage", "classGpgFrontend_1_1SingletonStorage.html", null ],
     [ "GpgFrontend::SingletonStorageCollection", "classGpgFrontend_1_1SingletonStorageCollection.html", null ],
-    [ "GpgFrontend::Module::Integrated::VersionCheckingModule::SoftwareVersion", "structGpgFrontend_1_1Module_1_1Integrated_1_1VersionCheckingModule_1_1SoftwareVersion.html", null ],
+    [ "GpgFrontend::Module::Module::Impl::Symbol", "structGpgFrontend_1_1Module_1_1Module_1_1Impl_1_1Symbol.html", null ],
     [ "GpgFrontend::Thread::Task::TaskHandler", "classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler.html", null ],
     [ "testing::Test", null, [
       [ "GpgFrontend::Test::GpgCoreTest", "classGpgFrontend_1_1Test_1_1GpgCoreTest.html", null ]
@@ -257,5 +247,6 @@ var hierarchy =
     [ "TestListedKeyServerThread", "classTestListedKeyServerThread.html", null ],
     [ "GpgFrontend::ThreadSafeMap< Key, Value >", "classGpgFrontend_1_1ThreadSafeMap.html", null ],
     [ "GpgFrontend::ThreadSafeMap< QString, QJsonDocument >", "classGpgFrontend_1_1ThreadSafeMap.html", null ],
+    [ "UIMountPoint", "structUIMountPoint.html", null ],
     [ "GpgFrontend::UI::WindowStateSO", "structGpgFrontend_1_1UI_1_1WindowStateSO.html", null ]
 ];

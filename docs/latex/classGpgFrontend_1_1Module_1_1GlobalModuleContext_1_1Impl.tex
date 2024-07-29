@@ -18,6 +18,9 @@ struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Im
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_abba0e51c3af19398cfca723d15b27b58}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_abba0e51c3af19398cfca723d15b27b58}} 
+auto {\bfseries Search\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ Module\+Ptr
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac3262026e43f2891f74da6dd5a7f38a0}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac3262026e43f2891f74da6dd5a7f38a0}} 
 auto {\bfseries Get\+Channel} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}} module) -\/$>$ int
 \item 
@@ -30,8 +33,8 @@ auto {\bfseries Get\+Task\+Runner} (Module\+Identifier) -\/$>$ std\+::optional$<
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07a95697a3653f22d5270708ede1f213}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07a95697a3653f22d5270708ede1f213}} 
 auto {\bfseries Get\+Global\+Task\+Runner} () -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a100b8a083176cbc5788d8af1702fb274}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a100b8a083176cbc5788d8af1702fb274}} 
-auto {\bfseries Register\+Module} (const Module\+Ptr \&module) -\/$>$ bool
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_abc363ae2bc81fbfed0f08315023a2155}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_abc363ae2bc81fbfed0f08315023a2155}} 
+auto {\bfseries Register\+Module} (const Module\+Ptr \&module, bool integrated\+\_\+module) -\/$>$ bool
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac66eb6ed5e8d5742a5d271647bf10f85}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac66eb6ed5e8d5742a5d271647bf10f85}} 
 auto {\bfseries Active\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ bool
@@ -42,11 +45,23 @@ auto {\bfseries Listen\+Event} (Module\+Identifier module\+\_\+id, Event\+Identi
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab84d50a8d389015d29115d28ab8edbde}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ab84d50a8d389015d29115d28ab8edbde}} 
 auto {\bfseries Deactivate\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ bool
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac7991d6d2022915212987b7a2d330446}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ac7991d6d2022915212987b7a2d330446}} 
-auto {\bfseries Trigger\+Event} (const Event\+Refrernce \&event) -\/$>$ bool
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07acdf211b98d8e917abb19406e9507d}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a07acdf211b98d8e917abb19406e9507d}} 
+auto {\bfseries Trigger\+Event} (const Event\+Reference \&event) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ae3f001188f83e173fd84f89e3973bef2}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ae3f001188f83e173fd84f89e3973bef2}} 
+auto {\bfseries Search\+Event} (const Event\+Trigger\+Identifier \&trigger\+\_\+id) -\/$>$ std\+::optional$<$ Event\+Reference $>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}} 
 auto {\bfseries Is\+Module\+Activated} (const Module\+Identifier \&m\+\_\+id) const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4b982badccf837f3efe10b1c7e2428b5}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4b982badccf837f3efe10b1c7e2428b5}} 
+auto {\bfseries Is\+Integrated\+Module} (Module\+Identifier m\+\_\+id) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a66c9166ec3af4f15dd3af00e57ced049}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a66c9166ec3af4f15dd3af00e57ced049}} 
+auto {\bfseries List\+All\+Registered\+Module\+ID} () -\/$>$ QList$<$ Module\+Identifier $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a61e810f356cf0e5073dc5c83bbbbab84}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a61e810f356cf0e5073dc5c83bbbbab84}} 
+auto {\bfseries Get\+Module\+Listening} (const Module\+Identifier \&module\+\_\+id) -\/$>$ QList$<$ Event\+Identifier $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -78,6 +93,9 @@ std\+::unordered\+\_\+map$<$ Module\+Identifier, Module\+Register\+Info\+Ptr $>$
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aaa6ec2fcc2569cd1b22f419feadaa568}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aaa6ec2fcc2569cd1b22f419feadaa568}} 
 std\+::map$<$ Event\+Identifier, std\+::unordered\+\_\+set$<$ Module\+Identifier $>$ $>$ {\bfseries module\+\_\+events\+\_\+table\+\_\+}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a8b1169966c7200118373bb56d555a89c}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a8b1169966c7200118373bb56d555a89c}} 
+std\+::map$<$ Event\+Trigger\+Identifier, Event\+Reference $>$ {\bfseries module\+\_\+on\+\_\+triggering\+\_\+events\+\_\+table\+\_\+}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_acc10c7acd6244ef93e85ffb6c4ad267e}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_acc10c7acd6244ef93e85ffb6c4ad267e}} 
 std\+::set$<$ int $>$ {\bfseries acquired\+\_\+channel\+\_\+}
 \item 
@@ -88,4 +106,4 @@ Task\+Runner\+Ptr {\bfseries default\+\_\+task\+\_\+runner\+\_\+}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Global\+Module\+Context.\+cpp\end{DoxyCompactItemize}
+core/module/Global\+Module\+Context.\+cpp\end{DoxyCompactItemize}

@@ -36,7 +36,9 @@ auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c
 auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_ae051656e52a286cd9b3a891d82099ce0}{Get\+App\+Data\+Path}} () const -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the App Data Path object. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_af067b39bc0926f1189980d26c027a729}{Get\+Log\+Dir}} () const -\/$>$ QString
-\begin{DoxyCompactList}\small\item\em Get the Log Dir object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the Log Dir object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_adb93836c33829dd5d6e04179848a0e8e}{Get\+Modules\+Dir}} () const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the Modules Dir object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -85,6 +87,10 @@ QString
 
 References app\+\_\+data\+\_\+path\+\_\+.
 
+
+
+Referenced by Get\+Modules\+Dir().
+
 \mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c7a4cf9c3c7d9a9462027abd0}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_abc4ed01c7a4cf9c3c7d9a9462027abd0}} 
 \index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!GetAppDir@{GetAppDir}}
 \index{GetAppDir@{GetAppDir}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
@@ -118,6 +124,27 @@ QString
 
 
 References app\+\_\+log\+\_\+path\+\_\+.
+
+\mbox{\Hypertarget{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_adb93836c33829dd5d6e04179848a0e8e}\label{classGpgFrontend_1_1GlobalSettingStation_1_1Impl_adb93836c33829dd5d6e04179848a0e8e}} 
+\index{GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}!GetModulesDir@{GetModulesDir}}
+\index{GetModulesDir@{GetModulesDir}!GpgFrontend::GlobalSettingStation::Impl@{GpgFrontend::GlobalSettingStation::Impl}}
+\doxysubsubsection{\texorpdfstring{GetModulesDir()}{GetModulesDir()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Get\+Modules\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ QString \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Modules Dir object. 
+
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+References Get\+App\+Data\+Path().
+
+
+
+Referenced by Impl().
 
 
 
@@ -210,4 +237,4 @@ take effect only in portable mode
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/function/Global\+Setting\+Station.\+cpp\end{DoxyCompactItemize}
+core/function/Global\+Setting\+Station.\+cpp\end{DoxyCompactItemize}

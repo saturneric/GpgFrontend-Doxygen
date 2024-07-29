@@ -101,8 +101,8 @@ Inheritance diagram for GpgFrontend::UI::KeyList:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1KeyList__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyList_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyList_inherit__map" id="aGpgFrontend_1_1UI_1_1KeyList_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,208,721"/>
-<area shape="rect" title=" " alt="" coords="67,5,146,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,237,839"/>
+<area shape="rect" title=" " alt="" coords="82,5,161,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -110,21 +110,11 @@ Collaboration diagram for GpgFrontend::UI::KeyList:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1KeyList__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyList_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyList_coll__map" id="aGpgFrontend_1_1UI_1_1KeyList_coll__map">
-<area shape="rect" title=" " alt="" coords="482,1613,685,2145"/>
-<area shape="rect" title=" " alt="" coords="5,1451,84,1529"/>
-<area shape="rect" title=" " alt="" coords="17,416,227,508"/>
-<area shape="rect" title=" " alt="" coords="270,145,427,223"/>
-<area shape="rect" title=" " alt="" coords="177,780,376,872"/>
-<area shape="rect" title=" " alt="" coords="424,300,649,392"/>
-<area shape="rect" title=" " alt="" coords="679,5,717,83"/>
-<area shape="rect" title=" " alt="" coords="633,605,763,683"/>
-<area shape="rect" title=" " alt="" coords="758,145,915,223"/>
-<area shape="rect" title=" " alt="" coords="489,1444,678,1536"/>
-<area shape="rect" href="structGpgFrontend_1_1UI_1_1KeyTable.html" title=" " alt="" coords="431,1128,624,1381"/>
-<area shape="rect" title=" " alt="" coords="433,896,622,988"/>
-<area shape="rect" href="classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="379,532,558,756"/>
-<area shape="rect" title=" " alt="" coords="779,1451,871,1529"/>
-<area shape="rect" title=" " alt="" coords="831,1012,979,1104"/>
+<area shape="rect" title=" " alt="" coords="5,440,237,1133"/>
+<area shape="rect" title=" " alt="" coords="37,293,115,370"/>
+<area shape="rect" title=" " alt="" coords="139,285,287,377"/>
+<area shape="rect" title=" " alt="" coords="135,145,292,223"/>
+<area shape="rect" title=" " alt="" coords="194,5,233,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -144,14 +134,17 @@ Signals</h2></td></tr>
 <tr class="memitem:a86a294a8baa9feaeb808f0af956ef522"><td class="memItemLeft" align="right" valign="top"><a id="a86a294a8baa9feaeb808f0af956ef522"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalRefreshDatabase</b> ()</td></tr>
 <tr class="separator:a86a294a8baa9feaeb808f0af956ef522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29649933d6d85ee8cf468302b8466cba"><td class="memItemLeft" align="right" valign="top"><a id="a29649933d6d85ee8cf468302b8466cba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalColumnTypeChange</b> (GpgKeyTableColumn)</td></tr>
+<tr class="separator:a29649933d6d85ee8cf468302b8466cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c9d5cacdb42e1fbda5d3cc96e861418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a7c9d5cacdb42e1fbda5d3cc96e861418">KeyList</a> (KeyMenuAbility::AbilityType menu_ability, QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a7c9d5cacdb42e1fbda5d3cc96e861418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key List object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a7c9d5cacdb42e1fbda5d3cc96e861418">More...</a><br /></td></tr>
-<tr class="separator:a7c9d5cacdb42e1fbda5d3cc96e861418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8663d18901d10c00dbcc0ba852b3bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab8663d18901d10c00dbcc0ba852b3bf4">AddListGroupTab</a> (const QString &amp;name, const QString &amp;id, KeyListRow::KeyType selectType=KeyListRow::SECRET_OR_PUBLIC_KEY, KeyListColumn::InfoType infoType=KeyListColumn::ALL, const KeyTable::KeyTableFilter filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;) -&gt; bool { return true;})</td></tr>
-<tr class="separator:ab8663d18901d10c00dbcc0ba852b3bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc91a50d5390be280a0fd4f6ef9ed148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#acc91a50d5390be280a0fd4f6ef9ed148">KeyList</a> (KeyMenuAbility menu_ability, GpgKeyTableColumn fixed_column_filter=GpgKeyTableColumn::kALL, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:acc91a50d5390be280a0fd4f6ef9ed148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key List object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#acc91a50d5390be280a0fd4f6ef9ed148">More...</a><br /></td></tr>
+<tr class="separator:acc91a50d5390be280a0fd4f6ef9ed148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f4aa3f9b5145da751a860fdb31e4ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a07f4aa3f9b5145da751a860fdb31e4ba">AddListGroupTab</a> (const QString &amp;name, const QString &amp;id, GpgKeyTableDisplayMode display_mode=GpgKeyTableDisplayMode::kPRIVATE_KEY, GpgKeyTableProxyModel::KeyFilter search_filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;) -&gt; bool { return true;}, GpgKeyTableColumn custom_columns_filter=GpgKeyTableColumn::kALL)</td></tr>
+<tr class="separator:a07f4aa3f9b5145da751a860fdb31e4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d75246eee6368be295c9ab5fe5ef291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a7d75246eee6368be295c9ab5fe5ef291">SetDoubleClickedAction</a> (std::function&lt; void(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, QWidget *)&gt; action)</td></tr>
 <tr class="memdesc:a7d75246eee6368be295c9ab5fe5ef291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Double Clicked Action object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a7d75246eee6368be295c9ab5fe5ef291">More...</a><br /></td></tr>
 <tr class="separator:a7d75246eee6368be295c9ab5fe5ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,35 +156,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ea28d6f108bad10aaa8844fa86db033"><td class="memItemLeft" align="right" valign="top"><a id="a0ea28d6f108bad10aaa8844fa86db033"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddSeparator</b> ()</td></tr>
 <tr class="separator:a0ea28d6f108bad10aaa8844fa86db033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d01278c44e1f7cd53f842ae80b477b"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a97d01278c44e1f7cd53f842ae80b477b">GetChecked</a> ()</td></tr>
-<tr class="memdesc:a97d01278c44e1f7cd53f842ae80b477b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a97d01278c44e1f7cd53f842ae80b477b">More...</a><br /></td></tr>
-<tr class="separator:a97d01278c44e1f7cd53f842ae80b477b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26efe22f805046cf1526c71bec059477"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a26efe22f805046cf1526c71bec059477">GetPrivateChecked</a> ()</td></tr>
-<tr class="memdesc:a26efe22f805046cf1526c71bec059477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Private Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a26efe22f805046cf1526c71bec059477">More...</a><br /></td></tr>
-<tr class="separator:a26efe22f805046cf1526c71bec059477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9dc5eb5036314d230dffafef198197a"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ac9dc5eb5036314d230dffafef198197a">GetAllPrivateKeys</a> ()</td></tr>
-<tr class="memdesc:ac9dc5eb5036314d230dffafef198197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the All Private Keys object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#ac9dc5eb5036314d230dffafef198197a">More...</a><br /></td></tr>
-<tr class="separator:ac9dc5eb5036314d230dffafef198197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b595a2bb83dfafa61b3e467dd15689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a68b595a2bb83dfafa61b3e467dd15689">SetChecked</a> (KeyIdArgsListPtr key_ids)</td></tr>
-<tr class="memdesc:a68b595a2bb83dfafa61b3e467dd15689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a68b595a2bb83dfafa61b3e467dd15689">More...</a><br /></td></tr>
-<tr class="separator:a68b595a2bb83dfafa61b3e467dd15689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bcca32b18c539a2ae83c30fc07db544"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a1bcca32b18c539a2ae83c30fc07db544">GetSelected</a> ()</td></tr>
-<tr class="memdesc:a1bcca32b18c539a2ae83c30fc07db544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Selected object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a1bcca32b18c539a2ae83c30fc07db544">More...</a><br /></td></tr>
-<tr class="separator:a1bcca32b18c539a2ae83c30fc07db544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66778309098dec18a891712dfb59b08b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a66778309098dec18a891712dfb59b08b">GetSelectedKey</a> ()</td></tr>
-<tr class="memdesc:a66778309098dec18a891712dfb59b08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Selected Key object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a66778309098dec18a891712dfb59b08b">More...</a><br /></td></tr>
-<tr class="separator:a66778309098dec18a891712dfb59b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9c483abd248aabddb5c2275c916edb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#adb9c483abd248aabddb5c2275c916edb">ContainsPrivateKeys</a> ()</td></tr>
-<tr class="separator:adb9c483abd248aabddb5c2275c916edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52c801131515093ee422b74f05ed512"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ad52c801131515093ee422b74f05ed512">GetChecked</a> () -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:ad52c801131515093ee422b74f05ed512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#ad52c801131515093ee422b74f05ed512">More...</a><br /></td></tr>
+<tr class="separator:ad52c801131515093ee422b74f05ed512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f578511cce1878b2a81be090241760d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a6f578511cce1878b2a81be090241760d">GetCheckedPrivateKey</a> () -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:a6f578511cce1878b2a81be090241760d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Private Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a6f578511cce1878b2a81be090241760d">More...</a><br /></td></tr>
+<tr class="separator:a6f578511cce1878b2a81be090241760d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abc9e1ffe18a15b4f65765632134b53"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a8abc9e1ffe18a15b4f65765632134b53">GetCheckedPublicKey</a> () -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="separator:a8abc9e1ffe18a15b4f65765632134b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcba6e19fc8137f0c0025b73a4646d6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a1bcba6e19fc8137f0c0025b73a4646d6">GetAllPrivateKeys</a> () -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:a1bcba6e19fc8137f0c0025b73a4646d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the All Private Keys object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a1bcba6e19fc8137f0c0025b73a4646d6">More...</a><br /></td></tr>
+<tr class="separator:a1bcba6e19fc8137f0c0025b73a4646d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b995e933d4a31b9b857c703ddde4364"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a7b995e933d4a31b9b857c703ddde4364">GetSelected</a> () -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:a7b995e933d4a31b9b857c703ddde4364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Selected object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a7b995e933d4a31b9b857c703ddde4364">More...</a><br /></td></tr>
+<tr class="separator:a7b995e933d4a31b9b857c703ddde4364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf07dd578e21269e6b9cd62f8b73a5d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#aedf07dd578e21269e6b9cd62f8b73a5d">GetSelectedKey</a> () -&gt; QString</td></tr>
+<tr class="memdesc:aedf07dd578e21269e6b9cd62f8b73a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Selected Key object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#aedf07dd578e21269e6b9cd62f8b73a5d">More...</a><br /></td></tr>
+<tr class="separator:aedf07dd578e21269e6b9cd62f8b73a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2dc7f62f7f5278180aa865ee4b7ed0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#abe2dc7f62f7f5278180aa865ee4b7ed0">ContainsPrivateKeys</a> () -&gt; bool</td></tr>
+<tr class="separator:abe2dc7f62f7f5278180aa865ee4b7ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72faf0c8770fb51d88e80bf737d2365"><td class="memItemLeft" align="right" valign="top"><a id="ac72faf0c8770fb51d88e80bf737d2365"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateKeyTableColumnType</b> (GpgKeyTableColumn)</td></tr>
+<tr class="separator:ac72faf0c8770fb51d88e80bf737d2365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9114a304fae835b3464d3f55e53b3fc"><td class="memItemLeft" align="right" valign="top">static KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab9114a304fae835b3464d3f55e53b3fc">GetChecked</a> (const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;key_table)</td></tr>
-<tr class="memdesc:ab9114a304fae835b3464d3f55e53b3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#ab9114a304fae835b3464d3f55e53b3fc">More...</a><br /></td></tr>
-<tr class="separator:ab9114a304fae835b3464d3f55e53b3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0182646beb01850779260b3772bd8fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab0182646beb01850779260b3772bd8fe">SetChecked</a> (const KeyIdArgsListPtr &amp;keyIds, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;key_table)</td></tr>
-<tr class="memdesc:ab0182646beb01850779260b3772bd8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#ab0182646beb01850779260b3772bd8fe">More...</a><br /></td></tr>
-<tr class="separator:ab0182646beb01850779260b3772bd8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60857c6b6123fefe8664d2c1a4dc6c42"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a60857c6b6123fefe8664d2c1a4dc6c42">GetChecked</a> (const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;key_table) -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:a60857c6b6123fefe8664d2c1a4dc6c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#a60857c6b6123fefe8664d2c1a4dc6c42">More...</a><br /></td></tr>
+<tr class="separator:a60857c6b6123fefe8664d2c1a4dc6c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af328e623ab620bf89694d23b816d09db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#af328e623ab620bf89694d23b816d09db">SetChecked</a> (const KeyIdArgsListPtr &amp;key_ids, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;key_table)</td></tr>
+<tr class="memdesc:af328e623ab620bf89694d23b816d09db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Checked object.  <a href="classGpgFrontend_1_1UI_1_1KeyList.html#af328e623ab620bf89694d23b816d09db">More...</a><br /></td></tr>
+<tr class="separator:af328e623ab620bf89694d23b816d09db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -206,9 +201,6 @@ Protected Member Functions</h2></td></tr>
 Private Slots</h2></td></tr>
 <tr class="memitem:a69e54f06d546d516a0dcdf1055b8028e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a69e54f06d546d516a0dcdf1055b8028e">slot_double_clicked</a> (const QModelIndex &amp;index)</td></tr>
 <tr class="separator:a69e54f06d546d516a0dcdf1055b8028e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad57901bf84aaf7849e7cf7bb9f8fc99"><td class="memItemLeft" align="right" valign="top"><a id="aad57901bf84aaf7849e7cf7bb9f8fc99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_refresh_ui</b> ()</td></tr>
-<tr class="separator:aad57901bf84aaf7849e7cf7bb9f8fc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e97d359158f91217b9fe797410c74a6"><td class="memItemLeft" align="right" valign="top"><a id="a6e97d359158f91217b9fe797410c74a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_sync_with_key_server</b> ()</td></tr>
 <tr class="separator:a6e97d359158f91217b9fe797410c74a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,8 +210,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a79416ec91e91f19712bf72aeb6440175"><td class="memItemLeft" align="right" valign="top"><a id="a79416ec91e91f19712bf72aeb6440175"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:a79416ec91e91f19712bf72aeb6440175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64ba3049fac1aaa9fed4fb1c5919153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab64ba3049fac1aaa9fed4fb1c5919153">import_keys</a> (const QByteArray &amp;inBuffer)</td></tr>
-<tr class="separator:ab64ba3049fac1aaa9fed4fb1c5919153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef139abadcf2f7531788e8911813e5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#aef139abadcf2f7531788e8911813e5e5">import_keys</a> (const QByteArray &amp;in_buffer)</td></tr>
+<tr class="separator:aef139abadcf2f7531788e8911813e5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9667bbf246913ea22413d46bcda675a"><td class="memItemLeft" align="right" valign="top"><a id="ae9667bbf246913ea22413d46bcda675a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>uncheck_all</b> ()</td></tr>
 <tr class="separator:ae9667bbf246913ea22413d46bcda675a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,34 +224,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>filter_by_keyword</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac4629f2ffafe87215acc66f3cefc23d4"><td class="memItemLeft" align="right" valign="top"><a id="ac4629f2ffafe87215acc66f3cefc23d4"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>buffered_key_list_mutex_</b></td></tr>
-<tr class="separator:ac4629f2ffafe87215acc66f3cefc23d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aeb2eef64f57fbc2e7f06f433d1ccb2"><td class="memItemLeft" align="right" valign="top"><a id="a8aeb2eef64f57fbc2e7f06f433d1ccb2"></a>
 std::shared_ptr&lt; Ui_KeyList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ui_</b></td></tr>
 <tr class="separator:a8aeb2eef64f57fbc2e7f06f433d1ccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1e2fde8e54d111581adc701e3191bb"><td class="memItemLeft" align="right" valign="top"><a id="a8d1e2fde8e54d111581adc701e3191bb"></a>
-QTableWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_key_list_</b> {}</td></tr>
-<tr class="separator:a8d1e2fde8e54d111581adc701e3191bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b6021ff2b2f03874bc9886bc08c152"><td class="memItemLeft" align="right" valign="top"><a id="ad3b6021ff2b2f03874bc9886bc08c152"></a>
-std::vector&lt; <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_key_tables_</b></td></tr>
-<tr class="separator:ad3b6021ff2b2f03874bc9886bc08c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d74ae5a34617b0be9915a43a2abdaa"><td class="memItemLeft" align="right" valign="top"><a id="ac4d74ae5a34617b0be9915a43a2abdaa"></a>
 QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>popup_menu_</b> {}</td></tr>
 <tr class="separator:ac4d74ae5a34617b0be9915a43a2abdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b3f64d41843bb267fcd6c9956fde88"><td class="memItemLeft" align="right" valign="top"><a id="a19b3f64d41843bb267fcd6c9956fde88"></a>
-GpgFrontend::KeyLinkListPtr&#160;</td><td class="memItemRight" valign="bottom"><b>buffered_keys_list_</b></td></tr>
-<tr class="separator:a19b3f64d41843bb267fcd6c9956fde88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ef918cd437730e111171660df06c81"><td class="memItemLeft" align="right" valign="top"><a id="a74ef918cd437730e111171660df06c81"></a>
 std::function&lt; void(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, QWidget *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_</b> = nullptr</td></tr>
 <tr class="separator:a74ef918cd437730e111171660df06c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade6f1511cb60ceafcfe8e50a2ef28c73"><td class="memItemLeft" align="right" valign="top"><a id="ade6f1511cb60ceafcfe8e50a2ef28c73"></a>
-KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><b>menu_ability_</b> = KeyMenuAbility::ALL</td></tr>
-<tr class="separator:ade6f1511cb60ceafcfe8e50a2ef28c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1bcbf8c29fa5eab0c6073f5b5a8ab8"><td class="memItemLeft" align="right" valign="top"><a id="a1e1bcbf8c29fa5eab0c6073f5b5a8ab8"></a>
+KeyMenuAbility&#160;</td><td class="memItemRight" valign="bottom"><b>menu_ability_</b> = KeyMenuAbility::kALL</td></tr>
+<tr class="separator:a1e1bcbf8c29fa5eab0c6073f5b5a8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8657d2e1aebaa16dc47813b1cd4140"><td class="memItemLeft" align="right" valign="top"><a id="a2f8657d2e1aebaa16dc47813b1cd4140"></a>
+QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>model_</b></td></tr>
+<tr class="separator:a2f8657d2e1aebaa16dc47813b1cd4140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c6262bb0b475186bb66c2e9ea0c9e5"><td class="memItemLeft" align="right" valign="top"><a id="a98c6262bb0b475186bb66c2e9ea0c9e5"></a>
+GpgKeyTableColumn&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_columns_filter_</b></td></tr>
+<tr class="separator:a98c6262bb0b475186bb66c2e9ea0c9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4150fa05bab65cfe2813163807eb3b9e"><td class="memItemLeft" align="right" valign="top"><a id="a4150fa05bab65cfe2813163807eb3b9e"></a>
+GpgKeyTableColumn&#160;</td><td class="memItemRight" valign="bottom"><b>global_column_filter_</b></td></tr>
+<tr class="separator:a4150fa05bab65cfe2813163807eb3b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff66f6c07b20bb2544473059596e02bd"><td class="memItemLeft" align="right" valign="top"><a id="aff66f6c07b20bb2544473059596e02bd"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>key_id_column_action_</b></td></tr>
+<tr class="separator:aff66f6c07b20bb2544473059596e02bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9d7c079c7ede52317ec8930a3e0f30"><td class="memItemLeft" align="right" valign="top"><a id="aee9d7c079c7ede52317ec8930a3e0f30"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>algo_column_action_</b></td></tr>
+<tr class="separator:aee9d7c079c7ede52317ec8930a3e0f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25355c06e1e7062712ed3b544b639439"><td class="memItemLeft" align="right" valign="top"><a id="a25355c06e1e7062712ed3b544b639439"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>create_date_column_action_</b></td></tr>
+<tr class="separator:a25355c06e1e7062712ed3b544b639439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bf90f4a79e13a077c04dd879e87d53"><td class="memItemLeft" align="right" valign="top"><a id="a76bf90f4a79e13a077c04dd879e87d53"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>owner_trust_column_action_</b></td></tr>
+<tr class="separator:a76bf90f4a79e13a077c04dd879e87d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace667cd4af2b84e704eac9c723edcfe5"><td class="memItemLeft" align="right" valign="top"><a id="ace667cd4af2b84e704eac9c723edcfe5"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>subkeys_number_column_action_</b></td></tr>
+<tr class="separator:ace667cd4af2b84e704eac9c723edcfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99540745ffb2a3d55cf95078b2526d11"><td class="memItemLeft" align="right" valign="top"><a id="a99540745ffb2a3d55cf95078b2526d11"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>comment_column_action_</b></td></tr>
+<tr class="separator:a99540745ffb2a3d55cf95078b2526d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7c9d5cacdb42e1fbda5d3cc96e861418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c9d5cacdb42e1fbda5d3cc96e861418">&#9670;&nbsp;</a></span>KeyList()</h2>
+<a id="acc91a50d5390be280a0fd4f6ef9ed148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc91a50d5390be280a0fd4f6ef9ed148">&#9670;&nbsp;</a></span>KeyList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,8 +277,14 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
         <tr>
           <td class="memname">GpgFrontend::UI::KeyList::KeyList </td>
           <td>(</td>
-          <td class="paramtype">KeyMenuAbility::AbilityType&#160;</td>
+          <td class="paramtype">KeyMenuAbility&#160;</td>
           <td class="paramname"><em>menu_ability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GpgKeyTableColumn&#160;</td>
+          <td class="paramname"><em>fixed_column_filter</em> = <code>GpgKeyTableColumn::kALL</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -304,8 +317,8 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab8663d18901d10c00dbcc0ba852b3bf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8663d18901d10c00dbcc0ba852b3bf4">&#9670;&nbsp;</a></span>AddListGroupTab()</h2>
+<a id="a07f4aa3f9b5145da751a860fdb31e4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f4aa3f9b5145da751a860fdb31e4ba">&#9670;&nbsp;</a></span>AddListGroupTab()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,20 +338,20 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KeyListRow::KeyType&#160;</td>
-          <td class="paramname"><em>selectType</em> = <code>KeyListRow::SECRET_OR_PUBLIC_KEY</code>, </td>
+          <td class="paramtype">GpgKeyTableDisplayMode&#160;</td>
+          <td class="paramname"><em>display_mode</em> = <code>GpgKeyTableDisplayMode::kPRIVATE_KEY</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KeyListColumn::InfoType&#160;</td>
-          <td class="paramname"><em>infoType</em> = <code>KeyListColumn::ALL</code>, </td>
+          <td class="paramtype">GpgKeyTableProxyModel::KeyFilter&#160;</td>
+          <td class="paramname"><em>search_filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const KeyTable::KeyTableFilter&#160;</td>
-          <td class="paramname"><em>filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;,&#160;const&#160;<a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>&#160;</td>
+          <td class="paramtype">GpgKeyTableColumn&#160;</td>
+          <td class="paramname"><em>custom_columns_filter</em> = <code>GpgKeyTableColumn::kALL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,10 +369,6 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#a69e54f06d546d516a0dcdf1055b8028e">slot_double_clicked()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">GpgFrontend::UI::KeyMgmt::KeyMgmt()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html#aaa06ce342178802e76119bec6b26cc55">GpgFrontend::UI::KeyUIDSignDialog::KeyUIDSignDialog()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1SignersPicker.html#a02c3ba737702894fc6d4ac1a1c543ccb">GpgFrontend::UI::SignersPicker::SignersPicker()</a>.</p>
 
 </div>
 </div>
@@ -385,12 +394,10 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">GpgFrontend::UI::KeyMgmt::KeyMgmt()</a>.</p>
-
 </div>
 </div>
-<a id="adb9c483abd248aabddb5c2275c916edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9c483abd248aabddb5c2275c916edb">&#9670;&nbsp;</a></span>ContainsPrivateKeys()</h2>
+<a id="abe2dc7f62f7f5278180aa865ee4b7ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2dc7f62f7f5278180aa865ee4b7ed0">&#9670;&nbsp;</a></span>ContainsPrivateKeys()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +406,7 @@ KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><
           <td class="memname">auto GpgFrontend::UI::KeyList::ContainsPrivateKeys </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; bool</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -503,12 +510,12 @@ false </dd></dl>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab64ba3049fac1aaa9fed4fb1c5919153">import_keys()</a>.</p>
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GlobalSettingStation &gt;::GetInstance()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#aef139abadcf2f7531788e8911813e5e5">import_keys()</a>.</p>
 
 </div>
 </div>
-<a id="ac9dc5eb5036314d230dffafef198197a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9dc5eb5036314d230dffafef198197a">&#9670;&nbsp;</a></span>GetAllPrivateKeys()</h2>
+<a id="a1bcba6e19fc8137f0c0025b73a4646d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcba6e19fc8137f0c0025b73a4646d6">&#9670;&nbsp;</a></span>GetAllPrivateKeys()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,7 +524,7 @@ false </dd></dl>
           <td class="memname">auto GpgFrontend::UI::KeyList::GetAllPrivateKeys </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -527,8 +534,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a97d01278c44e1f7cd53f842ae80b477b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97d01278c44e1f7cd53f842ae80b477b">&#9670;&nbsp;</a></span>GetChecked() <span class="overload">[1/2]</span></h2>
+<a id="ad52c801131515093ee422b74f05ed512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52c801131515093ee422b74f05ed512">&#9670;&nbsp;</a></span>GetChecked() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +544,7 @@ false </dd></dl>
           <td class="memname">auto GpgFrontend::UI::KeyList::GetChecked </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -549,8 +556,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ab9114a304fae835b3464d3f55e53b3fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9114a304fae835b3464d3f55e53b3fc">&#9670;&nbsp;</a></span>GetChecked() <span class="overload">[2/2]</span></h2>
+<a id="a60857c6b6123fefe8664d2c1a4dc6c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60857c6b6123fefe8664d2c1a4dc6c42">&#9670;&nbsp;</a></span>GetChecked() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -563,7 +570,7 @@ false </dd></dl>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;&#160;</td>
           <td class="paramname"><em>key_table</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
   </td>
@@ -584,17 +591,17 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a26efe22f805046cf1526c71bec059477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26efe22f805046cf1526c71bec059477">&#9670;&nbsp;</a></span>GetPrivateChecked()</h2>
+<a id="a6f578511cce1878b2a81be090241760d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f578511cce1878b2a81be090241760d">&#9670;&nbsp;</a></span>GetCheckedPrivateKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto GpgFrontend::UI::KeyList::GetPrivateChecked </td>
+          <td class="memname">auto GpgFrontend::UI::KeyList::GetCheckedPrivateKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -606,17 +613,35 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a1bcca32b18c539a2ae83c30fc07db544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bcca32b18c539a2ae83c30fc07db544">&#9670;&nbsp;</a></span>GetSelected()</h2>
+<a id="a8abc9e1ffe18a15b4f65765632134b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abc9e1ffe18a15b4f65765632134b53">&#9670;&nbsp;</a></span>GetCheckedPublicKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">KeyIdArgsListPtr GpgFrontend::UI::KeyList::GetSelected </td>
+          <td class="memname">auto GpgFrontend::UI::KeyList::GetCheckedPublicKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; KeyIdArgsListPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>KeyIdArgsListPtr </dd></dl>
+
+</div>
+</div>
+<a id="a7b995e933d4a31b9b857c703ddde4364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b995e933d4a31b9b857c703ddde4364">&#9670;&nbsp;</a></span>GetSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyList::GetSelected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -628,8 +653,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a66778309098dec18a891712dfb59b08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66778309098dec18a891712dfb59b08b">&#9670;&nbsp;</a></span>GetSelectedKey()</h2>
+<a id="aedf07dd578e21269e6b9cd62f8b73a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf07dd578e21269e6b9cd62f8b73a5d">&#9670;&nbsp;</a></span>GetSelectedKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -638,7 +663,7 @@ false </dd></dl>
           <td class="memname">auto GpgFrontend::UI::KeyList::GetSelectedKey </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt; QString</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -648,8 +673,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ab64ba3049fac1aaa9fed4fb1c5919153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab64ba3049fac1aaa9fed4fb1c5919153">&#9670;&nbsp;</a></span>import_keys()</h2>
+<a id="aef139abadcf2f7531788e8911813e5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef139abadcf2f7531788e8911813e5e5">&#9670;&nbsp;</a></span>import_keys()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +686,7 @@ false </dd></dl>
           <td class="memname">void GpgFrontend::UI::KeyList::import_keys </td>
           <td>(</td>
           <td class="paramtype">const QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>inBuffer</em></td><td>)</td>
+          <td class="paramname"><em>in_buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -684,8 +709,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ab0182646beb01850779260b3772bd8fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0182646beb01850779260b3772bd8fe">&#9670;&nbsp;</a></span>SetChecked() <span class="overload">[1/2]</span></h2>
+<a id="af328e623ab620bf89694d23b816d09db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af328e623ab620bf89694d23b816d09db">&#9670;&nbsp;</a></span>SetChecked()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -697,7 +722,7 @@ false </dd></dl>
           <td class="memname">void GpgFrontend::UI::KeyList::SetChecked </td>
           <td>(</td>
           <td class="paramtype">const KeyIdArgsListPtr &amp;&#160;</td>
-          <td class="paramname"><em>keyIds</em>, </td>
+          <td class="paramname"><em>key_ids</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -727,31 +752,7 @@ false </dd></dl>
   </dd>
 </dl>
 
-</div>
-</div>
-<a id="a68b595a2bb83dfafa61b3e467dd15689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68b595a2bb83dfafa61b3e467dd15689">&#9670;&nbsp;</a></span>SetChecked() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GpgFrontend::UI::KeyList::SetChecked </td>
-          <td>(</td>
-          <td class="paramtype">KeyIdArgsListPtr&#160;</td>
-          <td class="paramname"><em>key_ids</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the Checked object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key_ids</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="reference">References <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a83c4e15353abb737ad8495fac4ed7c66">GpgFrontend::UI::KeyTable::GetKeyIdByRow()</a>, <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a61276633ea14c79a83ba36c8909ad521">GpgFrontend::UI::KeyTable::GetRowCount()</a>, and <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a5b5d573586f19f072affd1b968e3a206">GpgFrontend::UI::KeyTable::SetRowChecked()</a>.</p>
 
 </div>
 </div>
@@ -815,8 +816,6 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyMgmt.html#aefc27b57830cf14a85c2225664f89f64">GpgFrontend::UI::KeyMgmt::KeyMgmt()</a>.</p>
 
 </div>
 </div>
@@ -895,13 +894,11 @@ false </dd></dl>
 
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#ab8663d18901d10c00dbcc0ba852b3bf4">AddListGroupTab()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/ui/widgets/<a class="el" href="KeyList_8h_source.html">KeyList.h</a></li>
-<li>src/ui/widgets/KeyList.cpp</li>
+<li>ui/widgets/<a class="el" href="KeyList_8h_source.html">KeyList.h</a></li>
+<li>ui/widgets/KeyList.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

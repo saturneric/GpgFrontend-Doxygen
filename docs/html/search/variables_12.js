@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['translate_5fact_5f_1765',['translate_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#adbac799672c43c90810366825d837e4e',1,'GpgFrontend::UI::MainWindow']]]
+  ['undo_5fact_5f_1769',['undo_act_',['../classGpgFrontend_1_1UI_1_1MainWindow.html#aa498dfecac36590e4b60d50824dff58c',1,'GpgFrontend::UI::MainWindow']]]
 ];

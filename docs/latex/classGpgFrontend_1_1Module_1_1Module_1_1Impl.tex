@@ -10,6 +10,11 @@ Collaboration diagram for Gpg\+Frontend\+::Module\+::Module\+::Impl\+:
 \includegraphics[width=350pt]{classGpgFrontend_1_1Module_1_1Module_1_1Impl__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1Module_1_1Impl_1_1Symbol}{Symbol}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,6 +26,27 @@ using {\bfseries Exec\+Callback} = std\+::function$<$ void(int)$>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac1163893225f8c16b5945e6bf1489282}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac1163893225f8c16b5945e6bf1489282}} 
 {\bfseries Impl} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}} m\+\_\+ptr, Module\+Identifier id, Module\+Version version, Module\+Meta\+Data meta\+\_\+data)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a4d559d8a9e86d2029af45bd5412c1951}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a4d559d8a9e86d2029af45bd5412c1951}} 
+{\bfseries Impl} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module\+Raw\+Ptr}} m\+\_\+ptr, QLibrary \&module\+\_\+library)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a0b0eeacd74b348a8f2062ad0cc8f811a}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a0b0eeacd74b348a8f2062ad0cc8f811a}} 
+auto {\bfseries Is\+Good} () const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adaa19e79a69157b20688ba26a7f50d64}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adaa19e79a69157b20688ba26a7f50d64}} 
+auto {\bfseries Register} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa55c74b6387af03a60ec3ec749b925c3}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa55c74b6387af03a60ec3ec749b925c3}} 
+auto {\bfseries Active} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac9ebd95fcd53af661e0461dc7ca0b421}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac9ebd95fcd53af661e0461dc7ca0b421}} 
+auto {\bfseries Exec} (const Event\+Reference \&event) -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a5472a04f6b32e1e82c687f6224722417}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a5472a04f6b32e1e82c687f6224722417}} 
+auto {\bfseries Deactivate} () -\/$>$ int
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a332440f2335b46eb4c1c2173bdefe01f}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a332440f2335b46eb4c1c2173bdefe01f}} 
+auto {\bfseries Un\+Register} () -\/$>$ int
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a8f874b486d0ce6c7df177df3927f0b19}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a8f874b486d0ce6c7df177df3927f0b19}} 
 auto {\bfseries Get\+Channel} () -\/$>$ int
@@ -36,6 +62,24 @@ auto {\bfseries Listen\+Event} (Event\+Identifier event) -\/$>$ bool
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab3a02391f045a38c04e43f7c9d7d2709}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab3a02391f045a38c04e43f7c9d7d2709}} 
 auto {\bfseries Get\+Module\+Identifier} () const -\/$>$ Module\+Identifier
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a3085b9d88920f32401426d8fa78785e4}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a3085b9d88920f32401426d8fa78785e4}} 
+auto {\bfseries Get\+Module\+Version} () const -\/$>$ Module\+Version
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9618db91240841b76a1c3632d99c2794}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9618db91240841b76a1c3632d99c2794}} 
+auto {\bfseries Get\+Module\+SDKVersion} () const -\/$>$ QString
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9eee8237da3091ca8459c3da30563772}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9eee8237da3091ca8459c3da30563772}} 
+auto {\bfseries Get\+Module\+Qt\+Env\+Version} () const -\/$>$ QString
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a47fb418654519e7e6a8a7b2433d73991}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a47fb418654519e7e6a8a7b2433d73991}} 
+auto {\bfseries Get\+Module\+Meta\+Data} () const -\/$>$ Module\+Meta\+Data
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9a3bcff8aaa1ad1e19534d51e1d45ea0}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9a3bcff8aaa1ad1e19534d51e1d45ea0}} 
+auto {\bfseries Get\+Module\+Path} () const -\/$>$ QString
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adeff2d93a2eb6535312005a8fbc11f9d}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adeff2d93a2eb6535312005a8fbc11f9d}} 
+auto {\bfseries Get\+Module\+Hash} () const -\/$>$ QString
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a736c419f4d180cf02829dfa507885bd4}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a736c419f4d180cf02829dfa507885bd4}} 
 void {\bfseries Set\+GPC} (\mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global\+Module\+Context}} $\ast$gpc)
@@ -55,14 +99,65 @@ auto {\bfseries get\+\_\+gpc} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Mod
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad58ee3fef7e93f74aadf8ab3227db5ed}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad58ee3fef7e93f74aadf8ab3227db5ed}} 
 \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module}} $\ast$ {\bfseries m\+\_\+ptr\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a6cb0cc28ae232b73525a77c521ad5a27}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a6cb0cc28ae232b73525a77c521ad5a27}} 
-const Module\+Identifier {\bfseries identifier\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aef2b77bfd2c61ffa7ee6e41c69137506}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aef2b77bfd2c61ffa7ee6e41c69137506}} 
+Module\+Identifier {\bfseries identifier\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a615a7760e1699c103d3575d6d985a3cb}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a615a7760e1699c103d3575d6d985a3cb}} 
-const Module\+Version {\bfseries version\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a74032819e4c2b73a3c08d6fce50cc88e}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a74032819e4c2b73a3c08d6fce50cc88e}} 
+Module\+Version {\bfseries version\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a709cbba5c2fbbf803fd16e856a20da88}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a709cbba5c2fbbf803fd16e856a20da88}} 
-const Module\+Meta\+Data {\bfseries meta\+\_\+data\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a696b8a26f6f4d855084e6c8e4a1e6f62}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a696b8a26f6f4d855084e6c8e4a1e6f62}} 
+Module\+Meta\+Data {\bfseries meta\+\_\+data\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a7d4c421510be5a8fa002f78237173aff}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a7d4c421510be5a8fa002f78237173aff}} 
+QString {\bfseries module\+\_\+hash\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9e7bc20e108388b71cbabb0e338a4e8f}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a9e7bc20e108388b71cbabb0e338a4e8f}} 
+QString {\bfseries module\+\_\+library\+\_\+path\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adc50bf80f5dd3760a705fc625e644b4c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_adc50bf80f5dd3760a705fc625e644b4c}} 
+QString {\bfseries gf\+\_\+sdk\+\_\+ver\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac05664a662e9bbdb1a5831d6555e609c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac05664a662e9bbdb1a5831d6555e609c}} 
+QString {\bfseries qt\+\_\+env\+\_\+ver\+\_\+}
+\item 
+QRegular\+Expression {\bfseries module\+\_\+identifier\+\_\+regex\+\_\+exp\+\_\+}
+\item 
+QRegular\+Expression {\bfseries module\+\_\+version\+\_\+regex\+\_\+exp\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad67c082d87a8867de27278befb29557c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ad67c082d87a8867de27278befb29557c}} 
+bool {\bfseries good\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a035bbadd3661e4259b3f43b5be792b23}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a035bbadd3661e4259b3f43b5be792b23}} 
+GFModule\+APIGet\+Module\+GFSDKVersion {\bfseries get\+\_\+sdk\+\_\+ver\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af6ab109d46b658ec1880094c67bb3cdc}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af6ab109d46b658ec1880094c67bb3cdc}} 
+GFModule\+APIGet\+Module\+Qt\+Env\+Version {\bfseries get\+\_\+qt\+\_\+ver\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a2fd7e33c4dc60b01f6500991817abc62}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a2fd7e33c4dc60b01f6500991817abc62}} 
+GFModule\+APIGet\+Module\+ID {\bfseries get\+\_\+id\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a3709ab70918190f6f21ce403c547e775}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a3709ab70918190f6f21ce403c547e775}} 
+GFModule\+APIGet\+Module\+Version {\bfseries get\+\_\+version\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a75a02322ea30f8277314ae84c740082d}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a75a02322ea30f8277314ae84c740082d}} 
+GFModule\+APIGet\+Module\+Meta\+Data {\bfseries get\+\_\+metadata\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a54934091368e3c7a6435e4bce8e64939}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a54934091368e3c7a6435e4bce8e64939}} 
+GFModule\+APIRegister\+Module {\bfseries register\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a0e0391420546dbacd8d3423cf8edbc4c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a0e0391420546dbacd8d3423cf8edbc4c}} 
+GFModule\+APIActivate\+Module {\bfseries activate\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa15a2e2020e8dc0b6cf315b04929248c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_aa15a2e2020e8dc0b6cf315b04929248c}} 
+GFModule\+APIExecute\+Module {\bfseries execute\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac7c23924a53a3e2acd149e2a6813e69c}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ac7c23924a53a3e2acd149e2a6813e69c}} 
+GFModule\+APIDeactivate\+Module {\bfseries deactivate\+\_\+api\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a706e09850aa6ce724e0c21d9678e342e}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a706e09850aa6ce724e0c21d9678e342e}} 
+GFModule\+APIUnregister\+Module {\bfseries unregister\+\_\+api\+\_\+}
+\item 
+QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1Module_1_1Impl_1_1Symbol}{Symbol}} $>$ {\bfseries module\+\_\+required\+\_\+symbols\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -72,6 +167,55 @@ const Module\+Meta\+Data {\bfseries meta\+\_\+data\+\_\+}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af3501de4e970ee4b76f764beddd4c0a0}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_af3501de4e970ee4b76f764beddd4c0a0}} 
+\index{GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}!module\_identifier\_regex\_exp\_@{module\_identifier\_regex\_exp\_}}
+\index{module\_identifier\_regex\_exp\_@{module\_identifier\_regex\_exp\_}!GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}}
+\doxysubsubsection{\texorpdfstring{module\_identifier\_regex\_exp\_}{module\_identifier\_regex\_exp\_}}
+{\footnotesize\ttfamily QRegular\+Expression Gpg\+Frontend\+::\+Module\+::\+Module\+::\+Impl\+::module\+\_\+identifier\+\_\+regex\+\_\+exp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= QRegularExpression(}
+\DoxyCodeLine{      R\textcolor{stringliteral}{"{}(\string^([A-\/Za-\/z]\{1\}[A-\/Za-\/z\(\backslash\)d\_]*\(\backslash\).)+[A-\/Za-\/z][A-\/Za-\/z\(\backslash\)d\_]*\$)"{})}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab18a4748e7b14dc24e81101a481cf4dc}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_ab18a4748e7b14dc24e81101a481cf4dc}} 
+\index{GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}!module\_required\_symbols\_@{module\_required\_symbols\_}}
+\index{module\_required\_symbols\_@{module\_required\_symbols\_}!GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}}
+\doxysubsubsection{\texorpdfstring{module\_required\_symbols\_}{module\_required\_symbols\_}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{structGpgFrontend_1_1Module_1_1Module_1_1Impl_1_1Symbol}{Symbol}}$>$ Gpg\+Frontend\+::\+Module\+::\+Module\+::\+Impl\+::module\+\_\+required\+\_\+symbols\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFGetModuleGFSDKVersion"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&get\_sdk\_ver\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFGetModuleQtEnvVersion"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&get\_qt\_ver\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFGetModuleID"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&get\_id\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFGetModuleVersion"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&get\_version\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFGetModuleMetaData"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&get\_metadata\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFRegisterModule"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&register\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFActiveModule"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&activate\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFExecuteModule"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&execute\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFDeactivateModule"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&deactivate\_api\_)\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"{}GFUnregisterModule"{}}, \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}**\textcolor{keyword}{>}(\&unregister\_api\_)\},}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a00108e0f2da38114e9ddfb558bde9791}\label{classGpgFrontend_1_1Module_1_1Module_1_1Impl_a00108e0f2da38114e9ddfb558bde9791}} 
+\index{GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}!module\_version\_regex\_exp\_@{module\_version\_regex\_exp\_}}
+\index{module\_version\_regex\_exp\_@{module\_version\_regex\_exp\_}!GpgFrontend::Module::Module::Impl@{GpgFrontend::Module::Module::Impl}}
+\doxysubsubsection{\texorpdfstring{module\_version\_regex\_exp\_}{module\_version\_regex\_exp\_}}
+{\footnotesize\ttfamily QRegular\+Expression Gpg\+Frontend\+::\+Module\+::\+Module\+::\+Impl\+::module\+\_\+version\+\_\+regex\+\_\+exp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      QRegularExpression(R\textcolor{stringliteral}{"{}(\string^(\(\backslash\)d+\(\backslash\).)?(\(\backslash\)d+\(\backslash\).)?(\(\backslash\)*|\(\backslash\)d+)\$)"{})}}
+
+\end{DoxyCode}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Module.\+cpp\end{DoxyCompactItemize}
+core/module/Module.\+cpp\end{DoxyCompactItemize}

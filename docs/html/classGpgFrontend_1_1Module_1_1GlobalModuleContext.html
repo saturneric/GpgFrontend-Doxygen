@@ -97,7 +97,7 @@ Inheritance diagram for GpgFrontend::Module::GlobalModuleContext:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1GlobalModuleContext__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1GlobalModuleContext_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1GlobalModuleContext_inherit__map" id="aGpgFrontend_1_1Module_1_1GlobalModuleContext_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,204,399"/>
+<area shape="rect" title=" " alt="" coords="5,131,204,384"/>
 <area shape="rect" title=" " alt="" coords="67,5,142,83"/>
 </map>
 </div>
@@ -106,7 +106,7 @@ Collaboration diagram for GpgFrontend::Module::GlobalModuleContext:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1GlobalModuleContext__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1GlobalModuleContext_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1GlobalModuleContext_coll__map" id="aGpgFrontend_1_1Module_1_1GlobalModuleContext_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,204,399"/>
+<area shape="rect" title=" " alt="" coords="5,131,204,384"/>
 <area shape="rect" title=" " alt="" coords="67,5,142,83"/>
 </map>
 </div>
@@ -118,6 +118,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac488a3f4e3cbd668fd9ce84b39078cbb"><td class="memItemLeft" align="right" valign="top"><a id="ac488a3f4e3cbd668fd9ce84b39078cbb"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModule</b> (ModuleIdentifier) -&gt; ModulePtr</td></tr>
+<tr class="separator:ac488a3f4e3cbd668fd9ce84b39078cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadce2e61acda3c4191423f28628c56bf"><td class="memItemLeft" align="right" valign="top"><a id="aadce2e61acda3c4191423f28628c56bf"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetChannel</b> (<a class="el" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a>) -&gt; int</td></tr>
 <tr class="separator:aadce2e61acda3c4191423f28628c56bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +133,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetTaskRunner</b> (Mo
 <tr class="memitem:a446db76f3518eb46133e14366ff13a05"><td class="memItemLeft" align="right" valign="top"><a id="a446db76f3518eb46133e14366ff13a05"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalTaskRunner</b> () -&gt; std::optional&lt; TaskRunnerPtr &gt;</td></tr>
 <tr class="separator:a446db76f3518eb46133e14366ff13a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf7c18deea8185834ad9f53f2a5a8579"><td class="memItemLeft" align="right" valign="top"><a id="aaf7c18deea8185834ad9f53f2a5a8579"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (ModulePtr) -&gt; bool</td></tr>
-<tr class="separator:aaf7c18deea8185834ad9f53f2a5a8579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3834836325dab26902e9d66770ce895f"><td class="memItemLeft" align="right" valign="top"><a id="a3834836325dab26902e9d66770ce895f"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (ModulePtr, bool) -&gt; bool</td></tr>
+<tr class="separator:a3834836325dab26902e9d66770ce895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4de89b6132d184cf94444a94634a38d8"><td class="memItemLeft" align="right" valign="top"><a id="a4de89b6132d184cf94444a94634a38d8"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveModule</b> (ModuleIdentifier) -&gt; bool</td></tr>
 <tr class="separator:a4de89b6132d184cf94444a94634a38d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,12 +145,24 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>DeactivateModule</b> 
 <tr class="memitem:a1f4335cab295542f49b78a8e15b6f456"><td class="memItemLeft" align="right" valign="top"><a id="a1f4335cab295542f49b78a8e15b6f456"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListenEvent</b> (ModuleIdentifier, EventIdentifier) -&gt; bool</td></tr>
 <tr class="separator:a1f4335cab295542f49b78a8e15b6f456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa656d6d835b2ccb20494ff580a7cafac"><td class="memItemLeft" align="right" valign="top"><a id="aa656d6d835b2ccb20494ff580a7cafac"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (EventRefrernce) -&gt; bool</td></tr>
-<tr class="separator:aa656d6d835b2ccb20494ff580a7cafac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c9b7ffc770046ff1e6486ef1fc4415"><td class="memItemLeft" align="right" valign="top"><a id="ad9c9b7ffc770046ff1e6486ef1fc4415"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (EventReference) -&gt; bool</td></tr>
+<tr class="separator:ad9c9b7ffc770046ff1e6486ef1fc4415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1d56338f4b4a8d594c4ecc8aac420d"><td class="memItemLeft" align="right" valign="top"><a id="a4c1d56338f4b4a8d594c4ecc8aac420d"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchEvent</b> (EventTriggerIdentifier) -&gt; std::optional&lt; EventReference &gt;</td></tr>
+<tr class="separator:a4c1d56338f4b4a8d594c4ecc8aac420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9f17c91c5cb6da83b3d1a5af800895"><td class="memItemLeft" align="right" valign="top"><a id="aec9f17c91c5cb6da83b3d1a5af800895"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleListening</b> (ModuleIdentifier) -&gt; QList&lt; EventIdentifier &gt;</td></tr>
+<tr class="separator:aec9f17c91c5cb6da83b3d1a5af800895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99414d575c55ac1f61a44f077db06028"><td class="memItemLeft" align="right" valign="top"><a id="a99414d575c55ac1f61a44f077db06028"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b> (ModuleIdentifier) -&gt; bool</td></tr>
 <tr class="separator:a99414d575c55ac1f61a44f077db06028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683639b9af7cf521bc9ffe4a5fc46cea"><td class="memItemLeft" align="right" valign="top"><a id="a683639b9af7cf521bc9ffe4a5fc46cea"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsIntegratedModule</b> (ModuleIdentifier) -&gt; bool</td></tr>
+<tr class="separator:a683639b9af7cf521bc9ffe4a5fc46cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d26d680dfb5036832852ccab2e31cd2"><td class="memItemLeft" align="right" valign="top"><a id="a3d26d680dfb5036832852ccab2e31cd2"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllRegisteredModuleID</b> () -&gt; QList&lt; ModuleIdentifier &gt;</td></tr>
+<tr class="separator:a3d26d680dfb5036832852ccab2e31cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -162,8 +177,8 @@ SecureUniquePtr&lt; <a class="el" href="classGpgFrontend_1_1Module_1_1GlobalModu
 <tr class="separator:a2e109678b81d92569b442aba617d86fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/core/module/<a class="el" href="GlobalModuleContext_8h_source.html">GlobalModuleContext.h</a></li>
-<li>src/core/module/GlobalModuleContext.cpp</li>
+<li>core/module/<a class="el" href="GlobalModuleContext_8h_source.html">GlobalModuleContext.h</a></li>
+<li>core/module/GlobalModuleContext.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

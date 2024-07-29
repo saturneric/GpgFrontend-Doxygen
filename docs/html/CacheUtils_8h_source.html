@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/utils/CacheUtils.h Source File</title>
+<title>GpgFrontend Project: core/utils/CacheUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,16 +89,18 @@ $(document).ready(function(){initNavTree('CacheUtils_8h_source.html',''); initRe
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;core/GpgFrontendCoreExport.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a026a59b2fb217146cfcc4ca2b108d455">SetCacheValue</a>(<span class="keyword">const</span> QString &amp;key, QString value);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">auto</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a145ff996dfe117c16297483ce7bc053a">GetCacheValue</a>(<span class="keyword">const</span> QString &amp;key) -&gt; QString;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a1fad8d31c148bf81a9bea45b2918b9e5">ResetCacheValue</a>(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend.html">GpgFrontend</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a026a59b2fb217146cfcc4ca2b108d455">SetCacheValue</a>(<span class="keyword">const</span> QString &amp;key, QString value);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">auto</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a145ff996dfe117c16297483ce7bc053a">GetCacheValue</a>(<span class="keyword">const</span> QString &amp;key) -&gt; QString;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> GPGFRONTEND_CORE_EXPORT <a class="code" href="namespaceGpgFrontend.html#a1fad8d31c148bf81a9bea45b2918b9e5">ResetCacheValue</a>(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html_a026a59b2fb217146cfcc4ca2b108d455"><div class="ttname"><a href="namespaceGpgFrontend.html#a026a59b2fb217146cfcc4ca2b108d455">GpgFrontend::SetCacheValue</a></div><div class="ttdeci">void SetCacheValue(const QString &amp;key, QString value)</div><div class="ttdoc">set a temp cache under a certain key</div><div class="ttdef"><b>Definition:</b> CacheUtils.cpp:35</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html_a145ff996dfe117c16297483ce7bc053a"><div class="ttname"><a href="namespaceGpgFrontend.html#a145ff996dfe117c16297483ce7bc053a">GpgFrontend::GetCacheValue</a></div><div class="ttdeci">auto GetCacheValue(const QString &amp;key) -&gt; QString</div><div class="ttdoc">after get the temp cache, its value will be imediately ease in storage</div><div class="ttdef"><b>Definition:</b> CacheUtils.cpp:39</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html_a1fad8d31c148bf81a9bea45b2918b9e5"><div class="ttname"><a href="namespaceGpgFrontend.html#a1fad8d31c148bf81a9bea45b2918b9e5">GpgFrontend::ResetCacheValue</a></div><div class="ttdeci">void ResetCacheValue(const QString &amp;key)</div><div class="ttdoc">imediately ease temp cache in storage</div><div class="ttdef"><b>Definition:</b> CacheUtils.cpp:43</div></div>
@@ -107,7 +109,7 @@ $(document).ready(function(){initNavTree('CacheUtils_8h_source.html',''); initRe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_a8053b3d69cfefb2b2e6ec7bf9dd5c1a.html">utils</a></li><li class="navelem"><b>CacheUtils.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_182a39db29e4ad63eb633860d83c5a1d.html">utils</a></li><li class="navelem"><b>CacheUtils.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

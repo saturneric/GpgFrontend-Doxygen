@@ -25,19 +25,6 @@ Collaboration diagram for Gpg\+Frontend\+::Thread\+::Task\+Runner\+:
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_1_1Impl}{Impl}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Slots}
-\begin{DoxyCompactItemize}
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}{Post\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a38e1af613d2bc390198a8744f2148f5e}{Post\+Task}} (const QString \&, const Task\+::\+Task\+Runnable \&, const Task\+::\+Task\+Callback \&, Data\+Object\+Ptr)
-\item 
-auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a31a08bfcc288cc70be93de991841d9f9}{Register\+Task}} (const QString \&, const Task\+::\+Task\+Runnable \&, const Task\+::\+Task\+Callback \&, Data\+Object\+Ptr) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+::\+Task\+Handler}}
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_af65c46061d6ee2008b5fa5593de70026}{Post\+Concurrent\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_aaddb0cdd8eb57aac08ca9caf8b8e6bac}{Post\+Schedule\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task, size\+\_\+t seconds)
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -56,6 +43,16 @@ void {\bfseries Stop} ()
 auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a57e29f0dde8ceec05c68841985b43f42}{Get\+Thread}} () -\/$>$ QThread $\ast$
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{namespaceGpgFrontend_1_1Thread}{Thread}} object. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a172bca161e13c253b16f0f712721b450}{Is\+Running}} () -\/$>$ bool
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}{Post\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a38e1af613d2bc390198a8744f2148f5e}{Post\+Task}} (const QString \&, const Task\+::\+Task\+Runnable \&, const Task\+::\+Task\+Callback \&, Data\+Object\+Ptr)
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_a31a08bfcc288cc70be93de991841d9f9}{Register\+Task}} (const QString \&, const Task\+::\+Task\+Runnable \&, const Task\+::\+Task\+Callback \&, Data\+Object\+Ptr) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+::\+Task\+Handler}}
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_af65c46061d6ee2008b5fa5593de70026}{Post\+Concurrent\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task)
+\item 
+void \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1TaskRunner_aaddb0cdd8eb57aac08ca9caf8b8e6bac}{Post\+Schedule\+Task}} (\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$task, size\+\_\+t seconds)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -93,8 +90,8 @@ false
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_af65c46061d6ee2008b5fa5593de70026}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_af65c46061d6ee2008b5fa5593de70026}} 
 \index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!PostConcurrentTask@{PostConcurrentTask}}
 \index{PostConcurrentTask@{PostConcurrentTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
-\doxysubsubsection{\texorpdfstring{PostConcurrentTask}{PostConcurrentTask}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Concurrent\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\doxysubsubsection{\texorpdfstring{PostConcurrentTask()}{PostConcurrentTask()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Concurrent\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -104,8 +101,8 @@ false
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_aaddb0cdd8eb57aac08ca9caf8b8e6bac}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_aaddb0cdd8eb57aac08ca9caf8b8e6bac}} 
 \index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!PostScheduleTask@{PostScheduleTask}}
 \index{PostScheduleTask@{PostScheduleTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
-\doxysubsubsection{\texorpdfstring{PostScheduleTask}{PostScheduleTask}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Schedule\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task,  }\item[{size\+\_\+t}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\doxysubsubsection{\texorpdfstring{PostScheduleTask()}{PostScheduleTask()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Schedule\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task,  }\item[{size\+\_\+t}]{seconds }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -117,8 +114,8 @@ false
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a38e1af613d2bc390198a8744f2148f5e}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a38e1af613d2bc390198a8744f2148f5e}} 
 \index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!PostTask@{PostTask}}
 \index{PostTask@{PostTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
-\doxysubsubsection{\texorpdfstring{PostTask}{PostTask}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const Task\+::\+Task\+Runnable \&}]{runner,  }\item[{const Task\+::\+Task\+Callback \&}]{cb,  }\item[{Data\+Object\+Ptr}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\doxysubsubsection{\texorpdfstring{PostTask()}{PostTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const Task\+::\+Task\+Runnable \&}]{runner,  }\item[{const Task\+::\+Task\+Callback \&}]{cb,  }\item[{Data\+Object\+Ptr}]{params }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -130,8 +127,8 @@ false
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a4fae01eb0a5b296b8c4c6bf8408f1c6b}} 
 \index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!PostTask@{PostTask}}
 \index{PostTask@{PostTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
-\doxysubsubsection{\texorpdfstring{PostTask}{PostTask}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\doxysubsubsection{\texorpdfstring{PostTask()}{PostTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
@@ -141,8 +138,8 @@ false
 \mbox{\Hypertarget{classGpgFrontend_1_1Thread_1_1TaskRunner_a31a08bfcc288cc70be93de991841d9f9}\label{classGpgFrontend_1_1Thread_1_1TaskRunner_a31a08bfcc288cc70be93de991841d9f9}} 
 \index{GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}!RegisterTask@{RegisterTask}}
 \index{RegisterTask@{RegisterTask}!GpgFrontend::Thread::TaskRunner@{GpgFrontend::Thread::TaskRunner}}
-\doxysubsubsection{\texorpdfstring{RegisterTask}{RegisterTask}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Register\+Task (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const Task\+::\+Task\+Runnable \&}]{runnable,  }\item[{const Task\+::\+Task\+Callback \&}]{cb,  }\item[{Data\+Object\+Ptr}]{p\+\_\+pbj }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+::\+Task\+Handler}}\hspace{0.3cm}{\ttfamily [slot]}}
+\doxysubsubsection{\texorpdfstring{RegisterTask()}{RegisterTask()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Thread\+::\+Task\+Runner\+::\+Register\+Task (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const Task\+::\+Task\+Runnable \&}]{runnable,  }\item[{const Task\+::\+Task\+Callback \&}]{cb,  }\item[{Data\+Object\+Ptr}]{p\+\_\+pbj }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Thread_1_1Task_1_1TaskHandler}{Task\+::\+Task\+Handler}}}
 
 \begin{DoxyReturn}{Returns}
 std\+::tuple$<$QPointer$<$\+Task$>$, Task\+Trigger$>$ 
@@ -151,5 +148,5 @@ std\+::tuple$<$QPointer$<$\+Task$>$, Task\+Trigger$>$
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/thread/Task\+Runner.\+h\item 
-src/core/thread/Task\+Runner.\+cpp\end{DoxyCompactItemize}
+core/thread/Task\+Runner.\+h\item 
+core/thread/Task\+Runner.\+cpp\end{DoxyCompactItemize}

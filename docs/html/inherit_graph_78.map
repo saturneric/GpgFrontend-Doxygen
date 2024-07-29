@@ -1,4 +1,23 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,111,39"/>
-<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GpgFrontendApplication.html" title=" " alt="" coords="159,5,377,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,561,80,588"/>
+<area shape="rect" id="node2" href="$classGpgFrontend_1_1UI_1_1GeneralDialog.html" title=" " alt="" coords="158,455,345,497"/>
+<area shape="rect" id="node19" href="$classGpgFrontend_1_1UI_1_1ModuleControllerDialog.html" title=" " alt="" coords="128,521,375,562"/>
+<area shape="rect" id="node20" href="$classGpgFrontend_1_1UI_1_1VerifyDetailsDialog.html" title=" " alt="" coords="142,586,361,627"/>
+<area shape="rect" id="node21" href="$classSignatureDetailsDialog.html" title=" " alt="" coords="165,652,337,679"/>
+<area shape="rect" id="node3" href="$classGpgFrontend_1_1UI_1_1AboutDialog.html" title="Class for handling the about dialog." alt="" coords="443,5,657,32"/>
+<area shape="rect" id="node4" href="$classGpgFrontend_1_1UI_1_1ExportKeyPackageDialog.html" title=" " alt="" coords="449,57,651,98"/>
+<area shape="rect" id="node5" href="$classGpgFrontend_1_1UI_1_1GnuPGControllerDialog.html" title=" " alt="" coords="429,122,671,163"/>
+<area shape="rect" id="node6" href="$classGpgFrontend_1_1UI_1_1KeyDetailsDialog.html" title=" " alt="" coords="447,187,653,229"/>
+<area shape="rect" id="node7" href="$classGpgFrontend_1_1UI_1_1KeyGenDialog.html" title=" " alt="" coords="437,253,663,280"/>
+<area shape="rect" id="node8" href="$classGpgFrontend_1_1UI_1_1KeyImportDetailDialog.html" title=" " alt="" coords="449,305,651,346"/>
+<area shape="rect" id="node9" href="$classGpgFrontend_1_1UI_1_1KeyNewUIDDialog.html" title=" " alt="" coords="423,371,677,397"/>
+<area shape="rect" id="node10" href="$classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html" title=" " alt="" coords="449,422,651,463"/>
+<area shape="rect" id="node11" href="$classGpgFrontend_1_1UI_1_1KeySetExpireDateDialog.html" title=" " alt="" coords="439,487,661,529"/>
+<area shape="rect" id="node12" href="$classGpgFrontend_1_1UI_1_1KeyUIDSignDialog.html" title=" " alt="" coords="445,553,655,594"/>
+<area shape="rect" id="node13" href="$classGpgFrontend_1_1UI_1_1KeyUploadDialog.html" title=" " alt="" coords="447,618,653,659"/>
+<area shape="rect" id="node14" href="$classGpgFrontend_1_1UI_1_1QuitDialog.html" title=" " alt="" coords="448,684,652,711"/>
+<area shape="rect" id="node15" href="$classGpgFrontend_1_1UI_1_1SettingsDialog.html" title=" " alt="" coords="456,735,644,777"/>
+<area shape="rect" id="node16" href="$classGpgFrontend_1_1UI_1_1SignersPicker.html" title=" " alt="" coords="459,801,641,842"/>
+<area shape="rect" id="node17" href="$classGpgFrontend_1_1UI_1_1SubkeyGenerateDialog.html" title=" " alt="" coords="429,866,671,907"/>
+<area shape="rect" id="node18" href="$classGpgFrontend_1_1UI_1_1WaitingDialog.html" title=" " alt="" coords="458,931,642,973"/>
 </map>

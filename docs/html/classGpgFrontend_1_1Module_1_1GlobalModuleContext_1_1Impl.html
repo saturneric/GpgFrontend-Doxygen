@@ -99,19 +99,20 @@ Collaboration diagram for GpgFrontend::Module::GlobalModuleContext::Impl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_coll__map" id="aGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_coll__map">
-<area shape="rect" title=" " alt="" coords="363,672,571,984"/>
-<area shape="rect" title=" " alt="" coords="189,510,488,602"/>
-<area shape="rect" title=" " alt="" coords="178,285,337,377"/>
-<area shape="rect" title=" " alt="" coords="191,145,374,223"/>
-<area shape="rect" title=" " alt="" coords="370,5,409,83"/>
-<area shape="rect" title=" " alt="" coords="361,293,495,370"/>
-<area shape="rect" title=" " alt="" coords="51,145,160,223"/>
-<area shape="rect" title=" " alt="" coords="701,285,853,377"/>
-<area shape="rect" title=" " alt="" coords="579,145,618,223"/>
-<area shape="rect" title=" " alt="" coords="520,293,677,370"/>
+<area shape="rect" title=" " alt="" coords="473,687,681,999"/>
+<area shape="rect" title=" " alt="" coords="165,510,464,602"/>
+<area shape="rect" title=" " alt="" coords="158,285,317,377"/>
+<area shape="rect" title=" " alt="" coords="197,145,379,223"/>
+<area shape="rect" title=" " alt="" coords="375,5,414,83"/>
+<area shape="rect" title=" " alt="" coords="367,293,502,370"/>
+<area shape="rect" title=" " alt="" coords="55,145,164,223"/>
+<area shape="rect" title=" " alt="" coords="861,285,1013,377"/>
+<area shape="rect" title=" " alt="" coords="691,510,928,602"/>
+<area shape="rect" title=" " alt="" coords="739,145,778,223"/>
+<area shape="rect" title=" " alt="" coords="680,293,837,370"/>
 <area shape="rect" title=" " alt="" coords="5,401,123,479"/>
-<area shape="rect" title=" " alt="" coords="512,510,691,602"/>
-<area shape="rect" title=" " alt="" coords="715,503,901,609"/>
+<area shape="rect" title=" " alt="" coords="488,510,667,602"/>
+<area shape="rect" title=" " alt="" coords="952,503,1139,609"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,6 +123,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abba0e51c3af19398cfca723d15b27b58"><td class="memItemLeft" align="right" valign="top"><a id="abba0e51c3af19398cfca723d15b27b58"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModule</b> (ModuleIdentifier module_id) -&gt; ModulePtr</td></tr>
+<tr class="separator:abba0e51c3af19398cfca723d15b27b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3262026e43f2891f74da6dd5a7f38a0"><td class="memItemLeft" align="right" valign="top"><a id="ac3262026e43f2891f74da6dd5a7f38a0"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetChannel</b> (<a class="el" href="classGpgFrontend_1_1Module_1_1Module.html">ModuleRawPtr</a> module) -&gt; int</td></tr>
 <tr class="separator:ac3262026e43f2891f74da6dd5a7f38a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +138,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetTaskRunner</b> (Mo
 <tr class="memitem:a07a95697a3653f22d5270708ede1f213"><td class="memItemLeft" align="right" valign="top"><a id="a07a95697a3653f22d5270708ede1f213"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalTaskRunner</b> () -&gt; std::optional&lt; TaskRunnerPtr &gt;</td></tr>
 <tr class="separator:a07a95697a3653f22d5270708ede1f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a100b8a083176cbc5788d8af1702fb274"><td class="memItemLeft" align="right" valign="top"><a id="a100b8a083176cbc5788d8af1702fb274"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (const ModulePtr &amp;module) -&gt; bool</td></tr>
-<tr class="separator:a100b8a083176cbc5788d8af1702fb274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc363ae2bc81fbfed0f08315023a2155"><td class="memItemLeft" align="right" valign="top"><a id="abc363ae2bc81fbfed0f08315023a2155"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (const ModulePtr &amp;module, bool integrated_module) -&gt; bool</td></tr>
+<tr class="separator:abc363ae2bc81fbfed0f08315023a2155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66eb6ed5e8d5742a5d271647bf10f85"><td class="memItemLeft" align="right" valign="top"><a id="ac66eb6ed5e8d5742a5d271647bf10f85"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveModule</b> (ModuleIdentifier module_id) -&gt; bool</td></tr>
 <tr class="separator:ac66eb6ed5e8d5742a5d271647bf10f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,12 +150,24 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListenEvent</b> (Modu
 <tr class="memitem:ab84d50a8d389015d29115d28ab8edbde"><td class="memItemLeft" align="right" valign="top"><a id="ab84d50a8d389015d29115d28ab8edbde"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>DeactivateModule</b> (ModuleIdentifier module_id) -&gt; bool</td></tr>
 <tr class="separator:ab84d50a8d389015d29115d28ab8edbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7991d6d2022915212987b7a2d330446"><td class="memItemLeft" align="right" valign="top"><a id="ac7991d6d2022915212987b7a2d330446"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (const EventRefrernce &amp;event) -&gt; bool</td></tr>
-<tr class="separator:ac7991d6d2022915212987b7a2d330446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07acdf211b98d8e917abb19406e9507d"><td class="memItemLeft" align="right" valign="top"><a id="a07acdf211b98d8e917abb19406e9507d"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerEvent</b> (const EventReference &amp;event) -&gt; bool</td></tr>
+<tr class="separator:a07acdf211b98d8e917abb19406e9507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f001188f83e173fd84f89e3973bef2"><td class="memItemLeft" align="right" valign="top"><a id="ae3f001188f83e173fd84f89e3973bef2"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchEvent</b> (const EventTriggerIdentifier &amp;trigger_id) -&gt; std::optional&lt; EventReference &gt;</td></tr>
+<tr class="separator:ae3f001188f83e173fd84f89e3973bef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4262354dcf1d56bbd732afbac5b1e82"><td class="memItemLeft" align="right" valign="top"><a id="aa4262354dcf1d56bbd732afbac5b1e82"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b> (const ModuleIdentifier &amp;m_id) const -&gt; bool</td></tr>
 <tr class="separator:aa4262354dcf1d56bbd732afbac5b1e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b982badccf837f3efe10b1c7e2428b5"><td class="memItemLeft" align="right" valign="top"><a id="a4b982badccf837f3efe10b1c7e2428b5"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsIntegratedModule</b> (ModuleIdentifier m_id) -&gt; bool</td></tr>
+<tr class="separator:a4b982badccf837f3efe10b1c7e2428b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c9166ec3af4f15dd3af00e57ced049"><td class="memItemLeft" align="right" valign="top"><a id="a66c9166ec3af4f15dd3af00e57ced049"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllRegisteredModuleID</b> () -&gt; QList&lt; ModuleIdentifier &gt;</td></tr>
+<tr class="separator:a66c9166ec3af4f15dd3af00e57ced049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e810f356cf0e5073dc5c83bbbbab84"><td class="memItemLeft" align="right" valign="top"><a id="a61e810f356cf0e5073dc5c83bbbbab84"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleListening</b> (const ModuleIdentifier &amp;module_id) -&gt; QList&lt; EventIdentifier &gt;</td></tr>
+<tr class="separator:a61e810f356cf0e5073dc5c83bbbbab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -182,6 +198,9 @@ std::unordered_map&lt; ModuleIdentifier, ModuleRegisterInfoPtr &gt;&#160;</td><t
 <tr class="memitem:aaa6ec2fcc2569cd1b22f419feadaa568"><td class="memItemLeft" align="right" valign="top"><a id="aaa6ec2fcc2569cd1b22f419feadaa568"></a>
 std::map&lt; EventIdentifier, std::unordered_set&lt; ModuleIdentifier &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>module_events_table_</b></td></tr>
 <tr class="separator:aaa6ec2fcc2569cd1b22f419feadaa568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1169966c7200118373bb56d555a89c"><td class="memItemLeft" align="right" valign="top"><a id="a8b1169966c7200118373bb56d555a89c"></a>
+std::map&lt; EventTriggerIdentifier, EventReference &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>module_on_triggering_events_table_</b></td></tr>
+<tr class="separator:a8b1169966c7200118373bb56d555a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc10c7acd6244ef93e85ffb6c4ad267e"><td class="memItemLeft" align="right" valign="top"><a id="acc10c7acd6244ef93e85ffb6c4ad267e"></a>
 std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acquired_channel_</b></td></tr>
 <tr class="separator:acc10c7acd6244ef93e85ffb6c4ad267e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +209,7 @@ TaskRunnerPtr&#160;</td><td class="memItemRight" valign="bottom"><b>default_task
 <tr class="separator:ad8285c96435bc2431481828ca943ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/module/GlobalModuleContext.cpp</li>
+<li>core/module/GlobalModuleContext.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

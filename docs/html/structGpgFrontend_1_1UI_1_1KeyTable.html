@@ -84,26 +84,32 @@ $(document).ready(function(){initNavTree('structGpgFrontend_1_1UI_1_1KeyTable.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structGpgFrontend_1_1UI_1_1KeyTable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GpgFrontend::UI::KeyTable Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
+Inheritance diagram for GpgFrontend::UI::KeyTable:</div>
+<div class="dyncontent">
+<div class="center"><img src="structGpgFrontend_1_1UI_1_1KeyTable__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyTable_inherit__map" alt="Inheritance graph"/></div>
+<map name="aGpgFrontend_1_1UI_1_1KeyTable_inherit__map" id="aGpgFrontend_1_1UI_1_1KeyTable_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,131,199,443"/>
+<area shape="rect" title=" " alt="" coords="53,5,151,83"/>
+</map>
+</div>
+<div class="dynheader">
 Collaboration diagram for GpgFrontend::UI::KeyTable:</div>
 <div class="dyncontent">
 <div class="center"><img src="structGpgFrontend_1_1UI_1_1KeyTable__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1KeyTable_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1KeyTable_coll__map" id="aGpgFrontend_1_1UI_1_1KeyTable_coll__map">
-<area shape="rect" title=" " alt="" coords="29,1021,223,1275"/>
-<area shape="rect" title=" " alt="" coords="5,464,204,556"/>
-<area shape="rect" title=" " alt="" coords="179,145,337,223"/>
-<area shape="rect" title=" " alt="" coords="149,348,375,440"/>
-<area shape="rect" title=" " alt="" coords="348,5,387,83"/>
-<area shape="rect" title=" " alt="" coords="412,247,541,324"/>
-<area shape="rect" title=" " alt="" coords="173,867,362,959"/>
-<area shape="rect" href="classGpgFrontend_1_1GpgKey.html" title=" " alt="" coords="177,580,355,804"/>
+<area shape="rect" title=" " alt="" coords="13,448,206,745"/>
+<area shape="rect" title=" " alt="" coords="5,220,104,297"/>
+<area shape="rect" href="classGpgFrontend_1_1GpgKeyTableProxyModel.html" title=" " alt="" coords="128,132,336,385"/>
+<area shape="rect" title=" " alt="" coords="148,5,316,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -113,92 +119,104 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyTableFilter</b> = std::function&lt; bool(const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;)&gt;</td></tr>
 <tr class="separator:ae99f56db14e21d673535cd34af74b22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a9439670ab24739b9eae4be6e08ccadb9"><td class="memItemLeft" align="right" valign="top"><a id="a9439670ab24739b9eae4be6e08ccadb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalColumnTypeChange</b> (GpgKeyTableColumn)</td></tr>
+<tr class="separator:a9439670ab24739b9eae4be6e08ccadb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae78160011d93abc43a1ca0f28c2ad943"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae78160011d93abc43a1ca0f28c2ad943">KeyTable</a> (QTableWidget *_key_list, KeyListRow::KeyType _select_type, KeyListColumn::InfoType _info_type, KeyTableFilter _filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;, const <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a> &amp;) -&gt; bool { return true;})</td></tr>
-<tr class="memdesc:ae78160011d93abc43a1ca0f28c2ad943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key Table object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae78160011d93abc43a1ca0f28c2ad943">More...</a><br /></td></tr>
-<tr class="separator:ae78160011d93abc43a1ca0f28c2ad943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac381e205c323444098803e0295060f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aaac381e205c323444098803e0295060f">Refresh</a> (KeyLinkListPtr m_keys=nullptr)</td></tr>
-<tr class="separator:aaac381e205c323444098803e0295060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77eba4055ecb7d32fab06f65b80ae07e"><td class="memItemLeft" align="right" valign="top">KeyIdArgsListPtr &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e">GetChecked</a> ()</td></tr>
-<tr class="memdesc:a77eba4055ecb7d32fab06f65b80ae07e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e">More...</a><br /></td></tr>
-<tr class="separator:a77eba4055ecb7d32fab06f65b80ae07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60586d4d753a65fff6c5d707fe6965b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ac60586d4d753a65fff6c5d707fe6965b">KeyTable</a> (QWidget *parent, QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt; model, GpgKeyTableDisplayMode _select_type, GpgKeyTableColumn _info_type, GpgKeyTableProxyModel::KeyFilter _filter=[](const <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &amp;) -&gt; bool { return true;})</td></tr>
+<tr class="memdesc:ac60586d4d753a65fff6c5d707fe6965b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Key Table object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#ac60586d4d753a65fff6c5d707fe6965b">More...</a><br /></td></tr>
+<tr class="separator:ac60586d4d753a65fff6c5d707fe6965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3394f1d7d85542afa4ee8048daf2836a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a3394f1d7d85542afa4ee8048daf2836a">RefreshModel</a> (QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt; model)</td></tr>
+<tr class="separator:a3394f1d7d85542afa4ee8048daf2836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4edca6e101f62b2290d23c3a6019f05"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05">GetChecked</a> () const -&gt; KeyIdArgsListPtr</td></tr>
+<tr class="memdesc:aa4edca6e101f62b2290d23c3a6019f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05">More...</a><br /></td></tr>
+<tr class="separator:aa4edca6e101f62b2290d23c3a6019f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0719f023069e0f6e29db20b6cd0cf5ea"><td class="memItemLeft" align="right" valign="top"><a id="a0719f023069e0f6e29db20b6cd0cf5ea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UncheckALL</b> () const</td></tr>
 <tr class="separator:a0719f023069e0f6e29db20b6cd0cf5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ef84e0b2d9146b962ca4ca79e7f0e9c"><td class="memItemLeft" align="right" valign="top"><a id="a9ef84e0b2d9146b962ca4ca79e7f0e9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckALL</b> () const</td></tr>
 <tr class="separator:a9ef84e0b2d9146b962ca4ca79e7f0e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0713ebbc21e78995db9a856d746fe6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c">SetChecked</a> (KeyIdArgsListPtr key_ids)</td></tr>
-<tr class="memdesc:ae0713ebbc21e78995db9a856d746fe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0713ebbc21e78995db9a856d746fe6c">More...</a><br /></td></tr>
-<tr class="separator:ae0713ebbc21e78995db9a856d746fe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf3e9cf2ec39a47033d274ccf35911a"><td class="memItemLeft" align="right" valign="top"><a id="aacf3e9cf2ec39a47033d274ccf35911a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMenuAbility</b> (KeyMenuAbility::AbilityType ability)</td></tr>
-<tr class="separator:aacf3e9cf2ec39a47033d274ccf35911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae92a5db27c98cd5c5011ed0a185f7652"><td class="memItemLeft" align="right" valign="top"><a id="ae92a5db27c98cd5c5011ed0a185f7652"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterKeyword</b> (QString keyword)</td></tr>
-<tr class="separator:ae92a5db27c98cd5c5011ed0a185f7652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243128d6f7b249e5ab9e712cae11412f"><td class="memItemLeft" align="right" valign="top"><a id="a243128d6f7b249e5ab9e712cae11412f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterKeyword</b> (const QString &amp;keyword)</td></tr>
+<tr class="separator:a243128d6f7b249e5ab9e712cae11412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e701976741c3420c00083746a8215b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a23e701976741c3420c00083746a8215b">IsRowChecked</a> (int row) const -&gt; bool</td></tr>
+<tr class="separator:a23e701976741c3420c00083746a8215b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5d573586f19f072affd1b968e3a206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a5b5d573586f19f072affd1b968e3a206">SetRowChecked</a> (int row) const</td></tr>
+<tr class="memdesc:a5b5d573586f19f072affd1b968e3a206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Row Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a5b5d573586f19f072affd1b968e3a206">More...</a><br /></td></tr>
+<tr class="separator:a5b5d573586f19f072affd1b968e3a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc247fc095b968fed0c07378edcbb96"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a1bc247fc095b968fed0c07378edcbb96">GetRowSelected</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a1bc247fc095b968fed0c07378edcbb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Row Checked object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a1bc247fc095b968fed0c07378edcbb96">More...</a><br /></td></tr>
+<tr class="separator:a1bc247fc095b968fed0c07378edcbb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61276633ea14c79a83ba36c8909ad521"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a61276633ea14c79a83ba36c8909ad521">GetRowCount</a> () const -&gt; int</td></tr>
+<tr class="memdesc:a61276633ea14c79a83ba36c8909ad521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Row Count object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a61276633ea14c79a83ba36c8909ad521">More...</a><br /></td></tr>
+<tr class="separator:a61276633ea14c79a83ba36c8909ad521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c4e15353abb737ad8495fac4ed7c66"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a83c4e15353abb737ad8495fac4ed7c66">GetKeyIdByRow</a> (int row) const -&gt; QString</td></tr>
+<tr class="memdesc:a83c4e15353abb737ad8495fac4ed7c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Key Id By Row object.  <a href="structGpgFrontend_1_1UI_1_1KeyTable.html#a83c4e15353abb737ad8495fac4ed7c66">More...</a><br /></td></tr>
+<tr class="separator:a83c4e15353abb737ad8495fac4ed7c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b5f9ad2d6e5d55044eda3ff0434089"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ae0b5f9ad2d6e5d55044eda3ff0434089">IsPublicKeyByRow</a> (int row) const -&gt; bool</td></tr>
+<tr class="separator:ae0b5f9ad2d6e5d55044eda3ff0434089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac446f9861ec9cd5688b16125097ca25b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ac446f9861ec9cd5688b16125097ca25b">IsPrivateKeyByRow</a> (int row) const -&gt; bool</td></tr>
+<tr class="separator:ac446f9861ec9cd5688b16125097ca25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0636e60388d77feed75bbb6588a45b4e"><td class="memItemLeft" align="right" valign="top"><a id="a0636e60388d77feed75bbb6588a45b4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckAll</b> ()</td></tr>
+<tr class="separator:a0636e60388d77feed75bbb6588a45b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c318ef5e3a1b4c55ccdd39030878ba"><td class="memItemLeft" align="right" valign="top"><a id="a82c318ef5e3a1b4c55ccdd39030878ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UncheckAll</b> ()</td></tr>
+<tr class="separator:a82c318ef5e3a1b4c55ccdd39030878ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a5bce4bf0dc41ac05390a4f93da8b8985"><td class="memItemLeft" align="right" valign="top"><a id="a5bce4bf0dc41ac05390a4f93da8b8985"></a>
-QTableWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>key_list_</b></td></tr>
-<tr class="separator:a5bce4bf0dc41ac05390a4f93da8b8985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0aee9ed16af04048f456abddb4dc007"><td class="memItemLeft" align="right" valign="top"><a id="ab0aee9ed16af04048f456abddb4dc007"></a>
-KeyListRow::KeyType&#160;</td><td class="memItemRight" valign="bottom"><b>select_type_</b></td></tr>
-<tr class="separator:ab0aee9ed16af04048f456abddb4dc007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb37ccd5436993b7f1dd33667a36551e"><td class="memItemLeft" align="right" valign="top"><a id="aeb37ccd5436993b7f1dd33667a36551e"></a>
-KeyListColumn::InfoType&#160;</td><td class="memItemRight" valign="bottom"><b>info_type_</b></td></tr>
-<tr class="separator:aeb37ccd5436993b7f1dd33667a36551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb59ac00683aec02344804ae8c5670a5"><td class="memItemLeft" align="right" valign="top"><a id="adb59ac00683aec02344804ae8c5670a5"></a>
-std::vector&lt; <a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffered_keys_</b></td></tr>
-<tr class="separator:adb59ac00683aec02344804ae8c5670a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1560962e3a6eac5f042ba4963f439f15"><td class="memItemLeft" align="right" valign="top"><a id="a1560962e3a6eac5f042ba4963f439f15"></a>
-KeyTableFilter&#160;</td><td class="memItemRight" valign="bottom"><b>filter_</b></td></tr>
-<tr class="separator:a1560962e3a6eac5f042ba4963f439f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3529625d70c3aa37f3d8cdc3bb8c63"><td class="memItemLeft" align="right" valign="top"><a id="add3529625d70c3aa37f3d8cdc3bb8c63"></a>
-KeyIdArgsListPtr&#160;</td><td class="memItemRight" valign="bottom"><b>checked_key_ids_</b></td></tr>
-<tr class="separator:add3529625d70c3aa37f3d8cdc3bb8c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54360c35b11c469d708b5f57030ed41"><td class="memItemLeft" align="right" valign="top"><a id="ab54360c35b11c469d708b5f57030ed41"></a>
-KeyMenuAbility::AbilityType&#160;</td><td class="memItemRight" valign="bottom"><b>ability_</b></td></tr>
-<tr class="separator:ab54360c35b11c469d708b5f57030ed41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad85c18b1eef6fe95cc4a1127d11457f5"><td class="memItemLeft" align="right" valign="top"><a id="ad85c18b1eef6fe95cc4a1127d11457f5"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>keyword_</b></td></tr>
-<tr class="separator:ad85c18b1eef6fe95cc4a1127d11457f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a12d51b42d486f874ff6580fbc502aa42"><td class="memItemLeft" align="right" valign="top"><a id="a12d51b42d486f874ff6580fbc502aa42"></a>
+QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>model_</b></td></tr>
+<tr class="separator:a12d51b42d486f874ff6580fbc502aa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309a7fd6583d526a493690d1ab810b74"><td class="memItemLeft" align="right" valign="top"><a id="a309a7fd6583d526a493690d1ab810b74"></a>
+<a class="el" href="classGpgFrontend_1_1GpgKeyTableProxyModel.html">GpgKeyTableProxyModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>proxy_model_</b></td></tr>
+<tr class="separator:a309a7fd6583d526a493690d1ab810b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee07c50246584d95f42b027a0a62d85"><td class="memItemLeft" align="right" valign="top"><a id="aaee07c50246584d95f42b027a0a62d85"></a>
+GpgKeyTableColumn&#160;</td><td class="memItemRight" valign="bottom"><b>column_filter_</b></td></tr>
+<tr class="separator:aaee07c50246584d95f42b027a0a62d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae78160011d93abc43a1ca0f28c2ad943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae78160011d93abc43a1ca0f28c2ad943">&#9670;&nbsp;</a></span>KeyTable()</h2>
+<a id="ac60586d4d753a65fff6c5d707fe6965b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60586d4d753a65fff6c5d707fe6965b">&#9670;&nbsp;</a></span>KeyTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GpgFrontend::UI::KeyTable::KeyTable </td>
           <td>(</td>
-          <td class="paramtype">QTableWidget *&#160;</td>
-          <td class="paramname"><em>_key_list</em>, </td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KeyListRow::KeyType&#160;</td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GpgKeyTableDisplayMode&#160;</td>
           <td class="paramname"><em>_select_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KeyListColumn::InfoType&#160;</td>
+          <td class="paramtype">GpgKeyTableColumn&#160;</td>
           <td class="paramname"><em>_info_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KeyTableFilter&#160;</td>
-          <td class="paramname"><em>_filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;,&#160;const&#160;<a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html">KeyTable</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>&#160;</td>
+          <td class="paramtype">GpgKeyTableProxyModel::KeyFilter&#160;</td>
+          <td class="paramname"><em>_filter</em> = <code>[](const&#160;<a class="el" href="classGpgFrontend_1_1GpgKey.html">GpgKey</a>&amp;)&#160;-&gt;&#160;bool&#160;{&#160;return&#160;true;&#160;}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,11 +224,6 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>keyword_</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Construct a new Key Table object. </p>
@@ -224,20 +237,22 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>keyword_</b></td><
   </dd>
 </dl>
 
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1UI_1_1CommonUtils.html#ab8089b1f1a07cb94b1d9ceed1de5a9bd">GpgFrontend::UI::CommonUtils::GetInstance()</a>, <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance()</a>, and <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a83c4e15353abb737ad8495fac4ed7c66">GetKeyIdByRow()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a77eba4055ecb7d32fab06f65b80ae07e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77eba4055ecb7d32fab06f65b80ae07e">&#9670;&nbsp;</a></span>GetChecked()</h2>
+<a id="aa4edca6e101f62b2290d23c3a6019f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4edca6e101f62b2290d23c3a6019f05">&#9670;&nbsp;</a></span>GetChecked()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">KeyIdArgsListPtr &amp; GpgFrontend::UI::KeyTable::GetChecked </td>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::GetChecked </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const -&gt; KeyIdArgsListPtr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,65 +260,224 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>keyword_</b></td><
 <p>Get the Checked object. </p>
 <dl class="section return"><dt>Returns</dt><dd>KeyIdArgsListPtr&amp; </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aaac381e205c323444098803e0295060f">Refresh()</a>.</p>
+<p class="reference">References <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a83c4e15353abb737ad8495fac4ed7c66">GetKeyIdByRow()</a>, <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a61276633ea14c79a83ba36c8909ad521">GetRowCount()</a>, and <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a23e701976741c3420c00083746a8215b">IsRowChecked()</a>.</p>
 
 </div>
 </div>
-<a id="aaac381e205c323444098803e0295060f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac381e205c323444098803e0295060f">&#9670;&nbsp;</a></span>Refresh()</h2>
+<a id="a83c4e15353abb737ad8495fac4ed7c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c4e15353abb737ad8495fac4ed7c66">&#9670;&nbsp;</a></span>GetKeyIdByRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GpgFrontend::UI::KeyTable::Refresh </td>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::GetKeyIdByRow </td>
           <td>(</td>
-          <td class="paramtype">KeyLinkListPtr&#160;</td>
-          <td class="paramname"><em>m_keys</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const -&gt; QString</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Key Id By Row object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>QString </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05">GetChecked()</a>, <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#ac60586d4d753a65fff6c5d707fe6965b">KeyTable()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#af328e623ab620bf89694d23b816d09db">GpgFrontend::UI::KeyList::SetChecked()</a>.</p>
+
+</div>
+</div>
+<a id="a61276633ea14c79a83ba36c8909ad521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61276633ea14c79a83ba36c8909ad521">&#9670;&nbsp;</a></span>GetRowCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::GetRowCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Row Count object. </p>
+<dl class="section return"><dt>Returns</dt><dd>auto </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05">GetChecked()</a>, and <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#af328e623ab620bf89694d23b816d09db">GpgFrontend::UI::KeyList::SetChecked()</a>.</p>
+
+</div>
+</div>
+<a id="a1bc247fc095b968fed0c07378edcbb96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc247fc095b968fed0c07378edcbb96">&#9670;&nbsp;</a></span>GetRowSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::GetRowSelected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Row Checked object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac446f9861ec9cd5688b16125097ca25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac446f9861ec9cd5688b16125097ca25b">&#9670;&nbsp;</a></span>IsPrivateKeyByRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::IsPrivateKeyByRow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="ae0b5f9ad2d6e5d55044eda3ff0434089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b5f9ad2d6e5d55044eda3ff0434089">&#9670;&nbsp;</a></span>IsPublicKeyByRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::IsPublicKeyByRow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="a23e701976741c3420c00083746a8215b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e701976741c3420c00083746a8215b">&#9670;&nbsp;</a></span>IsRowChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GpgFrontend::UI::KeyTable::IsRowChecked </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05">GetChecked()</a>.</p>
+
+</div>
+</div>
+<a id="a3394f1d7d85542afa4ee8048daf2836a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3394f1d7d85542afa4ee8048daf2836a">&#9670;&nbsp;</a></span>RefreshModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GpgFrontend::UI::KeyTable::RefreshModel </td>
+          <td>(</td>
+          <td class="paramtype">QSharedPointer&lt; <a class="el" href="classGpgFrontend_1_1GpgKeyTableModel.html">GpgKeyTableModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m_keys</td><td></td></tr>
+    <tr><td class="paramname">model</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="structGpgFrontend_1_1UI_1_1KeyTable.html#a77eba4055ecb7d32fab06f65b80ae07e">GetChecked()</a>, and <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; GpgKeyGetter &gt;::GetInstance()</a>.</p>
-
 </div>
 </div>
-<a id="ae0713ebbc21e78995db9a856d746fe6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0713ebbc21e78995db9a856d746fe6c">&#9670;&nbsp;</a></span>SetChecked()</h2>
+<a id="a5b5d573586f19f072affd1b968e3a206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5d573586f19f072affd1b968e3a206">&#9670;&nbsp;</a></span>SetRowChecked()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GpgFrontend::UI::KeyTable::SetChecked </td>
+          <td class="memname">void GpgFrontend::UI::KeyTable::SetRowChecked </td>
           <td>(</td>
-          <td class="paramtype">KeyIdArgsListPtr&#160;</td>
-          <td class="paramname"><em>key_ids</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the Checked object. </p>
+<p>Set the Row Checked object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key_ids</td><td></td></tr>
+    <tr><td class="paramname">row</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1KeyList.html#af328e623ab620bf89694d23b816d09db">GpgFrontend::UI::KeyList::SetChecked()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>src/ui/widgets/<a class="el" href="KeyList_8h_source.html">KeyList.h</a></li>
-<li>src/ui/widgets/KeyList.cpp</li>
+<li>ui/widgets/<a class="el" href="KeyTable_8h_source.html">KeyTable.h</a></li>
+<li>ui/widgets/KeyTable.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

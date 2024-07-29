@@ -25,9 +25,9 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Signers\+Picker\+:
 \item 
 \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_a02c3ba737702894fc6d4ac1a1c543ccb}{Signers\+Picker}} (QWidget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Construct a new Signers Picker object. \end{DoxyCompactList}\item 
-Key\+Id\+Args\+List\+Ptr \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_aaed74d4a809b2570d9853d122a7e6c1e}{Get\+Checked\+Signers}} ()
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_a293d71b597bd052836675a4cff8ad28d}{Get\+Checked\+Signers}} () -\/$>$ Key\+Id\+Args\+List\+Ptr
 \begin{DoxyCompactList}\small\item\em Get the Checked Signers object. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_a474c64a891c33ed1bc06fbd8b3347d6a}{Get\+Status}} () const
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1SignersPicker_ae435075cf072e2f42924a1c3915e40b2}{Get\+Status}} () const -\/$>$ bool
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -59,16 +59,12 @@ Construct a new Signers Picker object.
 \end{DoxyParams}
 
 
-References Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Add\+List\+Group\+Tab(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Has\+Actual\+Signing\+Capability().
-
-
-
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignersPicker_aaed74d4a809b2570d9853d122a7e6c1e}\label{classGpgFrontend_1_1UI_1_1SignersPicker_aaed74d4a809b2570d9853d122a7e6c1e}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignersPicker_a293d71b597bd052836675a4cff8ad28d}\label{classGpgFrontend_1_1UI_1_1SignersPicker_a293d71b597bd052836675a4cff8ad28d}} 
 \index{GpgFrontend::UI::SignersPicker@{GpgFrontend::UI::SignersPicker}!GetCheckedSigners@{GetCheckedSigners}}
 \index{GetCheckedSigners@{GetCheckedSigners}!GpgFrontend::UI::SignersPicker@{GpgFrontend::UI::SignersPicker}}
 \doxysubsubsection{\texorpdfstring{GetCheckedSigners()}{GetCheckedSigners()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Get\+Checked\+Signers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Get\+Checked\+Signers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ Key\+Id\+Args\+List\+Ptr}
 
 
 
@@ -77,11 +73,11 @@ Get the Checked Signers object.
 \begin{DoxyReturn}{Returns}
 Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignersPicker_a474c64a891c33ed1bc06fbd8b3347d6a}\label{classGpgFrontend_1_1UI_1_1SignersPicker_a474c64a891c33ed1bc06fbd8b3347d6a}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1SignersPicker_ae435075cf072e2f42924a1c3915e40b2}\label{classGpgFrontend_1_1UI_1_1SignersPicker_ae435075cf072e2f42924a1c3915e40b2}} 
 \index{GpgFrontend::UI::SignersPicker@{GpgFrontend::UI::SignersPicker}!GetStatus@{GetStatus}}
 \index{GetStatus@{GetStatus}!GpgFrontend::UI::SignersPicker@{GpgFrontend::UI::SignersPicker}}
 \doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Signers\+Picker\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ bool}
 
 \begin{DoxyReturn}{Returns}
 
@@ -90,5 +86,5 @@ Gpg\+Frontend\+::\+Key\+Id\+Args\+List\+Ptr
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/dialog/Signers\+Picker.\+h\item 
-src/ui/dialog/Signers\+Picker.\+cpp\end{DoxyCompactItemize}
+ui/dialog/Signers\+Picker.\+h\item 
+ui/dialog/Signers\+Picker.\+cpp\end{DoxyCompactItemize}

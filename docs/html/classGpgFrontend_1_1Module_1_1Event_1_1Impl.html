@@ -95,19 +95,15 @@ Collaboration diagram for GpgFrontend::Module::Event::Impl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1Event_1_1Impl__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1Event_1_1Impl_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1Event_1_1Impl_coll__map" id="aGpgFrontend_1_1Module_1_1Event_1_1Impl_coll__map">
-<area shape="rect" title=" " alt="" coords="5,455,167,708"/>
-<area shape="rect" title=" " alt="" coords="13,285,159,392"/>
-<area shape="rect" title=" " alt="" coords="19,145,153,223"/>
-<area shape="rect" title=" " alt="" coords="29,5,68,83"/>
-<area shape="rect" title=" " alt="" coords="105,5,144,83"/>
+<area shape="rect" title=" " alt="" coords="5,5,177,317"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abab26410964399010372512c7220d49a"><td class="memItemLeft" align="right" valign="top"><a id="abab26410964399010372512c7220d49a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Impl</b> (QString event_id, std::initializer_list&lt; <a class="el" href="structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer.html">ParameterInitializer</a> &gt; params, EventCallback callback)</td></tr>
-<tr class="separator:abab26410964399010372512c7220d49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f770bd147f247715cef5ba8c34ae9b2"><td class="memItemLeft" align="right" valign="top"><a id="a9f770bd147f247715cef5ba8c34ae9b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Impl</b> (QString event_id, Params params, EventCallback callback)</td></tr>
+<tr class="separator:a9f770bd147f247715cef5ba8c34ae9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b905f45a9613f0283097a28360704c"><td class="memItemLeft" align="right" valign="top"><a id="a24b905f45a9613f0283097a28360704c"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const QString &amp;key) const -&gt; std::optional&lt; ParameterValue &gt;</td></tr>
 <tr class="separator:a24b905f45a9613f0283097a28360704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,24 +122,33 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 <tr class="memitem:a366d7ed4b7aea98b709ca3801c8fdb19"><td class="memItemLeft" align="right" valign="top"><a id="a366d7ed4b7aea98b709ca3801c8fdb19"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () -&gt; EventIdentifier</td></tr>
 <tr class="separator:a366d7ed4b7aea98b709ca3801c8fdb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efa54c32630fac6bfd1e7c951f1d172"><td class="memItemLeft" align="right" valign="top"><a id="a0efa54c32630fac6bfd1e7c951f1d172"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (const QString &amp;key, const ParameterValue &amp;value)</td></tr>
-<tr class="separator:a0efa54c32630fac6bfd1e7c951f1d172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad049fbc4f3ed32fd199db79e356a5010"><td class="memItemLeft" align="right" valign="top"><a id="ad049fbc4f3ed32fd199db79e356a5010"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetTriggerIdentifier</b> () -&gt; EventTriggerIdentifier</td></tr>
+<tr class="separator:ad049fbc4f3ed32fd199db79e356a5010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6aaa980d87a5c649370a861ef13f2b"><td class="memItemLeft" align="right" valign="top"><a id="acf6aaa980d87a5c649370a861ef13f2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (const QString &amp;key, const QString &amp;value)</td></tr>
+<tr class="separator:acf6aaa980d87a5c649370a861ef13f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890f54342e4b49b0909e6d0ff6832c63"><td class="memItemLeft" align="right" valign="top"><a id="a890f54342e4b49b0909e6d0ff6832c63"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (const <a class="el" href="structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer.html">ParameterInitializer</a> &amp;param)</td></tr>
 <tr class="separator:a890f54342e4b49b0909e6d0ff6832c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f638128ebc0f0551cd0bbfc9a37b3e"><td class="memItemLeft" align="right" valign="top"><a id="a94f638128ebc0f0551cd0bbfc9a37b3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteCallback</b> (ListenerIdentifier listener_id, const DataObjectPtr &amp;data_object)</td></tr>
-<tr class="separator:a94f638128ebc0f0551cd0bbfc9a37b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc94840a65facaccf1ffd6245193b6e5"><td class="memItemLeft" align="right" valign="top"><a id="afc94840a65facaccf1ffd6245193b6e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteCallback</b> (ListenerIdentifier listener_id, const Params &amp;data_object)</td></tr>
+<tr class="separator:afc94840a65facaccf1ffd6245193b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f01144ed27fd5cbb00a97a689f1ee98"><td class="memItemLeft" align="right" valign="top"><a id="a9f01144ed27fd5cbb00a97a689f1ee98"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>ToModuleEvent</b> () -&gt; <a class="el" href="structGFModuleEvent.html">GFModuleEvent</a> *</td></tr>
+<tr class="separator:a9f01144ed27fd5cbb00a97a689f1ee98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4ebb0e268b010c4312c42e8079fa1a92"><td class="memItemLeft" align="right" valign="top"><a id="a4ebb0e268b010c4312c42e8079fa1a92"></a>
 EventIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>event_identifier_</b></td></tr>
 <tr class="separator:a4ebb0e268b010c4312c42e8079fa1a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6692d1c1802c25a156e197e07c6a05f5"><td class="memItemLeft" align="right" valign="top"><a id="a6692d1c1802c25a156e197e07c6a05f5"></a>
-std::map&lt; QString, ParameterValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data_</b></td></tr>
-<tr class="separator:a6692d1c1802c25a156e197e07c6a05f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129e821faad1df8448e1becb576a1c5c"><td class="memItemLeft" align="right" valign="top"><a id="a129e821faad1df8448e1becb576a1c5c"></a>
+EventTriggerIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>trigger_uuid_</b> = QUuid::createUuid().toString()</td></tr>
+<tr class="separator:a129e821faad1df8448e1becb576a1c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fad90f028a131f9368c29ed260f575"><td class="memItemLeft" align="right" valign="top"><a id="a40fad90f028a131f9368c29ed260f575"></a>
+QMap&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data_</b></td></tr>
+<tr class="separator:a40fad90f028a131f9368c29ed260f575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa787d67889fe7890da3ea105a2c187"><td class="memItemLeft" align="right" valign="top"><a id="affa787d67889fe7890da3ea105a2c187"></a>
 EventCallback&#160;</td><td class="memItemRight" valign="bottom"><b>callback_</b></td></tr>
 <tr class="separator:affa787d67889fe7890da3ea105a2c187"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +157,7 @@ QThread *&#160;</td><td class="memItemRight" valign="bottom"><b>callback_thread_
 <tr class="separator:aff7c72af92afdf96516ce35b8d1352ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/module/Event.cpp</li>
+<li>core/module/Event.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,7 +4,7 @@ var classGpgFrontend_1_1UI_1_1TextEdit =
     [ "CurFilePage", "classGpgFrontend_1_1UI_1_1TextEdit.html#aa30daf558cb85bbdcad55a805a106109", null ],
     [ "CurTextPage", "classGpgFrontend_1_1UI_1_1TextEdit.html#a7aa1230fbf796225bd6b83d381e11a3b", null ],
     [ "LoadFile", "classGpgFrontend_1_1UI_1_1TextEdit.html#a72ed46454c833adb038c36d8d4322d18", null ],
-    [ "maybe_save_current_tab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a8fad090a19479a9fe89432300cca2b6c", null ],
+    [ "maybe_save_current_tab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a3d6f1809bd686bc499c4421da1b239b5", null ],
     [ "MaybeSaveAnyTab", "classGpgFrontend_1_1UI_1_1TextEdit.html#a2ef7669b3b92d4a8c2b0782787653555", null ],
     [ "save_file", "classGpgFrontend_1_1UI_1_1TextEdit.html#a66b6f6633e7ac71e5fe8b7814a81cadf", null ],
     [ "slot_file_page_path_changed", "classGpgFrontend_1_1UI_1_1TextEdit.html#aeb2048d8028907d521f5f35c077832c2", null ],

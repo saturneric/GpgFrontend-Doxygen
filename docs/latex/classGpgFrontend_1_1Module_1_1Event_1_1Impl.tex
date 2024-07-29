@@ -7,14 +7,14 @@ Collaboration diagram for Gpg\+Frontend\+::Module\+::Event\+::Impl\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classGpgFrontend_1_1Module_1_1Event_1_1Impl__coll__graph}
+\includegraphics[width=209pt]{classGpgFrontend_1_1Module_1_1Event_1_1Impl__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_abab26410964399010372512c7220d49a}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_abab26410964399010372512c7220d49a}} 
-{\bfseries Impl} (QString event\+\_\+id, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer}{Parameter\+Initializer}} $>$ params, Event\+Callback callback)
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a9f770bd147f247715cef5ba8c34ae9b2}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a9f770bd147f247715cef5ba8c34ae9b2}} 
+{\bfseries Impl} (QString event\+\_\+id, Params params, Event\+Callback callback)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a24b905f45a9613f0283097a28360704c}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a24b905f45a9613f0283097a28360704c}} 
 auto {\bfseries operator\mbox{[}$\,$\mbox{]}} (const QString \&key) const -\/$>$ std\+::optional$<$ Parameter\+Value $>$
@@ -34,14 +34,20 @@ auto {\bfseries operator$<$} (const \mbox{\hyperlink{classGpgFrontend_1_1Module_
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a366d7ed4b7aea98b709ca3801c8fdb19}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a366d7ed4b7aea98b709ca3801c8fdb19}} 
 auto {\bfseries Get\+Identifier} () -\/$>$ Event\+Identifier
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a0efa54c32630fac6bfd1e7c951f1d172}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a0efa54c32630fac6bfd1e7c951f1d172}} 
-void {\bfseries Add\+Parameter} (const QString \&key, const Parameter\+Value \&value)
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_ad049fbc4f3ed32fd199db79e356a5010}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_ad049fbc4f3ed32fd199db79e356a5010}} 
+auto {\bfseries Get\+Trigger\+Identifier} () -\/$>$ Event\+Trigger\+Identifier
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_acf6aaa980d87a5c649370a861ef13f2b}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_acf6aaa980d87a5c649370a861ef13f2b}} 
+void {\bfseries Add\+Parameter} (const QString \&key, const QString \&value)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a890f54342e4b49b0909e6d0ff6832c63}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a890f54342e4b49b0909e6d0ff6832c63}} 
 void {\bfseries Add\+Parameter} (const \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer}{Parameter\+Initializer}} \&param)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a94f638128ebc0f0551cd0bbfc9a37b3e}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a94f638128ebc0f0551cd0bbfc9a37b3e}} 
-void {\bfseries Execute\+Callback} (Listener\+Identifier listener\+\_\+id, const Data\+Object\+Ptr \&data\+\_\+object)
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_afc94840a65facaccf1ffd6245193b6e5}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_afc94840a65facaccf1ffd6245193b6e5}} 
+void {\bfseries Execute\+Callback} (Listener\+Identifier listener\+\_\+id, const Params \&data\+\_\+object)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a9f01144ed27fd5cbb00a97a689f1ee98}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a9f01144ed27fd5cbb00a97a689f1ee98}} 
+auto {\bfseries To\+Module\+Event} () -\/$>$ \mbox{\hyperlink{structGFModuleEvent}{GFModule\+Event}} $\ast$
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -49,8 +55,11 @@ void {\bfseries Execute\+Callback} (Listener\+Identifier listener\+\_\+id, const
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a4ebb0e268b010c4312c42e8079fa1a92}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a4ebb0e268b010c4312c42e8079fa1a92}} 
 Event\+Identifier {\bfseries event\+\_\+identifier\+\_\+}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a6692d1c1802c25a156e197e07c6a05f5}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a6692d1c1802c25a156e197e07c6a05f5}} 
-std\+::map$<$ QString, Parameter\+Value $>$ {\bfseries data\+\_\+}
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a129e821faad1df8448e1becb576a1c5c}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a129e821faad1df8448e1becb576a1c5c}} 
+Event\+Trigger\+Identifier {\bfseries trigger\+\_\+uuid\+\_\+} = QUuid\+::create\+Uuid().to\+String()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a40fad90f028a131f9368c29ed260f575}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_a40fad90f028a131f9368c29ed260f575}} 
+QMap$<$ QString, QString $>$ {\bfseries data\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1Event_1_1Impl_affa787d67889fe7890da3ea105a2c187}\label{classGpgFrontend_1_1Module_1_1Event_1_1Impl_affa787d67889fe7890da3ea105a2c187}} 
 Event\+Callback {\bfseries callback\+\_\+}
@@ -62,4 +71,4 @@ QThread $\ast$ {\bfseries callback\+\_\+thread\+\_\+} = nullptr
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Event.\+cpp\end{DoxyCompactItemize}
+core/module/Event.\+cpp\end{DoxyCompactItemize}

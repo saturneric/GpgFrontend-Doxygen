@@ -99,7 +99,7 @@ Inheritance diagram for GpgFrontend::UI::FileTreeView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FileTreeView__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map" id="aGpgFrontend_1_1UI_1_1FileTreeView_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,253,809"/>
+<area shape="rect" title=" " alt="" coords="5,131,253,853"/>
 <area shape="rect" title=" " alt="" coords="84,5,175,83"/>
 </map>
 </div>
@@ -108,7 +108,7 @@ Collaboration diagram for GpgFrontend::UI::FileTreeView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1UI_1_1FileTreeView__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1UI_1_1FileTreeView_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1UI_1_1FileTreeView_coll__map" id="aGpgFrontend_1_1UI_1_1FileTreeView_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,253,809"/>
+<area shape="rect" title=" " alt="" coords="5,131,253,853"/>
 <area shape="rect" title=" " alt="" coords="84,5,175,83"/>
 </map>
 </div>
@@ -126,9 +126,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotShowSystemFile</b
 <tr class="separator:a65fdeed89993e4b2c18024732923430e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6a2eaa435630ccf7b65da2f09114dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aed6a2eaa435630ccf7b65da2f09114dd">SlotShowHiddenFile</a> (bool)</td></tr>
 <tr class="separator:aed6a2eaa435630ccf7b65da2f09114dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fcd68338c6bddb149667063edb47c3"><td class="memItemLeft" align="right" valign="top"><a id="a96fcd68338c6bddb149667063edb47c3"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>SlotDeleteSelectedItem</b> () -&gt; void</td></tr>
-<tr class="separator:a96fcd68338c6bddb149667063edb47c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73be3488a31f32b3215fe3b2863a9c3d"><td class="memItemLeft" align="right" valign="top"><a id="a73be3488a31f32b3215fe3b2863a9c3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotDeleteSelectedItem</b> ()</td></tr>
+<tr class="separator:a73be3488a31f32b3215fe3b2863a9c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b80d11c8fa163040ce6b6aac5aaf2f"><td class="memItemLeft" align="right" valign="top"><a id="aa4b80d11c8fa163040ce6b6aac5aaf2f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SlotMkdir</b> ()</td></tr>
 <tr class="separator:aa4b80d11c8fa163040ce6b6aac5aaf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +206,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ac45715a8e6e67f1221a1902ee5d51a44">slot_create_popup_menu</a> ()</td></tr>
 <tr class="memdesc:ac45715a8e6e67f1221a1902ee5d51a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a popup menu object. <br /></td></tr>
 <tr class="separator:ac45715a8e6e67f1221a1902ee5d51a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae652dbd4336f6eb51fbaecb0e26a120b"><td class="memItemLeft" align="right" valign="top"><a id="ae652dbd4336f6eb51fbaecb0e26a120b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slot_adjust_column_widths</b> ()</td></tr>
+<tr class="separator:ae652dbd4336f6eb51fbaecb0e26a120b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -245,6 +248,9 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_make_dire
 <tr class="memitem:ac05d5c25ff89f9f08ab59fee726f50a5"><td class="memItemLeft" align="right" valign="top"><a id="ac05d5c25ff89f9f08ab59fee726f50a5"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_files_</b></td></tr>
 <tr class="separator:ac05d5c25ff89f9f08ab59fee726f50a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9468aff4905d5334a54cfdeecb4525"><td class="memItemLeft" align="right" valign="top"><a id="afd9468aff4905d5334a54cfdeecb4525"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initial_resize_done_</b> = false</td></tr>
+<tr class="separator:afd9468aff4905d5334a54cfdeecb4525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a984bd4a6f7d133d6e6356b46ba2d46d4"></a>
@@ -581,8 +587,8 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>action_compress_
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/ui/widgets/<a class="el" href="FileTreeView_8h_source.html">FileTreeView.h</a></li>
-<li>src/ui/widgets/FileTreeView.cpp</li>
+<li>ui/widgets/<a class="el" href="FileTreeView_8h_source.html">FileTreeView.h</a></li>
+<li>ui/widgets/FileTreeView.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

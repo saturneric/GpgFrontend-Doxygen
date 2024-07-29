@@ -2,6 +2,16 @@
 \label{structGpgFrontend_1_1UI_1_1KeyTable}\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
 
 
+Inheritance diagram for Gpg\+Frontend\+::UI\+::Key\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{structGpgFrontend_1_1UI_1_1KeyTable__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Table\+:
 \nopagebreak
 \begin{figure}[H]
@@ -16,14 +26,20 @@ Collaboration diagram for Gpg\+Frontend\+::UI\+::Key\+Table\+:
 \mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ae99f56db14e21d673535cd34af74b22b}\label{structGpgFrontend_1_1UI_1_1KeyTable_ae99f56db14e21d673535cd34af74b22b}} 
 using {\bfseries Key\+Table\+Filter} = std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&)$>$
 \end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a9439670ab24739b9eae4be6e08ccadb9}\label{structGpgFrontend_1_1UI_1_1KeyTable_a9439670ab24739b9eae4be6e08ccadb9}} 
+void {\bfseries Signal\+Column\+Type\+Change} (Gpg\+Key\+Table\+Column)
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_ae78160011d93abc43a1ca0f28c2ad943}{Key\+Table}} (QTable\+Widget $\ast$\+\_\+key\+\_\+list, Key\+List\+Row\+::\+Key\+Type \+\_\+select\+\_\+type, Key\+List\+Column\+::\+Info\+Type \+\_\+info\+\_\+type, Key\+Table\+Filter \+\_\+filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&, const \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}} \&) -\/$>$ bool \{ return true;\})
+\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_ac60586d4d753a65fff6c5d707fe6965b}{Key\+Table}} (QWidget $\ast$parent, QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$ model, Gpg\+Key\+Table\+Display\+Mode \+\_\+select\+\_\+type, Gpg\+Key\+Table\+Column \+\_\+info\+\_\+type, Gpg\+Key\+Table\+Proxy\+Model\+::\+Key\+Filter \+\_\+filter=\mbox{[}$\,$\mbox{]}(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&) -\/$>$ bool \{ return true;\})
 \begin{DoxyCompactList}\small\item\em Construct a new Key Table object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_aaac381e205c323444098803e0295060f}{Refresh}} (Key\+Link\+List\+Ptr m\+\_\+keys=nullptr)
+void \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a3394f1d7d85542afa4ee8048daf2836a}{Refresh\+Model}} (QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$ model)
 \item 
-Key\+Id\+Args\+List\+Ptr \& \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a77eba4055ecb7d32fab06f65b80ae07e}{Get\+Checked}} ()
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_aa4edca6e101f62b2290d23c3a6019f05}{Get\+Checked}} () const -\/$>$ Key\+Id\+Args\+List\+Ptr
 \begin{DoxyCompactList}\small\item\em Get the Checked object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a0719f023069e0f6e29db20b6cd0cf5ea}\label{structGpgFrontend_1_1UI_1_1KeyTable_a0719f023069e0f6e29db20b6cd0cf5ea}} 
 void {\bfseries Uncheck\+ALL} () const
@@ -31,49 +47,49 @@ void {\bfseries Uncheck\+ALL} () const
 \mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a9ef84e0b2d9146b962ca4ca79e7f0e9c}\label{structGpgFrontend_1_1UI_1_1KeyTable_a9ef84e0b2d9146b962ca4ca79e7f0e9c}} 
 void {\bfseries Check\+ALL} () const
 \item 
-void \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_ae0713ebbc21e78995db9a856d746fe6c}{Set\+Checked}} (Key\+Id\+Args\+List\+Ptr key\+\_\+ids)
-\begin{DoxyCompactList}\small\item\em Set the Checked object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_aacf3e9cf2ec39a47033d274ccf35911a}\label{structGpgFrontend_1_1UI_1_1KeyTable_aacf3e9cf2ec39a47033d274ccf35911a}} 
-void {\bfseries Set\+Menu\+Ability} (Key\+Menu\+Ability\+::\+Ability\+Type ability)
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a243128d6f7b249e5ab9e712cae11412f}\label{structGpgFrontend_1_1UI_1_1KeyTable_a243128d6f7b249e5ab9e712cae11412f}} 
+void {\bfseries Set\+Filter\+Keyword} (const QString \&keyword)
 \item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ae92a5db27c98cd5c5011ed0a185f7652}\label{structGpgFrontend_1_1UI_1_1KeyTable_ae92a5db27c98cd5c5011ed0a185f7652}} 
-void {\bfseries Set\+Filter\+Keyword} (QString keyword)
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a23e701976741c3420c00083746a8215b}{Is\+Row\+Checked}} (int row) const -\/$>$ bool
+\item 
+void \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a5b5d573586f19f072affd1b968e3a206}{Set\+Row\+Checked}} (int row) const
+\begin{DoxyCompactList}\small\item\em Set the Row Checked object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a1bc247fc095b968fed0c07378edcbb96}{Get\+Row\+Selected}} () const -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Set the Row Checked object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a61276633ea14c79a83ba36c8909ad521}{Get\+Row\+Count}} () const -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Get the Row Count object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_a83c4e15353abb737ad8495fac4ed7c66}{Get\+Key\+Id\+By\+Row}} (int row) const -\/$>$ QString
+\begin{DoxyCompactList}\small\item\em Get the Key Id By Row object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_ae0b5f9ad2d6e5d55044eda3ff0434089}{Is\+Public\+Key\+By\+Row}} (int row) const -\/$>$ bool
+\item 
+auto \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable_ac446f9861ec9cd5688b16125097ca25b}{Is\+Private\+Key\+By\+Row}} (int row) const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a0636e60388d77feed75bbb6588a45b4e}\label{structGpgFrontend_1_1UI_1_1KeyTable_a0636e60388d77feed75bbb6588a45b4e}} 
+void {\bfseries Check\+All} ()
+\item 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a82c318ef5e3a1b4c55ccdd39030878ba}\label{structGpgFrontend_1_1UI_1_1KeyTable_a82c318ef5e3a1b4c55ccdd39030878ba}} 
+void {\bfseries Uncheck\+All} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a5bce4bf0dc41ac05390a4f93da8b8985}\label{structGpgFrontend_1_1UI_1_1KeyTable_a5bce4bf0dc41ac05390a4f93da8b8985}} 
-QTable\+Widget $\ast$ {\bfseries key\+\_\+list\+\_\+}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a12d51b42d486f874ff6580fbc502aa42}\label{structGpgFrontend_1_1UI_1_1KeyTable_a12d51b42d486f874ff6580fbc502aa42}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$ {\bfseries model\+\_\+}
 \item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ab0aee9ed16af04048f456abddb4dc007}\label{structGpgFrontend_1_1UI_1_1KeyTable_ab0aee9ed16af04048f456abddb4dc007}} 
-Key\+List\+Row\+::\+Key\+Type {\bfseries select\+\_\+type\+\_\+}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a309a7fd6583d526a493690d1ab810b74}\label{structGpgFrontend_1_1UI_1_1KeyTable_a309a7fd6583d526a493690d1ab810b74}} 
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableProxyModel}{Gpg\+Key\+Table\+Proxy\+Model}} {\bfseries proxy\+\_\+model\+\_\+}
 \item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_aeb37ccd5436993b7f1dd33667a36551e}\label{structGpgFrontend_1_1UI_1_1KeyTable_aeb37ccd5436993b7f1dd33667a36551e}} 
-Key\+List\+Column\+::\+Info\+Type {\bfseries info\+\_\+type\+\_\+}
-\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_adb59ac00683aec02344804ae8c5670a5}\label{structGpgFrontend_1_1UI_1_1KeyTable_adb59ac00683aec02344804ae8c5670a5}} 
-std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} $>$ {\bfseries buffered\+\_\+keys\+\_\+}
-\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a1560962e3a6eac5f042ba4963f439f15}\label{structGpgFrontend_1_1UI_1_1KeyTable_a1560962e3a6eac5f042ba4963f439f15}} 
-Key\+Table\+Filter {\bfseries filter\+\_\+}
-\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_add3529625d70c3aa37f3d8cdc3bb8c63}\label{structGpgFrontend_1_1UI_1_1KeyTable_add3529625d70c3aa37f3d8cdc3bb8c63}} 
-Key\+Id\+Args\+List\+Ptr {\bfseries checked\+\_\+key\+\_\+ids\+\_\+}
-\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ab54360c35b11c469d708b5f57030ed41}\label{structGpgFrontend_1_1UI_1_1KeyTable_ab54360c35b11c469d708b5f57030ed41}} 
-Key\+Menu\+Ability\+::\+Ability\+Type {\bfseries ability\+\_\+}
-\item 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ad85c18b1eef6fe95cc4a1127d11457f5}\label{structGpgFrontend_1_1UI_1_1KeyTable_ad85c18b1eef6fe95cc4a1127d11457f5}} 
-QString {\bfseries keyword\+\_\+}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_aaee07c50246584d95f42b027a0a62d85}\label{structGpgFrontend_1_1UI_1_1KeyTable_aaee07c50246584d95f42b027a0a62d85}} 
+Gpg\+Key\+Table\+Column {\bfseries column\+\_\+filter\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ae78160011d93abc43a1ca0f28c2ad943}\label{structGpgFrontend_1_1UI_1_1KeyTable_ae78160011d93abc43a1ca0f28c2ad943}} 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ac60586d4d753a65fff6c5d707fe6965b}\label{structGpgFrontend_1_1UI_1_1KeyTable_ac60586d4d753a65fff6c5d707fe6965b}} 
 \index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!KeyTable@{KeyTable}}
 \index{KeyTable@{KeyTable}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
 \doxysubsubsection{\texorpdfstring{KeyTable()}{KeyTable()}}
-{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Key\+Table (\begin{DoxyParamCaption}\item[{QTable\+Widget $\ast$}]{\+\_\+key\+\_\+list,  }\item[{Key\+List\+Row\+::\+Key\+Type}]{\+\_\+select\+\_\+type,  }\item[{Key\+List\+Column\+::\+Info\+Type}]{\+\_\+info\+\_\+type,  }\item[{Key\+Table\+Filter}]{\+\_\+filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&,~const~\mbox{\hyperlink{structGpgFrontend_1_1UI_1_1KeyTable}{Key\+Table}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Key\+Table (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$}]{model,  }\item[{Gpg\+Key\+Table\+Display\+Mode}]{\+\_\+select\+\_\+type,  }\item[{Gpg\+Key\+Table\+Column}]{\+\_\+info\+\_\+type,  }\item[{Gpg\+Key\+Table\+Proxy\+Model\+::\+Key\+Filter}]{\+\_\+filter = {\ttfamily \mbox{[}\mbox{]}(const~\mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}}\&)~-\/$>$~bool~\{~return~true;~\}} }\end{DoxyParamCaption})}
 
 
 
@@ -92,12 +108,16 @@ Construct a new Key Table object.
 \end{DoxyParams}
 
 
+References Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), and Get\+Key\+Id\+By\+Row().
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a77eba4055ecb7d32fab06f65b80ae07e}\label{structGpgFrontend_1_1UI_1_1KeyTable_a77eba4055ecb7d32fab06f65b80ae07e}} 
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_aa4edca6e101f62b2290d23c3a6019f05}\label{structGpgFrontend_1_1UI_1_1KeyTable_aa4edca6e101f62b2290d23c3a6019f05}} 
 \index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!GetChecked@{GetChecked}}
 \index{GetChecked@{GetChecked}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
 \doxysubsubsection{\texorpdfstring{GetChecked()}{GetChecked()}}
-{\footnotesize\ttfamily Key\+Id\+Args\+List\+Ptr \& Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Get\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Get\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ Key\+Id\+Args\+List\+Ptr}
 
 
 
@@ -108,41 +128,147 @@ Key\+Id\+Args\+List\+Ptr\&
 \end{DoxyReturn}
 
 
-Referenced by Refresh().
+References Get\+Key\+Id\+By\+Row(), Get\+Row\+Count(), and Is\+Row\+Checked().
 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_aaac381e205c323444098803e0295060f}\label{structGpgFrontend_1_1UI_1_1KeyTable_aaac381e205c323444098803e0295060f}} 
-\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!Refresh@{Refresh}}
-\index{Refresh@{Refresh}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
-\doxysubsubsection{\texorpdfstring{Refresh()}{Refresh()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Refresh (\begin{DoxyParamCaption}\item[{Key\+Link\+List\+Ptr}]{m\+\_\+keys = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a83c4e15353abb737ad8495fac4ed7c66}\label{structGpgFrontend_1_1UI_1_1KeyTable_a83c4e15353abb737ad8495fac4ed7c66}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!GetKeyIdByRow@{GetKeyIdByRow}}
+\index{GetKeyIdByRow@{GetKeyIdByRow}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{GetKeyIdByRow()}{GetKeyIdByRow()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Get\+Key\+Id\+By\+Row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const -\/$>$ QString}
+
+
+
+Get the Key Id By Row object. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em m\+\_\+keys} & \\
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString 
+\end{DoxyReturn}
+
+
+Referenced by Get\+Checked(), Key\+Table(), and Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Checked().
+
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a61276633ea14c79a83ba36c8909ad521}\label{structGpgFrontend_1_1UI_1_1KeyTable_a61276633ea14c79a83ba36c8909ad521}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!GetRowCount@{GetRowCount}}
+\index{GetRowCount@{GetRowCount}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{GetRowCount()}{GetRowCount()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
+
+
+
+Get the Row Count object. 
+
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+
+
+Referenced by Get\+Checked(), and Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Checked().
+
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a1bc247fc095b968fed0c07378edcbb96}\label{structGpgFrontend_1_1UI_1_1KeyTable_a1bc247fc095b968fed0c07378edcbb96}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!GetRowSelected@{GetRowSelected}}
+\index{GetRowSelected@{GetRowSelected}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{GetRowSelected()}{GetRowSelected()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Get\+Row\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ int}
+
+
+
+Set the Row Checked object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ac446f9861ec9cd5688b16125097ca25b}\label{structGpgFrontend_1_1UI_1_1KeyTable_ac446f9861ec9cd5688b16125097ca25b}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!IsPrivateKeyByRow@{IsPrivateKeyByRow}}
+\index{IsPrivateKeyByRow@{IsPrivateKeyByRow}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{IsPrivateKeyByRow()}{IsPrivateKeyByRow()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Is\+Private\+Key\+By\+Row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ae0b5f9ad2d6e5d55044eda3ff0434089}\label{structGpgFrontend_1_1UI_1_1KeyTable_ae0b5f9ad2d6e5d55044eda3ff0434089}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!IsPublicKeyByRow@{IsPublicKeyByRow}}
+\index{IsPublicKeyByRow@{IsPublicKeyByRow}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{IsPublicKeyByRow()}{IsPublicKeyByRow()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Is\+Public\+Key\+By\+Row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a23e701976741c3420c00083746a8215b}\label{structGpgFrontend_1_1UI_1_1KeyTable_a23e701976741c3420c00083746a8215b}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!IsRowChecked@{IsRowChecked}}
+\index{IsRowChecked@{IsRowChecked}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{IsRowChecked()}{IsRowChecked()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Is\+Row\+Checked (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const -\/$>$ bool}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Referenced by Get\+Checked().
+
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a3394f1d7d85542afa4ee8048daf2836a}\label{structGpgFrontend_1_1UI_1_1KeyTable_a3394f1d7d85542afa4ee8048daf2836a}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!RefreshModel@{RefreshModel}}
+\index{RefreshModel@{RefreshModel}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{RefreshModel()}{RefreshModel()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Refresh\+Model (\begin{DoxyParamCaption}\item[{QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$}]{model }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_a5b5d573586f19f072affd1b968e3a206}\label{structGpgFrontend_1_1UI_1_1KeyTable_a5b5d573586f19f072affd1b968e3a206}} 
+\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!SetRowChecked@{SetRowChecked}}
+\index{SetRowChecked@{SetRowChecked}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
+\doxysubsubsection{\texorpdfstring{SetRowChecked()}{SetRowChecked()}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Set\+Row\+Checked (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const}
+
+
+
+Set the Row Checked object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
 \hline
 \end{DoxyParams}
 
 
-References Get\+Checked(), and Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Set\+Checked().
 
-\mbox{\Hypertarget{structGpgFrontend_1_1UI_1_1KeyTable_ae0713ebbc21e78995db9a856d746fe6c}\label{structGpgFrontend_1_1UI_1_1KeyTable_ae0713ebbc21e78995db9a856d746fe6c}} 
-\index{GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}!SetChecked@{SetChecked}}
-\index{SetChecked@{SetChecked}!GpgFrontend::UI::KeyTable@{GpgFrontend::UI::KeyTable}}
-\doxysubsubsection{\texorpdfstring{SetChecked()}{SetChecked()}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Key\+Table\+::\+Set\+Checked (\begin{DoxyParamCaption}\item[{Key\+Id\+Args\+List\+Ptr}]{key\+\_\+ids }\end{DoxyParamCaption})}
-
-
-
-Set the Checked object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em key\+\_\+ids} & \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/widgets/Key\+List.\+h\item 
-src/ui/widgets/Key\+List.\+cpp\end{DoxyCompactItemize}
+ui/widgets/Key\+Table.\+h\item 
+ui/widgets/Key\+Table.\+cpp\end{DoxyCompactItemize}

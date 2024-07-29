@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/core/typedef/GpgTypedef.h Source File</title>
+<title>GpgFrontend Project: core/typedef/GpgTypedef.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('GpgTypedef_8h_source.html',''); initRe
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;gpgme.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;core/model/DataObject.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -119,30 +119,32 @@ $(document).ready(function(){initNavTree('GpgTypedef_8h_source.html',''); initRe
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">using</span> KeyLinkListPtr = std::unique_ptr&lt;GpgKeyLinkList&gt;;           </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">using</span> KeyPtr = std::unique_ptr&lt;GpgKey&gt;;                           </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">using</span> KeyPtrArgsList = <span class="keyword">const</span> std::initializer_list&lt;KeyPtr&gt;;       </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">using</span> GpgSignMode = gpgme_sig_mode_t;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">using</span> GpgKeyList = QList&lt;GpgKey&gt;;                                 </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">using</span> GpgKeyIDList = QList&lt;QString&gt;;                              </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">using</span> GpgOperaRunnable = std::function&lt;<a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>(DataObjectPtr)&gt;;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">using</span> GpgOperationCallback = std::function&lt;void(<a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr)&gt;;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">using</span> GpgOperationFuture = std::future&lt;std::tuple&lt;GpgError, DataObjectPtr&gt;&gt;;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">enum</span> GpgOperation {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  kENCRYPT,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  kDECRYPT,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  kSIGN,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  kVERIFY,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  kENCRYPT_SIGN,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  kDECRYPT_VERIFY</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
-<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:39</div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">using</span> GpgSignMode = gpgme_sig_mode_t;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">using</span> GpgOperaRunnable = std::function&lt;<a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>(DataObjectPtr)&gt;;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">using</span> GpgOperationCallback = std::function&lt;void(<a class="code" href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgError</a>, DataObjectPtr)&gt;;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">using</span> GpgOperationFuture = std::future&lt;std::tuple&lt;GpgError, DataObjectPtr&gt;&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">enum</span> GpgOperation {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  kENCRYPT,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  kDECRYPT,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  kSIGN,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  kVERIFY,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  kENCRYPT_SIGN,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  kDECRYPT_VERIFY</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html_a2470eb154743191c3454203f23d3a2f8"><div class="ttname"><a href="namespaceGpgFrontend.html#a2470eb154743191c3454203f23d3a2f8">GpgFrontend::GpgError</a></div><div class="ttdeci">gpgme_error_t GpgError</div><div class="ttdoc">gpgme error</div><div class="ttdef"><b>Definition:</b> GpgTypedef.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_5ee61370c7cf120e4a8acb7d888f52dd.html">typedef</a></li><li class="navelem"><b>GpgTypedef.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_f57895474fb2132386d6dc7a0712beb4.html">typedef</a></li><li class="navelem"><b>GpgTypedef.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/dialog/help/AboutDialog.h Source File</title>
+<title>GpgFrontend Project: ui/dialog/help/AboutDialog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,61 +108,32 @@ $(document).ready(function(){initNavTree('AboutDialog_8h_source.html',''); initR
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e">TranslatorsTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UpdateTab.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1UpdateTab.html">UpdateTab</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1AboutDialog.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html">AboutDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QLabel* current_version_label_;  </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QLabel* latest_version_label_;   </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QLabel* upgrade_label_;          </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QProgressBar* pb_;               </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QString current_version_;        </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a833c5f709607032bac530aacf389a117">UpdateTab</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> showEvent(QShowEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a29a504b9657b0f553b7c5a6997892a24">slot_show_version_status</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; signals:</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a5e752e01539ccfdc6bbe41a404ddaa95">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a5e752e01539ccfdc6bbe41a404ddaa95">SignalReplyFromUpdateServer</a>(QByteArray data);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1UI_1_1AboutDialog.html">  113</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html">AboutDialog</a> : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GeneralDialog</a> {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab04683ab4c4d682af1e259705c60d85a">AboutDialog</a>(<span class="keywordtype">int</span> defaultIndex, QWidget* parent);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083">showEvent</a>(QShowEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="classGpgFrontend_1_1UI_1_1UpdateTab.html">UpdateTab</a>* update_tab_;  </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html">GpgFrontend::UI::AboutDialog</a></div><div class="ttdoc">Class for handling the about dialog.</div><div class="ttdef"><b>Definition:</b> AboutDialog.h:113</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html_ab04683ab4c4d682af1e259705c60d85a"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab04683ab4c4d682af1e259705c60d85a">GpgFrontend::UI::AboutDialog::AboutDialog</a></div><div class="ttdeci">AboutDialog(int defaultIndex, QWidget *parent)</div><div class="ttdoc">Construct a new About Dialog object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:39</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html_ab799cd5e07b06a8e953d72105c0a1083"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083">GpgFrontend::UI::AboutDialog::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *ev) override</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:74</div></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html#a6eeb23edb8a6cce44b7001e2134beb2a">AboutDialog</a>(<span class="keyword">const</span> QString&amp; default_tab_name, QWidget* parent);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083">showEvent</a>(QShowEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html">GpgFrontend::UI::AboutDialog</a></div><div class="ttdoc">Class for handling the about dialog.</div><div class="ttdef"><b>Definition:</b> AboutDialog.h:72</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html_a6eeb23edb8a6cce44b7001e2134beb2a"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html#a6eeb23edb8a6cce44b7001e2134beb2a">GpgFrontend::UI::AboutDialog::AboutDialog</a></div><div class="ttdeci">AboutDialog(const QString &amp;default_tab_name, QWidget *parent)</div><div class="ttdoc">Construct a new About Dialog object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:39</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1AboutDialog_html_ab799cd5e07b06a8e953d72105c0a1083"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1AboutDialog.html#ab799cd5e07b06a8e953d72105c0a1083">GpgFrontend::UI::AboutDialog::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *ev) override</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:86</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1GeneralDialog_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1GeneralDialog.html">GpgFrontend::UI::GeneralDialog</a></div><div class="ttdef"><b>Definition:</b> GeneralDialog.h:35</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1InfoTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1InfoTab.html">GpgFrontend::UI::InfoTab</a></div><div class="ttdoc">Class containing the main tab of about dialog.</div><div class="ttdef"><b>Definition:</b> AboutDialog.h:40</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1InfoTab_html_a99d8b059ee28ea257981892e0b35d4cc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1InfoTab.html#a99d8b059ee28ea257981892e0b35d4cc">GpgFrontend::UI::InfoTab::InfoTab</a></div><div class="ttdeci">InfoTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Info Tab object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:76</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1InfoTab_html_a99d8b059ee28ea257981892e0b35d4cc"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1InfoTab.html#a99d8b059ee28ea257981892e0b35d4cc">GpgFrontend::UI::InfoTab::InfoTab</a></div><div class="ttdeci">InfoTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Info Tab object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:88</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TranslatorsTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html">GpgFrontend::UI::TranslatorsTab</a></div><div class="ttdoc">Class containing the translator tab of about dialog.</div><div class="ttdef"><b>Definition:</b> AboutDialog.h:56</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TranslatorsTab_html_a89e5c7b9c17fb41b7c7bf461fb8ad99e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e">GpgFrontend::UI::TranslatorsTab::TranslatorsTab</a></div><div class="ttdeci">TranslatorsTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Translators Tab object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:120</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UpdateTab_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UpdateTab.html">GpgFrontend::UI::UpdateTab</a></div><div class="ttdoc">Class containing the main tab of about dialog.</div><div class="ttdef"><b>Definition:</b> AboutDialog.h:72</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UpdateTab_html_a29a504b9657b0f553b7c5a6997892a24"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a29a504b9657b0f553b7c5a6997892a24">GpgFrontend::UI::UpdateTab::slot_show_version_status</a></div><div class="ttdeci">void slot_show_version_status()</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:211</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UpdateTab_html_a5e752e01539ccfdc6bbe41a404ddaa95"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a5e752e01539ccfdc6bbe41a404ddaa95">GpgFrontend::UI::UpdateTab::SignalReplyFromUpdateServer</a></div><div class="ttdeci">void SignalReplyFromUpdateServer(QByteArray data)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1UpdateTab_html_a833c5f709607032bac530aacf389a117"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1UpdateTab.html#a833c5f709607032bac530aacf389a117">GpgFrontend::UI::UpdateTab::UpdateTab</a></div><div class="ttdeci">UpdateTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Update Tab object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:140</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1TranslatorsTab_html_a89e5c7b9c17fb41b7c7bf461fb8ad99e"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1TranslatorsTab.html#a89e5c7b9c17fb41b7c7bf461fb8ad99e">GpgFrontend::UI::TranslatorsTab::TranslatorsTab</a></div><div class="ttdeci">TranslatorsTab(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Translators Tab object.</div><div class="ttdef"><b>Definition:</b> AboutDialog.cpp:132</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_60d155722ad55e64f9b6ab1078feff11.html">dialog</a></li><li class="navelem"><a class="el" href="dir_e2aa8803ed3498b184755f32f6c016d5.html">help</a></li><li class="navelem"><b>AboutDialog.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_b5486df7df4186e58e3d093d14497fc0.html">dialog</a></li><li class="navelem"><a class="el" href="dir_486d7be62fd537a39f7402459bf9a477.html">help</a></li><li class="navelem"><b>AboutDialog.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

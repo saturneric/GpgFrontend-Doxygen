@@ -1,10 +1,5 @@
 \hypertarget{namespaceGpgFrontend_1_1Module}{}\doxysection{Gpg\+Frontend\+::Module Namespace Reference}
 \label{namespaceGpgFrontend_1_1Module}\index{GpgFrontend::Module@{GpgFrontend::Module}}
-\doxysubsection*{Namespaces}
-\begin{DoxyCompactItemize}
-\item 
- \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_1_1SDK}{SDK}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -14,20 +9,25 @@ class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModuleContext}{Global
 \item 
 class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}}
 \item 
+class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTableTreeModel}{Global\+Register\+Table\+Tree\+Model}}
+\item 
 class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Module}{Module}}
 \item 
-class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1ModuleManager}{Module\+Manager}}
-\item 
 struct \mbox{\hyperlink{structGpgFrontend_1_1Module_1_1ModuleInitArgs}{Module\+Init\+Args}}
+\item 
+class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1ModuleManager}{Module\+Manager}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a340abcd73c766e5691e90e504b3cd975}\label{namespaceGpgFrontend_1_1Module_a340abcd73c766e5691e90e504b3cd975}} 
-using {\bfseries Event\+Refrernce} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Event}{Event}} $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_ab5e154977c509d24fd9ef231a39b95cb}\label{namespaceGpgFrontend_1_1Module_ab5e154977c509d24fd9ef231a39b95cb}} 
+using {\bfseries Event\+Reference} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Event}{Event}} $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a0c3d65fe66a8f7e0fc93d0a45a899723}\label{namespaceGpgFrontend_1_1Module_a0c3d65fe66a8f7e0fc93d0a45a899723}} 
 using {\bfseries Event\+Identifier} = QString
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_ad158f92b60cffde02f5d5560fd094d5e}\label{namespaceGpgFrontend_1_1Module_ad158f92b60cffde02f5d5560fd094d5e}} 
+using {\bfseries Event\+Trigger\+Identifier} = QString
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a6abb965a4aab039e321111ac39045a56}\label{namespaceGpgFrontend_1_1Module_a6abb965a4aab039e321111ac39045a56}} 
 using {\bfseries Evnets} = std\+::vector$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1Event}{Event}} $>$
@@ -62,8 +62,8 @@ using {\bfseries LPCallback} = std\+::function$<$ void(Namespace, Key, int, std\
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a939c65185b5cabe42e5cd187b3238e2c}\label{namespaceGpgFrontend_1_1Module_a939c65185b5cabe42e5cd187b3238e2c}} 
 using {\bfseries Module\+Version} = QString
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_abe94f3b69b5f8f65e90c8b7132ff91a9}\label{namespaceGpgFrontend_1_1Module_abe94f3b69b5f8f65e90c8b7132ff91a9}} 
-using {\bfseries Module\+Meta\+Data} = std\+::map$<$ QString, QString $>$
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a540ad137a43cb000c3b5f200c3edc036}\label{namespaceGpgFrontend_1_1Module_a540ad137a43cb000c3b5f200c3edc036}} 
+using {\bfseries Module\+Meta\+Data} = QMap$<$ QString, QString $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_aa21d42624d1f3dc14ada7b1f609a132a}\label{namespaceGpgFrontend_1_1Module_aa21d42624d1f3dc14ada7b1f609a132a}} 
 using {\bfseries Module\+Manger\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1ModuleManager}{Module\+Manager}} $>$
@@ -71,10 +71,25 @@ using {\bfseries Module\+Manger\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperli
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_aaafda413ba6ccb2e0e5e866f11cf8dc5}\label{namespaceGpgFrontend_1_1Module_aaafda413ba6ccb2e0e5e866f11cf8dc5}} 
-{\footnotesize template$<$typename... Args$>$ }\\auto {\bfseries Make\+Event} (const Event\+Identifier \&event\+\_\+id, Args \&\&... args, Event\+::\+Event\+Callback e\+\_\+cb) -\/$>$ Event\+Refrernce
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a0d91609e370db9242c0335aa0fd20b24}\label{namespaceGpgFrontend_1_1Module_a0d91609e370db9242c0335aa0fd20b24}} 
+{\footnotesize template$<$typename... Args$>$ }\\auto {\bfseries Make\+Event} (const Event\+Identifier \&event\+\_\+id, const Event\+::\+Params \&params, Event\+::\+Event\+Callback e\+\_\+cb) -\/$>$ Event\+Reference
 \item 
-auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a9758d9f7ac0d94193aec29be101cee16}{Is\+Module\+Acivate}} (Module\+Identifier id) -\/$>$ bool
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_abed70603b6806aca6d2db12a2448e1e3}\label{namespaceGpgFrontend_1_1Module_abed70603b6806aca6d2db12a2448e1e3}} 
+void {\bfseries Load\+Module\+From\+Path} (const QString \&mods\+\_\+path, bool integrated)
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a671a34cf78c3b30c9148383885a767ff}\label{namespaceGpgFrontend_1_1Module_a671a34cf78c3b30c9148383885a767ff}} 
+auto {\bfseries Load\+Integrated\+Mods} () -\/$>$ bool
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a95a3c32ad6b753ea6535c2b299b61b35}\label{namespaceGpgFrontend_1_1Module_a95a3c32ad6b753ea6535c2b299b61b35}} 
+auto {\bfseries Load\+External\+Mods} () -\/$>$ bool
+\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}\label{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}{Load\+Gpg\+Frontend\+Modules}} (\mbox{\hyperlink{structGpgFrontend_1_1Module_1_1ModuleInitArgs}{Module\+Init\+Args}} args)
+\begin{DoxyCompactList}\small\item\em init the module library \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a25a2b6107e70c76ab0731f2685d94745}\label{namespaceGpgFrontend_1_1Module_a25a2b6107e70c76ab0731f2685d94745}} 
+void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a25a2b6107e70c76ab0731f2685d94745}{Shutdown\+Gpg\+Frontend\+Modules}} ()
+\begin{DoxyCompactList}\small\item\em shutdown the module library \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_ad603c5872c4d356cb59b70b63b99126c}{Is\+Module\+Activate}} (Module\+Identifier id) -\/$>$ bool
 \item 
 auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a5e4614222306688d8c2f36fd4ae23de3}{Upsert\+RTValue}} (const QString \&namespace\+\_\+, const QString \&key, const std\+::any \&value) -\/$>$ bool
 \item 
@@ -88,21 +103,15 @@ auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a92a4ccb9246f778143ad3e88d2
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a548ad04674384cf77aad447bc7eeaac0}\label{namespaceGpgFrontend_1_1Module_a548ad04674384cf77aad447bc7eeaac0}} 
 {\footnotesize template$<$typename T , typename... Args$>$ }\\void {\bfseries Register\+And\+Activate\+Module} (Args \&\&... args)
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_accf5a43c8a79876c005b9d287e8ff245}\label{namespaceGpgFrontend_1_1Module_accf5a43c8a79876c005b9d287e8ff245}} 
-{\footnotesize template$<$typename... Args$>$ }\\void {\bfseries Trigger\+Event} (const Event\+Identifier \&event\+\_\+id, Args \&\&... args, Event\+::\+Event\+Callback e\+\_\+cb=nullptr)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a99beef42d61da8cb9cc0af34360180af}\label{namespaceGpgFrontend_1_1Module_a99beef42d61da8cb9cc0af34360180af}} 
+{\footnotesize template$<$typename... Args$>$ }\\void {\bfseries Trigger\+Event} (const Event\+Identifier \&event\+\_\+id, const Event\+::\+Params \&params=\{\}, Event\+::\+Event\+Callback e\+\_\+cb=nullptr)
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a23a586d557162b22ef92dc316deb1edc}\label{namespaceGpgFrontend_1_1Module_a23a586d557162b22ef92dc316deb1edc}} 
 {\footnotesize template$<$typename T $>$ }\\auto {\bfseries Retrieve\+RTValue\+Typed} (const QString \&namespace\+\_\+, const QString \&key) -\/$>$ std\+::optional$<$ T $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a9e9ac88fcd1c94018139dbe11ce21e90}\label{namespaceGpgFrontend_1_1Module_a9e9ac88fcd1c94018139dbe11ce21e90}} 
 {\footnotesize template$<$typename T $>$ }\\auto {\bfseries Retrieve\+RTValue\+Typed\+Or\+Default} (const QString \&namespace\+\_\+, const QString \&key, const T \&default\+Value) -\/$>$ T
-\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a81e8539a1a6bfb91731e6b17d9f2aa6a}\label{namespaceGpgFrontend_1_1Module_a81e8539a1a6bfb91731e6b17d9f2aa6a}} 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a81e8539a1a6bfb91731e6b17d9f2aa6a}{Load\+Gpg\+Frontend\+Modules}} (\mbox{\hyperlink{structGpgFrontend_1_1Module_1_1ModuleInitArgs}{Module\+Init\+Args}} args)
-\begin{DoxyCompactList}\small\item\em init the module library \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a0bc3154cfe2667afe7bcd95895442d16}\label{namespaceGpgFrontend_1_1Module_a0bc3154cfe2667afe7bcd95895442d16}} 
-void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a0bc3154cfe2667afe7bcd95895442d16}{Shutdown\+Gpg\+Frontend\+Modules}} ()
-\begin{DoxyCompactList}\small\item\em shutdown the module library \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -123,11 +132,11 @@ All the source code of \mbox{\hyperlink{namespaceGpgFrontend}{Gpg\+Frontend}} wa
 SPDX-\/\+License-\/\+Identifier\+: GPL-\/3.\+0-\/or-\/later 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a9758d9f7ac0d94193aec29be101cee16}\label{namespaceGpgFrontend_1_1Module_a9758d9f7ac0d94193aec29be101cee16}} 
-\index{GpgFrontend::Module@{GpgFrontend::Module}!IsModuleAcivate@{IsModuleAcivate}}
-\index{IsModuleAcivate@{IsModuleAcivate}!GpgFrontend::Module@{GpgFrontend::Module}}
-\doxysubsubsection{\texorpdfstring{IsModuleAcivate()}{IsModuleAcivate()}}
-{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Module\+::\+Is\+Module\+Acivate (\begin{DoxyParamCaption}\item[{Module\+Identifier}]{ }\end{DoxyParamCaption}) -\/$>$  bool}
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_ad603c5872c4d356cb59b70b63b99126c}\label{namespaceGpgFrontend_1_1Module_ad603c5872c4d356cb59b70b63b99126c}} 
+\index{GpgFrontend::Module@{GpgFrontend::Module}!IsModuleActivate@{IsModuleActivate}}
+\index{IsModuleActivate@{IsModuleActivate}!GpgFrontend::Module@{GpgFrontend::Module}}
+\doxysubsubsection{\texorpdfstring{IsModuleActivate()}{IsModuleActivate()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Module\+::\+Is\+Module\+Activate (\begin{DoxyParamCaption}\item[{Module\+Identifier}]{ }\end{DoxyParamCaption}) -\/$>$  bool}
 
 \begin{DoxyReturn}{Returns}
 true 
@@ -137,6 +146,10 @@ false
 
 
 References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Module\+Manager $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+menus(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Network\+Tab(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Dirmngr(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Gpg\+Agent(), and Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Key\+Boxd().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_af88df9c72a7e6ec8dede9afc7234aca7}\label{namespaceGpgFrontend_1_1Module_af88df9c72a7e6ec8dede9afc7234aca7}} 
 \index{GpgFrontend::Module@{GpgFrontend::Module}!ListenRTPublishEvent@{ListenRTPublishEvent}}
@@ -199,5 +212,5 @@ References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Module\+Manager $>$
 
 
 
-Referenced by Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Impl(), and Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Restart\+Gpg\+Components().
+Referenced by Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Declare\+Mount\+Point(), Gpg\+Frontend\+::\+Global\+Setting\+Station\+::\+Impl\+::\+Impl(), and Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Restart\+Gpg\+Components().
 

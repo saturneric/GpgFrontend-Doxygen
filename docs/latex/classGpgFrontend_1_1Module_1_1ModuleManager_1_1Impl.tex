@@ -7,20 +7,41 @@ Collaboration diagram for Gpg\+Frontend\+::Module\+::Module\+Manager\+::Impl\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=273pt]{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph}
+\includegraphics[width=290pt]{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4aa0a8ec0bdbbd938da5052dc101be8b}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4aa0a8ec0bdbbd938da5052dc101be8b}} 
+auto {\bfseries Load\+And\+Register\+Module} (const QString \&module\+\_\+library\+\_\+path, bool integrated\+\_\+module) -\/$>$ void
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a752848641e5bac2096d0d40264f59f41}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a752848641e5bac2096d0d40264f59f41}} 
+auto {\bfseries Search\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ Module\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab2ba2f6e4be6000bb9fbffe81824f5c2}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab2ba2f6e4be6000bb9fbffe81824f5c2}} 
+auto {\bfseries List\+All\+Registered\+Module\+ID} () -\/$>$ QList$<$ Module\+Identifier $>$
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a701c5a2ac5ecbad2f7748692c913227e}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a701c5a2ac5ecbad2f7748692c913227e}} 
 void {\bfseries Register\+Module} (const Module\+Ptr \&module)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a41f8154e4d1e211cc1dbc9ba5d847e89}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a41f8154e4d1e211cc1dbc9ba5d847e89}} 
-void {\bfseries Trigger\+Event} (const Event\+Refrernce \&event)
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a993748e05bd4e6048a8f073328244804}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a993748e05bd4e6048a8f073328244804}} 
+void {\bfseries Listen\+Event} (const Module\+Identifier \&module\+\_\+id, const Event\+Identifier \&event\+\_\+id)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac15fef1d9b22075e819855e4b4c09a52}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac15fef1d9b22075e819855e4b4c09a52}} 
+void {\bfseries Trigger\+Event} (const Event\+Reference \&event)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a01eadb53513afb01c88dc3f97a6c2459}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a01eadb53513afb01c88dc3f97a6c2459}} 
+auto {\bfseries Search\+Event} (Event\+Trigger\+Identifier trigger\+\_\+id) -\/$>$ std\+::optional$<$ Event\+Reference $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa4739c519e47ab297a2f9d19c603922a}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa4739c519e47ab297a2f9d19c603922a}} 
+auto {\bfseries Get\+Module\+Listening} (Module\+Identifier module\+\_\+id) -\/$>$ QList$<$ Event\+Identifier $>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a61e2aa9cc72619426fd957b4945c593e}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a61e2aa9cc72619426fd957b4945c593e}} 
 void {\bfseries Active\+Module} (const Module\+Identifier \&identifier)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4d485a8422511976b4cd8e9cbb41c65f}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4d485a8422511976b4cd8e9cbb41c65f}} 
+void {\bfseries Deactivate\+Module} (const Module\+Identifier \&identifier)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa7c7248b68c5598b3efe1a544f7f7428}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_aa7c7248b68c5598b3efe1a544f7f7428}} 
 auto {\bfseries Get\+Task\+Runner} (Module\+Identifier module\+\_\+id) -\/$>$ std\+::optional$<$ Task\+Runner\+Ptr $>$
@@ -39,6 +60,12 @@ auto {\bfseries List\+RTChild\+Keys} (const QString \&n, const QString \&k) -\/$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9ef4a8e708bc009941303ead198f94be}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9ef4a8e708bc009941303ead198f94be}} 
 auto {\bfseries Is\+Module\+Activated} (Module\+Identifier id) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9409a069485e9d928844886a9b5c6597}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9409a069485e9d928844886a9b5c6597}} 
+auto {\bfseries Is\+Integrated\+Module} (Module\+Identifier id) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac25e0c12e44b13b436560e14ba6d2d00}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac25e0c12e44b13b436560e14ba6d2d00}} 
+auto {\bfseries GRT} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $\ast$
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -48,6 +75,9 @@ Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalModu
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab78b9f24728188dc9e884d0cbc284eb7}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ab78b9f24728188dc9e884d0cbc284eb7}} 
 Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $>$ {\bfseries grt\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ad97457a3e8d7157d7aa355283644c623}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ad97457a3e8d7157d7aa355283644c623}} 
+QList$<$ QLibrary $>$ {\bfseries module\+\_\+libraries\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -59,4 +89,4 @@ static Module\+Manger\+Ptr {\bfseries global\+\_\+module\+\_\+manager}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/core/module/Module\+Manager.\+cpp\end{DoxyCompactItemize}
+core/module/Module\+Manager.\+cpp\end{DoxyCompactItemize}

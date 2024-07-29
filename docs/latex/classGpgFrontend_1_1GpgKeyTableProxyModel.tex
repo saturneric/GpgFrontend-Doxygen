@@ -1,0 +1,91 @@
+\hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel}{}\doxysection{Gpg\+Frontend\+::Gpg\+Key\+Table\+Proxy\+Model Class Reference}
+\label{classGpgFrontend_1_1GpgKeyTableProxyModel}\index{GpgFrontend::GpgKeyTableProxyModel@{GpgFrontend::GpgKeyTableProxyModel}}
+
+
+Inheritance diagram for Gpg\+Frontend\+::Gpg\+Key\+Table\+Proxy\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classGpgFrontend_1_1GpgKeyTableProxyModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gpg\+Frontend\+::Gpg\+Key\+Table\+Proxy\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classGpgFrontend_1_1GpgKeyTableProxyModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a24d34135caf408988b6ccc0efcd020ff}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a24d34135caf408988b6ccc0efcd020ff}} 
+using {\bfseries Key\+Filter} = std\+::function$<$ bool(const \mbox{\hyperlink{classGpgFrontend_1_1GpgKey}{Gpg\+Key}} \&)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_aab1effc46600ec350623ec409d7ca9a8}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_aab1effc46600ec350623ec409d7ca9a8}} 
+void {\bfseries Signal\+Favorites\+Changed} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a2bf16243474e1ff27589440c5014536c}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a2bf16243474e1ff27589440c5014536c}} 
+void {\bfseries Signal\+Column\+Type\+Change} (Gpg\+Key\+Table\+Column)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_ac631b7ecb6bc077bda2cff539e6d6ca6}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_ac631b7ecb6bc077bda2cff539e6d6ca6}} 
+{\bfseries Gpg\+Key\+Table\+Proxy\+Model} (QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$ model, Gpg\+Key\+Table\+Display\+Mode display\+\_\+mode, Gpg\+Key\+Table\+Column columns, Key\+Filter filter, QObject $\ast$parent)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a7887c6447661106d7b34f38c265a6e4a}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a7887c6447661106d7b34f38c265a6e4a}} 
+void {\bfseries Set\+Search\+Keywords} (const QString \&keywords)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a43ed6c0afe305e96165a69f1d03f933b}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a43ed6c0afe305e96165a69f1d03f933b}} 
+auto {\bfseries filter\+Accepts\+Row} (int source\+Row, const QModel\+Index \&source\+Parent) const -\/$>$ bool override
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_ade9e5ef6fe02e5528b6697db426a98a6}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_ade9e5ef6fe02e5528b6697db426a98a6}} 
+auto {\bfseries filter\+Accepts\+Column} (int source\+Column, const QModel\+Index \&source\+Parent) const -\/$>$ bool override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_ab5d6657f216a35a680ca3b22abc265b6}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_ab5d6657f216a35a680ca3b22abc265b6}} 
+void {\bfseries slot\+\_\+update\+\_\+favorites} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a6465533b177aeb80afe85972ba9479a1}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a6465533b177aeb80afe85972ba9479a1}} 
+void {\bfseries slot\+\_\+update\+\_\+column\+\_\+type} (Gpg\+Key\+Table\+Column)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a2b9e677b9cae0478a01b013c4bed308f}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a2b9e677b9cae0478a01b013c4bed308f}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$ {\bfseries model\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a5e49c41397fb9df7d64a73ff7ec2eff7}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a5e49c41397fb9df7d64a73ff7ec2eff7}} 
+Gpg\+Key\+Table\+Display\+Mode {\bfseries display\+\_\+mode\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a06887d818658e06dc6827ff395282f5f}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a06887d818658e06dc6827ff395282f5f}} 
+Gpg\+Key\+Table\+Column {\bfseries filter\+\_\+columns\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a808fd110b351dd83e1d6f8a2f5b7bb43}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a808fd110b351dd83e1d6f8a2f5b7bb43}} 
+QString {\bfseries filter\+\_\+keywords\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_a27038131c778298fbfb69a7f622dba7c}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_a27038131c778298fbfb69a7f622dba7c}} 
+QList$<$ QString $>$ {\bfseries favorite\+\_\+fingerprints\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyTableProxyModel_ab8557834534e54dceca87787930c4292}\label{classGpgFrontend_1_1GpgKeyTableProxyModel_ab8557834534e54dceca87787930c4292}} 
+Key\+Filter {\bfseries custom\+\_\+filter\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/model/Gpg\+Key\+Table\+Proxy\+Model.\+h\item 
+core/model/Gpg\+Key\+Table\+Proxy\+Model.\+cpp\end{DoxyCompactItemize}

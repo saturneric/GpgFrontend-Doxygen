@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GpgFrontend Project: src/ui/widgets/FileTreeView.h Source File</title>
+<title>GpgFrontend Project: ui/widgets/FileTreeView.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('FileTreeView_8h_source.html',''); init
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aed6a2eaa435630ccf7b65da2f09114dd">SlotShowHiddenFile</a>(<span class="keywordtype">bool</span>);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">auto</span> SlotDeleteSelectedItem() -&gt; void;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">void</span> SlotDeleteSelectedItem();</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span> SlotMkdir();</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
@@ -158,43 +158,47 @@ $(document).ready(function(){initNavTree('FileTreeView_8h_source.html',''); init
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ac45715a8e6e67f1221a1902ee5d51a44">slot_create_popup_menu</a>();</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  QFileSystemModel* dir_model_;  </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  QString current_path_;         </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  QString selected_path_;        </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  QMenu* popup_menu_;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  QMenu* new_item_action_menu_;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  QAction* action_open_file_;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  QAction* action_rename_file_;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  QAction* action_delete_file_;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  QAction* action_calculate_hash_;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  QAction* action_create_empty_file_;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  QAction* action_make_directory_;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  QAction* action_compress_files_;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">void</span> slot_adjust_column_widths();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  QFileSystemModel* dir_model_;  </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  QString current_path_;         </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  QString selected_path_;        </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  QMenu* popup_menu_;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  QMenu* new_item_action_menu_;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  QAction* action_open_file_;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  QAction* action_rename_file_;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  QAction* action_delete_file_;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  QAction* action_calculate_hash_;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  QAction* action_create_empty_file_;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  QAction* action_make_directory_;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  QAction* action_compress_files_;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">bool</span> initial_resize_done_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;};</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}  <span class="comment">// namespace GpgFrontend::UI</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html">GpgFrontend::UI::FileTreeView</a></div><div class="ttdef"><b>Definition:</b> FileTreeView.h:33</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a1c0a1f76a713872530980b14baaaec29"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a1c0a1f76a713872530980b14baaaec29">GpgFrontend::UI::FileTreeView::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:421</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a3f3f0feea01ce05304e48110d2f33af0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a3f3f0feea01ce05304e48110d2f33af0">GpgFrontend::UI::FileTreeView::slot_file_tree_view_item_double_clicked</a></div><div class="ttdeci">void slot_file_tree_view_item_double_clicked(const QModelIndex &amp;index)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:96</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a1c0a1f76a713872530980b14baaaec29"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a1c0a1f76a713872530980b14baaaec29">GpgFrontend::UI::FileTreeView::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:413</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a3f3f0feea01ce05304e48110d2f33af0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a3f3f0feea01ce05304e48110d2f33af0">GpgFrontend::UI::FileTreeView::slot_file_tree_view_item_double_clicked</a></div><div class="ttdeci">void slot_file_tree_view_item_double_clicked(const QModelIndex &amp;index)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:94</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a4a02715e876d9a36b4bbdf505d8ad8a2"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a4a02715e876d9a36b4bbdf505d8ad8a2">GpgFrontend::UI::FileTreeView::SignalPathChanged</a></div><div class="ttdeci">void SignalPathChanged(const QString &amp;)</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a4e4c6474f46750c5e78cbd10ce6c2cc1"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a4e4c6474f46750c5e78cbd10ce6c2cc1">GpgFrontend::UI::FileTreeView::slot_compress_files</a></div><div class="ttdeci">void slot_compress_files()</div><div class="ttdoc">compress directory into gpg-zip</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:412</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a626b131b432c29f162aa9a47fd9f67f7"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a626b131b432c29f162aa9a47fd9f67f7">GpgFrontend::UI::FileTreeView::slot_show_custom_context_menu</a></div><div class="ttdeci">void slot_show_custom_context_menu(const QPoint &amp;point)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:352</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a697e1df6db810119d3d908d9e88a5212"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a697e1df6db810119d3d908d9e88a5212">GpgFrontend::UI::FileTreeView::GetSelectedPath</a></div><div class="ttdeci">auto GetSelectedPath() -&gt; QString</div><div class="ttdoc">Get the Selected Path object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:151</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a710ca837224c645182f44eea0d6bb0f0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a710ca837224c645182f44eea0d6bb0f0">GpgFrontend::UI::FileTreeView::selectionChanged</a></div><div class="ttdeci">void selectionChanged(const QItemSelection &amp;selected, const QItemSelection &amp;deselected) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:59</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a8addf93e844125d99c5a66fb7364a45d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a8addf93e844125d99c5a66fb7364a45d">GpgFrontend::UI::FileTreeView::GetMousePointGlobal</a></div><div class="ttdeci">auto GetMousePointGlobal(const QPoint &amp;point) -&gt; QPoint</div><div class="ttdoc">Get the Mouse Point Global object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:285</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a984bd4a6f7d133d6e6356b46ba2d46d4"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a984bd4a6f7d133d6e6356b46ba2d46d4">GpgFrontend::UI::FileTreeView::GetCurrentPath</a></div><div class="ttdeci">auto GetCurrentPath() -&gt; QString</div><div class="ttdoc">Get the Current Path object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:123</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_aad531bef81bf8264be3a181efd6b473d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aad531bef81bf8264be3a181efd6b473d">GpgFrontend::UI::FileTreeView::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:241</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_ac45715a8e6e67f1221a1902ee5d51a44"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ac45715a8e6e67f1221a1902ee5d51a44">GpgFrontend::UI::FileTreeView::slot_create_popup_menu</a></div><div class="ttdeci">void slot_create_popup_menu()</div><div class="ttdoc">Create a popup menu object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:289</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_ae65efaff87bd35f7f8f73388c022bdf8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ae65efaff87bd35f7f8f73388c022bdf8">GpgFrontend::UI::FileTreeView::GetPathByClickPoint</a></div><div class="ttdeci">auto GetPathByClickPoint(const QPoint &amp;point) -&gt; QString</div><div class="ttdoc">Get the Path By Click Point object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:139</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_aed6a2eaa435630ccf7b65da2f09114dd"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aed6a2eaa435630ccf7b65da2f09114dd">GpgFrontend::UI::FileTreeView::SlotShowHiddenFile</a></div><div class="ttdeci">void SlotShowHiddenFile(bool)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:132</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a4e4c6474f46750c5e78cbd10ce6c2cc1"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a4e4c6474f46750c5e78cbd10ce6c2cc1">GpgFrontend::UI::FileTreeView::slot_compress_files</a></div><div class="ttdeci">void slot_compress_files()</div><div class="ttdoc">compress directory into gpg-zip</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:402</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a626b131b432c29f162aa9a47fd9f67f7"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a626b131b432c29f162aa9a47fd9f67f7">GpgFrontend::UI::FileTreeView::slot_show_custom_context_menu</a></div><div class="ttdeci">void slot_show_custom_context_menu(const QPoint &amp;point)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:343</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a697e1df6db810119d3d908d9e88a5212"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a697e1df6db810119d3d908d9e88a5212">GpgFrontend::UI::FileTreeView::GetSelectedPath</a></div><div class="ttdeci">auto GetSelectedPath() -&gt; QString</div><div class="ttdoc">Get the Selected Path object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:146</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a710ca837224c645182f44eea0d6bb0f0"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a710ca837224c645182f44eea0d6bb0f0">GpgFrontend::UI::FileTreeView::selectionChanged</a></div><div class="ttdeci">void selectionChanged(const QItemSelection &amp;selected, const QItemSelection &amp;deselected) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:63</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a8addf93e844125d99c5a66fb7364a45d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a8addf93e844125d99c5a66fb7364a45d">GpgFrontend::UI::FileTreeView::GetMousePointGlobal</a></div><div class="ttdeci">auto GetMousePointGlobal(const QPoint &amp;point) -&gt; QPoint</div><div class="ttdoc">Get the Mouse Point Global object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:276</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_a984bd4a6f7d133d6e6356b46ba2d46d4"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#a984bd4a6f7d133d6e6356b46ba2d46d4">GpgFrontend::UI::FileTreeView::GetCurrentPath</a></div><div class="ttdeci">auto GetCurrentPath() -&gt; QString</div><div class="ttdoc">Get the Current Path object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:120</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_aad531bef81bf8264be3a181efd6b473d"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aad531bef81bf8264be3a181efd6b473d">GpgFrontend::UI::FileTreeView::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:232</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_ac45715a8e6e67f1221a1902ee5d51a44"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ac45715a8e6e67f1221a1902ee5d51a44">GpgFrontend::UI::FileTreeView::slot_create_popup_menu</a></div><div class="ttdeci">void slot_create_popup_menu()</div><div class="ttdoc">Create a popup menu object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:280</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_ae65efaff87bd35f7f8f73388c022bdf8"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#ae65efaff87bd35f7f8f73388c022bdf8">GpgFrontend::UI::FileTreeView::GetPathByClickPoint</a></div><div class="ttdeci">auto GetPathByClickPoint(const QPoint &amp;point) -&gt; QString</div><div class="ttdoc">Get the Path By Click Point object.</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:136</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1UI_1_1FileTreeView_html_aed6a2eaa435630ccf7b65da2f09114dd"><div class="ttname"><a href="classGpgFrontend_1_1UI_1_1FileTreeView.html#aed6a2eaa435630ccf7b65da2f09114dd">GpgFrontend::UI::FileTreeView::SlotShowHiddenFile</a></div><div class="ttdeci">void SlotShowHiddenFile(bool)</div><div class="ttdef"><b>Definition:</b> FileTreeView.cpp:129</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1UI_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1UI.html">GpgFrontend::UI</a></div><div class="ttdef"><b>Definition:</b> FileReadTask.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="dir_f3911b9629b0e27ea480d06d47573cbf.html">widgets</a></li><li class="navelem"><b>FileTreeView.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_217eb4ab710484337ad67e70a94d7fea.html">widgets</a></li><li class="navelem"><b>FileTreeView.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

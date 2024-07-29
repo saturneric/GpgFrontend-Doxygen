@@ -1,9 +1,11 @@
 var classGpgFrontend_1_1GpgKeyGetter_1_1Impl =
 [
     [ "Impl", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#a75f042978538c82f0b83308390911b9b", null ],
+    [ "FetchGpgKeyList", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#aaa1270235ce171e1688e45d8b2e31ca6", null ],
     [ "FetchKey", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#a51daaa9e9cfd1e3d306337c8e1ab7598", null ],
     [ "FlushKeyCache", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#a8c80f389de68b024e4fd605cb76d77aa", null ],
     [ "get_key_in_cache", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#a440653d7752aec61575b522d9b7bce25", null ],
+    [ "GetGpgKeyTableModel", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#afdee839af76012b2db5753aeeb402462", null ],
     [ "GetKey", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#ad068623a254dfa8ff312f9a9438f8e88", null ],
     [ "GetKeys", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#ab12e09e35050bf3e27829d36515e8c53", null ],
     [ "GetKeysCopy", "classGpgFrontend_1_1GpgKeyGetter_1_1Impl.html#a026829c74307b41f5a916e28269fe600", null ],

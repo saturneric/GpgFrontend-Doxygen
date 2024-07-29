@@ -8,6 +8,7 @@ var classGpgFrontend_1_1GlobalSettingStation_1_1Impl =
     [ "GetDataObjectsFilesSize", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a09a4ced555c4c4c79c8c408c6d31f1ea", null ],
     [ "GetLogDir", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#af067b39bc0926f1189980d26c027a729", null ],
     [ "GetLogFilesSize", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#abc95158e89167da21c2de6070952c6ad", null ],
+    [ "GetModulesDir", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#adb93836c33829dd5d6e04179848a0e8e", null ],
     [ "GetSettings", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#ae4bf91a8b0bc4367f611206439b26130", null ],
     [ "init_app_secure_key", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a19d61d462efea0147ea5e10ed49c106d", null ],
     [ "app_config_path_", "classGpgFrontend_1_1GlobalSettingStation_1_1Impl.html#a9d047076c437a46c09f1e683d4e99312", null ],

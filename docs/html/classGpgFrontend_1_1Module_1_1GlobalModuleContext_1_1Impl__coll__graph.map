@@ -1,15 +1,16 @@
 <map id="GpgFrontend::Module::GlobalModuleContext::Impl" name="GpgFrontend::Module::GlobalModuleContext::Impl">
-<area shape="rect" id="node1" title=" " alt="" coords="363,672,571,984"/>
-<area shape="rect" id="node2" title=" " alt="" coords="189,510,488,602"/>
-<area shape="rect" id="node3" title=" " alt="" coords="178,285,337,377"/>
-<area shape="rect" id="node4" title=" " alt="" coords="191,145,374,223"/>
-<area shape="rect" id="node5" title=" " alt="" coords="370,5,409,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="361,293,495,370"/>
-<area shape="rect" id="node9" title=" " alt="" coords="51,145,160,223"/>
-<area shape="rect" id="node13" title=" " alt="" coords="701,285,853,377"/>
-<area shape="rect" id="node7" title=" " alt="" coords="579,145,618,223"/>
-<area shape="rect" id="node11" title=" " alt="" coords="520,293,677,370"/>
+<area shape="rect" id="node1" title=" " alt="" coords="473,687,681,999"/>
+<area shape="rect" id="node2" title=" " alt="" coords="165,510,464,602"/>
+<area shape="rect" id="node3" title=" " alt="" coords="158,285,317,377"/>
+<area shape="rect" id="node4" title=" " alt="" coords="197,145,379,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="375,5,414,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="367,293,502,370"/>
+<area shape="rect" id="node9" title=" " alt="" coords="55,145,164,223"/>
+<area shape="rect" id="node13" title=" " alt="" coords="861,285,1013,377"/>
+<area shape="rect" id="node14" title=" " alt="" coords="691,510,928,602"/>
+<area shape="rect" id="node7" title=" " alt="" coords="739,145,778,223"/>
+<area shape="rect" id="node11" title=" " alt="" coords="680,293,837,370"/>
 <area shape="rect" id="node8" title=" " alt="" coords="5,401,123,479"/>
-<area shape="rect" id="node10" title=" " alt="" coords="512,510,691,602"/>
-<area shape="rect" id="node12" title=" " alt="" coords="715,503,901,609"/>
+<area shape="rect" id="node10" title=" " alt="" coords="488,510,667,602"/>
+<area shape="rect" id="node12" title=" " alt="" coords="952,503,1139,609"/>
 </map>

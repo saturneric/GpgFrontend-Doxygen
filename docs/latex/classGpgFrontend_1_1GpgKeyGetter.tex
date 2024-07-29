@@ -47,7 +47,9 @@ auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a12c5b7fa117c7434450365f5
 auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a94b99caf87636d80988a7b9f5c65d444}{Get\+Keys\+Copy}} (const Key\+List\+Ptr \&keys) -\/$>$ Key\+List\+Ptr
 \begin{DoxyCompactList}\small\item\em Get the Keys Copy object. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_afa73240503bbb2bd0ad2a58584d02551}{Get\+Keys\+Copy}} (const Key\+Link\+List\+Ptr \&keys) -\/$>$ Key\+Link\+List\+Ptr
-\begin{DoxyCompactList}\small\item\em Get the Keys Copy object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the Keys Copy object. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyGetter_a6ee844584603cc4fb77d8490b3db441e}{Get\+Gpg\+Key\+Table\+Model}} () -\/$>$ QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} $>$
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -88,6 +90,15 @@ Get all the keys by receiving a linked list.
 
 \begin{DoxyReturn}{Returns}
 Key\+Link\+List\+Ptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a6ee844584603cc4fb77d8490b3db441e}\label{classGpgFrontend_1_1GpgKeyGetter_a6ee844584603cc4fb77d8490b3db441e}} 
+\index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!GetGpgKeyTableModel@{GetGpgKeyTableModel}}
+\index{GetGpgKeyTableModel@{GetGpgKeyTableModel}!GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}}
+\doxysubsubsection{\texorpdfstring{GetGpgKeyTableModel()}{GetGpgKeyTableModel()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+Gpg\+Key\+Getter\+::\+Get\+Gpg\+Key\+Table\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ QShared\+Pointer$<$\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}}$>$}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classGpgFrontend_1_1GpgKeyTableModel}{Gpg\+Key\+Table\+Model}} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classGpgFrontend_1_1GpgKeyGetter_a74075299f1dee8cbccbf46939a1871f5}\label{classGpgFrontend_1_1GpgKeyGetter_a74075299f1dee8cbccbf46939a1871f5}} 
 \index{GpgFrontend::GpgKeyGetter@{GpgFrontend::GpgKeyGetter}!GetKey@{GetKey}}
@@ -183,5 +194,5 @@ Get the Pubkey object.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/core/function/gpg/Gpg\+Key\+Getter.\+h\item 
-src/core/function/gpg/Gpg\+Key\+Getter.\+cpp\end{DoxyCompactItemize}
+core/function/gpg/Gpg\+Key\+Getter.\+h\item 
+core/function/gpg/Gpg\+Key\+Getter.\+cpp\end{DoxyCompactItemize}

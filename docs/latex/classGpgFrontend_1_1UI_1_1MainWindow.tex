@@ -69,8 +69,6 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_afd80e8d6e6a1acad0cd1
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a8ee995b7d1a21ebaab2333a5e79ae77c}{Slot\+Archive\+Decrypt\+Verify}} (const QString \&path)
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}{Slot\+Set\+Restart\+Needed}} (int)
-\item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_abf4b09c9bc6242630c066eb7bf4636bf}{Slot\+Raise\+Pinentry}} (QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgPassphraseContext}{Gpg\+Passphrase\+Context}} $>$)
 \end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -146,7 +144,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a821247d738457c4ee046
 \item 
 void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a24a0b0d974fc5f8fdda60c128a82d957}{slot\+\_\+disable\+\_\+tab\+\_\+actions}} (int number)
 \item 
-void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a2af52ff72325fc4c4d50aefc496100cd}{slot\+\_\+version\+\_\+upgrade\+\_\+nofity}} ()
+void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_af943d62a7aeb866bed2a3f50cd9bb565}{slot\+\_\+version\+\_\+upgrade\+\_\+notify}} ()
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a7ec169e4ce829f37c3605491ac617973}\label{classGpgFrontend_1_1UI_1_1MainWindow_a7ec169e4ce829f37c3605491ac617973}} 
 void {\bfseries slot\+\_\+add\+\_\+key\+\_\+2\+\_\+favourite} ()
@@ -178,10 +176,7 @@ void \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a210ab31f4d949a50507d
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a4df2a05492bf237511d44c5e9cdd9413}\label{classGpgFrontend_1_1UI_1_1MainWindow_a4df2a05492bf237511d44c5e9cdd9413}} 
 void {\bfseries recover\+\_\+editor\+\_\+unsaved\+\_\+pages\+\_\+from\+\_\+cache} ()
-\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}} 
-int \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a5e95f62dac9fba1ead6ec69c145923db}{get\+\_\+restart\+\_\+needed}} () const
-\begin{DoxyCompactList}\small\item\em return true, if restart is needed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -197,8 +192,8 @@ QMenu $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a6d681a306c13
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a1ef17c566a764f707f43593a1f6b3c60}\label{classGpgFrontend_1_1UI_1_1MainWindow_a1ef17c566a764f707f43593a1f6b3c60}} 
 QMenu $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a1ef17c566a764f707f43593a1f6b3c60}{crypt\+\_\+menu\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Submenu for crypt-\/operations. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a2bed0c3b032269c9eb82bc7c068852cb}\label{classGpgFrontend_1_1UI_1_1MainWindow_a2bed0c3b032269c9eb82bc7c068852cb}} 
-QMenu $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a2bed0c3b032269c9eb82bc7c068852cb}{gpg\+\_\+menu\+\_\+}} \{\}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_abd4319366aa14f17a166c9f945d4ae90}\label{classGpgFrontend_1_1UI_1_1MainWindow_abd4319366aa14f17a166c9f945d4ae90}} 
+QMenu $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_abd4319366aa14f17a166c9f945d4ae90}{advance\+\_\+menu\+\_\+}} \{\}
 \begin{DoxyCompactList}\small\item\em Submenu for help-\/operations. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a89fa105ed54d2189d762668262d74c63}\label{classGpgFrontend_1_1UI_1_1MainWindow_a89fa105ed54d2189d762668262d74c63}} 
 QMenu $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a89fa105ed54d2189d762668262d74c63}{help\+\_\+menu\+\_\+}} \{\}
@@ -298,6 +293,9 @@ QAction $\ast$ \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1MainWindow_a0cb094e040
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5dce98bfc01ecbb0a90eaa2b304675ed}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5dce98bfc01ecbb0a90eaa2b304675ed}} 
 QAction $\ast$ {\bfseries gnupg\+\_\+controller\+\_\+open\+\_\+act\+\_\+} \{\}
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_af22cb696fad4c5296b3bdb8b28d8601b}\label{classGpgFrontend_1_1UI_1_1MainWindow_af22cb696fad4c5296b3bdb8b28d8601b}} 
+QAction $\ast$ {\bfseries module\+\_\+controller\+\_\+open\+\_\+act\+\_\+} \{\}
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5bbe43bdd25df9de8c1de23efd8d37a5}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5bbe43bdd25df9de8c1de23efd8d37a5}} 
 QAction $\ast$ {\bfseries clean\+\_\+gpg\+\_\+password\+\_\+cache\+\_\+act\+\_\+} \{\}
 \item 
@@ -327,8 +325,8 @@ QAction $\ast$ {\bfseries copy\+\_\+key\+\_\+id\+\_\+to\+\_\+clipboard\+\_\+act\
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ada8351319a2aaf032fc736f39bdcf9a5}\label{classGpgFrontend_1_1UI_1_1MainWindow_ada8351319a2aaf032fc736f39bdcf9a5}} 
 QAction $\ast$ {\bfseries copy\+\_\+key\+\_\+default\+\_\+uid\+\_\+to\+\_\+clipboard\+\_\+act\+\_\+} \{\}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_ae9bc8395f2d2965c722442f4879902d8}\label{classGpgFrontend_1_1UI_1_1MainWindow_ae9bc8395f2d2965c722442f4879902d8}} 
-QAction $\ast$ {\bfseries add\+\_\+key\+\_\+2\+\_\+favourtie\+\_\+act\+\_\+} \{\}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a08ff2e95d1fb0ac975fcbbdd9e9ae2ce}\label{classGpgFrontend_1_1UI_1_1MainWindow_a08ff2e95d1fb0ac975fcbbdd9e9ae2ce}} 
+QAction $\ast$ {\bfseries add\+\_\+key\+\_\+2\+\_\+favourite\+\_\+act\+\_\+} \{\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a1ddc7e6246dd5065bed0777dca4e6fb6}\label{classGpgFrontend_1_1UI_1_1MainWindow_a1ddc7e6246dd5065bed0777dca4e6fb6}} 
 QAction $\ast$ {\bfseries remove\+\_\+key\+\_\+from\+\_\+favourtie\+\_\+act\+\_\+} \{\}
@@ -417,8 +415,8 @@ QLabel $\ast$ {\bfseries status\+\_\+bar\+\_\+icon\+\_\+} \{\}
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_aad0c8d50952f4592eac7b7221b5d1ec5}\label{classGpgFrontend_1_1UI_1_1MainWindow_aad0c8d50952f4592eac7b7221b5d1ec5}} 
 bool {\bfseries attachment\+\_\+dock\+\_\+created\+\_\+} \{\}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a5806e6f5e740e6aa311e0fa5f064302a}\label{classGpgFrontend_1_1UI_1_1MainWindow_a5806e6f5e740e6aa311e0fa5f064302a}} 
-int {\bfseries restart\+\_\+needed\+\_\+} \{0\}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_afa9ed7e4274e59111227277c077425e5}\label{classGpgFrontend_1_1UI_1_1MainWindow_afa9ed7e4274e59111227277c077425e5}} 
+int {\bfseries restart\+\_\+mode\+\_\+} \{0\}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a24e58eb0b84709ea665db95e54da865b}\label{classGpgFrontend_1_1UI_1_1MainWindow_a24e58eb0b84709ea665db95e54da865b}} 
 bool {\bfseries prohibit\+\_\+update\+\_\+checking\+\_\+} = false
@@ -466,17 +464,17 @@ Create attachment dock window. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1Main
 \doxysubsubsection{\texorpdfstring{create\_dock\_windows()}{create\_dock\_windows()}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+dock\+\_\+windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Create keylist-\/ and attachment-\/dockwindows. 
-
-References Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Disabled(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Expired(), Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Private\+Key(), and Gpg\+Frontend\+::\+Gpg\+Key\+::\+Is\+Revoked().
-
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}\label{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}} 
+Create keylist-\/ and attachment-\/dockwindows. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}\label{classGpgFrontend_1_1UI_1_1MainWindow_a9fbd8a2f5b2b5869276db83a4ad20216}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!create\_menus@{create\_menus}}
 \index{create\_menus@{create\_menus}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{create\_menus()}{create\_menus()}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+menus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-create the menu of the main-\/window. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a1ab1f3f57f9969447491e63f54420585}\label{classGpgFrontend_1_1UI_1_1MainWindow_a1ab1f3f57f9969447491e63f54420585}} 
+create the menu of the main-\/window. 
+
+References Gpg\+Frontend\+::\+Module\+::\+Is\+Module\+Activate().
+
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a1ab1f3f57f9969447491e63f54420585}\label{classGpgFrontend_1_1UI_1_1MainWindow_a1ab1f3f57f9969447491e63f54420585}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!create\_status\_bar@{create\_status\_bar}}
 \index{create\_status\_bar@{create\_status\_bar}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{create\_status\_bar()}{create\_status\_bar()}}
@@ -621,7 +619,7 @@ Referenced by create\+\_\+actions().
 
 Import keys from currently active tab to keylist if possible. 
 
-References Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Cur\+Text\+Page(), edit\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Cur\+Page\+Text\+Edit(), Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Slot\+Import\+Keys(), and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Tab\+Count().
+References Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Cur\+Text\+Page(), edit\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Cur\+Page\+Text\+Edit(), and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Tab\+Count().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a29a811d4d440c79c1bd2cc2bb40cdf7e}\label{classGpgFrontend_1_1UI_1_1MainWindow_a29a811d4d440c79c1bd2cc2bb40cdf7e}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!slot\_open\_file\_tab@{slot\_open\_file\_tab}}
@@ -651,7 +649,7 @@ Open key management dialog. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWin
 
 Open settings-\/dialog. 
 
-References edit\+\_\+, get\+\_\+restart\+\_\+needed(), import\+\_\+button\+\_\+, and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Maybe\+Save\+Any\+Tab().
+References edit\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Cache\+Manager $>$\+::\+Get\+Instance(), import\+\_\+button\+\_\+, and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Maybe\+Save\+Any\+Tab().
 
 
 
@@ -673,11 +671,11 @@ References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>
 \doxysubsubsection{\texorpdfstring{slot\_start\_wizard}{slot\_start\_wizard}}
 {\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+start\+\_\+wizard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
-start the wizard \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a2af52ff72325fc4c4d50aefc496100cd}\label{classGpgFrontend_1_1UI_1_1MainWindow_a2af52ff72325fc4c4d50aefc496100cd}} 
-\index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!slot\_version\_upgrade\_nofity@{slot\_version\_upgrade\_nofity}}
-\index{slot\_version\_upgrade\_nofity@{slot\_version\_upgrade\_nofity}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
-\doxysubsubsection{\texorpdfstring{slot\_version\_upgrade\_nofity}{slot\_version\_upgrade\_nofity}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+version\+\_\+upgrade\+\_\+nofity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+start the wizard \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_af943d62a7aeb866bed2a3f50cd9bb565}\label{classGpgFrontend_1_1UI_1_1MainWindow_af943d62a7aeb866bed2a3f50cd9bb565}} 
+\index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!slot\_version\_upgrade\_notify@{slot\_version\_upgrade\_notify}}
+\index{slot\_version\_upgrade\_notify@{slot\_version\_upgrade\_notify}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
+\doxysubsubsection{\texorpdfstring{slot\_version\_upgrade\_notify}{slot\_version\_upgrade\_notify}}
+{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::slot\+\_\+version\+\_\+upgrade\+\_\+notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 called when need to upgrade. \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_aba7c5572c2736701cc5799776876bbdd}\label{classGpgFrontend_1_1UI_1_1MainWindow_aba7c5572c2736701cc5799776876bbdd}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotArchiveDecrypt@{SlotArchiveDecrypt}}
@@ -859,13 +857,7 @@ Open a new tab for path
 
 References edit\+\_\+, and Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Open\+File().
 
-\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_abf4b09c9bc6242630c066eb7bf4636bf}\label{classGpgFrontend_1_1UI_1_1MainWindow_abf4b09c9bc6242630c066eb7bf4636bf}} 
-\index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotRaisePinentry@{SlotRaisePinentry}}
-\index{SlotRaisePinentry@{SlotRaisePinentry}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
-\doxysubsubsection{\texorpdfstring{SlotRaisePinentry}{SlotRaisePinentry}}
-{\footnotesize\ttfamily void Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::\+Slot\+Raise\+Pinentry (\begin{DoxyParamCaption}\item[{QShared\+Pointer$<$ \mbox{\hyperlink{classGpgFrontend_1_1GpgPassphraseContext}{Gpg\+Passphrase\+Context}} $>$}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
-
-Open a new tab for path \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}\label{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}} 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}\label{classGpgFrontend_1_1UI_1_1MainWindow_a276e843e2f5eda8934fb350fb6f89327}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotSetRestartNeeded@{SlotSetRestartNeeded}}
 \index{SlotSetRestartNeeded@{SlotSetRestartNeeded}!GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}}
 \doxysubsubsection{\texorpdfstring{SlotSetRestartNeeded}{SlotSetRestartNeeded}}
@@ -888,7 +880,7 @@ Referenced by Gpg\+Frontend\+::\+UI\+::\+Settings\+Dialog\+::\+Settings\+Dialog(
 
 Sign the text of currently active tab with the checked private keys 
 
-References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Cur\+Text\+Page(), edit\+\_\+, Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Private\+Checked(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page(), Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Cur\+Page\+Text\+Edit(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Fill\+Text\+Edit\+With\+Text(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera().
+References Gpg\+Frontend\+::\+Check\+Gpg\+Error(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Cur\+Text\+Page(), edit\+\_\+, Gpg\+Frontend\+::\+UI\+::\+Key\+List\+::\+Get\+Checked\+Private\+Key(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Basic\+Operator $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Gpg\+Key\+Getter $>$\+::\+Get\+Instance(), Gpg\+Frontend\+::\+UI\+::\+Plain\+Text\+Editor\+Page\+::\+Get\+Text\+Page(), Gpg\+Frontend\+::\+UI\+::process\+\_\+result\+\_\+analyse(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Cur\+Page\+Text\+Edit(), Gpg\+Frontend\+::\+UI\+::\+Text\+Edit\+::\+Slot\+Fill\+Text\+Edit\+With\+Text(), and Gpg\+Frontend\+::\+UI\+::\+Common\+Utils\+::\+Wait\+For\+Opera().
 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1MainWindow_abd5408ca5f908c330a15db24d959f3a5}\label{classGpgFrontend_1_1UI_1_1MainWindow_abd5408ca5f908c330a15db24d959f3a5}} 
 \index{GpgFrontend::UI::MainWindow@{GpgFrontend::UI::MainWindow}!SlotUpdateCryptoMenuStatus@{SlotUpdateCryptoMenuStatus}}
@@ -943,10 +935,10 @@ Action to copy mail to clipboard
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/ui/main\+\_\+window/Main\+Window.\+h\item 
-src/ui/main\+\_\+window/Main\+Window.\+cpp\item 
-src/ui/main\+\_\+window/Main\+Window\+File\+Slot\+Function.\+cpp\item 
-src/ui/main\+\_\+window/Main\+Window\+Gpg\+Opera\+Function.\+cpp\item 
-src/ui/main\+\_\+window/Main\+Window\+Slot\+Function.\+cpp\item 
-src/ui/main\+\_\+window/Main\+Window\+Slot\+UI.\+cpp\item 
-src/ui/main\+\_\+window/Main\+Window\+UI.\+cpp\end{DoxyCompactItemize}
+ui/main\+\_\+window/Main\+Window.\+h\item 
+ui/main\+\_\+window/Main\+Window.\+cpp\item 
+ui/main\+\_\+window/Main\+Window\+File\+Slot\+Function.\+cpp\item 
+ui/main\+\_\+window/Main\+Window\+Gpg\+Opera\+Function.\+cpp\item 
+ui/main\+\_\+window/Main\+Window\+Slot\+Function.\+cpp\item 
+ui/main\+\_\+window/Main\+Window\+Slot\+UI.\+cpp\item 
+ui/main\+\_\+window/Main\+Window\+UI.\+cpp\end{DoxyCompactItemize}
