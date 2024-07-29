@@ -33,14 +33,14 @@ jobs:
 
       - name: Generate New Document
         run: |
-          cd ${{github.workspace}}/GpgFrontend/
+          cd ${{github.workspace}}/GpgFrontend/src
           doxygen Doxyfile
   
       - name: Copy Document
         run: |
           cd ${{github.workspace}}
           rm -rf ${{github.workspace}}/GpgFrontend-Doxygen/docs
-          cp -rf ${{github.workspace}}/GpgFrontend/docs ${{github.workspace}}/GpgFrontend-Doxygen/docs
+          cp -rf ${{github.workspace}}/GpgFrontend/src/docs ${{github.workspace}}/GpgFrontend-Doxygen/docs
       
       - name: Commit Document
         run: |
