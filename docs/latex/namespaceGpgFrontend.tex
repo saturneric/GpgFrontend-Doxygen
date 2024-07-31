@@ -384,6 +384,9 @@ auto {\bfseries Detect\+Gnu\+PGPath} (QString gpgconf\+\_\+path) -\/$>$ QString
 \mbox{\Hypertarget{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}\label{namespaceGpgFrontend_a250ad950f8337bf5b7c4e35cd7a12ece}} 
 void {\bfseries Init\+Gpg\+Frontend\+Core} (\mbox{\hyperlink{structGpgFrontend_1_1CoreInitArgs}{Core\+Init\+Args}})
 \item 
+\mbox{\Hypertarget{namespaceGpgFrontend_a0c95380793e89ff5b1956747fd101772}\label{namespaceGpgFrontend_a0c95380793e89ff5b1956747fd101772}} 
+void {\bfseries Start\+Monitor\+Core\+Initialization\+Status} ()
+\item 
 \mbox{\Hypertarget{namespaceGpgFrontend_a324ae4dfad2f9cd8a5da9d553798b0c0}\label{namespaceGpgFrontend_a324ae4dfad2f9cd8a5da9d553798b0c0}} 
 void {\bfseries swap} (\mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} \&a, \mbox{\hyperlink{classGpgFrontend_1_1DataObject}{Data\+Object}} \&b) noexcept
 \item 
@@ -461,12 +464,12 @@ auto \mbox{\hyperlink{namespaceGpgFrontend_ad437908d506d86137a0d2fdec4c6c957}{Be
 \item 
 auto \mbox{\hyperlink{namespaceGpgFrontend_ab35d8d68842b492defa701209ead8f68}{GFCompare\+Software\+Version}} (const QString \&a, const QString \&b) -\/$>$ int
 \item 
-auto \mbox{\hyperlink{namespaceGpgFrontend_ae765263e2888a9808f42d1bc675f5f9e}{GFStr\+Dup}} (const QString \&str) -\/$>$ char $\ast$
+auto \mbox{\hyperlink{namespaceGpgFrontend_ab721a0f705d5074127e45cbcb4e72c23}{GFStr\+Dup}} (const QString \&s) -\/$>$ char $\ast$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_ad30a8b82b71524b06853f0e859dcccfd}\label{namespaceGpgFrontend_ad30a8b82b71524b06853f0e859dcccfd}} 
-auto {\bfseries GFUn\+Str\+Dup} (char $\ast$str) -\/$>$ QString
+\mbox{\Hypertarget{namespaceGpgFrontend_a52eef62c339717d3d1cb1f22b5d565bd}\label{namespaceGpgFrontend_a52eef62c339717d3d1cb1f22b5d565bd}} 
+auto {\bfseries GFUn\+Str\+Dup} (char $\ast$s) -\/$>$ QString
 \item 
-auto \mbox{\hyperlink{namespaceGpgFrontend_ab7f0dea9be8c714031454a9f17f5da36}{GFUn\+Str\+Dup}} (const char $\ast$str) -\/$>$ QString
+auto \mbox{\hyperlink{namespaceGpgFrontend_a909ca60e2490aa5d6545aa949b1d3f64}{GFUn\+Str\+Dup}} (const char $\ast$s) -\/$>$ QString
 \item 
 auto \mbox{\hyperlink{namespaceGpgFrontend_a3025370b8e98cbb40c3a0c420162e5a1}{Get\+Only\+File\+Name\+With\+Path}} (const QString \&path) -\/$>$ QString
 \begin{DoxyCompactList}\small\item\em Get the only file name with path object. \end{DoxyCompactList}\item 
@@ -1079,13 +1082,13 @@ int
 \end{DoxyReturn}
 
 
-Referenced by Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy(), Run\+Gpg\+Opera\+Async(), and Run\+Gpg\+Opera\+Sync().
+Referenced by Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Key\+Algo(), Gpg\+Frontend\+::\+Gen\+Key\+Info\+::\+Get\+Supported\+Subkey\+Algo(), Gpg\+Frontend\+::\+Gpg\+Key\+Opera\+::\+Modify\+TOFUPolicy(), Run\+Gpg\+Opera\+Async(), and Run\+Gpg\+Opera\+Sync().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_ae765263e2888a9808f42d1bc675f5f9e}\label{namespaceGpgFrontend_ae765263e2888a9808f42d1bc675f5f9e}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_ab721a0f705d5074127e45cbcb4e72c23}\label{namespaceGpgFrontend_ab721a0f705d5074127e45cbcb4e72c23}} 
 \index{GpgFrontend@{GpgFrontend}!GFStrDup@{GFStrDup}}
 \index{GFStrDup@{GFStrDup}!GpgFrontend@{GpgFrontend}}
 \doxysubsubsection{\texorpdfstring{GFStrDup()}{GFStrDup()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+GFStr\+Dup (\begin{DoxyParamCaption}\item[{const QString \&}]{ }\end{DoxyParamCaption}) -\/$>$  char $\ast$}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+GFStr\+Dup (\begin{DoxyParamCaption}\item[{const QString \&}]{ }\end{DoxyParamCaption}) -\/$>$  char $\ast$}
 
 \begin{DoxyReturn}{Returns}
 char$\ast$ 
@@ -1094,11 +1097,11 @@ char$\ast$
 
 References Secure\+Malloc().
 
-\mbox{\Hypertarget{namespaceGpgFrontend_ab7f0dea9be8c714031454a9f17f5da36}\label{namespaceGpgFrontend_ab7f0dea9be8c714031454a9f17f5da36}} 
+\mbox{\Hypertarget{namespaceGpgFrontend_a909ca60e2490aa5d6545aa949b1d3f64}\label{namespaceGpgFrontend_a909ca60e2490aa5d6545aa949b1d3f64}} 
 \index{GpgFrontend@{GpgFrontend}!GFUnStrDup@{GFUnStrDup}}
 \index{GFUnStrDup@{GFUnStrDup}!GpgFrontend@{GpgFrontend}}
 \doxysubsubsection{\texorpdfstring{GFUnStrDup()}{GFUnStrDup()}}
-{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+GFUn\+Str\+Dup (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ }\end{DoxyParamCaption}) -\/$>$  QString}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+GFUn\+Str\+Dup (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ }\end{DoxyParamCaption}) -\/$>$  QString}
 
 \begin{DoxyReturn}{Returns}
 QString 

@@ -70,6 +70,7 @@ var annotated_dup =
         [ "ListedKeyServerTestTask", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask.html", "classGpgFrontend_1_1UI_1_1ListedKeyServerTestTask" ],
         [ "ProxyConnectionTestTask", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask.html", "classGpgFrontend_1_1UI_1_1ProxyConnectionTestTask" ],
         [ "MountedUIEntry", "structGpgFrontend_1_1UI_1_1MountedUIEntry.html", "structGpgFrontend_1_1UI_1_1MountedUIEntry" ],
+        [ "ModuleTranslatorInfo", "structGpgFrontend_1_1UI_1_1ModuleTranslatorInfo.html", "structGpgFrontend_1_1UI_1_1ModuleTranslatorInfo" ],
         [ "UIModuleManager", "classGpgFrontend_1_1UI_1_1UIModuleManager.html", "classGpgFrontend_1_1UI_1_1UIModuleManager" ],
         [ "UISignalStation", "classGpgFrontend_1_1UI_1_1UISignalStation.html", "classGpgFrontend_1_1UI_1_1UISignalStation" ],
         [ "CommonUtils", "classGpgFrontend_1_1UI_1_1CommonUtils.html", "classGpgFrontend_1_1UI_1_1CommonUtils" ],

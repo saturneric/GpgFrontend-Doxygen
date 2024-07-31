@@ -96,17 +96,20 @@ Collaboration diagram for GpgFrontend::Module::ModuleManager::Impl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_coll__map" id="aGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_coll__map">
-<area shape="rect" title=" " alt="" coords="5,285,224,553"/>
-<area shape="rect" title=" " alt="" coords="36,145,193,223"/>
-<area shape="rect" title=" " alt="" coords="95,5,134,83"/>
+<area shape="rect" title=" " alt="" coords="5,285,248,568"/>
+<area shape="rect" title=" " alt="" coords="48,145,205,223"/>
+<area shape="rect" title=" " alt="" coords="107,5,146,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4aa0a8ec0bdbbd938da5052dc101be8b"><td class="memItemLeft" align="right" valign="top"><a id="a4aa0a8ec0bdbbd938da5052dc101be8b"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAndRegisterModule</b> (const QString &amp;module_library_path, bool integrated_module) -&gt; void</td></tr>
-<tr class="separator:a4aa0a8ec0bdbbd938da5052dc101be8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b53996d4667b929dc9903c107d4818"><td class="memItemLeft" align="right" valign="top"><a id="a93b53996d4667b929dc9903c107d4818"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAndRegisterModule</b> (const QString &amp;module_library_path, bool integrated_module) -&gt; bool</td></tr>
+<tr class="separator:a93b53996d4667b929dc9903c107d4818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94635c2ffb566871099eb94cb3a07915"><td class="memItemLeft" align="right" valign="top"><a id="a94635c2ffb566871099eb94cb3a07915"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNeedRegisterModulesNum</b> (int n)</td></tr>
+<tr class="separator:a94635c2ffb566871099eb94cb3a07915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752848641e5bac2096d0d40264f59f41"><td class="memItemLeft" align="right" valign="top"><a id="a752848641e5bac2096d0d40264f59f41"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModule</b> (ModuleIdentifier module_id) -&gt; ModulePtr</td></tr>
 <tr class="separator:a752848641e5bac2096d0d40264f59f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +158,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b>
 <tr class="memitem:a9409a069485e9d928844886a9b5c6597"><td class="memItemLeft" align="right" valign="top"><a id="a9409a069485e9d928844886a9b5c6597"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsIntegratedModule</b> (ModuleIdentifier id) -&gt; bool</td></tr>
 <tr class="separator:a9409a069485e9d928844886a9b5c6597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8981e85e13c704653976c9e22f38d04"><td class="memItemLeft" align="right" valign="top"><a id="ae8981e85e13c704653976c9e22f38d04"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsAllModulesRegistered</b> ()</td></tr>
+<tr class="separator:ae8981e85e13c704653976c9e22f38d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac25e0c12e44b13b436560e14ba6d2d00"><td class="memItemLeft" align="right" valign="top"><a id="ac25e0c12e44b13b436560e14ba6d2d00"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GRT</b> () -&gt; <a class="el" href="classGpgFrontend_1_1Module_1_1GlobalRegisterTable.html">GlobalRegisterTable</a> *</td></tr>
 <tr class="separator:ac25e0c12e44b13b436560e14ba6d2d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +176,9 @@ SecureUniquePtr&lt; <a class="el" href="classGpgFrontend_1_1Module_1_1GlobalRegi
 <tr class="memitem:ad97457a3e8d7157d7aa355283644c623"><td class="memItemLeft" align="right" valign="top"><a id="ad97457a3e8d7157d7aa355283644c623"></a>
 QList&lt; QLibrary &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>module_libraries_</b></td></tr>
 <tr class="separator:ad97457a3e8d7157d7aa355283644c623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4ba216c8a1fa78ecfb2afc6f337083"><td class="memItemLeft" align="right" valign="top"><a id="a8b4ba216c8a1fa78ecfb2afc6f337083"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>need_register_modules_</b> = -1</td></tr>
+<tr class="separator:a8b4ba216c8a1fa78ecfb2afc6f337083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>

@@ -31,17 +31,23 @@ class \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl}{Impl
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_ad699694b74ada1edd1fcf9d094c92a7d}\label{classGpgFrontend_1_1Module_1_1ModuleManager_ad699694b74ada1edd1fcf9d094c92a7d}} 
 {\bfseries Module\+Manager} (int channel)
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_aaa8675386da0e23a37f6475ae0b52196}\label{classGpgFrontend_1_1Module_1_1ModuleManager_aaa8675386da0e23a37f6475ae0b52196}} 
-auto {\bfseries Load\+Module} (QString, bool) -\/$>$ void
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_a2d2a7d1bdc361dcbc56d087080ef924a}\label{classGpgFrontend_1_1Module_1_1ModuleManager_a2d2a7d1bdc361dcbc56d087080ef924a}} 
+auto {\bfseries Load\+Module} (QString, bool) -\/$>$ bool
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_a708ed5ee3ab6684ddfa3d7ec00703693}\label{classGpgFrontend_1_1Module_1_1ModuleManager_a708ed5ee3ab6684ddfa3d7ec00703693}} 
 auto {\bfseries Search\+Module} (Module\+Identifier) -\/$>$ Module\+Ptr
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_acba35bcd4e683d34cd3a418418240f5c}\label{classGpgFrontend_1_1Module_1_1ModuleManager_acba35bcd4e683d34cd3a418418240f5c}} 
+void {\bfseries Set\+Need\+Register\+Modules\+Num} (int)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_ae04a5eac55ad8c96eca86e59eb0ef88d}\label{classGpgFrontend_1_1Module_1_1ModuleManager_ae04a5eac55ad8c96eca86e59eb0ef88d}} 
 auto {\bfseries List\+All\+Registered\+Module\+ID} () -\/$>$ QList$<$ Module\+Identifier $>$
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_a654aceac22bb8f153617181658705771}\label{classGpgFrontend_1_1Module_1_1ModuleManager_a654aceac22bb8f153617181658705771}} 
 void {\bfseries Register\+Module} (Module\+Ptr)
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_aac0cb9f68bd6434ca0a05399f50af40b}\label{classGpgFrontend_1_1Module_1_1ModuleManager_aac0cb9f68bd6434ca0a05399f50af40b}} 
+auto {\bfseries Is\+All\+Modules\+Registered} () -\/$>$ bool
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_a3b1d20608829a48688c53ecb24e6a97b}\label{classGpgFrontend_1_1Module_1_1ModuleManager_a3b1d20608829a48688c53ecb24e6a97b}} 
 auto {\bfseries Is\+Module\+Activated} (Module\+Identifier) -\/$>$ bool

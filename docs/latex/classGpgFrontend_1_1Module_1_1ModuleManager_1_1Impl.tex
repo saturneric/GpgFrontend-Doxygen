@@ -7,14 +7,17 @@ Collaboration diagram for Gpg\+Frontend\+::Module\+::Module\+Manager\+::Impl\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=290pt]{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph}
+\includegraphics[width=299pt]{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4aa0a8ec0bdbbd938da5052dc101be8b}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a4aa0a8ec0bdbbd938da5052dc101be8b}} 
-auto {\bfseries Load\+And\+Register\+Module} (const QString \&module\+\_\+library\+\_\+path, bool integrated\+\_\+module) -\/$>$ void
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a93b53996d4667b929dc9903c107d4818}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a93b53996d4667b929dc9903c107d4818}} 
+auto {\bfseries Load\+And\+Register\+Module} (const QString \&module\+\_\+library\+\_\+path, bool integrated\+\_\+module) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a94635c2ffb566871099eb94cb3a07915}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a94635c2ffb566871099eb94cb3a07915}} 
+void {\bfseries Set\+Need\+Register\+Modules\+Num} (int n)
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a752848641e5bac2096d0d40264f59f41}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a752848641e5bac2096d0d40264f59f41}} 
 auto {\bfseries Search\+Module} (Module\+Identifier module\+\_\+id) -\/$>$ Module\+Ptr
@@ -64,6 +67,9 @@ auto {\bfseries Is\+Module\+Activated} (Module\+Identifier id) -\/$>$ bool
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9409a069485e9d928844886a9b5c6597}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a9409a069485e9d928844886a9b5c6597}} 
 auto {\bfseries Is\+Integrated\+Module} (Module\+Identifier id) -\/$>$ bool
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ae8981e85e13c704653976c9e22f38d04}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ae8981e85e13c704653976c9e22f38d04}} 
+auto {\bfseries Is\+All\+Modules\+Registered} ()
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac25e0c12e44b13b436560e14ba6d2d00}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ac25e0c12e44b13b436560e14ba6d2d00}} 
 auto {\bfseries GRT} () -\/$>$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegisterTable}{Global\+Register\+Table}} $\ast$
 \end{DoxyCompactItemize}
@@ -78,6 +84,9 @@ Secure\+Unique\+Ptr$<$ \mbox{\hyperlink{classGpgFrontend_1_1Module_1_1GlobalRegi
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ad97457a3e8d7157d7aa355283644c623}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_ad97457a3e8d7157d7aa355283644c623}} 
 QList$<$ QLibrary $>$ {\bfseries module\+\_\+libraries\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a8b4ba216c8a1fa78ecfb2afc6f337083}\label{classGpgFrontend_1_1Module_1_1ModuleManager_1_1Impl_a8b4ba216c8a1fa78ecfb2afc6f337083}} 
+int {\bfseries need\+\_\+register\+\_\+modules\+\_\+} = -\/1
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}

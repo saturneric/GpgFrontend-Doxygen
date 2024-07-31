@@ -109,6 +109,7 @@ var hierarchy =
     [ "GpgFrontend::Module::ModuleInitArgs", "structGpgFrontend_1_1Module_1_1ModuleInitArgs.html", null ],
     [ "GpgFrontend::Module::GlobalModuleContext::Impl::ModuleRegisterInfo", "structGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_1_1ModuleRegisterInfo.html", null ],
     [ "GpgFrontend::ModuleSO", "structGpgFrontend_1_1ModuleSO.html", null ],
+    [ "GpgFrontend::UI::ModuleTranslatorInfo", "structGpgFrontend_1_1UI_1_1ModuleTranslatorInfo.html", null ],
     [ "GpgFrontend::UI::MountedUIEntry", "structGpgFrontend_1_1UI_1_1MountedUIEntry.html", null ],
     [ "GpgFrontend::Module::Event::ParameterInitializer", "structGpgFrontend_1_1Module_1_1Event_1_1ParameterInitializer.html", null ],
     [ "GpgFrontend::PointerConverter< T >", "classGpgFrontend_1_1PointerConverter.html", null ],

@@ -9,6 +9,7 @@ var classGpgFrontend_1_1Module_1_1GlobalModuleContext =
     [ "GetDefaultChannel", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#a627cfb3a280954d43ed09aa16d982e08", null ],
     [ "GetGlobalTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#a446db76f3518eb46133e14366ff13a05", null ],
     [ "GetModuleListening", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#aec9f17c91c5cb6da83b3d1a5af800895", null ],
+    [ "GetRegisteredModuleNum", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#afd31d6f0558cbf00a261e85f7ce24ff6", null ],
     [ "GetTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#ae2e989ee80541129e050c86a48ed8f14", null ],
     [ "GetTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#a264c8e3fff040efe97e66297c1007e93", null ],
     [ "IsIntegratedModule", "classGpgFrontend_1_1Module_1_1GlobalModuleContext.html#a683639b9af7cf521bc9ffe4a5fc46cea", null ],

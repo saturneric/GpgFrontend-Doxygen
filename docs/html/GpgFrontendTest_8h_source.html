@@ -89,28 +89,54 @@ $(document).ready(function(){initNavTree('GpgFrontendTest_8h_source.html',''); i
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;GpgFrontendTestExport.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// declare area of test</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef GF_TEST</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// declare logging category</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;Q_DECLARE_LOGGING_CATEGORY(test)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1Test.html">GpgFrontend::Test</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// project base header</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;GpgFrontend.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// symbol exports header</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;test/GpgFrontendTestExport.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// private declare area of test</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef GF_TEST_PRIVATE</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// declare logging category</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;Q_DECLARE_LOGGING_CATEGORY(test)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontendContext</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">int</span> argc;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">char</span> **argv;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define LOG_D() qCDebug(test)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define LOG_I() qCInfo(test)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define LOG_W() qCWarning(test)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define LOG_E() qCCritical(test)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">auto</span> GPGFRONTEND_TEST_EXPORT ExecuteAllTestCase(<a class="code" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontendContext</a> args) -&gt; int;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace GpgFrontend::Test</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 5, 0)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define LOG_F(...) qCFatal(test)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define LOG_F(...) qFatal()</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define FLOG_D(...) qCDebug(test, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define FLOG_I(...) qCInfo(test, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define FLOG_W(...) qCWarning(test, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define FLOG_E(...) qCCritical(test, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 5, 0)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define FLOG_F(...) qCFatal(test, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define FLOG_F(...) qFatal(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGpgFrontend_1_1Test.html">GpgFrontend::Test</a> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">   69</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontendContext</a> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> argc;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">char</span> **argv;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">auto</span> GPGFRONTEND_TEST_EXPORT ExecuteAllTestCase(<a class="code" href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontendContext</a> args) -&gt; int;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace GpgFrontend::Test</span></div>
 <div class="ttc" id="anamespaceGpgFrontend_1_1Test_html"><div class="ttname"><a href="namespaceGpgFrontend_1_1Test.html">GpgFrontend::Test</a></div><div class="ttdef"><b>Definition:</b> GpgCoreTest.cpp:35</div></div>
-<div class="ttc" id="astructGpgFrontend_1_1Test_1_1GpgFrontendContext_html"><div class="ttname"><a href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontend::Test::GpgFrontendContext</a></div><div class="ttdef"><b>Definition:</b> GpgFrontendTest.h:43</div></div>
+<div class="ttc" id="astructGpgFrontend_1_1Test_1_1GpgFrontendContext_html"><div class="ttname"><a href="structGpgFrontend_1_1Test_1_1GpgFrontendContext.html">GpgFrontend::Test::GpgFrontendContext</a></div><div class="ttdef"><b>Definition:</b> GpgFrontendTest.h:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

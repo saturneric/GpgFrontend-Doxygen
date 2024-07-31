@@ -54,6 +54,9 @@ auto {\bfseries Search\+Event} (const Event\+Trigger\+Identifier \&trigger\+\_\+
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_aa4262354dcf1d56bbd732afbac5b1e82}} 
 auto {\bfseries Is\+Module\+Activated} (const Module\+Identifier \&m\+\_\+id) const -\/$>$ bool
 \item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4d3f395fb1acc5374b2681eb7ad059c6}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4d3f395fb1acc5374b2681eb7ad059c6}} 
+auto {\bfseries Is\+Module\+Registered} (const Module\+Identifier \&m\+\_\+id) const -\/$>$ bool
+\item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4b982badccf837f3efe10b1c7e2428b5}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a4b982badccf837f3efe10b1c7e2428b5}} 
 auto {\bfseries Is\+Integrated\+Module} (Module\+Identifier m\+\_\+id) -\/$>$ bool
 \item 
@@ -62,6 +65,9 @@ auto {\bfseries List\+All\+Registered\+Module\+ID} () -\/$>$ QList$<$ Module\+Id
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a61e810f356cf0e5073dc5c83bbbbab84}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_a61e810f356cf0e5073dc5c83bbbbab84}} 
 auto {\bfseries Get\+Module\+Listening} (const Module\+Identifier \&module\+\_\+id) -\/$>$ QList$<$ Event\+Identifier $>$
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_af0aa1b95e728b438ab19b2a6a3d60e5b}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_af0aa1b95e728b438ab19b2a6a3d60e5b}} 
+auto {\bfseries Get\+Registered\+Module\+Num} () const -\/$>$ int
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -101,6 +107,9 @@ std\+::set$<$ int $>$ {\bfseries acquired\+\_\+channel\+\_\+}
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad8285c96435bc2431481828ca943ce49}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad8285c96435bc2431481828ca943ce49}} 
 Task\+Runner\+Ptr {\bfseries default\+\_\+task\+\_\+runner\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad7ae0247a7bb5bf7a2a61ff033c7c1c8}\label{classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl_ad7ae0247a7bb5bf7a2a61ff033c7c1c8}} 
+int {\bfseries registered\+\_\+modules\+\_\+} = 0
 \end{DoxyCompactItemize}
 
 

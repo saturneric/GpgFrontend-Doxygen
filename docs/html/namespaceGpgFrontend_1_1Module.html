@@ -165,15 +165,15 @@ Functions</h2></td></tr>
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a0d91609e370db9242c0335aa0fd20b24"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MakeEvent</b> (const EventIdentifier &amp;event_id, const Event::Params &amp;params, Event::EventCallback e_cb) -&gt; EventReference</td></tr>
 <tr class="separator:a0d91609e370db9242c0335aa0fd20b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed70603b6806aca6d2db12a2448e1e3"><td class="memItemLeft" align="right" valign="top"><a id="abed70603b6806aca6d2db12a2448e1e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadModuleFromPath</b> (const QString &amp;mods_path, bool integrated)</td></tr>
-<tr class="separator:abed70603b6806aca6d2db12a2448e1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671a34cf78c3b30c9148383885a767ff"><td class="memItemLeft" align="right" valign="top"><a id="a671a34cf78c3b30c9148383885a767ff"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadIntegratedMods</b> () -&gt; bool</td></tr>
-<tr class="separator:a671a34cf78c3b30c9148383885a767ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a3c32ad6b753ea6535c2b299b61b35"><td class="memItemLeft" align="right" valign="top"><a id="a95a3c32ad6b753ea6535c2b299b61b35"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadExternalMods</b> () -&gt; bool</td></tr>
-<tr class="separator:a95a3c32ad6b753ea6535c2b299b61b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9298a465119089edf8c9e3466aa03d3a"><td class="memItemLeft" align="right" valign="top"><a id="a9298a465119089edf8c9e3466aa03d3a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModuleFromPath</b> (const QString &amp;mods_path, bool integrated) -&gt; QMap&lt; QString, bool &gt;</td></tr>
+<tr class="separator:a9298a465119089edf8c9e3466aa03d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618bd53e939463ed18fc1608e1597a94"><td class="memItemLeft" align="right" valign="top"><a id="a618bd53e939463ed18fc1608e1597a94"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadIntegratedMods</b> () -&gt; QMap&lt; QString, bool &gt;</td></tr>
+<tr class="separator:a618bd53e939463ed18fc1608e1597a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112ef8214f04879e4a0b40d5647e07b8"><td class="memItemLeft" align="right" valign="top"><a id="a112ef8214f04879e4a0b40d5647e07b8"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadExternalMods</b> () -&gt; QMap&lt; QString, bool &gt;</td></tr>
+<tr class="separator:a112ef8214f04879e4a0b40d5647e07b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3912fe331338264ae22e434425f59e"><td class="memItemLeft" align="right" valign="top"><a id="a7f3912fe331338264ae22e434425f59e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1Module.html#a7f3912fe331338264ae22e434425f59e">LoadGpgFrontendModules</a> (<a class="el" href="structGpgFrontend_1_1Module_1_1ModuleInitArgs.html">ModuleInitArgs</a> args)</td></tr>
 <tr class="memdesc:a7f3912fe331338264ae22e434425f59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">init the module library <br /></td></tr>
@@ -184,6 +184,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="separator:a25a2b6107e70c76ab0731f2685d94745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad603c5872c4d356cb59b70b63b99126c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1Module.html#ad603c5872c4d356cb59b70b63b99126c">IsModuleActivate</a> (ModuleIdentifier id) -&gt; bool</td></tr>
 <tr class="separator:ad603c5872c4d356cb59b70b63b99126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381773e6f63df507b425e503330d07ca"><td class="memItemLeft" align="right" valign="top">auto GPGFRONTEND_CORE_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1Module.html#a381773e6f63df507b425e503330d07ca">IsModuleExists</a> (ModuleIdentifier id) -&gt; bool</td></tr>
+<tr class="separator:a381773e6f63df507b425e503330d07ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4614222306688d8c2f36fd4ae23de3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1Module.html#a5e4614222306688d8c2f36fd4ae23de3">UpsertRTValue</a> (const QString &amp;namespace_, const QString &amp;key, const std::any &amp;value) -&gt; bool</td></tr>
 <tr class="separator:a5e4614222306688d8c2f36fd4ae23de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88df9c72a7e6ec8dede9afc7234aca7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGpgFrontend_1_1Module.html#af88df9c72a7e6ec8dede9afc7234aca7">ListenRTPublishEvent</a> (QObject *o, Namespace n, Key k, LPCallback c) -&gt; bool</td></tr>
@@ -243,6 +245,31 @@ false </dd></dl>
 <p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; ModuleManager &gt;::GetInstance()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1MainWindow.html#a9fbd8a2f5b2b5869276db83a4ad20216">GpgFrontend::UI::MainWindow::create_menus()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#a4dcec352e412afe5c5491f941495090f">GpgFrontend::UI::KeyPairOperaTab::CreateOperaMenu()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1KeyPairOperaTab.html#afdfa89db24ac6c3a073e029882a4f2e8">GpgFrontend::UI::KeyPairOperaTab::KeyPairOperaTab()</a>, <a class="el" href="classGpgFrontend_1_1UI_1_1NetworkTab.html#a444d3630919c1f9c4db495a58acbb9a8">GpgFrontend::UI::NetworkTab::NetworkTab()</a>, <a class="el" href="classGpgFrontend_1_1GpgAdvancedOperator.html#a7687d84063c6c1d9d8bc11c617085530">GpgFrontend::GpgAdvancedOperator::StartDirmngr()</a>, <a class="el" href="classGpgFrontend_1_1GpgAdvancedOperator.html#a4af186d06b01ce998e51a42e39e01c86">GpgFrontend::GpgAdvancedOperator::StartGpgAgent()</a>, and <a class="el" href="classGpgFrontend_1_1GpgAdvancedOperator.html#ae2b097912eb2c9d97da859c45e7a5bac">GpgFrontend::GpgAdvancedOperator::StartKeyBoxd()</a>.</p>
+
+</div>
+</div>
+<a id="a381773e6f63df507b425e503330d07ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381773e6f63df507b425e503330d07ca">&#9670;&nbsp;</a></span>IsModuleExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto GPGFRONTEND_CORE_EXPORT GpgFrontend::Module::IsModuleExists </td>
+          <td>(</td>
+          <td class="paramtype">ModuleIdentifier&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p class="reference">References <a class="el" href="classGpgFrontend_1_1SingletonFunctionObject.html#ac963fee992753970bfb5c81608d4070f">GpgFrontend::SingletonFunctionObject&lt; ModuleManager &gt;::GetInstance()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classGpgFrontend_1_1UI_1_1UIModuleManager.html#a82b2fce18b6afeaa0d9af4fcca181296">GpgFrontend::UI::UIModuleManager::RegisterTranslatorDataReader()</a>.</p>
 
 </div>
 </div>

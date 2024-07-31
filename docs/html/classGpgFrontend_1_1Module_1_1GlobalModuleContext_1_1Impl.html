@@ -159,6 +159,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchEvent</b> (cons
 <tr class="memitem:aa4262354dcf1d56bbd732afbac5b1e82"><td class="memItemLeft" align="right" valign="top"><a id="aa4262354dcf1d56bbd732afbac5b1e82"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b> (const ModuleIdentifier &amp;m_id) const -&gt; bool</td></tr>
 <tr class="separator:aa4262354dcf1d56bbd732afbac5b1e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3f395fb1acc5374b2681eb7ad059c6"><td class="memItemLeft" align="right" valign="top"><a id="a4d3f395fb1acc5374b2681eb7ad059c6"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleRegistered</b> (const ModuleIdentifier &amp;m_id) const -&gt; bool</td></tr>
+<tr class="separator:a4d3f395fb1acc5374b2681eb7ad059c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b982badccf837f3efe10b1c7e2428b5"><td class="memItemLeft" align="right" valign="top"><a id="a4b982badccf837f3efe10b1c7e2428b5"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsIntegratedModule</b> (ModuleIdentifier m_id) -&gt; bool</td></tr>
 <tr class="separator:a4b982badccf837f3efe10b1c7e2428b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +171,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllRegisteredModu
 <tr class="memitem:a61e810f356cf0e5073dc5c83bbbbab84"><td class="memItemLeft" align="right" valign="top"><a id="a61e810f356cf0e5073dc5c83bbbbab84"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleListening</b> (const ModuleIdentifier &amp;module_id) -&gt; QList&lt; EventIdentifier &gt;</td></tr>
 <tr class="separator:a61e810f356cf0e5073dc5c83bbbbab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aa1b95e728b438ab19b2a6a3d60e5b"><td class="memItemLeft" align="right" valign="top"><a id="af0aa1b95e728b438ab19b2a6a3d60e5b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisteredModuleNum</b> () const -&gt; int</td></tr>
+<tr class="separator:af0aa1b95e728b438ab19b2a6a3d60e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -207,6 +213,9 @@ std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acqu
 <tr class="memitem:ad8285c96435bc2431481828ca943ce49"><td class="memItemLeft" align="right" valign="top"><a id="ad8285c96435bc2431481828ca943ce49"></a>
 TaskRunnerPtr&#160;</td><td class="memItemRight" valign="bottom"><b>default_task_runner_</b></td></tr>
 <tr class="separator:ad8285c96435bc2431481828ca943ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ae0247a7bb5bf7a2a61ff033c7c1c8"><td class="memItemLeft" align="right" valign="top"><a id="ad7ae0247a7bb5bf7a2a61ff033c7c1c8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>registered_modules_</b> = 0</td></tr>
+<tr class="separator:ad7ae0247a7bb5bf7a2a61ff033c7c1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>core/module/GlobalModuleContext.cpp</li>

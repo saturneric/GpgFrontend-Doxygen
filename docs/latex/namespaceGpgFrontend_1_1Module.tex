@@ -74,14 +74,14 @@ using {\bfseries Module\+Manger\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperli
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a0d91609e370db9242c0335aa0fd20b24}\label{namespaceGpgFrontend_1_1Module_a0d91609e370db9242c0335aa0fd20b24}} 
 {\footnotesize template$<$typename... Args$>$ }\\auto {\bfseries Make\+Event} (const Event\+Identifier \&event\+\_\+id, const Event\+::\+Params \&params, Event\+::\+Event\+Callback e\+\_\+cb) -\/$>$ Event\+Reference
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_abed70603b6806aca6d2db12a2448e1e3}\label{namespaceGpgFrontend_1_1Module_abed70603b6806aca6d2db12a2448e1e3}} 
-void {\bfseries Load\+Module\+From\+Path} (const QString \&mods\+\_\+path, bool integrated)
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a9298a465119089edf8c9e3466aa03d3a}\label{namespaceGpgFrontend_1_1Module_a9298a465119089edf8c9e3466aa03d3a}} 
+auto {\bfseries Search\+Module\+From\+Path} (const QString \&mods\+\_\+path, bool integrated) -\/$>$ QMap$<$ QString, bool $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a671a34cf78c3b30c9148383885a767ff}\label{namespaceGpgFrontend_1_1Module_a671a34cf78c3b30c9148383885a767ff}} 
-auto {\bfseries Load\+Integrated\+Mods} () -\/$>$ bool
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a618bd53e939463ed18fc1608e1597a94}\label{namespaceGpgFrontend_1_1Module_a618bd53e939463ed18fc1608e1597a94}} 
+auto {\bfseries Load\+Integrated\+Mods} () -\/$>$ QMap$<$ QString, bool $>$
 \item 
-\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a95a3c32ad6b753ea6535c2b299b61b35}\label{namespaceGpgFrontend_1_1Module_a95a3c32ad6b753ea6535c2b299b61b35}} 
-auto {\bfseries Load\+External\+Mods} () -\/$>$ bool
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a112ef8214f04879e4a0b40d5647e07b8}\label{namespaceGpgFrontend_1_1Module_a112ef8214f04879e4a0b40d5647e07b8}} 
+auto {\bfseries Load\+External\+Mods} () -\/$>$ QMap$<$ QString, bool $>$
 \item 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}\label{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}} 
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e434425f59e}{Load\+Gpg\+Frontend\+Modules}} (\mbox{\hyperlink{structGpgFrontend_1_1Module_1_1ModuleInitArgs}{Module\+Init\+Args}} args)
@@ -90,6 +90,8 @@ void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a7f3912fe331338264ae22e4344
 void \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a25a2b6107e70c76ab0731f2685d94745}{Shutdown\+Gpg\+Frontend\+Modules}} ()
 \begin{DoxyCompactList}\small\item\em shutdown the module library \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_ad603c5872c4d356cb59b70b63b99126c}{Is\+Module\+Activate}} (Module\+Identifier id) -\/$>$ bool
+\item 
+auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a381773e6f63df507b425e503330d07ca}{Is\+Module\+Exists}} (Module\+Identifier id) -\/$>$ bool
 \item 
 auto \mbox{\hyperlink{namespaceGpgFrontend_1_1Module_a5e4614222306688d8c2f36fd4ae23de3}{Upsert\+RTValue}} (const QString \&namespace\+\_\+, const QString \&key, const std\+::any \&value) -\/$>$ bool
 \item 
@@ -150,6 +152,25 @@ References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Module\+Manager $>$
 
 
 Referenced by Gpg\+Frontend\+::\+UI\+::\+Main\+Window\+::create\+\_\+menus(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Create\+Opera\+Menu(), Gpg\+Frontend\+::\+UI\+::\+Key\+Pair\+Opera\+Tab\+::\+Key\+Pair\+Opera\+Tab(), Gpg\+Frontend\+::\+UI\+::\+Network\+Tab\+::\+Network\+Tab(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Dirmngr(), Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Gpg\+Agent(), and Gpg\+Frontend\+::\+Gpg\+Advanced\+Operator\+::\+Start\+Key\+Boxd().
+
+\mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_a381773e6f63df507b425e503330d07ca}\label{namespaceGpgFrontend_1_1Module_a381773e6f63df507b425e503330d07ca}} 
+\index{GpgFrontend::Module@{GpgFrontend::Module}!IsModuleExists@{IsModuleExists}}
+\index{IsModuleExists@{IsModuleExists}!GpgFrontend::Module@{GpgFrontend::Module}}
+\doxysubsubsection{\texorpdfstring{IsModuleExists()}{IsModuleExists()}}
+{\footnotesize\ttfamily auto GPGFRONTEND\+\_\+\+CORE\+\_\+\+EXPORT Gpg\+Frontend\+::\+Module\+::\+Is\+Module\+Exists (\begin{DoxyParamCaption}\item[{Module\+Identifier}]{ }\end{DoxyParamCaption}) -\/$>$  bool}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Singleton\+Function\+Object$<$ Module\+Manager $>$\+::\+Get\+Instance().
+
+
+
+Referenced by Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Register\+Translator\+Data\+Reader().
 
 \mbox{\Hypertarget{namespaceGpgFrontend_1_1Module_af88df9c72a7e6ec8dede9afc7234aca7}\label{namespaceGpgFrontend_1_1Module_af88df9c72a7e6ec8dede9afc7234aca7}} 
 \index{GpgFrontend::Module@{GpgFrontend::Module}!ListenRTPublishEvent@{ListenRTPublishEvent}}

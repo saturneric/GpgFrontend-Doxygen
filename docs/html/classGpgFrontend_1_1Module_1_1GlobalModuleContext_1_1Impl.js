@@ -10,10 +10,12 @@ var classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl =
     [ "GetDefaultChannel", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a0388268ec4a003a465f76cb9d3a85b13", null ],
     [ "GetGlobalTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a07a95697a3653f22d5270708ede1f213", null ],
     [ "GetModuleListening", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a61e810f356cf0e5073dc5c83bbbbab84", null ],
+    [ "GetRegisteredModuleNum", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#af0aa1b95e728b438ab19b2a6a3d60e5b", null ],
     [ "GetTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#ab1b61e3fb3bbd9c8f2c209751bd470d2", null ],
     [ "GetTaskRunner", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a90e5698590ebc999c67e4966a7835c5c", null ],
     [ "IsIntegratedModule", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a4b982badccf837f3efe10b1c7e2428b5", null ],
     [ "IsModuleActivated", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#aa4262354dcf1d56bbd732afbac5b1e82", null ],
+    [ "IsModuleRegistered", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a4d3f395fb1acc5374b2681eb7ad059c6", null ],
     [ "ListAllRegisteredModuleID", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a66c9166ec3af4f15dd3af00e57ced049", null ],
     [ "ListenEvent", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a4479bbccc6929a1c096f764d9c13c02f", null ],
     [ "RegisterModule", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#abc363ae2bc81fbfed0f08315023a2155", null ],
@@ -25,5 +27,6 @@ var classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl =
     [ "default_task_runner_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#ad8285c96435bc2431481828ca943ce49", null ],
     [ "module_events_table_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#aaa6ec2fcc2569cd1b22f419feadaa568", null ],
     [ "module_on_triggering_events_table_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a8b1169966c7200118373bb56d555a89c", null ],
-    [ "module_register_table_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a8e3cd9ab8dc16a2f7431618bfbc09520", null ]
+    [ "module_register_table_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#a8e3cd9ab8dc16a2f7431618bfbc09520", null ],
+    [ "registered_modules_", "classGpgFrontend_1_1Module_1_1GlobalModuleContext_1_1Impl.html#ad7ae0247a7bb5bf7a2a61ff033c7c1c8", null ]
 ];

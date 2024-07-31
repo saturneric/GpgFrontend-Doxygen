@@ -96,10 +96,10 @@ Inheritance diagram for GpgFrontend::Module::ModuleManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1ModuleManager__inherit__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map" id="aGpgFrontend_1_1Module_1_1ModuleManager_inherit__map">
-<area shape="rect" title=" " alt="" coords="11,897,229,1136"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
-<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,220,365,503"/>
+<area shape="rect" title=" " alt="" coords="5,897,248,1136"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="12,565,241,848"/>
+<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="17,5,225,171"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="143,220,372,503"/>
 </map>
 </div>
 <div class="dynheader">
@@ -107,10 +107,10 @@ Collaboration diagram for GpgFrontend::Module::ModuleManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGpgFrontend_1_1Module_1_1ModuleManager__coll__graph.png" border="0" usemap="#aGpgFrontend_1_1Module_1_1ModuleManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aGpgFrontend_1_1Module_1_1ModuleManager_coll__map" id="aGpgFrontend_1_1Module_1_1ModuleManager_coll__map">
-<area shape="rect" title=" " alt="" coords="11,897,229,1136"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="5,565,235,848"/>
-<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="11,5,219,171"/>
-<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="136,220,365,503"/>
+<area shape="rect" title=" " alt="" coords="5,897,248,1136"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="12,565,241,848"/>
+<area shape="rect" href="classGpgFrontend_1_1ChannelObject.html" title="object which in channel system is called &quot;channel&quot;" alt="" coords="17,5,225,171"/>
+<area shape="rect" href="classGpgFrontend_1_1SingletonFunctionObject.html" title=" " alt="" coords="143,220,372,503"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -124,18 +124,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad699694b74ada1edd1fcf9d094c92a7d"><td class="memItemLeft" align="right" valign="top"><a id="ad699694b74ada1edd1fcf9d094c92a7d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ModuleManager</b> (int channel)</td></tr>
 <tr class="separator:ad699694b74ada1edd1fcf9d094c92a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa8675386da0e23a37f6475ae0b52196"><td class="memItemLeft" align="right" valign="top"><a id="aaa8675386da0e23a37f6475ae0b52196"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadModule</b> (QString, bool) -&gt; void</td></tr>
-<tr class="separator:aaa8675386da0e23a37f6475ae0b52196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2a7d1bdc361dcbc56d087080ef924a"><td class="memItemLeft" align="right" valign="top"><a id="a2d2a7d1bdc361dcbc56d087080ef924a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>LoadModule</b> (QString, bool) -&gt; bool</td></tr>
+<tr class="separator:a2d2a7d1bdc361dcbc56d087080ef924a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708ed5ee3ab6684ddfa3d7ec00703693"><td class="memItemLeft" align="right" valign="top"><a id="a708ed5ee3ab6684ddfa3d7ec00703693"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>SearchModule</b> (ModuleIdentifier) -&gt; ModulePtr</td></tr>
 <tr class="separator:a708ed5ee3ab6684ddfa3d7ec00703693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba35bcd4e683d34cd3a418418240f5c"><td class="memItemLeft" align="right" valign="top"><a id="acba35bcd4e683d34cd3a418418240f5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNeedRegisterModulesNum</b> (int)</td></tr>
+<tr class="separator:acba35bcd4e683d34cd3a418418240f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04a5eac55ad8c96eca86e59eb0ef88d"><td class="memItemLeft" align="right" valign="top"><a id="ae04a5eac55ad8c96eca86e59eb0ef88d"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>ListAllRegisteredModuleID</b> () -&gt; QList&lt; ModuleIdentifier &gt;</td></tr>
 <tr class="separator:ae04a5eac55ad8c96eca86e59eb0ef88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654aceac22bb8f153617181658705771"><td class="memItemLeft" align="right" valign="top"><a id="a654aceac22bb8f153617181658705771"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterModule</b> (ModulePtr)</td></tr>
 <tr class="separator:a654aceac22bb8f153617181658705771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0cb9f68bd6434ca0a05399f50af40b"><td class="memItemLeft" align="right" valign="top"><a id="aac0cb9f68bd6434ca0a05399f50af40b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsAllModulesRegistered</b> () -&gt; bool</td></tr>
+<tr class="separator:aac0cb9f68bd6434ca0a05399f50af40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1d20608829a48688c53ecb24e6a97b"><td class="memItemLeft" align="right" valign="top"><a id="a3b1d20608829a48688c53ecb24e6a97b"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>IsModuleActivated</b> (ModuleIdentifier) -&gt; bool</td></tr>
 <tr class="separator:a3b1d20608829a48688c53ecb24e6a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>

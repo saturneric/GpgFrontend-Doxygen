@@ -33,6 +33,14 @@ auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a16d34dfbdc8bbbb
 auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a825549a5ba68394485144137df0edecb}{Mount\+Entry}} (const QString \&id, QMap$<$ QString, QString $>$ meta\+\_\+data, Entry\+Factory factory) -\/$>$ bool
 \item 
 auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_af5e400044fd95c96b713c7a6d31e0308}{Query\+Mounted\+Entries}} (QString id) -\/$>$ QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MountedUIEntry}{Mounted\+UIEntry}} $>$
+\item 
+auto \mbox{\hyperlink{classGpgFrontend_1_1UI_1_1UIModuleManager_a82b2fce18b6afeaa0d9af4fcca181296}{Register\+Translator\+Data\+Reader}} (Module\+::\+Module\+Identifier id, GFTranslator\+Data\+Reader reader) -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_af2a1110d97a03fd8d1f01bb44e0a1b1a}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_af2a1110d97a03fd8d1f01bb44e0a1b1a}} 
+void {\bfseries Register\+All\+Module\+Translators} ()
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_adbd889039bfa92c506c64b67624b2d01}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_adbd889039bfa92c506c64b67624b2d01}} 
+void {\bfseries Translate\+All\+Modules\+Params} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -42,6 +50,15 @@ QMap$<$ QString, \mbox{\hyperlink{structUIMountPoint}{UIMount\+Point}} $>$ {\bfs
 \item 
 \mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_affdd2f1e977f94b0c42749f851fae2d7}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_affdd2f1e977f94b0c42749f851fae2d7}} 
 QMap$<$ QString, QList$<$ \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1MountedUIEntry}{Mounted\+UIEntry}} $>$ $>$ {\bfseries mounted\+\_\+entries\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a96ec07207847673299a72bd362a03b2d}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a96ec07207847673299a72bd362a03b2d}} 
+QMap$<$ QString, \mbox{\hyperlink{structGpgFrontend_1_1UI_1_1ModuleTranslatorInfo}{Module\+Translator\+Info}} $>$ {\bfseries translator\+\_\+data\+\_\+readers\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_af02171fec5d2ecab04b1c745999c4cbe}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_af02171fec5d2ecab04b1c745999c4cbe}} 
+QList$<$ QTranslator $\ast$ $>$ {\bfseries registered\+\_\+translators\+\_\+}
+\item 
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_adbaf8ecf0883e36602a754734fd12db7}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_adbaf8ecf0883e36602a754734fd12db7}} 
+QList$<$ QByte\+Array $>$ {\bfseries read\+\_\+translator\+\_\+data\+\_\+list\+\_\+}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -123,6 +140,19 @@ false
 \begin{DoxyReturn}{Returns}
 QList$<$\+Mounted\+UIEntry$>$ 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classGpgFrontend_1_1UI_1_1UIModuleManager_a82b2fce18b6afeaa0d9af4fcca181296}\label{classGpgFrontend_1_1UI_1_1UIModuleManager_a82b2fce18b6afeaa0d9af4fcca181296}} 
+\index{GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}!RegisterTranslatorDataReader@{RegisterTranslatorDataReader}}
+\index{RegisterTranslatorDataReader@{RegisterTranslatorDataReader}!GpgFrontend::UI::UIModuleManager@{GpgFrontend::UI::UIModuleManager}}
+\doxysubsubsection{\texorpdfstring{RegisterTranslatorDataReader()}{RegisterTranslatorDataReader()}}
+{\footnotesize\ttfamily auto Gpg\+Frontend\+::\+UI\+::\+UIModule\+Manager\+::\+Register\+Translator\+Data\+Reader (\begin{DoxyParamCaption}\item[{Module\+::\+Module\+Identifier}]{id,  }\item[{GFTranslator\+Data\+Reader}]{reader }\end{DoxyParamCaption}) -\/$>$ bool}
+
+\begin{DoxyReturn}{Returns}
+auto 
+\end{DoxyReturn}
+
+
+References Gpg\+Frontend\+::\+Module\+::\+Is\+Module\+Exists().
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
