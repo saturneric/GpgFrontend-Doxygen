@@ -11,7 +11,7 @@ var classGpgFrontend_1_1UI_1_1KeyServerImportDialog =
     [ "slot_import", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#ac9c14bbc97945c94fd02c8e067ccab06", null ],
     [ "slot_import_finished", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a236935d77e2b2a17ee66798c490f1361", null ],
     [ "slot_search", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#adc7249b039e078c84f705c7111a148b0", null ],
-    [ "slot_search_finished", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#ab0585bbabc450d2cb571a5bd374ebb0e", null ],
+    [ "slot_search_finished", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#ab6df467c87d202922ac74ff5fe04aaf0", null ],
     [ "SlotImport", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a1e17305d6b470d0f7050eb8e3e6ee3d8", null ],
     [ "SlotImport", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#a7de2096702baf67f1335ac4fe50cfa38", null ],
     [ "close_button_", "classGpgFrontend_1_1UI_1_1KeyServerImportDialog.html#abdf29b8b4337573cafd839fd4ce25104", null ],

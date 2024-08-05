@@ -135,12 +135,11 @@ var NAVTREEINDEX10 =
 "structGpgFrontend_1_1GpgCommandExecutor_1_1ExecuteContext.html#ac8f9c29ee4dae95dd41e5b3d10d2f45b":[2,0,0,17,0,4],
 "structGpgFrontend_1_1GpgContextInitArgs.html":[2,0,0,18],
 "structGpgFrontend_1_1GpgContextInitArgs.html#a12e9e2e6ad393864a4b2d85727350edc":[2,0,0,18,0],
-"structGpgFrontend_1_1GpgContextInitArgs.html#a25ca282a0a82ed7aa4cb677a86f53eef":[2,0,0,18,5],
-"structGpgFrontend_1_1GpgContextInitArgs.html#a2b09f18f4f10ca44370ed204d19de122":[2,0,0,18,6],
-"structGpgFrontend_1_1GpgContextInitArgs.html#a33cd883333581952ae49784ae86edae7":[2,0,0,18,4],
-"structGpgFrontend_1_1GpgContextInitArgs.html#a5f65e909a4fdb918a55a6e92193356af":[2,0,0,18,3],
-"structGpgFrontend_1_1GpgContextInitArgs.html#aa46e72b29dd89211f468047f45a7a31d":[2,0,0,18,1],
-"structGpgFrontend_1_1GpgContextInitArgs.html#af63aa7579ac72c2b014816e44111d42d":[2,0,0,18,2],
+"structGpgFrontend_1_1GpgContextInitArgs.html#a25ca282a0a82ed7aa4cb677a86f53eef":[2,0,0,18,4],
+"structGpgFrontend_1_1GpgContextInitArgs.html#a2b09f18f4f10ca44370ed204d19de122":[2,0,0,18,5],
+"structGpgFrontend_1_1GpgContextInitArgs.html#a33cd883333581952ae49784ae86edae7":[2,0,0,18,3],
+"structGpgFrontend_1_1GpgContextInitArgs.html#a5f65e909a4fdb918a55a6e92193356af":[2,0,0,18,1],
+"structGpgFrontend_1_1GpgContextInitArgs.html#a919047b2d29dc6c52a64647e5b696db0":[2,0,0,18,2],
 "structGpgFrontend_1_1GpgData_1_1DataRefDeleter.html":[2,0,0,41,0],
 "structGpgFrontend_1_1GpgData_1_1DataRefDeleter.html#afc954de96589a5bd24f69fd95eb00000":[2,0,0,41,0,0],
 "structGpgFrontend_1_1GpgFrontendContext.html":[2,0,0,62],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "structGpgFrontend_1_1UI_1_1KeyTable.html#a9ef84e0b2d9146b962ca4ca79e7f0e9c":[2,0,0,3,61,3],
 "structGpgFrontend_1_1UI_1_1KeyTable.html#aa4edca6e101f62b2290d23c3a6019f05":[2,0,0,3,61,4],
 "structGpgFrontend_1_1UI_1_1KeyTable.html#aaee07c50246584d95f42b027a0a62d85":[2,0,0,3,61,17],
-"structGpgFrontend_1_1UI_1_1KeyTable.html#ac446f9861ec9cd5688b16125097ca25b":[2,0,0,3,61,8]
+"structGpgFrontend_1_1UI_1_1KeyTable.html#ac446f9861ec9cd5688b16125097ca25b":[2,0,0,3,61,8],
+"structGpgFrontend_1_1UI_1_1KeyTable.html#ac60586d4d753a65fff6c5d707fe6965b":[2,0,0,3,61,1]
 };

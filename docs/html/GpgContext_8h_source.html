@@ -103,34 +103,33 @@ $(document).ready(function(){initNavTree('GpgContext_8h_source.html',''); initRe
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> offline_mode = <span class="keyword">false</span>;             </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> auto_import_missing_key = <span class="keyword">false</span>;  </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> custom_gpgconf = <span class="keyword">false</span>;  </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QString custom_gpgconf_path;  </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">bool</span> use_pinentry = <span class="keyword">false</span>;  </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgContext.html">   59</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgContext&gt; {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>(<a class="code" href="structGpgFrontend_1_1GpgContextInitArgs.html">GpgContextInitArgs</a> args, <span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ~<a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> Good() <span class="keyword">const</span> -&gt; bool;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">auto</span> BinaryContext() -&gt; gpgme_ctx_t;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">auto</span> DefaultContext() -&gt; gpgme_ctx_t;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1GpgContext_1_1Impl.html">Impl</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QString gpgconf_path;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">bool</span> use_pinentry = <span class="keyword">false</span>;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classGpgFrontend_1_1GpgContext.html">   58</a></span>&#160;<span class="keyword">class </span>GPGFRONTEND_CORE_EXPORT <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classGpgFrontend_1_1SingletonFunctionObject.html">SingletonFunctionObject</a>&lt;GpgContext&gt; {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>(<a class="code" href="structGpgFrontend_1_1GpgContextInitArgs.html">GpgContextInitArgs</a> args, <span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  ~<a class="code" href="classGpgFrontend_1_1GpgContext.html">GpgContext</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> Good() <span class="keyword">const</span> -&gt; bool;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">auto</span> BinaryContext() -&gt; gpgme_ctx_t;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">auto</span> DefaultContext() -&gt; gpgme_ctx_t;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">class </span><a class="code" href="classGpgFrontend_1_1GpgContext_1_1Impl.html">Impl</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  SecureUniquePtr&lt;Impl&gt; p_;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace GpgFrontend</span></div>
 <div class="ttc" id="aclassGpgFrontend_1_1GpgContext_1_1Impl_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext_1_1Impl.html">GpgFrontend::GpgContext::Impl</a></div><div class="ttdef"><b>Definition:</b> GpgContext.cpp:52</div></div>
-<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:60</div></div>
+<div class="ttc" id="aclassGpgFrontend_1_1GpgContext_html"><div class="ttname"><a href="classGpgFrontend_1_1GpgContext.html">GpgFrontend::GpgContext</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:59</div></div>
 <div class="ttc" id="aclassGpgFrontend_1_1SingletonFunctionObject_html"><div class="ttname"><a href="classGpgFrontend_1_1SingletonFunctionObject.html">GpgFrontend::SingletonFunctionObject</a></div><div class="ttdef"><b>Definition:</b> GpgFunctionObject.h:57</div></div>
 <div class="ttc" id="anamespaceGpgFrontend_html"><div class="ttname"><a href="namespaceGpgFrontend.html">GpgFrontend</a></div><div class="ttdef"><b>Definition:</b> app.cpp:38</div></div>
 <div class="ttc" id="astructGpgFrontend_1_1GpgContextInitArgs_html"><div class="ttname"><a href="structGpgFrontend_1_1GpgContextInitArgs.html">GpgFrontend::GpgContextInitArgs</a></div><div class="ttdef"><b>Definition:</b> GpgContext.h:42</div></div>
